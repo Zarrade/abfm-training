@@ -7923,24 +7923,23 @@
       "title": "Troubleshooting a Non-Working VFD",
       "category": "Electrical",
       "subject": "Drives & Motors",
-      "level": "Advanced",
+      "level": "Intermediate",
       "channel": "VFDs.com",
       "duration": "8:49",
       "added": "2026-10-20",
-      "summary": "Systematic diagnosis of a drive that will not power up or run: input supply, DC bus, fault history and output checks.",
-      "safety": "Lethal DC voltage remains after isolation. Measure the DC bus to confirm discharge before touching components.",
+      "summary": "An instructor explains troubleshooting steps for a non-working variable frequency drive (VFD).",
+      "safety": "Always turn off power before inspecting or servicing electrical control panels.",
       "ppe": [
-        "1000V Insulated Gloves",
         "Safety Glasses",
-        "Arc-Rated Clothing",
-        "Steel Toe Boots"
+        "Insulated Gloves",
+        "Safety Shoes"
       ],
       "steps": [
-        "Check input voltage on all three phases.",
-        "Read and record the fault history.",
-        "Measure DC bus voltage with the drive powered and after discharge.",
-        "Check input diodes and output IGBTs with the diode test.",
-        "Check motor and cable insulation before restarting."
+        "Check the back plate for signs of burn damage or soot.",
+        "Measure input voltages to verify power supply.",
+        "Inspect drive parameters including base frequency and voltage.",
+        "Disconnect the motor and test for short circuits.",
+        "Run the drive without the motor to check for programming issues."
       ],
       "tr": {
         "hi": {
