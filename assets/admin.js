@@ -317,8 +317,8 @@
         <div class="field"><label for="f-added">Date added</label><input class="input" id="f-added" type="date" value="${esc(v.added || today())}"></div>
         <div class="field"><label for="f-chan">Channel</label><input class="input" id="f-chan" value="${esc(v.channel || "")}"></div>
       </div>
-      ${v.draftSource ? `<div class="draft-note">✨ ${v.draftSource === "ai" ? "Gemini watched this video and wrote a first draft of the summary, safety note and steps." : "First draft filled in from the YouTube description and safety rules."} Check it before publishing.</div>` : ""}
-      <div class="draft-row"><button type="button" class="btn btn-sm" id="f-draft">✨ Auto-draft</button><span class="help" id="f-draft-help">${geminiKey() ? "Gemini will watch the video and fill in the summary, safety, PPE and steps." : "Fills in safety and PPE from the trade. Add a Gemini key in Settings to draft from the video itself."}</span></div>
+      ${v.draftSource ? `<div class="draft-note">✨ ${v.draftSource === "ai" ? "Gemini watched this video and wrote a first draft of the summary, safety note and steps." : "First draft filled in from the YouTube description and safety rules."} ${STEPS_NOTE[v.stepsFrom] || ""} Check it before publishing.</div>` : ""}
+      <div class="draft-row"><button type="button" class="btn btn-sm" id="f-draft">✨ Auto-draft</button><span class="help" id="f-draft-help">${geminiKey() ? "Gemini will watch the video and fill in the summary, safety, PPE and steps." : "Fills in safety, PPE and steps for this kind of job. Add a Gemini key in Settings to draft from the video itself."}</span></div>
       <div class="field"><label for="f-summary">What the video shows</label><textarea class="textarea" id="f-summary" placeholder="One or two plain sentences.">${esc(v.summary || "")}</textarea></div>
       <div class="field"><label for="f-safety">Safety warning</label><textarea class="textarea" id="f-safety" placeholder="e.g. Isolate power and prove dead before starting.">${esc(v.safety || "")}</textarea></div>
       <div class="field"><label for="f-ppe">Required PPE</label><input class="input" id="f-ppe" placeholder="Safety Glasses, Work Gloves" value="${esc((v.ppe || []).join(", "))}"><div class="help">Separate with commas.</div></div>
@@ -397,6 +397,12 @@
     if (!same) { delete next.auto; delete next.src; }   // you edited it: keep your version, never overwrite
     ed.tr[ed.trLang] = next;
   }
+  const STEPS_NOTE = {
+    chapters: "Steps come from the video's own chapters.",
+    description: "Steps come from the list in the YouTube description.",
+    topic: "Steps are the standard procedure for this kind of job — watch the video and adjust them to match.",
+    general: "Steps are general safe-work steps — replace them with the steps shown in the video."
+  };
   const geminiKey = () => { try { return localStorage.getItem("ab_gemini_key") || ""; } catch { return ""; } };
   async function runDraft() {
     const yt = parseYT($("#f-url").value) || ed.v.yt;
@@ -418,13 +424,14 @@
       } finally { btn.disabled = false; }
     }
     if (!d) {
-      d = ABDraft.ruleDraft({ title, description: "", category, videos: V() });
-      if (!geminiKey()) help.textContent = "Filled in safety, PPE and level from the trade. Write the summary and steps from the video.";
+      d = ABDraft.ruleDraft({ title, description: ed.v.description || "", category, videos: V() });
+      if (!geminiKey()) help.textContent = "Filled in safety, PPE, level and steps." + (d.summary ? "" : " Write the summary from the video.");
     }
     if (d.summary) $("#f-summary").value = d.summary;
     if (d.safety) $("#f-safety").value = d.safety;
     if (d.ppe && d.ppe.length) $("#f-ppe").value = d.ppe.join(", ");
     if (d.steps && d.steps.length) $("#f-steps").value = d.steps.join("\n");
+    if (d.source !== "ai" && STEPS_NOTE[d.stepsFrom]) help.textContent = (geminiKey() ? help.textContent + " " : "") + STEPS_NOTE[d.stepsFrom];
     if (d.level) $("#f-level").value = d.level;
     if (d.subject && !$("#f-subject").value) $("#f-subject").value = d.subject;
   }
@@ -507,7 +514,7 @@
         <article class="qcard" data-yt="${esc(item.yt)}">
           <div class="thumb" data-preview="${esc(item.yt)}" style="cursor:pointer"><img loading="lazy" src="${thumb(item.yt)}" alt="" width="320" height="180">${item.duration ? `<span class="dur">${esc(item.duration)}</span>` : ""}</div>
           <div class="body">
-            <div class="meta"><span>${esc(item.suggestedCategory || "Unsorted")}</span>${item.published ? `<span class="dot">${esc(item.published.slice(0, 10))}</span>` : ""}${item.draft ? `<span class="badge-s b-draft">✨ ${item.draft.source === "ai" ? "AI draft ready" : (item.draft.steps || []).length ? "Draft + steps" : "Draft"}</span>` : ""}</div>
+            <div class="meta"><span>${esc(item.suggestedCategory || "Unsorted")}</span>${item.published ? `<span class="dot">${esc(item.published.slice(0, 10))}</span>` : ""}${item.draft ? `<span class="badge-s b-draft">✨ ${item.draft.source === "ai" ? "AI draft from video" : { chapters: "Draft · steps from video", description: "Draft · steps from description", topic: "Draft · standard steps", general: "Draft · general steps" }[item.draft.stepsFrom] || "Draft"}</span>` : ""}</div>
             <h3>${esc(item.title)}</h3>
             <div class="count" style="margin:0">${esc(item.channel || "")}</div>
             ${dupNote(item)}
@@ -540,7 +547,7 @@
     const fromDraft = {};
     ["summary", "safety", "subject", "level"].forEach(k => { if (d[k]) fromDraft[k] = d[k]; });
     ["ppe", "steps"].forEach(k => { if (d[k] && d[k].length) fromDraft[k] = d[k]; });
-    if (item.draft) fromDraft.draftSource = d.source;
+    if (item.draft) { fromDraft.draftSource = d.source; fromDraft.stepsFrom = d.stepsFrom; }
     openEditor(null, {
       ...fromDraft,
       yt: item.yt, title: item.title, channel: item.channel, duration: item.duration || "",

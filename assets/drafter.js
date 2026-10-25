@@ -94,17 +94,72 @@
     return r ? { safety: r.safety, ppe: r.ppe } : { safety: t.safety, ppe: t.ppe };
   }
 
+
+  /* Standard procedures by topic — used for steps when the video has no chapters and Gemini isn't set up.
+     They describe the normal safe way to do the job; the admin checks them against the video before publishing. */
+  const TOPICS = [
+    { re: /lock ?out|tag ?out|\bloto\b/i, steps: ["Tell everyone affected that the equipment will be shut down", "Switch the equipment off using its normal controls", "Isolate every energy source: electrical, pressure, gravity, springs", "Fit your own lock and tag to each isolation point", "Release or block any stored energy", "Try to start it and prove dead before starting work"] },
+    { re: /harness|fall arrest|lanyard/i, steps: ["Inspect webbing, stitching, buckles, D-ring and label before use", "Hold the harness by the back D-ring and shake it so straps fall into place", "Put on the shoulder straps; the D-ring sits between your shoulder blades", "Connect and tighten the leg straps — a flat hand should just fit under", "Fasten the chest strap across the middle of your chest", "Clip the lanyard to a rated anchor point above your work"] },
+    { re: /step ?ladder/i, steps: ["Inspect feet, steps, spreaders and labels; tag out a damaged ladder", "Open the ladder fully and lock the spreaders", "Set it on firm, level ground close to the work", "Face the ladder and keep three points of contact", "Don't stand on the top two steps or over-reach — move the ladder", "Carry tools in a belt, not in your hands"] },
+    { re: /extension ladder|single ladder|\bladder/i, steps: ["Inspect rails, rungs, feet and locks before use", "Set it on firm ground at a 1-in-4 angle (1 m out for every 4 m up)", "Extend it at least 1 metre above the landing point", "Tie it off or have someone foot the ladder", "Face the ladder and keep three points of contact", "Keep your belt buckle between the rails — move the ladder rather than lean"] },
+    { re: /heat[\s-]?(stress|illness|stroke|related)|hot weather/i, steps: ["Drink water every 15–20 minutes, even if you are not thirsty", "Take regular breaks in shade or a cool area", "Plan heavy work for cooler hours and follow the midday break", "Know the signs: headache, dizziness, nausea, heavy or no sweating", "If someone is unwell, move them to shade, cool them and call 998", "Watch your colleagues — heat stroke can make people confused"] },
+    { re: /confined space/i, steps: ["Get a confined space entry permit before anyone enters", "Isolate pipes, power and moving parts connected to the space", "Ventilate, then test the air for oxygen, flammable and toxic gas", "Put a trained standby person at the entrance at all times", "Keep testing the air while people are inside", "Have the rescue plan and equipment ready — never enter to rescue without it"] },
+    { re: /extinguisher|pass method/i, steps: ["Raise the alarm and make sure you have a clear way out", "Choose the right extinguisher for the fire type", "Pull the pin", "Aim the nozzle at the base of the fire", "Squeeze the handle", "Sweep from side to side until the fire is out — then back away"] },
+    { cat: "Fire Systems", re: /alarm check valve|wet alarm valve/i, steps: ["Tell the building and the monitoring company before testing", "Check the water pressure gauges above and below the valve", "Open the inspector's test or alarm test valve", "Confirm the water motor gong rings and the panel shows the flow alarm", "Close the test valve and let the system settle back to normal pressure", "Reset the panel and record the results"] },
+    { cat: "Fire Systems", re: /sprinkler system|wet pipe|dry pipe|deluge|pre-?action/i, steps: ["Wet pipe systems hold water in the pipes and discharge as soon as a head opens", "Dry pipe systems hold air and are used where pipes could freeze", "Pre-action systems need a detector signal before water enters the pipes", "Deluge systems have open heads and discharge everywhere at once", "Know the control valve for your area and keep it open and secured", "Never paint, cover or hang things from sprinkler heads"] },
+    { re: /addressable|conventional/i, steps: ["Conventional systems group detectors into zones — the panel shows the zone", "Addressable systems give every device its own address — the panel shows the exact device", "Find the device location from the panel display before going to site", "Inform the monitoring company before testing or isolating any device", "Never leave devices or zones disabled after work", "Record faults and tests in the fire alarm log book"] },
+    { re: /fire alarm (control )?panel|fire panel|\bfacp\b/i, steps: ["Check the panel shows 'normal' with no faults or disablements", "Learn the indicators: fire, fault, disabled, power and silence", "Use the access key or code only if you are authorised", "Inform the monitoring company before any test", "Acknowledge, silence and reset only as the procedure says", "Record every event and fault in the log book"] },
+    { re: /smoke detector/i, steps: ["Optical detectors see smoke scattering a light beam", "Ionisation detectors react to tiny particles that change a small current", "Heat detectors are used where smoke detectors would false-alarm, like kitchens", "Inform the monitoring company before testing detectors", "Test with approved test smoke, not a flame", "Keep detectors clean and never cover them during work without a permit"] },
+    { re: /duct clean|nadca|air duct/i, steps: ["Isolate the air handling unit and fans before opening ducts", "Protect the area and set up negative air (HEPA vacuum) on the duct", "Open access panels and inspect; take 'before' photos", "Loosen dirt with brushes or air whips while the vacuum runs", "Clean grilles, diffusers and coils; close and seal access panels", "Take 'after' photos, restart the system and record the work"] },
+    { re: /tank (clean|disinfect)|water (storage )?tank|potable water/i, steps: ["Get the permit and inform the building; isolate and drain the tank", "Ventilate and test the air before entry — it is a confined space", "Remove sludge and scrub walls, floor and roof", "Rinse and drain the dirty water away", "Disinfect with chlorine at the specified strength and contact time", "Flush, refill, and take a water sample for testing"] },
+    { re: /drywall|plasterboard|gypsum/i, steps: ["Cut out the damaged area into a neat square or rectangle", "Fit backing or a patch piece and fix it in place", "Tape the joints with paper or mesh tape", "Apply 2–3 thin coats of joint compound, feathering the edges", "Sand smooth when dry and wipe off the dust", "Prime and paint to match"] },
+    { re: /waterproof/i, steps: ["Clean the surface and let it dry completely", "Fill cracks and gaps; seal around pipes and drains", "Apply primer if the product requires it", "Reinforce corners and joints with waterproofing tape or fabric", "Apply two full coats, running up the walls, and let each coat cure", "Flood test for 24–48 hours before tiling"] },
+    { re: /\bpaint/i, steps: ["Protect floors and furniture, and ventilate the room", "Clean, scrape, fill and sand the surface", "Apply primer to bare or patched areas", "Cut in edges and corners with a brush", "Roll the main areas in sections, keeping a wet edge", "Apply a second coat once the first is dry"] },
+    { re: /drip (irrigation|line|emitter)/i, steps: ["Turn off the water to the zone", "Find the leak, break or blocked emitter", "Cut out the damaged section of drip line", "Join it with a coupling, or replace or clean the emitter", "Flush the line, then turn the water back on", "Check every emitter is dripping evenly"] },
+    { re: /irrigation timer|controller/i, steps: ["Check the controller has power and the transformer is working", "Check the date, time, program and rain sensor settings", "Run each zone manually to find which ones fail", "Measure the solenoid resistance on faulty zones with a multimeter", "Check the wire connections and the common wire", "Fix or replace the faulty part and test again"] },
+    { cat: "Landscaping", re: /sprinkler|irrigation valve|low pressure/i, steps: ["Check the main valve and backflow are fully open", "Run one zone at a time to find where the pressure drops", "Look for leaks, broken heads and partly closed valves", "Clean or replace blocked filters and nozzles", "Check the valve diaphragm and solenoid", "Test the zone again and adjust the heads"] },
+    { re: /conduit/i, steps: ["Choose the right conduit type and size for the job", "Measure and mark the bend positions", "Set the conduit correctly in the bender", "Bend steadily to the required angle", "Check the angle and measurement, then deburr the cut ends", "Fix the conduit with saddles at the correct spacing"] },
+    { re: /multimeter|clamp meter|voltage test/i, steps: ["Check the meter, leads and fuse before use", "Select the correct function and range", "Test the meter on a known live source first", "Take the reading with your hands behind the probe guards", "Read and record the value", "Switch the meter off when finished"] },
+    { re: /condensate|drain line/i, steps: ["Switch off the AC unit", "Find the drain line and its access or trap", "Clear the blockage with a wet/dry vacuum or by flushing", "Flush the line with clean water", "Check the water drains freely from the pan", "Restart the unit and check for leaks"] },
+    { re: /coil clean|condenser coil|evaporator coil/i, steps: ["Switch off and isolate the unit", "Remove the panels and protect electrical parts", "Brush or vacuum loose dirt off the coil", "Apply coil cleaner and leave it for the stated time", "Rinse gently from the inside out", "Refit panels, restart and check operation"] }
+  ];
+  const TRADE_STEPS = {
+    "Electrical": ["Get permission and the right permit for the job", "Isolate the circuit and lock it off", "Prove dead with a tested voltage tester", "Carry out the work as shown in the video", "Check all connections are tight and covers fitted", "Restore power and test the installation"],
+    "HVAC": ["Isolate power to the unit", "Inspect the equipment and note any faults", "Carry out the work as shown in the video", "Check connections, fixings and drains", "Restore power and check the unit runs correctly", "Record readings and the work done"],
+    "Plumbing": ["Shut off the water supply and drain the line", "Protect the area from water", "Carry out the work as shown in the video", "Check joints and fittings are tight", "Turn the water back on and check for leaks", "Clean up and report the job complete"]
+  };
+  const GENERAL_STEPS = ["Read the job card and get the right tools and PPE", "Make the area safe and put up barriers or signs", "Carry out the work as shown in the video", "Check your work", "Clean up the area", "Report the job complete"];
+
+  function listSteps(desc) {
+    const out = [];
+    for (const raw of String(desc || "").split(/\n/)) {
+      const m = raw.match(/^\s*(?:\d{1,2}[.)]|step\s*\d{1,2}\s*[:.\-–]|[-•*▪✔✅])\s+(.{8,120})$/i);
+      if (m && !JUNK.test(m[1]) && !/\d:\d\d/.test(m[1])) out.push(cap(clean(m[1])));
+    }
+    return out.length >= 3 ? out.slice(0, 8) : [];
+  }
+  function stepsFor(title, desc, category) {
+    const ch = chapters(desc); if (ch.length) return { steps: ch, from: "chapters" };
+    const ls = listSteps(desc); if (ls.length) return { steps: ls, from: "description" };
+    const ok = x => !x.cat || !category || x.cat === category;
+    const tp = TOPICS.find(x => ok(x) && x.re.test(title)) || TOPICS.find(x => ok(x) && x.re.test(String(desc || "").slice(0, 300)));
+    if (tp) return { steps: tp.steps.slice(), from: "topic" };
+    return { steps: (TRADE_STEPS[category] || GENERAL_STEPS).slice(), from: "general" };
+  }
+
   /* Built-in draft (no internet needed). */
   function ruleDraft({ title, description, category, videos }) {
     const desc = /^Suggested starter video/i.test(description || "") ? "" : description;
     const text = title + " " + (desc || "").slice(0, 400);
     const s = safetyFor(text, category);
+    const st = stepsFor(title, desc, category);
     return {
       source: "rules",
       summary: summary(desc, title),
       safety: s.safety,
       ppe: s.ppe.slice(),
-      steps: chapters(desc),
+      steps: st.steps,
+      stepsFrom: st.from,
       level: level(title + " " + (desc || "").slice(0, 200)),
       subject: subject(title, category, videos)
     };
@@ -188,5 +243,5 @@ Use simple words. Do not invent steps that are not in the video.`;
     return out.sort((x, y) => y.score - x.score);
   }
 
-  root.ABDraft = { ruleDraft, aiDraft, chapters, summary, level, safetyFor, similarity, findDuplicates };
+  root.ABDraft = { stepsFor, ruleDraft, aiDraft, chapters, summary, level, safetyFor, similarity, findDuplicates };
 })(typeof globalThis !== "undefined" ? globalThis : this);
