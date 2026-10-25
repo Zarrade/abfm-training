@@ -2,6 +2,40 @@
   "updated": "2026-10-25",
   "videos": [
     {
+      "id": "hvac-912yUrU0Mw8",
+      "yt": "912yUrU0Mw8",
+      "title": "Stop Lost-Time Injuries: PPE, Van Checks & Driving",
+      "category": "HVAC",
+      "subject": "Fundamentals",
+      "level": "Beginner",
+      "channel": "HVAC School",
+      "duration": "",
+      "added": "2026-10-25",
+      "summary": "A speaker conducts a training session on stopping lost-time injuries, covering van checks, driving habits, and proper personal protective equipment.",
+      "safety": "Always walk around your vehicle and check tyres, brakes, and ladders before driving.",
+      "ppe": [
+        "Safety Glasses",
+        "Gloves",
+        "Protective Clothing"
+      ],
+      "steps": [
+        "Walk around your vehicle and check tyres and brakes regularly.",
+        "Inspect ladder storage and tie-downs on vans weekly.",
+        "Wear appropriate gloves to prevent hand and arm cuts from sheet metal.",
+        "Check pedestrian crossings and use the left-right-left rule before crossing."
+      ],
+      "gemini": {
+        "date": "2026-10-25",
+        "relevance": 9,
+        "quality": 8,
+        "recommend": "approve",
+        "reason": "Clear and relevant safety instruction for maintenance technicians.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      }
+    },
+    {
       "id": "lands-QvTpFOz1GTQ",
       "yt": "QvTpFOz1GTQ",
       "title": "5 Common Drip Emitter Issues and How to Troubleshoot",
