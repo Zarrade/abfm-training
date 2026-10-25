@@ -8752,6 +8752,17 @@
             "أحذية السلامة"
           ]
         }
+      },
+      "gemini": {
+        "date": "2026-10-25",
+        "model": "gemini-3.5-flash-lite",
+        "relevance": 9,
+        "quality": 8,
+        "recommend": "approve",
+        "reason": "Clear, step-by-step demonstration of motor testing relevant to electrical technicians.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
       }
     },
     {
