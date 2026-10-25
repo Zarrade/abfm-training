@@ -2,6 +2,31 @@
   "updated": "2026-10-25",
   "videos": [
     {
+      "id": "lands-QvTpFOz1GTQ",
+      "yt": "QvTpFOz1GTQ",
+      "title": "5 Common Drip Emitter Issues and How to Troubleshoot",
+      "category": "Landscaping",
+      "subject": "Irrigation Valve Troubleshooting",
+      "level": "Beginner",
+      "channel": "",
+      "duration": "",
+      "added": "2026-10-25",
+      "summary": "The video explains five common drip emitter problems and how to troubleshoot and fix them.",
+      "safety": "Turn off or depressurize the water supply before performing any repairs or modifications.",
+      "ppe": [
+        "Knee Pads",
+        "Safety Glasses",
+        "Work Gloves"
+      ],
+      "steps": [
+        "Calculate the total flow rate of all emitters on the zone.",
+        "Inspect tubing and lines for any leaks or damage.",
+        "Check water pressure and install a pressure regulator if needed.",
+        "Verify that emitters are fully seated in the tubing connection.",
+        "Use appropriate poly tubing and proper punch tools for outdoor installations."
+      ]
+    },
+    {
       "id": "lands-jCowCVTR6VE",
       "yt": "jCowCVTR6VE",
       "title": "Troubleshooting Irrigation Sprinkler Valves",
