@@ -249,7 +249,7 @@
               ${v.featured ? `<span class="badge-s b-feat">Pinned</span>` : ""}
               ${v.hidden ? `<span class="badge-s b-hidden">Hidden</span>` : ""}
               ${p ? `<span class="badge-s b-prob">${p.status === "notfound" ? "Not on YouTube" : "Can't play in app"}</span>` : ""}
-              ${v.tr && Object.keys(v.tr).length ? `<span class="badge-s b-ok">${Object.keys(v.tr).length} translation${Object.keys(v.tr).length > 1 ? "s" : ""}</span>` : ""}
+              ${v.tr && Object.keys(v.tr).length ? `<span class="badge-s b-ok">🌐 ${Object.keys(v.tr).length}/8</span>` : `<span class="badge-s b-hidden">Translating…</span>`}
             </div>
           </div>
           <div class="row-actions">
@@ -315,9 +315,9 @@
       <label class="check"><input type="checkbox" id="f-hidden" ${v.hidden ? "checked" : ""}> Hide from staff</label>
       <details class="box" style="margin-top:10px">
         <summary>Translations (optional)</summary>
-        <p class="help" style="margin:8px 0 12px">Staff see a translation button anyway. Add your own text here only if you want a checked translation for a language.</p>
+        <p class="help" style="margin:8px 0 12px">Every video is translated automatically about 2 minutes after you save. Correct any wording here and your version is kept. Clear all fields for a language to go back to automatic.</p>
         <div class="field"><label for="f-tr-lang">Language</label>
-          <select class="input" id="f-tr-lang">${TR_LANGS.map(([c, n]) => `<option value="${c}">${n}${ed.tr[c] ? " ✓" : ""}</option>`).join("")}</select></div>
+          <select class="input" id="f-tr-lang">${TR_LANGS.map(([c, n]) => `<option value="${c}">${n}${ed.tr[c] ? (ed.tr[c].auto ? " (automatic)" : " (checked by you)") : " (pending)"}</option>`).join("")}</select></div>
         <div id="tr-fields"></div>
       </details>`;
     renderTrFields();
@@ -367,9 +367,14 @@
       <div class="field"><label for="t-steps">Key steps (one per line, same order as English)</label><textarea class="textarea" id="t-steps" ${rtl}>${esc((x.steps || []).join("\n"))}</textarea></div>`;
   }
   function stashTr() {
+    const prev = ed.tr[ed.trLang] || {};
     const x = { title: $("#t-title").value.trim(), summary: $("#t-summary").value.trim(), safety: $("#t-safety").value.trim(), steps: $("#t-steps").value.split("\n").map(s => s.trim()).filter(Boolean) };
-    if (x.title || x.summary || x.safety || x.steps.length) { if (!x.steps.length) delete x.steps; ed.tr[ed.trLang] = x; }
-    else delete ed.tr[ed.trLang];
+    if (!(x.title || x.summary || x.safety || x.steps.length)) { delete ed.tr[ed.trLang]; return; }   // empty = let auto-translate refill it
+    const same = (prev.title || "") === x.title && (prev.summary || "") === x.summary && (prev.safety || "") === x.safety && JSON.stringify(prev.steps || []) === JSON.stringify(x.steps);
+    const next = Object.assign({}, prev, x);
+    if (!x.steps.length) delete next.steps;
+    if (!same) { delete next.auto; delete next.src; }   // you edited it: keep your version, never overwrite
+    ed.tr[ed.trLang] = next;
   }
   function guessCategory(text) {
     const t = " " + (text || "").toLowerCase() + " ";

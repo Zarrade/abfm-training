@@ -14,7 +14,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: find-videos
+  group: data-writer
   cancel-in-progress: false
 
 jobs:
@@ -32,6 +32,9 @@ jobs:
         run: node scripts/find-videos.mjs
         env:
           FORCE_HEALTH: ${{ inputs.health && '1' || '0' }}
+
+      - name: Translate anything new
+        run: node scripts/translate.mjs || true
 
       - name: Save results
         run: |

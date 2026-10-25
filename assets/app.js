@@ -17,7 +17,7 @@
     lang: store.get("ab_lang", null),
     saved: new Set(store.get("ab_saved", [])),
     tab: "library", cat: "ALL", level: "ALL", sort: "new", q: "", limit: PAGE,
-    listScroll: 0
+    listScroll: 0, showEn: false
   };
 
   /* ---------- helpers ---------- */
@@ -32,7 +32,7 @@
   const durSec = d => (d || "").split(":").reduce((a, n) => a * 60 + (+n || 0), 0);
   const daysSince = d => (Date.now() - new Date(d + "T00:00:00").getTime()) / 864e5;
   const isNew = v => v.added && daysSince(v.added) <= (state.settings.newDays || 7);
-  const tr = v => (v.tr && v.tr[state.lang]) || {};
+  const tr = v => (!state.showEn && v.tr && v.tr[state.lang]) || {};
   const titleOf = v => tr(v).title || v.title;
   const fmtDate = d => { try { return new Date(d + "T00:00:00").toLocaleDateString(state.lang === "en" ? "en-GB" : state.lang, { day: "numeric", month: "short", year: "numeric" }); } catch { return d; } };
   const link = v => location.href.split("#")[0] + "#/v/" + encodeURIComponent(v.id);
@@ -64,6 +64,7 @@
     $("#q").placeholder = t("search");
     $("#q").setAttribute("aria-label", t("search"));
     renderLangList();
+    if (state.videos.length) applySettings();
   }
   function renderLangList() {
     $("#lang-list").innerHTML = LANGS.map(l =>
@@ -110,10 +111,11 @@
       const last = parts.pop();
       $("#site-name").innerHTML = esc(parts.join(" ")) + (parts.length ? " " : "") + "<b>" + esc(last) + "</b>";
     }
-    if (s.tagline) $("#site-tag").textContent = s.tagline;
+    const st = (s.tr && s.tr[state.lang]) || {};
+    if (s.tagline) $("#site-tag").textContent = st.tagline || s.tagline;
     const a = $("#announce");
     a.hidden = !s.announcement;
-    a.textContent = s.announcement ? "📣  " + s.announcement : "";
+    a.textContent = s.announcement ? "📣  " + (st.announcement || s.announcement) : "";
     const n = state.videos.filter(isNew).length;
     const b = $("#new-badge"); b.hidden = !n; b.textContent = n > 99 ? "99+" : n;
   }
@@ -121,7 +123,7 @@
   /* ---------- filtering ---------- */
   function haystack(v) {
     const x = tr(v);
-    return [v.title, v.summary, v.subject, v.channel, v.category, catLabel(v.category), (v.steps || []).join(" "), (v.ppe || []).join(" "), x.title, x.summary].join(" ").toLowerCase();
+    return [v.title, v.summary, v.subject, v.channel, v.category, catLabel(v.category), (v.steps || []).join(" "), (v.ppe || []).join(" "), x.title, x.summary, (x.steps || []).join(" "), (x.ppe || []).join(" ")].join(" ").toLowerCase();
   }
   function baseSet() {
     let list = state.videos;
@@ -223,6 +225,9 @@
   function renderVideo(v) {
     const x = tr(v);
     const steps = (x.steps && x.steps.length === v.steps.length) ? x.steps : v.steps;
+    const ppe = (x.ppe && x.ppe.length === v.ppe.length) ? x.ppe : v.ppe;
+    const hasAnyTr = state.lang !== "en" && v.tr && v.tr[state.lang];
+    const langName = (LANGS.find(l => l.code === state.lang) || {}).name || "";
     const done = store.get("ab_steps_" + v.id, []);
     const on = state.saved.has(v.id);
     const related = state.videos.filter(o => o.id !== v.id && o.category === v.category)
@@ -248,11 +253,12 @@
         <button class="btn" id="v-share">${ICON.share}<span>${esc(t("share"))}</span></button>
         <a class="btn" href="https://www.youtube.com/watch?v=${encodeURIComponent(v.yt)}" target="_blank" rel="noopener">${ICON.yt}<span>${esc(t("watchOnYouTube"))}</span></a>
       </div>
-      ${state.lang !== "en" && !x.summary ? `<a class="btn btn-primary" style="width:100%;margin:-6px 0 14px" href="${translateUrl(v)}" target="_blank" rel="noopener">${ICON.translate}<span>${esc(t("translate"))}</span></a>` : ""}
+      ${hasAnyTr ? `<div class="tr-note"><span>🌐 ${state.showEn ? "English" : esc(t("autoNote"))}</span><button class="btn btn-sm" id="tr-toggle">${state.showEn ? esc(langName) : "English"}</button></div>` : ""}
+      ${state.lang !== "en" && !hasAnyTr ? `<a class="btn btn-primary" style="width:100%;margin:-6px 0 14px" href="${translateUrl(v)}" target="_blank" rel="noopener">${ICON.translate}<span>${esc(t("translate"))}</span></a>` : ""}
       ${v.safety || v.ppe.length ? `<section class="panel safety">
         <h2>${ICON.shield}${esc(t("safety"))}</h2>
         ${v.safety ? `<p>${esc(x.safety || v.safety)}</p>` : ""}
-        ${v.ppe.length ? `<div class="ppe" aria-label="${esc(t("ppe"))}">${v.ppe.map(p => `<span>${esc(p)}</span>`).join("")}</div>` : ""}
+        ${ppe.length ? `<div class="ppe" aria-label="${esc(t("ppe"))}">${ppe.map(p => `<span>${esc(p)}</span>`).join("")}</div>` : ""}
       </section>` : ""}
       ${steps.length ? `<section class="panel">
         <h2>${ICON.list}${esc(t("steps"))}</h2>
@@ -310,7 +316,7 @@
         <div class="g-body ${sl.safety ? "g-safety" : ""}">
           ${sl.safety ? `<div class="g-ico">${ICON.shield}</div>` : `<div class="g-num">${sl.n}</div>`}
           <p>${esc(sl.text)}</p>
-          ${sl.safety && v.ppe.length ? `<div class="ppe">${v.ppe.map(p => `<span>${esc(p)}</span>`).join("")}</div>` : ""}
+          ${sl.safety && ppe.length ? `<div class="ppe">${ppe.map(p => `<span>${esc(p)}</span>`).join("")}</div>` : ""}
         </div>
         <div class="g-bar"><i style="width:${((idx + 1) / slides.length) * 100}%"></i></div>
         <div class="g-ctl">
@@ -343,6 +349,8 @@
       if (b.dataset.mode === "guide") { idx = 0; drawSlide(); } else showPoster();
     });
     showPoster();
+    const tt = $("#tr-toggle");
+    if (tt) tt.onclick = () => { state.showEn = !state.showEn; renderVideo(v); };
     $("#back").onclick = () => { if (history.length > 1 && sessionStorage.getItem("ab_in_app")) history.back(); else location.hash = "#/"; };
     $("#v-save").onclick = () => {
       toggleSave(v.id);
@@ -422,7 +430,7 @@
       if (tb) { location.hash = tb.dataset.tab === "library" ? "#/" : "#/" + tb.dataset.tab; scrollTo(0, 0); return; }
       if (e.target.closest("#clear-all")) { state.cat = "ALL"; state.level = "ALL"; state.q = ""; $("#q").value = ""; $("#q-clear").hidden = true; renderList(); return; }
       const lg = e.target.closest("[data-lang]");
-      if (lg) { state.lang = lg.dataset.lang; store.set("ab_lang", state.lang); closeSheets(); applyLang(); route(); return; }
+      if (lg) { state.showEn = false; state.lang = lg.dataset.lang; store.set("ab_lang", state.lang); closeSheets(); applyLang(); route(); return; }
       if (e.target.closest("[data-close]") || e.target.classList.contains("sheet")) closeSheets();
     });
     document.addEventListener("keydown", e => { if (e.key === "Escape") closeSheets(); });

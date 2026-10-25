@@ -193,6 +193,7 @@ main { max-width: 1200px; margin: 0 auto; padding: 14px 16px calc(96px + env(saf
 .progress { height: 6px; background: var(--surface-2); border-radius: 999px; overflow: hidden; margin: 0 0 12px; }
 .progress i { display: block; height: 100%; background: var(--ok); width: 0; transition: width .2s; }
 
+.tr-note { display: flex; align-items: center; justify-content: space-between; gap: 10px; background: var(--surface-2); border: 1px solid var(--line); border-radius: 12px; padding: 6px 6px 6px 12px; margin: -6px 0 14px; font-size: 13px; color: var(--muted); font-weight: 600; }
 .mode-tabs { display: flex; gap: 6px; margin-bottom: 10px; }
 .mode-tabs button { flex: 1; display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; border-radius: 12px; border: 1px solid var(--line); background: var(--surface); font-weight: 700; color: var(--muted); }
 .mode-tabs button svg { width: 18px; height: 18px; }
