@@ -5,6 +5,14 @@
 // If English text changes, auto-translations for that video are refreshed.
 import { readFile, writeFile } from "node:fs/promises";
 import { createHash } from "node:crypto";
+import { createRequire } from "node:module";
+const require = createRequire(import.meta.url);
+require("../assets/drafter.js");
+const { aiTranslate } = globalThis.ABDraft;
+const GEMINI_KEY = process.env.GEMINI_API_KEY || "";
+const GEMINI_MODEL = process.env.GEMINI_MODEL || "";
+const LANG_NAMES = { hi: "Hindi", ur: "Urdu", ml: "Malayalam", bn: "Bengali", ta: "Tamil", ne: "Nepali", tl: "Filipino (Tagalog)", ar: "Arabic" };
+let googleDown = 0, usedGemini = 0, lastError = "";
 
 const DATA = new URL("../data/", import.meta.url);
 const LANGS = ["hi", "ur", "ml", "bn", "ta", "ne", "tl", "ar"];
@@ -37,13 +45,35 @@ async function gtx(text, tl) {
 }
 
 // Translate a list of single-line strings in one request; fall back to one request per line if lines get merged.
-async function translateLines(lines, tl) {
+async function googleLines(lines, tl) {
   const clean = lines.map(s => String(s || "").replace(/\s*\n\s*/g, " ").trim());
   const out = (await gtx(clean.join("\n"), tl)).split("\n").map(s => s.trim());
   if (out.length === clean.length) return out;
   const res = [];
   for (const line of clean) { res.push(line ? (await gtx(line, tl)).trim() : ""); await sleep(250); }
   return res;
+}
+
+// Google Translate first (free, fast). If it keeps failing — it sometimes blocks GitHub's servers — use Gemini instead.
+async function translateLines(lines, tl) {
+  if (googleDown < 3) {
+    try { const t = await googleLines(lines, tl); googleDown = 0; return t; }
+    catch (e) {
+      if (e.message === "limit") throw e;
+      googleDown++; lastError = "Google Translate: " + e.message;
+      if (googleDown === 3) console.log("Google Translate isn't responding (" + e.message + ")" + (GEMINI_KEY ? " — switching to Gemini." : " and no GEMINI_API_KEY is set."));
+      if (!GEMINI_KEY) throw e;
+    }
+  }
+  if (!GEMINI_KEY) throw new Error(lastError || "No translation service available");
+  if (Date.now() - START > TIME_BUDGET) throw new Error("limit");
+  const clean = lines.map(s => String(s || "").replace(/\s*\n\s*/g, " ").trim());
+  try {
+    const t = await aiTranslate({ lines: clean, langName: LANG_NAMES[tl] || tl, key: GEMINI_KEY, model: GEMINI_MODEL });
+    usedGemini++;
+    await sleep(4000);                // stay inside Gemini's free-tier rate limit
+    return t;
+  } catch (e) { lastError = "Gemini: " + e.message; throw e; }
 }
 
 const hashOf = v => createHash("sha1").update(JSON.stringify([v.title, v.summary, v.safety, v.steps || [], v.ppe || []])).digest("hex").slice(0, 12);
@@ -156,6 +186,8 @@ if (nt) await writeFile(new URL("toolbox.json", DATA), JSON.stringify(talks, nul
 if (np) await writeFile(new URL("paths.json", DATA), JSON.stringify(paths, null, 2) + "\n");
 if (nv) await writeFile(new URL("videos.json", DATA), JSON.stringify(videos, null, 2) + "\n");
 if (ns) await writeFile(new URL("settings.json", DATA), JSON.stringify(settings, null, 2) + "\n");
+if (lastError) console.log("Last error: " + lastError);
+console.log(`Gemini handled ${usedGemini} translations.`);
 console.log(`Translated ${nv} video/language pairs ${ns} settings languages and ${np} path and ${nt} toolbox-talk translations using ${requests} requests (${failures} failed).`);
 if (failures && !nv && !ns && !np && !nt) process.exitCode = 1;
 // Tell the workflow there is more to do, so it can start another run straight away.

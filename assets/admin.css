@@ -148,3 +148,9 @@ details.box summary { font-weight: 700; cursor: pointer; }
 .st-run small { color: var(--muted); }
 .st-when { text-align: end; font-size: 13px; }
 @media (prefers-color-scheme: dark) { .st-list li.st-warn { background: #3a2a12; color: #ffd59a; } }
+.st-list li { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.st-list li > span:first-child { flex: 1 1 300px; }
+.st-retry { flex: none; }
+.st-job { flex-basis: 100%; font-size: 13px; }
+.st-job:empty { display: none; }
+.st-job a { color: inherit; font-weight: 700; }

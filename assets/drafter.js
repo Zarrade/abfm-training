@@ -296,6 +296,17 @@ Use simple English, practical advice, and local context where useful (UAE emerge
     const j = jsonOf(r.text);
     return { icon: clean(j.icon).slice(0, 4), points: (j.points || []).map(clean).filter(Boolean).slice(0, 6), ask: clean(j.ask).slice(0, 200) };
   }
+  /* Translate a list of short lines into one language; returns the same number of lines. */
+  async function aiTranslate({ lines, langName, key, model }) {
+    const r = await gemini({ key, model, timeoutMs: 90000, parts: [{ text:
+      `Translate each item of this JSON array from English into ${langName}, for facility-maintenance technicians with basic schooling.
+Keep it short and plain. Keep technical terms, brand names, model numbers and units that workers normally say in English (e.g. AC, RCD, PPE, R410A, VFD) in English or in the common local form.
+Reply with JSON only: an array of exactly ${lines.length} strings, in the same order. Empty strings stay empty.
+${JSON.stringify(lines)}` }] });
+    const out = jsonOf(r.text);
+    if (!Array.isArray(out) || out.length !== lines.length) throw new Error("Gemini returned " + (Array.isArray(out) ? out.length : "no") + " lines instead of " + lines.length);
+    return out.map(x => clean(x));
+  }
   /* Quick check that a key works. */
   async function aiTest({ key, model }) {
     const r = await gemini({ key, model, json: false, timeoutMs: 30000, parts: [{ text: "Reply with the single word: ready" }] });
@@ -325,5 +336,5 @@ Use simple English, practical advice, and local context where useful (UAE emerge
     return out.sort((x, y) => y.score - x.score);
   }
 
-  root.ABDraft = { stepsFor, ruleDraft, aiDraft, aiFindVideos, aiTalk, aiTest, MODELS, chapters, summary, level, safetyFor, similarity, findDuplicates };
+  root.ABDraft = { stepsFor, ruleDraft, aiTranslate, aiDraft, aiFindVideos, aiTalk, aiTest, MODELS, chapters, summary, level, safetyFor, similarity, findDuplicates };
 })(typeof globalThis !== "undefined" ? globalThis : this);

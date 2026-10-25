@@ -1024,6 +1024,32 @@
     $$(".find-msg").forEach(m => { m.hidden = !html; m.innerHTML = html; });
     $$("[data-find]").forEach(b => { b.disabled = finder.running; b.textContent = finder.running ? "⏳ Searching…" : "🔎 Search for new videos now"; });
   }
+  /* Start a GitHub job and follow it. Used by Retry on the Status page. */
+  async function runJob(file, show) {
+    const wf = `/repos/${cfg.owner}/${cfg.repo}/actions/workflows/${file}`;
+    const before = new Date(Date.now() - 5000).toISOString();
+    show("Starting…", true);
+    let r; try { r = await gh(wf + "/dispatches", { method: "POST", body: { ref: cfg.branch } }); } catch { r = { status: 0 }; }
+    if (r.status !== 204) { show(r.status === 403 || r.status === 404 ? "⚠ Couldn't start it — your GitHub token needs <b>Actions: Read and write</b>." : `⚠ Couldn't start it (${r.status || "no connection"}).`, false); return false; }
+    const t0 = Date.now(); let runId = null;
+    while (Date.now() - t0 < 40 * 60000) {
+      await new Promise(res => setTimeout(res, runId ? 10000 : 4000));
+      try {
+        if (!runId) { const j = await (await gh(wf + "/runs?event=workflow_dispatch&per_page=5")).json(); const run = (j.workflow_runs || []).find(x => x.created_at >= before); if (run) runId = run.id; else continue; }
+        const run = await (await gh(`/repos/${cfg.owner}/${cfg.repo}/actions/runs/${runId}`)).json();
+        const mins = Math.max(1, Math.round((Date.now() - t0) / 60000));
+        if (run.status !== "completed") { show(`⏳ Running… (${mins} min) <a href="${esc(run.html_url)}" target="_blank" rel="noopener">details</a>`); continue; }
+        if (run.conclusion !== "success") { show(`❌ It stopped with a problem. <a href="${esc(run.html_url)}" target="_blank" rel="noopener">See why</a>`, false); return false; }
+        await new Promise(res => setTimeout(res, 3000));
+        const keys = ["videos", "pending", "settings", "paths", "toolbox"];
+        const res = await Promise.all(keys.map(k => readFile(k)));
+        keys.forEach((k, i) => data[k] = res[i]);
+        show("✅ Done.", false);
+        return true;
+      } catch { /* keep waiting */ }
+    }
+    show("Still running on GitHub — check again in a few minutes.", false); return false;
+  }
   async function runFinder() {
     if (finder.running) return;
     const wf = `/repos/${cfg.owner}/${cfg.repo}/actions/workflows/find-videos.yml`;
@@ -1183,8 +1209,8 @@
     const gemErr = q.find(i => i.aiError && !(i.draft && i.draft.source === "ai"));
     const ok = (good, text) => `<li class="${good ? "st-ok" : "st-warn"}">${good ? "✅" : "⚠️"} ${text}</li>`;
     let html = `<ul class="st-list">
-      ${ok(full === vids.length, `Translations: <b>${full} of ${vids.length}</b> videos in all 8 languages${full === vids.length ? "" : " — new or edited videos are translated within a few minutes after saving"}`)}
-      ${ok(!q.length || gem > 0, `Gemini review: <b>${gem} of ${q.length}</b> queued videos checked${gemErr ? ` — last problem: <i>${esc(gemErr.aiError)}</i>` : ""}`)}
+      ${ok(full === vids.length, `<span>Translations: <b>${full} of ${vids.length}</b> videos in all 8 languages${full === vids.length ? "" : " — new or edited videos are translated within a few minutes after saving"}</span>${full === vids.length ? "" : `<button type="button" class="btn btn-sm st-retry" data-retry="translate.yml">↻ Retry</button>`}<span class="st-job" id="job-translate.yml"></span>`)}
+      ${ok(!q.length || gem === q.length, `<span>Gemini review: <b>${gem} of ${q.length}</b> queued videos checked${gemErr ? ` — last problem: <i>${esc(gemErr.aiError)}</i>` : ""}</span>${q.length && gem < q.length ? `<button type="button" class="btn btn-sm st-retry" data-retry="find-videos.yml">↻ Retry</button>` : ""}<span class="st-job" id="job-find-videos.yml"></span>`)}
       ${ok(!Object.values(data.pending.json.channelStatus || {}).some(c => c && c.error), "Channels: " + (Object.values(data.pending.json.channelStatus || {}).filter(c => c && c.error).length ? "some couldn't be checked — see Channels tab" : "all checked OK"))}
       ${ok(!!data.settings.json.requestUrl, data.settings.json.requestUrl ? "Request inbox & Ask AI: connected" : "Request inbox: not set up yet")}
     </ul>
@@ -1203,6 +1229,13 @@
         <button type="button" class="btn btn-sm" id="st-translate">🌐 Translate now</button> <span class="help" id="st-msg"></span>`;
     } catch (e) { html += `<p class="help">${esc(e.message)}</p>`; }
     box.innerHTML = html;
+    $$("[data-retry]", box).forEach(b => b.onclick = async () => {
+      const file = b.dataset.retry, out = $("#job-" + CSS.escape(file));
+      b.disabled = true;
+      const done = await runJob(file, (msg) => { if (out) out.innerHTML = msg; });
+      b.disabled = false;
+      if (done) { render(); }
+    });
     const tb = $("#st-translate");
     if (tb) tb.onclick = async () => {
       const r = await gh(`/repos/${cfg.owner}/${cfg.repo}/actions/workflows/translate.yml/dispatches`, { method: "POST", body: { ref: cfg.branch } });

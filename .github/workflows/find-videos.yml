@@ -22,11 +22,11 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 40
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
-          node-version: 20
+          node-version: 22
 
       - name: Check trusted channels
         run: node scripts/find-videos.mjs
@@ -41,6 +41,9 @@ jobs:
 
       - name: Translate anything new
         run: node scripts/translate.mjs || true
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
 
       - name: Save results
         run: |
