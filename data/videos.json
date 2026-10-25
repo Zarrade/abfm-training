@@ -8299,24 +8299,23 @@
       "title": "Motor Insulation Resistance Testing",
       "category": "Electrical",
       "subject": "Testing & Inspection",
-      "level": "Advanced",
+      "level": "Beginner",
       "channel": "The Electrical Guy",
       "duration": "9:35",
       "added": "2026-10-20",
-      "summary": "Using an insulation resistance tester (megger) to check motor windings to earth and between phases.",
-      "safety": "Insulation testers produce high DC voltage. Isolate the motor, disconnect drives and discharge windings after testing.",
+      "summary": "Demonstrates how to test motor winding continuity and insulation resistance using an insulation tester.",
+      "safety": "Ensure the motor is completely disconnected and de-energized before performing any electrical testing.",
       "ppe": [
-        "1000V Insulated Gloves",
         "Safety Glasses",
-        "Arc-Rated Clothing",
-        "Steel Toe Boots"
+        "Insulated Gloves"
       ],
       "steps": [
-        "Isolate and lock out the motor; disconnect VFDs or electronics.",
-        "Select the test voltage (typically 500V or 1000V).",
-        "Test each winding to earth and phase to phase.",
-        "Record readings and compare with minimum acceptable values.",
-        "Discharge windings and reconnect correctly."
+        "Select continuity mode on the insulation tester.",
+        "Connect probes to motor winding terminals to measure resistance.",
+        "Record resistance values for all three windings.",
+        "Set tester voltage to 500V for IR testing.",
+        "Connect probes across windings to measure insulation resistance.",
+        "Connect probes between windings and motor body to test for earth faults."
       ],
       "tr": {
         "hi": {
