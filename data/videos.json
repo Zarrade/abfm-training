@@ -2,6 +2,41 @@
   "updated": "2026-10-25",
   "videos": [
     {
+      "id": "elect-IElUDCQfTgg",
+      "yt": "IElUDCQfTgg",
+      "title": "How to Test a Ring Final Circuit",
+      "category": "Electrical",
+      "subject": "Testing & Inspection",
+      "level": "Intermediate",
+      "channel": "GSH Electrical",
+      "duration": "",
+      "added": "2026-10-25",
+      "summary": "This video demonstrates how to test ring final circuits, covering continuity and polarity checks using a Megger tester.",
+      "safety": "Ensure the circuit is isolated and locked off before disconnecting or connecting test leads.",
+      "ppe": [
+        "Insulated Gloves",
+        "Safety Glasses",
+        "Safety Footwear"
+      ],
+      "steps": [
+        "Confirm the ring final circuit continuity across line, neutral, and cpc.",
+        "Interconnect opposite conductors at the distribution board.",
+        "Measure resistance across connector blocks for r1 plus rn.",
+        "Plug in socket adapter to test socket outlets.",
+        "Verify polarity and record the highest resistance values."
+      ],
+      "gemini": {
+        "date": "2026-10-25",
+        "relevance": 9,
+        "quality": 8,
+        "recommend": "approve",
+        "reason": "Clear step-by-step demonstration of ring final circuit testing suitable for electrical technicians.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      }
+    },
+    {
       "id": "hvac-912yUrU0Mw8",
       "yt": "912yUrU0Mw8",
       "title": "Stop Lost-Time Injuries: PPE, Van Checks & Driving",
