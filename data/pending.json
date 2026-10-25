@@ -1,6 +1,75 @@
 {
-  "lastRun": null,
-  "channelStatus": {},
-  "queue": [],
+  "lastRun": "2026-10-25T09:29:09.003Z",
+  "channelStatus": {
+    "https://www.youtube.com/@EngineeringMindset": {
+      "id": "UCk0fGHsCEzGig-rSzkfCjMw",
+      "checked": "2026-10-25T09:28:58.969Z",
+      "lastFound": 1
+    },
+    "https://www.youtube.com/@HVACSchool": {
+      "error": "Channel page not found (404). Check the link.",
+      "checked": "2026-10-25T09:28:59.744Z"
+    },
+    "https://www.youtube.com/@ACServiceTech": {
+      "id": "UCYohLjTaUZLF3-JjttxG_CA",
+      "checked": "2026-10-25T09:29:00.744Z",
+      "lastFound": 0
+    },
+    "https://www.youtube.com/@TheElectricalGuy": {
+      "id": "UCdKPm5KM99O75NtArFkMDDA",
+      "checked": "2026-10-25T09:29:01.827Z",
+      "lastFound": 0
+    },
+    "https://www.youtube.com/@GSHElectrical": {
+      "id": "UCgtbE9w_d-u2AvPp3WBlPfQ",
+      "checked": "2026-10-25T09:29:05.573Z",
+      "lastFound": 2
+    },
+    "https://www.youtube.com/@jwflame": {
+      "id": "UC2uFFhnMKyF82UY2TbXRaNg",
+      "checked": "2026-10-25T09:29:06.817Z",
+      "lastFound": 0
+    },
+    "https://www.youtube.com/@RogerWakefield": {
+      "id": "UCGIMKh92vaL0_Yc0u4GYhHA",
+      "checked": "2026-10-25T09:29:08.298Z",
+      "lastFound": 0
+    }
+  },
+  "queue": [
+    {
+      "yt": "pOfXina3uUQ",
+      "title": "Electrical Metal Conduit - Types and Sizes",
+      "channel": "GSH Electrical",
+      "channelUrl": "https://www.youtube.com/@GSHElectrical",
+      "published": "2026-10-18T09:00:24+00:00",
+      "duration": "",
+      "suggestedCategory": "Electrical",
+      "description": "In this video we look at the different type of steel conduit, finishes and the 4 common sizes they come in. This information is essential when training to become an electrician as part of your apprenticeship. \n\nSteel conduit comes in either a 3.75 metre or 3 metre length and sizes of 16 mm, 20 mm, 25 mm and 32 mm. \n\n== 🕐 Time Stamps - Cut to the action 🕕 == \n\n00:00 - Steel conduit types, finishes and sizes  \n00:24 - What metal conduit is used for\n01:05 - Different types of electrical metal conduit\n02:00 - Heavy-gauge and light-gauge steel conduit\n02:55 - Common metric conduit sizes\n03:45 - 1",
+      "found": "2026-10-25T09:29:04.488Z"
+    },
+    {
+      "yt": "nhcaeubedhs",
+      "title": "Bend Steel Conduit Like a Professional Electrician",
+      "channel": "GSH Electrical",
+      "channelUrl": "https://www.youtube.com/@GSHElectrical",
+      "published": "2026-10-11T09:00:34+00:00",
+      "duration": "",
+      "suggestedCategory": "Electrical",
+      "description": "Step by step guide on how to bend steel (metal) conduit to 90 degrees full demonstration. \n\nStudents training aid for bending 20 mm Steel (metal) Conduit to produce a 90 degree bend to the correct measurement. Includes a full demonstration on how to produce a bend using set square and a conduit bending machine so the end of the conduit to the back of the bend is at the correct measurement. \n\nHow to bend metal conduit to the correct length and to 90 degrees and how to check your bend it at 90 degrees.  \n\nElectrical UK Wiring \n\n🔵 Steel Conduit Life Hack How to Make Threading & Bending of Steel ",
+      "found": "2026-10-25T09:29:05.573Z"
+    },
+    {
+      "yt": "je0BsLY5nZw",
+      "title": "How a CPU Turns 1s and 0s Into Everything You See",
+      "channel": "The Engineering Mindset",
+      "channelUrl": "https://www.youtube.com/@EngineeringMindset",
+      "published": "2026-10-05T15:00:22+00:00",
+      "duration": "",
+      "suggestedCategory": "",
+      "description": "How do CPUs actually work? Design PCB's with Altium:  http://altium.com/yt/engineeringmindset\nHow does a CPU use billions of microscopic transistors to perform calculations and run software? In this video, we work from individual MOSFETs through logic gates, binary arithmetic and full adders to the ALU and CPU core.\nSee how processors fetch and execute instructions, how registers and L1, L2 and L3 cache work, how data moves between the CPU, RAM and storage, and why modern CPUs use multiple cores.\n\nWe also compare CPUs and GPUs, explain why GPUs contain billions of transistors, and show why the",
+      "found": "2026-10-25T09:28:58.969Z"
+    }
+  ],
   "rejected": []
 }
