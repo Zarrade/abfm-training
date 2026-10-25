@@ -158,3 +158,11 @@ Reply with JSON only: {"answer": string, "videos": [up to 3 ids from the library
   }
   return { ok: false, error: "error", detail: last };
 }
+
+/* Run this once from the editor (choose "authorize" at the top, then ▶ Run) to give the script
+   permission to contact Gemini. Google shows an "Authorization required" window — allow it. */
+function authorize() {
+  UrlFetchApp.fetch("https://generativelanguage.googleapis.com/", { muteHttpExceptions: true });
+  SpreadsheetApp.getActiveSpreadsheet();
+  Logger.log("Done — the script can now reach Gemini.");
+}
