@@ -87,3 +87,14 @@ details.box summary { font-weight: 700; cursor: pointer; }
 .dup-note.soft { background: var(--surface-2); color: var(--muted); border-color: var(--line); }
 .b-dup { background: #fff4e5; color: #7a4100; max-width: 340px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 @media (prefers-color-scheme: dark) { .dup-note, .b-dup { background: #3a2a12; color: #ffd59a; border-color: #6b4a14; } }
+.ch-edit { align-items: end; border-color: var(--brand); box-shadow: 0 0 0 3px var(--brand-soft); }
+.ch-edit-fields { display: grid; grid-template-columns: 1fr 1.6fr 1fr; gap: 10px; align-items: end; }
+.ch-edit-fields .field { margin: 0; }
+.ch-edit-fields .check { grid-column: 1 / -1; margin: 0; }
+@media (max-width: 760px) { .ch-edit { grid-template-columns: 1fr; } .ch-edit-fields { grid-template-columns: 1fr; } }
+.adm .top-in { gap: 8px; }
+.adm .brand { min-width: 0; flex: 1 1 auto; }
+.adm .brand > span { min-width: 0; overflow: hidden; }
+.adm .brand-name, .adm .brand-sub { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: inline-block; max-width: 100%; }
+.adm .top-actions { flex: none; display: flex; gap: 4px; }
+@media (max-width: 420px) { .adm .top-actions .btn-sm { padding: 0 8px; } }

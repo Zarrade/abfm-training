@@ -823,6 +823,7 @@
   }
 
   /* ---------- Channels ---------- */
+  let chEdit = null;
   function renderChannels() {
     const c = data.channels.json, st = data.pending.json.channelStatus || {};
     $("#app").innerHTML = `
@@ -834,6 +835,18 @@
       </div>
       <div class="rows" style="margin-bottom:16px">${(c.channels || []).map((ch, i) => {
         const s = st[ch.url] || {};
+        if (chEdit === ch.url) return `<form class="ch-row ch-edit" id="ch-edit-form">
+          <div class="ch-edit-fields">
+            <div class="field"><label for="ce-name">Name</label><input class="input" id="ce-name" required value="${esc(ch.name || "")}"></div>
+            <div class="field"><label for="ce-url">Channel link</label><input class="input" id="ce-url" required autocapitalize="off" spellcheck="false" value="${esc(ch.url)}"></div>
+            <div class="field"><label for="ce-cat">Send videos to</label><select class="input" id="ce-cat"><option value="">Pick from title</option>${cats().map(x => `<option ${x === ch.category ? "selected" : ""}>${esc(x)}</option>`).join("")}</select></div>
+            <label class="check"><input type="checkbox" id="ce-active" ${ch.active === false ? "" : "checked"}> Active (checked every day)</label>
+          </div>
+          <div class="row-actions">
+            <button type="button" class="btn btn-sm" id="ce-cancel">Cancel</button>
+            <button class="btn btn-sm btn-primary">Save</button>
+          </div>
+        </form>`;
         return `<div class="ch-row">
           <div>
             <b>${esc(ch.name || ch.url)}</b> ${ch.active === false ? `<span class="badge-s b-hidden">Paused</span>` : ""}
@@ -842,6 +855,7 @@
             ${s.error ? `<div class="small" style="color:var(--danger)">${esc(s.error)}</div>` : ""}
           </div>
           <div class="row-actions">
+            <button class="btn btn-sm" data-ch-edit="${esc(ch.url)}">Edit</button>
             <button class="btn btn-sm" data-ch-toggle="${i}">${ch.active === false ? "Resume" : "Pause"}</button>
             <button class="btn btn-sm btn-danger" data-ch-del="${i}">Remove</button>
           </div>
@@ -881,6 +895,28 @@
       toast("Saved");
     };
     $("#run-now").onclick = runFinder;
+    $$("[data-ch-edit]").forEach(b => b.onclick = () => { chEdit = b.dataset.chEdit; renderChannels(); const f = $("#ce-name"); if (f) f.focus(); });
+    const ef = $("#ch-edit-form");
+    if (ef) {
+      $("#ce-cancel").onclick = () => { chEdit = null; renderChannels(); };
+      ef.onsubmit = async e => {
+        e.preventDefault();
+        const oldUrl = chEdit;
+        const url = $("#ce-url").value.trim().replace(/\/(videos|featured|shorts|streams)\/?$/, "").replace(/\?.*$/, "");
+        if (!/youtube\.com\/(@|channel\/|c\/|user\/)/.test(url)) return alert("Use a channel link like https://www.youtube.com/@ChannelName");
+        if (url !== oldUrl && (c.channels || []).some(x => x.url === url)) return alert("That channel is already in the list.");
+        const name = $("#ce-name").value.trim(), category = $("#ce-cat").value, active = $("#ce-active").checked;
+        if (!name) return alert("Add a name.");
+        await update("channels", d => {
+          const ch = (d.channels || []).find(x => x.url === oldUrl);
+          if (ch) Object.assign(ch, { name, url, category, active });
+          return d;
+        }, `Edit channel: ${name}`);
+        chEdit = null;
+        toast(url !== oldUrl ? "Saved. The new link will be checked on the next run." : "Channel saved.");
+        render();
+      };
+    }
   }
   async function runFinder() {
     const msg = $("#run-msg");
