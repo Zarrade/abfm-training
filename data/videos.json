@@ -918,6 +918,17 @@
             "قفازات العمل"
           ]
         }
+      },
+      "gemini": {
+        "date": "2026-10-25",
+        "model": "gemini-3.5-flash-lite",
+        "relevance": 9,
+        "quality": 8,
+        "recommend": "approve",
+        "reason": "Clear, educational overview of the refrigeration cycle well-suited for beginner HVAC technicians.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
       }
     },
     {
@@ -1079,6 +1090,17 @@
             "قفازات العمل"
           ]
         }
+      },
+      "gemini": {
+        "date": "2026-10-25",
+        "model": "gemini-3.5-flash-lite",
+        "relevance": 10,
+        "quality": 10,
+        "recommend": "approve",
+        "reason": "Clear 3D animations provide an excellent visual foundation of the refrigeration cycle for HVAC technicians.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
       }
     },
     {
@@ -1258,6 +1280,17 @@
             "أحذية اصبع القدم الصلب"
           ]
         }
+      },
+      "gemini": {
+        "date": "2026-10-25",
+        "model": "gemini-3.5-flash-lite",
+        "relevance": 9,
+        "quality": 8,
+        "recommend": "approve",
+        "reason": "Clear, practical guide on clearing a clogged AC condensate drain line suitable for technician training.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
       }
     },
     {
@@ -1437,6 +1470,17 @@
             "قناع الغبار"
           ]
         }
+      },
+      "gemini": {
+        "date": "2026-10-25",
+        "model": "gemini-3.5-flash-lite",
+        "relevance": 10,
+        "quality": 9,
+        "recommend": "approve",
+        "reason": "Clear explanation of fan coil units, great for training technicians.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
       }
     },
     {

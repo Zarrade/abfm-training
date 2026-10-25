@@ -1,74 +1,74 @@
 {
-  "lastRun": "2026-10-25T15:36:15.301Z",
+  "lastRun": "2026-10-25T19:26:39.851Z",
   "channelStatus": {
     "https://www.youtube.com/@EngineeringMindset": {
       "id": "UCk0fGHsCEzGig-rSzkfCjMw",
-      "checked": "2026-10-25T15:36:02.138Z",
+      "checked": "2026-10-25T19:26:27.209Z",
       "lastFound": 0
     },
     "https://www.youtube.com/@ACServiceTech": {
       "id": "UCYohLjTaUZLF3-JjttxG_CA",
-      "checked": "2026-10-25T15:36:03.867Z",
+      "checked": "2026-10-25T19:26:28.864Z",
       "lastFound": 0
     },
     "https://www.youtube.com/@TheElectricalGuy": {
       "id": "UCdKPm5KM99O75NtArFkMDDA",
-      "checked": "2026-10-25T15:36:04.726Z",
+      "checked": "2026-10-25T19:26:29.697Z",
       "lastFound": 0
     },
     "https://www.youtube.com/@GSHElectrical": {
       "id": "UCgtbE9w_d-u2AvPp3WBlPfQ",
-      "checked": "2026-10-25T15:36:05.580Z",
+      "checked": "2026-10-25T19:26:30.513Z",
       "lastFound": 0
     },
     "https://www.youtube.com/@jwflame": {
       "id": "UC2uFFhnMKyF82UY2TbXRaNg",
-      "checked": "2026-10-25T15:36:06.481Z",
+      "checked": "2026-10-25T19:26:31.306Z",
       "lastFound": 0
     },
     "https://www.youtube.com/@RogerWakefield": {
       "id": "UCGIMKh92vaL0_Yc0u4GYhHA",
-      "checked": "2026-10-25T15:36:07.319Z",
+      "checked": "2026-10-25T19:26:32.120Z",
       "lastFound": 0
     },
     "https://www.youtube.com/c/HVACSchool": {
       "id": "UCdLlUhD9LUGm0-NTYDASPFA",
-      "checked": "2026-10-25T15:36:03.050Z",
+      "checked": "2026-10-25T19:26:28.027Z",
       "lastFound": 0
     },
     "https://www.youtube.com/channel/UCIoD-SEdUWMA74tWXRMyCZQ": {
       "id": "UCIoD-SEdUWMA74tWXRMyCZQ",
-      "checked": "2026-10-25T15:36:08.170Z",
+      "checked": "2026-10-25T19:26:32.929Z",
       "lastFound": 0
     },
     "https://www.youtube.com/c/Ductdudes": {
       "id": "UCGGX5M9ISk9Zwi6pfa6gk3w",
-      "checked": "2026-10-25T15:36:09.070Z",
+      "checked": "2026-10-25T19:26:33.804Z",
       "lastFound": 0
     },
     "https://www.youtube.com/channel/UCbZdXox6mKHdcT2QdVT-goQ": {
       "id": "UCbZdXox6mKHdcT2QdVT-goQ",
-      "checked": "2026-10-25T15:36:09.778Z",
+      "checked": "2026-10-25T19:26:34.619Z",
       "lastFound": 0
     },
     "https://www.youtube.com/channel/UCWpu9UZ6aiRTaMuuV8-C0pQ": {
       "id": "UCWpu9UZ6aiRTaMuuV8-C0pQ",
-      "checked": "2026-10-25T15:36:12.049Z",
+      "checked": "2026-10-25T19:26:36.649Z",
       "lastFound": 0
     },
     "https://www.youtube.com/channel/UCnrhmEmvA_bIRYkBVPqJ4zg": {
       "id": "UCnrhmEmvA_bIRYkBVPqJ4zg",
-      "checked": "2026-10-25T15:36:12.896Z",
+      "checked": "2026-10-25T19:26:37.459Z",
       "lastFound": 0
     },
     "https://www.youtube.com/channel/UCR1ksygazAOr59yLZ4Mp5tA": {
       "id": "UCR1ksygazAOr59yLZ4Mp5tA",
-      "checked": "2026-10-25T15:36:13.749Z",
+      "checked": "2026-10-25T19:26:38.289Z",
       "lastFound": 0
     },
     "https://www.youtube.com/channel/UCXOzd-KAiI6fGx5wfrnsHTA": {
       "id": "UCXOzd-KAiI6fGx5wfrnsHTA",
-      "checked": "2026-10-25T15:36:14.580Z",
+      "checked": "2026-10-25T19:26:39.140Z",
       "lastFound": 0
     }
   },
@@ -1610,28 +1610,35 @@
       "found": "2026-10-25T10:06:40Z",
       "starter": true,
       "draft": {
-        "source": "rules",
-        "summary": "",
-        "safety": "Inform the building and the alarm monitoring company before testing, and never leave a system disabled.",
+        "source": "ai",
+        "summary": "This video demonstrates how to operate a portable fire extinguisher using the four-step PASS technique to put out a grill fire.",
+        "safety": "Always keep a clear exit path behind you and maintain a safe distance from the fire.",
         "ppe": [
           "Safety Glasses",
-          "Work Gloves",
-          "Safety Shoes"
+          "Heat-Resistant Gloves",
+          "Protective Apron"
         ],
         "steps": [
-          "Raise the alarm and make sure you have a clear way out",
-          "Choose the right extinguisher for the fire type",
-          "Pull the pin",
-          "Aim the nozzle at the base of the fire",
-          "Squeeze the handle",
-          "Sweep from side to side until the fire is out — then back away"
+          "Pull the pin at the top of the extinguisher.",
+          "Aim the nozzle at the base of the fire.",
+          "Squeeze the handle to discharge the extinguishing agent.",
+          "Sweep the nozzle from side to side across the fire base."
         ],
-        "stepsFrom": "topic",
+        "stepsFrom": "ai",
         "level": "Beginner",
-        "subject": ""
-      },
-      "aiTries": 1,
-      "aiError": "This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Int"
+        "subject": "Fire Extinguisher PASS Technique",
+        "category": "Fire Systems",
+        "review": {
+          "relevance": 10,
+          "quality": 10,
+          "recommend": "approve",
+          "reason": "Clear visual presentation and concise voiceover teaching essential fire safety protocol.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.6-flash"
+      }
     },
     {
       "yt": "0LtB1AAN32k",
@@ -1685,28 +1692,36 @@
       "found": "2026-10-25T10:06:40Z",
       "starter": true,
       "draft": {
-        "source": "rules",
-        "summary": "",
-        "safety": "Inform the building and the alarm monitoring company before testing, and never leave a system disabled.",
+        "source": "ai",
+        "summary": "The video explains the four main fire sprinkler systems: wet pipe, dry pipe, pre-action, and deluge, helping architects and designers understand how they work and affect building design.",
+        "safety": "Ensure system pressure is relieved and water supplies are isolated before performing any maintenance or inspection work.",
         "ppe": [
           "Safety Glasses",
-          "Work Gloves",
-          "Safety Shoes"
+          "Hard Hat",
+          "Safety Boots"
         ],
         "steps": [
-          "Wet pipe systems hold water in the pipes and discharge as soon as a head opens",
-          "Dry pipe systems hold air and are used where pipes could freeze",
-          "Pre-action systems need a detector signal before water enters the pipes",
-          "Deluge systems have open heads and discharge everywhere at once",
-          "Know the control valve for your area and keep it open and secured",
-          "Never paint, cover or hang things from sprinkler heads"
+          "Start with wet pipe as the default system for heated, occupied buildings.",
+          "Use dry pipe systems for unheated spaces where pipes might freeze.",
+          "Select pre-action systems for sensitive contents requiring two-step activation.",
+          "Apply deluge systems for high-hazard areas requiring total simultaneous flood response.",
+          "Coordinate riser locations and pipe routing with structural and ceiling plans early in design."
         ],
-        "stepsFrom": "topic",
-        "level": "Intermediate",
-        "subject": ""
-      },
-      "aiTries": 1,
-      "aiError": "Expected double-quoted property name in JSON at position 140 (line 3 column 1)"
+        "stepsFrom": "ai",
+        "level": "Beginner",
+        "subject": "Fire Sprinkler Systems",
+        "category": "Fire Systems",
+        "review": {
+          "relevance": 9,
+          "quality": 9,
+          "recommend": "approve",
+          "reason": "Clear explanation of fire sprinkler system types and design considerations suitable for maintenance and technical training.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.5-flash-lite"
+      }
     },
     {
       "yt": "sfHpB88lvs8",
@@ -2004,25 +2019,34 @@
       "found": "2026-10-25T10:06:40Z",
       "starter": true,
       "draft": {
-        "source": "rules",
-        "summary": "",
-        "safety": "Isolate the fans before opening ducts, and watch for sharp edges and grease fire risk.",
+        "source": "ai",
+        "summary": "This video explains the standard process for cleaning HVAC duct systems, including loosening and collecting contaminants.",
+        "safety": "Always wear respiratory protection and eye protection when cleaning dusty duct systems to avoid inhaling harmful contaminants.",
         "ppe": [
-          "Cut-Resistant Gloves",
+          "Safety Glasses",
           "Dust Mask",
-          "Safety Goggles"
+          "Gloves"
         ],
         "steps": [
-          "Isolate the air handling unit and fans before opening ducts",
-          "Protect the area and set up negative air (HEPA vacuum) on the duct",
-          "Open access panels and inspect; take 'before' photos",
-          "Loosen dirt with brushes or air whips while the vacuum runs",
-          "Clean grilles, diffusers and coils; close and seal access panels",
-          "Take 'after' photos, restart the system and record the work"
+          "Loosen contaminants using brushes, air whips, or compressed air.",
+          "Collect and remove contaminants using negative pressure equipment.",
+          "Clean the blower, motor, cooling coils, and heat exchanger surfaces.",
+          "Seal all service openings once cleaning is complete."
         ],
-        "stepsFrom": "topic",
+        "stepsFrom": "ai",
         "level": "Beginner",
-        "subject": ""
+        "subject": "HVAC Duct Cleaning Guidelines",
+        "category": "Duct Cleaning",
+        "review": {
+          "relevance": 10,
+          "quality": 8,
+          "recommend": "approve",
+          "reason": "Clear and professional explanation of industry-standard duct cleaning procedures suitable for technician training.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.5-flash-lite"
       }
     },
     {
@@ -2036,25 +2060,34 @@
       "found": "2026-10-25T10:06:40Z",
       "starter": true,
       "draft": {
-        "source": "rules",
-        "summary": "",
-        "safety": "Isolate the fans before opening ducts, and watch for sharp edges and grease fire risk.",
+        "source": "ai",
+        "summary": "This video demonstrates the residential air duct and coil cleaning process using specialised vacuum equipment and chemical treatments.",
+        "safety": "Ensure the furnace and heating system are turned off before accessing coils or ductwork.",
         "ppe": [
-          "Cut-Resistant Gloves",
-          "Dust Mask",
-          "Safety Goggles"
+          "Safety Glasses",
+          "Work Gloves"
         ],
         "steps": [
-          "Isolate the air handling unit and fans before opening ducts",
-          "Protect the area and set up negative air (HEPA vacuum) on the duct",
-          "Open access panels and inspect; take 'before' photos",
-          "Loosen dirt with brushes or air whips while the vacuum runs",
-          "Clean grilles, diffusers and coils; close and seal access panels",
-          "Take 'after' photos, restart the system and record the work"
+          "Turn off the thermostat and access furnace coils.",
+          "Connect the large vacuum hose to the duct system.",
+          "Use a negative pressure snake to clean air ducts.",
+          "Apply cleaning chemical to coils and scrub vents.",
+          "Clean and clear the dryer vent exhaust line."
         ],
-        "stepsFrom": "topic",
+        "stepsFrom": "ai",
         "level": "Beginner",
-        "subject": ""
+        "subject": "Air Duct Cleaning",
+        "category": "Duct Cleaning",
+        "review": {
+          "relevance": 8,
+          "quality": 8,
+          "recommend": "approve",
+          "reason": "Provides a clear overview of residential air duct and coil cleaning procedures.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.5-flash-lite"
       }
     },
     {
@@ -2068,25 +2101,35 @@
       "found": "2026-10-25T10:06:40Z",
       "starter": true,
       "draft": {
-        "source": "rules",
-        "summary": "",
-        "safety": "Isolate the fans before opening ducts, and watch for sharp edges and grease fire risk.",
+        "source": "ai",
+        "summary": "A technician explains the process of commercial duct cleaning in an office setting, showing supply diffusers, return grates, and cleaning tools.",
+        "safety": "Ensure proper lockout-tagout procedures on HVAC units before beginning duct cleaning work.",
         "ppe": [
-          "Cut-Resistant Gloves",
+          "Safety Glasses",
           "Dust Mask",
-          "Safety Goggles"
+          "Gloves"
         ],
         "steps": [
-          "Isolate the air handling unit and fans before opening ducts",
-          "Protect the area and set up negative air (HEPA vacuum) on the duct",
-          "Open access panels and inspect; take 'before' photos",
-          "Loosen dirt with brushes or air whips while the vacuum runs",
-          "Clean grilles, diffusers and coils; close and seal access panels",
-          "Take 'after' photos, restart the system and record the work"
+          "Lock out the HVAC unit using lockout-tagout procedures.",
+          "Cut access points into ductwork near supply drops.",
+          "Hook up industrial vacuum and clean supply and return ductwork.",
+          "Wash supply diffusers and return grates outside with a degreaser.",
+          "Close access holes with access panels or skimmer plugs and replace ceiling tiles."
         ],
-        "stepsFrom": "topic",
-        "level": "Intermediate",
-        "subject": ""
+        "stepsFrom": "ai",
+        "level": "Beginner",
+        "subject": "Commercial Duct Cleaning",
+        "category": "Duct Cleaning",
+        "review": {
+          "relevance": 9,
+          "quality": 8,
+          "recommend": "approve",
+          "reason": "Clear and informative explanation of commercial duct cleaning procedures suitable for beginner technicians.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.5-flash-lite"
       }
     },
     {
@@ -2100,26 +2143,35 @@
       "found": "2026-10-25T10:06:40Z",
       "starter": true,
       "draft": {
-        "source": "rules",
-        "summary": "",
-        "safety": "Tank entry is confined-space work: permit, gas test, ventilation and a standby person are required.",
+        "source": "ai",
+        "summary": "A water treatment plant operator explains the procedure for safely cleaning and disinfecting water storage tanks.",
+        "safety": "Always disinfect and decontaminate any tools before putting them inside the water storage tank to prevent cross-contamination.",
         "ppe": [
-          "Gas Detector",
-          "Respirator",
-          "Chemical Gloves",
-          "Rubber Boots"
+          "Safety Glasses",
+          "Gloves",
+          "Apron"
         ],
         "steps": [
-          "Get the permit and inform the building; isolate and drain the tank",
-          "Ventilate and test the air before entry — it is a confined space",
-          "Remove sludge and scrub walls, floor and roof",
-          "Rinse and drain the dirty water away",
-          "Disinfect with chlorine at the specified strength and contact time",
-          "Flush, refill, and take a water sample for testing"
+          "Remove all water from the tank",
+          "Vacuum and pressure wash interior equipment and surfaces",
+          "Apply chemical cleaner and let sit",
+          "Rinse and vacuum out cleaning solution",
+          "Disinfect tank with chlorine solution"
         ],
-        "stepsFrom": "topic",
+        "stepsFrom": "ai",
         "level": "Intermediate",
-        "subject": ""
+        "subject": "Water Storage Tank Cleaning",
+        "category": "Water Tank Cleaning",
+        "review": {
+          "relevance": 10,
+          "quality": 8,
+          "recommend": "approve",
+          "reason": "Clear and practical guide on water storage tank cleaning suitable for technicians.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.5-flash-lite"
       }
     },
     {
@@ -2133,25 +2185,36 @@
       "found": "2026-10-25T10:06:40Z",
       "starter": true,
       "draft": {
-        "source": "rules",
-        "summary": "",
-        "safety": "Read the chemical's safety data sheet, ventilate the area and never mix chemicals.",
+        "source": "ai",
+        "summary": "This video explains the standard water storage tank disinfection and testing process to ensure safe drinking water quality.",
+        "safety": "Ensure proper handling of chlorine chemicals and prevent contamination during water sampling.",
         "ppe": [
-          "Chemical Gloves",
-          "Safety Goggles",
-          "Respirator"
+          "Safety Gloves",
+          "Safety Glasses",
+          "Protective Apron"
         ],
         "steps": [
-          "Get the permit and inform the building; isolate and drain the tank",
-          "Ventilate and test the air before entry — it is a confined space",
-          "Remove sludge and scrub walls, floor and roof",
-          "Rinse and drain the dirty water away",
-          "Disinfect with chlorine at the specified strength and contact time",
-          "Flush, refill, and take a water sample for testing"
+          "Calculate the chlorine needed for a 2 mg/L residual.",
+          "Add chlorinated water for a strong bottom concentration.",
+          "Let the tank stand for 24 hours.",
+          "Fill the tank fully to dilute the chlorine mixture.",
+          "Collect samples using sterile bottles for testing.",
+          "Re-chlorinate and investigate if test results are unsatisfactory."
         ],
-        "stepsFrom": "topic",
-        "level": "Intermediate",
-        "subject": ""
+        "stepsFrom": "ai",
+        "level": "Beginner",
+        "subject": "Water Tank Disinfection & Testing",
+        "category": "Water Tank Cleaning",
+        "review": {
+          "relevance": 10,
+          "quality": 8,
+          "recommend": "approve",
+          "reason": "Provides a clear and structured procedure for water tank disinfection and water quality testing.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.5-flash-lite"
       }
     },
     {
@@ -2165,26 +2228,36 @@
       "found": "2026-10-25T10:06:40Z",
       "starter": true,
       "draft": {
-        "source": "rules",
-        "summary": "",
-        "safety": "Tank entry is confined-space work: permit, gas test, ventilation and a standby person are required.",
+        "source": "ai",
+        "summary": "This video demonstrates a multi-step water tank cleaning process including dewatering, scrubbing, vacuuming, and UV treatment.",
+        "safety": "Ensure proper fall protection and equipment inspection when working on rooftops and inside confined spaces.",
         "ppe": [
-          "Gas Detector",
-          "Respirator",
-          "Chemical Gloves",
-          "Rubber Boots"
+          "Hard Hat",
+          "Safety Boots",
+          "Rubber Gloves"
         ],
         "steps": [
-          "Get the permit and inform the building; isolate and drain the tank",
-          "Ventilate and test the air before entry — it is a confined space",
-          "Remove sludge and scrub walls, floor and roof",
-          "Rinse and drain the dirty water away",
-          "Disinfect with chlorine at the specified strength and contact time",
-          "Flush, refill, and take a water sample for testing"
+          "Dewater the tank before cleaning",
+          "Close the supply line valve",
+          "Scrub the interior manually",
+          "Clean with high pressure jet",
+          "Vacuum the sludge and debris",
+          "Apply antibacterial spray and UV treatment"
         ],
-        "stepsFrom": "topic",
-        "level": "Intermediate",
-        "subject": ""
+        "stepsFrom": "ai",
+        "level": "Beginner",
+        "subject": "Water Tank Cleaning Procedure",
+        "category": "Water Tank Cleaning",
+        "review": {
+          "relevance": 9,
+          "quality": 7,
+          "recommend": "approve",
+          "reason": "Clear demonstration of water tank cleaning steps suitable for training technicians.",
+          "unsafe": [],
+          "language": "English",
+          "talking": false
+        },
+        "model": "gemini-3.5-flash-lite"
       }
     },
     {
@@ -2198,26 +2271,35 @@
       "found": "2026-10-25T10:06:40Z",
       "starter": true,
       "draft": {
-        "source": "rules",
-        "summary": "",
-        "safety": "Tank entry is confined-space work: permit, gas test, ventilation and a standby person are required.",
+        "source": "ai",
+        "summary": "This video shows a commercial diver cleaning sediment from the bottom of a potable water tank.",
+        "safety": "Ensure all diving and pumping equipment is dedicated solely to potable water use.",
         "ppe": [
-          "Gas Detector",
-          "Respirator",
-          "Chemical Gloves",
-          "Rubber Boots"
+          "Dry Suit",
+          "Diving Helmet",
+          "Hard Hat"
         ],
         "steps": [
-          "Get the permit and inform the building; isolate and drain the tank",
-          "Ventilate and test the air before entry — it is a confined space",
-          "Remove sludge and scrub walls, floor and roof",
-          "Rinse and drain the dirty water away",
-          "Disinfect with chlorine at the specified strength and contact time",
-          "Flush, refill, and take a water sample for testing"
+          "Inspect the sediment buildup inside the water tank.",
+          "Lower the diver with specialized gear into the tank.",
+          "Vacuum and remove sediment from the tank floor.",
+          "Pump the extracted sediment out to the exterior drainage.",
+          "Check the cleaned metal surface to ensure all sediment is removed."
         ],
-        "stepsFrom": "topic",
+        "stepsFrom": "ai",
         "level": "Intermediate",
-        "subject": ""
+        "subject": "Potable Water Tank Cleaning",
+        "category": "Water Tank Cleaning",
+        "review": {
+          "relevance": 9,
+          "quality": 8,
+          "recommend": "approve",
+          "reason": "Clear demonstration of specialized underwater water tank cleaning procedures.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.5-flash-lite"
       }
     },
     {
@@ -2231,26 +2313,34 @@
       "found": "2026-10-25T10:06:40Z",
       "starter": true,
       "draft": {
-        "source": "rules",
-        "summary": "",
-        "safety": "Tank entry is confined-space work: permit, gas test, ventilation and a standby person are required.",
+        "source": "ai",
+        "summary": "This video outlines step-by-step instructions for draining, cleaning, and disinfecting a plastic water tank.",
+        "safety": "Always wear safety goggles and rubber gloves while handling cleaning solutions and power tools.",
         "ppe": [
-          "Gas Detector",
-          "Respirator",
-          "Chemical Gloves",
-          "Rubber Boots"
+          "Rubber Gloves",
+          "Safety Goggles"
         ],
         "steps": [
-          "Get the permit and inform the building; isolate and drain the tank",
-          "Ventilate and test the air before entry — it is a confined space",
-          "Remove sludge and scrub walls, floor and roof",
-          "Rinse and drain the dirty water away",
-          "Disinfect with chlorine at the specified strength and contact time",
-          "Flush, refill, and take a water sample for testing"
+          "Drain the water tank completely",
+          "Scrub the inside of the tank",
+          "Flush hoses and pipes thoroughly",
+          "Disinfect the tank with a bleach solution",
+          "Drain and rinse the tank"
         ],
-        "stepsFrom": "topic",
-        "level": "Intermediate",
-        "subject": ""
+        "stepsFrom": "ai",
+        "level": "Beginner",
+        "subject": "Water Tank Cleaning",
+        "category": "Water Tank Cleaning",
+        "review": {
+          "relevance": 10,
+          "quality": 9,
+          "recommend": "approve",
+          "reason": "Clear and detailed guide relevant for water tank maintenance technicians.",
+          "unsafe": [],
+          "language": "English",
+          "talking": false
+        },
+        "model": "gemini-3.5-flash-lite"
       }
     },
     {
@@ -2264,26 +2354,34 @@
       "found": "2026-10-25T10:06:40Z",
       "starter": true,
       "draft": {
-        "source": "rules",
-        "summary": "",
-        "safety": "Keep the area barricaded, use tools with guards and lift heavy materials with help.",
+        "source": "ai",
+        "summary": "This video demonstrates how to repair various types of drywall damage, including dents, small and large holes, corners, and textured surfaces.",
+        "safety": "Always inspect the wall cavity for electrical wires or pipes with a flashlight before cutting into drywall.",
         "ppe": [
-          "Hard Hat",
-          "Safety Shoes",
-          "Work Gloves",
-          "Safety Glasses"
+          "Safety Glasses",
+          "Work Gloves"
         ],
         "steps": [
-          "Cut out the damaged area into a neat square or rectangle",
-          "Fit backing or a patch piece and fix it in place",
-          "Tape the joints with paper or mesh tape",
-          "Apply 2–3 thin coats of joint compound, feathering the edges",
-          "Sand smooth when dry and wipe off the dust",
-          "Prime and paint to match"
+          "Scrape away loose debris from the damaged area.",
+          "Apply joint compound or spackle with a putty knife.",
+          "Sand the dried patch smooth and apply primer and paint.",
+          "Cut out damaged drywall and install new patches for larger holes.",
+          "Replace damaged corner beads and apply joint compound."
         ],
-        "stepsFrom": "topic",
-        "level": "Intermediate",
-        "subject": ""
+        "stepsFrom": "ai",
+        "level": "Beginner",
+        "subject": "Drywall Repair",
+        "category": "Civil Jobs",
+        "review": {
+          "relevance": 9,
+          "quality": 9,
+          "recommend": "approve",
+          "reason": "Clear and comprehensive guide for repairing drywall damage suitable for facility maintenance training.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.5-flash-lite"
       }
     },
     {
@@ -2297,26 +2395,34 @@
       "found": "2026-10-25T10:06:40Z",
       "starter": true,
       "draft": {
-        "source": "rules",
-        "summary": "",
-        "safety": "Keep the area barricaded, use tools with guards and lift heavy materials with help.",
+        "source": "ai",
+        "summary": "This video shows how to repair small, medium, and large holes in drywall using patches, joint compound, and wall texture.",
+        "safety": "Always wear a dust mask and safety glasses when sanding drywall compound.",
         "ppe": [
-          "Hard Hat",
-          "Safety Shoes",
-          "Work Gloves",
-          "Safety Glasses"
+          "Safety Glasses",
+          "Dust Mask",
+          "Cap"
         ],
         "steps": [
-          "Cut out the damaged area into a neat square or rectangle",
-          "Fit backing or a patch piece and fix it in place",
-          "Tape the joints with paper or mesh tape",
-          "Apply 2–3 thin coats of joint compound, feathering the edges",
-          "Sand smooth when dry and wipe off the dust",
-          "Prime and paint to match"
+          "Clean and wipe the damaged drywall area.",
+          "Apply a mesh patch over the hole.",
+          "Apply spackling compound and smooth it flat.",
+          "Sand the dried patch until smooth."
         ],
-        "stepsFrom": "topic",
-        "level": "Intermediate",
-        "subject": ""
+        "stepsFrom": "ai",
+        "level": "Beginner",
+        "subject": "Drywall Repair",
+        "category": "Civil Jobs",
+        "review": {
+          "relevance": 9,
+          "quality": 9,
+          "recommend": "approve",
+          "reason": "Clear, step-by-step instructions make this ideal for civil maintenance training.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.5-flash-lite"
       }
     },
     {
@@ -2330,26 +2436,36 @@
       "found": "2026-10-25T10:06:40Z",
       "starter": true,
       "draft": {
-        "source": "rules",
-        "summary": "",
-        "safety": "Keep the area barricaded, use tools with guards and lift heavy materials with help.",
+        "source": "ai",
+        "summary": "This video provides a step-by-step guide to repairing large holes in drywall without needing a stud.",
+        "safety": "Turn off power at the breaker and inspect behind the wall for wires and pipes before cutting.",
         "ppe": [
-          "Hard Hat",
-          "Safety Shoes",
-          "Work Gloves",
-          "Safety Glasses"
+          "Safety Glasses",
+          "N95 Dust Mask",
+          "Gloves"
         ],
         "steps": [
-          "Cut out the damaged area into a neat square or rectangle",
-          "Fit backing or a patch piece and fix it in place",
-          "Tape the joints with paper or mesh tape",
-          "Apply 2–3 thin coats of joint compound, feathering the edges",
-          "Sand smooth when dry and wipe off the dust",
-          "Prime and paint to match"
+          "Size up the hole and choose the patch method.",
+          "Cut a clean rectangular opening around the hole.",
+          "Add wooden backers behind the wall.",
+          "Screw in a new drywall patch piece.",
+          "Apply joint compound and tape the seams.",
+          "Sand smooth, prime, and paint the wall."
         ],
-        "stepsFrom": "topic",
+        "stepsFrom": "ai",
         "level": "Intermediate",
-        "subject": ""
+        "subject": "Drywall Patching",
+        "category": "Civil Jobs",
+        "review": {
+          "relevance": 9,
+          "quality": 10,
+          "recommend": "approve",
+          "reason": "Clear and detailed instructions make it a great training resource for civil and maintenance work.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.5-flash-lite"
       }
     },
     {
@@ -2363,26 +2479,38 @@
       "found": "2026-10-25T10:06:40Z",
       "starter": true,
       "draft": {
-        "source": "rules",
-        "summary": "",
-        "safety": "Keep the area barricaded, use tools with guards and lift heavy materials with help.",
+        "source": "ai",
+        "summary": "This video shows the complete process of taping, mudding, corner beating, and sanding drywall during a home remodel.",
+        "safety": "Wear a respirator mask and eye protection during sanding and mixing to prevent inhaling dust and debris.",
         "ppe": [
-          "Hard Hat",
-          "Safety Shoes",
-          "Work Gloves",
-          "Safety Glasses"
+          "Safety Glasses",
+          "Respirator Mask",
+          "Work Gloves"
         ],
         "steps": [
-          "Cut out the damaged area into a neat square or rectangle",
-          "Fit backing or a patch piece and fix it in place",
-          "Tape the joints with paper or mesh tape",
-          "Apply 2–3 thin coats of joint compound, feathering the edges",
-          "Sand smooth when dry and wipe off the dust",
-          "Prime and paint to match"
+          "Prep drywall joints and scrape loose paper.",
+          "Mix joint compound or con-fill with water.",
+          "Pre-fill gaps and apply mesh tape.",
+          "Install corner beads and apply con-fill.",
+          "Apply super taper mud and roll corners.",
+          "Sand walls and ceilings until smooth."
         ],
-        "stepsFrom": "topic",
+        "stepsFrom": "ai",
         "level": "Intermediate",
-        "subject": ""
+        "subject": "Drywall Taping and Mudding",
+        "category": "Civil Jobs",
+        "review": {
+          "relevance": 9,
+          "quality": 8,
+          "recommend": "approve",
+          "reason": "Provides clear, practical, step-by-step guidance on drywall repair and finishing suitable for civil technicians.",
+          "unsafe": [
+            "Not wearing a respirator mask during initial sanding and mixing"
+          ],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.5-flash-lite"
       }
     },
     {
@@ -2396,25 +2524,36 @@
       "found": "2026-10-25T10:06:40Z",
       "starter": true,
       "draft": {
-        "source": "rules",
-        "summary": "",
-        "safety": "Ventilate the area, keep ignition sources away and protect your eyes and lungs from fumes and spray.",
+        "source": "ai",
+        "summary": "This video demonstrates how to waterproof a shower using a flexible two-component waterproofing system before tiling.",
+        "safety": "Ensure the working area is well ventilated and wear appropriate personal protective equipment.",
         "ppe": [
-          "Respirator",
-          "Safety Goggles",
-          "Chemical Gloves"
+          "Dust Mask",
+          "Safety Gloves",
+          "Safety Boots"
         ],
         "steps": [
-          "Clean the surface and let it dry completely",
-          "Fill cracks and gaps; seal around pipes and drains",
-          "Apply primer if the product requires it",
-          "Reinforce corners and joints with waterproofing tape or fabric",
-          "Apply two full coats, running up the walls, and let each coat cure",
-          "Flood test for 24–48 hours before tiling"
+          "Clean and prime the shower surface.",
+          "Apply silicone bead to corners.",
+          "Mix the waterproofing system.",
+          "Apply the first coat of waterproofing.",
+          "Embed waterproofing membrane.",
+          "Apply the second coat of waterproofing."
         ],
-        "stepsFrom": "topic",
+        "stepsFrom": "ai",
         "level": "Intermediate",
-        "subject": ""
+        "subject": "Shower Waterproofing",
+        "category": "Painting & Waterproofing",
+        "review": {
+          "relevance": 10,
+          "quality": 9,
+          "recommend": "approve",
+          "reason": "Clear and detailed demonstration of shower waterproofing steps suitable for technicians.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.5-flash-lite"
       }
     },
     {
@@ -2428,25 +2567,34 @@
       "found": "2026-10-25T10:06:40Z",
       "starter": true,
       "draft": {
-        "source": "rules",
-        "summary": "",
-        "safety": "Ventilate the area, keep ignition sources away and protect your eyes and lungs from fumes and spray.",
+        "source": "ai",
+        "summary": "This video demonstrates how to install a waterproofing fabric membrane on shower walls using thin-set mortar.",
+        "safety": "Ensure proper ventilation when mixing and applying mortar, and wear protective eyewear to avoid eye irritation.",
         "ppe": [
-          "Respirator",
-          "Safety Goggles",
-          "Chemical Gloves"
+          "Safety Glasses",
+          "Work Gloves"
         ],
         "steps": [
-          "Clean the surface and let it dry completely",
-          "Fill cracks and gaps; seal around pipes and drains",
-          "Apply primer if the product requires it",
-          "Reinforce corners and joints with waterproofing tape or fabric",
-          "Apply two full coats, running up the walls, and let each coat cure",
-          "Flood test for 24–48 hours before tiling"
+          "Establish level and plumb lines on the wall.",
+          "Apply thin-set mortar using a notch trowel.",
+          "Install and press the waterproofing membrane into place.",
+          "Smooth out air bubbles and ensure firm coverage.",
+          "Fold and seal corners carefully with overlap."
         ],
-        "stepsFrom": "topic",
+        "stepsFrom": "ai",
         "level": "Intermediate",
-        "subject": ""
+        "subject": "Shower Waterproofing",
+        "category": "Painting & Waterproofing",
+        "review": {
+          "relevance": 9,
+          "quality": 9,
+          "recommend": "approve",
+          "reason": "",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.5-flash-lite"
       }
     },
     {
@@ -2460,25 +2608,34 @@
       "found": "2026-10-25T10:06:40Z",
       "starter": true,
       "draft": {
-        "source": "rules",
-        "summary": "",
-        "safety": "Ventilate the area, keep ignition sources away and protect your eyes and lungs from fumes and spray.",
+        "source": "ai",
+        "summary": "This video demonstrates how to waterproof bathroom walls and corners using a liquid membrane and reinforcing tape.",
+        "safety": "Always wear protective gloves and safety glasses to prevent chemical contact with skin and eyes.",
         "ppe": [
-          "Respirator",
-          "Safety Goggles",
-          "Chemical Gloves"
+          "Safety Glasses",
+          "Gloves"
         ],
         "steps": [
-          "Clean the surface and let it dry completely",
-          "Fill cracks and gaps; seal around pipes and drains",
-          "Apply primer if the product requires it",
-          "Reinforce corners and joints with waterproofing tape or fabric",
-          "Apply two full coats, running up the walls, and let each coat cure",
-          "Flood test for 24–48 hours before tiling"
+          "Smooth and clean wall surfaces.",
+          "Apply primer with a paintbrush.",
+          "Apply waterproof coating in corners and embed reinforcing tape.",
+          "Mask off the shower tray and apply waterproof tape.",
+          "Apply a final coat of waterproofing across all prepared areas."
         ],
-        "stepsFrom": "topic",
-        "level": "Intermediate",
-        "subject": ""
+        "stepsFrom": "ai",
+        "level": "Beginner",
+        "subject": "Bathroom Waterproofing",
+        "category": "Painting & Waterproofing",
+        "review": {
+          "relevance": 9,
+          "quality": 9,
+          "recommend": "approve",
+          "reason": "Clear and practical guide on applying waterproofing systems for bathrooms.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.5-flash-lite"
       }
     },
     {
@@ -2492,25 +2649,38 @@
       "found": "2026-10-25T10:06:40Z",
       "starter": true,
       "draft": {
-        "source": "rules",
-        "summary": "",
-        "safety": "Ventilate the area, keep ignition sources away and protect your eyes and lungs from fumes and spray.",
+        "source": "ai",
+        "summary": "This video demonstrates how to apply a liquid waterproofing membrane and reinforcing fabric mesh to a bathroom floor and around key joints before tiling.",
+        "safety": "Ensure good ventilation and wear protective gloves to avoid skin irritation from liquid waterproofing compounds.",
         "ppe": [
-          "Respirator",
-          "Safety Goggles",
-          "Chemical Gloves"
+          "Protective Gloves",
+          "Knee Pads",
+          "Safety Glasses"
         ],
         "steps": [
-          "Clean the surface and let it dry completely",
-          "Fill cracks and gaps; seal around pipes and drains",
-          "Apply primer if the product requires it",
-          "Reinforce corners and joints with waterproofing tape or fabric",
-          "Apply two full coats, running up the walls, and let each coat cure",
-          "Flood test for 24–48 hours before tiling"
+          "Clean and vacuum all dust and debris from the subfloor surface.",
+          "Apply liquid waterproofing membrane along room perimeters and tub edges using a brush.",
+          "Embed fabric mesh into the wet membrane along corners and joint intersections.",
+          "Coat over the embedded mesh with an additional layer of liquid membrane.",
+          "Roll liquid waterproofing membrane evenly across the entire floor area.",
+          "Allow the first coat to dry completely before applying a second coat."
         ],
-        "stepsFrom": "topic",
+        "stepsFrom": "ai",
         "level": "Intermediate",
-        "subject": ""
+        "subject": "Bathroom Floor Waterproofing",
+        "category": "Painting & Waterproofing",
+        "review": {
+          "relevance": 9,
+          "quality": 9,
+          "recommend": "approve",
+          "reason": "Clear step-by-step instruction on applying liquid waterproofing membranes suitable for technicians doing wet-area civil works.",
+          "unsafe": [
+            "Not wearing chemical-resistant gloves while handling liquid waterproofing membrane"
+          ],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.6-flash"
       }
     },
     {
@@ -2524,26 +2694,35 @@
       "found": "2026-10-25T10:06:40Z",
       "starter": true,
       "draft": {
-        "source": "rules",
-        "summary": "",
-        "safety": "Check guards before starting machines, keep people clear and drink water often in the heat.",
+        "source": "ai",
+        "summary": "This video demonstrates how to repair damaged drip irrigation lines using simple hand tools and couplers.",
+        "safety": "Ensure the water supply is turned off and system pressure is relieved before cutting or repairing any irrigation lines.",
         "ppe": [
-          "Ear Defenders",
-          "Safety Goggles",
-          "Safety Shoes",
-          "Work Gloves"
+          "Work Gloves",
+          "Safety Glasses",
+          "Sturdy Footwear"
         ],
         "steps": [
-          "Turn off the water to the zone",
-          "Find the leak, break or blocked emitter",
-          "Cut out the damaged section of drip line",
-          "Join it with a coupling, or replace or clean the emitter",
-          "Flush the line, then turn the water back on",
-          "Check every emitter is dripping evenly"
+          "Locate the damaged section of the irrigation line.",
+          "Cut out the damaged pipe using a cutting tool.",
+          "Attach a coupling or replacement tube section to seal the leak.",
+          "Flush the irrigation line to remove dirt and debris.",
+          "Test the repaired system for leaks."
         ],
-        "stepsFrom": "topic",
-        "level": "Intermediate",
-        "subject": ""
+        "stepsFrom": "ai",
+        "level": "Beginner",
+        "subject": "Irrigation Valve Troubleshooting",
+        "category": "Landscaping",
+        "review": {
+          "relevance": 9,
+          "quality": 8,
+          "recommend": "approve",
+          "reason": "Clear, practical guide on repairing damaged drip irrigation lines suitable for landscaping maintenance training.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.5-flash-lite"
       }
     },
     {
@@ -2557,26 +2736,35 @@
       "found": "2026-10-25T10:06:40Z",
       "starter": true,
       "draft": {
-        "source": "rules",
-        "summary": "",
-        "safety": "Check guards before starting machines, keep people clear and drink water often in the heat.",
+        "source": "ai",
+        "summary": "This video demonstrates how to troubleshoot an irrigation timer by checking settings, terminal wiring, and testing electrical resistance and voltage.",
+        "safety": "Ensure power is safely disconnected or tested before touching internal electrical components or wiring.",
         "ppe": [
-          "Ear Defenders",
-          "Safety Goggles",
-          "Safety Shoes",
-          "Work Gloves"
+          "Safety Glasses",
+          "Insulated Gloves",
+          "Safety Shoes"
         ],
         "steps": [
-          "Check the controller has power and the transformer is working",
-          "Check the date, time, program and rain sensor settings",
-          "Run each zone manually to find which ones fail",
-          "Measure the solenoid resistance on faulty zones with a multimeter",
-          "Check the wire connections and the common wire",
-          "Fix or replace the faulty part and test again"
+          "Check current time and date settings on the timer.",
+          "Verify start times and run times for each zone.",
+          "Inspect terminal block connections for loose wires.",
+          "Test circuit resistance using a multimeter set to ohms.",
+          "Test circuit voltage during manual station operation."
         ],
-        "stepsFrom": "topic",
-        "level": "Advanced",
-        "subject": ""
+        "stepsFrom": "ai",
+        "level": "Beginner",
+        "subject": "Irrigation Valve Troubleshooting",
+        "category": "Landscaping",
+        "review": {
+          "relevance": 9,
+          "quality": 8,
+          "recommend": "approve",
+          "reason": "Clear and practical guide for testing irrigation timers and wiring.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.5-flash-lite"
       }
     },
     {
@@ -2590,25 +2778,34 @@
       "found": "2026-10-25T10:06:40Z",
       "starter": true,
       "draft": {
-        "source": "rules",
-        "summary": "",
-        "safety": "Inform the building and the alarm monitoring company before testing, and never leave a system disabled.",
+        "source": "ai",
+        "summary": "This video guides landscaping technicians on how to troubleshoot weak water pressure in a sprinkler system.",
+        "safety": "Turn off water supply and relieve system pressure before opening valves or fittings.",
         "ppe": [
           "Safety Glasses",
-          "Work Gloves",
-          "Safety Shoes"
+          "Work Gloves"
         ],
         "steps": [
-          "Check the main valve and backflow are fully open",
-          "Run one zone at a time to find where the pressure drops",
-          "Look for leaks, broken heads and partly closed valves",
-          "Clean or replace blocked filters and nozzles",
-          "Check the valve diaphragm and solenoid",
-          "Test the zone again and adjust the heads"
+          "Ask the client about recent property work.",
+          "Check timer settings and wire connections.",
+          "Inspect main water meter and backflow preventer valves.",
+          "Verify all shut-off and zone valve handles are fully open.",
+          "Check pressure at test cocks using a pressure gauge."
         ],
-        "stepsFrom": "topic",
-        "level": "Advanced",
-        "subject": ""
+        "stepsFrom": "ai",
+        "level": "Beginner",
+        "subject": "Irrigation Valve Troubleshooting",
+        "category": "Landscaping",
+        "review": {
+          "relevance": 9,
+          "quality": 8,
+          "recommend": "approve",
+          "reason": "Clear, practical guidance on diagnosing low pressure in sprinkler systems.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.5-flash-lite"
       }
     }
   ],
