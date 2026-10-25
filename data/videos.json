@@ -8438,24 +8438,22 @@
       "title": "Earth Fault Loop Impedance (Zs) Testing on 16A Single & 3-Phase Industrial Sockets",
       "category": "Electrical",
       "subject": "Testing & Inspection",
-      "level": "Advanced",
+      "level": "Intermediate",
       "channel": "GSH Electrical",
       "duration": "3:30",
       "added": "2026-10-21",
-      "summary": "Measuring Zs on 16A single-phase and 400V three-phase industrial socket outlets, testing L1, L2 and L3 in turn and comparing results with the protective device's maximum Zs.",
-      "safety": "Zs testing is a live test: use a calibrated loop tester with GS38-compliant leads, confirm the RCD and circuit details first, and keep others clear of the outlet under test.",
+      "summary": "Demonstrates earth fault loop impedance testing on single-phase and three-phase industrial sockets using a multifunction tester.",
+      "safety": "Ensure proper isolation and use correct testing leads when measuring live electrical circuits.",
       "ppe": [
-        "1000V Insulated Gloves",
         "Safety Glasses",
-        "Arc-Rated Clothing",
-        "Steel Toe Boots"
+        "Insulated Gloves",
+        "Safety Shoes"
       ],
       "steps": [
-        "Confirm circuit details and look up maximum Zs for the protective device.",
-        "Check the loop tester and leads, then connect via a suitable test plug.",
-        "Measure Zs on the single-phase outlet (L-E).",
-        "Measure Zs on each phase L1, L2 and L3 of the three-phase outlet.",
-        "Record results and compare with BS 7671 limits (80% rule)."
+        "Plug test lead into the industrial socket.",
+        "Select earth fault loop impedance function on tester.",
+        "Turn on the isolator switch to take the measurement.",
+        "Record the readings and test across all phases."
       ],
       "tr": {
         "hi": {
