@@ -216,5 +216,47 @@
     "podcast",
     "q&a",
     "vlog"
-  ]
+  ],
+  "tr": {
+    "hi": {
+      "src": "d5100fa7b70a",
+      "announcement": "",
+      "tagline": "अल बोनियन सुविधाएं प्रबंधन"
+    },
+    "ur": {
+      "src": "d5100fa7b70a",
+      "announcement": "",
+      "tagline": "البونین سہولیات کا انتظام"
+    },
+    "ml": {
+      "src": "d5100fa7b70a",
+      "announcement": "",
+      "tagline": "അൽ ബോണിയൻ സൗകര്യങ്ങൾ മാനേജ്മെൻ്റ്"
+    },
+    "bn": {
+      "src": "d5100fa7b70a",
+      "announcement": "",
+      "tagline": "আল বনিয়ান সুবিধা ব্যবস্থাপনা"
+    },
+    "ta": {
+      "src": "d5100fa7b70a",
+      "announcement": "",
+      "tagline": "அல் போனியன் வசதிகள் மேலாண்மை"
+    },
+    "ne": {
+      "src": "d5100fa7b70a",
+      "announcement": "",
+      "tagline": "अल बोनियन सुविधा व्यवस्थापन"
+    },
+    "tl": {
+      "src": "d5100fa7b70a",
+      "announcement": "",
+      "tagline": "Pamamahala ng mga Pasilidad ng Al Bonian"
+    },
+    "ar": {
+      "src": "d5100fa7b70a",
+      "announcement": "",
+      "tagline": "البنيان لإدارة المرافق"
+    }
+  }
 }
