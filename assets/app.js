@@ -230,12 +230,11 @@
     const el = $("#video-view");
     el.innerHTML = `
       <button class="btn btn-ghost btn-sm vp-back" id="back">${ICON.back}<span>${esc(t("back"))}</span></button>
-      <div class="player" id="player">
-        <button class="poster" id="poster" aria-label="${esc(t("play"))}">
-          <img src="${thumb(v.yt, "hqdefault")}" alt="">
-          <span class="play">${ICON.play}</span>
-        </button>
-      </div>
+      ${steps.length ? `<div class="mode-tabs" role="tablist">
+        <button role="tab" data-mode="video" aria-selected="true">${ICON.play}<span>${esc(t("tabVideo"))}</span></button>
+        <button role="tab" data-mode="guide" aria-selected="false">${ICON.list}<span>${esc(t("tabGuide"))}</span></button>
+      </div>` : ""}
+      <div class="player" id="player"></div>
       <h1>${esc(x.title || v.title)}</h1>
       ${x.title ? `<p class="en-title" lang="en" dir="ltr">${esc(v.title)}</p>` : ""}
       <div class="meta">
@@ -270,14 +269,87 @@
       const p = $("#prog"); if (p) p.style.width = (boxes.length ? (n / boxes.length) * 100 : 0) + "%";
     };
     updateProg();
-    $("#poster").onclick = () => {
-      const hl = state.lang === "tl" ? "fil" : state.lang;
-      const cc = state.lang !== "en" ? `&cc_load_policy=1&cc_lang_pref=${state.lang}` : "";
-      const src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(v.yt)}?autoplay=1&rel=0&playsinline=1&modestbranding=1&hl=${hl}${cc}`;
-      $("#player").innerHTML = `<iframe src="${src}" title="${esc(v.title)}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
-    };
+    const player = $("#player");
+    /* --- Video (default) --- */
+    function showPoster() {
+      stopSpeech();
+      player.classList.remove("is-guide");
+      player.innerHTML = `<button class="poster" id="poster" aria-label="${esc(t("play"))}"><img src="${thumb(v.yt, "hqdefault")}" alt=""><span class="play">${ICON.play}</span></button>`;
+      $("#poster").onclick = () => {
+        const hl = state.lang === "tl" ? "fil" : state.lang;
+        const cc = state.lang !== "en" ? `&cc_load_policy=1&cc_lang_pref=${state.lang}` : "";
+        const src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(v.yt)}?autoplay=1&rel=0&playsinline=1&modestbranding=1&hl=${hl}${cc}`;
+        player.innerHTML = `<iframe src="${src}" title="${esc(v.title)}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+      };
+    }
+    /* --- Step guide (secondary): one step per screen, optional voice read-out --- */
+    const hasTr = !!(x.steps && x.steps.length === v.steps.length);
+    const slides = [];
+    if (v.safety || v.ppe.length) slides.push({ safety: true, text: x.safety || v.safety, say: (hasTr ? x.safety : v.safety) || "" });
+    steps.forEach((s, i) => slides.push({ n: i + 1, text: s, say: s }));
+    let idx = 0, speaking = false;
+    const canSpeak = "speechSynthesis" in window;
+    const speechLang = hasTr ? state.lang : "en";
+    const BCP = { en: "en-GB", hi: "hi-IN", ur: "ur-PK", ml: "ml-IN", bn: "bn-IN", ta: "ta-IN", ne: "ne-NP", tl: "fil-PH", ar: "ar-SA" };
+    function speak() {
+      if (!canSpeak) return;
+      speechSynthesis.cancel();
+      const u = new SpeechSynthesisUtterance((slides[idx].n ? `${t("steps")} ${slides[idx].n}. ` : `${t("safety")}. `) + slides[idx].say);
+      u.lang = BCP[speechLang] || "en-GB";
+      const voice = speechSynthesis.getVoices().find(vo => vo.lang && vo.lang.toLowerCase().startsWith(speechLang === "tl" ? "fil" : speechLang));
+      if (voice) u.voice = voice;
+      u.rate = 0.95;
+      u.onend = () => { if (!speaking) return; if (idx < slides.length - 1) { idx++; drawSlide(); speak(); } else { speaking = false; drawSlide(); } };
+      speechSynthesis.speak(u);
+    }
+    function drawSlide() {
+      const sl = slides[idx], last = slides.length - 1;
+      player.classList.add("is-guide");
+      player.innerHTML = `<div class="guide" ${hasTr || state.lang === "en" ? "" : 'lang="en" dir="ltr"'}>
+        <div class="g-top"><span class="g-badge">${esc(t("tabGuide"))}</span><span class="g-count">${sl.n ? `${sl.n} / ${steps.length}` : esc(t("safety"))}</span></div>
+        <div class="g-body ${sl.safety ? "g-safety" : ""}">
+          ${sl.safety ? `<div class="g-ico">${ICON.shield}</div>` : `<div class="g-num">${sl.n}</div>`}
+          <p>${esc(sl.text)}</p>
+          ${sl.safety && v.ppe.length ? `<div class="ppe">${v.ppe.map(p => `<span>${esc(p)}</span>`).join("")}</div>` : ""}
+        </div>
+        <div class="g-bar"><i style="width:${((idx + 1) / slides.length) * 100}%"></i></div>
+        <div class="g-ctl">
+          <button class="g-btn" data-g="prev" aria-label="Previous" ${idx === 0 ? "disabled" : ""}>${ICON.back}</button>
+          ${canSpeak ? `<button class="g-btn g-listen" data-g="listen" aria-pressed="${speaking}">${speaking ? "⏹" : "🔊"} <span>${esc(speaking ? t("stop") : t("listen"))}</span></button>` : "<span></span>"}
+          <button class="g-btn" data-g="next" aria-label="Next" ${idx === last ? "disabled" : ""}><span class="flip-r">${ICON.back}</span></button>
+        </div>
+      </div>`;
+    }
+    function stopSpeech() { speaking = false; if (canSpeak) speechSynthesis.cancel(); }
+    player.addEventListener("click", e => {
+      const g = e.target.closest("[data-g]"); if (!g) return;
+      if (g.dataset.g === "listen") { speaking = !speaking; if (speaking) speak(); else stopSpeech(); drawSlide(); return; }
+      idx = Math.max(0, Math.min(slides.length - 1, idx + (g.dataset.g === "next" ? 1 : -1)));
+      drawSlide();
+      if (speaking) speak();
+    });
+    let sx = null;
+    player.addEventListener("touchstart", e => { if (player.classList.contains("is-guide")) sx = e.touches[0].clientX; }, { passive: true });
+    player.addEventListener("touchend", e => {
+      if (sx === null) return;
+      const dx = e.changedTouches[0].clientX - sx; sx = null;
+      if (Math.abs(dx) < 50) return;
+      const fwd = (document.documentElement.dir === "rtl") ? dx > 0 : dx < 0;
+      idx = Math.max(0, Math.min(slides.length - 1, idx + (fwd ? 1 : -1)));
+      drawSlide(); if (speaking) speak();
+    });
+    $$(".mode-tabs [data-mode]", el).forEach(b => b.onclick = () => {
+      $$(".mode-tabs [data-mode]", el).forEach(o => o.setAttribute("aria-selected", o === b));
+      if (b.dataset.mode === "guide") { idx = 0; drawSlide(); } else showPoster();
+    });
+    showPoster();
     $("#back").onclick = () => { if (history.length > 1 && sessionStorage.getItem("ab_in_app")) history.back(); else location.hash = "#/"; };
-    $("#v-save").onclick = () => { toggleSave(v.id); renderVideo(v); };
+    $("#v-save").onclick = () => {
+      toggleSave(v.id);
+      const now = state.saved.has(v.id), b = $("#v-save");
+      b.setAttribute("aria-pressed", now);
+      b.innerHTML = `${now ? ICON.bookmarkOn : ICON.bookmark}<span>${esc(now ? t("savedLabel") : t("save"))}</span>`;
+    };
     $("#v-share").onclick = () => share(v);
     el.addEventListener("change", e => {
       const b = e.target.closest("[data-step]"); if (!b) return;
@@ -301,6 +373,7 @@
 
   /* ---------- routing ---------- */
   function route() {
+    if ("speechSynthesis" in window) speechSynthesis.cancel();
     const h = location.hash.replace(/^#\/?/, "");
     const [kind, arg] = h.split("/");
     const lv = $("#list-view"), vv = $("#video-view");
@@ -340,7 +413,7 @@
 
     document.addEventListener("click", e => {
       const save = e.target.closest("[data-save]");
-      if (save) { e.preventDefault(); toggleSave(save.dataset.save); if (!$("#video-view").hidden) { const v = state.videos.find(x => x.id === location.hash.split("/").pop()); v && renderVideo(v); } else renderList(); return; }
+      if (save) { e.preventDefault(); toggleSave(save.dataset.save); const on = state.saved.has(save.dataset.save); save.setAttribute("aria-pressed", on); save.innerHTML = on ? ICON.bookmarkOn : ICON.bookmark; if ($("#video-view").hidden && state.tab === "saved") renderList(); return; }
       const c = e.target.closest("[data-cat]");
       if (c) { state.cat = c.dataset.cat; state.limit = PAGE; renderList(); return; }
       const l = e.target.closest("[data-level]");

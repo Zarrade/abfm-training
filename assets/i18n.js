@@ -14,6 +14,7 @@ window.AB_LANGS = [
 
 window.AB_TEXT = {
   en: {
+    tabVideo: "Video", tabGuide: "Step guide", listen: "Listen", stop: "Stop",
     search: "Search videos…", all: "All", new: "New", newThisWeek: "New this week", saved: "Saved", library: "Library",
     Beginner: "Beginner", Intermediate: "Intermediate", Advanced: "Advanced", level: "Level",
     sortNewest: "Newest", sortShortest: "Shortest", sortAZ: "A–Z", videos: "{n} videos",
@@ -29,6 +30,7 @@ window.AB_TEXT = {
     cats: {}
   },
   hi: {
+    tabVideo: "वीडियो", tabGuide: "स्टेप गाइड", listen: "सुनें", stop: "रोकें",
     search: "वीडियो खोजें…", all: "सभी", new: "नया", newThisWeek: "इस हफ़्ते के नए वीडियो", saved: "सहेजे गए", library: "लाइब्रेरी",
     Beginner: "शुरुआती", Intermediate: "मध्यम", Advanced: "उन्नत", level: "स्तर",
     sortNewest: "नए पहले", sortShortest: "छोटे पहले", sortAZ: "A–Z", videos: "{n} वीडियो",
@@ -44,6 +46,7 @@ window.AB_TEXT = {
     cats: { "HVAC": "एसी / HVAC", "Plumbing": "प्लंबिंग", "Electrical": "बिजली", "Duct Cleaning": "डक्ट सफ़ाई", "Water Tank Cleaning": "पानी की टंकी सफ़ाई", "Civil Jobs": "सिविल काम", "Painting & Waterproofing": "पेंटिंग व वॉटरप्रूफ़िंग", "Landscaping": "लैंडस्केपिंग", "Fire Systems": "फ़ायर सिस्टम" }
   },
   ur: {
+    tabVideo: "ویڈیو", tabGuide: "مرحلہ وار گائیڈ", listen: "سنیں", stop: "روکیں",
     search: "ویڈیو تلاش کریں…", all: "سب", new: "نیا", newThisWeek: "اس ہفتے کی نئی ویڈیوز", saved: "محفوظ", library: "لائبریری",
     Beginner: "ابتدائی", Intermediate: "درمیانی", Advanced: "ماہر", level: "سطح",
     sortNewest: "نئی پہلے", sortShortest: "مختصر پہلے", sortAZ: "A–Z", videos: "{n} ویڈیوز",
@@ -59,6 +62,7 @@ window.AB_TEXT = {
     cats: { "HVAC": "اے سی / HVAC", "Plumbing": "پلمبنگ", "Electrical": "بجلی", "Duct Cleaning": "ڈکٹ کی صفائی", "Water Tank Cleaning": "پانی کی ٹنکی کی صفائی", "Civil Jobs": "سول کام", "Painting & Waterproofing": "پینٹنگ اور واٹر پروفنگ", "Landscaping": "لینڈ اسکیپنگ", "Fire Systems": "فائر سسٹم" }
   },
   ml: {
+    tabVideo: "വീഡിയോ", tabGuide: "ഘട്ട ഗൈഡ്", listen: "കേൾക്കുക", stop: "നിർത്തുക",
     search: "വീഡിയോ തിരയുക…", all: "എല്ലാം", new: "പുതിയത്", newThisWeek: "ഈ ആഴ്ചയിലെ പുതിയ വീഡിയോകൾ", saved: "സേവ് ചെയ്തവ", library: "ലൈബ്രറി",
     Beginner: "തുടക്കക്കാർ", Intermediate: "ഇടത്തരം", Advanced: "വിദഗ്ധർ", level: "നില",
     sortNewest: "പുതിയത് ആദ്യം", sortShortest: "ചെറുത് ആദ്യം", sortAZ: "A–Z", videos: "{n} വീഡിയോകൾ",
@@ -74,6 +78,7 @@ window.AB_TEXT = {
     cats: { "HVAC": "എസി / HVAC", "Plumbing": "പ്ലംബിംഗ്", "Electrical": "ഇലക്ട്രിക്കൽ", "Duct Cleaning": "ഡക്റ്റ് ക്ലീനിംഗ്", "Water Tank Cleaning": "വാട്ടർ ടാങ്ക് ക്ലീനിംഗ്", "Civil Jobs": "സിവിൽ ജോലികൾ", "Painting & Waterproofing": "പെയിന്റിംഗ് & വാട്ടർപ്രൂഫിംഗ്", "Landscaping": "ലാൻഡ്സ്കേപ്പിംഗ്", "Fire Systems": "ഫയർ സിസ്റ്റം" }
   },
   bn: {
+    tabVideo: "ভিডিও", tabGuide: "ধাপে ধাপে গাইড", listen: "শুনুন", stop: "থামান",
     search: "ভিডিও খুঁজুন…", all: "সব", new: "নতুন", newThisWeek: "এই সপ্তাহের নতুন ভিডিও", saved: "সংরক্ষিত", library: "লাইব্রেরি",
     Beginner: "প্রাথমিক", Intermediate: "মাঝারি", Advanced: "উন্নত", level: "স্তর",
     sortNewest: "নতুন আগে", sortShortest: "ছোট আগে", sortAZ: "A–Z", videos: "{n}টি ভিডিও",
@@ -89,6 +94,7 @@ window.AB_TEXT = {
     cats: { "HVAC": "এসি / HVAC", "Plumbing": "প্লাম্বিং", "Electrical": "বৈদ্যুতিক", "Duct Cleaning": "ডাক্ট পরিষ্কার", "Water Tank Cleaning": "পানির ট্যাংক পরিষ্কার", "Civil Jobs": "সিভিল কাজ", "Painting & Waterproofing": "রং ও ওয়াটারপ্রুফিং", "Landscaping": "ল্যান্ডস্কেপিং", "Fire Systems": "ফায়ার সিস্টেম" }
   },
   ta: {
+    tabVideo: "வீடியோ", tabGuide: "படிப்படி வழிகாட்டி", listen: "கேளுங்கள்", stop: "நிறுத்து",
     search: "வீடியோ தேடுங்கள்…", all: "அனைத்தும்", new: "புதியது", newThisWeek: "இந்த வாரத்தின் புதிய வீடியோக்கள்", saved: "சேமித்தவை", library: "நூலகம்",
     Beginner: "தொடக்க நிலை", Intermediate: "இடைநிலை", Advanced: "மேம்பட்ட நிலை", level: "நிலை",
     sortNewest: "புதியவை முதலில்", sortShortest: "சிறியவை முதலில்", sortAZ: "A–Z", videos: "{n} வீடியோக்கள்",
@@ -104,6 +110,7 @@ window.AB_TEXT = {
     cats: { "HVAC": "ஏசி / HVAC", "Plumbing": "பிளம்பிங்", "Electrical": "மின்சாரம்", "Duct Cleaning": "டக்ட் சுத்தம்", "Water Tank Cleaning": "தண்ணீர் தொட்டி சுத்தம்", "Civil Jobs": "சிவில் வேலைகள்", "Painting & Waterproofing": "பெயிண்டிங் & வாட்டர்ப்ரூஃபிங்", "Landscaping": "லேண்ட்ஸ்கேப்பிங்", "Fire Systems": "தீயணைப்பு அமைப்பு" }
   },
   ne: {
+    tabVideo: "भिडियो", tabGuide: "चरण गाइड", listen: "सुन्नुहोस्", stop: "रोक्नुहोस्",
     search: "भिडियो खोज्नुहोस्…", all: "सबै", new: "नयाँ", newThisWeek: "यो हप्ताका नयाँ भिडियो", saved: "सेभ गरिएका", library: "लाइब्रेरी",
     Beginner: "सुरुवाती", Intermediate: "मध्यम", Advanced: "उन्नत", level: "स्तर",
     sortNewest: "नयाँ पहिले", sortShortest: "छोटो पहिले", sortAZ: "A–Z", videos: "{n} भिडियो",
@@ -119,6 +126,7 @@ window.AB_TEXT = {
     cats: { "HVAC": "एसी / HVAC", "Plumbing": "प्लम्बिङ", "Electrical": "बिजुली", "Duct Cleaning": "डक्ट सफाइ", "Water Tank Cleaning": "पानी ट्याङ्की सफाइ", "Civil Jobs": "सिभिल काम", "Painting & Waterproofing": "पेन्टिङ र वाटरप्रुफिङ", "Landscaping": "ल्यान्डस्केपिङ", "Fire Systems": "फायर सिस्टम" }
   },
   tl: {
+    tabVideo: "Video", tabGuide: "Gabay sa hakbang", listen: "Pakinggan", stop: "Ihinto",
     search: "Maghanap ng video…", all: "Lahat", new: "Bago", newThisWeek: "Mga bagong video ngayong linggo", saved: "Naka-save", library: "Library",
     Beginner: "Baguhan", Intermediate: "Katamtaman", Advanced: "Advanced", level: "Antas",
     sortNewest: "Pinakabago", sortShortest: "Pinakamaikli", sortAZ: "A–Z", videos: "{n} video",
@@ -134,6 +142,7 @@ window.AB_TEXT = {
     cats: { "HVAC": "AC / HVAC", "Plumbing": "Plumbing", "Electrical": "Elektrikal", "Duct Cleaning": "Paglilinis ng Duct", "Water Tank Cleaning": "Paglilinis ng Water Tank", "Civil Jobs": "Gawaing Sibil", "Painting & Waterproofing": "Pintura at Waterproofing", "Landscaping": "Landscaping", "Fire Systems": "Fire System" }
   },
   ar: {
+    tabVideo: "فيديو", tabGuide: "دليل الخطوات", listen: "استمع", stop: "إيقاف",
     search: "ابحث عن فيديو…", all: "الكل", new: "جديد", newThisWeek: "فيديوهات جديدة هذا الأسبوع", saved: "المحفوظة", library: "المكتبة",
     Beginner: "مبتدئ", Intermediate: "متوسط", Advanced: "متقدم", level: "المستوى",
     sortNewest: "الأحدث أولاً", sortShortest: "الأقصر أولاً", sortAZ: "A–Z", videos: "{n} فيديو",
