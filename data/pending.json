@@ -74,49 +74,6 @@
   },
   "queue": [
     {
-      "yt": "IElUDCQfTgg",
-      "title": "How to Test a Ring Final Circuit",
-      "channel": "GSH Electrical",
-      "channelUrl": "https://www.youtube.com/@GSHElectrical",
-      "published": "2026-10-25T10:00:10+00:00",
-      "duration": "",
-      "channelCategory": "Electrical",
-      "suggestedCategory": "Electrical",
-      "description": "In this video me and Marcus look at dead test number 2 in BS7671. In the test sequence this is \"testing continuity of ring final circuit conductors, including protective conductors\". We go through all 3 stages recording the results and we show the calculation for R1 + RN and R1 + R2 from r1, rn and r2 end to end readings. We prove the circuit is wired as a ring final circuit sometimes called a ring main or socket circuit. After proving the circuit is wired as a ring and the polarity of the sockets and record the results on the testing paperwork.\n\nHow to carry out a figure of 8 test on a ring final circuit (sometimes call incorrectly a ring main circuit) \n\n🔔 Subscribe for more free electrical training videos https://youtube.com/c/GSHElectrical?sub_confirmation=1\n\n== 🕐 Time Stamps - Cut to the action 🕕 == \n\n00:00 - Stage 1 – Ring Final Circuit Continuity\n00:35 - Measuring r1, rn and r2\n01:25 - Calculating Expected Resistance Values\n02:05 - Stage 2 – Line and Neutral Figure of Eight\n02:45 - Testing a Fused Connection Unit and Spur\n03:35 - Testing Socket Outlets and Checking Polarity\n04:35 - Investigating High Resistance Readings\n05:35 - Stage 3 – Line and CPC Figure of Eight\n06:15 - Calculating and Measuring R1 + R2\n07:00 - Testing the Spur and Confirming Polarity\n08:00 - Testing All Socket Outlets\n09:15 - Recording the Highest R1 + R2 Reading\n09:45 - Completing the Schedule of Test Results\n\nVideos are training aids for City and Guilds (C and G) and EAL courses Level 1, 2, 3 plus AM2, AM2S and AM2E. \n\nYou can follow me day by day on Facebook, Instagram, Twitter and TikTok lookout for \"GSH Electrical.  \n\n▶️ FACEBOOK https://www.facebook.com/gshelectrical/\n\n▶️ INSTAGRAM https://instagram.com/p/BrIhZmrAYGDTmjMdb9lUNQodMevqsbDDki3qpQ0/\n\n▶️ TWITTER https://mobile.twitter.com/gsh_electrical\n\n▶️ TikTok https://vm.tiktok.com/ZMRBLFdhe/\n\n#GSHElectrical #Electricaltrainingvideos #electrical #testing #electricaltesting",
-      "found": "2026-10-25T14:27:19.872Z",
-      "draft": {
-        "source": "ai",
-        "summary": "This video demonstrates how to test ring final circuits, covering continuity and polarity checks using a Megger tester.",
-        "safety": "Ensure the circuit is isolated and locked off before disconnecting or connecting test leads.",
-        "ppe": [
-          "Insulated Gloves",
-          "Safety Glasses",
-          "Safety Footwear"
-        ],
-        "steps": [
-          "Confirm the ring final circuit continuity across line, neutral, and cpc.",
-          "Interconnect opposite conductors at the distribution board.",
-          "Measure resistance across connector blocks for r1 plus rn.",
-          "Plug in socket adapter to test socket outlets.",
-          "Verify polarity and record the highest resistance values."
-        ],
-        "stepsFrom": "ai",
-        "level": "Intermediate",
-        "subject": "Testing & Inspection",
-        "category": "Electrical",
-        "review": {
-          "relevance": 9,
-          "quality": 8,
-          "recommend": "approve",
-          "reason": "Clear step-by-step demonstration of ring final circuit testing suitable for electrical technicians.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
-    },
-    {
       "yt": "8PuhQWvG47Q",
       "title": "Why You MUST Box Your Torginol Flakes Before Installing a Garage Floor!",
       "channel": "Paint Life TV",
