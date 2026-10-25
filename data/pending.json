@@ -1,38 +1,38 @@
 {
-  "lastRun": "2026-10-25T09:29:09.003Z",
+  "lastRun": "2026-10-25T09:32:18.687Z",
   "channelStatus": {
     "https://www.youtube.com/@EngineeringMindset": {
       "id": "UCk0fGHsCEzGig-rSzkfCjMw",
-      "checked": "2026-10-25T09:28:58.969Z",
-      "lastFound": 1
+      "checked": "2026-10-25T09:32:13.076Z",
+      "lastFound": 0
     },
     "https://www.youtube.com/@HVACSchool": {
       "error": "Channel page not found (404). Check the link.",
-      "checked": "2026-10-25T09:28:59.744Z"
+      "checked": "2026-10-25T09:32:13.848Z"
     },
     "https://www.youtube.com/@ACServiceTech": {
       "id": "UCYohLjTaUZLF3-JjttxG_CA",
-      "checked": "2026-10-25T09:29:00.744Z",
+      "checked": "2026-10-25T09:32:14.643Z",
       "lastFound": 0
     },
     "https://www.youtube.com/@TheElectricalGuy": {
       "id": "UCdKPm5KM99O75NtArFkMDDA",
-      "checked": "2026-10-25T09:29:01.827Z",
+      "checked": "2026-10-25T09:32:15.466Z",
       "lastFound": 0
     },
     "https://www.youtube.com/@GSHElectrical": {
       "id": "UCgtbE9w_d-u2AvPp3WBlPfQ",
-      "checked": "2026-10-25T09:29:05.573Z",
-      "lastFound": 2
+      "checked": "2026-10-25T09:32:16.298Z",
+      "lastFound": 0
     },
     "https://www.youtube.com/@jwflame": {
       "id": "UC2uFFhnMKyF82UY2TbXRaNg",
-      "checked": "2026-10-25T09:29:06.817Z",
+      "checked": "2026-10-25T09:32:17.173Z",
       "lastFound": 0
     },
     "https://www.youtube.com/@RogerWakefield": {
       "id": "UCGIMKh92vaL0_Yc0u4GYhHA",
-      "checked": "2026-10-25T09:29:08.298Z",
+      "checked": "2026-10-25T09:32:17.979Z",
       "lastFound": 0
     }
   },
