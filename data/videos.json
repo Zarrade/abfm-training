@@ -2,6 +2,30 @@
   "updated": "2026-10-25",
   "videos": [
     {
+      "id": "lands-jCowCVTR6VE",
+      "yt": "jCowCVTR6VE",
+      "title": "Troubleshooting Irrigation Sprinkler Valves",
+      "category": "Landscaping",
+      "subject": "Irrigation Valve Troubleshooting",
+      "level": "Intermediate",
+      "channel": "",
+      "duration": "",
+      "added": "2026-10-25",
+      "summary": "This video demonstrates how to troubleshoot, disassemble, clean, and reassemble an irrigation sprinkler valve.",
+      "safety": "Turn off the main water supply to the system before disassembling or servicing any valves.",
+      "ppe": [
+        "Work Gloves",
+        "Safety Glasses"
+      ],
+      "steps": [
+        "Turn off the main water supply before servicing.",
+        "Unscrew the manual control bushing and solenoid.",
+        "Remove the bonnet and inspect the diaphragm.",
+        "Clean debris and sediment from the valve parts.",
+        "Reassemble the valve components carefully in reverse order."
+      ]
+    },
+    {
       "id": "hvac-101",
       "yt": "WdS5tlPJGZc",
       "title": "Refrigeration Cycle Basics for New AC Technicians",
