@@ -193,7 +193,7 @@
       const res = await Promise.all(keys.map(k => readFile(k)));
       keys.forEach((k, i) => data[k] = res[i]);
     } catch (e) { return renderConnect(e.message); }
-    $("#tabs").hidden = false; $("#disconnect").hidden = false;
+    $("#tabs").hidden = false; $("#disconnect").hidden = false; $("#hdr-find").hidden = false;
     $("#repo-label").textContent = `${cfg.owner}/${cfg.repo}`;
     render();
     loadRequests().then(() => { if (view === "requests") render(); else badgeRequests(); });
@@ -523,9 +523,15 @@
     };
     $("#app").innerHTML = `
       <div class="card-plain">
-        <h2>Review queue</h2>
-        <p>Every day the finder checks your trusted channels and puts new uploads here. Nothing goes live until you approve it.</p>
-        <p class="count" style="margin:0">${p.lastRun ? "Last check: " + esc(new Date(p.lastRun).toLocaleString()) : "The finder hasn't run yet. It runs every morning, or use “Find new videos now” on the Channels tab."}</p>
+        <div class="q-head">
+          <div>
+            <h2>Review queue</h2>
+            <p>Every morning the finder checks your trusted channels and puts new uploads here${geminiKey() ? ", reviewed by Gemini" : ""}. Nothing goes live until you approve it.</p>
+            <p class="count" style="margin:0">${p.lastRun ? "Last check: " + esc(new Date(p.lastRun).toLocaleString()) : "The finder hasn't run yet."}</p>
+          </div>
+          <button class="btn btn-primary find-btn" data-find ${finder.running ? "disabled" : ""}>${finder.running ? "⏳ Searching…" : "🔎 Search for new videos now"}</button>
+        </div>
+        <div class="find-msg" ${finder.msg ? "" : "hidden"}>${finder.msg}</div>
       </div>
       ${errs.length ? `<div class="err">⚠ ${errs.length} channel${errs.length > 1 ? "s" : ""} couldn't be checked. See the Channels tab.</div>` : ""}
       ${q.length ? `<div class="bar"><p class="count grow" style="margin:0">${q.length} waiting${nAi ? ` · ${nAi} reviewed by Gemini` : ""}</p>
@@ -924,8 +930,8 @@
       <div class="card-plain">
         <h2>Trusted channels</h2>
         <p>The daily finder only looks at these YouTube channels. Add channels whose videos you'd be happy for staff to watch.</p>
-        <button class="btn" id="run-now">🔎 Find new videos now</button>
-        <span class="count" id="run-msg" style="margin-inline-start:8px"></span>
+        <button class="btn" data-find ${finder.running ? "disabled" : ""}>${finder.running ? "⏳ Searching…" : "🔎 Search for new videos now"}</button>
+        <div class="find-msg" ${finder.msg ? "" : "hidden"}>${finder.msg}</div>
       </div>
       <div class="rows" style="margin-bottom:16px">${(c.channels || []).map((ch, i) => {
         const s = st[ch.url] || {};
@@ -988,7 +994,7 @@
       await update("channels", d => { d.lookbackDays = look; d.maxQueue = max; d.skipShorts = shorts; return d; }, "Update finder options");
       toast("Saved");
     };
-    $("#run-now").onclick = runFinder;
+
     $$("[data-ch-edit]").forEach(b => b.onclick = () => { chEdit = b.dataset.chEdit; renderChannels(); const f = $("#ce-name"); if (f) f.focus(); });
     const ef = $("#ch-edit-form");
     if (ef) {
@@ -1012,14 +1018,55 @@
       };
     }
   }
-  async function runFinder() {
-    const msg = $("#run-msg");
-    msg.textContent = "Starting…";
-    const r = await gh(`/repos/${cfg.owner}/${cfg.repo}/actions/workflows/find-videos.yml/dispatches`, { method: "POST", body: { ref: cfg.branch } });
-    if (r.status === 204) msg.textContent = "Started. New videos show up in the Review queue in 1–3 minutes (reload this page).";
-    else if (r.status === 403 || r.status === 404) msg.textContent = "Couldn't start it. Give your token “Actions: Read and write”, and check Actions are enabled on the repo.";
-    else msg.textContent = "Couldn't start it (" + r.status + ").";
+  /* Search for new videos now: starts the GitHub job, follows it, and reloads the queue when it's done. */
+  const finder = { running: false, msg: "" };
+  function finderMsg(html, running) {
+    finder.msg = html; if (running !== undefined) finder.running = running;
+    $$(".find-msg").forEach(m => { m.hidden = !html; m.innerHTML = html; });
+    $$("[data-find]").forEach(b => { b.disabled = finder.running; b.textContent = finder.running ? "⏳ Searching…" : "🔎 Search for new videos now"; });
+    const hb = $("#hdr-find"); if (hb) { hb.disabled = finder.running; hb.textContent = finder.running ? "⏳" : "🔎"; }
   }
+  async function runFinder() {
+    if (finder.running) return;
+    const wf = `/repos/${cfg.owner}/${cfg.repo}/actions/workflows/find-videos.yml`;
+    const before = new Date(Date.now() - 5000).toISOString();
+    const qBefore = (data.pending.json.queue || []).length;
+    finderMsg("Starting the search…", true);
+    let r;
+    try { r = await gh(wf + "/dispatches", { method: "POST", body: { ref: cfg.branch } }); } catch (e) { r = { status: 0 }; }
+    if (r.status !== 204) {
+      finderMsg(r.status === 403 || r.status === 404
+        ? "⚠ Couldn't start it. Your GitHub token needs <b>Actions: Read and write</b> permission (GitHub → Settings → Developer settings → your token → Repository permissions), and Actions must be enabled on the repo."
+        : `⚠ Couldn't start it (${r.status || "no connection"}). Try again in a minute.`, false);
+      return;
+    }
+    finderMsg(`Searching your ${(data.channels.json.channels || []).filter(c => c.active !== false).length} channels${geminiKey() ? " — Gemini will then watch and review the new videos" : ""}… This usually takes 1–5 minutes. You can keep working.`);
+    const t0 = Date.now();
+    let runId = null;
+    while (Date.now() - t0 < 45 * 60000) {
+      await new Promise(res => setTimeout(res, runId ? 10000 : 4000));
+      try {
+        if (!runId) {
+          const j = await (await gh(wf + "/runs?event=workflow_dispatch&per_page=5")).json();
+          const run = (j.workflow_runs || []).find(x => x.created_at >= before);
+          if (run) runId = run.id; else continue;
+        }
+        const run = await (await gh(`/repos/${cfg.owner}/${cfg.repo}/actions/runs/${runId}`)).json();
+        const mins = Math.max(1, Math.round((Date.now() - t0) / 60000));
+        if (run.status !== "completed") { finderMsg(`${run.status === "queued" ? "Waiting for GitHub to start" : "Searching"}… (${mins} min) <a href="${esc(run.html_url)}" target="_blank" rel="noopener">details</a>`); continue; }
+        if (run.conclusion !== "success") { finderMsg(`⚠ The search stopped with a problem (${esc(run.conclusion)}). <a href="${esc(run.html_url)}" target="_blank" rel="noopener">See what happened</a>`, false); return; }
+        await new Promise(res => setTimeout(res, 3000));          // give GitHub a moment to save the results
+        const [pq, ch] = await Promise.all([readFile("pending"), readFile("channels")]);
+        data.pending = pq; data.channels = ch;
+        const n = (pq.json.queue || []).length - qBefore;
+        finderMsg(n > 0 ? `✅ Done — <b>${n} new video${n > 1 ? "s" : ""}</b> added to the Review queue.` : "✅ Done — no new videos since the last check.", false);
+        render();
+        return;
+      } catch (e) { /* network blip: keep waiting */ }
+    }
+    finderMsg("Still running on GitHub. Reload this page in a few minutes to see the results.", false);
+  }
+
 
   /* ---------- Settings ---------- */
   function renderSettings() {
@@ -1128,6 +1175,7 @@
   document.addEventListener("click", e => {
     const tab = e.target.closest("#tabs [data-view]");
     if (tab) { view = tab.dataset.view; render(); scrollTo(0, 0); return; }
+    if (e.target.closest("[data-find], #hdr-find")) { runFinder(); return; }
     if (e.target.closest("[data-close-drawer]") || e.target.id === "drawer") { closeDrawer(); return; }
     const t = e.target.closest("[data-edit],[data-hide],[data-del],[data-approve],[data-reject],[data-preview],[data-ch-toggle],[data-ch-del]");
     if (!t) return;

@@ -114,3 +114,9 @@ details.box summary { font-weight: 700; cursor: pointer; }
 .fv-list > .help { grid-column: 1 / -1; }
 .fv { grid-template-columns: 140px 1fr; }
 .fv .btn { margin: 2px 4px 2px 0; }
+.q-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 14px; flex-wrap: wrap; }
+.q-head > div { flex: 1 1 320px; }
+.find-btn { flex: none; }
+.find-msg { margin-top: 10px; background: var(--surface-2); border-radius: 10px; padding: 10px 12px; font-size: 14px; }
+.find-msg a { color: inherit; font-weight: 700; }
+@media (max-width: 600px) { .find-btn { width: 100%; } }
