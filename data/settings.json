@@ -32,7 +32,7 @@
       "keywords": [
         "hvac",
         "air condition",
-        " ac ",
+        "ac",
         "a/c",
         "split",
         "refrigerant",
@@ -105,7 +105,7 @@
         "three-phase",
         "3 phase",
         "panel",
-        "db ",
+        "db",
         "earth",
         "megger",
         "insulation resistance",
@@ -258,5 +258,6 @@
       "announcement": "",
       "tagline": "البنيان لإدارة المرافق"
     }
-  }
+  },
+  "requestUrl": "https://script.google.com/macros/s/AKfycbxEYS2gnMp-319yiEW4yUNTSN1ljXG3HKEXz6vsjuM2lm9fvXR9uhOtq8t0sAeWpAVJ/exec"
 }
