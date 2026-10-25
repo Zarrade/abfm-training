@@ -74,48 +74,6 @@
   },
   "queue": [
     {
-      "yt": "912yUrU0Mw8",
-      "title": "Stop Lost-Time Injuries: PPE, Van Checks & Driving",
-      "channel": "HVAC School",
-      "channelUrl": "https://www.youtube.com/c/HVACSchool",
-      "published": "2026-10-25T11:00:01+00:00",
-      "duration": "",
-      "channelCategory": "HVAC",
-      "suggestedCategory": "HVAC",
-      "description": "Field safety starts long before you open the panel. In this HVAC School safety meeting, we lay out the everyday habits that keep technicians on the job and out of the hospital. We cover vehicle inspections, the right gloves, and staying alert behind the wheel. One theme runs through all of it: routine work becomes high-risk the moment you stop paying attention. The goal is to stop injuries before they turn into stitches, an OSHA recordable, or lost time away from work.\n\nWe open with a real story from the turnpike. A service van with low tire tread hydroplaned during a simple lane change, spun a full 360, and hit the wall. Luckily, nobody else was nearby. That near miss is why weekly van checks matter. Walk around your vehicle before you get in, check tire tread depth, have a coworker confirm your brake lights work, and report new noises right away through the QR code system. Dropping your van off for weekend maintenance catches worn brakes, leaks, and bald tires before they leave you stranded or worse.\n\nNext, we talk about PPE, especially gloves. One of our techs had a hand sliced by sheet metal dangerously close to a main artery. Since then, we’ve challenged every technician to make gloves part of the daily routine. Skipping gloves for weeks without a problem tricks your brain into thinking it’s safe, until the day it isn’t. Today’s high-dexterity gloves let you feel screws, valves, and spade terminals, and welding sleeves protect your arms during brazing. Keep a spare pair clipped to your bag or belt so a rooftop gust of wind never catches you bare-handed.\n\nWe also cover driving. Distracted drivers, pedestrians glued to their phones, and electric scooters crossing intersections make every trip a risk. Use the Smith System, look left-right-left before crossing a crosswalk, and remember that dash cameras protect you if something goes wrong.\n\nIn the second half, we get into ladder safety, which is part of your van checks too. Secure ladders to the racks and racks to the vehicle, and replace sun-damaged straps. Never stand a short ladder on top of the van to reach a roof. When climbing, stay aware of anything bulky you’re carrying, like a backpack that can snag at the top or a drill that can fall on the person holding the ladder.\n\n---\n\nNEXT VIDEO\n\nHVAC Safety Training for Technicians | Ladders, PPE, Lockout Tagout & More\nhttps://www.youtube.com/watch?v=dRzbyWDUZ8o&t=547s\n\nKEEP LEARNING\n\nStart here:\nhttps://www.hvacrschool.com/start/\n\nFree HVAC/R training, tech tips, quizzes, calculators, courses, and more:\nhttps://www.hvacrschool.com/\n\nListen to the HVAC School podcast:\nhttps://www.hvacrschool.com/podcast/\n\nGet the HVAC School app:\nhttps://www.hvacrschool.com/apps-page/\n\nHVAC School provides free HVAC/R training—primarily for techs, by techs. The goal is not just to collect facts. It is to understand the system well enough to apply what you know in the field.\n\nQuestions or corrections? Leave a comment and include the equipment model, measurements, ",
-      "found": "2026-10-25T14:27:02.123Z",
-      "draft": {
-        "source": "ai",
-        "summary": "A speaker conducts a training session on stopping lost-time injuries, covering van checks, driving habits, and proper personal protective equipment.",
-        "safety": "Always walk around your vehicle and check tyres, brakes, and ladders before driving.",
-        "ppe": [
-          "Safety Glasses",
-          "Gloves",
-          "Protective Clothing"
-        ],
-        "steps": [
-          "Walk around your vehicle and check tyres and brakes regularly.",
-          "Inspect ladder storage and tie-downs on vans weekly.",
-          "Wear appropriate gloves to prevent hand and arm cuts from sheet metal.",
-          "Check pedestrian crossings and use the left-right-left rule before crossing."
-        ],
-        "stepsFrom": "ai",
-        "level": "Beginner",
-        "subject": "Fundamentals",
-        "category": "Health & Safety",
-        "review": {
-          "relevance": 9,
-          "quality": 8,
-          "recommend": "approve",
-          "reason": "Clear and relevant safety instruction for maintenance technicians.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
-    },
-    {
       "yt": "IElUDCQfTgg",
       "title": "How to Test a Ring Final Circuit",
       "channel": "GSH Electrical",
