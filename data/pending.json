@@ -2049,38 +2049,6 @@
         "level": "Advanced",
         "subject": ""
       }
-    },
-    {
-      "yt": "jCowCVTR6VE",
-      "title": "Troubleshooting Irrigation Sprinkler Valves",
-      "channel": "",
-      "published": "",
-      "duration": "",
-      "suggestedCategory": "Landscaping",
-      "description": "Suggested starter video (found by research). Preview it before approving.",
-      "found": "2026-10-25T10:06:40Z",
-      "starter": true,
-      "draft": {
-        "source": "rules",
-        "summary": "",
-        "safety": "Inform the building and the alarm monitoring company before testing, and never leave a system disabled.",
-        "ppe": [
-          "Safety Glasses",
-          "Work Gloves",
-          "Safety Shoes"
-        ],
-        "steps": [
-          "Check the main valve and backflow are fully open",
-          "Run one zone at a time to find where the pressure drops",
-          "Look for leaks, broken heads and partly closed valves",
-          "Clean or replace blocked filters and nozzles",
-          "Check the valve diaphragm and solenoid",
-          "Test the zone again and adjust the heads"
-        ],
-        "stepsFrom": "topic",
-        "level": "Intermediate",
-        "subject": ""
-      }
     }
   ],
   "rejected": [
