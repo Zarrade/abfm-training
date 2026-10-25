@@ -10,17 +10,19 @@ const DATA = new URL("../data/", import.meta.url);
 const LANGS = ["hi", "ur", "ml", "bn", "ta", "ne", "tl", "ar"];
 const MAX_REQUESTS = Number(process.env.MAX_TRANSLATIONS || 900);
 const sleep = ms => new Promise(r => setTimeout(r, ms));
+const START = Date.now(), TIME_BUDGET = 20 * 60 * 1000;   // stop after 20 min and save what's done; the next run continues
 let requests = 0, failures = 0;
 
 async function gtx(text, tl) {
-  if (requests >= MAX_REQUESTS) throw new Error("limit");
+  if (requests >= MAX_REQUESTS || Date.now() - START > TIME_BUDGET) throw new Error("limit");
   requests++;
   for (let attempt = 0; attempt < 3; attempt++) {
     try {
       const r = await fetch(`https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=${tl}&dt=t`, {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8", "User-Agent": "Mozilla/5.0" },
-        body: "q=" + encodeURIComponent(text)
+        body: "q=" + encodeURIComponent(text),
+        signal: AbortSignal.timeout(15000)
       });
       if (r.status === 429) { await sleep(4000 * (attempt + 1)); continue; }
       if (!r.ok) throw new Error("HTTP " + r.status);
@@ -72,6 +74,7 @@ async function translateVideos(doc) {
         failures++;
         if (e.message === "limit") return changed;
         console.log(`  ! ${v.id} [${tl}]: ${e.message}`);
+        if (failures >= 12 && !changed) { console.log("Translation service not reachable, stopping."); return changed; }
       }
       await sleep(300);
     }
