@@ -728,6 +728,17 @@
             "نظارات السلامة"
           ]
         }
+      },
+      "gemini": {
+        "date": "2026-10-25",
+        "model": "gemini-3.5-flash-lite",
+        "relevance": 10,
+        "quality": 8,
+        "recommend": "approve",
+        "reason": "Clear and detailed guide on troubleshooting and repairing sprinkler valves.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
       }
     },
     {
