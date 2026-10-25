@@ -8474,6 +8474,17 @@
             "أحذية السلامة"
           ]
         }
+      },
+      "gemini": {
+        "date": "2026-10-25",
+        "model": "gemini-3.5-flash-lite",
+        "relevance": 9,
+        "quality": 8,
+        "recommend": "approve",
+        "reason": "It offers clear, practical guidance on diagnosing common VFD issues.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
       }
     },
     {
