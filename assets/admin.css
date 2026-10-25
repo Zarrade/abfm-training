@@ -123,3 +123,20 @@ details.box summary { font-weight: 700; cursor: pointer; }
 .b-gem { background: #e3f6ea; color: #13663a; }
 .b-wait { background: var(--surface-2); color: var(--muted); }
 @media (prefers-color-scheme: dark) { .b-gem { background: #133524; color: #8fe0b0; } }
+/* Settings: side menu */
+.set-layout { display: grid; grid-template-columns: 220px 1fr; gap: 18px; align-items: start; }
+.set-nav { position: sticky; top: 120px; display: grid; gap: 4px; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 8px; }
+.set-nav button { display: flex; align-items: center; gap: 10px; text-align: start; border: 0; background: none; min-height: 44px; padding: 0 12px; border-radius: 10px; font-weight: 600; color: var(--muted); font-size: 15px; }
+.set-nav button span { width: 22px; text-align: center; }
+.set-nav button:hover { background: var(--surface-2); }
+.set-nav button[aria-current="page"] { background: var(--brand-soft); color: var(--brand-ink); }
+.set-body > .card-plain { margin-top: 0; }
+.set-sec[hidden] { display: none; }
+.set-save { position: sticky; bottom: 12px; display: flex; align-items: center; gap: 12px; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 10px; box-shadow: 0 6px 20px rgba(0,0,0,.08); }
+.set-save .help { margin: 0; }
+@media (max-width: 759px) {
+  .set-layout { grid-template-columns: 1fr; gap: 12px; }
+  .set-nav { position: static; display: flex; overflow-x: auto; scrollbar-width: none; padding: 6px; }
+  .set-nav button { flex: none; white-space: nowrap; min-height: 40px; }
+  .set-save .btn { flex: 1; }
+}

@@ -1066,13 +1066,16 @@
 
 
   /* ---------- Settings ---------- */
+  let setSec = "site";
   function renderSettings() {
     const s = data.settings.json;
     const counts = {}; V().forEach(v => counts[v.category] = (counts[v.category] || 0) + 1);
     $("#app").innerHTML = `
-      <form id="set-form">
-        <div class="card-plain">
-          <h2>Site</h2>
+      <form id="set-form" class="set-layout">
+        <nav class="set-nav" aria-label="Settings sections"><button type="button" data-set-sec="site" aria-current="${setSec === "site" ? "page" : "false"}"><span>🏷️</span>Site</button><button type="button" data-set-sec="cats" aria-current="${setSec === "cats" ? "page" : "false"}"><span>🗂️</span>Categories</button><button type="button" data-set-sec="finder" aria-current="${setSec === "finder" ? "page" : "false"}"><span>🚫</span>Finder filters</button><button type="button" data-set-sec="inbox" aria-current="${setSec === "inbox" ? "page" : "false"}"><span>🙋</span>Requests &amp; Ask AI</button><button type="button" data-set-sec="gemini" aria-current="${setSec === "gemini" ? "page" : "false"}"><span>✨</span>Gemini</button></nav>
+        <div class="set-body">
+        <div class="card-plain set-sec" data-sec="site" ${setSec === "site" ? "" : "hidden"}>
+          <h2>🏷️ Site</h2>
           <div class="two">
             <div class="field"><label for="s-name">Site name</label><input class="input" id="s-name" value="${esc(s.siteName || "")}"></div>
             <div class="field"><label for="s-tag">Tagline</label><input class="input" id="s-tag" value="${esc(s.tagline || "")}"></div>
@@ -1083,27 +1086,27 @@
             <div class="field"><label for="s-new">“New” badge for (days)</label><input class="input" id="s-new" type="number" min="1" max="60" value="${esc(s.newDays || 7)}"></div>
           </div>
         </div>
-        <div class="card-plain">
-          <h2>Categories</h2>
+        <div class="card-plain set-sec" data-sec="cats" ${setSec === "cats" ? "" : "hidden"}>
+          <h2>🗂️ Categories</h2>
           <p class="count">Icon, name, and words the finder uses to sort new videos (comma separated). Empty categories are hidden from staff.</p>
           <div id="cat-rows">${(s.categories || []).map((c, i) => catRow(c, i, counts[c.name] || 0)).join("")}</div>
           <button type="button" class="btn btn-sm" id="cat-add">＋ Add category</button>
         </div>
-        <div class="card-plain">
-          <h2>Finder: skip videos containing</h2>
+        <div class="card-plain set-sec" data-sec="finder" ${setSec === "finder" ? "" : "hidden"}>
+          <h2>🚫 Finder: skip videos containing</h2>
           <textarea class="textarea" id="s-excl">${esc((s.excludeKeywords || []).join(", "))}</textarea>
           <div class="help">Comma separated. Videos whose title contains any of these are never queued.</div>
         </div>
-        <div class="card-plain">
-          <h2>Request inbox &amp; Ask AI</h2>
+        <div class="card-plain set-sec" data-sec="inbox" ${setSec === "inbox" ? "" : "hidden"}>
+          <h2>🙋 Request inbox &amp; Ask AI</h2>
           <p class="count">Where “Request a video” sends requests. See the Requests tab for the 5-minute setup.</p>
           <div class="field"><label for="s-req">Web app URL (from Google Apps Script)</label><input class="input" id="s-req" inputmode="url" spellcheck="false" placeholder="https://script.google.com/macros/s/…/exec" value="${esc(s.requestUrl || "")}"><div class="help">Saved with the site settings. Leave empty to hide the Request button.</div></div>
           <label class="check"><input type="checkbox" id="s-ai" ${s.aiEnabled ? "checked" : ""}> ✨ Show <b>Ask AI</b> to staff</label>
           <div class="help" style="margin:-4px 0 12px">Staff can ask work questions and add photos; Gemini answers in their language and suggests videos from the library. Needs your Gemini key on the <code>GEMINI_KEY</code> line of the Google script (the key stays private there). Questions and photos are not saved.</div>
           <div class="field"><label for="s-reqkey">Inbox password (ADMIN_KEY in the script)</label><input class="input" id="s-reqkey" type="password" autocomplete="off" value="${esc(reqKey())}"><div class="help">Kept only in this browser — never saved to GitHub.</div></div>
         </div>
-        <div class="card-plain">
-          <h2>Auto-draft with Gemini (optional)</h2>
+        <div class="card-plain set-sec" data-sec="gemini" ${setSec === "gemini" ? "" : "hidden"}>
+          <h2>✨ Auto-draft with Gemini (optional)</h2>
           <p class="count">Without a key, drafts come from the YouTube description and built-in safety rules. With a free Gemini key, Gemini watches each video and drafts the summary, safety note and steps from what it shows.</p>
           <ol class="setup-steps">
             <li>Get a free key at <a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener">aistudio.google.com/apikey</a> (sign in with Google → Create API key).</li>
@@ -1117,8 +1120,15 @@
           <button type="button" class="btn btn-sm" id="s-gtest">Test Gemini</button> <span class="help" id="s-gtest-msg"></span>
           <p class="help" style="margin-top:10px">With Gemini on: every new video in the review queue is watched, drafted (summary, safety, PPE, steps) and scored, with a warning if it shows unsafe practice. Requests get a <b>✨ Find videos</b> button, and toolbox talks a <b>✨ Write with Gemini</b> button. The free tier covers about 8 hours of video a day; the daily job stays under that.</p>
         </div>
-        <button class="btn btn-primary" style="width:100%">Save settings</button>
+        <div class="set-save"><button class="btn btn-primary">Save settings</button><span class="help">Saves all sections.</span></div>
+        </div>
       </form>`;
+    $$("[data-set-sec]").forEach(b => b.onclick = () => {
+      setSec = b.dataset.setSec;
+      $$("[data-set-sec]").forEach(x => x.setAttribute("aria-current", x === b ? "page" : "false"));
+      $$(".set-sec").forEach(c => c.hidden = c.dataset.sec !== setSec);
+      if (innerWidth < 760) b.scrollIntoView({ inline: "center", block: "nearest" });
+    });
     $("#s-gtest").onclick = async () => {
       const key = $("#s-gem").value.trim(), m = $("#s-gtest-msg");
       if (!key) { m.textContent = "Paste a key first."; return; }
