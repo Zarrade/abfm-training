@@ -12,6 +12,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: data-writer
@@ -27,6 +28,7 @@ jobs:
         with:
           node-version: 20
       - name: Translate new or changed videos
+        id: tr
         run: node scripts/translate.mjs
       - name: Save translations
         run: |
@@ -43,3 +45,8 @@ jobs:
             sleep 5
           done
           exit 1
+      - name: Continue in a new run if there is more to translate
+        if: steps.tr.outputs.more == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run translate.yml --ref "${GITHUB_REF_NAME}" --repo "${GITHUB_REPOSITORY}"

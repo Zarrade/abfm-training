@@ -11,10 +11,10 @@ const LANGS = ["hi", "ur", "ml", "bn", "ta", "ne", "tl", "ar"];
 const MAX_REQUESTS = Number(process.env.MAX_TRANSLATIONS || 900);
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const START = Date.now(), TIME_BUDGET = 20 * 60 * 1000;   // stop after 20 min and save what's done; the next run continues
-let requests = 0, failures = 0;
+let requests = 0, failures = 0, hitLimit = false;
 
 async function gtx(text, tl) {
-  if (requests >= MAX_REQUESTS || Date.now() - START > TIME_BUDGET) throw new Error("limit");
+  if (requests >= MAX_REQUESTS || Date.now() - START > TIME_BUDGET) { hitLimit = true; throw new Error("limit"); }
   requests++;
   for (let attempt = 0; attempt < 3; attempt++) {
     try {
@@ -134,3 +134,9 @@ if (nv) await writeFile(new URL("videos.json", DATA), JSON.stringify(videos, nul
 if (ns) await writeFile(new URL("settings.json", DATA), JSON.stringify(settings, null, 2) + "\n");
 console.log(`Translated ${nv} video/language pairs ${ns} settings languages and ${np} path translations using ${requests} requests (${failures} failed).`);
 if (failures && !nv && !ns && !np) process.exitCode = 1;
+// Tell the workflow there is more to do, so it can start another run straight away.
+if (hitLimit && process.env.GITHUB_OUTPUT) {
+  const { appendFile } = await import("node:fs/promises");
+  await appendFile(process.env.GITHUB_OUTPUT, "more=true\n");
+  console.log("Time limit reached; the rest will be translated in the next run.");
+}
