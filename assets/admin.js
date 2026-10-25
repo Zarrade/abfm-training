@@ -534,7 +534,7 @@
         <div class="find-msg" ${finder.msg ? "" : "hidden"}>${finder.msg}</div>
       </div>
       ${errs.length ? `<div class="err">⚠ ${errs.length} channel${errs.length > 1 ? "s" : ""} couldn't be checked. See the Channels tab.</div>` : ""}
-      ${q.length ? `<div class="bar"><p class="count grow" style="margin:0">${q.length} waiting${nAi ? ` · ${nAi} reviewed by Gemini` : ""}</p>
+      ${q.length ? `<div class="bar"><p class="count grow" style="margin:0">${q.length} waiting · <b>${nAi} of ${q.length}</b> checked by Gemini</p>
         <select id="q-sort"><option value="new" ${qSort === "new" ? "selected" : ""}>Newest first</option><option value="ai" ${qSort === "ai" ? "selected" : ""}>Gemini's best first</option></select>
         ${nRej ? `<button class="btn btn-sm" id="q-rej-ai">Reject ${nRej} Gemini says no</button>` : ""}
         <button class="btn btn-sm" id="q-clear">Reject all</button></div>` : ""}
@@ -543,10 +543,10 @@
         <article class="qcard" data-yt="${esc(item.yt)}">
           <div class="thumb" data-preview="${esc(item.yt)}" style="cursor:pointer"><img loading="lazy" src="${thumb(item.yt)}" alt="" width="320" height="180">${item.duration ? `<span class="dur">${esc(item.duration)}</span>` : ""}</div>
           <div class="body">
-            <div class="meta"><span>${esc(item.suggestedCategory || "Unsorted")}</span>${item.published ? `<span class="dot">${esc(item.published.slice(0, 10))}</span>` : ""}${item.draft ? `<span class="badge-s b-draft">✨ ${item.draft.source === "ai" ? "AI draft from video" : { chapters: "Draft · steps from video", description: "Draft · steps from description", topic: "Draft · standard steps", general: "Draft · general steps" }[item.draft.stepsFrom] || "Draft"}</span>` : ""}</div>
+            <div class="meta"><span>${esc(item.suggestedCategory || "Unsorted")}</span>${item.published ? `<span class="dot">${esc(item.published.slice(0, 10))}</span>` : ""}${item.draft && item.draft.source === "ai" ? `<span class="badge-s b-gem">✓ Checked by Gemini</span>` : `<span class="badge-s b-wait">⏳ Not checked by Gemini yet</span>`}</div>
             <h3>${esc(item.title)}</h3>
             <div class="count" style="margin:0">${esc(item.channel || "")}</div>
-            ${item.draft && item.draft.review ? reviewHtml(item.draft.review, true) : ""}
+            ${item.draft && item.draft.review ? reviewHtml(item.draft.review, true) : item.draft ? `<div class="ai-reason">✨ Basic draft ready · ${{ chapters: "steps from the YouTube chapters", description: "steps from the YouTube description", topic: "standard steps for this job", general: "general safe-work steps" }[item.draft.stepsFrom] || "no steps yet"}</div>` : ""}
             ${dupNote(item)}
             ${item.description ? `<div class="desc">${esc(item.description)}</div>` : ""}
             <div class="acts">
