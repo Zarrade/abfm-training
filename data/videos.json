@@ -8111,24 +8111,23 @@
       "title": "External Earth Fault Loop Impedance (Ze) Test",
       "category": "Electrical",
       "subject": "Testing & Inspection",
-      "level": "Advanced",
+      "level": "Intermediate",
       "channel": "GSH Electrical",
       "duration": "5:32",
       "added": "2026-10-20",
-      "summary": "Measuring Ze at the origin of the installation and removing parallel earth paths to get a true reading.",
-      "safety": "This is a live test. Only authorised electricians with a calibrated tester and full PPE may carry it out.",
+      "summary": "An instructor demonstrates how to perform an external earth fault loop impedance (Ze) test on an electrical consumer unit.",
+      "safety": "Ensure all parallel earth paths are disconnected and isolation procedures are followed before testing.",
       "ppe": [
-        "1000V Insulated Gloves",
         "Safety Glasses",
-        "Arc-Rated Clothing",
-        "Steel Toe Boots"
+        "Insulated Gloves",
+        "Safety Shoes"
       ],
       "steps": [
-        "Obtain authorisation and isolate the installation.",
-        "Disconnect the main earthing conductor to remove parallel paths.",
-        "Connect the loop tester between line and the supply earth.",
-        "Record Ze and compare with the maximum permitted value.",
-        "Reconnect the main earth before restoring supply."
+        "Switch off the external double pole switch and consumer unit.",
+        "Remove bonding conductors and earth fault paths to earth.",
+        "Switch on the external double pole switch to restore live supply.",
+        "Connect the test meter leads to the earth conductor and incoming line.",
+        "Take the reading and record the external earth fault loop impedance."
       ],
       "tr": {
         "hi": {
