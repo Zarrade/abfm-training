@@ -193,7 +193,7 @@
       const res = await Promise.all(keys.map(k => readFile(k)));
       keys.forEach((k, i) => data[k] = res[i]);
     } catch (e) { return renderConnect(e.message); }
-    $("#tabs").hidden = false; $("#disconnect").hidden = false; $("#hdr-find").hidden = false;
+    $("#tabs").hidden = false; $("#disconnect").hidden = false;
     $("#repo-label").textContent = `${cfg.owner}/${cfg.repo}`;
     render();
     loadRequests().then(() => { if (view === "requests") render(); else badgeRequests(); });
@@ -529,9 +529,7 @@
             <p>Every morning the finder checks your trusted channels and puts new uploads here${geminiKey() ? ", reviewed by Gemini" : ""}. Nothing goes live until you approve it.</p>
             <p class="count" style="margin:0">${p.lastRun ? "Last check: " + esc(new Date(p.lastRun).toLocaleString()) : "The finder hasn't run yet."}</p>
           </div>
-          <button class="btn btn-primary find-btn" data-find ${finder.running ? "disabled" : ""}>${finder.running ? "⏳ Searching…" : "🔎 Search for new videos now"}</button>
         </div>
-        <div class="find-msg" ${finder.msg ? "" : "hidden"}>${finder.msg}</div>
       </div>
       ${errs.length ? `<div class="err">⚠ ${errs.length} channel${errs.length > 1 ? "s" : ""} couldn't be checked. See the Channels tab.</div>` : ""}
       ${q.length ? `<div class="bar"><p class="count grow" style="margin:0">${q.length} waiting · <b>${nAi} of ${q.length}</b> checked by Gemini</p>
@@ -1024,7 +1022,6 @@
     finder.msg = html; if (running !== undefined) finder.running = running;
     $$(".find-msg").forEach(m => { m.hidden = !html; m.innerHTML = html; });
     $$("[data-find]").forEach(b => { b.disabled = finder.running; b.textContent = finder.running ? "⏳ Searching…" : "🔎 Search for new videos now"; });
-    const hb = $("#hdr-find"); if (hb) { hb.disabled = finder.running; hb.textContent = finder.running ? "⏳" : "🔎"; }
   }
   async function runFinder() {
     if (finder.running) return;
@@ -1175,7 +1172,7 @@
   document.addEventListener("click", e => {
     const tab = e.target.closest("#tabs [data-view]");
     if (tab) { view = tab.dataset.view; render(); scrollTo(0, 0); return; }
-    if (e.target.closest("[data-find], #hdr-find")) { runFinder(); return; }
+    if (e.target.closest("[data-find]")) { runFinder(); return; }
     if (e.target.closest("[data-close-drawer]") || e.target.id === "drawer") { closeDrawer(); return; }
     const t = e.target.closest("[data-edit],[data-hide],[data-del],[data-approve],[data-reject],[data-preview],[data-ch-toggle],[data-ch-del]");
     if (!t) return;
