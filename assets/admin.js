@@ -544,6 +544,7 @@
             <div class="meta"><span>${esc(item.suggestedCategory || "Unsorted")}</span>${item.published ? `<span class="dot">${esc(item.published.slice(0, 10))}</span>` : ""}${item.draft && item.draft.source === "ai" ? `<span class="badge-s b-gem">✓ Checked by Gemini</span>` : `<span class="badge-s b-wait">⏳ Not checked by Gemini yet</span>`}</div>
             <h3>${esc(item.title)}</h3>
             <div class="count" style="margin:0">${esc(item.channel || "")}</div>
+            ${item.aiError && !(item.draft && item.draft.review) ? `<div class="ai-unsafe" style="background:var(--surface-2);color:var(--muted)">Gemini couldn't check it yet (${item.aiTries || 0}/3 tries): ${esc(item.aiError)}</div>` : ""}
             ${item.draft && item.draft.review ? reviewHtml(item.draft.review, true) : item.draft ? `<div class="ai-reason">✨ Basic draft ready · ${{ chapters: "steps from the YouTube chapters", description: "steps from the YouTube description", topic: "standard steps for this job", general: "general safe-work steps" }[item.draft.stepsFrom] || "no steps yet"}</div>` : ""}
             ${dupNote(item)}
             ${item.description ? `<div class="desc">${esc(item.description)}</div>` : ""}
@@ -1072,7 +1073,7 @@
     const counts = {}; V().forEach(v => counts[v.category] = (counts[v.category] || 0) + 1);
     $("#app").innerHTML = `
       <form id="set-form" class="set-layout">
-        <nav class="set-nav" aria-label="Settings sections"><button type="button" data-set-sec="site" aria-current="${setSec === "site" ? "page" : "false"}"><span>🏷️</span>Site</button><button type="button" data-set-sec="cats" aria-current="${setSec === "cats" ? "page" : "false"}"><span>🗂️</span>Categories</button><button type="button" data-set-sec="finder" aria-current="${setSec === "finder" ? "page" : "false"}"><span>🚫</span>Finder filters</button><button type="button" data-set-sec="inbox" aria-current="${setSec === "inbox" ? "page" : "false"}"><span>🙋</span>Requests &amp; Ask AI</button><button type="button" data-set-sec="gemini" aria-current="${setSec === "gemini" ? "page" : "false"}"><span>✨</span>Gemini</button></nav>
+        <nav class="set-nav" aria-label="Settings sections"><button type="button" data-set-sec="site" aria-current="${setSec === "site" ? "page" : "false"}"><span>🏷️</span>Site</button><button type="button" data-set-sec="cats" aria-current="${setSec === "cats" ? "page" : "false"}"><span>🗂️</span>Categories</button><button type="button" data-set-sec="finder" aria-current="${setSec === "finder" ? "page" : "false"}"><span>🚫</span>Finder filters</button><button type="button" data-set-sec="inbox" aria-current="${setSec === "inbox" ? "page" : "false"}"><span>🙋</span>Requests &amp; Ask AI</button><button type="button" data-set-sec="gemini" aria-current="${setSec === "gemini" ? "page" : "false"}"><span>✨</span>Gemini</button><button type="button" data-set-sec="status" aria-current="${setSec === "status" ? "page" : "false"}"><span>🩺</span>Status</button></nav>
         <div class="set-body">
         <div class="card-plain set-sec" data-sec="site" ${setSec === "site" ? "" : "hidden"}>
           <h2>🏷️ Site</h2>
@@ -1120,11 +1121,17 @@
           <button type="button" class="btn btn-sm" id="s-gtest">Test Gemini</button> <span class="help" id="s-gtest-msg"></span>
           <p class="help" style="margin-top:10px">With Gemini on: every new video in the review queue is watched, drafted (summary, safety, PPE, steps) and scored, with a warning if it shows unsafe practice. Requests get a <b>✨ Find videos</b> button, and toolbox talks a <b>✨ Write with Gemini</b> button. The free tier covers about 8 hours of video a day; the daily job stays under that.</p>
         </div>
+        <div class="card-plain set-sec" data-sec="status" ${setSec === "status" ? "" : "hidden"}>
+          <h2>🩺 Status</h2>
+          <div id="status-box"><p class="help">Loading…</p></div>
+        </div>
         <div class="set-save"><button class="btn btn-primary">Save settings</button><span class="help">Saves all sections.</span></div>
         </div>
       </form>`;
+    if (setSec === "status") loadStatus();
     $$("[data-set-sec]").forEach(b => b.onclick = () => {
       setSec = b.dataset.setSec;
+      if (setSec === "status") loadStatus();
       $$("[data-set-sec]").forEach(x => x.setAttribute("aria-current", x === b ? "page" : "false"));
       $$(".set-sec").forEach(c => c.hidden = c.dataset.sec !== setSec);
       if (innerWidth < 760) b.scrollIntoView({ inline: "center", block: "nearest" });
@@ -1166,6 +1173,40 @@
       await update("settings", d => Object.assign(d, vals), "Update site settings");
       reqs = null; loadRequests().then(badgeRequests);
       toast("Settings saved. Live in about a minute."); render();
+    };
+  }
+  async function loadStatus() {
+    const box = $("#status-box"); if (!box) return;
+    const vids = V(), q = data.pending.json.queue || [];
+    const full = vids.filter(v => v.tr && Object.keys(v.tr).length >= 8).length;
+    const gem = q.filter(i => i.draft && i.draft.source === "ai").length;
+    const gemErr = q.find(i => i.aiError && !(i.draft && i.draft.source === "ai"));
+    const ok = (good, text) => `<li class="${good ? "st-ok" : "st-warn"}">${good ? "✅" : "⚠️"} ${text}</li>`;
+    let html = `<ul class="st-list">
+      ${ok(full === vids.length, `Translations: <b>${full} of ${vids.length}</b> videos in all 8 languages${full === vids.length ? "" : " — new or edited videos are translated within a few minutes after saving"}`)}
+      ${ok(!q.length || gem > 0, `Gemini review: <b>${gem} of ${q.length}</b> queued videos checked${gemErr ? ` — last problem: <i>${esc(gemErr.aiError)}</i>` : ""}`)}
+      ${ok(!Object.values(data.pending.json.channelStatus || {}).some(c => c && c.error), "Channels: " + (Object.values(data.pending.json.channelStatus || {}).filter(c => c && c.error).length ? "some couldn't be checked — see Channels tab" : "all checked OK"))}
+      ${ok(!!data.settings.json.requestUrl, data.settings.json.requestUrl ? "Request inbox & Ask AI: connected" : "Request inbox: not set up yet")}
+    </ul>
+    <h3 style="margin:16px 0 8px">Recent automatic jobs on GitHub</h3>`;
+    box.innerHTML = html + `<p class="help">Loading…</p>`;
+    try {
+      const r = await gh(`/repos/${cfg.owner}/${cfg.repo}/actions/runs?per_page=12`);
+      if (!r.ok) throw new Error(r.status === 403 || r.status === 404 ? "Your GitHub token needs “Actions: Read” permission to show this." : "GitHub said " + r.status);
+      const runs = (await r.json()).workflow_runs || [];
+      const icon = x => x.status !== "completed" ? "⏳" : x.conclusion === "success" ? "✅" : x.conclusion === "cancelled" || x.conclusion === "skipped" ? "⏭️" : "❌";
+      const when = d => { const m = Math.round((Date.now() - Date.parse(d)) / 60000); return m < 60 ? m + " min ago" : m < 1440 ? Math.round(m / 60) + " h ago" : Math.round(m / 1440) + " d ago"; };
+      html += `<div class="st-runs">${runs.map(x => `<a class="st-run" href="${esc(x.html_url)}" target="_blank" rel="noopener">
+        <span>${icon(x)}</span><span><b>${esc(x.name)}</b><br><small>${esc(x.display_title || "")}</small></span>
+        <span class="st-when">${x.status !== "completed" ? esc(x.status.replace("_", " ")) : esc(x.conclusion)}<br><small>${when(x.created_at)}</small></span></a>`).join("") || `<p class="help">No jobs yet.</p>`}</div>
+        <p class="help">❌ means a job failed — tap it to see why (or send me a screenshot). ⏭️ cancelled jobs are normal when several saves happen close together.</p>
+        <button type="button" class="btn btn-sm" id="st-translate">🌐 Translate now</button> <span class="help" id="st-msg"></span>`;
+    } catch (e) { html += `<p class="help">${esc(e.message)}</p>`; }
+    box.innerHTML = html;
+    const tb = $("#st-translate");
+    if (tb) tb.onclick = async () => {
+      const r = await gh(`/repos/${cfg.owner}/${cfg.repo}/actions/workflows/translate.yml/dispatches`, { method: "POST", body: { ref: cfg.branch } });
+      $("#st-msg").textContent = r.status === 204 ? "Started — refresh this page in a few minutes." : "Couldn't start it (" + r.status + "). The token needs “Actions: Read and write”.";
     };
   }
   function catRow(c, i, count) {

@@ -36,12 +36,13 @@ for (const item of pending.queue || []) {
     usedMin += minutes(item.duration);
     try {
       item.draft = aiDraft ? await aiDraft({ yt: item.yt, title: item.title, category, subjects: subjectsFor(category), categories, key: KEY, model: MODEL }) : item.draft;
-      delete item.aiTries;
+      delete item.aiTries; delete item.aiError;
       ai++;
       if (item.draft.category && categories.includes(item.draft.category) && !item.channelCategory) item.suggestedCategory = item.draft.category;
       console.log(`  ✓ Gemini (${item.draft.model}): ${item.title} → ${item.draft.review.recommend} ${item.draft.review.relevance}/10`);
     } catch (e) {
       item.aiTries = (item.aiTries || 0) + 1;
+      item.aiError = String(e.message || e).slice(0, 200);
       aiFail++;
       console.log(`  ! AI draft failed for ${item.yt}: ${e.message}`);
       if (/API key|permission|quota|RESOURCE_EXHAUSTED/i.test(e.message)) break;

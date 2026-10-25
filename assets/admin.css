@@ -140,3 +140,11 @@ details.box summary { font-weight: 700; cursor: pointer; }
   .set-nav button { flex: none; white-space: nowrap; min-height: 40px; }
   .set-save .btn { flex: 1; }
 }
+.st-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+.st-list li { padding: 10px 12px; border-radius: 10px; background: var(--surface-2); font-size: 14px; }
+.st-list li.st-warn { background: #fff4e5; color: #7a4100; }
+.st-runs { display: grid; gap: 6px; margin-bottom: 10px; }
+.st-run { display: grid; grid-template-columns: 28px 1fr auto; gap: 8px; align-items: center; padding: 8px 10px; border: 1px solid var(--line); border-radius: 10px; color: var(--text); text-decoration: none; font-size: 14px; }
+.st-run small { color: var(--muted); }
+.st-when { text-align: end; font-size: 13px; }
+@media (prefers-color-scheme: dark) { .st-list li.st-warn { background: #3a2a12; color: #ffd59a; } }
