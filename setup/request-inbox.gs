@@ -137,15 +137,20 @@ Reply with JSON only: {"answer": string, "videos": [up to 3 ids from the library
   const body = { system_instruction: { parts: [{ text: system }] }, contents: contents,
     generationConfig: { temperature: 0.3, responseMimeType: "application/json" } };
 
-  let last = "";
+  let last = "", sawBusy = false;
   for (const m of MODELS) {
-    const r = UrlFetchApp.fetch("https://generativelanguage.googleapis.com/v1beta/models/" + m + ":generateContent", {
-      method: "post", contentType: "application/json", headers: { "x-goog-api-key": key },
-      payload: JSON.stringify(body), muteHttpExceptions: true
-    });
-    const code = r.getResponseCode();
+    let r, code;
+    for (let attempt = 0; attempt < 2; attempt++) {          // one quick retry if Google is overloaded
+      r = UrlFetchApp.fetch("https://generativelanguage.googleapis.com/v1beta/models/" + m + ":generateContent", {
+        method: "post", contentType: "application/json", headers: { "x-goog-api-key": key },
+        payload: JSON.stringify(body), muteHttpExceptions: true
+      });
+      code = r.getResponseCode();
+      if (code !== 503 && code !== 500) break;
+      Utilities.sleep(1500);
+    }
     if (code === 404) { last = "model"; continue; }
-    if (code === 429) return { ok: false, error: "busy" };
+    if (code === 429 || code === 503 || code === 500) { sawBusy = true; last = m + " busy"; continue; }   // try the next model
     if (code !== 200) return { ok: false, error: "error", detail: r.getContentText().slice(0, 200) };
     const j = JSON.parse(r.getContentText());
     const out = (((j.candidates || [])[0] || {}).content || {}).parts || [];
@@ -156,7 +161,7 @@ Reply with JSON only: {"answer": string, "videos": [up to 3 ids from the library
     return { ok: true, model: m, answer: String(ans.answer || raw || "").slice(0, 4000),
       videos: (Array.isArray(ans.videos) ? ans.videos : []).map(String).filter(id => ids.has(id)).slice(0, 3) };
   }
-  return { ok: false, error: "error", detail: last };
+  return sawBusy ? { ok: false, error: "busy" } : { ok: false, error: "error", detail: last };
 }
 
 /* Run this once from the editor (choose "authorize" at the top, then ▶ Run) to give the script

@@ -192,6 +192,7 @@
           const msg = (j.error && j.error.message) || ("HTTP " + r.status);
           const err = new Error(msg); err.status = r.status;
           if (r.status === 404 || /not found|not supported|is not available/i.test(msg)) { lastErr = err; continue; }  // try an older model
+          if (r.status === 503 || r.status === 500 || r.status === 429) { lastErr = err; err.busy = true; continue; }  // overloaded: try the next model
           throw err;
         }
         const c = (j.candidates || [])[0] || {};
@@ -201,6 +202,7 @@
       } catch (e) {
         if (e.name === "AbortError") e = new Error("Gemini took too long");
         lastErr = e;
+        if (e.busy) continue;
         if (e.status && e.status !== 404) throw e;
         if (!e.status && !/not found/i.test(e.message)) throw e;
       } finally { if (timer) clearTimeout(timer); }
