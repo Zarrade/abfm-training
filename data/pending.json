@@ -714,38 +714,6 @@
       "found": "2026-10-25T14:27:16.002Z"
     },
     {
-      "yt": "je0BsLY5nZw",
-      "title": "How a CPU Turns 1s and 0s Into Everything You See",
-      "channel": "The Engineering Mindset",
-      "channelUrl": "https://www.youtube.com/@EngineeringMindset",
-      "published": "2026-10-05T15:00:22+00:00",
-      "duration": "",
-      "suggestedCategory": "",
-      "description": "How do CPUs actually work? Design PCB's with Altium:  http://altium.com/yt/engineeringmindset\nHow does a CPU use billions of microscopic transistors to perform calculations and run software? In this video, we work from individual MOSFETs through logic gates, binary arithmetic and full adders to the ALU and CPU core.\nSee how processors fetch and execute instructions, how registers and L1, L2 and L3 cache work, how data moves between the CPU, RAM and storage, and why modern CPUs use multiple cores.\n\nWe also compare CPUs and GPUs, explain why GPUs contain billions of transistors, and show why the",
-      "found": "2026-10-25T09:28:58.969Z",
-      "draft": {
-        "source": "rules",
-        "summary": "How does a CPU use billions of microscopic transistors to perform calculations and run software? In this video, we work from individual MOSFETs through logic gates, binary arithmetic and full adders to the ALU and CPU core.",
-        "safety": "Check the area is safe, use the right tools and stop work if anything feels unsafe.",
-        "ppe": [
-          "Safety Glasses",
-          "Work Gloves",
-          "Safety Shoes"
-        ],
-        "steps": [
-          "Read the job card and get the right tools and PPE",
-          "Make the area safe and put up barriers or signs",
-          "Carry out the work as shown in the video",
-          "Check your work",
-          "Clean up the area",
-          "Report the job complete"
-        ],
-        "stepsFrom": "general",
-        "level": "Advanced",
-        "subject": ""
-      }
-    },
-    {
       "yt": "lD7x70PAsAE",
       "title": "do you need Blanke Permat?   Tile Floor uncoupling Underlayment",
       "channel": "Sal DiBlasi (tiling & waterproofing)",
@@ -2115,5 +2083,7 @@
       }
     }
   ],
-  "rejected": []
+  "rejected": [
+    "je0BsLY5nZw"
+  ]
 }
