@@ -128,6 +128,7 @@
     const a = $("#announce");
     a.hidden = !s.announcement;
     a.textContent = s.announcement ? "📣  " + (st.announcement || s.announcement) : "";
+    $$(".ai-tab").forEach(b => b.hidden = !aiOn());
     const n = state.videos.filter(isNew).length;
     const b = $("#new-badge"); b.hidden = !n; b.textContent = n > 99 ? "99+" : n;
   }
@@ -307,6 +308,125 @@
         });
       };
     }
+  }
+
+  /* ---------- Ask AI ---------- */
+  const aiOn = () => !!(state.settings.aiEnabled && state.settings.requestUrl);
+  const ai = { msgs: (() => { try { return JSON.parse(sessionStorage.getItem("ab_ai") || "[]"); } catch { return []; } })(), photos: [], busy: false };
+  const saveAi = () => { try { sessionStorage.setItem("ab_ai", JSON.stringify(ai.msgs.slice(-20).map(m => ({ ...m, photos: undefined, nPhotos: (m.photos || []).length || m.nPhotos || 0 })))); } catch {} };
+  const deviceId = (() => { let d = store.get("ab_dev", ""); if (!d) { d = Math.random().toString(36).slice(2, 12); store.set("ab_dev", d); } return d; })();
+  function mdLite(text) {
+    const lines = esc(text).split(/\n/);
+    let html = "", list = null;
+    const close = () => { if (list) { html += `</${list}>`; list = null; } };
+    for (let ln of lines) {
+      ln = ln.replace(/\*\*(.+?)\*\*/g, "<b>$1</b>");
+      const ol = ln.match(/^\s*\d+[.)]\s+(.*)/), ul = ln.match(/^\s*[-•*]\s+(.*)/);
+      if (ol) { if (list !== "ol") { close(); html += "<ol>"; list = "ol"; } html += `<li>${ol[1]}</li>`; }
+      else if (ul) { if (list !== "ul") { close(); html += "<ul>"; list = "ul"; } html += `<li>${ul[1]}</li>`; }
+      else { close(); if (ln.trim()) html += `<p>${ln}</p>`; }
+    }
+    close();
+    return html;
+  }
+  function catalogFor(q) {
+    const words = String(q).toLowerCase().match(/[a-z]{3,}/g) || [];
+    const scored = state.videos.map(v => {
+      const h = (v.title + " " + v.subject + " " + v.category + " " + (v.summary || "")).toLowerCase();
+      return [words.reduce((n, w) => n + (h.includes(w) ? 1 : 0), 0), v];
+    }).sort((a, b) => b[0] - a[0]);
+    return scored.slice(0, 300).map(([, v]) => `${v.id} | ${v.title} | ${v.category}${v.subject ? " / " + v.subject : ""}`);
+  }
+  function aiMsgHtml(m, i) {
+    if (m.role === "user") return `<div class="ai-msg me">${(m.photos || []).map(p => `<img src="${p}" alt="">`).join("")}${m.nPhotos && !(m.photos || []).length ? `<span class="ai-ph">📷 × ${m.nPhotos}</span>` : ""}${m.text ? `<p>${esc(m.text)}</p>` : ""}</div>`;
+    if (m.error) return `<div class="ai-msg bot err">${esc(m.text)}</div>`;
+    const vids = (m.videos || []).map(id => state.videos.find(v => v.id === id)).filter(Boolean);
+    return `<div class="ai-msg bot">
+      <div class="ai-text">${mdLite(m.text)}</div>
+      ${"speechSynthesis" in window ? `<button class="ai-say" data-say="${i}" aria-label="${esc(t("listen"))}">🔊</button>` : ""}
+      ${vids.length ? `<div class="ai-vids"><div class="ai-vh">🎬 ${esc(t("aiSuggested"))}</div><div class="mini-list">${vids.map(v => mini(v)).join("")}</div></div>` : ""}
+    </div>`;
+  }
+  function renderAI() {
+    const el = $("#video-view");
+    const empty = !ai.msgs.length;
+    el.innerHTML = `
+      <div class="ai-wrap">
+        <div class="ai-head">
+          <div><h1>✨ ${esc(t("aiTitle"))}</h1><p class="sub">${esc(t("aiIntro"))}</p></div>
+          ${empty ? "" : `<button class="btn btn-sm" id="ai-new">${esc(t("aiNew"))}</button>`}
+        </div>
+        <div class="ai-log" id="ai-log">
+          ${empty ? `<div class="ai-ex">${["aiEx1", "aiEx2", "aiEx3"].map(k => `<button class="chip" data-ex="${esc(t(k))}">${esc(t(k))}</button>`).join("")}</div>` : ai.msgs.map(aiMsgHtml).join("")}
+          ${ai.busy ? `<div class="ai-msg bot"><span class="ai-dots"><i></i><i></i><i></i></span> ${esc(t("aiThinking"))}</div>` : ""}
+        </div>
+        <p class="ai-note">⚠ ${esc(t("aiDisclaimer"))}</p>
+        <form class="ai-bar" id="ai-form">
+          <div class="ai-photos" id="ai-photos">${ai.photos.map((p, i) => `<span><img src="${p.url}" alt=""><button type="button" data-rm="${i}" aria-label="Remove">✕</button></span>`).join("")}</div>
+          <div class="ai-row">
+            <label class="btn btn-icon ai-cam" aria-label="${esc(t("aiPhoto"))}" title="${esc(t("aiPhoto"))}">📷<input type="file" accept="image/*" id="ai-file" multiple hidden></label>
+            <textarea id="ai-q" rows="1" maxlength="1000" placeholder="${esc(t("aiPlaceholder"))}"></textarea>
+            <button class="btn btn-primary btn-icon" id="ai-send" aria-label="${esc(t("send"))}" ${ai.busy ? "disabled" : ""}><span class="flip-r">${ICON.back}</span></button>
+          </div>
+        </form>
+      </div>`;
+    const log = $("#ai-log");
+    requestAnimationFrame(() => { const last = log.lastElementChild; if (last && !empty) last.scrollIntoView({ block: "end" }); });
+    const q = $("#ai-q");
+    q.addEventListener("input", () => { q.style.height = "auto"; q.style.height = Math.min(q.scrollHeight, 140) + "px"; });
+    q.addEventListener("keydown", e => { if (e.key === "Enter" && !e.shiftKey && matchMedia("(pointer:fine)").matches) { e.preventDefault(); $("#ai-form").requestSubmit(); } });
+    $("#ai-form").onsubmit = e => { e.preventDefault(); askAI(q.value); };
+    $("#ai-file").onchange = async e => {
+      for (const f of [...e.target.files].slice(0, 3 - ai.photos.length)) { try { ai.photos.push(await shrink(f)); } catch {} }
+      e.target.value = ""; const keep = q.value; renderAI(); $("#ai-q").value = keep;
+    };
+    $$("[data-rm]", el).forEach(b => b.onclick = () => { ai.photos.splice(+b.dataset.rm, 1); const keep = q.value; renderAI(); $("#ai-q").value = keep; });
+    $$("[data-ex]", el).forEach(b => b.onclick = () => askAI(b.dataset.ex));
+    $$("[data-say]", el).forEach(b => b.onclick = () => {
+      speechSynthesis.cancel();
+      const m = ai.msgs[+b.dataset.say];
+      const u = new SpeechSynthesisUtterance(m.text.replace(/\*\*/g, ""));
+      const BCP = { en: "en-GB", hi: "hi-IN", ur: "ur-PK", ml: "ml-IN", bn: "bn-IN", ta: "ta-IN", ne: "ne-NP", tl: "fil-PH", ar: "ar-SA" };
+      u.lang = BCP[m.lang || state.lang] || "en-GB"; u.rate = 0.95; speechSynthesis.speak(u);
+    });
+    const nb = $("#ai-new"); if (nb) nb.onclick = () => { ai.msgs = []; ai.photos = []; saveAi(); renderAI(); };
+  }
+  function shrink(file) {
+    return new Promise((res, rej) => {
+      const img = new Image(), url = URL.createObjectURL(file);
+      img.onload = () => {
+        const max = 1280, k = Math.min(1, max / Math.max(img.width, img.height));
+        const c = document.createElement("canvas"); c.width = Math.round(img.width * k); c.height = Math.round(img.height * k);
+        c.getContext("2d").drawImage(img, 0, 0, c.width, c.height);
+        URL.revokeObjectURL(url);
+        const data = c.toDataURL("image/jpeg", 0.8);
+        res({ url: data, mime: "image/jpeg", data: data.split(",")[1] });
+      };
+      img.onerror = () => { URL.revokeObjectURL(url); rej(new Error("bad image")); };
+      img.src = url;
+    });
+  }
+  async function askAI(text) {
+    text = String(text || "").trim();
+    if ((!text && !ai.photos.length) || ai.busy) return;
+    const photos = ai.photos.splice(0);
+    ai.msgs.push({ role: "user", text, photos: photos.map(p => p.url) });
+    ai.busy = true; renderAI();
+    const lang = { en: "English", hi: "Hindi", ur: "Urdu", ml: "Malayalam", bn: "Bengali", ta: "Tamil", ne: "Nepali", tl: "Filipino (Tagalog)", ar: "Arabic" }[state.lang] || "English";
+    const history = ai.msgs.slice(-9, -1).filter(m => !m.error).map(m => ({ role: m.role === "user" ? "user" : "model", text: (m.text || "").slice(0, 1500) }));
+    try {
+      const r = await fetch(state.settings.requestUrl, { method: "POST", headers: { "Content-Type": "text/plain;charset=utf-8" }, body: JSON.stringify({
+        action: "ask", device: deviceId, lang: state.lang, langName: lang, history, text,
+        images: photos.map(p => ({ mime: p.mime, data: p.data })), catalog: catalogFor(text + " " + history.map(h => h.text).join(" "))
+      }) });
+      const j = await r.json();
+      if (!j.ok) throw new Error(j.error || "error");
+      ai.msgs.push({ role: "bot", text: j.answer || "", videos: (j.videos || []).slice(0, 4), lang: state.lang });
+    } catch (e) {
+      ai.msgs.push({ role: "bot", error: true, text: e.message === "busy" ? t("aiBusy") : t("aiError") });
+    }
+    ai.busy = false; saveAi();
+    if (location.hash.startsWith("#/ai")) renderAI();
   }
 
   /* ---------- request a video ---------- */
@@ -577,6 +697,14 @@
     const h = location.hash.replace(/^#\/?/, "");
     const [kind, arg, k2, a2] = h.split("/");
     const lv = $("#list-view"), vv = $("#video-view");
+    if (kind === "ai" && aiOn()) {
+      if (!lv.hidden) state.listScroll = scrollY;
+      lv.hidden = true; vv.hidden = false; $("#search-wrap").hidden = true;
+      renderAI();
+      document.title = t("askAi") + " · ABFM Training";
+      $$("[data-tab]").forEach(b => b.toggleAttribute("aria-current", b.dataset.tab === "ai"));
+      return;
+    }
     if (kind === "talk") {
       const k = arg ? state.talks.find(x => x.id === decodeURIComponent(arg)) : todayTalk();
       if (k) {

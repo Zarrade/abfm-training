@@ -738,6 +738,7 @@
           <li>On the line <code>const ADMIN_KEY = "CHANGE-THIS-TO-A-LONG-PASSWORD";</code> put your own long password. Click 💾 Save.</li>
           <li><b>Deploy → New deployment</b> → gear icon → <b>Web app</b>. Execute as: <b>Me</b>. Who has access: <b>Anyone</b>. Click Deploy and allow access.</li>
           <li>Copy the <b>Web app URL</b> and paste it, with your password, in <b>Settings → Request inbox</b> here.</li>
+          <li><i>Optional, for Ask AI:</i> on the line <code>const GEMINI_KEY = "";</code> paste your Gemini key between the quotes, then <b>Deploy → Manage deployments → ✏️ → Version: New version → Deploy</b>. Tick “Show Ask AI to staff” in Settings.</li>
         </ol>
         <button class="btn btn-primary" id="go-settings">Open Settings</button></div>`;
       $("#go-settings").onclick = () => { view = "settings"; render(); };
@@ -1050,9 +1051,11 @@
           <div class="help">Comma separated. Videos whose title contains any of these are never queued.</div>
         </div>
         <div class="card-plain">
-          <h2>Request inbox</h2>
+          <h2>Request inbox &amp; Ask AI</h2>
           <p class="count">Where “Request a video” sends requests. See the Requests tab for the 5-minute setup.</p>
           <div class="field"><label for="s-req">Web app URL (from Google Apps Script)</label><input class="input" id="s-req" inputmode="url" spellcheck="false" placeholder="https://script.google.com/macros/s/…/exec" value="${esc(s.requestUrl || "")}"><div class="help">Saved with the site settings. Leave empty to hide the Request button.</div></div>
+          <label class="check"><input type="checkbox" id="s-ai" ${s.aiEnabled ? "checked" : ""}> ✨ Show <b>Ask AI</b> to staff</label>
+          <div class="help" style="margin:-4px 0 12px">Staff can ask work questions and add photos; Gemini answers in their language and suggests videos from the library. Needs your Gemini key on the <code>GEMINI_KEY</code> line of the Google script (the key stays private there). Questions and photos are not saved.</div>
           <div class="field"><label for="s-reqkey">Inbox password (ADMIN_KEY in the script)</label><input class="input" id="s-reqkey" type="password" autocomplete="off" value="${esc(reqKey())}"><div class="help">Kept only in this browser — never saved to GitHub.</div></div>
         </div>
         <div class="card-plain">
@@ -1097,8 +1100,10 @@
         siteName: $("#s-name").value.trim(), tagline: $("#s-tag").value.trim(), announcement: $("#s-ann").value.trim(),
         helpdesk: $("#s-help").value.trim(), newDays: Math.max(1, +$("#s-new").value || 7), categories,
         excludeKeywords: $("#s-excl").value.split(",").map(x => x.trim().toLowerCase()).filter(Boolean),
-        requestUrl: $("#s-req").value.trim()
+        requestUrl: $("#s-req").value.trim(),
+        aiEnabled: $("#s-ai").checked
       };
+      if (vals.aiEnabled && !vals.requestUrl) { alert("Ask AI needs the Google script link (Web app URL) first."); return; }
       try {
         localStorage.setItem("ab_req_key", $("#s-reqkey").value.trim());
         localStorage.setItem("ab_gemini_key", $("#s-gem").value.trim());

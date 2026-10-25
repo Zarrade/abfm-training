@@ -106,3 +106,9 @@ Turn it on in admin → Settings → "Auto-draft with Gemini" (paste a free key 
 - **Toolbox talks → ✨ Write with Gemini:** type a title and Gemini writes the points and the question for the team.
 - The model is chosen automatically (newest first, falling back to older ones). To pin one, pick it in Settings, and for the daily job add a repository *variable* `GEMINI_MODEL`.
 - The free tier allows about 8 hours of YouTube video a day; the daily job stops at 6 hours and continues the next day. Nothing is published without your approval.
+
+## Ask AI (for staff)
+
+The **✨ Ask AI** tab lets staff ask work questions in their own language and attach up to 3 photos of the equipment or problem. Gemini answers in simple steps, puts safety first, and suggests matching videos from the library. Questions and photos are not saved anywhere.
+
+The Gemini key is never in the public app: questions go through your private Google script (setup/request-inbox.gs), which holds the key on its `GEMINI_KEY` line and limits use (300 questions an hour, 2,000 a day, 30 an hour per phone) so your free quota can't be used up. Turn it on in admin → Settings → "Show Ask AI to staff". After editing the script, redeploy with Deploy → Manage deployments → ✏️ → New version, so the link stays the same.
