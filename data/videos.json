@@ -5278,23 +5278,23 @@
       "title": "How to Install a Thermal Expansion Tank",
       "category": "Plumbing",
       "subject": "Water Heaters",
-      "level": "Intermediate",
+      "level": "Beginner",
       "channel": "Amtrol Inc.",
       "duration": "2:30",
       "added": "2026-10-21",
-      "summary": "Amtrol shows how to measure line pressure, set the tank precharge to match, and install a Therm-X-Trol expansion tank on the cold supply to a water heater.",
-      "safety": "Isolate the cold supply and switch off the water heater before cutting in, relieve system pressure, and support the tank so its weight is not carried by the pipework.",
+      "summary": "This video demonstrates how to pre-charge and install a thermal expansion tank above a water heater.",
+      "safety": "Ensure the water supply is shut off and pressure is relieved before opening any plumbing connections.",
       "ppe": [
         "Safety Glasses",
-        "Work Gloves",
-        "Steel Toe Boots"
+        "Work Gloves"
       ],
       "steps": [
-        "Measure static line pressure with a hose-thread gauge at a spigot.",
-        "Set the tank air precharge to match line pressure using a tyre gauge and pump.",
-        "Isolate the cold supply, switch off the heater and relieve pressure.",
-        "Install the tank on the cold inlet with sealed threads and proper support.",
-        "Restore water, check for leaks and return the heater to service."
+        "Locate a hose spigot to measure water pressure.",
+        "Attach a pressure gauge and measure line pressure.",
+        "Match the tank precharge pressure to the line pressure.",
+        "Install the turbulator into the tank connector.",
+        "Choose correct installation location and vertical orientation.",
+        "Turn on the cold water supply to fill the system."
       ],
       "tr": {
         "hi": {
