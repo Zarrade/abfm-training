@@ -1,0 +1,199 @@
+{
+  "siteName": "ABFM Training",
+  "tagline": "Al Bonian Facilities Management",
+  "announcement": "",
+  "helpdesk": "",
+  "newDays": 7,
+  "categories": [
+    {
+      "name": "HVAC",
+      "icon": "❄️",
+      "keywords": [
+        "hvac",
+        "air condition",
+        " ac ",
+        "a/c",
+        "split",
+        "refrigerant",
+        "refrigeration",
+        "compressor",
+        "condenser",
+        "evaporator",
+        "chiller",
+        "ahu",
+        "air handler",
+        "fcu",
+        "fan coil",
+        "vrf",
+        "vrv",
+        "superheat",
+        "subcool",
+        "thermostat",
+        "mini-split",
+        "heat pump",
+        "r410",
+        "r32",
+        "brazing",
+        "flare"
+      ]
+    },
+    {
+      "name": "Plumbing",
+      "icon": "🚰",
+      "keywords": [
+        "plumb",
+        "faucet",
+        "tap",
+        "toilet",
+        "flush",
+        "drain",
+        "pipe",
+        "leak",
+        "valve",
+        "water heater",
+        "geyser",
+        "sink",
+        "trap",
+        "ppr",
+        "pex",
+        "pump",
+        "backflow",
+        "cistern"
+      ]
+    },
+    {
+      "name": "Electrical",
+      "icon": "⚡",
+      "keywords": [
+        "electric",
+        "wiring",
+        "wire",
+        "multimeter",
+        "meter",
+        "voltage",
+        "breaker",
+        "mcb",
+        "rcd",
+        "rcbo",
+        "socket",
+        "outlet",
+        "contactor",
+        "motor",
+        "vfd",
+        "drive",
+        "three-phase",
+        "3 phase",
+        "panel",
+        "db ",
+        "earth",
+        "megger",
+        "insulation resistance",
+        "lighting",
+        "ats",
+        "generator"
+      ]
+    },
+    {
+      "name": "Duct Cleaning",
+      "icon": "🌀",
+      "keywords": [
+        "duct clean",
+        "duct",
+        "air duct",
+        "diffuser",
+        "grille",
+        "kitchen exhaust",
+        "hood clean"
+      ]
+    },
+    {
+      "name": "Water Tank Cleaning",
+      "icon": "💧",
+      "keywords": [
+        "water tank",
+        "tank clean",
+        "tank disinfect",
+        "chlorination",
+        "storage tank"
+      ]
+    },
+    {
+      "name": "Civil Jobs",
+      "icon": "🧱",
+      "keywords": [
+        "drywall",
+        "gypsum",
+        "plaster",
+        "tile",
+        "tiling",
+        "grout",
+        "concrete",
+        "masonry",
+        "block",
+        "ceiling",
+        "door",
+        "hinge",
+        "lock",
+        "carpentry",
+        "floor"
+      ]
+    },
+    {
+      "name": "Painting & Waterproofing",
+      "icon": "🎨",
+      "keywords": [
+        "paint",
+        "painting",
+        "primer",
+        "waterproof",
+        "membrane",
+        "sealant",
+        "silicone",
+        "caulk",
+        "epoxy",
+        "damp"
+      ]
+    },
+    {
+      "name": "Landscaping",
+      "icon": "🌿",
+      "keywords": [
+        "landscap",
+        "irrigation",
+        "sprinkler system",
+        "lawn",
+        "garden",
+        "tree",
+        "hedge",
+        "mower",
+        "drip"
+      ]
+    },
+    {
+      "name": "Fire Systems",
+      "icon": "🧯",
+      "keywords": [
+        "fire alarm",
+        "fire pump",
+        "smoke detector",
+        "sprinkler",
+        "extinguisher",
+        "fire panel",
+        "fire fighting",
+        "firefighting",
+        "hose reel",
+        "emergency light"
+      ]
+    }
+  ],
+  "excludeKeywords": [
+    "#shorts",
+    "live stream",
+    "livestream",
+    "giveaway",
+    "unboxing",
+    "podcast",
+    "q&a",
+    "vlog"
+  ]
+}

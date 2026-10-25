@@ -1,0 +1,14 @@
+{
+  "lookbackDays": 21,
+  "skipShorts": true,
+  "maxQueue": 150,
+  "channels": [
+    { "name": "The Engineering Mindset", "url": "https://www.youtube.com/@EngineeringMindset", "category": "", "active": true },
+    { "name": "HVAC School", "url": "https://www.youtube.com/@HVACSchool", "category": "HVAC", "active": true },
+    { "name": "AC Service Tech LLC", "url": "https://www.youtube.com/@ACServiceTech", "category": "HVAC", "active": true },
+    { "name": "The Electrical Guy", "url": "https://www.youtube.com/@TheElectricalGuy", "category": "Electrical", "active": true },
+    { "name": "GSH Electrical", "url": "https://www.youtube.com/@GSHElectrical", "category": "Electrical", "active": true },
+    { "name": "John Ward (jwflame)", "url": "https://www.youtube.com/@jwflame", "category": "Electrical", "active": true },
+    { "name": "Roger Wakefield Plumbing Education", "url": "https://www.youtube.com/@RogerWakefield", "category": "Plumbing", "active": true }
+  ]
+}
