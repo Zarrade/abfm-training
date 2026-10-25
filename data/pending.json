@@ -2016,39 +2016,6 @@
         "level": "Advanced",
         "subject": ""
       }
-    },
-    {
-      "yt": "QvTpFOz1GTQ",
-      "title": "5 Common Drip Emitter Issues and How to Troubleshoot",
-      "channel": "",
-      "published": "",
-      "duration": "",
-      "suggestedCategory": "Landscaping",
-      "description": "Suggested starter video (found by research). Preview it before approving.",
-      "found": "2026-10-25T10:06:40Z",
-      "starter": true,
-      "draft": {
-        "source": "rules",
-        "summary": "",
-        "safety": "Check guards before starting machines, keep people clear and drink water often in the heat.",
-        "ppe": [
-          "Ear Defenders",
-          "Safety Goggles",
-          "Safety Shoes",
-          "Work Gloves"
-        ],
-        "steps": [
-          "Turn off the water to the zone",
-          "Find the leak, break or blocked emitter",
-          "Cut out the damaged section of drip line",
-          "Join it with a coupling, or replace or clean the emitter",
-          "Flush the line, then turn the water back on",
-          "Check every emitter is dripping evenly"
-        ],
-        "stepsFrom": "topic",
-        "level": "Advanced",
-        "subject": ""
-      }
     }
   ],
   "rejected": [
