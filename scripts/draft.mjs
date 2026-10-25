@@ -50,6 +50,34 @@ for (const item of pending.queue || []) {
     await sleep(7000); // stay inside the free-tier rate limit
   }
 }
+// Then check videos already in the library that Gemini hasn't reviewed yet (review only — your text is never changed).
+const vText = await readFile(new URL("videos.json", DATA), "utf8");
+const vDoc = JSON.parse(vText);
+const MAX_LIB = Number(process.env.MAX_AI_LIBRARY || 15);
+let lib = 0;
+if (KEY) {
+  for (const v of vDoc.videos || []) {
+    if (v.gemini || lib >= MAX_LIB || ai + aiFail >= MAX_AI + MAX_LIB) continue;
+    if ((v.geminiTries || 0) >= 3) continue;
+    if (usedMin + minutes(v.duration) > MAX_MINUTES) break;
+    usedMin += minutes(v.duration);
+    try {
+      const d = await aiDraft({ yt: v.yt, title: v.title, category: v.category, subjects: subjectsFor(v.category), categories, key: KEY, model: MODEL });
+      v.gemini = { date: new Date().toISOString().slice(0, 10), model: d.model, ...d.review };
+      delete v.geminiTries; lib++;
+      console.log(`  ✓ Library check: ${v.title} → ${d.review.recommend} ${d.review.relevance}/10${d.review.unsafe.length ? " ⚠ unsafe practice" : ""}`);
+    } catch (e) {
+      v.geminiTries = (v.geminiTries || 0) + 1; aiFail++;
+      console.log(`  ! Library check failed for ${v.yt}: ${e.message}`);
+      if (/API key|permission|quota|RESOURCE_EXHAUSTED/i.test(e.message)) break;
+    }
+    await sleep(7000);
+  }
+}
+const vOut = JSON.stringify(vDoc, null, 2) + "\n";
+if (vOut !== vText) await writeFile(new URL("videos.json", DATA), vOut);
+
 const out = JSON.stringify(pending, null, 2) + "\n";
 if (out !== pText) await writeFile(new URL("pending.json", DATA), out);
+console.log(`Library videos checked by Gemini: ${lib}.`);
 console.log(`Drafts: ${rules} from description/rules, ${ai} by Gemini${KEY ? "" : " (no GEMINI_API_KEY set)"}, ${aiFail} Gemini failures.`);

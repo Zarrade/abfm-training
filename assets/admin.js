@@ -228,6 +228,8 @@
     if (ui.show === "problems") list = list.filter(v => probs.has(v.yt));
     if (ui.show === "featured") list = list.filter(v => v.featured);
     if (ui.show === "essential") list = list.filter(v => v.essential);
+    if (ui.show === "gem-no") list = list.filter(v => !v.gemini);
+    if (ui.show === "gem-unsafe") list = list.filter(v => v.gemini && (v.gemini.unsafe || []).length);
     const dupOf = new Map(V().map(v => [v.id, ABDraft.findDuplicates(v, V())]));
     if (ui.show === "dups") list = list.filter(v => dupOf.get(v.id).length);
     if (words.length) list = list.filter(v => { const h = [v.title, v.channel, v.subject, v.category, v.id].join(" ").toLowerCase(); return words.every(w => h.includes(w)); });
@@ -239,11 +241,11 @@
         <input class="input grow" id="v-q" type="search" placeholder="Search title, channel, subject…" value="${esc(ui.q)}">
         <select id="v-cat"><option value="ALL">All categories</option>${cats().map(c => `<option ${c === ui.cat ? "selected" : ""}>${esc(c)}</option>`).join("")}</select>
         <select id="v-show">
-          ${[["all", "All videos"], ["dups", "Possible duplicates"], ["essential", "Safety essentials"], ["featured", "Pinned to top"], ["hidden", "Hidden"], ["problems", "Problems"]].map(([k, l]) => `<option value="${k}" ${k === ui.show ? "selected" : ""}>${l}</option>`).join("")}
+          ${[["all", "All videos"], ["gem-no", "Not checked by Gemini"], ["gem-unsafe", "Gemini: unsafe practice"], ["dups", "Possible duplicates"], ["essential", "Safety essentials"], ["featured", "Pinned to top"], ["hidden", "Hidden"], ["problems", "Problems"]].map(([k, l]) => `<option value="${k}" ${k === ui.show ? "selected" : ""}>${l}</option>`).join("")}
         </select>
         <button class="btn btn-primary" id="add-video">＋ Add video</button>
       </div>
-      <p class="count">${list.length} of ${V().length} videos</p>
+      <p class="count">${list.length} of ${V().length} videos · <b>${V().filter(v => v.gemini).length} of ${V().length}</b> checked by Gemini</p>
       <div class="rows">${list.map(v => {
         const p = probs.get(v.yt);
         return `<div class="row ${v.hidden ? "is-hidden" : ""}">
@@ -253,6 +255,8 @@
             <div class="meta">
               <span>${esc(v.category)}</span><span class="lvl lvl-${esc(v.level)}">${esc(v.level)}</span><span>${esc(v.added || "")}</span>
               ${dupOf.get(v.id).length ? `<span class="badge-s b-dup" title="${esc(dupOf.get(v.id).map(d => d.item.title).join("\n"))}">⚠ ${dupOf.get(v.id)[0].same ? "Same video twice" : "Similar to: " + esc(dupOf.get(v.id)[0].item.title)}</span>` : ""}
+              ${v.gemini ? `<span class="badge-s b-gem" title="${esc((REC[v.gemini.recommend] || REC.maybe)[1] + " · " + v.gemini.relevance + "/10" + (v.gemini.reason ? " — " + v.gemini.reason : ""))}">✓ Checked by Gemini · ${v.gemini.relevance}/10</span>` : `<span class="badge-s b-wait">⏳ Not checked by Gemini</span>`}
+              ${v.gemini && (v.gemini.unsafe || []).length ? `<span class="badge-s b-prob" title="${esc(v.gemini.unsafe.join("; "))}">⚠ Unsafe practice shown</span>` : ""}
               ${v.essential ? `<span class="badge-s b-ess">🦺 Essential</span>` : ""}
               ${v.featured ? `<span class="badge-s b-feat">Pinned</span>` : ""}
               ${v.hidden ? `<span class="badge-s b-hidden">Hidden</span>` : ""}
@@ -293,7 +297,8 @@
   let ed = null;
   function openEditor(video, prefill = {}, onSaved) {
     const v = Object.assign({ level: "Intermediate", added: today(), ppe: [], steps: [], tr: {} }, video ? JSON.parse(JSON.stringify(video)) : {}, prefill);
-    ed = { original: video, v, tr: v.tr || {}, trLang: "hi", onSaved };
+    ed = { original: video, v, tr: v.tr || {}, trLang: "hi", onSaved,
+      gemini: prefill.review ? { date: today(), ...prefill.review } : (video && video.gemini) || null };
     const subjects = [...new Set(V().map(x => x.subject).filter(Boolean))].sort();
     $("#drawer-title").textContent = video ? "Edit video" : (prefill.yt ? "Approve video" : "Add video");
     $("#drawer-body").innerHTML = `
@@ -318,7 +323,7 @@
         <div class="field"><label for="f-chan">Channel</label><input class="input" id="f-chan" value="${esc(v.channel || "")}"></div>
       </div>
       ${v.draftSource ? `<div class="draft-note">✨ ${v.draftSource === "ai" ? "Gemini watched this video and wrote a first draft of the summary, safety note and steps." : "First draft filled in from the YouTube description and safety rules."} ${v.draftSource === "ai" ? "" : STEPS_NOTE[v.stepsFrom] || ""} Check it before publishing.${reviewHtml(v.review)}</div>` : ""}
-      <div class="draft-row"><button type="button" class="btn btn-sm" id="f-draft">✨ Auto-draft</button><span class="help" id="f-draft-help">${geminiKey() ? "Gemini will watch the video and fill in the summary, safety, PPE and steps." : "Fills in safety, PPE and steps for this kind of job. Add a Gemini key in Settings to draft from the video itself."}</span></div>
+      <div class="draft-row"><button type="button" class="btn btn-sm" id="f-draft">✨ Auto-draft</button>${geminiKey() ? `<button type="button" class="btn btn-sm" id="f-check">🔍 Check with Gemini</button>` : ""}<span class="help" id="f-draft-help">${geminiKey() ? "Gemini will watch the video and fill in the summary, safety, PPE and steps." : "Fills in safety, PPE and steps for this kind of job. Add a Gemini key in Settings to draft from the video itself."}</span></div>
       <div class="field"><label for="f-summary">What the video shows</label><textarea class="textarea" id="f-summary" placeholder="One or two plain sentences.">${esc(v.summary || "")}</textarea></div>
       <div class="field"><label for="f-safety">Safety warning</label><textarea class="textarea" id="f-safety" placeholder="e.g. Isolate power and prove dead before starting.">${esc(v.safety || "")}</textarea></div>
       <div class="field"><label for="f-ppe">Required PPE</label><input class="input" id="f-ppe" placeholder="Safety Glasses, Work Gloves" value="${esc((v.ppe || []).join(", "))}"><div class="help">Separate with commas.</div></div>
@@ -359,6 +364,18 @@
       } else if (!dup) help.textContent = "Couldn't fetch the title automatically. Type it in.";
     };
     $("#f-draft").onclick = () => runDraft();
+    const fc = $("#f-check");
+    if (fc) fc.onclick = async () => {
+      const yt = parseYT($("#f-url").value) || ed.v.yt, help = $("#f-draft-help");
+      if (!yt) return alert("Paste the YouTube link first.");
+      fc.disabled = true; help.textContent = "Gemini is watching the video… (up to a minute)";
+      try {
+        const d = await ABDraft.aiDraft({ yt, title: $("#f-title").value.trim(), category: $("#f-cat").value, categories: cats(), key: geminiKey(), model: geminiModel() || undefined });
+        ed.gemini = { date: today(), model: d.model, ...d.review };
+        help.innerHTML = "Checked — your text was not changed. Click Save to keep the result." + reviewHtml(d.review);
+      } catch (e) { help.textContent = "Gemini couldn't check it: " + e.message; }
+      fc.disabled = false;
+    };
     const checkDup = () => {
       const others = V().filter(x => !ed.original || x.id !== ed.original.id);
       const d = ABDraft.findDuplicates({ title: $("#f-title").value, yt: parseYT($("#f-url").value) || ed.v.yt }, others).filter(x => !x.same).slice(0, 3);
@@ -433,6 +450,7 @@
         const subjects = [...new Set(V().filter(v => v.category === category && v.subject).map(v => v.subject))];
         d = await ABDraft.aiDraft({ yt, title, category, subjects, key: geminiKey(), categories: cats(), model: geminiModel() || undefined });
         help.innerHTML = "Done. Gemini watched the video and drafted this — check it before publishing." + reviewHtml(d.review);
+        if (d.review) ed.gemini = { date: today(), ...d.review };
       } catch (e) {
         help.textContent = "Gemini couldn't draft this one (" + e.message + "). Used the built-in rules instead.";
       } finally { btn.disabled = false; }
@@ -488,6 +506,7 @@
     if ($("#f-feat").checked) v.featured = true;
     if ($("#f-hidden").checked) v.hidden = true;
     if (Object.keys(ed.tr).length) v.tr = ed.tr;
+    if (ed.gemini) v.gemini = ed.gemini;
     const isEdit = !!ed.original, onSaved = ed.onSaved, newCat = ed.newCategory;
     await update("videos", d => {
       const i = d.videos.findIndex(x => x.id === v.id);
@@ -1210,6 +1229,7 @@
     const ok = (good, text) => `<li class="${good ? "st-ok" : "st-warn"}">${good ? "✅" : "⚠️"} ${text}</li>`;
     let html = `<ul class="st-list">
       ${ok(full === vids.length, `<span>Translations: <b>${full} of ${vids.length}</b> videos in all 8 languages${full === vids.length ? "" : " — new or edited videos are translated within a few minutes after saving"}</span>${full === vids.length ? "" : `<button type="button" class="btn btn-sm st-retry" data-retry="translate.yml">↻ Retry</button>`}<span class="st-job" id="job-translate.yml"></span>`)}
+      ${ok(vids.every(v => v.gemini), `<span>Library: <b>${vids.filter(v => v.gemini).length} of ${vids.length}</b> videos checked by Gemini${vids.every(v => v.gemini) ? "" : " — up to 15 more are checked each morning"}</span>`)}
       ${ok(!q.length || gem === q.length, `<span>Gemini review: <b>${gem} of ${q.length}</b> queued videos checked${gemErr ? ` — last problem: <i>${esc(gemErr.aiError)}</i>` : ""}</span>${q.length && gem < q.length ? `<button type="button" class="btn btn-sm st-retry" data-retry="find-videos.yml">↻ Retry</button>` : ""}<span class="st-job" id="job-find-videos.yml"></span>`)}
       ${ok(!Object.values(data.pending.json.channelStatus || {}).some(c => c && c.error), "Channels: " + (Object.values(data.pending.json.channelStatus || {}).filter(c => c && c.error).length ? "some couldn't be checked — see Channels tab" : "all checked OK"))}
       ${ok(!!data.settings.json.requestUrl, data.settings.json.requestUrl ? "Request inbox & Ask AI: connected" : "Request inbox: not set up yet")}
