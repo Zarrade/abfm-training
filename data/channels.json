@@ -3,12 +3,89 @@
   "skipShorts": true,
   "maxQueue": 150,
   "channels": [
-    { "name": "The Engineering Mindset", "url": "https://www.youtube.com/@EngineeringMindset", "category": "", "active": true },
-    { "name": "HVAC School", "url": "https://www.youtube.com/@HVACSchool", "category": "HVAC", "active": true },
-    { "name": "AC Service Tech LLC", "url": "https://www.youtube.com/@ACServiceTech", "category": "HVAC", "active": true },
-    { "name": "The Electrical Guy", "url": "https://www.youtube.com/@TheElectricalGuy", "category": "Electrical", "active": true },
-    { "name": "GSH Electrical", "url": "https://www.youtube.com/@GSHElectrical", "category": "Electrical", "active": true },
-    { "name": "John Ward (jwflame)", "url": "https://www.youtube.com/@jwflame", "category": "Electrical", "active": true },
-    { "name": "Roger Wakefield Plumbing Education", "url": "https://www.youtube.com/@RogerWakefield", "category": "Plumbing", "active": true }
+    {
+      "name": "The Engineering Mindset",
+      "url": "https://www.youtube.com/@EngineeringMindset",
+      "category": "",
+      "active": true
+    },
+    {
+      "name": "HVAC School",
+      "url": "https://www.youtube.com/@HVACRSchool",
+      "category": "HVAC",
+      "active": true
+    },
+    {
+      "name": "AC Service Tech LLC",
+      "url": "https://www.youtube.com/@ACServiceTech",
+      "category": "HVAC",
+      "active": true
+    },
+    {
+      "name": "The Electrical Guy",
+      "url": "https://www.youtube.com/@TheElectricalGuy",
+      "category": "Electrical",
+      "active": true
+    },
+    {
+      "name": "GSH Electrical",
+      "url": "https://www.youtube.com/@GSHElectrical",
+      "category": "Electrical",
+      "active": true
+    },
+    {
+      "name": "John Ward (jwflame)",
+      "url": "https://www.youtube.com/@jwflame",
+      "category": "Electrical",
+      "active": true
+    },
+    {
+      "name": "Roger Wakefield Plumbing Education",
+      "url": "https://www.youtube.com/@RogerWakefield",
+      "category": "Plumbing",
+      "active": true
+    },
+    {
+      "name": "Love2HVAC with Ty Branaman",
+      "url": "https://www.youtube.com/channel/UCIoD-SEdUWMA74tWXRMyCZQ",
+      "category": "HVAC",
+      "active": true
+    },
+    {
+      "name": "Duct Dudes",
+      "url": "https://www.youtube.com/c/Ductdudes",
+      "category": "Duct Cleaning",
+      "active": true
+    },
+    {
+      "name": "Vancouver Carpenter",
+      "url": "https://www.youtube.com/channel/UCbZdXox6mKHdcT2QdVT-goQ",
+      "category": "Civil Jobs",
+      "active": true
+    },
+    {
+      "name": "Sal DiBlasi (tiling & waterproofing)",
+      "url": "https://www.youtube.com/channel/UCWpu9UZ6aiRTaMuuV8-C0pQ",
+      "category": "",
+      "active": true
+    },
+    {
+      "name": "Paint Life TV",
+      "url": "https://www.youtube.com/channel/UCnrhmEmvA_bIRYkBVPqJ4zg",
+      "category": "Painting & Waterproofing",
+      "active": true
+    },
+    {
+      "name": "Sprinkler Warehouse (irrigation)",
+      "url": "https://www.youtube.com/channel/UCR1ksygazAOr59yLZ4Mp5tA",
+      "category": "Landscaping",
+      "active": true
+    },
+    {
+      "name": "QuickResponseFS (fire sprinklers)",
+      "url": "https://www.youtube.com/channel/UCXOzd-KAiI6fGx5wfrnsHTA",
+      "category": "Fire Systems",
+      "active": true
+    }
   ]
 }

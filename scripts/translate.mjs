@@ -100,13 +100,37 @@ async function translateSettings(s) {
   return changed;
 }
 
+async function translatePaths(doc) {
+  let changed = 0;
+  for (const p of doc.paths || []) {
+    const src = createHash("sha1").update(JSON.stringify([p.title, p.description || ""])).digest("hex").slice(0, 12);
+    p.tr = p.tr || {};
+    for (const tl of LANGS) {
+      const cur = p.tr[tl];
+      if (cur && (!cur.auto || cur.src === src)) continue;
+      try {
+        const t = await translateLines([p.title, p.description || ""], tl);
+        p.tr[tl] = { auto: true, src, title: t[0], description: p.description ? t[1] : "" };
+        changed++;
+      } catch (e) { failures++; if (e.message === "limit") return changed; }
+      await sleep(300);
+    }
+  }
+  return changed;
+}
+
 const vText = await readFile(new URL("videos.json", DATA), "utf8");
 const sText = await readFile(new URL("settings.json", DATA), "utf8");
 const videos = JSON.parse(vText), settings = JSON.parse(sText);
 
+let paths = null;
+try { paths = JSON.parse(await readFile(new URL("paths.json", DATA), "utf8")); } catch {}
+
 const nv = await translateVideos(videos);
 const ns = await translateSettings(settings);
+const np = paths ? await translatePaths(paths) : 0;
+if (np) await writeFile(new URL("paths.json", DATA), JSON.stringify(paths, null, 2) + "\n");
 if (nv) await writeFile(new URL("videos.json", DATA), JSON.stringify(videos, null, 2) + "\n");
 if (ns) await writeFile(new URL("settings.json", DATA), JSON.stringify(settings, null, 2) + "\n");
-console.log(`Translated ${nv} video/language pairs and ${ns} settings languages using ${requests} requests (${failures} failed).`);
-if (failures && !nv && !ns) process.exitCode = 1;
+console.log(`Translated ${nv} video/language pairs ${ns} settings languages and ${np} path translations using ${requests} requests (${failures} failed).`);
+if (failures && !nv && !ns && !np) process.exitCode = 1;

@@ -1,0 +1,76 @@
+{
+  "paths": [
+    {
+      "id": "new-hvac-tech",
+      "icon": "❄️",
+      "title": "New HVAC Technician",
+      "description": "Start here if you are new to air conditioning: how the system works, basic maintenance, installation and testing.",
+      "videos": [
+        "hvac-101",
+        "hvac-102",
+        "hvac-104",
+        "hvac-103",
+        "hvac-115",
+        "hvac-105",
+        "hvac-106",
+        "hvac-108",
+        "hvac-107"
+      ]
+    },
+    {
+      "id": "electrical-basics",
+      "icon": "⚡",
+      "title": "Electrical Safety & Test Instruments",
+      "description": "Safe testing before any electrical work: voltage testers, multimeters, clamp meters, three-phase basics and RCD testing.",
+      "videos": [
+        "elec-102",
+        "elec-101",
+        "elec-103",
+        "elec-104",
+        "elec-105",
+        "elec-109"
+      ]
+    },
+    {
+      "id": "motor-control",
+      "icon": "⚙️",
+      "title": "Motor Control Basics",
+      "description": "Contactors, overloads, start/stop circuits, star-delta starters and motor insulation testing.",
+      "videos": [
+        "elec-106",
+        "elec-107",
+        "elec-108",
+        "elec-110",
+        "elec-113",
+        "elec-116"
+      ]
+    },
+    {
+      "id": "plumbing-fundamentals",
+      "icon": "🚰",
+      "title": "Plumbing Fundamentals",
+      "description": "The everyday plumbing jobs: taps, cartridges, shut-off valves, traps, toilets and finding leaks.",
+      "videos": [
+        "plumb-101",
+        "plumb-102",
+        "plumb-106",
+        "plumb-105",
+        "plumb-103",
+        "plumb-104",
+        "plumb-109"
+      ]
+    },
+    {
+      "id": "refrigerant-handling",
+      "icon": "🧪",
+      "title": "Refrigerant Handling",
+      "description": "Pressure testing, evacuation, brazing with nitrogen and refrigerant recovery, in the right order.",
+      "videos": [
+        "hvac-108",
+        "hvac-107",
+        "hvac-110",
+        "hvac-111"
+      ]
+    }
+  ]
+}

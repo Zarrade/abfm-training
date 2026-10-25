@@ -6,6 +6,7 @@ on:
     paths:
       - "data/videos.json"
       - "data/settings.json"
+      - "data/paths.json"
       - "scripts/translate.mjs"
   workflow_dispatch:
 

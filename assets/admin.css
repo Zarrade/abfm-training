@@ -71,3 +71,5 @@ details.box summary { font-weight: 700; cursor: pointer; }
 .cat-row { display: grid; grid-template-columns: 56px 1fr auto; gap: 8px; align-items: start; margin-bottom: 8px; }
 .saving { position: fixed; inset: 0; z-index: 80; display: grid; place-items: center; background: rgba(10,10,15,.35); }
 .saving div { background: var(--surface); padding: 14px 18px; border-radius: 12px; font-weight: 700; box-shadow: var(--shadow); }
+.b-ess { background: #fff1c2; color: #6b4d00; }
+.row .path-ico { display: grid; place-items: center; font-size: 34px; background: var(--surface-2); aspect-ratio: 16/9; }

@@ -14,6 +14,7 @@ window.AB_LANGS = [
 
 window.AB_TEXT = {
   en: {
+    safetyEssentials: "Safety essentials", essentialsHint: "Must-know safety for every technician", paths: "Learning paths", pathsHint: "Step-by-step courses. Your progress stays on this phone.", progress: "{done} of {n} done", markDone: "Mark as done", doneLabel: "Done", startPath: "Start", continuePath: "Continue", nextInPath: "Next in this path", essentialTag: "Essential",
     autoNote: "Translated automatically",
     tabVideo: "Video", tabGuide: "Step guide", listen: "Listen", stop: "Stop",
     search: "Search videos…", all: "All", new: "New", newThisWeek: "New this week", saved: "Saved", library: "Library",
@@ -31,6 +32,7 @@ window.AB_TEXT = {
     cats: {}
   },
   hi: {
+    safetyEssentials: "ज़रूरी सुरक्षा", essentialsHint: "हर तकनीशियन के लिए ज़रूरी सुरक्षा", paths: "सीखने के रास्ते", pathsHint: "चरण-दर-चरण कोर्स। आपकी प्रगति इसी फ़ोन पर रहती है।", progress: "{n} में से {done} पूरे", markDone: "पूरा हुआ चिह्नित करें", doneLabel: "पूरा", startPath: "शुरू करें", continuePath: "जारी रखें", nextInPath: "इस रास्ते में अगला", essentialTag: "ज़रूरी",
     autoNote: "मशीन अनुवाद",
     tabVideo: "वीडियो", tabGuide: "स्टेप गाइड", listen: "सुनें", stop: "रोकें",
     search: "वीडियो खोजें…", all: "सभी", new: "नया", newThisWeek: "इस हफ़्ते के नए वीडियो", saved: "सहेजे गए", library: "लाइब्रेरी",
@@ -45,9 +47,10 @@ window.AB_TEXT = {
     savedEmpty: "अभी कोई सहेजा गया वीडियो नहीं", savedEmptyHint: "किसी भी वीडियो पर बुकमार्क दबाएँ, वह यहाँ दिखेगा।",
     updated: "अपडेट: {date}", loading: "लोड हो रहा है…", loadError: "वीडियो लोड नहीं हुए। इंटरनेट जाँचें और फिर कोशिश करें।",
     retry: "फिर कोशिश करें", copied: "लिंक कॉपी हो गया", helpdesk: "हेल्पडेस्क", related: "ऐसे और वीडियो", play: "वीडियो चलाएँ",
-    cats: { "HVAC": "एसी / HVAC", "Plumbing": "प्लंबिंग", "Electrical": "बिजली", "Duct Cleaning": "डक्ट सफ़ाई", "Water Tank Cleaning": "पानी की टंकी सफ़ाई", "Civil Jobs": "सिविल काम", "Painting & Waterproofing": "पेंटिंग व वॉटरप्रूफ़िंग", "Landscaping": "लैंडस्केपिंग", "Fire Systems": "फ़ायर सिस्टम" }
+    cats: { "Health & Safety": "स्वास्थ्य और सुरक्षा", "HVAC": "एसी / HVAC", "Plumbing": "प्लंबिंग", "Electrical": "बिजली", "Duct Cleaning": "डक्ट सफ़ाई", "Water Tank Cleaning": "पानी की टंकी सफ़ाई", "Civil Jobs": "सिविल काम", "Painting & Waterproofing": "पेंटिंग व वॉटरप्रूफ़िंग", "Landscaping": "लैंडस्केपिंग", "Fire Systems": "फ़ायर सिस्टम" }
   },
   ur: {
+    safetyEssentials: "ضروری حفاظت", essentialsHint: "ہر ٹیکنیشن کے لیے ضروری حفاظت", paths: "سیکھنے کے راستے", pathsHint: "مرحلہ وار کورسز۔ آپ کی پیش رفت اسی فون پر رہتی ہے۔", progress: "{n} میں سے {done} مکمل", markDone: "مکمل کے طور پر نشان لگائیں", doneLabel: "مکمل", startPath: "شروع کریں", continuePath: "جاری رکھیں", nextInPath: "اس راستے میں اگلی", essentialTag: "ضروری",
     autoNote: "مشینی ترجمہ",
     tabVideo: "ویڈیو", tabGuide: "مرحلہ وار گائیڈ", listen: "سنیں", stop: "روکیں",
     search: "ویڈیو تلاش کریں…", all: "سب", new: "نیا", newThisWeek: "اس ہفتے کی نئی ویڈیوز", saved: "محفوظ", library: "لائبریری",
@@ -62,9 +65,10 @@ window.AB_TEXT = {
     savedEmpty: "ابھی کوئی محفوظ ویڈیو نہیں", savedEmptyHint: "کسی بھی ویڈیو پر بک مارک دبائیں، وہ یہاں نظر آئے گی۔",
     updated: "اپ ڈیٹ: {date}", loading: "لوڈ ہو رہا ہے…", loadError: "ویڈیوز لوڈ نہیں ہو سکیں۔ انٹرنیٹ چیک کریں اور دوبارہ کوشش کریں۔",
     retry: "دوبارہ کوشش کریں", copied: "لنک کاپی ہو گیا", helpdesk: "ہیلپ ڈیسک", related: "اس جیسی مزید ویڈیوز", play: "ویڈیو چلائیں",
-    cats: { "HVAC": "اے سی / HVAC", "Plumbing": "پلمبنگ", "Electrical": "بجلی", "Duct Cleaning": "ڈکٹ کی صفائی", "Water Tank Cleaning": "پانی کی ٹنکی کی صفائی", "Civil Jobs": "سول کام", "Painting & Waterproofing": "پینٹنگ اور واٹر پروفنگ", "Landscaping": "لینڈ اسکیپنگ", "Fire Systems": "فائر سسٹم" }
+    cats: { "Health & Safety": "صحت اور حفاظت", "HVAC": "اے سی / HVAC", "Plumbing": "پلمبنگ", "Electrical": "بجلی", "Duct Cleaning": "ڈکٹ کی صفائی", "Water Tank Cleaning": "پانی کی ٹنکی کی صفائی", "Civil Jobs": "سول کام", "Painting & Waterproofing": "پینٹنگ اور واٹر پروفنگ", "Landscaping": "لینڈ اسکیپنگ", "Fire Systems": "فائر سسٹم" }
   },
   ml: {
+    safetyEssentials: "അവശ്യ സുരക്ഷ", essentialsHint: "ഓരോ ടെക്നീഷ്യനും അറിയേണ്ട സുരക്ഷ", paths: "പഠന പാതകൾ", pathsHint: "ഘട്ടം ഘട്ടമായുള്ള കോഴ്സുകൾ. നിങ്ങളുടെ പുരോഗതി ഈ ഫോണിൽ മാത്രം.", progress: "{n}-ൽ {done} പൂർത്തിയായി", markDone: "പൂർത്തിയായി എന്ന് അടയാളപ്പെടുത്തുക", doneLabel: "പൂർത്തിയായി", startPath: "ആരംഭിക്കുക", continuePath: "തുടരുക", nextInPath: "ഈ പാതയിലെ അടുത്തത്", essentialTag: "അവശ്യം",
     autoNote: "യന്ത്ര വിവർത്തനം",
     tabVideo: "വീഡിയോ", tabGuide: "ഘട്ട ഗൈഡ്", listen: "കേൾക്കുക", stop: "നിർത്തുക",
     search: "വീഡിയോ തിരയുക…", all: "എല്ലാം", new: "പുതിയത്", newThisWeek: "ഈ ആഴ്ചയിലെ പുതിയ വീഡിയോകൾ", saved: "സേവ് ചെയ്തവ", library: "ലൈബ്രറി",
@@ -79,9 +83,10 @@ window.AB_TEXT = {
     savedEmpty: "ഇതുവരെ സേവ് ചെയ്ത വീഡിയോകൾ ഇല്ല", savedEmptyHint: "ഏതെങ്കിലും വീഡിയോയിലെ ബുക്ക്മാർക്ക് അമർത്തിയാൽ അത് ഇവിടെ കാണാം.",
     updated: "അപ്ഡേറ്റ്: {date}", loading: "ലോഡ് ചെയ്യുന്നു…", loadError: "വീഡിയോകൾ ലോഡ് ചെയ്യാനായില്ല. ഇന്റർനെറ്റ് പരിശോധിച്ച് വീണ്ടും ശ്രമിക്കുക.",
     retry: "വീണ്ടും ശ്രമിക്കുക", copied: "ലിങ്ക് കോപ്പി ചെയ്തു", helpdesk: "ഹെൽപ്‌ഡെസ്ക്", related: "ഇതുപോലുള്ളവ", play: "വീഡിയോ പ്ലേ ചെയ്യുക",
-    cats: { "HVAC": "എസി / HVAC", "Plumbing": "പ്ലംബിംഗ്", "Electrical": "ഇലക്ട്രിക്കൽ", "Duct Cleaning": "ഡക്റ്റ് ക്ലീനിംഗ്", "Water Tank Cleaning": "വാട്ടർ ടാങ്ക് ക്ലീനിംഗ്", "Civil Jobs": "സിവിൽ ജോലികൾ", "Painting & Waterproofing": "പെയിന്റിംഗ് & വാട്ടർപ്രൂഫിംഗ്", "Landscaping": "ലാൻഡ്സ്കേപ്പിംഗ്", "Fire Systems": "ഫയർ സിസ്റ്റം" }
+    cats: { "Health & Safety": "ആരോഗ്യവും സുരക്ഷയും", "HVAC": "എസി / HVAC", "Plumbing": "പ്ലംബിംഗ്", "Electrical": "ഇലക്ട്രിക്കൽ", "Duct Cleaning": "ഡക്റ്റ് ക്ലീനിംഗ്", "Water Tank Cleaning": "വാട്ടർ ടാങ്ക് ക്ലീനിംഗ്", "Civil Jobs": "സിവിൽ ജോലികൾ", "Painting & Waterproofing": "പെയിന്റിംഗ് & വാട്ടർപ്രൂഫിംഗ്", "Landscaping": "ലാൻഡ്സ്കേപ്പിംഗ്", "Fire Systems": "ഫയർ സിസ്റ്റം" }
   },
   bn: {
+    safetyEssentials: "জরুরি নিরাপত্তা", essentialsHint: "প্রত্যেক টেকনিশিয়ানের জানা দরকার", paths: "শেখার পথ", pathsHint: "ধাপে ধাপে কোর্স। আপনার অগ্রগতি এই ফোনেই থাকে।", progress: "{n}টির মধ্যে {done}টি শেষ", markDone: "শেষ হয়েছে চিহ্নিত করুন", doneLabel: "শেষ", startPath: "শুরু করুন", continuePath: "চালিয়ে যান", nextInPath: "এই পথে পরবর্তী", essentialTag: "জরুরি",
     autoNote: "মেশিন অনুবাদ",
     tabVideo: "ভিডিও", tabGuide: "ধাপে ধাপে গাইড", listen: "শুনুন", stop: "থামান",
     search: "ভিডিও খুঁজুন…", all: "সব", new: "নতুন", newThisWeek: "এই সপ্তাহের নতুন ভিডিও", saved: "সংরক্ষিত", library: "লাইব্রেরি",
@@ -96,9 +101,10 @@ window.AB_TEXT = {
     savedEmpty: "এখনও কোনো সংরক্ষিত ভিডিও নেই", savedEmptyHint: "যেকোনো ভিডিওতে বুকমার্ক চাপুন, এখানে দেখা যাবে।",
     updated: "আপডেট: {date}", loading: "লোড হচ্ছে…", loadError: "ভিডিও লোড করা যায়নি। ইন্টারনেট দেখে আবার চেষ্টা করুন।",
     retry: "আবার চেষ্টা করুন", copied: "লিংক কপি হয়েছে", helpdesk: "হেল্পডেস্ক", related: "এ রকম আরও", play: "ভিডিও চালান",
-    cats: { "HVAC": "এসি / HVAC", "Plumbing": "প্লাম্বিং", "Electrical": "বৈদ্যুতিক", "Duct Cleaning": "ডাক্ট পরিষ্কার", "Water Tank Cleaning": "পানির ট্যাংক পরিষ্কার", "Civil Jobs": "সিভিল কাজ", "Painting & Waterproofing": "রং ও ওয়াটারপ্রুফিং", "Landscaping": "ল্যান্ডস্কেপিং", "Fire Systems": "ফায়ার সিস্টেম" }
+    cats: { "Health & Safety": "স্বাস্থ্য ও নিরাপত্তা", "HVAC": "এসি / HVAC", "Plumbing": "প্লাম্বিং", "Electrical": "বৈদ্যুতিক", "Duct Cleaning": "ডাক্ট পরিষ্কার", "Water Tank Cleaning": "পানির ট্যাংক পরিষ্কার", "Civil Jobs": "সিভিল কাজ", "Painting & Waterproofing": "রং ও ওয়াটারপ্রুফিং", "Landscaping": "ল্যান্ডস্কেপিং", "Fire Systems": "ফায়ার সিস্টেম" }
   },
   ta: {
+    safetyEssentials: "அவசியமான பாதுகாப்பு", essentialsHint: "ஒவ்வொரு தொழில்நுட்ப வல்லுநரும் அறிய வேண்டியவை", paths: "கற்றல் பாதைகள்", pathsHint: "படிப்படியான பாடங்கள். உங்கள் முன்னேற்றம் இந்த போனில் மட்டும்.", progress: "{n}-இல் {done} முடிந்தது", markDone: "முடிந்தது எனக் குறி", doneLabel: "முடிந்தது", startPath: "தொடங்கு", continuePath: "தொடர்", nextInPath: "இந்த பாதையில் அடுத்தது", essentialTag: "அவசியம்",
     autoNote: "இயந்திர மொழிபெயர்ப்பு",
     tabVideo: "வீடியோ", tabGuide: "படிப்படி வழிகாட்டி", listen: "கேளுங்கள்", stop: "நிறுத்து",
     search: "வீடியோ தேடுங்கள்…", all: "அனைத்தும்", new: "புதியது", newThisWeek: "இந்த வாரத்தின் புதிய வீடியோக்கள்", saved: "சேமித்தவை", library: "நூலகம்",
@@ -113,9 +119,10 @@ window.AB_TEXT = {
     savedEmpty: "இன்னும் சேமித்த வீடியோக்கள் இல்லை", savedEmptyHint: "எந்த வீடியோவிலும் புக்மார்க்கை அழுத்தினால் அது இங்கே தெரியும்.",
     updated: "புதுப்பிப்பு: {date}", loading: "ஏற்றுகிறது…", loadError: "வீடியோக்களை ஏற்ற முடியவில்லை. இணையத்தைச் சரிபார்த்து மீண்டும் முயற்சிக்கவும்.",
     retry: "மீண்டும் முயற்சி", copied: "இணைப்பு நகலெடுக்கப்பட்டது", helpdesk: "உதவி மையம்", related: "இது போன்றவை", play: "வீடியோவை இயக்கு",
-    cats: { "HVAC": "ஏசி / HVAC", "Plumbing": "பிளம்பிங்", "Electrical": "மின்சாரம்", "Duct Cleaning": "டக்ட் சுத்தம்", "Water Tank Cleaning": "தண்ணீர் தொட்டி சுத்தம்", "Civil Jobs": "சிவில் வேலைகள்", "Painting & Waterproofing": "பெயிண்டிங் & வாட்டர்ப்ரூஃபிங்", "Landscaping": "லேண்ட்ஸ்கேப்பிங்", "Fire Systems": "தீயணைப்பு அமைப்பு" }
+    cats: { "Health & Safety": "உடல்நலம் & பாதுகாப்பு", "HVAC": "ஏசி / HVAC", "Plumbing": "பிளம்பிங்", "Electrical": "மின்சாரம்", "Duct Cleaning": "டக்ட் சுத்தம்", "Water Tank Cleaning": "தண்ணீர் தொட்டி சுத்தம்", "Civil Jobs": "சிவில் வேலைகள்", "Painting & Waterproofing": "பெயிண்டிங் & வாட்டர்ப்ரூஃபிங்", "Landscaping": "லேண்ட்ஸ்கேப்பிங்", "Fire Systems": "தீயணைப்பு அமைப்பு" }
   },
   ne: {
+    safetyEssentials: "आवश्यक सुरक्षा", essentialsHint: "हरेक प्राविधिकले जान्नुपर्ने सुरक्षा", paths: "सिकाइ मार्गहरू", pathsHint: "चरणबद्ध कोर्सहरू। तपाईंको प्रगति यही फोनमा रहन्छ।", progress: "{n} मध्ये {done} सकियो", markDone: "सकियो भनी चिन्ह लगाउनुहोस्", doneLabel: "सकियो", startPath: "सुरु गर्नुहोस्", continuePath: "जारी राख्नुहोस्", nextInPath: "यो मार्गमा अर्को", essentialTag: "आवश्यक",
     autoNote: "मेसिन अनुवाद",
     tabVideo: "भिडियो", tabGuide: "चरण गाइड", listen: "सुन्नुहोस्", stop: "रोक्नुहोस्",
     search: "भिडियो खोज्नुहोस्…", all: "सबै", new: "नयाँ", newThisWeek: "यो हप्ताका नयाँ भिडियो", saved: "सेभ गरिएका", library: "लाइब्रेरी",
@@ -130,9 +137,10 @@ window.AB_TEXT = {
     savedEmpty: "अहिलेसम्म कुनै भिडियो सेभ गरिएको छैन", savedEmptyHint: "कुनै पनि भिडियोमा बुकमार्क थिच्नुहोस्, यहाँ देखिन्छ।",
     updated: "अपडेट: {date}", loading: "लोड हुँदैछ…", loadError: "भिडियो लोड हुन सकेन। इन्टरनेट जाँच गरी फेरि प्रयास गर्नुहोस्।",
     retry: "फेरि प्रयास गर्नुहोस्", copied: "लिङ्क कपी भयो", helpdesk: "हेल्पडेस्क", related: "यस्तै अरू", play: "भिडियो चलाउनुहोस्",
-    cats: { "HVAC": "एसी / HVAC", "Plumbing": "प्लम्बिङ", "Electrical": "बिजुली", "Duct Cleaning": "डक्ट सफाइ", "Water Tank Cleaning": "पानी ट्याङ्की सफाइ", "Civil Jobs": "सिभिल काम", "Painting & Waterproofing": "पेन्टिङ र वाटरप्रुफिङ", "Landscaping": "ल्यान्डस्केपिङ", "Fire Systems": "फायर सिस्टम" }
+    cats: { "Health & Safety": "स्वास्थ्य र सुरक्षा", "HVAC": "एसी / HVAC", "Plumbing": "प्लम्बिङ", "Electrical": "बिजुली", "Duct Cleaning": "डक्ट सफाइ", "Water Tank Cleaning": "पानी ट्याङ्की सफाइ", "Civil Jobs": "सिभिल काम", "Painting & Waterproofing": "पेन्टिङ र वाटरप्रुफिङ", "Landscaping": "ल्यान्डस्केपिङ", "Fire Systems": "फायर सिस्टम" }
   },
   tl: {
+    safetyEssentials: "Mahahalagang kaligtasan", essentialsHint: "Dapat alam ng bawat technician", paths: "Mga learning path", pathsHint: "Mga kursong hakbang-hakbang. Sa phone na ito lang naka-save ang progreso mo.", progress: "{done} sa {n} tapos na", markDone: "Markahang tapos", doneLabel: "Tapos", startPath: "Simulan", continuePath: "Ituloy", nextInPath: "Susunod sa path na ito", essentialTag: "Mahalaga",
     autoNote: "Isinalin ng makina",
     tabVideo: "Video", tabGuide: "Gabay sa hakbang", listen: "Pakinggan", stop: "Ihinto",
     search: "Maghanap ng video…", all: "Lahat", new: "Bago", newThisWeek: "Mga bagong video ngayong linggo", saved: "Naka-save", library: "Library",
@@ -147,9 +155,10 @@ window.AB_TEXT = {
     savedEmpty: "Wala pang naka-save na video", savedEmptyHint: "Pindutin ang bookmark sa anumang video para makita ito rito.",
     updated: "Na-update: {date}", loading: "Naglo-load…", loadError: "Hindi ma-load ang mga video. Tingnan ang internet at subukang muli.",
     retry: "Subukang muli", copied: "Nakopya ang link", helpdesk: "Helpdesk", related: "Iba pang katulad", play: "I-play ang video",
-    cats: { "HVAC": "AC / HVAC", "Plumbing": "Plumbing", "Electrical": "Elektrikal", "Duct Cleaning": "Paglilinis ng Duct", "Water Tank Cleaning": "Paglilinis ng Water Tank", "Civil Jobs": "Gawaing Sibil", "Painting & Waterproofing": "Pintura at Waterproofing", "Landscaping": "Landscaping", "Fire Systems": "Fire System" }
+    cats: { "Health & Safety": "Kalusugan at Kaligtasan", "HVAC": "AC / HVAC", "Plumbing": "Plumbing", "Electrical": "Elektrikal", "Duct Cleaning": "Paglilinis ng Duct", "Water Tank Cleaning": "Paglilinis ng Water Tank", "Civil Jobs": "Gawaing Sibil", "Painting & Waterproofing": "Pintura at Waterproofing", "Landscaping": "Landscaping", "Fire Systems": "Fire System" }
   },
   ar: {
+    safetyEssentials: "أساسيات السلامة", essentialsHint: "سلامة يجب أن يعرفها كل فني", paths: "مسارات التعلم", pathsHint: "دورات خطوة بخطوة. يبقى تقدمك على هذا الهاتف.", progress: "{done} من {n} مكتمل", markDone: "وضع علامة كمكتمل", doneLabel: "مكتمل", startPath: "ابدأ", continuePath: "تابع", nextInPath: "التالي في هذا المسار", essentialTag: "أساسي",
     autoNote: "ترجمة آلية",
     tabVideo: "فيديو", tabGuide: "دليل الخطوات", listen: "استمع", stop: "إيقاف",
     search: "ابحث عن فيديو…", all: "الكل", new: "جديد", newThisWeek: "فيديوهات جديدة هذا الأسبوع", saved: "المحفوظة", library: "المكتبة",
@@ -164,6 +173,6 @@ window.AB_TEXT = {
     savedEmpty: "لا توجد فيديوهات محفوظة بعد", savedEmptyHint: "اضغط على علامة الحفظ في أي فيديو ليظهر هنا.",
     updated: "آخر تحديث: {date}", loading: "جارٍ التحميل…", loadError: "تعذّر تحميل الفيديوهات. تحقق من الإنترنت وحاول مرة أخرى.",
     retry: "إعادة المحاولة", copied: "تم نسخ الرابط", helpdesk: "الدعم الفني", related: "فيديوهات مشابهة", play: "تشغيل الفيديو",
-    cats: { "HVAC": "التكييف / HVAC", "Plumbing": "السباكة", "Electrical": "الكهرباء", "Duct Cleaning": "تنظيف مجاري الهواء", "Water Tank Cleaning": "تنظيف خزانات المياه", "Civil Jobs": "الأعمال المدنية", "Painting & Waterproofing": "الدهان والعزل المائي", "Landscaping": "تنسيق الحدائق", "Fire Systems": "أنظمة الحريق" }
+    cats: { "Health & Safety": "الصحة والسلامة", "HVAC": "التكييف / HVAC", "Plumbing": "السباكة", "Electrical": "الكهرباء", "Duct Cleaning": "تنظيف مجاري الهواء", "Water Tank Cleaning": "تنظيف خزانات المياه", "Civil Jobs": "الأعمال المدنية", "Painting & Waterproofing": "الدهان والعزل المائي", "Landscaping": "تنسيق الحدائق", "Fire Systems": "أنظمة الحريق" }
   }
 };

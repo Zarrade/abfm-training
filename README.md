@@ -75,3 +75,9 @@ sw.js, manifest.webmanifest       install-as-app and offline support
 ```
 
 If you edit files in `assets/`, change `VERSION` at the top of `sw.js` (e.g. `v1` → `v2`) so installed phones pick up the update.
+
+## Safety essentials and learning paths
+
+- **Safety essentials:** tick “🦺 Safety essential” when editing a video. These videos appear in a pinned yellow section at the top of the library. Videos from the Health & Safety category come pre-ticked when you approve them.
+- **Learning paths:** in the admin, open **Learning paths** to create short courses (title, icon, description, and an ordered list of videos). Staff see them on the home screen with a progress bar. Progress is stored only on each person's phone; nothing is tracked centrally.
+- Path titles and descriptions are translated automatically, the same way videos are.

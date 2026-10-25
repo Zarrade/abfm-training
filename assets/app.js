@@ -17,7 +17,8 @@
     lang: store.get("ab_lang", null),
     saved: new Set(store.get("ab_saved", [])),
     tab: "library", cat: "ALL", level: "ALL", sort: "new", q: "", limit: PAGE,
-    listScroll: 0, showEn: false
+    listScroll: 0, showEn: false,
+    paths: [], done: new Set(store.get("ab_done", []))
   };
 
   /* ---------- helpers ---------- */
@@ -34,6 +35,13 @@
   const isNew = v => v.added && daysSince(v.added) <= (state.settings.newDays || 7);
   const tr = v => (!state.showEn && v.tr && v.tr[state.lang]) || {};
   const titleOf = v => tr(v).title || v.title;
+  const pTr = p => (!state.showEn && p.tr && p.tr[state.lang]) || {};
+  const byId = id => state.videos.find(x => x.id === id);
+  const pathVideos = p => p.videos.map(byId).filter(Boolean);
+  function setDone(id, on) {
+    on ? state.done.add(id) : state.done.delete(id);
+    store.set("ab_done", [...state.done]);
+  }
   const fmtDate = d => { try { return new Date(d + "T00:00:00").toLocaleDateString(state.lang === "en" ? "en-GB" : state.lang, { day: "numeric", month: "short", year: "numeric" }); } catch { return d; } };
   const link = v => location.href.split("#")[0] + "#/v/" + encodeURIComponent(v.id);
   const thumb = (yt, size = "mqdefault") => `https://i.ytimg.com/vi/${encodeURIComponent(yt)}/${size}.jpg`;
@@ -82,16 +90,18 @@
   async function load() {
     renderSkeleton();
     try {
-      const [vd, st, health] = await Promise.all([
+      const [vd, st, health, pd] = await Promise.all([
         getJSON("data/videos.json"),
         getJSON("data/settings.json").catch(() => ({})),
-        getJSON("data/health.json").catch(() => ({ problems: [] }))
+        getJSON("data/health.json").catch(() => ({ problems: [] })),
+        getJSON("data/paths.json").catch(() => ({ paths: [] }))
       ]);
       Object.assign(state.settings, st);
       const dead = new Set((health.problems || []).filter(p => p.status === "notfound").map(p => p.yt));
       state.videos = (vd.videos || []).filter(v => v && v.yt && !v.hidden && !dead.has(v.yt))
         .map(v => Object.assign({ level: "Intermediate", ppe: [], steps: [], summary: "", safety: "" }, v));
       state.updated = vd.updated || "";
+      state.paths = (pd.paths || []).filter(p => p && p.id && !p.hidden && (p.videos || []).some(id => byId(id)));
       applySettings();
       route();
     } catch (e) {
@@ -152,12 +162,13 @@
   }
   function card(v) {
     const on = state.saved.has(v.id);
-    return `<article class="card">
+    return `<article class="card${v.essential ? " is-ess" : ""}">
       <a class="card-link" href="#/v/${encodeURIComponent(v.id)}">
         <div class="thumb">
           <img loading="lazy" decoding="async" src="${thumb(v.yt)}" alt="" width="320" height="180">
           ${v.duration ? `<span class="dur">${esc(v.duration)}</span>` : ""}
-          ${isNew(v) ? `<span class="tag-new">${esc(t("new"))}</span>` : ""}
+          ${v.essential ? `<span class="tag-new tag-ess">🦺 ${esc(t("essentialTag"))}</span>` : isNew(v) ? `<span class="tag-new">${esc(t("new"))}</span>` : ""}
+          ${state.done.has(v.id) ? `<span class="tag-done" title="${esc(t("doneLabel"))}">✓</span>` : ""}
         </div>
         <div class="card-body">
           <div class="meta"><span>${catIcon(v.category)} ${esc(catLabel(v.category))}</span><span class="lvl lvl-${esc(v.level)}">${esc(t(v.level))}</span></div>
@@ -168,9 +179,9 @@
       <button class="save-btn" data-save="${esc(v.id)}" aria-pressed="${on}" aria-label="${esc(on ? t("savedLabel") : t("save"))}">${on ? ICON.bookmarkOn : ICON.bookmark}</button>
     </article>`;
   }
-  function mini(v) {
-    return `<a class="mini" href="#/v/${encodeURIComponent(v.id)}">
-      <div class="thumb"><img loading="lazy" src="${thumb(v.yt)}" alt="" width="320" height="180">${v.duration ? `<span class="dur">${esc(v.duration)}</span>` : ""}</div>
+  function mini(v, href) {
+    return `<a class="mini" href="${href || "#/v/" + encodeURIComponent(v.id)}">
+      <div class="thumb"><img loading="lazy" src="${thumb(v.yt)}" alt="" width="320" height="180">${v.duration ? `<span class="dur">${esc(v.duration)}</span>` : ""}${state.done.has(v.id) ? `<span class="tag-done">✓</span>` : ""}</div>
       <div><h3>${esc(titleOf(v))}</h3><div class="meta"><span class="lvl lvl-${esc(v.level)}">${esc(t(v.level))}</span>${v.channel ? `<span>${esc(v.channel)}</span>` : ""}</div></div>
     </a>`;
   }
@@ -195,6 +206,11 @@
     const allNew = state.videos.filter(isNew);
     // Only show the "New this week" strip when it adds something (not when nearly everything is new).
     const fresh = showRail && allNew.length && allNew.length <= state.videos.length * 0.6 ? [...allNew].sort((a, b) => b.added.localeCompare(a.added)).slice(0, 12) : [];
+    const ess = showRail ? state.videos.filter(v => v.essential) : [];
+    $("#ess-wrap").hidden = !ess.length;
+    $("#ess-rail").innerHTML = ess.sort((a, b) => state.done.has(a.id) - state.done.has(b.id)).map(card).join("");
+    $("#paths-wrap").hidden = !(showRail && state.paths.length);
+    $("#paths-rail").innerHTML = showRail ? state.paths.map(pathCard).join("") : "";
     $("#rail-wrap").hidden = !fresh.length;
     $("#rail").innerHTML = fresh.map(card).join("");
 
@@ -217,12 +233,48 @@
     $$(`[data-tab="${state.tab}"]`).forEach(b => b.setAttribute("aria-current", "page"));
   }
 
+  /* ---------- learning paths ---------- */
+  function pathStats(p) {
+    const vids = pathVideos(p), n = vids.length, done = vids.filter(v => state.done.has(v.id)).length;
+    const next = vids.find(v => !state.done.has(v.id)) || vids[0];
+    return { vids, n, done, next };
+  }
+  function pathCard(p) {
+    const { vids, n, done } = pathStats(p), x = pTr(p);
+    const pct = n ? Math.round(done / n * 100) : 0;
+    return `<a class="path-card" href="#/p/${encodeURIComponent(p.id)}">
+      <div class="pc-top"><span class="pc-ico">${esc(p.icon || "🎓")}</span><div class="pc-thumbs">${vids.slice(0, 3).map(v => `<img loading="lazy" src="${thumb(v.yt)}" alt="">`).join("")}</div></div>
+      <h3>${esc(x.title || p.title)}</h3>
+      ${p.description ? `<p>${esc(x.description || p.description)}</p>` : ""}
+      <div class="pc-bar"><i style="width:${pct}%"></i></div>
+      <div class="pc-foot"><span>${esc(t("progress", { done, n }))}</span><span class="pc-go">${esc(done === n && n ? "✓ " + t("doneLabel") : done ? t("continuePath") : t("startPath"))}</span></div>
+    </a>`;
+  }
+  function renderPath(p) {
+    const { vids, n, done, next } = pathStats(p), x = pTr(p);
+    const el = $("#video-view");
+    const href = v => `#/v/${encodeURIComponent(v.id)}/p/${encodeURIComponent(p.id)}`;
+    el.innerHTML = `
+      <button class="btn btn-ghost btn-sm vp-back" id="back">${ICON.back}<span>${esc(t("back"))}</span></button>
+      <div class="path-head">
+        <div class="ph-ico">${esc(p.icon || "🎓")}</div>
+        <div><h1>${esc(x.title || p.title)}</h1>${x.title ? `<p class="en-title" lang="en" dir="ltr">${esc(p.title)}</p>` : ""}</div>
+      </div>
+      ${p.description ? `<p class="ph-desc">${esc(x.description || p.description)}</p>` : ""}
+      <div class="pc-bar big"><i style="width:${n ? done / n * 100 : 0}%"></i></div>
+      <p class="count">${esc(t("progress", { done, n }))}</p>
+      ${next ? `<a class="btn btn-primary" style="width:100%;margin:6px 0 18px" href="${href(next)}">${ICON.play}<span>${esc(done === n ? t("startPath") : done ? t("continuePath") : t("startPath"))}</span></a>` : ""}
+      <ol class="path-list">${vids.map((v, i) => `<li class="${state.done.has(v.id) ? "is-done" : ""}">
+        <span class="pl-n">${state.done.has(v.id) ? "✓" : i + 1}</span>${mini(v, href(v))}</li>`).join("")}</ol>`;
+    $("#back").onclick = () => { if (history.length > 1 && sessionStorage.getItem("ab_in_app")) history.back(); else location.hash = "#/"; };
+  }
+
   /* ---------- rendering: video page ---------- */
   function translateUrl(v) {
     const text = [v.title, v.summary, v.safety ? "⚠ " + v.safety : "", (v.steps || []).map((s, i) => `${i + 1}. ${s}`).join("\n")].filter(Boolean).join("\n\n");
     return `https://translate.google.com/?sl=en&tl=${state.lang}&op=translate&text=${encodeURIComponent(text.slice(0, 4500))}`;
   }
-  function renderVideo(v) {
+  function renderVideo(v, path) {
     const x = tr(v);
     const steps = (x.steps && x.steps.length === v.steps.length) ? x.steps : v.steps;
     const ppe = (x.ppe && x.ppe.length === v.ppe.length) ? x.ppe : v.ppe;
@@ -232,6 +284,12 @@
     const on = state.saved.has(v.id);
     const related = state.videos.filter(o => o.id !== v.id && o.category === v.category)
       .sort((a, b) => (a.subject === v.subject ? -1 : 0) - (b.subject === v.subject ? -1 : 0)).slice(0, 4);
+    let pathBar = "";
+    if (path) {
+      const pv = pathVideos(path), i = pv.findIndex(o => o.id === v.id), nx = pv[i + 1];
+      pathBar = `<div class="path-ctx"><a href="#/p/${encodeURIComponent(path.id)}">${esc(path.icon || "🎓")} ${esc(pTr(path).title || path.title)} · ${i + 1}/${pv.length}</a>
+        ${nx ? `<a class="btn btn-primary btn-sm" href="#/v/${encodeURIComponent(nx.id)}/p/${encodeURIComponent(path.id)}" id="path-next"><span>${esc(t("nextInPath"))}</span><span class="flip-r">${ICON.back}</span></a>` : ""}</div>`;
+    }
     const el = $("#video-view");
     el.innerHTML = `
       <button class="btn btn-ghost btn-sm vp-back" id="back">${ICON.back}<span>${esc(t("back"))}</span></button>
@@ -248,7 +306,9 @@
         ${v.duration ? `<span class="dot">${esc(v.duration)}</span>` : ""}
         ${v.channel ? `<span class="dot">${esc(v.channel)}</span>` : ""}
       </div>
+      ${pathBar}
       <div class="actions">
+        <button class="btn${state.done.has(v.id) ? " is-done" : ""}" id="v-done" aria-pressed="${state.done.has(v.id)}">${state.done.has(v.id) ? "✓" : "○"}<span>${esc(state.done.has(v.id) ? t("doneLabel") : t("markDone"))}</span></button>
         <button class="btn" id="v-save" aria-pressed="${on}">${on ? ICON.bookmarkOn : ICON.bookmark}<span>${esc(on ? t("savedLabel") : t("save"))}</span></button>
         <button class="btn" id="v-share">${ICON.share}<span>${esc(t("share"))}</span></button>
         <a class="btn" href="https://www.youtube.com/watch?v=${encodeURIComponent(v.yt)}" target="_blank" rel="noopener">${ICON.yt}<span>${esc(t("watchOnYouTube"))}</span></a>
@@ -350,7 +410,15 @@
     });
     showPoster();
     const tt = $("#tr-toggle");
-    if (tt) tt.onclick = () => { state.showEn = !state.showEn; renderVideo(v); };
+    if (tt) tt.onclick = () => { state.showEn = !state.showEn; renderVideo(v, path); };
+    const drawDone = () => {
+      const d = state.done.has(v.id), b = $("#v-done");
+      b.setAttribute("aria-pressed", d); b.classList.toggle("is-done", d);
+      b.innerHTML = `${d ? "✓" : "○"}<span>${esc(d ? t("doneLabel") : t("markDone"))}</span>`;
+    };
+    $("#v-done").onclick = () => { setDone(v.id, !state.done.has(v.id)); drawDone(); if (state.done.has(v.id)) toast(t("doneLabel") + " ✓"); };
+    const pn = $("#path-next");
+    if (pn) pn.addEventListener("click", () => { if (!state.done.has(v.id)) setDone(v.id, true); });
     $("#back").onclick = () => { if (history.length > 1 && sessionStorage.getItem("ab_in_app")) history.back(); else location.hash = "#/"; };
     $("#v-save").onclick = () => {
       toggleSave(v.id);
@@ -364,6 +432,7 @@
       const ids = $$("[data-step]", el).filter(x => x.checked).map(x => +x.dataset.step);
       store.set("ab_steps_" + v.id, ids);
       updateProg();
+      if (ids.length === steps.length && !state.done.has(v.id)) { setDone(v.id, true); drawDone(); toast(t("doneLabel") + " ✓"); }
     });
   }
 
@@ -383,14 +452,26 @@
   function route() {
     if ("speechSynthesis" in window) speechSynthesis.cancel();
     const h = location.hash.replace(/^#\/?/, "");
-    const [kind, arg] = h.split("/");
+    const [kind, arg, k2, a2] = h.split("/");
     const lv = $("#list-view"), vv = $("#video-view");
+    if (kind === "p" && arg) {
+      const p = state.paths.find(x => x.id === decodeURIComponent(arg));
+      if (p) {
+        if (!lv.hidden) state.listScroll = scrollY;
+        lv.hidden = true; vv.hidden = false; $("#search-wrap").hidden = true;
+        renderPath(p);
+        scrollTo(0, 0);
+        document.title = (pTr(p).title || p.title) + " · ABFM Training";
+        return;
+      }
+    }
     if (kind === "v" && arg) {
       const v = state.videos.find(x => x.id === decodeURIComponent(arg));
       if (v) {
         if (!lv.hidden) state.listScroll = scrollY;
         lv.hidden = true; vv.hidden = false; $("#search-wrap").hidden = true;
-        renderVideo(v);
+        const path = k2 === "p" && a2 ? state.paths.find(x => x.id === decodeURIComponent(a2)) : null;
+        renderVideo(v, path);
         scrollTo(0, 0);
         document.title = titleOf(v) + " · ABFM Training";
         return;

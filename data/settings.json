@@ -6,6 +6,27 @@
   "newDays": 7,
   "categories": [
     {
+      "name": "Health & Safety",
+      "icon": "🦺",
+      "keywords": [
+        "safety",
+        "ppe",
+        "lockout",
+        "tagout",
+        "loto",
+        "ladder",
+        "harness",
+        "fall protection",
+        "working at height",
+        "confined space",
+        "heat stress",
+        "heat illness",
+        "first aid",
+        "manual handling",
+        "hazard"
+      ]
+    },
+    {
       "name": "HVAC",
       "icon": "❄️",
       "keywords": [

@@ -11,13 +11,14 @@
   const LEVELS = ["Beginner", "Intermediate", "Advanced"];
   const TR_LANGS = [["hi", "Hindi"], ["ur", "Urdu"], ["ml", "Malayalam"], ["bn", "Bengali"], ["ta", "Tamil"], ["ne", "Nepali"], ["tl", "Filipino"], ["ar", "Arabic"]];
   const CFG_KEY = "ab_admin_cfg";
-  const FILES = { videos: "data/videos.json", settings: "data/settings.json", channels: "data/channels.json", pending: "data/pending.json", health: "data/health.json" };
+  const FILES = { videos: "data/videos.json", settings: "data/settings.json", channels: "data/channels.json", pending: "data/pending.json", health: "data/health.json", paths: "data/paths.json" };
   const DEFAULTS = {
     videos: () => ({ updated: today(), videos: [] }),
     settings: () => ({ categories: [], newDays: 7 }),
     channels: () => ({ lookbackDays: 21, skipShorts: true, maxQueue: 150, channels: [] }),
     pending: () => ({ lastRun: null, channelStatus: {}, queue: [], rejected: [] }),
-    health: () => ({ checked: null, problems: [] })
+    health: () => ({ checked: null, problems: [] }),
+    paths: () => ({ paths: [] })
   };
 
   let cfg = loadCfg();
@@ -213,7 +214,7 @@
     const q = (data.pending.json.queue || []).length;
     const nq = $("#n-queue"); nq.hidden = !q; nq.textContent = q;
     $$("#tabs [data-view]").forEach(b => { if (b.dataset.view === view) b.setAttribute("aria-current", "page"); else b.removeAttribute("aria-current"); });
-    ({ videos: renderVideos, queue: renderQueue, channels: renderChannels, settings: renderSettings })[view]();
+    ({ videos: renderVideos, queue: renderQueue, paths: renderPaths, channels: renderChannels, settings: renderSettings })[view]();
   }
 
   /* ---------- Videos ---------- */
@@ -224,6 +225,7 @@
     if (ui.show === "hidden") list = list.filter(v => v.hidden);
     if (ui.show === "problems") list = list.filter(v => probs.has(v.yt));
     if (ui.show === "featured") list = list.filter(v => v.featured);
+    if (ui.show === "essential") list = list.filter(v => v.essential);
     if (words.length) list = list.filter(v => { const h = [v.title, v.channel, v.subject, v.category, v.id].join(" ").toLowerCase(); return words.every(w => h.includes(w)); });
     list = [...list].sort((a, b) => (b.added || "").localeCompare(a.added || ""));
     const nProb = V().filter(v => probs.has(v.yt)).length;
@@ -233,7 +235,7 @@
         <input class="input grow" id="v-q" type="search" placeholder="Search title, channel, subject…" value="${esc(ui.q)}">
         <select id="v-cat"><option value="ALL">All categories</option>${cats().map(c => `<option ${c === ui.cat ? "selected" : ""}>${esc(c)}</option>`).join("")}</select>
         <select id="v-show">
-          ${[["all", "All videos"], ["featured", "Pinned to top"], ["hidden", "Hidden"], ["problems", "Problems"]].map(([k, l]) => `<option value="${k}" ${k === ui.show ? "selected" : ""}>${l}</option>`).join("")}
+          ${[["all", "All videos"], ["essential", "Safety essentials"], ["featured", "Pinned to top"], ["hidden", "Hidden"], ["problems", "Problems"]].map(([k, l]) => `<option value="${k}" ${k === ui.show ? "selected" : ""}>${l}</option>`).join("")}
         </select>
         <button class="btn btn-primary" id="add-video">＋ Add video</button>
       </div>
@@ -246,6 +248,7 @@
             <h3>${esc(v.title)}</h3>
             <div class="meta">
               <span>${esc(v.category)}</span><span class="lvl lvl-${esc(v.level)}">${esc(v.level)}</span><span>${esc(v.added || "")}</span>
+              ${v.essential ? `<span class="badge-s b-ess">🦺 Essential</span>` : ""}
               ${v.featured ? `<span class="badge-s b-feat">Pinned</span>` : ""}
               ${v.hidden ? `<span class="badge-s b-hidden">Hidden</span>` : ""}
               ${p ? `<span class="badge-s b-prob">${p.status === "notfound" ? "Not on YouTube" : "Can't play in app"}</span>` : ""}
@@ -276,6 +279,8 @@
     const v = V().find(x => x.id === id); if (!v) return;
     if (!confirm(`Delete “${v.title}”?\n\nTip: use Hide instead if you might want it back.`)) return;
     await update("videos", d => { d.videos = d.videos.filter(y => y.id !== id); d.updated = today(); return d; }, `Delete video: ${v.title}`);
+    if ((data.paths.json.paths || []).some(p => (p.videos || []).includes(id)))
+      await update("paths", d => { (d.paths || []).forEach(p => p.videos = (p.videos || []).filter(x => x !== id)); return d; }, `Remove deleted video from learning paths`);
     toast("Deleted"); render();
   }
 
@@ -311,6 +316,7 @@
       <div class="field"><label for="f-safety">Safety warning</label><textarea class="textarea" id="f-safety" placeholder="e.g. Isolate power and prove dead before starting.">${esc(v.safety || "")}</textarea></div>
       <div class="field"><label for="f-ppe">Required PPE</label><input class="input" id="f-ppe" placeholder="Safety Glasses, Work Gloves" value="${esc((v.ppe || []).join(", "))}"><div class="help">Separate with commas.</div></div>
       <div class="field"><label for="f-steps">Key steps</label><textarea class="textarea" id="f-steps" rows="6" placeholder="One step per line">${esc((v.steps || []).join("\n"))}</textarea><div class="help">One step per line. 3–6 short steps work best.</div></div>
+      <label class="check"><input type="checkbox" id="f-ess" ${v.essential ? "checked" : ""}> 🦺 Safety essential (shown in the pinned Safety section)</label>
       <label class="check"><input type="checkbox" id="f-feat" ${v.featured ? "checked" : ""}> Pin to top of the library</label>
       <label class="check"><input type="checkbox" id="f-hidden" ${v.hidden ? "checked" : ""}> Hide from staff</label>
       <details class="box" style="margin-top:10px">
@@ -411,6 +417,7 @@
       ppe: $("#f-ppe").value.split(",").map(s => s.trim()).filter(Boolean),
       steps: $("#f-steps").value.split("\n").map(s => s.trim().replace(/^\d+[.)]\s*/, "")).filter(Boolean)
     };
+    if ($("#f-ess").checked) v.essential = true;
     if ($("#f-feat").checked) v.featured = true;
     if ($("#f-hidden").checked) v.hidden = true;
     if (Object.keys(ed.tr).length) v.tr = ed.tr;
@@ -477,8 +484,106 @@
     const item = (data.pending.json.queue || []).find(i => i.yt === yt); if (!item) return;
     openEditor(null, {
       yt: item.yt, title: item.title, channel: item.channel, duration: item.duration || "",
-      category: item.suggestedCategory || cats()[0], description: item.description || ""
+      category: item.suggestedCategory || cats()[0], description: item.description || "",
+      ...(item.suggestedCategory === "Health & Safety" ? { essential: true } : {})
     }, async () => { await removeFromQueue(yt, false); });
+  }
+
+  /* ---------- Learning paths ---------- */
+  let pe = null;   // path being edited
+  const P = () => data.paths.json.paths || (data.paths.json.paths = []);
+  function renderPaths() {
+    if (pe) return renderPathEditor();
+    const byId = new Map(V().map(v => [v.id, v]));
+    $("#app").innerHTML = `
+      <div class="bar"><p class="help grow" style="margin:0">Learning paths are short courses shown on the home screen (e.g. “New HVAC Technician”). Staff tick off videos as they go; their progress stays on their own phone.</p>
+        <button class="btn btn-primary" id="p-add">＋ New path</button></div>
+      <div class="rows">${P().map((p, i) => {
+        const vids = (p.videos || []).map(id => byId.get(id)).filter(Boolean);
+        return `<div class="row">
+          <div class="thumb path-ico">${esc(p.icon || "🎓")}</div>
+          <div><h3>${esc(p.title)}</h3>
+            <div class="meta"><span>${vids.length} video${vids.length === 1 ? "" : "s"}</span>${p.hidden ? `<span class="badge-s b-hidden">Hidden</span>` : ""}
+            ${p.tr && Object.keys(p.tr).length ? `<span class="badge-s b-ok">🌐 ${Object.keys(p.tr).length}/8</span>` : `<span class="badge-s b-hidden">Translating…</span>`}</div></div>
+          <div class="row-actions">
+            <button class="btn btn-sm" data-p-up="${i}" ${i === 0 ? "disabled" : ""} aria-label="Move up">↑</button>
+            <button class="btn btn-sm" data-p-edit="${i}">Edit</button>
+            <button class="btn btn-sm btn-danger" data-p-del="${i}">Delete</button>
+          </div></div>`;
+      }).join("") || `<div class="empty"><h3>No learning paths yet</h3></div>`}</div>`;
+    $("#p-add").onclick = () => { pe = { index: -1, p: { id: "", icon: "🎓", title: "", description: "", videos: [] } }; renderPaths(); };
+    $$("[data-p-edit]").forEach(b => b.onclick = () => { const i = +b.dataset.pEdit; pe = { index: i, p: JSON.parse(JSON.stringify(P()[i])) }; renderPaths(); });
+    $$("[data-p-del]").forEach(b => b.onclick = async () => {
+      const p = P()[+b.dataset.pDel]; if (!confirm(`Delete the path “${p.title}”? The videos stay in the library.`)) return;
+      await update("paths", d => { d.paths = (d.paths || []).filter(x => x.id !== p.id); return d; }, `Delete learning path: ${p.title}`);
+      toast("Deleted."); render();
+    });
+    $$("[data-p-up]").forEach(b => b.onclick = async () => {
+      const id = P()[+b.dataset.pUp].id;
+      await update("paths", d => { const i = d.paths.findIndex(x => x.id === id); if (i > 0) d.paths.splice(i - 1, 0, d.paths.splice(i, 1)[0]); return d; }, "Reorder learning paths");
+      render();
+    });
+  }
+  function renderPathEditor() {
+    const p = pe.p, byId = new Map(V().map(v => [v.id, v]));
+    const avail = V().filter(v => !p.videos.includes(v.id));
+    const groups = cats().map(c => [c, avail.filter(v => v.category === c)]).filter(([, l]) => l.length);
+    $("#app").innerHTML = `
+      <button class="btn btn-sm btn-ghost" id="pe-back">‹ All paths</button>
+      <h2 style="margin:10px 0 14px">${pe.index < 0 ? "New learning path" : "Edit learning path"}</h2>
+      <div class="two" style="grid-template-columns:90px 1fr">
+        <div class="field"><label for="pe-icon">Icon</label><input class="input" id="pe-icon" maxlength="4" value="${esc(p.icon || "")}" style="text-align:center;font-size:22px"></div>
+        <div class="field"><label for="pe-title">Title</label><input class="input" id="pe-title" placeholder="e.g. New HVAC Technician" value="${esc(p.title)}"></div>
+      </div>
+      <div class="field"><label for="pe-desc">Description</label><textarea class="textarea" id="pe-desc" placeholder="Who is this for and what will they learn?">${esc(p.description || "")}</textarea></div>
+      <label class="check"><input type="checkbox" id="pe-hidden" ${p.hidden ? "checked" : ""}> Hide from staff</label>
+      <h3 style="margin:18px 0 8px">Videos in order (${p.videos.length})</h3>
+      <div class="rows">${p.videos.map((id, i) => {
+        const v = byId.get(id);
+        return `<div class="row">
+          <div class="thumb">${v ? `<img src="${thumb(v.yt)}" alt="" width="320" height="180">` : ""}</div>
+          <div><h3>${i + 1}. ${esc(v ? v.title : id + " (deleted)")}</h3><div class="meta">${v ? `<span>${esc(v.category)}</span><span class="lvl lvl-${esc(v.level)}">${esc(v.level)}</span>` : ""}</div></div>
+          <div class="row-actions">
+            <button class="btn btn-sm" data-pv-up="${i}" ${i === 0 ? "disabled" : ""} aria-label="Move up">↑</button>
+            <button class="btn btn-sm" data-pv-down="${i}" ${i === p.videos.length - 1 ? "disabled" : ""} aria-label="Move down">↓</button>
+            <button class="btn btn-sm btn-danger" data-pv-rm="${i}" aria-label="Remove">✕</button>
+          </div></div>`;
+      }).join("") || `<p class="help">No videos yet. Add some below.</p>`}</div>
+      <div class="bar" style="margin-top:12px">
+        <select class="input grow" id="pe-add"><option value="">＋ Add a video…</option>${groups.map(([c, l]) => `<optgroup label="${esc(c)}">${l.map(v => `<option value="${esc(v.id)}">${esc(v.title)}</option>`).join("")}</optgroup>`).join("")}</select>
+      </div>
+      <div class="bar" style="margin-top:20px;justify-content:flex-end">
+        <button class="btn" id="pe-cancel">Cancel</button>
+        <button class="btn btn-primary" id="pe-save">${pe.index < 0 ? "Publish path" : "Save path"}</button>
+      </div>`;
+    const keep = () => { p.icon = $("#pe-icon").value.trim(); p.title = $("#pe-title").value.trim(); p.description = $("#pe-desc").value.trim(); p.hidden = $("#pe-hidden").checked; };
+    const move = (i, d) => { keep(); const [x] = p.videos.splice(i, 1); p.videos.splice(i + d, 0, x); renderPathEditor(); };
+    $$("[data-pv-up]").forEach(b => b.onclick = () => move(+b.dataset.pvUp, -1));
+    $$("[data-pv-down]").forEach(b => b.onclick = () => move(+b.dataset.pvDown, 1));
+    $$("[data-pv-rm]").forEach(b => b.onclick = () => { keep(); p.videos.splice(+b.dataset.pvRm, 1); renderPathEditor(); });
+    $("#pe-add").onchange = e => { if (!e.target.value) return; keep(); p.videos.push(e.target.value); renderPathEditor(); };
+    $("#pe-back").onclick = $("#pe-cancel").onclick = () => { pe = null; renderPaths(); };
+    $("#pe-save").onclick = async () => {
+      keep();
+      if (!p.title) return alert("Add a title.");
+      if (!p.videos.length) return alert("Add at least one video.");
+      if (!p.hidden) delete p.hidden;
+      if (!p.id) {
+        const base = p.title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 40) || "path";
+        let id = base, n = 2; while (P().some(x => x.id === id)) id = base + "-" + n++;
+        p.id = id;
+      }
+      // Changed wording → let the translator redo automatic translations.
+      if (p.tr) for (const k in p.tr) if (p.tr[k].auto) p.tr[k].src = "";
+      const isNew = pe.index < 0;
+      await update("paths", d => {
+        d.paths = d.paths || [];
+        const i = d.paths.findIndex(x => x.id === p.id);
+        if (i >= 0) d.paths[i] = p; else d.paths.push(p);
+        return d;
+      }, `${isNew ? "Add" : "Edit"} learning path: ${p.title}`);
+      pe = null; toast(isNew ? "Published. Live in about a minute." : "Saved. Live in about a minute."); render();
+    };
   }
 
   /* ---------- Channels ---------- */
