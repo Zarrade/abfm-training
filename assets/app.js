@@ -339,7 +339,7 @@
   }
   function aiMsgHtml(m, i) {
     if (m.role === "user") return `<div class="ai-msg me">${(m.photos || []).map(p => `<img src="${p}" alt="">`).join("")}${m.nPhotos && !(m.photos || []).length ? `<span class="ai-ph">📷 × ${m.nPhotos}</span>` : ""}${m.text ? `<p>${esc(m.text)}</p>` : ""}</div>`;
-    if (m.error) return `<div class="ai-msg bot err">${esc(m.text)}</div>`;
+    if (m.error) return `<div class="ai-msg bot err">${esc(m.text)}${m.why ? `<div class="ai-why">For the admin: ${esc(m.why)}</div>` : ""}</div>`;
     const vids = (m.videos || []).map(id => state.videos.find(v => v.id === id)).filter(Boolean);
     return `<div class="ai-msg bot">
       <div class="ai-text">${mdLite(m.text)}</div>
@@ -432,11 +432,19 @@
         action: "ask", device: deviceId, lang: state.lang, langName: lang, history, text,
         images: photos.map(p => ({ mime: p.mime, data: p.data })), catalog: catalogFor(text + " " + history.map(h => h.text).join(" "))
       }) });
-      const j = await r.json();
-      if (!j.ok) throw new Error(j.error || "error");
+      const raw = await r.text();
+      let j;
+      try { j = JSON.parse(raw); } catch { const er = new Error("notjson"); er.detail = /accounts\.google|signin|ServiceLogin/i.test(raw) ? "login" : raw.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").slice(0, 120); throw er; }
+      if (!j.ok) { const er = new Error(j.error || "error"); er.detail = j.detail || ""; throw er; }
       ai.msgs.push({ role: "bot", text: j.answer || "", videos: (j.videos || []).slice(0, 4), lang: state.lang });
     } catch (e) {
-      ai.msgs.push({ role: "bot", error: true, text: e.message === "busy" ? t("aiBusy") : t("aiError") });
+      const why = {
+        key: "The Google script is the old version — paste the new code and deploy a New version.",
+        off: "No Gemini key in the Google script — check the GEMINI_KEY line, then deploy a New version.",
+        login: "The Google script isn't public — in Deploy → Manage deployments, set 'Who has access' to Anyone.",
+        empty: "Empty question."
+      }[e.message === "notjson" ? e.detail : e.message] || (e.message === "Failed to fetch" ? "Couldn't reach the Google script (no internet, or wrong link in Settings)." : (e.detail || e.message || ""));
+      ai.msgs.push({ role: "bot", error: true, text: e.message === "busy" ? t("aiBusy") : t("aiError"), why: e.message === "busy" ? "" : String(why).slice(0, 220) });
     }
     ai.busy = false; saveAi();
     if (location.hash.startsWith("#/ai")) renderAI();

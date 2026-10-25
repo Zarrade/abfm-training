@@ -388,3 +388,4 @@ body.ai-mode .ai-bar { flex: none; position: relative; bottom: auto; box-shadow:
 .ai-mi:hover, .ai-mi:active { background: var(--surface-2); }
 .ai-cam[aria-expanded="true"] { background: var(--surface-2); border-color: var(--brand); }
 body.ai-mode .ai-head { align-items: center; margin-bottom: 8px; } body.ai-mode .ai-head .sub { margin-bottom: 4px; }
+.ai-why { margin-top: 6px; font-size: 12px; color: var(--muted); font-family: ui-monospace, monospace; word-break: break-word; }
