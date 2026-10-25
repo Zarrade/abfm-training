@@ -1,0 +1,50 @@
+name: Find new videos
+
+on:
+  schedule:
+    - cron: "23 1 * * *"   # every day at 05:23 Dubai time
+  workflow_dispatch:
+    inputs:
+      health:
+        description: "Also check all published videos still play"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: find-videos
+  cancel-in-progress: false
+
+jobs:
+  find:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Check trusted channels
+        run: node scripts/find-videos.mjs
+        env:
+          FORCE_HEALTH: ${{ inputs.health && '1' || '0' }}
+
+      - name: Save results
+        run: |
+          if git diff --quiet -- data; then
+            echo "Nothing new."
+            exit 0
+          fi
+          git config user.name "training-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          git commit -m "Daily video check: update review queue"
+          for i in 1 2 3; do
+            git pull --rebase origin "${GITHUB_REF_NAME}" && git push && exit 0
+            sleep 5
+          done
+          exit 1
