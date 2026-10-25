@@ -8585,19 +8585,19 @@
       "channel": "The Electrical Guy",
       "duration": "9:35",
       "added": "2026-10-20",
-      "summary": "Demonstrates how to test motor winding continuity and insulation resistance using an insulation tester.",
-      "safety": "Ensure the motor is completely disconnected and de-energized before performing any electrical testing.",
+      "summary": "The video demonstrates how to test an electric motor using an insulation tester to check continuity, winding-to-winding resistance, and winding-to-body insulation.",
+      "safety": "Always ensure the motor is completely de-energized and isolated before conducting continuity or insulation resistance tests.",
       "ppe": [
         "Safety Glasses",
-        "Insulated Gloves"
+        "Insulated Gloves",
+        "Safety Shoes"
       ],
       "steps": [
-        "Select continuity mode on the insulation tester.",
-        "Connect probes to motor winding terminals to measure resistance.",
-        "Record resistance values for all three windings.",
-        "Set tester voltage to 500V for IR testing.",
-        "Connect probes across windings to measure insulation resistance.",
-        "Connect probes between windings and motor body to test for earth faults."
+        "Select the continuity position on the insulation tester.",
+        "Connect probes across each motor winding terminal pair to measure resistance.",
+        "Select the appropriate voltage range for the insulation resistance test.",
+        "Connect tester probes between motor windings to check insulation.",
+        "Connect tester probes between motor windings and the motor body to check for earth faults."
       ],
       "tr": {
         "hi": {
