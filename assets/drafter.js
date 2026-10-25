@@ -165,5 +165,28 @@ Use simple words. Do not invent steps that are not in the video.`;
     } finally { if (timer) clearTimeout(timer); }
   }
 
-  root.ABDraft = { ruleDraft, aiDraft, chapters, summary, level, safetyFor };
+  /* Duplicate check: compares the meaningful words of two titles (0 = nothing in common, 1 = same). */
+  const STOP = new Set("a an the and or of for to in on with your you how what why is are it its this that from by at as be do does using use used easy simple quick guide tutorial video explained explanation step steps full complete beginner beginners basic basics part new best way ways diy pro like professional training tips tip learn lesson course 2023 2024 2025 2026 vs".split(" "));
+  const stem = w => w.replace(/(ings|ing|ers|er|es|ed|s)$/, "").replace(/(.)\1$/, "$1");
+  const tokens = t => new Set(String(t || "").toLowerCase().replace(/[^a-z0-9]+/g, " ").split(" ").filter(w => w.length > 1 && !STOP.has(w)).map(stem).filter(w => w.length > 1));
+  function similarity(a, b) {
+    const A = tokens(a), B = tokens(b);
+    if (!A.size || !B.size) return 0;
+    let n = 0; A.forEach(x => { if (B.has(x)) n++; });
+    return 2 * n / (A.size + B.size);
+  }
+  const DUP = 0.66;
+  /* items: [{yt, title, ...}] → those that look like the same video or the same topic, best match first. */
+  function findDuplicates(target, items) {
+    const out = [];
+    for (const it of items || []) {
+      if (!it || it === target) continue;
+      if (target.yt && it.yt === target.yt) { out.push({ item: it, score: 1, same: true }); continue; }
+      const sc = similarity(target.title, it.title);
+      if (sc >= DUP) out.push({ item: it, score: sc, same: false });
+    }
+    return out.sort((x, y) => y.score - x.score);
+  }
+
+  root.ABDraft = { ruleDraft, aiDraft, chapters, summary, level, safetyFor, similarity, findDuplicates };
 })(typeof globalThis !== "undefined" ? globalThis : this);

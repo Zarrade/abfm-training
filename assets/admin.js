@@ -228,6 +228,8 @@
     if (ui.show === "problems") list = list.filter(v => probs.has(v.yt));
     if (ui.show === "featured") list = list.filter(v => v.featured);
     if (ui.show === "essential") list = list.filter(v => v.essential);
+    const dupOf = new Map(V().map(v => [v.id, ABDraft.findDuplicates(v, V())]));
+    if (ui.show === "dups") list = list.filter(v => dupOf.get(v.id).length);
     if (words.length) list = list.filter(v => { const h = [v.title, v.channel, v.subject, v.category, v.id].join(" ").toLowerCase(); return words.every(w => h.includes(w)); });
     list = [...list].sort((a, b) => (b.added || "").localeCompare(a.added || ""));
     const nProb = V().filter(v => probs.has(v.yt)).length;
@@ -237,7 +239,7 @@
         <input class="input grow" id="v-q" type="search" placeholder="Search title, channel, subject…" value="${esc(ui.q)}">
         <select id="v-cat"><option value="ALL">All categories</option>${cats().map(c => `<option ${c === ui.cat ? "selected" : ""}>${esc(c)}</option>`).join("")}</select>
         <select id="v-show">
-          ${[["all", "All videos"], ["essential", "Safety essentials"], ["featured", "Pinned to top"], ["hidden", "Hidden"], ["problems", "Problems"]].map(([k, l]) => `<option value="${k}" ${k === ui.show ? "selected" : ""}>${l}</option>`).join("")}
+          ${[["all", "All videos"], ["dups", "Possible duplicates"], ["essential", "Safety essentials"], ["featured", "Pinned to top"], ["hidden", "Hidden"], ["problems", "Problems"]].map(([k, l]) => `<option value="${k}" ${k === ui.show ? "selected" : ""}>${l}</option>`).join("")}
         </select>
         <button class="btn btn-primary" id="add-video">＋ Add video</button>
       </div>
@@ -250,6 +252,7 @@
             <h3>${esc(v.title)}</h3>
             <div class="meta">
               <span>${esc(v.category)}</span><span class="lvl lvl-${esc(v.level)}">${esc(v.level)}</span><span>${esc(v.added || "")}</span>
+              ${dupOf.get(v.id).length ? `<span class="badge-s b-dup" title="${esc(dupOf.get(v.id).map(d => d.item.title).join("\n"))}">⚠ ${dupOf.get(v.id)[0].same ? "Same video twice" : "Similar to: " + esc(dupOf.get(v.id)[0].item.title)}</span>` : ""}
               ${v.essential ? `<span class="badge-s b-ess">🦺 Essential</span>` : ""}
               ${v.featured ? `<span class="badge-s b-feat">Pinned</span>` : ""}
               ${v.hidden ? `<span class="badge-s b-hidden">Hidden</span>` : ""}
@@ -300,7 +303,7 @@
       </div>
       <div class="preview" id="f-preview" ${v.yt ? "" : "hidden"}>${v.yt ? `<iframe src="https://www.youtube-nocookie.com/embed/${esc(v.yt)}?rel=0" allowfullscreen allow="encrypted-media; picture-in-picture; fullscreen"></iframe>` : ""}</div>
       ${prefill.description ? `<details class="box"><summary>YouTube description</summary><p style="white-space:pre-wrap;font-size:14px;margin:8px 0 0">${esc(prefill.description)}</p></details>` : ""}
-      <div class="field"><label for="f-title">Title</label><input class="input" id="f-title" required value="${esc(v.title || "")}"></div>
+      <div class="field"><label for="f-title">Title</label><input class="input" id="f-title" required value="${esc(v.title || "")}"><div id="f-dup"></div></div>
       <div class="two">
         <div class="field"><label for="f-cat">Category</label>
           <select class="input" id="f-cat">${cats().map(c => `<option ${c === v.category ? "selected" : ""}>${esc(c)}</option>`).join("")}<option value="__new">＋ New category…</option></select></div>
@@ -348,7 +351,7 @@
       help.innerHTML = dup ? `<span style="color:var(--danger);font-weight:700">Already in the library: “${esc(dup.title)}”.</span>` : "Fetching title…";
       const meta = await fetchMeta(yt);
       if (meta) {
-        if (!$("#f-title").value) $("#f-title").value = meta.title;
+        if (!$("#f-title").value) { $("#f-title").value = meta.title; $("#f-title").dispatchEvent(new Event("input")); }
         if (!$("#f-chan").value) $("#f-chan").value = meta.channel;
         if (!dup) help.textContent = "Details filled in. Check the title and add the steps.";
         const cat = guessCategory(meta.title);
@@ -356,6 +359,13 @@
       } else if (!dup) help.textContent = "Couldn't fetch the title automatically. Type it in.";
     };
     $("#f-draft").onclick = () => runDraft();
+    const checkDup = () => {
+      const others = V().filter(x => !ed.original || x.id !== ed.original.id);
+      const d = ABDraft.findDuplicates({ title: $("#f-title").value, yt: parseYT($("#f-url").value) || ed.v.yt }, others).filter(x => !x.same).slice(0, 3);
+      $("#f-dup").innerHTML = d.length ? `<div class="dup-note">⚠ Similar video${d.length > 1 ? "s" : ""} already in the library: ${d.map(x => `<b>${esc(x.item.title)}</b>`).join(", ")}. Check it isn't the same lesson.</div>` : "";
+    };
+    $("#f-title").addEventListener("input", checkDup);
+    setTimeout(checkDup, 0);
     url.addEventListener("change", onUrl);
     url.addEventListener("paste", () => setTimeout(onUrl, 0));
     $("#f-cat").onchange = e => {
@@ -478,6 +488,13 @@
     const p = data.pending.json;
     const q = p.queue || [];
     const errs = Object.entries(p.channelStatus || {}).filter(([, s]) => s && s.error);
+    const dupNote = item => {
+      const lib = ABDraft.findDuplicates(item, V())[0];
+      if (lib) return `<div class="dup-note">⚠ ${lib.same ? "Already in the library" : "Looks like a video already in the library"}: <b>${esc(lib.item.title)}</b></div>`;
+      const qd = ABDraft.findDuplicates(item, q)[0];
+      if (qd) return `<div class="dup-note soft">⚠ Similar video also waiting in the queue: <b>${esc(qd.item.title)}</b> — you may only need one.</div>`;
+      return "";
+    };
     $("#app").innerHTML = `
       <div class="card-plain">
         <h2>Review queue</h2>
@@ -493,6 +510,7 @@
             <div class="meta"><span>${esc(item.suggestedCategory || "Unsorted")}</span>${item.published ? `<span class="dot">${esc(item.published.slice(0, 10))}</span>` : ""}${item.draft ? `<span class="badge-s b-draft">✨ ${item.draft.source === "ai" ? "AI draft ready" : (item.draft.steps || []).length ? "Draft + steps" : "Draft"}</span>` : ""}</div>
             <h3>${esc(item.title)}</h3>
             <div class="count" style="margin:0">${esc(item.channel || "")}</div>
+            ${dupNote(item)}
             ${item.description ? `<div class="desc">${esc(item.description)}</div>` : ""}
             <div class="acts">
               <button class="btn btn-sm" data-reject="${esc(item.yt)}">Reject</button>
