@@ -1,74 +1,74 @@
 {
-  "lastRun": "2026-10-25T14:27:42.392Z",
+  "lastRun": "2026-10-25T15:24:09.313Z",
   "channelStatus": {
     "https://www.youtube.com/@EngineeringMindset": {
       "id": "UCk0fGHsCEzGig-rSzkfCjMw",
-      "checked": "2026-10-25T14:26:59.112Z",
+      "checked": "2026-10-25T15:23:56.650Z",
       "lastFound": 0
     },
     "https://www.youtube.com/@ACServiceTech": {
       "id": "UCYohLjTaUZLF3-JjttxG_CA",
-      "checked": "2026-10-25T14:27:16.862Z",
+      "checked": "2026-10-25T15:23:58.284Z",
       "lastFound": 0
     },
     "https://www.youtube.com/@TheElectricalGuy": {
       "id": "UCdKPm5KM99O75NtArFkMDDA",
-      "checked": "2026-10-25T14:27:17.743Z",
+      "checked": "2026-10-25T15:23:59.125Z",
       "lastFound": 0
     },
     "https://www.youtube.com/@GSHElectrical": {
       "id": "UCgtbE9w_d-u2AvPp3WBlPfQ",
-      "checked": "2026-10-25T14:27:19.872Z",
-      "lastFound": 1
+      "checked": "2026-10-25T15:23:59.989Z",
+      "lastFound": 0
     },
     "https://www.youtube.com/@jwflame": {
       "id": "UC2uFFhnMKyF82UY2TbXRaNg",
-      "checked": "2026-10-25T14:27:20.736Z",
+      "checked": "2026-10-25T15:24:00.797Z",
       "lastFound": 0
     },
     "https://www.youtube.com/@RogerWakefield": {
       "id": "UCGIMKh92vaL0_Yc0u4GYhHA",
-      "checked": "2026-10-25T14:27:21.454Z",
+      "checked": "2026-10-25T15:24:01.632Z",
       "lastFound": 0
     },
     "https://www.youtube.com/c/HVACSchool": {
       "id": "UCdLlUhD9LUGm0-NTYDASPFA",
-      "checked": "2026-10-25T14:27:16.002Z",
-      "lastFound": 13
+      "checked": "2026-10-25T15:23:57.476Z",
+      "lastFound": 0
     },
     "https://www.youtube.com/channel/UCIoD-SEdUWMA74tWXRMyCZQ": {
       "id": "UCIoD-SEdUWMA74tWXRMyCZQ",
-      "checked": "2026-10-25T14:27:22.290Z",
+      "checked": "2026-10-25T15:24:02.451Z",
       "lastFound": 0
     },
     "https://www.youtube.com/c/Ductdudes": {
       "id": "UCGGX5M9ISk9Zwi6pfa6gk3w",
-      "checked": "2026-10-25T14:27:23.542Z",
+      "checked": "2026-10-25T15:24:03.257Z",
       "lastFound": 0
     },
     "https://www.youtube.com/channel/UCbZdXox6mKHdcT2QdVT-goQ": {
       "id": "UCbZdXox6mKHdcT2QdVT-goQ",
-      "checked": "2026-10-25T14:27:26.613Z",
-      "lastFound": 2
+      "checked": "2026-10-25T15:24:04.062Z",
+      "lastFound": 0
     },
     "https://www.youtube.com/channel/UCWpu9UZ6aiRTaMuuV8-C0pQ": {
       "id": "UCWpu9UZ6aiRTaMuuV8-C0pQ",
-      "checked": "2026-10-25T14:27:32.604Z",
-      "lastFound": 3
+      "checked": "2026-10-25T15:24:06.049Z",
+      "lastFound": 0
     },
     "https://www.youtube.com/channel/UCnrhmEmvA_bIRYkBVPqJ4zg": {
       "id": "UCnrhmEmvA_bIRYkBVPqJ4zg",
-      "checked": "2026-10-25T14:27:36.698Z",
-      "lastFound": 3
+      "checked": "2026-10-25T15:24:06.861Z",
+      "lastFound": 0
     },
     "https://www.youtube.com/channel/UCR1ksygazAOr59yLZ4Mp5tA": {
       "id": "UCR1ksygazAOr59yLZ4Mp5tA",
-      "checked": "2026-10-25T14:27:40.827Z",
-      "lastFound": 3
+      "checked": "2026-10-25T15:24:07.696Z",
+      "lastFound": 0
     },
     "https://www.youtube.com/channel/UCXOzd-KAiI6fGx5wfrnsHTA": {
       "id": "UCXOzd-KAiI6fGx5wfrnsHTA",
-      "checked": "2026-10-25T14:27:41.685Z",
+      "checked": "2026-10-25T15:24:08.600Z",
       "lastFound": 0
     }
   },
@@ -85,25 +85,34 @@
       "description": "Field safety starts long before you open the panel. In this HVAC School safety meeting, we lay out the everyday habits that keep technicians on the job and out of the hospital. We cover vehicle inspections, the right gloves, and staying alert behind the wheel. One theme runs through all of it: routine work becomes high-risk the moment you stop paying attention. The goal is to stop injuries before they turn into stitches, an OSHA recordable, or lost time away from work.\n\nWe open with a real story from the turnpike. A service van with low tire tread hydroplaned during a simple lane change, spun a full 360, and hit the wall. Luckily, nobody else was nearby. That near miss is why weekly van checks matter. Walk around your vehicle before you get in, check tire tread depth, have a coworker confirm your brake lights work, and report new noises right away through the QR code system. Dropping your van off for weekend maintenance catches worn brakes, leaks, and bald tires before they leave you stranded or worse.\n\nNext, we talk about PPE, especially gloves. One of our techs had a hand sliced by sheet metal dangerously close to a main artery. Since then, we’ve challenged every technician to make gloves part of the daily routine. Skipping gloves for weeks without a problem tricks your brain into thinking it’s safe, until the day it isn’t. Today’s high-dexterity gloves let you feel screws, valves, and spade terminals, and welding sleeves protect your arms during brazing. Keep a spare pair clipped to your bag or belt so a rooftop gust of wind never catches you bare-handed.\n\nWe also cover driving. Distracted drivers, pedestrians glued to their phones, and electric scooters crossing intersections make every trip a risk. Use the Smith System, look left-right-left before crossing a crosswalk, and remember that dash cameras protect you if something goes wrong.\n\nIn the second half, we get into ladder safety, which is part of your van checks too. Secure ladders to the racks and racks to the vehicle, and replace sun-damaged straps. Never stand a short ladder on top of the van to reach a roof. When climbing, stay aware of anything bulky you’re carrying, like a backpack that can snag at the top or a drill that can fall on the person holding the ladder.\n\n---\n\nNEXT VIDEO\n\nHVAC Safety Training for Technicians | Ladders, PPE, Lockout Tagout & More\nhttps://www.youtube.com/watch?v=dRzbyWDUZ8o&t=547s\n\nKEEP LEARNING\n\nStart here:\nhttps://www.hvacrschool.com/start/\n\nFree HVAC/R training, tech tips, quizzes, calculators, courses, and more:\nhttps://www.hvacrschool.com/\n\nListen to the HVAC School podcast:\nhttps://www.hvacrschool.com/podcast/\n\nGet the HVAC School app:\nhttps://www.hvacrschool.com/apps-page/\n\nHVAC School provides free HVAC/R training—primarily for techs, by techs. The goal is not just to collect facts. It is to understand the system well enough to apply what you know in the field.\n\nQuestions or corrections? Leave a comment and include the equipment model, measurements, ",
       "found": "2026-10-25T14:27:02.123Z",
       "draft": {
-        "source": "rules",
-        "summary": "Field safety starts long before you open the panel. In this HVAC School safety meeting, we lay out the everyday habits that keep technicians on the job and out of the hospital.",
-        "safety": "Isolate power at the unit before opening panels, and watch for hot, cold and moving parts.",
+        "source": "ai",
+        "summary": "A speaker conducts a training session on stopping lost-time injuries, covering van checks, driving habits, and proper personal protective equipment.",
+        "safety": "Always walk around your vehicle and check tyres, brakes, and ladders before driving.",
         "ppe": [
           "Safety Glasses",
-          "Work Gloves",
-          "Safety Shoes"
+          "Gloves",
+          "Protective Clothing"
         ],
         "steps": [
-          "Isolate power to the unit",
-          "Inspect the equipment and note any faults",
-          "Carry out the work as shown in the video",
-          "Check connections, fixings and drains",
-          "Restore power and check the unit runs correctly",
-          "Record readings and the work done"
+          "Walk around your vehicle and check tyres and brakes regularly.",
+          "Inspect ladder storage and tie-downs on vans weekly.",
+          "Wear appropriate gloves to prevent hand and arm cuts from sheet metal.",
+          "Check pedestrian crossings and use the left-right-left rule before crossing."
         ],
-        "stepsFrom": "general",
-        "level": "Intermediate",
-        "subject": ""
+        "stepsFrom": "ai",
+        "level": "Beginner",
+        "subject": "Fundamentals",
+        "category": "Health & Safety",
+        "review": {
+          "relevance": 9,
+          "quality": 8,
+          "recommend": "approve",
+          "reason": "Clear and relevant safety instruction for maintenance technicians.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.5-flash-lite"
       }
     },
     {
@@ -118,27 +127,35 @@
       "description": "In this video me and Marcus look at dead test number 2 in BS7671. In the test sequence this is \"testing continuity of ring final circuit conductors, including protective conductors\". We go through all 3 stages recording the results and we show the calculation for R1 + RN and R1 + R2 from r1, rn and r2 end to end readings. We prove the circuit is wired as a ring final circuit sometimes called a ring main or socket circuit. After proving the circuit is wired as a ring and the polarity of the sockets and record the results on the testing paperwork.\n\nHow to carry out a figure of 8 test on a ring final circuit (sometimes call incorrectly a ring main circuit) \n\n🔔 Subscribe for more free electrical training videos https://youtube.com/c/GSHElectrical?sub_confirmation=1\n\n== 🕐 Time Stamps - Cut to the action 🕕 == \n\n00:00 - Stage 1 – Ring Final Circuit Continuity\n00:35 - Measuring r1, rn and r2\n01:25 - Calculating Expected Resistance Values\n02:05 - Stage 2 – Line and Neutral Figure of Eight\n02:45 - Testing a Fused Connection Unit and Spur\n03:35 - Testing Socket Outlets and Checking Polarity\n04:35 - Investigating High Resistance Readings\n05:35 - Stage 3 – Line and CPC Figure of Eight\n06:15 - Calculating and Measuring R1 + R2\n07:00 - Testing the Spur and Confirming Polarity\n08:00 - Testing All Socket Outlets\n09:15 - Recording the Highest R1 + R2 Reading\n09:45 - Completing the Schedule of Test Results\n\nVideos are training aids for City and Guilds (C and G) and EAL courses Level 1, 2, 3 plus AM2, AM2S and AM2E. \n\nYou can follow me day by day on Facebook, Instagram, Twitter and TikTok lookout for \"GSH Electrical.  \n\n▶️ FACEBOOK https://www.facebook.com/gshelectrical/\n\n▶️ INSTAGRAM https://instagram.com/p/BrIhZmrAYGDTmjMdb9lUNQodMevqsbDDki3qpQ0/\n\n▶️ TWITTER https://mobile.twitter.com/gsh_electrical\n\n▶️ TikTok https://vm.tiktok.com/ZMRBLFdhe/\n\n#GSHElectrical #Electricaltrainingvideos #electrical #testing #electricaltesting",
       "found": "2026-10-25T14:27:19.872Z",
       "draft": {
-        "source": "rules",
-        "summary": "Me and Marcus look at dead test number 2 in BS7671. In the test sequence this is \"testing continuity of ring final circuit conductors, including protective conductors\".",
-        "safety": "Isolate and prove dead before any work. Only qualified staff may work near live parts.",
+        "source": "ai",
+        "summary": "This video demonstrates how to test ring final circuits, covering continuity and polarity checks using a Megger tester.",
+        "safety": "Ensure the circuit is isolated and locked off before disconnecting or connecting test leads.",
         "ppe": [
           "Insulated Gloves",
           "Safety Glasses",
-          "Safety Shoes"
+          "Safety Footwear"
         ],
         "steps": [
-          "Stage 1 – Ring Final Circuit Continuity",
-          "Measuring r1, rn and r2",
-          "Calculating Expected Resistance Values",
-          "Stage 2 – Line and Neutral Figure of Eight",
-          "Testing a Fused Connection Unit and Spur",
-          "Testing Socket Outlets and Checking Polarity",
-          "Investigating High Resistance Readings",
-          "Stage 3 – Line and CPC Figure of Eight"
+          "Confirm the ring final circuit continuity across line, neutral, and cpc.",
+          "Interconnect opposite conductors at the distribution board.",
+          "Measure resistance across connector blocks for r1 plus rn.",
+          "Plug in socket adapter to test socket outlets.",
+          "Verify polarity and record the highest resistance values."
         ],
-        "stepsFrom": "chapters",
+        "stepsFrom": "ai",
         "level": "Intermediate",
-        "subject": "Motor Control"
+        "subject": "Testing & Inspection",
+        "category": "Electrical",
+        "review": {
+          "relevance": 9,
+          "quality": 8,
+          "recommend": "approve",
+          "reason": "Clear step-by-step demonstration of ring final circuit testing suitable for electrical technicians.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.5-flash-lite"
       }
     },
     {
@@ -153,22 +170,33 @@
       "description": "Want a professional-looking Torginol flake garage floor with consistent color from start to finish? Don't skip one of the most important steps in the installation process: BOXING YOUR FLAKES! Brought to you by Torginol.\n\nWhen installing a resinous garage floor using Torginol decorative flakes, achieving consistent color and an even distribution of flakes is critical to getting that beautiful, professional finish.\n\nIn this video, Chris Berry, The Idaho Painter, explains why boxing your Torginol flakes before broadcasting them onto your floor is so important.\n\nWhat is boxing your flakes?\n\nBoxing is the process of combining and thoroughly mixing flakes from multiple boxes or bags before installation. Even with the same Torginol color blend, slight variations between batches or packages can occur. Boxing helps distribute those variations evenly, creating a more uniform appearance across the entire floor.\n\nWhy should you box your flakes?\n\n✅ Helps eliminate noticeable color variations\n\n✅ Ensures consistent flake color throughout the floor\n\n✅ Prevents one section from looking different than another\n\n✅ Creates a uniform, professional-looking finish\n\n✅ Helps achieve the intended appearance of your Torginol flake blend\n\n0:18 Boxing your flakes is a must\n0:45 Pour from bucket to bucket\n1:00 Technique tossing flakes\n\nWhether you're installing your first resinous garage floor or you're an experienced flooring contractor, proper preparation and attention to detail make all the difference.\n\nRemember: A professional floor starts before the first flake hits the epoxy!\n\nLearn more professional painting and resinous flooring techniques with The Idaho Painter and Paint Life Academy.\n\n🛠️ Professional tools and supplies: https://paintlifesupply.com\n\n🎓 Learn professional installation techniques: https://paintlifeacademy.com\n\nEducating, Empowering, and Equipping Painters Worldwide!\n\n#Torginol #GarageFloorEpoxy #ResinousFlooring #FlakeFloor #GarageFloorMakeover #TheIdahoPainter #PaintLifeTV #EpoxyFlooring",
       "found": "2026-10-25T14:27:34.382Z",
       "draft": {
-        "source": "rules",
-        "summary": "Want a professional-looking Torginol flake garage floor with consistent color from start to finish? Don't skip one of the most important steps in the installation process: BOXING YOUR FLAKES!",
-        "safety": "Ventilate the area, keep ignition sources away and protect your eyes and lungs.",
+        "source": "ai",
+        "summary": "A worker demonstrates why and how to mix multiple buckets of Torginol limestone hybrid flakes together before scattering them onto a newly painted garage floor.",
+        "safety": "Ensure proper ventilation and wear recommended protective equipment when handling chemical flooring flakes and coatings.",
         "ppe": [
-          "Respirator",
-          "Safety Goggles",
-          "Chemical Gloves"
+          "Safety Glasses",
+          "Work Gloves",
+          "Knee Pads"
         ],
         "steps": [
-          "Boxing your flakes is a must",
-          "Pour from bucket to bucket",
-          "Technique tossing flakes"
+          "Collect clean buckets for all boxes of decorative flakes.",
+          "Pour flakes back and forth between buckets to thoroughly mix them.",
+          "Scatter the well-mixed flakes evenly across the prepared garage floor coating."
         ],
-        "stepsFrom": "chapters",
-        "level": "Intermediate",
-        "subject": ""
+        "stepsFrom": "ai",
+        "level": "Beginner",
+        "subject": "Torginol Flakes Mixing",
+        "category": "Painting & Waterproofing",
+        "review": {
+          "relevance": 8,
+          "quality": 8,
+          "recommend": "approve",
+          "reason": "Clear demonstration of mixing techniques for decorative flooring materials to ensure uniform color distribution.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.5-flash-lite"
       }
     },
     {
@@ -183,26 +211,35 @@
       "description": "I was earning good money on YouTube but I chose construction. Watch to find out why.\n\nSome tools used in the video:\nDisclaimer: As an Amazon Associate I will make a small commission on purchases through the Amazon link. Thanks for the support!!!\nStud Finder: https://amzn.to/3FttHaF\nBrad Nailer: https://amzn.to/43yeC0H\nMy Toolbelt: https://amzn.to/3VYFvXc\nA great hammer: https://amzn.to/4iQ7TVj (My second choice after Tibone)\nBest tool ever! https://amzn.to/3Pgz4uQ\nA good nail puller: https://amzn.to/3WlhlXp\nFat max tape: https://amzn.to/41T9DHp (best tape measure)\nSpeed square: https://amzn.to/3PfFkTE\nNail Punch: https://amzn.to/4fz7ow1\nThe best knife: https://amzn.to/4fz7ow1 (keep it simple)\nChalk line: https://amzn.to/49XC8FPe for another day in the life style video!",
       "found": "2026-10-25T14:27:25.284Z",
       "draft": {
-        "source": "rules",
-        "summary": "I was earning good money on YouTube but I chose construction. Watch to find out why.",
-        "safety": "Keep the area barricaded, use tools with guards and lift heavy materials with help.",
+        "source": "ai",
+        "summary": "The creator explains why he shifted his focus back to full-time construction work over making YouTube videos. The footage features background clips of various wall framing and carpentry tasks on a job site.",
+        "safety": "Always wear eye and hearing protection when operating air nailers and power saws on construction sites.",
         "ppe": [
-          "Hard Hat",
-          "Safety Shoes",
-          "Work Gloves",
-          "Safety Glasses"
+          "Safety Glasses",
+          "Hearing Protection",
+          "Safety Boots"
         ],
         "steps": [
-          "Read the job card and get the right tools and PPE",
-          "Make the area safe and put up barriers or signs",
-          "Carry out the work as shown in the video",
-          "Check your work",
-          "Clean up the area",
-          "Report the job complete"
+          "Prioritize core construction projects over video production schedules.",
+          "Focus on high-end carpentry skills to deliver quality results.",
+          "Build a stable, dependable trade business for long-term income.",
+          "Demonstrate a consistent, hard-working example for family and team members.",
+          "Balance project management demands with personal career fulfillment."
         ],
-        "stepsFrom": "general",
-        "level": "Advanced",
-        "subject": ""
+        "stepsFrom": "ai",
+        "level": "Beginner",
+        "subject": "Carpentry Career Insights",
+        "category": "Civil Jobs",
+        "review": {
+          "relevance": 2,
+          "quality": 7,
+          "recommend": "reject",
+          "reason": "This is a personal vlog about social media vs. trade work rather than a technical training video.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.6-flash"
       }
     },
     {
@@ -217,25 +254,35 @@
       "description": "¿Quieres aprender a pintar techos como un pintor profesional? En este video, Chris Berry, The Idaho Painter, te muestra cómo pintar techos usando un pulverizador de pintura sin aire para conseguir un acabado suave, uniforme y profesional. Ya seas un propietario que hace bricolaje o un pintor profesional que quiere mejorar sus habilidades con el pulverizador, estos consejos y técnicas para pintar techos te ayudarán a obtener mejores resultados.\n\n🛠️ Las herramientas en nuestros videos se pueden encontrar todas en nuestra tienda de LinkTree: https://linktr.ee/Idahopainter\n\nPintar techos con un pulverizador de pintura sin aire puede ahorrar tiempo, aumentar la productividad y ofrecer un acabado increíble si se hace correctamente. Pero usar la boquilla equivocada, presión incorrecta, técnica de pulverización deficiente o solapamiento inconsistente puede causar rayas, marcas de superposición, cobertura desigual y exceso de pulverización.\n\n👉 ¡Suscríbete para más reseñas honestas de herramientas y consejos de pintura! https://www.youtube.com/@Idahopainter\n\nVisit our website https://idahopainter.com for more tips & tricks painting\n\nShop Paint Life Supply Co. owned and operated by The Idaho Painter and my Family.  Game changing tools for painters and cool Paint Life apparel:  https://paintlifesupply.com \n\nVisit Us Here:\n\nFacebook: https://www.facebook.com/TheIdahoPainter/\nInstagram: https://www.instagram.com/idahopainter/\nTikTok: https://www.tiktok.com/@idahopainter",
       "found": "2026-10-25T14:27:35.454Z",
       "draft": {
-        "source": "rules",
-        "summary": "¿Quieres aprender a pintar techos como un pintor profesional? En este video, Chris Berry, The Idaho Painter, te muestra cómo pintar techos usando un pulverizador de pintura sin aire para conseguir un acabado suave, uniforme y profesional.",
-        "safety": "Ventilate the area, keep ignition sources away and protect your eyes and lungs from fumes and spray.",
+        "source": "ai",
+        "summary": "This video provides tips and techniques for airless spray painting interior ceilings professionally.",
+        "safety": "Ensure proper ventilation and wear respiratory protection when spraying paint indoors.",
         "ppe": [
           "Respirator",
-          "Safety Goggles",
-          "Chemical Gloves"
+          "Protective Coveralls",
+          "Safety Gloves"
         ],
         "steps": [
-          "Protect floors and furniture, and ventilate the room",
-          "Clean, scrape, fill and sand the surface",
-          "Apply primer to bare or patched areas",
-          "Cut in edges and corners with a brush",
-          "Roll the main areas in sections, keeping a wet edge",
-          "Apply a second coat once the first is dry"
+          "Select a suitable airless spray tip size.",
+          "Set the correct operating pressure.",
+          "Attach an extension wand to the spray gun.",
+          "Maintain a 50 percent overlap while spraying ceilings.",
+          "Work at a consistent pace across the ceiling surface."
         ],
-        "stepsFrom": "topic",
+        "stepsFrom": "ai",
         "level": "Intermediate",
-        "subject": ""
+        "subject": "Ceiling Spray Painting",
+        "category": "Painting & Waterproofing",
+        "review": {
+          "relevance": 9,
+          "quality": 8,
+          "recommend": "approve",
+          "reason": "Clear and practical instructions for airless ceiling painting suitable for our technicians.",
+          "unsafe": [],
+          "language": "Spanish",
+          "talking": true
+        },
+        "model": "gemini-3.5-flash-lite"
       }
     },
     {
@@ -250,25 +297,34 @@
       "description": "EEV diagnostics can be confusing, especially when a perfectly good valve looks bad on paper. In this HVAC School livestream, host Bryan Orr sits down with Ty Branaman and Roman Baugh for a deep dive into the electronic expansion valve: how it works, what it needs to do its job, and how to prove whether it has actually failed before you replace anything.\n\nTy starts with the evolution of expansion devices, from the fixed orifice (piston) and automatic expansion valve (AXV) to the TXV and finally the EEV, and explains what each metering device was designed to control. Roman then breaks down the stepper motor inside the valve, the difference between unipolar EEV and bipolar EEV designs, and how PID control logic lets mini split, inverter heat pump, VRF, and refrigeration systems modulate refrigerant flow far more precisely than a spring-operated TXV.\n\nFrom there, the conversation moves into field troubleshooting: thermistor placement and sensor drift, pressure transducer readings, liquid line quality and subcooling, flash gas, and why there is no position feedback telling the board where the valve actually is. You’ll also hear practical tips on using a power cycle to overdrive valves closed, opening EEVs for nitrogen flow & evacuation, cleaning corrosion off the valve body, and using an EEV magnet or manual driver to test operation.\n\nWhat We Cover:\n\nExpansion Evolution: What problem is each expansion device family trying to solve?\n\nMechanical vs. Electronic: How an EEV’s stepper motor and control loop differ from a traditional TXV.\n\nThe “False Positive”: Which sensor or setup faults make a perfectly good valve look bad?\n\nMimicking Valve Failures: How low charge, liquid-line restrictions, flash gas, or lost pressure differentials disguise themselves as EEV issues.\n\nCommanded Position: What step count actually proves, and what it doesn’t.\n\nPre-Replacement Protocol: Repeatable tests to run before condemning a valve, sensor, or board.\n\nLive Q&A: Triaging real-world diagnostic scenarios from the audience.\n\nWhether you’re chasing high superheat with a wide-open command, a suspected liquid line restriction, or a step count that doesn’t match what the system is doing, this HVAC troubleshooting session gives you a process to work from outside the valve in before reaching for a replacement. It’s useful HVAC training for anyone servicing modern inverter equipment.",
       "found": "2026-10-25T14:27:03.109Z",
       "draft": {
-        "source": "rules",
-        "summary": "EEV diagnostics can be confusing, especially when a perfectly good valve looks bad on paper.",
-        "safety": "Isolate power at the unit before opening panels, and watch for hot, cold and moving parts.",
+        "source": "ai",
+        "summary": "This video covers electronic expansion valve (EEV) operation and diagnostic procedures compared to standard TXVs. It demonstrates how to test motor windings, verify sensors, and test valve response before replacement.",
+        "safety": "Ensure electrical power to the equipment is disconnected before testing EEV winding resistance or handling wiring.",
         "ppe": [
           "Safety Glasses",
-          "Work Gloves",
-          "Safety Shoes"
+          "Insulated Gloves"
         ],
         "steps": [
-          "Isolate power to the unit",
-          "Inspect the equipment and note any faults",
-          "Carry out the work as shown in the video",
-          "Check connections, fixings and drains",
-          "Restore power and check the unit runs correctly",
-          "Record readings and the work done"
+          "Verify liquid refrigerant supply and subcooling before testing the valve.",
+          "Check temperature sensors and pressure transducers for accurate readings.",
+          "Disconnect power and measure EEV motor winding resistance using a multimeter.",
+          "Check for electrical shorts between separate winding phases.",
+          "Use a manual driver or service mode to test valve travel and response."
         ],
-        "stepsFrom": "general",
-        "level": "Advanced",
-        "subject": "Refrigerant & Diagnostics"
+        "stepsFrom": "ai",
+        "level": "Intermediate",
+        "subject": "Refrigerant & Diagnostics",
+        "category": "HVAC",
+        "review": {
+          "relevance": 8,
+          "quality": 8,
+          "recommend": "approve",
+          "reason": "Provides valuable technical explanations and physical prop demonstrations for troubleshooting electronic expansion valves.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.6-flash"
       }
     },
     {
@@ -283,25 +339,33 @@
       "description": "In this video:\n• Dig out the damaged sprinkler and expose its connection.\n• Choose the correct head, nozzle, and fitting.\n• Use a swing joint to make height adjustments easier.\n• Flush out dirt and debris before putting the sprinkler into service.\n• Set the head at soil level and firmly pack the dirt around it.\n• Check the spray direction, arc, and watering distance.\n\nWhether you’re replacing a rotor, spray head, or spray body with a rotary nozzle, matching the sprinklers on your zone helps maintain consistent watering.\n\nShop sprinkler heads, nozzles, and swing joints:\nhttps://www.sprinklerwarehouse.com/product/lawn-irrigation/sprinkler-heads\n\nFind sprinkler adjustment guides and more at Sprinkler School:\nhttps://school.sprinklerwarehouse.com/\n\nShop irrigation supplies:\nhttps://www.sprinklerwarehouse.com/\n\nSubscribe for more sprinkler repair tips, installation guides, and straightforward answers to your irrigation questions.\n\n#SprinklerRepair #SprinklerHeadReplacement #sprinklerwarehouse \n\n\nHow to adjust a PGP ADJ: https://www.youtube.com/watch?v=ozJPDHVmiUw&t=41s\n\nRainBird 5004 Rotor: https://www.youtube.com/watch?v=hO7kxBIwnms&list=PL6oFx1DjVPHoxZ7b90CUGzijqyPSREPIF&index=48\n\nToro T5PCK-RS Rotor: https://www.youtube.com/watch?v=jkaXHdmHDJs\n\nHunter Pro Spray: https://www.youtube.com/watch?v=G1QE1G6ilCQ\n\n\n\n\nYouTube comments are not monitored. Please direct your questions to the customer service representatives on www.sprinklerwarehouse.com.",
       "found": "2026-10-25T14:27:38.675Z",
       "draft": {
-        "source": "rules",
-        "summary": "• Dig out the damaged sprinkler and expose its connection. • Choose the correct head, nozzle, and fitting. • Use a swing joint to make height adjustments easier.",
-        "safety": "Ventilate the area, keep ignition sources away and protect your eyes and lungs from fumes and spray.",
+        "source": "ai",
+        "summary": "This video demonstrates how to replace a broken lawn sprinkler head damaged by a mower and match the correct parts.",
+        "safety": "Ensure the water supply is off and check for underground utilities before digging.",
         "ppe": [
-          "Respirator",
-          "Safety Goggles",
-          "Chemical Gloves"
+          "Work Gloves",
+          "Safety Boots"
         ],
         "steps": [
-          "Dig out the damaged sprinkler and expose its connection.",
-          "Choose the correct head, nozzle, and fitting.",
-          "Use a swing joint to make height adjustments easier.",
-          "Flush out dirt and debris before putting the sprinkler into service.",
-          "Set the head at soil level and firmly pack the dirt around it.",
-          "Check the spray direction, arc, and watering distance."
+          "Dig out the broken sprinkler head and expose the fitting.",
+          "Select the replacement sprinkler head and fitting matching your system.",
+          "Flush the irrigation line to remove dirt and debris.",
+          "Install the new sprinkler head and pack the soil firmly around it."
         ],
-        "stepsFrom": "description",
-        "level": "Intermediate",
-        "subject": ""
+        "stepsFrom": "ai",
+        "level": "Beginner",
+        "subject": "Irrigation Valve Troubleshooting",
+        "category": "Landscaping",
+        "review": {
+          "relevance": 7,
+          "quality": 8,
+          "recommend": "approve",
+          "reason": "Clear, practical guide for replacing damaged sprinkler heads.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.5-flash-lite"
       }
     },
     {
@@ -316,25 +380,35 @@
       "description": "Glycol secondary loop systems are showing up in more and more grocery stores, and in this episode of the HVAC School Podcast, Bryan Orr sits down with Max, one of the company’s lead startup techs and its in-house subject matter expert on glycol skids. Max explains what these systems are, why clients are choosing them for retrofits, and what it takes to commission one without taking a live store down. The big picture: a traditional DX rack chills a water and propylene glycol mix in a heat exchanger, and that glycol is pumped around the store to cool the medium-temperature cases.\r\n\r\n The conversation starts with the “why.” Reduced refrigerant charge inside the building, keeping flammable or higher-GWP refrigerants out of the sales floor, regulatory pressure, and zero-emissions initiatives all push clients this way. Max is upfront that efficiency isn’t one of the reasons at this scale, since the extra heat exchange step, lower suction temperatures, and pump energy all cost something. He also covers the trade-off in reliability: case-level controls are simple, but a fault in one of the skid’s main valves can take out every case at once, so techs have to move fast.\r\n\r\n From there, Max walks through the skid itself, from the brazed plate heat exchanger, VFD-controlled pumps, and air separator to the expansion tank, strainers, suction guide, controller, and EEV drivers. He then covers flow control with balance valves, defrost strategy, and the importance of proper vents and drains in the piping. The two get into the details of startup and commissioning, and some key takeaways include pressure testing instead of pulling a vacuum, filling and purging air, and verifying that the refrigerant-side valves are wired and driven correctly so a swapped valve doesn’t flood the rack.\r\n\r\n The back half of the episode is practical field advice. Max shares how to recognize air in the loop, why store humidity and dew point matter so much for case performance, which specialty tools and fittings he carries, and how to handle glycol mixing and top-offs.\r\n\r\n Topics Covered\r\n\r\n  What a glycol secondary loop system is, and how it differs from direct expansion Why retrofits are happening: refrigerant charge reduction, safety, EPA regulation, and zero-emissions goals Efficiency penalties at small scale, and why efficiency isn’t the driver How glycol behaves in the coil: no latent exchange, a temperature gradient, and frost patterns Reliability trade-offs: simple case controls versus centralized, mission-critical valves Staging a retrofit so the store stays open, including pre-piping, pre-testing, and pipe cleaning Brazing versus soft solder, and whether nitrogen flow matters with glycol Skid components: heat exchanger, VFD pumps, air separator, feeder tank, expansion tank, strainers, and suction guide Controller inputs, EEV drivers, and emergency mobile chiller connections Balance valves (automatic versus manual) and defrost methods, including off-time and electric Fluid distr",
       "found": "2026-10-25T14:27:04.184Z",
       "draft": {
-        "source": "rules",
-        "summary": "Glycol secondary loop systems are showing up in more and more grocery stores, and in this episode of the HVAC School Podcast, Bryan Orr sits down with Max, one of the company’s lead startup techs and its in-house subject matter expert on glycol skids.",
-        "safety": "Isolate power at the unit before opening panels, and watch for hot, cold and moving parts.",
+        "source": "ai",
+        "summary": "This podcast episode discusses secondary glycol loop systems and skids used in supermarket refrigeration. It covers system design, key components, glycol mixture ratios, commissioning, and common troubleshooting steps.",
+        "safety": "Wear proper personal protective equipment when handling glycol solutions to prevent skin and eye irritation.",
         "ppe": [
           "Safety Glasses",
-          "Work Gloves",
-          "Safety Shoes"
+          "Chemical-Resistant Gloves",
+          "Protective Overalls"
         ],
         "steps": [
-          "Isolate power to the unit",
-          "Inspect the equipment and note any faults",
-          "Carry out the work as shown in the video",
-          "Check connections, fixings and drains",
-          "Restore power and check the unit runs correctly",
-          "Record readings and the work done"
+          "Understand the secondary glycol loop system architecture.",
+          "Pre-stage piping and skid connections before retrofitting cases.",
+          "Purge air completely from the loop using air separators.",
+          "Mix food-safe propylene glycol with distilled water to thirty-five percent.",
+          "Verify pump differential pressure to confirm proper fluid flow."
         ],
-        "stepsFrom": "general",
+        "stepsFrom": "ai",
         "level": "Intermediate",
-        "subject": "Fundamentals"
+        "subject": "Chilled Water Systems",
+        "category": "HVAC",
+        "review": {
+          "relevance": 7,
+          "quality": 6,
+          "recommend": "maybe",
+          "reason": "It offers valuable technical discussion on glycol systems, but it is an audio podcast without visual demonstrations.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.6-flash"
       }
     },
     {
@@ -349,25 +423,34 @@
       "description": "Double lugging a surge protector onto the load-side terminals of a disconnect is common in the field, but it can get your install flagged on inspection. In this video, we show how to wire a surge protector to a disconnect the right way, with pigtails instead of a double lug, and why phasing tape on the white wire matters on 240V circuits.\n\nMost disconnects and breakers aren’t rated for two conductors under one terminal. The wiring diagram for many surge protectors shows a double lug option, but that only applies when the terminals are listed for it. To keep the install code compliant, join the condenser wire and the surge protector lead with a wire nut and run a single jumper to each load-side terminal. That way there’s only one wire on each terminal. The same pigtail method applies when you wire a surge protector into a breaker panel.\n\nWe also cover phase identification. On a 240V circuit, the white conductor in the cable is being used as a hot, so code requires it to be marked. Wrap it with black or red phasing tape (or use a marker if you don’t have tape) so anyone opening the box knows it’s energized. If the existing wiring was never marked, take it off the terminal, tape it, and put it back, since you were the last one to touch it. On 120V circuits, leave the white wire alone, because it’s the neutral.\n\nOther field tips in this video:\n\nPicking the right wire nut size for the pigtail splice\nMounting the surge protector on the bottom or right side of the disconnect\nKeeping the door hinge clear so the disconnect can still open and close\nTaking a photo of every connection so you have a record if an inspector asks\n\nThese practices apply to ductless and mini split installs, split systems, new high-voltage runs to a condenser, and any surge protector wired at a disconnect or breaker.\n\n---\n\nNEXT VIDEO\n\nHow to Install an AC Disconnect\nhttps://www.youtube.com/watch?v=k10L0Mtn3sI\n\nKEEP LEARNING\n\nStart here:\nhttps://www.hvacrschool.com/start/\n\nFree HVAC/R training, tech tips, quizzes, calculators, courses, and more:\nhttps://www.hvacrschool.com/\n\nListen to the HVAC School podcast:\nhttps://www.hvacrschool.com/podcast/\n\nGet the HVAC School app:\nhttps://www.hvacrschool.com/apps-page/\n\nHVAC School provides free HVAC/R training—primarily for techs, by techs. The goal is not just to collect facts. It is to understand the system well enough to apply what you know in the field.\n\nQuestions or corrections? Leave a comment and include the equipment model, measurements, and source when you can. None of us gets everything right, and good measurements beat confident guesses.\n\nThis content is educational. Follow manufacturer instructions, use proper PPE and safe work practices, and comply with the codes and standards that apply to your equipment and jurisdiction.",
       "found": "2026-10-25T14:27:05.341Z",
       "draft": {
-        "source": "rules",
-        "summary": "Double lugging a surge protector onto the load-side terminals of a disconnect is common in the field, but it can get your install flagged on inspection.",
-        "safety": "Isolate power at the unit before opening panels, and watch for hot, cold and moving parts.",
+        "source": "ai",
+        "summary": "This video explains how to properly wire a surge protector to an HVAC disconnect box using pigtails rather than double-lugging, and emphasizes phase-taping white wires for code compliance.",
+        "safety": "Always ensure power is completely disconnected and verified off before touching electrical components.",
         "ppe": [
           "Safety Glasses",
-          "Work Gloves",
-          "Safety Shoes"
+          "Insulated Gloves"
         ],
         "steps": [
-          "Isolate power to the unit",
-          "Inspect the equipment and note any faults",
-          "Carry out the work as shown in the video",
-          "Check connections, fixings and drains",
-          "Restore power and check the unit runs correctly",
-          "Record readings and the work done"
+          "Avoid double-lugging surge protector wires into single-rated load terminals.",
+          "Pigtail the surge protector wire together with the condenser load wire.",
+          "Connect the single pigtail wire to the load side terminal.",
+          "Wrap white high-voltage conductors with black or red electrical tape.",
+          "Mount surge protector where it will not block the disconnect door."
         ],
-        "stepsFrom": "general",
+        "stepsFrom": "ai",
         "level": "Intermediate",
-        "subject": ""
+        "subject": "Electrical Diagnostics",
+        "category": "HVAC",
+        "review": {
+          "relevance": 9,
+          "quality": 8,
+          "recommend": "approve",
+          "reason": "Clear explanation on code-compliant surge protector installation using pigtails and phase tape.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.6-flash"
       }
     },
     {
@@ -382,8 +465,680 @@
       "description": "In this short podcast episode, Bryan talks about why your thermostat is reading the wall, not the actual air temperature.\r\n\r\n A thermostat is an instrument designed to read temperature (and sometimes humidity); it displays those readings based on sensors and makes decisions. Most of these sensors are thermistors, which are resistors that change resistance with changes in temperature. Thermistors have low mass and respond to radiant, convective, and conductive heat.\r\n\r\n Air coming through the wall (convective heat), the temperature of the things around the thermostat (radiant heat), AND the wall temperature (conductive heat) can influence your thermostat's reading. We may see a service call where the thermostat reads above the air temperature and runs the air conditioning unit even when the air temperature is already below the set point. Our first move as technicians should be to ask customers when they noticed the problem; the timing can give us some clues about what is going on. Looking behind the thermostat is one of the first things we should do, as air can move through the hole where wires come through, especially if there is air leakage elsewhere. If there is a temperature difference and an airflow path, that could be the source of the issue.  \r\n\r\n Use a reliable temperature probe near the thermostat, off the wall and away from the thermostat casing and electronics, to get a reliable temperature measurement to compare to the thermostat. If the probe and thermostat disagree after several minutes, we should investigate deeper for a warm wall. Infrared thermometers and thermal imagers can help you identify warm surfaces. Keep in mind that thermostats may have sensors in different locations, offsets, and programmed corrections as well. \r\n\r\n If you find an open wire penetration, use non-flammable insulation and/or an appropriate putty to close it. Be careful not to block the sensing vents, too. Let everything settle and repeat the comparison. Some other solutions include changing the location of the thermostat or remote sensor.\r\n\r\n This episode contains embedded sponsor messages from Refrigeration Technologies, Carrier, Copeland, and Santa Fe Dehumidifiers.\r\n\r\n Resources\r\n\r\n  HVAC School calculators Submit a podcast question Learn about the GRIT Foundation  Purchase your tickets or learn more about the 8th Annual HVACR Training Symposium at https://hvacrschool.com/symposium.",
       "found": "2026-10-25T14:27:06.511Z",
       "draft": {
+        "source": "ai",
+        "summary": "This audio podcast explains why thermostats may give inaccurate readings due to airflow, radiation, or thermal conduction from the wall behind them. It covers how to diagnose temperature discrepancies and seal wall penetrations to fix reading errors.",
+        "safety": "Turn off power to the HVAC system before removing or working behind the thermostat casing.",
+        "ppe": [
+          "Safety Glasses",
+          "Work Gloves"
+        ],
+        "steps": [
+          "Understand that thermistors are affected by conduction, convection, and radiation.",
+          "Inspect the wall behind the thermostat for unsealed wire holes allowing drafts.",
+          "Measure ambient room temperature using a calibrated probe held away from the wall.",
+          "Seal wall openings with non-flammable insulation or putty to block wall air movement.",
+          "Check for external heat sources like direct sunlight, lamps, or warm wall cavities.",
+          "Relocate the thermostat or install a remote sensor if wall temperature distorts readings."
+        ],
+        "stepsFrom": "ai",
+        "level": "Intermediate",
+        "subject": "Fundamentals",
+        "category": "HVAC",
+        "review": {
+          "relevance": 8,
+          "quality": 6,
+          "recommend": "maybe",
+          "reason": "The audio lesson provides valuable HVAC troubleshooting concepts, but the video is a static graphic image.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.6-flash"
+      }
+    },
+    {
+      "yt": "FMxm-4b98pY",
+      "title": "Tile will CRACK! Plywood subfloor repair.  #tile #cracks #howtotile",
+      "channel": "Sal DiBlasi (tiling & waterproofing)",
+      "channelUrl": "https://www.youtube.com/channel/UCWpu9UZ6aiRTaMuuV8-C0pQ",
+      "published": "2026-10-18T20:00:08+00:00",
+      "duration": "",
+      "channelCategory": "",
+      "suggestedCategory": "Civil Jobs",
+      "description": "SUBSCRIBE Learn how to tile the right way.\nTile will CRACK! Plywood subfloor repair. Avoid cracked tile. Plywood subfloor repair for tile installation. #tile #cracks #howtotile  When remodeling a bathroom or a kitchen, often times a section of the floor will need to be cut open to modify plumbing or some other utility. It is extremely important that the floor be patched back in the proper way. If you simply lay the plywood that was removed back into the cut out, and screw it to the joists without adding support all around the edges, there will be excessive movement at those joints that will cause tile to crack and fail. In this video I show you how to repair the subfloor so there will be proper support and eliminate the movement up and down between sheets. SUBSCRIBE Learn how to tile the right way. All tile installed by Sal DiBlasi, Elite-tile Company, in the Boston North Shore area. This video contains affiliate links, which means I will receive a small commission if you click on the product link. #tile #transformthetrade  #howtotile #installingtile #howtoinstalltile #liticrete #mapei #Schlutersystems #diy #construction #ardex\n\n🙂 This is my Amazon Store 🙂 https://a.co/d/015wZyAM\n\nPayPal\nhttps://www.paypal.com/donate/?hosted_button_id=UMJSX3UHEHQGQ\n\nPatreon  https://www.patreon.com/c/saldiblasi\n\n🌲 Link Tree 🌲\nhttps://linktr.ee/saldiblasi\n\n☕ Buy me a coffee ☕\nhttps://www.buymeacoffee.com/saldibs2 \n\n📷Camera Equipment 👇\nDJI Action 2 Power Combo https://amzn.to/3xA5fMH\nDJI Action 2 Dual-Screen https://amzn.to/3Qvk8IX \nDJI Pocket 2 Creator Combo https://amzn.to/3mUr1pu \n\n👇 Some of my favorite Tools 👇\nFloat https://amzn.to/2tdEpN2    \nRubbing Stone https://amzn.to/2QrgRfh  \nNotched Trowel 1/4 x 1/4 x 1/4-inch https://amzn.to/36bq5mQ  \nNotched Trowel 1/2 x 1/2 x 1/2-Inch https://amzn.to/2Q5e90g  \nNotched Trowel 1/4 x 3/8 x 1/4-Inch https://amzn.to/39j1caB  \nSuper Dust Collector – WaleTale https://amzn.to/2MDuVkK  \nBlack Nitrile Gloves - 6 mil https://amzn.to/2SJQ6FZ  \nMargin Trowel https://amzn.to/352MYHx \nMortar Mixer https://amzn.to/2ZxYqtF \n4in Sandpaper for Stone Polishing https://amzn.to/2ZB2skT  \nPolishing Rubber Backing Pad https://amzn.to/2srikdy  \nMontolit 63P3 24 Inch Tile Cutter https://amzn.to/2MDoFt l  \nDEWALT Wet Tile Saw https://amzn.to/2QqpO8O \nRubi Thinset mixer https://amzn.to/39VmNWV\nGrabo Pro Lifter\nhttps://amzn.to/3BBO5ys \nIQ 7\" Dustless/Dry Cut Tile Saw IQ228\nhttps://amzn.to/3wFE3w0",
+      "found": "2026-10-25T14:27:30.043Z",
+      "draft": {
+        "source": "ai",
+        "summary": "This video demonstrates how to repair and reinforce a cut-out plywood subfloor using wood blocking to prevent floor flexing and tile cracking.",
+        "safety": "Wear safety glasses and hearing protection when operating circular saws and power tools.",
+        "ppe": [
+          "Safety Glasses",
+          "Hearing Protection",
+          "Knee Pads"
+        ],
+        "steps": [
+          "Identify flexing along the unsupported edges of the plywood patch.",
+          "Measure and cut 2x4 wood blocking pieces to size.",
+          "Position and secure the wood blocking beneath the subfloor seam.",
+          "Fasten the blocking to existing joists using screws and hammer.",
+          "Apply construction adhesive along the top of the installed blocking.",
+          "Replace the plywood patch and screw it securely into place."
+        ],
+        "stepsFrom": "ai",
+        "level": "Intermediate",
+        "subject": "Subfloor Repair",
+        "category": "Civil Jobs",
+        "review": {
+          "relevance": 8,
+          "quality": 8,
+          "recommend": "approve",
+          "reason": "Provides practical instructions on reinforcing subfloor patches to ensure a stable base for tile installation.",
+          "unsafe": [
+            "Operating a circular saw without eye or ear protection"
+          ],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.6-flash"
+      }
+    },
+    {
+      "yt": "NcgO12kdTVs",
+      "title": "A Day at My Current Job",
+      "channel": "Vancouver Carpenter",
+      "channelUrl": "https://www.youtube.com/channel/UCbZdXox6mKHdcT2QdVT-goQ",
+      "published": "2026-10-18T18:06:10+00:00",
+      "duration": "",
+      "channelCategory": "Civil Jobs",
+      "suggestedCategory": "Civil Jobs",
+      "description": "Join me for a day at my current project.\n\nSome tools used in the video:\nDisclaimer: As an Amazon Associate I will make a small commission on purchases through the Amazon link. Thanks for the support!!!\nStud Finder: https://amzn.to/3FttHaF\nBrad Nailer: https://amzn.to/43yeC0H\nMy Toolbelt: https://amzn.to/3VYFvXc\nA great hammer: https://amzn.to/4iQ7TVj (My second choice after Tibone)\nBest tool ever! https://amzn.to/3Pgz4uQ\nA good nail puller: https://amzn.to/3WlhlXp\nFat max tape: https://amzn.to/41T9DHp (best tape measure)\nSpeed square: https://amzn.to/3PfFkTE\nNail Punch: https://amzn.to/4fz7ow1\nThe best knife: https://amzn.to/4fz7ow1 (keep it simple)\nChalk line: https://amzn.to/49XC8FPe",
+      "found": "2026-10-25T14:27:26.613Z",
+      "draft": {
+        "source": "ai",
+        "summary": "A carpenter demonstrates daily construction tasks on a residential site, including cutting wall panels, framing pocket doors, and installing exterior insulation. The video also includes personal daily vlog activities like commuting and skateboarding.",
+        "safety": "Always wear eye and hearing protection when operating power saws and cutting insulation.",
+        "ppe": [
+          "Safety Glasses",
+          "Earplugs",
+          "Dust Mask"
+        ],
+        "steps": [
+          "Mark wall cutout dimensions using a level and tape measure.",
+          "Cut plywood wall openings using a circular saw and oscillating tool.",
+          "Fasten plywood strips to build out the pocket door frame thickness.",
+          "Cut rigid insulation boards to size with a utility knife.",
+          "Secure insulation panels to exterior walls using screws."
+        ],
+        "stepsFrom": "ai",
+        "level": "Intermediate",
+        "subject": "Carpentry and Wall Insulation",
+        "category": "Civil Jobs",
+        "review": {
+          "relevance": 4,
+          "quality": 7,
+          "recommend": "reject",
+          "reason": "The video is structured as a personal lifestyle vlog with non-training content like commuting and skateboarding.",
+          "unsafe": [
+            "Lack of fall protection while working on high roof area",
+            "Inconsistent use of eye protection during power tool operation"
+          ],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.6-flash"
+      }
+    },
+    {
+      "yt": "pOfXina3uUQ",
+      "title": "Electrical Metal Conduit - Types and Sizes",
+      "channel": "GSH Electrical",
+      "channelUrl": "https://www.youtube.com/@GSHElectrical",
+      "published": "2026-10-18T09:00:24+00:00",
+      "duration": "",
+      "suggestedCategory": "Electrical",
+      "description": "In this video we look at the different type of steel conduit, finishes and the 4 common sizes they come in. This information is essential when training to become an electrician as part of your apprenticeship. \n\nSteel conduit comes in either a 3.75 metre or 3 metre length and sizes of 16 mm, 20 mm, 25 mm and 32 mm. \n\n== 🕐 Time Stamps - Cut to the action 🕕 == \n\n00:00 - Steel conduit types, finishes and sizes  \n00:24 - What metal conduit is used for\n01:05 - Different types of electrical metal conduit\n02:00 - Heavy-gauge and light-gauge steel conduit\n02:55 - Common metric conduit sizes\n03:45 - 1",
+      "found": "2026-10-25T09:29:04.488Z",
+      "draft": {
+        "source": "ai",
+        "summary": "This video explains the different types of metal electrical conduit, including black enamel, zinc galvanized, and stainless steel, as well as their common sizes and accessories.",
+        "safety": "Wear protective gloves and eye protection when cutting, threading, or handling metal conduit to prevent cuts and metal shaving injuries.",
+        "ppe": [
+          "Safety Glasses",
+          "Cut-Resistant Gloves",
+          "Work Boots"
+        ],
+        "steps": [
+          "Identify the appropriate conduit finish based on the installation environment.",
+          "Choose between seam welded and solid drawn conduit construction.",
+          "Select the required conduit diameter and standard length.",
+          "Calculate the minimum bending radius using the conduit diameter.",
+          "Connect conduit lengths using compatible threaded boxes, couplers, and bushes."
+        ],
+        "stepsFrom": "ai",
+        "level": "Beginner",
+        "subject": "Wiring Accessories",
+        "category": "Electrical",
+        "review": {
+          "relevance": 8,
+          "quality": 9,
+          "recommend": "approve",
+          "reason": "Provides a clear and concise overview of electrical metal conduit materials, sizing, and accessories.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.6-flash"
+      }
+    },
+    {
+      "yt": "jDZ3G79vpOM",
+      "title": "Pro Method: Masking Trim for Airless Spraying | Fast & Cost-Effective Setup",
+      "channel": "Paint Life TV",
+      "channelUrl": "https://www.youtube.com/channel/UCnrhmEmvA_bIRYkBVPqJ4zg",
+      "published": "2026-10-17T21:30:33+00:00",
+      "duration": "",
+      "channelCategory": "Painting & Waterproofing",
+      "suggestedCategory": "Painting & Waterproofing",
+      "description": "Masking trim the right way can save you HOURS when spraying with an airless paint sprayer. In this video, I’ll show you how to quickly and efficiently mask trim using 9x400 painter’s plastic and FrogTape for clean lines, less waste, and a professional finish.\n\n🛠️ Tools in our videos can all be found in our LinkTree Store: https://linktr.ee/Idahopainter\n\nThis method is fast, cost-effective, and perfect for repaints where you want tight lines without overspray on floors or walls.\n\nWhat You’ll Learn:\n\n✔ How to apply FrogTape for crisp paint lines\n✔ The best way to attach 9x400 painter’s plastic for full protection\n✔ Tips to prevent bleed-through\n✔ How to mask efficiently without wasting materials\n✔ Time-saving tricks used by professionals\n\nWhether you're a DIYer or a pro painter, this masking setup will help you spray trim cleaner and faster with your airless sprayer.\n\nTools & Materials Used:\n\n9x400 Painter’s Plastic\nFrogTape Blue Painters Tape\nM3000 Masking dispenser \n\nIf this video helped you, make sure to 👍 Like, 🔔 Subscribe, and drop a comment with any spraying questions you have!\n\n#airlesssprayer #maskingtrim #paintingtips #frogtape #propainter #paintlife\n\n👉 Subscribe for more honest tool reviews & painting tips!   https://www.youtube.com/@Idahopainter\n\nVisit our website https://idahopainter.com for more tips & tricks painting\n\nShop Paint Life Supply Co. owned and operated by The Idaho Painter and my Family.  Game changing tools for painters and cool Paint Life apparel:  https://paintlifesupply.com \n\nVisit Us Here:\n\nFacebook: https://www.facebook.com/TheIdahoPainter/\nInstagram: https://www.instagram.com/idahopainter/\nTikTok: https://www.tiktok.com/@idahopainter",
+      "found": "2026-10-25T14:27:36.698Z",
+      "draft": {
+        "source": "ai",
+        "summary": "Demonstrates a professional method for masking a door frame with tape and plastic film before airless paint spraying.",
+        "safety": "Ensure the ladder is stable and placed on an even surface before climbing.",
+        "ppe": [
+          "Safety Glasses",
+          "Dust Mask",
+          "Work Boots"
+        ],
+        "steps": [
+          "Apply blue painter tape around the door frame edges.",
+          "Cut and attach plastic film to the taped edges.",
+          "Smooth and press the plastic film down securely.",
+          "Seal any gaps or seams with additional tape."
+        ],
+        "stepsFrom": "ai",
+        "level": "Intermediate",
+        "subject": "Masking Trim for Airless Spraying",
+        "category": "Painting & Waterproofing",
+        "review": {
+          "relevance": 9,
+          "quality": 8,
+          "recommend": "approve",
+          "reason": "Clear and practical demonstration of professional masking techniques for painting work.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.5-flash-lite"
+      }
+    },
+    {
+      "yt": "ZnGGQmQTqlA",
+      "title": "Hiring Better Technicians and Tradespeople",
+      "channel": "HVAC School",
+      "channelUrl": "https://www.youtube.com/c/HVACSchool",
+      "published": "2026-10-16T12:14:02+00:00",
+      "duration": "",
+      "channelCategory": "HVAC",
+      "suggestedCategory": "HVAC",
+      "description": "What does it take when hiring better technicians and tradespeople who actually succeed in the trades? In this HVAC School livestream, Bryan Orr is joined by Jaimie Jarvis (Human Resources Director), Jonathan Schaefer (Director of Employee Development), and Bert Testerman of Kalos Services. They take an honest look at skilled trades hiring and trades recruiting, from writing a transparent HVAC job posting through the first 90 days on the job.\n\nThe panel shares what has worked for them:\n\nHands-on skills assessments\nThe Predictive Index behavioral assessment\nWhy “clarity is kindness” during 90-day onboarding\nHow Kalos turned its registered apprenticeship into college credit and a stronger HVAC career path\n\nThey also take viewer questions on nepotism in the trades and the company tool allowance.\n\nCore topics covered:\n\nRole Alignment: What is the actual job, and which parts require technician, mechanic, installer, or craftsman strengths?\nValidating Experience: How do we effectively test claimed experience without turning the interview into a trivia contest?\nHands-On Evaluation: What belongs in a fair, practical skills assessment?\nSoft Skills & Posture: How do we spot curiosity, humility, communication, and a genuine capacity to learn?\nEvaluating Work History: How should job changes and employment gaps be discussed constructively without lazy assumptions?\nBuild vs. Buy: When is an apprentice a better hire than an experienced candidate?\nOnboarding & Retention: What must happen in the first 30, 60, and 90 days so a promising hire actually succeeds?\n\nThis is practical HVAC hiring, technician training, and workforce development advice for HVAC business owners and managers. It’s for anyone hiring technicians, hiring tradespeople, or working to improve employee retention.",
+      "found": "2026-10-25T14:27:07.651Z",
+      "draft": {
+        "source": "ai",
+        "summary": "A panel of industry professionals discusses strategies for hiring, evaluating, and onboarding technicians in the HVAC and trades sectors. They share insights on role alignment, practical testing, behavioral assessments, and long-term career pathways.",
+        "safety": "Ensure candidates follow standard safety protocols during practical hands-on evaluation tests.",
+        "ppe": [
+          "Safety Glasses",
+          "Work Gloves",
+          "Safety Shoes"
+        ],
+        "steps": [
+          "Align job descriptions with actual weekly work expectations.",
+          "Evaluate candidate experience and practical hands-on skill samples.",
+          "Observe candidate posture, questions, and responses to feedback.",
+          "Establish clear expectations during the first 90 days of onboarding.",
+          "Provide long-term career paths through registered apprenticeship programs."
+        ],
+        "stepsFrom": "ai",
+        "level": "Intermediate",
+        "subject": "Fundamentals",
+        "category": "HVAC",
+        "review": {
+          "relevance": 3,
+          "quality": 7,
+          "recommend": "reject",
+          "reason": "This is a lengthy management panel discussion on recruitment rather than a practical technical training video.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.6-flash"
+      }
+    },
+    {
+      "yt": "PdkasaHKP3c",
+      "title": "Next-Gen Filtration - Pressure Drop, MERV 16, and Bypass Prevention w/ Chris Howells",
+      "channel": "HVAC School",
+      "channelUrl": "https://www.youtube.com/c/HVACSchool",
+      "published": "2026-10-15T11:13:03+00:00",
+      "duration": "",
+      "channelCategory": "HVAC",
+      "suggestedCategory": "HVAC",
+      "description": "In this episode of the HVAC School Podcast, Bryan sits down with Chris Howells, senior training manager at AprilAire, to talk about what really makes a filtration system perform. Chris has nearly thirty years in the industry, including fifteen as a technician, and brings a field-first perspective on why filtration is more than just “a filter.” Bryan also admits up front that his own contracting company is looking to put more high-efficiency filters into the field, so this conversation doubles as a practical learning session.\r\n\r\n The discussion starts with a common misconception: that a “thicker” filter is simply a filter with thicker media. Chris explains that what matters is surface area, face velocity, and pressure drop, not the width of the cabinet. They cover why using the full face of the filter is one of the easiest wins, how a poorly designed return can load just one section of the media, and why a high MERV rating does not automatically mean high resistance. Cabinet design, media construction, and overall system design all play a role, and modern ECM blowers make low static pressure more important than ever.\r\n\r\n From there, the conversation turns to bypass air and measurement. Chris describes how AprilAire’s cabinets use top and bottom rails and a self-seal media overhang to force air through the filter, backed by a 10-year clean coil guarantee. He and Bryan stress using the right tools, including a dual-port manometer and a proper static pressure probe, and checking pre-filter and post-filter pressure drop against manufacturer performance data at around 500 feet per minute. Chris also debunks the idea that deeper media is always more restrictive, pointing out that a typical retail one-inch pleated filter can raise pressure drop dramatically compared with a basic fiberglass filter.\r\n\r\n The final stretch is about communication and growth. Chris and Bryan share simple, natural questions technicians can use to start air quality conversations without sounding like a sales pitch, and they encourage listeners to stay curious and keep asking “why.” Chris closes with resources for learning more, including AprilAirPartners.com and the AprilAire Academy, and mentions that the Santa Fe and UltraAire product lines are now part of the AprilAire family.\r\n\r\n Topics Covered\r\n\r\n  Why “thicker” filters are really about surface area, face velocity, and pressure drop Using the full face of the filter and avoiding uneven loading How filters affect blower performance, system capacity, and equipment protection Why filtration is a high-value upgrade compared with bulbs and modules AprilAire’s new high-efficiency product line and its three-layer media design Reducing bypass air with rail design, self-sealing media, and the 10-year clean coil guarantee Measuring static pressure correctly and using manufacturer pressure drop charts Sizing media cabinets by CFM and face velocity instead of what fits under the air handler Common myths about MERV ratings and restricti",
+      "found": "2026-10-25T14:27:08.761Z",
+      "draft": {
+        "source": "ai",
+        "summary": "An expert explains HVAC air filter pressure drop, MERV ratings, and how bypass and media thickness affect filtration performance.",
+        "safety": "Always turn off power to the HVAC system before servicing filters or indoor units.",
+        "ppe": [
+          "Dust Mask",
+          "Safety Glasses",
+          "Work Gloves"
+        ],
+        "steps": [
+          "Measure system static pressure drop before and after the filter.",
+          "Select MERV 16 filtration that minimizes pressure drop.",
+          "Inspect filter slots and frame seals to prevent bypass air.",
+          "Ensure full face opening of the filter media to maintain airflow."
+        ],
+        "stepsFrom": "ai",
+        "level": "Intermediate",
+        "subject": "Preventive Maintenance",
+        "category": "HVAC",
+        "review": {
+          "relevance": 9,
+          "quality": 8,
+          "recommend": "approve",
+          "reason": "Clear technical discussion on filter selection, static pressure, and efficiency for HVAC technicians.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.5-flash-lite"
+      }
+    },
+    {
+      "yt": "qoBe4nTrVz0",
+      "title": "Toro RXC Sprinkler Controller | Setup & Programming Guide | Sprinkler Warehouse",
+      "channel": "Sprinkler Warehouse (irrigation)",
+      "channelUrl": "https://www.youtube.com/channel/UCR1ksygazAOr59yLZ4Mp5tA",
+      "published": "2026-10-14T16:47:30+00:00",
+      "duration": "",
+      "channelCategory": "Landscaping",
+      "suggestedCategory": "Landscaping",
+      "description": "Learn how to program your Toro RXC sprinkler controller, set watering days and zone run times, and build a watering schedule that fits your landscape.\n\nShop Toro RXC controllers and accessories:\nhttps://www.sprinklerwarehouse.com/brands/toro/toro-controllers\n\nConfused about start times versus run times? Need your lawn, flower beds, and trees on different watering schedules? Dwayne Smith, your Sprinkler Warehouse Product Specialist, walks you through the Toro RXC with practical examples you can follow at your own controller.\n\nThis programming guide covers:\n• Setting the date and time\n• Creating programs with separate watering schedules\n• Setting start times, station run times, and watering days\n• Using multiple start times to break watering into shorter sessions\n• Running stations and programs manually\n• Pausing watering with Rain Delay\n• Changing run times with Seasonal Adjustment\n• Expansion modules, Wi-Fi connectivity, and the Toro Oasis app\n• Flow sensor settings and Learn Flow\n• Using the Grow-In Program for new sod and plants\n\nWhether you’re setting up your RXC for the first time or adjusting an existing schedule, get comfortable with the settings you’ll use most—and explore features that give you more control over your irrigation system.\n\nShop sprinkler controllers, irrigation parts, and accessories:\nhttps://www.sprinklerwarehouse.com\n\n\nYouTube comments are not monitored. Please direct your questions to the customer service representatives on www.sprinklerwarehouse.com.",
+      "found": "2026-10-25T14:27:39.732Z",
+      "draft": {
+        "source": "ai",
+        "summary": "This video provides a complete setup and programming guide for the Toro RXC irrigation controller, explaining wiring, scheduling, and features.",
+        "safety": "Ensure the power to the controller is disconnected before opening or performing any wiring work.",
+        "ppe": [
+          "Safety Glasses",
+          "Work Gloves"
+        ],
+        "steps": [
+          "Open the controller panel and check the wiring terminals.",
+          "Install any necessary station modules and flow or weather sensors.",
+          "Set the current date and time using the control dial.",
+          "Program watering start times, run times, and watering days.",
+          "Return the control dial to the auto position to resume normal operation."
+        ],
+        "stepsFrom": "ai",
+        "level": "Beginner",
+        "subject": "Irrigation Valve Troubleshooting",
+        "category": "Landscaping",
+        "review": {
+          "relevance": 9,
+          "quality": 8,
+          "recommend": "approve",
+          "reason": "Clear and detailed walkthrough of controller programming suitable for technicians handling landscaping maintenance.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.5-flash-lite"
+      }
+    },
+    {
+      "yt": "WaICUTIW3og",
+      "title": "Commercial Condensate Drain Leaking? Trap, Vent, and Slope Fix",
+      "channel": "HVAC School",
+      "channelUrl": "https://www.youtube.com/c/HVACSchool",
+      "published": "2026-10-14T11:00:26+00:00",
+      "duration": "",
+      "channelCategory": "HVAC",
+      "suggestedCategory": "HVAC",
+      "description": "Commercial condensate drain leaking and you can't figure out why? In this video, Jesus walks through a 10-ton commercial unit with a poorly built condensate drain. It has a shallow trap, a vent with no slope after it, and a drain pan that isn't seated correctly.\n\nCommercial systems aren't like a quick residential install under the case. Drop ceilings, larger equipment, and higher static pressure mean you can't just throw in a couple of inches of drop and call it good. Jesus explains why you need to check static pressure first and find out whether the drain is under positive or negative pressure. On this positive-pressure system, a clean-out left wide open in place of a real trap pulls in air and the unit never drains properly. That leads to overflow and water leaking into the ceiling.\n\nThen Jesus rebuilds the drain the right way:\n\nReseating the drain pan so it sits correctly\nSizing the trap from the manufacturer's manual instead of relying on rules of thumb\nInstalling a clean-out tee without letting it replace the trap\nMaking sure the vent sits higher than the drain pan\nRunning the drain line downhill at a quarter inch per foot of slope\n\nIf you're chasing callbacks on overflowing commercial units, this trap, vent, and slope fix is where to start.\n\n---\n\nNEXT VIDEO\n\nCommercial HVAC Drain Cleaning: Pro Tips That Prevent Callbacks\nhttps://www.youtube.com/watch?v=DMo1FtdNWeg&t=106s\n\nKEEP LEARNING\n\n\nStart here:\nhttps://www.hvacrschool.com/start/\n\nFree HVAC/R training, tech tips, quizzes, calculators, courses, and more:\nhttps://www.hvacrschool.com/\n\nListen to the HVAC School podcast:\nhttps://www.hvacrschool.com/podcast/\n\nGet the HVAC School app:\nhttps://www.hvacrschool.com/apps-page/\n\nHVAC School provides free HVAC/R training—primarily for techs, by techs. The goal is not just to collect facts. It is to understand the system well enough to apply what you know in the field.\n\nQuestions or corrections? Leave a comment and include the equipment model, measurements, and source when you can. None of us gets everything right, and good measurements beat confident guesses.\n\nThis content is educational. Follow manufacturer instructions, use proper PPE and safe work practices, and comply with the codes and standards that apply to your equipment and jurisdiction.",
+      "found": "2026-10-25T14:27:09.847Z",
+      "draft": {
+        "source": "ai",
+        "summary": "A technician explains how to fix a leaking commercial AC condensate drain by replacing a shallow trap and fixing the slope.",
+        "safety": "Always ensure the power is off before servicing HVAC units to prevent electrical shock.",
+        "ppe": [
+          "Safety Glasses",
+          "Work Gloves",
+          "Safety Boots"
+        ],
+        "steps": [
+          "Remove the old shallow drain trap and clear the area.",
+          "Measure and cut PVC pipes according to manufacturer manual specifications.",
+          "Glue the PVC pipes together to form the new trap, cleanout, and vent.",
+          "Check the drain slope to ensure correct downward flow."
+        ],
+        "stepsFrom": "ai",
+        "level": "Intermediate",
+        "subject": "Installation",
+        "category": "HVAC",
+        "review": {
+          "relevance": 9,
+          "quality": 9,
+          "recommend": "approve",
+          "reason": "Clear, practical demonstration of commercial AC condensate drain troubleshooting and installation.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.5-flash-lite"
+      }
+    },
+    {
+      "yt": "kKVHfHLgVW0",
+      "title": "The Fuse Only Blows When You Leave - Short #307",
+      "channel": "HVAC School",
+      "channelUrl": "https://www.youtube.com/c/HVACSchool",
+      "published": "2026-10-13T11:08:59+00:00",
+      "duration": "",
+      "channelCategory": "HVAC",
+      "suggestedCategory": "HVAC",
+      "description": "In this short podcast episode, Bryan talks about the fuse that only blows when you leave. The service call usually goes like this: you replace a blown fuse, the system runs fine, you leave, and then the fuse blows again. There could be several causes of a blown fuse.\r\n\r\n First, ask what was happening right before the system stopped, such as if the unit was starting up, if it was raining outside, or if the operating mode changed. The customer may not know the specifics, but they may be able to offer a clue. If the control fuse blows during a specific call, we may be able to locate a short in one of the circuits involved. We may also be able to find out a bit by inspecting places where wire often gets damaged, such as common points where conductors pinch or rub.  \r\n\r\n Isolation diagnosis can help us isolate the specific circuit or component with a problem. First, look at the wiring diagram, label conductors, and take pictures of the original setup before disconnecting anything. Keep the correct fuse protection instead of using a larger fuse, leave all safety controls in the circuit, and use the manufacturer's test procedure if it's available. Then, isolate different loads and conductors so they can be energized individually; some modern thermostats make this easy. Also note that continuity testing alone isn't always reliable for locating problematic paths.\r\n\r\n Sometimes, motion (from motors), temperature, and moisture can also contribute to intermittent issues. Additionally, some inductive loads, like contactor coils, experience unique intermittent issues that cause the components to draw high current; inductive reactance matters. Measuring current on the different circuits as you energize them can also point you toward circuits that have higher current than expected.\r\n\r\n Once you've found and repaired something, go back to the condition that made it fail. Make sure you fix the underlying problem, such as exposure to excess heat, vibration, or moisture.\r\n\r\n This episode contains embedded sponsor messages from Refrigeration Technologies, Carrier, Fieldpiece, TruTech Tools, and Filtrete.\r\n\r\n Resources\r\n\r\n  Isolation Diagnosis (tech tip) HVAC - Isolate to Diagnose (video) HVAC School calculators Submit a podcast question Learn about the GRIT Foundation  Purchase your tickets or learn more about the 8th Annual HVACR Training Symposium at https://hvacrschool.com/symposium.",
+      "found": "2026-10-25T14:27:11.050Z",
+      "draft": {
+        "source": "ai",
+        "summary": "The podcaster discusses how to diagnose and troubleshoot control fuses that blow intermittently when technicians leave a job.",
+        "safety": "Always disconnect power and verify circuits are de-energized before touching wires or testing components.",
+        "ppe": [
+          "Safety Glasses",
+          "Insulated Gloves"
+        ],
+        "steps": [
+          "Identify when the fuse blew in the operating timeline.",
+          "Inspect wiring, terminals, and connections for damage or moisture.",
+          "Isolate and test individual circuits to find high current draws.",
+          "Check for intermittent grounding or shorted solenoid coils."
+        ],
+        "stepsFrom": "ai",
+        "level": "Intermediate",
+        "subject": "Electrical Diagnostics",
+        "category": "HVAC",
+        "review": {
+          "relevance": 9,
+          "quality": 8,
+          "recommend": "approve",
+          "reason": "Good practical guidance for troubleshooting intermittent electrical faults in HVAC control circuits.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.5-flash-lite"
+      }
+    },
+    {
+      "yt": "2HQ_2Jnw6X4",
+      "title": "Installing Wood Look Tile Like a PRO #tiles #howtotile #planktile",
+      "channel": "Sal DiBlasi (tiling & waterproofing)",
+      "channelUrl": "https://www.youtube.com/channel/UCWpu9UZ6aiRTaMuuV8-C0pQ",
+      "published": "2026-10-11T20:00:07+00:00",
+      "duration": "",
+      "channelCategory": "",
+      "suggestedCategory": "Civil Jobs",
+      "description": "SUBSCRIBE Learn how to tile the right way.\nInstalling Wood Look Tile Like a PRO #tiles #howtotile #planktile In this video I go through all the steps to install a large 40\"x10 plank tile over sSchluter Ditra. All tile installed by Sal DiBlasi, Elite-tile Company, in the Boston North Shore area. This video contains affiliate links, which means I will receive a small commission if you click on the product link. #tile #transformthetrade  #howtotile #installingtile #howtoinstalltile #liticrete #mapei #Schlutersystems #diy #construction #ardex\n\n🙂 This is my Amazon Store 🙂 https://a.co/d/015wZyAM\n\nPayPal\nhttps://www.paypal.com/donate/?hosted_button_id=UMJSX3UHEHQGQ\n\nPatreon  https://www.patreon.com/c/saldiblasi\n\n🌲 Link Tree 🌲\nhttps://linktr.ee/saldiblasi\n\n☕ Buy me a coffee ☕\nhttps://www.buymeacoffee.com/saldibs2 \n\n📷Camera Equipment 👇\nDJI Action 2 Power Combo https://amzn.to/3xA5fMH\nDJI Action 2 Dual-Screen https://amzn.to/3Qvk8IX \nDJI Pocket 2 Creator Combo https://amzn.to/3mUr1pu \n\n👇 Some of my favorite Tools 👇\nFloat https://amzn.to/2tdEpN2    \nRubbing Stone https://amzn.to/2QrgRfh  \nNotched Trowel 1/4 x 1/4 x 1/4-inch https://amzn.to/36bq5mQ  \nNotched Trowel 1/2 x 1/2 x 1/2-Inch https://amzn.to/2Q5e90g  \nNotched Trowel 1/4 x 3/8 x 1/4-Inch https://amzn.to/39j1caB  \nSuper Dust Collector – WaleTale https://amzn.to/2MDuVkK  \nBlack Nitrile Gloves - 6 mil https://amzn.to/2SJQ6FZ  \nMargin Trowel https://amzn.to/352MYHx \nMortar Mixer https://amzn.to/2ZxYqtF \n4in Sandpaper for Stone Polishing https://amzn.to/2ZB2skT  \nPolishing Rubber Backing Pad https://amzn.to/2srikdy  \nMontolit 63P3 24 Inch Tile Cutter https://amzn.to/2MDoFt l  \nDEWALT Wet Tile Saw https://amzn.to/2QqpO8O \nRubi Thinset mixer https://amzn.to/39VmNWV\nGrabo Pro Lifter\nhttps://amzn.to/3BBO5ys \nIQ 7\" Dustless/Dry Cut Tile Saw IQ228\nhttps://amzn.to/3wFE3w0",
+      "found": "2026-10-25T14:27:31.439Z",
+      "draft": {
+        "source": "ai",
+        "summary": "A professional tradesperson demonstrates how to plan, dry-fit, and install wood-look plank tiles over an uncoupling membrane on a hallway floor.",
+        "safety": "Wear appropriate PPE when using power tools like oscillating saws and tile cutters to prevent injury from dust and debris.",
+        "ppe": [
+          "Safety Glasses",
+          "Knee Pads",
+          "Gloves",
+          "Dust Mask"
+        ],
+        "steps": [
+          "Undercut door jambs for tile clearance",
+          "Plan tile layout and dry-fit planks",
+          "Mix thin-set mortar and apply to floor",
+          "Back-butter tiles and set in mortar",
+          "Apply grout and clean the floor"
+        ],
+        "stepsFrom": "ai",
+        "level": "Intermediate",
+        "subject": "Tile Installation",
+        "category": "Civil Jobs",
+        "review": {
+          "relevance": 9,
+          "quality": 9,
+          "recommend": "approve",
+          "reason": "Clear, practical demonstration of tile installation techniques relevant to civil maintenance work.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.5-flash-lite"
+      }
+    },
+    {
+      "yt": "MYi4EHtfCEE",
+      "title": "Why We Clean Every Drain Line: A 5-Step Callback Prevention Checklist",
+      "channel": "HVAC School",
+      "channelUrl": "https://www.youtube.com/c/HVACSchool",
+      "published": "2026-10-11T11:00:05+00:00",
+      "duration": "",
+      "channelCategory": "HVAC",
+      "suggestedCategory": "HVAC",
+      "description": "On a service call, techs know why clogged drain lines cause the most repeat visits — condensate backup is the fastest way to earn a callback, so it's the first thing we address, every time.\n\nIn this video, we walk through the reasoning behind our approach to service calls: flushing and cleaning the drain line thoroughly, then moving through the rest of the diagnostic process before ever calling the job done.\n\nThis isn't just a single fix — it's part of a larger habit built into every service call we run. We cover the full 5-Step Callback Prevention Checklist our techs follow to catch issues before they turn into a return trip:\n\nAsk questions — get the history before touching the unit\nClean the drain line — our #1 source of repeat calls\nRemove all panels — full visual diagnostic, every time\nEnter readings — document baseline data for future reference\nTouch everything — final walkthrough before you leave the property\n\nFollow this checklist and you'll spend less time chasing callbacks and more time solving problems the first visit. Prevention starts with the small habits — cleaning the drain, documenting readings, checking every panel — that add up to fewer comebacks and more trust with your customers.\n\nWhether you're new to the trade or refining your own checklist, this breakdown gives you a repeatable system you can bring to every call.\n\n---\n\nNEXT VIDEO\n\nCommercial HVAC Drain Cleaning: Pro Tips That Prevent Callbacks\nhttps://www.youtube.com/watch?v=DMo1FtdNWeg&t=106s\n\nKEEP LEARNING\n\nStart here:\nhttps://www.hvacrschool.com/start/\n\nFree HVAC/R training, tech tips, quizzes, calculators, courses, and more:\nhttps://www.hvacrschool.com/\n\nListen to the HVAC School podcast:\nhttps://www.hvacrschool.com/podcast/\n\nGet the HVAC School app:\nhttps://www.hvacrschool.com/apps-page/\n\nHVAC School provides free HVAC/R training—primarily for techs, by techs. The goal is not just to collect facts. It is to understand the system well enough to apply what you know in the field.\n\nQuestions or corrections? Leave a comment and include the equipment model, measurements, and source when you can. None of us gets everything right, and good measurements beat confident guesses.\n\nThis content is educational. Follow manufacturer instructions, use proper PPE and safe work practices, and comply with the codes and standards that apply to your equipment and jurisdiction.",
+      "found": "2026-10-25T14:27:12.113Z",
+      "draft": {
+        "source": "ai",
+        "summary": "An instructor reviews a five-step callback prevention checklist for HVAC service calls, emphasizing thorough checks during maintenance.",
+        "safety": "Ensure proper electrical disconnects and lockouts before inspecting or servicing HVAC units.",
+        "ppe": [
+          "Safety Glasses",
+          "Work Gloves",
+          "Sturdy Shoes"
+        ],
+        "steps": [
+          "Ask questions upon arrival about unit history and symptoms.",
+          "Quote or clean drain lines to prevent clogs.",
+          "Remove all panels for complete system visibility.",
+          "Enter readings and summary for future reference.",
+          "Touch everything during final walkthrough inspection."
+        ],
+        "stepsFrom": "ai",
+        "level": "Beginner",
+        "subject": "Preventive Maintenance",
+        "category": "HVAC",
+        "review": {
+          "relevance": 9,
+          "quality": 8,
+          "recommend": "approve",
+          "reason": "Provides a practical checklist to prevent HVAC callbacks and ensure thorough maintenance.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.5-flash-lite"
+      }
+    },
+    {
+      "yt": "nhcaeubedhs",
+      "title": "Bend Steel Conduit Like a Professional Electrician",
+      "channel": "GSH Electrical",
+      "channelUrl": "https://www.youtube.com/@GSHElectrical",
+      "published": "2026-10-11T09:00:34+00:00",
+      "duration": "",
+      "suggestedCategory": "Electrical",
+      "description": "Step by step guide on how to bend steel (metal) conduit to 90 degrees full demonstration. \n\nStudents training aid for bending 20 mm Steel (metal) Conduit to produce a 90 degree bend to the correct measurement. Includes a full demonstration on how to produce a bend using set square and a conduit bending machine so the end of the conduit to the back of the bend is at the correct measurement. \n\nHow to bend metal conduit to the correct length and to 90 degrees and how to check your bend it at 90 degrees.  \n\nElectrical UK Wiring \n\n🔵 Steel Conduit Life Hack How to Make Threading & Bending of Steel ",
+      "found": "2026-10-25T09:29:05.573Z",
+      "draft": {
+        "source": "ai",
+        "summary": "A technician demonstrates how to measure, mark, and bend steel conduit to an exact length using a manual conduit bender.",
+        "safety": "Keep clear of moving parts and leverage handles to avoid pinch points.",
+        "ppe": [
+          "Safety Glasses",
+          "Work Gloves"
+        ],
+        "steps": [
+          "Measure the conduit from the threaded end to the desired back of bend mark.",
+          "Align the mark with the bender reference point at 90 degrees.",
+          "Pull the bender handle to form the 90-degree bend.",
+          "Check the bend angle and length using a square and a reference pipe."
+        ],
+        "stepsFrom": "ai",
+        "level": "Beginner",
+        "subject": "Power Distribution",
+        "category": "Electrical",
+        "review": {
+          "relevance": 9,
+          "quality": 9,
+          "recommend": "approve",
+          "reason": "Clear and practical demonstration of conduit bending techniques useful for electrical technicians.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.5-flash-lite"
+      }
+    },
+    {
+      "yt": "3pDRywt9yKs",
+      "title": "Questionable CO Alarms w/ Bill Spohn",
+      "channel": "HVAC School",
+      "channelUrl": "https://www.youtube.com/c/HVACSchool",
+      "published": "2026-10-08T11:14:23+00:00",
+      "duration": "",
+      "channelCategory": "HVAC",
+      "suggestedCategory": "HVAC",
+      "description": "In this episode of the HVAC School Podcast, Bryan welcomes back Bill Spohn to talk about carbon monoxide and a troubling trend in the alarms being sold online. They start with the basics: the difference between a standard UL 2034 alarm and a true low-level CO monitor. UL 2034 alarms were designed to avoid nuisance calls, so they can stay silent through long exposures at relatively low concentrations. Low-level monitors are far more sensitive and can warn you that something is brewing before it becomes a life-threatening emergency.\r\n\r\n Bill explains why that gap matters, walking through how carbon monoxide displaces oxygen on hemoglobin, why it lingers in the body, and why children, older adults, and people with heart or lung conditions are especially vulnerable. Bryan adds the troubleshooting angle: a UL 2034 alarm is the safety net that keeps people from dying, but low-level monitoring helps you find and fix a problem early, much like catching a refrigerant leak before the system is flat.\r\n\r\n The conversation then turns to the main story. Bill bought a pair of inexpensive alarms advertised as both low-level and UL 2034 compliant, which is a contradiction, since the two cannot be the same device. They arrived with no instructions, no model number, and no visible certification control number, and they closely resembled a product tied to a Consumer Product Safety Commission warning covering roughly 375,000 units and 91 reported failures to alarm. Bill traces the marketing back to what appears to be a single factory selling under many brand names, backed by a virtual office address, a fake firefighter endorsement, and a flood of promotional emails.\r\n\r\n Bryan and Bill close with lessons for technicians, consumers, and manufacturers alike. Be skeptical when price and performance seem too good to be true, verify who is behind a brand, and remember that claiming to meet a standard is not the same as being independently certified. They also urge established manufacturers to be humble, test claims thoroughly, and make sure published specifications reflect how their sensors actually perform. \r\n\r\n Topics Covered\r\n\r\n  Low-level CO monitors versus UL 2034 alarms, and why they are not interchangeable How the 1990s Chicago nuisance-alarm events led to the UL 2034 standard Why standards built around healthy adult males leave gaps for vulnerable people How carbon monoxide binds to hemoglobin and why it accumulates in the body  Why “CO leak” is the wrong phrase: carbon monoxide is created, not transported Online alarms claiming to be both low-level and UL 2034 compliant The Consumer Product Safety Commission alert and the 91 reported failures to alarm Red flags: no instructions, no model number, no certification mark, a virtual-office address, and a fake endorser What the alarm test button actually checks (the circuit and horn, not CO response) The challenge of validating alarms without accessible CO test kits How to vet unfamiliar brands, including using AI to re",
+      "found": "2026-10-25T14:27:13.460Z",
+      "draft": {
+        "source": "ai",
+        "summary": "This podcast episode discusses carbon monoxide (CO) alarms, comparing standard UL 2034 life-safety alarms with low-level CO monitors. It also warns against purchasing uncertified, misleadingly advertised CO detectors online.",
+        "safety": "Always verify that carbon monoxide alarms are certified by accredited testing bodies like UL before relying on them for safety.",
+        "ppe": [
+          "Safety Glasses",
+          "Work Gloves"
+        ],
+        "steps": [
+          "Differentiate between standard UL 2034 alarms and low-level CO monitors.",
+          "Understand that low-level monitors detect lower CO concentrations before reaching dangerous thresholds.",
+          "Verify manufacturer safety certifications and UL listings on product documentation.",
+          "Recognize that testing buttons check alarm audio circuits, not gas sensor response.",
+          "Avoid buying unbranded, unverified safety devices from questionable online sellers."
+        ],
+        "stepsFrom": "ai",
+        "level": "Intermediate",
+        "subject": "Fundamentals",
+        "category": "HVAC",
+        "review": {
+          "relevance": 6,
+          "quality": 6,
+          "recommend": "maybe",
+          "reason": "It is an audio-only podcast discussion with a static visual logo, providing useful safety awareness on CO alarms but lacking hands-on visual training.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.6-flash"
+      }
+    },
+    {
+      "yt": "kONwQeJ-sMg",
+      "title": "Mower-Proof Sprinkler Guard Donut | Sprinkler Warehouse",
+      "channel": "Sprinkler Warehouse (irrigation)",
+      "channelUrl": "https://www.youtube.com/channel/UCR1ksygazAOr59yLZ4Mp5tA",
+      "published": "2026-10-07T21:21:15+00:00",
+      "duration": "",
+      "channelCategory": "Landscaping",
+      "suggestedCategory": "Landscaping",
+      "description": "Watch this video to learn how sprinkler guard donuts protect sprinkler heads from foot traffic and lawn mower damage, helping prevent costly repairs and replacements.\n\nBuy them here: https://www.sprinklerwarehouse.com/brands/concrete-donuts\n\nLawn Legend, Dwane Smith, shows how sprinkler guard donuts create a durable, visible barrier around sprinkler heads to help prevent damage from foot traffic. We’ll also cover how they reduce accidental hits from lawn mowers and trimmers by keeping equipment at a safer distance, helping you avoid costly repairs.\n\n\nYouTube comments are not monitored. Please direct your questions to the customer service representatives on www.sprinklerwarehouse.com.",
+      "found": "2026-10-25T14:27:40.827Z",
+      "draft": {
+        "source": "ai",
+        "summary": "This video introduces fiber-reinforced concrete donuts designed to protect sprinkler heads and rotors from lawn mowers and vehicles.",
+        "safety": "Ensure the lawn area is clear of hidden underground utility lines before digging around sprinkler heads.",
+        "ppe": [
+          "Safety Gloves",
+          "Sturdy Shoes"
+        ],
+        "steps": [
+          "Select the correct donut size for spray heads or rotors.",
+          "Use half donuts for sprinkler heads positioned directly against obstacles.",
+          "Dig out the soil carefully around the sprinkler head.",
+          "Install the concrete donut flat around the sprinkler head or rotor."
+        ],
+        "stepsFrom": "ai",
+        "level": "Beginner",
+        "subject": "Irrigation Valve Troubleshooting",
+        "category": "Landscaping",
+        "review": {
+          "relevance": 7,
+          "quality": 7,
+          "recommend": "approve",
+          "reason": "Clear and simple guide on protecting sprinkler heads from lawn equipment damage.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.5-flash-lite"
+      }
+    },
+    {
+      "yt": "7iWAk17hCQk",
+      "title": "Earn 5-Star Reviews With Better HVAC Customer Service",
+      "channel": "HVAC School",
+      "channelUrl": "https://www.youtube.com/c/HVACSchool",
+      "published": "2026-10-07T11:00:20+00:00",
+      "duration": "",
+      "channelCategory": "HVAC",
+      "suggestedCategory": "HVAC",
+      "description": "Want to earn more 5-star reviews without the callbacks that follow a rushed visit? In this talk on Delivering the WOW Factor, we break down what customers actually notice on a service call, and why the best HVAC customer service keeps paying off long after you leave the driveway.\n\nA WOW experience starts with the basics: the equipment works, the work area is clean, and you know the system's history before you walk in. From there, it comes down to communication. That means asking questions so the customer feels heard, never saying \"this will be easy,\" and asking permission to bring extra findings to their attention.\n\nWe also cover the problem that shows up two weeks later. A customer can be happy with you today and frustrated later if a room still isn't cooling and nothing was documented. Learn how to use proposals the right way, get clear approvals and declines in writing, and protect yourself and the customer with better documentation.\n\nGreat reviews come from service built on the customer's needs, not your own assumptions about what they'll spend. Take the time, widen your view, and give every HVAC client a reason to tell their friends and neighbors about you.\n\n---\n\nNEXT VIDEO\n\nPreliminary Customer Conversations\nhttps://www.youtube.com/watch?v=UAk06LbJdBo\n\nKEEP LEARNING\n\nStart here:\nhttps://www.hvacrschool.com/start/\n\nFree HVAC/R training, tech tips, quizzes, calculators, courses, and more:\nhttps://www.hvacrschool.com/\n\nListen to the HVAC School podcast:\nhttps://www.hvacrschool.com/podcast/\n\nGet the HVAC School app:\nhttps://www.hvacrschool.com/apps-page/\n\nHVAC School provides free HVAC/R training—primarily for techs, by techs. The goal is not just to collect facts. It is to understand the system well enough to apply what you know in the field.\n\nQuestions or corrections? Leave a comment and include the equipment model, measurements, and source when you can. None of us gets everything right, and good measurements beat confident guesses.\n\nThis content is educational. Follow manufacturer instructions, use proper PPE and safe work practices, and comply with the codes and standards that apply to your equipment and jurisdiction.",
+      "found": "2026-10-25T14:27:14.740Z",
+      "draft": {
         "source": "rules",
-        "summary": "In this short podcast episode, Bryan talks about why your thermostat is reading the wall, not the actual air temperature.",
+        "summary": "Want to earn more 5-star reviews without the callbacks that follow a rushed visit?",
+        "safety": "Isolate power at the unit before opening panels, and watch for hot, cold and moving parts.",
+        "ppe": [
+          "Safety Glasses",
+          "Work Gloves",
+          "Safety Shoes"
+        ],
+        "steps": [
+          "Isolate power to the unit",
+          "Inspect the equipment and note any faults",
+          "Carry out the work as shown in the video",
+          "Check connections, fixings and drains",
+          "Restore power and check the unit runs correctly",
+          "Record readings and the work done"
+        ],
+        "stepsFrom": "general",
+        "level": "Intermediate",
+        "subject": "Refrigerant & Diagnostics"
+      }
+    },
+    {
+      "yt": "tQE1nGz3Ydg",
+      "title": "Same Charge, Different Numbers - Short #306",
+      "channel": "HVAC School",
+      "channelUrl": "https://www.youtube.com/c/HVACSchool",
+      "published": "2026-10-06T18:41:14+00:00",
+      "duration": "",
+      "channelCategory": "HVAC",
+      "suggestedCategory": "HVAC",
+      "description": "In this short podcast episode, Bryan talks about what happens when you adjust the condenser airflow: you have the same charge, different numbers. This short covers HVAC condensers and flooded condensers in refrigeration applications.\r\n\r\n When you increase condenser airflow by repairing a condenser fan or washing the unit, the pressure and subcooling readings change even though the charge stays the same. Refrigerant enters the condenser as superheated vapor and goes through three stages: desuperheating, condensing, and subcooling. The key thing to remember is that these three stages can occur at different points of the condenser as the operating conditions change.\r\n\r\n Higher head pressure doesn't necessarily lead to higher subcooling, as subcooling depends on both saturation temperature and actual liquid temperature; if both change, head pressure can't tell us which way subcooling went. Exceptionally bad airflow across the condenser and high compression ratios can also interfere with liquid delivery. Uneven condenser airflow distribution also affects refrigerant distribution in the condenser. We shouldn't use low subcooling as an automatic indicator to add more charge.\r\n\r\n If there's one thing to remember, it's that you need to fix the airflow problem before deciding there is a charge problem. Operating readings can change without the total refrigerant charge changing.\r\n\r\n This episode contains embedded sponsor messages from Refrigeration Technologies, Carrier, NAVAC, Fieldpiece, and Filtrete\r\n\r\n Resources\r\n\r\n  NIST: Effect of Common Faults on the Performance of Different Types of Vapor Compression Systems NIST: Performance of a Residential Heat Pump Operating in the Cooling Mode with Single Faults Imposed   University of Padua: Condenser Airflow and Refrigerant-Inventory Modeling Condenser Fan Blade Shroud Depth (tech tip) Condenser Fan Blade Placement (tech tip) HVAC School calculators Submit a podcast question Learn about the GRIT Foundation  Purchase your tickets or learn more about the 8th Annual HVACR Training Symposium at https://hvacrschool.com/symposium.",
+      "found": "2026-10-25T14:27:16.002Z",
+      "draft": {
+        "source": "rules",
+        "summary": "In this short podcast episode, Bryan talks about what happens when you adjust the condenser airflow: you have the same charge, different numbers.",
         "safety": "Isolate power at the unit before opening panels, and watch for hot, cold and moving parts.",
         "ppe": [
           "Safety Glasses",
@@ -404,302 +1159,6 @@
       }
     },
     {
-      "yt": "FMxm-4b98pY",
-      "title": "Tile will CRACK! Plywood subfloor repair.  #tile #cracks #howtotile",
-      "channel": "Sal DiBlasi (tiling & waterproofing)",
-      "channelUrl": "https://www.youtube.com/channel/UCWpu9UZ6aiRTaMuuV8-C0pQ",
-      "published": "2026-10-18T20:00:08+00:00",
-      "duration": "",
-      "channelCategory": "",
-      "suggestedCategory": "Civil Jobs",
-      "description": "SUBSCRIBE Learn how to tile the right way.\nTile will CRACK! Plywood subfloor repair. Avoid cracked tile. Plywood subfloor repair for tile installation. #tile #cracks #howtotile  When remodeling a bathroom or a kitchen, often times a section of the floor will need to be cut open to modify plumbing or some other utility. It is extremely important that the floor be patched back in the proper way. If you simply lay the plywood that was removed back into the cut out, and screw it to the joists without adding support all around the edges, there will be excessive movement at those joints that will cause tile to crack and fail. In this video I show you how to repair the subfloor so there will be proper support and eliminate the movement up and down between sheets. SUBSCRIBE Learn how to tile the right way. All tile installed by Sal DiBlasi, Elite-tile Company, in the Boston North Shore area. This video contains affiliate links, which means I will receive a small commission if you click on the product link. #tile #transformthetrade  #howtotile #installingtile #howtoinstalltile #liticrete #mapei #Schlutersystems #diy #construction #ardex\n\n🙂 This is my Amazon Store 🙂 https://a.co/d/015wZyAM\n\nPayPal\nhttps://www.paypal.com/donate/?hosted_button_id=UMJSX3UHEHQGQ\n\nPatreon  https://www.patreon.com/c/saldiblasi\n\n🌲 Link Tree 🌲\nhttps://linktr.ee/saldiblasi\n\n☕ Buy me a coffee ☕\nhttps://www.buymeacoffee.com/saldibs2 \n\n📷Camera Equipment 👇\nDJI Action 2 Power Combo https://amzn.to/3xA5fMH\nDJI Action 2 Dual-Screen https://amzn.to/3Qvk8IX \nDJI Pocket 2 Creator Combo https://amzn.to/3mUr1pu \n\n👇 Some of my favorite Tools 👇\nFloat https://amzn.to/2tdEpN2    \nRubbing Stone https://amzn.to/2QrgRfh  \nNotched Trowel 1/4 x 1/4 x 1/4-inch https://amzn.to/36bq5mQ  \nNotched Trowel 1/2 x 1/2 x 1/2-Inch https://amzn.to/2Q5e90g  \nNotched Trowel 1/4 x 3/8 x 1/4-Inch https://amzn.to/39j1caB  \nSuper Dust Collector – WaleTale https://amzn.to/2MDuVkK  \nBlack Nitrile Gloves - 6 mil https://amzn.to/2SJQ6FZ  \nMargin Trowel https://amzn.to/352MYHx \nMortar Mixer https://amzn.to/2ZxYqtF \n4in Sandpaper for Stone Polishing https://amzn.to/2ZB2skT  \nPolishing Rubber Backing Pad https://amzn.to/2srikdy  \nMontolit 63P3 24 Inch Tile Cutter https://amzn.to/2MDoFt l  \nDEWALT Wet Tile Saw https://amzn.to/2QqpO8O \nRubi Thinset mixer https://amzn.to/39VmNWV\nGrabo Pro Lifter\nhttps://amzn.to/3BBO5ys \nIQ 7\" Dustless/Dry Cut Tile Saw IQ228\nhttps://amzn.to/3wFE3w0",
-      "found": "2026-10-25T14:27:30.043Z",
-      "draft": {
-        "source": "rules",
-        "summary": "👇 Some of my favorite Tools 👇 IQ 7\" Dustless/Dry Cut Tile Saw IQ228",
-        "safety": "Keep the area barricaded, use tools with guards and lift heavy materials with help.",
-        "ppe": [
-          "Hard Hat",
-          "Safety Shoes",
-          "Work Gloves",
-          "Safety Glasses"
-        ],
-        "steps": [
-          "Read the job card and get the right tools and PPE",
-          "Make the area safe and put up barriers or signs",
-          "Carry out the work as shown in the video",
-          "Check your work",
-          "Clean up the area",
-          "Report the job complete"
-        ],
-        "stepsFrom": "general",
-        "level": "Intermediate",
-        "subject": ""
-      }
-    },
-    {
-      "yt": "NcgO12kdTVs",
-      "title": "A Day at My Current Job",
-      "channel": "Vancouver Carpenter",
-      "channelUrl": "https://www.youtube.com/channel/UCbZdXox6mKHdcT2QdVT-goQ",
-      "published": "2026-10-18T18:06:10+00:00",
-      "duration": "",
-      "channelCategory": "Civil Jobs",
-      "suggestedCategory": "Civil Jobs",
-      "description": "Join me for a day at my current project.\n\nSome tools used in the video:\nDisclaimer: As an Amazon Associate I will make a small commission on purchases through the Amazon link. Thanks for the support!!!\nStud Finder: https://amzn.to/3FttHaF\nBrad Nailer: https://amzn.to/43yeC0H\nMy Toolbelt: https://amzn.to/3VYFvXc\nA great hammer: https://amzn.to/4iQ7TVj (My second choice after Tibone)\nBest tool ever! https://amzn.to/3Pgz4uQ\nA good nail puller: https://amzn.to/3WlhlXp\nFat max tape: https://amzn.to/41T9DHp (best tape measure)\nSpeed square: https://amzn.to/3PfFkTE\nNail Punch: https://amzn.to/4fz7ow1\nThe best knife: https://amzn.to/4fz7ow1 (keep it simple)\nChalk line: https://amzn.to/49XC8FPe",
-      "found": "2026-10-25T14:27:26.613Z",
-      "draft": {
-        "source": "rules",
-        "summary": "Join me for a day at my current project.",
-        "safety": "Keep the area barricaded, use tools with guards and lift heavy materials with help.",
-        "ppe": [
-          "Hard Hat",
-          "Safety Shoes",
-          "Work Gloves",
-          "Safety Glasses"
-        ],
-        "steps": [
-          "Read the job card and get the right tools and PPE",
-          "Make the area safe and put up barriers or signs",
-          "Carry out the work as shown in the video",
-          "Check your work",
-          "Clean up the area",
-          "Report the job complete"
-        ],
-        "stepsFrom": "general",
-        "level": "Advanced",
-        "subject": ""
-      }
-    },
-    {
-      "yt": "pOfXina3uUQ",
-      "title": "Electrical Metal Conduit - Types and Sizes",
-      "channel": "GSH Electrical",
-      "channelUrl": "https://www.youtube.com/@GSHElectrical",
-      "published": "2026-10-18T09:00:24+00:00",
-      "duration": "",
-      "suggestedCategory": "Electrical",
-      "description": "In this video we look at the different type of steel conduit, finishes and the 4 common sizes they come in. This information is essential when training to become an electrician as part of your apprenticeship. \n\nSteel conduit comes in either a 3.75 metre or 3 metre length and sizes of 16 mm, 20 mm, 25 mm and 32 mm. \n\n== 🕐 Time Stamps - Cut to the action 🕕 == \n\n00:00 - Steel conduit types, finishes and sizes  \n00:24 - What metal conduit is used for\n01:05 - Different types of electrical metal conduit\n02:00 - Heavy-gauge and light-gauge steel conduit\n02:55 - Common metric conduit sizes\n03:45 - 1",
-      "found": "2026-10-25T09:29:04.488Z",
-      "draft": {
-        "source": "rules",
-        "summary": "Shows the different type of steel conduit, finishes and the 4 common sizes they come in. This information is essential when training to become an electrician as part of your apprenticeship.",
-        "safety": "Isolate and prove dead before any work. Only qualified staff may work near live parts.",
-        "ppe": [
-          "Insulated Gloves",
-          "Safety Glasses",
-          "Safety Shoes"
-        ],
-        "steps": [
-          "Steel conduit types, finishes and sizes",
-          "What metal conduit is used for",
-          "Different types of electrical metal conduit",
-          "Heavy-gauge and light-gauge steel conduit",
-          "Common metric conduit sizes",
-          "1"
-        ],
-        "stepsFrom": "chapters",
-        "level": "Intermediate",
-        "subject": ""
-      }
-    },
-    {
-      "yt": "jDZ3G79vpOM",
-      "title": "Pro Method: Masking Trim for Airless Spraying | Fast & Cost-Effective Setup",
-      "channel": "Paint Life TV",
-      "channelUrl": "https://www.youtube.com/channel/UCnrhmEmvA_bIRYkBVPqJ4zg",
-      "published": "2026-10-17T21:30:33+00:00",
-      "duration": "",
-      "channelCategory": "Painting & Waterproofing",
-      "suggestedCategory": "Painting & Waterproofing",
-      "description": "Masking trim the right way can save you HOURS when spraying with an airless paint sprayer. In this video, I’ll show you how to quickly and efficiently mask trim using 9x400 painter’s plastic and FrogTape for clean lines, less waste, and a professional finish.\n\n🛠️ Tools in our videos can all be found in our LinkTree Store: https://linktr.ee/Idahopainter\n\nThis method is fast, cost-effective, and perfect for repaints where you want tight lines without overspray on floors or walls.\n\nWhat You’ll Learn:\n\n✔ How to apply FrogTape for crisp paint lines\n✔ The best way to attach 9x400 painter’s plastic for full protection\n✔ Tips to prevent bleed-through\n✔ How to mask efficiently without wasting materials\n✔ Time-saving tricks used by professionals\n\nWhether you're a DIYer or a pro painter, this masking setup will help you spray trim cleaner and faster with your airless sprayer.\n\nTools & Materials Used:\n\n9x400 Painter’s Plastic\nFrogTape Blue Painters Tape\nM3000 Masking dispenser \n\nIf this video helped you, make sure to 👍 Like, 🔔 Subscribe, and drop a comment with any spraying questions you have!\n\n#airlesssprayer #maskingtrim #paintingtips #frogtape #propainter #paintlife\n\n👉 Subscribe for more honest tool reviews & painting tips!   https://www.youtube.com/@Idahopainter\n\nVisit our website https://idahopainter.com for more tips & tricks painting\n\nShop Paint Life Supply Co. owned and operated by The Idaho Painter and my Family.  Game changing tools for painters and cool Paint Life apparel:  https://paintlifesupply.com \n\nVisit Us Here:\n\nFacebook: https://www.facebook.com/TheIdahoPainter/\nInstagram: https://www.instagram.com/idahopainter/\nTikTok: https://www.tiktok.com/@idahopainter",
-      "found": "2026-10-25T14:27:36.698Z",
-      "draft": {
-        "source": "rules",
-        "summary": "Masking trim the right way can save you HOURS when spraying with an airless paint sprayer. In this video, I’ll show you how to quickly and efficiently mask trim using 9x400 painter’s plastic and FrogTape for clean lines, less waste, and a professional finish.",
-        "safety": "Ventilate the area, keep ignition sources away and protect your eyes and lungs from fumes and spray.",
-        "ppe": [
-          "Respirator",
-          "Safety Goggles",
-          "Chemical Gloves"
-        ],
-        "steps": [
-          "How to apply FrogTape for crisp paint lines",
-          "The best way to attach 9x400 painter’s plastic for full protection",
-          "Tips to prevent bleed-through",
-          "How to mask efficiently without wasting materials",
-          "Time-saving tricks used by professionals"
-        ],
-        "stepsFrom": "description",
-        "level": "Intermediate",
-        "subject": ""
-      }
-    },
-    {
-      "yt": "ZnGGQmQTqlA",
-      "title": "Hiring Better Technicians and Tradespeople",
-      "channel": "HVAC School",
-      "channelUrl": "https://www.youtube.com/c/HVACSchool",
-      "published": "2026-10-16T12:14:02+00:00",
-      "duration": "",
-      "channelCategory": "HVAC",
-      "suggestedCategory": "HVAC",
-      "description": "What does it take when hiring better technicians and tradespeople who actually succeed in the trades? In this HVAC School livestream, Bryan Orr is joined by Jaimie Jarvis (Human Resources Director), Jonathan Schaefer (Director of Employee Development), and Bert Testerman of Kalos Services. They take an honest look at skilled trades hiring and trades recruiting, from writing a transparent HVAC job posting through the first 90 days on the job.\n\nThe panel shares what has worked for them:\n\nHands-on skills assessments\nThe Predictive Index behavioral assessment\nWhy “clarity is kindness” during 90-day onboarding\nHow Kalos turned its registered apprenticeship into college credit and a stronger HVAC career path\n\nThey also take viewer questions on nepotism in the trades and the company tool allowance.\n\nCore topics covered:\n\nRole Alignment: What is the actual job, and which parts require technician, mechanic, installer, or craftsman strengths?\nValidating Experience: How do we effectively test claimed experience without turning the interview into a trivia contest?\nHands-On Evaluation: What belongs in a fair, practical skills assessment?\nSoft Skills & Posture: How do we spot curiosity, humility, communication, and a genuine capacity to learn?\nEvaluating Work History: How should job changes and employment gaps be discussed constructively without lazy assumptions?\nBuild vs. Buy: When is an apprentice a better hire than an experienced candidate?\nOnboarding & Retention: What must happen in the first 30, 60, and 90 days so a promising hire actually succeeds?\n\nThis is practical HVAC hiring, technician training, and workforce development advice for HVAC business owners and managers. It’s for anyone hiring technicians, hiring tradespeople, or working to improve employee retention.",
-      "found": "2026-10-25T14:27:07.651Z"
-    },
-    {
-      "yt": "PdkasaHKP3c",
-      "title": "Next-Gen Filtration - Pressure Drop, MERV 16, and Bypass Prevention w/ Chris Howells",
-      "channel": "HVAC School",
-      "channelUrl": "https://www.youtube.com/c/HVACSchool",
-      "published": "2026-10-15T11:13:03+00:00",
-      "duration": "",
-      "channelCategory": "HVAC",
-      "suggestedCategory": "HVAC",
-      "description": "In this episode of the HVAC School Podcast, Bryan sits down with Chris Howells, senior training manager at AprilAire, to talk about what really makes a filtration system perform. Chris has nearly thirty years in the industry, including fifteen as a technician, and brings a field-first perspective on why filtration is more than just “a filter.” Bryan also admits up front that his own contracting company is looking to put more high-efficiency filters into the field, so this conversation doubles as a practical learning session.\r\n\r\n The discussion starts with a common misconception: that a “thicker” filter is simply a filter with thicker media. Chris explains that what matters is surface area, face velocity, and pressure drop, not the width of the cabinet. They cover why using the full face of the filter is one of the easiest wins, how a poorly designed return can load just one section of the media, and why a high MERV rating does not automatically mean high resistance. Cabinet design, media construction, and overall system design all play a role, and modern ECM blowers make low static pressure more important than ever.\r\n\r\n From there, the conversation turns to bypass air and measurement. Chris describes how AprilAire’s cabinets use top and bottom rails and a self-seal media overhang to force air through the filter, backed by a 10-year clean coil guarantee. He and Bryan stress using the right tools, including a dual-port manometer and a proper static pressure probe, and checking pre-filter and post-filter pressure drop against manufacturer performance data at around 500 feet per minute. Chris also debunks the idea that deeper media is always more restrictive, pointing out that a typical retail one-inch pleated filter can raise pressure drop dramatically compared with a basic fiberglass filter.\r\n\r\n The final stretch is about communication and growth. Chris and Bryan share simple, natural questions technicians can use to start air quality conversations without sounding like a sales pitch, and they encourage listeners to stay curious and keep asking “why.” Chris closes with resources for learning more, including AprilAirPartners.com and the AprilAire Academy, and mentions that the Santa Fe and UltraAire product lines are now part of the AprilAire family.\r\n\r\n Topics Covered\r\n\r\n  Why “thicker” filters are really about surface area, face velocity, and pressure drop Using the full face of the filter and avoiding uneven loading How filters affect blower performance, system capacity, and equipment protection Why filtration is a high-value upgrade compared with bulbs and modules AprilAire’s new high-efficiency product line and its three-layer media design Reducing bypass air with rail design, self-sealing media, and the 10-year clean coil guarantee Measuring static pressure correctly and using manufacturer pressure drop charts Sizing media cabinets by CFM and face velocity instead of what fits under the air handler Common myths about MERV ratings and restricti",
-      "found": "2026-10-25T14:27:08.761Z"
-    },
-    {
-      "yt": "qoBe4nTrVz0",
-      "title": "Toro RXC Sprinkler Controller | Setup & Programming Guide | Sprinkler Warehouse",
-      "channel": "Sprinkler Warehouse (irrigation)",
-      "channelUrl": "https://www.youtube.com/channel/UCR1ksygazAOr59yLZ4Mp5tA",
-      "published": "2026-10-14T16:47:30+00:00",
-      "duration": "",
-      "channelCategory": "Landscaping",
-      "suggestedCategory": "Landscaping",
-      "description": "Learn how to program your Toro RXC sprinkler controller, set watering days and zone run times, and build a watering schedule that fits your landscape.\n\nShop Toro RXC controllers and accessories:\nhttps://www.sprinklerwarehouse.com/brands/toro/toro-controllers\n\nConfused about start times versus run times? Need your lawn, flower beds, and trees on different watering schedules? Dwayne Smith, your Sprinkler Warehouse Product Specialist, walks you through the Toro RXC with practical examples you can follow at your own controller.\n\nThis programming guide covers:\n• Setting the date and time\n• Creating programs with separate watering schedules\n• Setting start times, station run times, and watering days\n• Using multiple start times to break watering into shorter sessions\n• Running stations and programs manually\n• Pausing watering with Rain Delay\n• Changing run times with Seasonal Adjustment\n• Expansion modules, Wi-Fi connectivity, and the Toro Oasis app\n• Flow sensor settings and Learn Flow\n• Using the Grow-In Program for new sod and plants\n\nWhether you’re setting up your RXC for the first time or adjusting an existing schedule, get comfortable with the settings you’ll use most—and explore features that give you more control over your irrigation system.\n\nShop sprinkler controllers, irrigation parts, and accessories:\nhttps://www.sprinklerwarehouse.com\n\n\nYouTube comments are not monitored. Please direct your questions to the customer service representatives on www.sprinklerwarehouse.com.",
-      "found": "2026-10-25T14:27:39.732Z"
-    },
-    {
-      "yt": "WaICUTIW3og",
-      "title": "Commercial Condensate Drain Leaking? Trap, Vent, and Slope Fix",
-      "channel": "HVAC School",
-      "channelUrl": "https://www.youtube.com/c/HVACSchool",
-      "published": "2026-10-14T11:00:26+00:00",
-      "duration": "",
-      "channelCategory": "HVAC",
-      "suggestedCategory": "HVAC",
-      "description": "Commercial condensate drain leaking and you can't figure out why? In this video, Jesus walks through a 10-ton commercial unit with a poorly built condensate drain. It has a shallow trap, a vent with no slope after it, and a drain pan that isn't seated correctly.\n\nCommercial systems aren't like a quick residential install under the case. Drop ceilings, larger equipment, and higher static pressure mean you can't just throw in a couple of inches of drop and call it good. Jesus explains why you need to check static pressure first and find out whether the drain is under positive or negative pressure. On this positive-pressure system, a clean-out left wide open in place of a real trap pulls in air and the unit never drains properly. That leads to overflow and water leaking into the ceiling.\n\nThen Jesus rebuilds the drain the right way:\n\nReseating the drain pan so it sits correctly\nSizing the trap from the manufacturer's manual instead of relying on rules of thumb\nInstalling a clean-out tee without letting it replace the trap\nMaking sure the vent sits higher than the drain pan\nRunning the drain line downhill at a quarter inch per foot of slope\n\nIf you're chasing callbacks on overflowing commercial units, this trap, vent, and slope fix is where to start.\n\n---\n\nNEXT VIDEO\n\nCommercial HVAC Drain Cleaning: Pro Tips That Prevent Callbacks\nhttps://www.youtube.com/watch?v=DMo1FtdNWeg&t=106s\n\nKEEP LEARNING\n\n\nStart here:\nhttps://www.hvacrschool.com/start/\n\nFree HVAC/R training, tech tips, quizzes, calculators, courses, and more:\nhttps://www.hvacrschool.com/\n\nListen to the HVAC School podcast:\nhttps://www.hvacrschool.com/podcast/\n\nGet the HVAC School app:\nhttps://www.hvacrschool.com/apps-page/\n\nHVAC School provides free HVAC/R training—primarily for techs, by techs. The goal is not just to collect facts. It is to understand the system well enough to apply what you know in the field.\n\nQuestions or corrections? Leave a comment and include the equipment model, measurements, and source when you can. None of us gets everything right, and good measurements beat confident guesses.\n\nThis content is educational. Follow manufacturer instructions, use proper PPE and safe work practices, and comply with the codes and standards that apply to your equipment and jurisdiction.",
-      "found": "2026-10-25T14:27:09.847Z"
-    },
-    {
-      "yt": "kKVHfHLgVW0",
-      "title": "The Fuse Only Blows When You Leave - Short #307",
-      "channel": "HVAC School",
-      "channelUrl": "https://www.youtube.com/c/HVACSchool",
-      "published": "2026-10-13T11:08:59+00:00",
-      "duration": "",
-      "channelCategory": "HVAC",
-      "suggestedCategory": "HVAC",
-      "description": "In this short podcast episode, Bryan talks about the fuse that only blows when you leave. The service call usually goes like this: you replace a blown fuse, the system runs fine, you leave, and then the fuse blows again. There could be several causes of a blown fuse.\r\n\r\n First, ask what was happening right before the system stopped, such as if the unit was starting up, if it was raining outside, or if the operating mode changed. The customer may not know the specifics, but they may be able to offer a clue. If the control fuse blows during a specific call, we may be able to locate a short in one of the circuits involved. We may also be able to find out a bit by inspecting places where wire often gets damaged, such as common points where conductors pinch or rub.  \r\n\r\n Isolation diagnosis can help us isolate the specific circuit or component with a problem. First, look at the wiring diagram, label conductors, and take pictures of the original setup before disconnecting anything. Keep the correct fuse protection instead of using a larger fuse, leave all safety controls in the circuit, and use the manufacturer's test procedure if it's available. Then, isolate different loads and conductors so they can be energized individually; some modern thermostats make this easy. Also note that continuity testing alone isn't always reliable for locating problematic paths.\r\n\r\n Sometimes, motion (from motors), temperature, and moisture can also contribute to intermittent issues. Additionally, some inductive loads, like contactor coils, experience unique intermittent issues that cause the components to draw high current; inductive reactance matters. Measuring current on the different circuits as you energize them can also point you toward circuits that have higher current than expected.\r\n\r\n Once you've found and repaired something, go back to the condition that made it fail. Make sure you fix the underlying problem, such as exposure to excess heat, vibration, or moisture.\r\n\r\n This episode contains embedded sponsor messages from Refrigeration Technologies, Carrier, Fieldpiece, TruTech Tools, and Filtrete.\r\n\r\n Resources\r\n\r\n  Isolation Diagnosis (tech tip) HVAC - Isolate to Diagnose (video) HVAC School calculators Submit a podcast question Learn about the GRIT Foundation  Purchase your tickets or learn more about the 8th Annual HVACR Training Symposium at https://hvacrschool.com/symposium.",
-      "found": "2026-10-25T14:27:11.050Z"
-    },
-    {
-      "yt": "2HQ_2Jnw6X4",
-      "title": "Installing Wood Look Tile Like a PRO #tiles #howtotile #planktile",
-      "channel": "Sal DiBlasi (tiling & waterproofing)",
-      "channelUrl": "https://www.youtube.com/channel/UCWpu9UZ6aiRTaMuuV8-C0pQ",
-      "published": "2026-10-11T20:00:07+00:00",
-      "duration": "",
-      "channelCategory": "",
-      "suggestedCategory": "Civil Jobs",
-      "description": "SUBSCRIBE Learn how to tile the right way.\nInstalling Wood Look Tile Like a PRO #tiles #howtotile #planktile In this video I go through all the steps to install a large 40\"x10 plank tile over sSchluter Ditra. All tile installed by Sal DiBlasi, Elite-tile Company, in the Boston North Shore area. This video contains affiliate links, which means I will receive a small commission if you click on the product link. #tile #transformthetrade  #howtotile #installingtile #howtoinstalltile #liticrete #mapei #Schlutersystems #diy #construction #ardex\n\n🙂 This is my Amazon Store 🙂 https://a.co/d/015wZyAM\n\nPayPal\nhttps://www.paypal.com/donate/?hosted_button_id=UMJSX3UHEHQGQ\n\nPatreon  https://www.patreon.com/c/saldiblasi\n\n🌲 Link Tree 🌲\nhttps://linktr.ee/saldiblasi\n\n☕ Buy me a coffee ☕\nhttps://www.buymeacoffee.com/saldibs2 \n\n📷Camera Equipment 👇\nDJI Action 2 Power Combo https://amzn.to/3xA5fMH\nDJI Action 2 Dual-Screen https://amzn.to/3Qvk8IX \nDJI Pocket 2 Creator Combo https://amzn.to/3mUr1pu \n\n👇 Some of my favorite Tools 👇\nFloat https://amzn.to/2tdEpN2    \nRubbing Stone https://amzn.to/2QrgRfh  \nNotched Trowel 1/4 x 1/4 x 1/4-inch https://amzn.to/36bq5mQ  \nNotched Trowel 1/2 x 1/2 x 1/2-Inch https://amzn.to/2Q5e90g  \nNotched Trowel 1/4 x 3/8 x 1/4-Inch https://amzn.to/39j1caB  \nSuper Dust Collector – WaleTale https://amzn.to/2MDuVkK  \nBlack Nitrile Gloves - 6 mil https://amzn.to/2SJQ6FZ  \nMargin Trowel https://amzn.to/352MYHx \nMortar Mixer https://amzn.to/2ZxYqtF \n4in Sandpaper for Stone Polishing https://amzn.to/2ZB2skT  \nPolishing Rubber Backing Pad https://amzn.to/2srikdy  \nMontolit 63P3 24 Inch Tile Cutter https://amzn.to/2MDoFt l  \nDEWALT Wet Tile Saw https://amzn.to/2QqpO8O \nRubi Thinset mixer https://amzn.to/39VmNWV\nGrabo Pro Lifter\nhttps://amzn.to/3BBO5ys \nIQ 7\" Dustless/Dry Cut Tile Saw IQ228\nhttps://amzn.to/3wFE3w0",
-      "found": "2026-10-25T14:27:31.439Z"
-    },
-    {
-      "yt": "MYi4EHtfCEE",
-      "title": "Why We Clean Every Drain Line: A 5-Step Callback Prevention Checklist",
-      "channel": "HVAC School",
-      "channelUrl": "https://www.youtube.com/c/HVACSchool",
-      "published": "2026-10-11T11:00:05+00:00",
-      "duration": "",
-      "channelCategory": "HVAC",
-      "suggestedCategory": "HVAC",
-      "description": "On a service call, techs know why clogged drain lines cause the most repeat visits — condensate backup is the fastest way to earn a callback, so it's the first thing we address, every time.\n\nIn this video, we walk through the reasoning behind our approach to service calls: flushing and cleaning the drain line thoroughly, then moving through the rest of the diagnostic process before ever calling the job done.\n\nThis isn't just a single fix — it's part of a larger habit built into every service call we run. We cover the full 5-Step Callback Prevention Checklist our techs follow to catch issues before they turn into a return trip:\n\nAsk questions — get the history before touching the unit\nClean the drain line — our #1 source of repeat calls\nRemove all panels — full visual diagnostic, every time\nEnter readings — document baseline data for future reference\nTouch everything — final walkthrough before you leave the property\n\nFollow this checklist and you'll spend less time chasing callbacks and more time solving problems the first visit. Prevention starts with the small habits — cleaning the drain, documenting readings, checking every panel — that add up to fewer comebacks and more trust with your customers.\n\nWhether you're new to the trade or refining your own checklist, this breakdown gives you a repeatable system you can bring to every call.\n\n---\n\nNEXT VIDEO\n\nCommercial HVAC Drain Cleaning: Pro Tips That Prevent Callbacks\nhttps://www.youtube.com/watch?v=DMo1FtdNWeg&t=106s\n\nKEEP LEARNING\n\nStart here:\nhttps://www.hvacrschool.com/start/\n\nFree HVAC/R training, tech tips, quizzes, calculators, courses, and more:\nhttps://www.hvacrschool.com/\n\nListen to the HVAC School podcast:\nhttps://www.hvacrschool.com/podcast/\n\nGet the HVAC School app:\nhttps://www.hvacrschool.com/apps-page/\n\nHVAC School provides free HVAC/R training—primarily for techs, by techs. The goal is not just to collect facts. It is to understand the system well enough to apply what you know in the field.\n\nQuestions or corrections? Leave a comment and include the equipment model, measurements, and source when you can. None of us gets everything right, and good measurements beat confident guesses.\n\nThis content is educational. Follow manufacturer instructions, use proper PPE and safe work practices, and comply with the codes and standards that apply to your equipment and jurisdiction.",
-      "found": "2026-10-25T14:27:12.113Z"
-    },
-    {
-      "yt": "nhcaeubedhs",
-      "title": "Bend Steel Conduit Like a Professional Electrician",
-      "channel": "GSH Electrical",
-      "channelUrl": "https://www.youtube.com/@GSHElectrical",
-      "published": "2026-10-11T09:00:34+00:00",
-      "duration": "",
-      "suggestedCategory": "Electrical",
-      "description": "Step by step guide on how to bend steel (metal) conduit to 90 degrees full demonstration. \n\nStudents training aid for bending 20 mm Steel (metal) Conduit to produce a 90 degree bend to the correct measurement. Includes a full demonstration on how to produce a bend using set square and a conduit bending machine so the end of the conduit to the back of the bend is at the correct measurement. \n\nHow to bend metal conduit to the correct length and to 90 degrees and how to check your bend it at 90 degrees.  \n\nElectrical UK Wiring \n\n🔵 Steel Conduit Life Hack How to Make Threading & Bending of Steel ",
-      "found": "2026-10-25T09:29:05.573Z",
-      "draft": {
-        "source": "rules",
-        "summary": "Step by step guide on how to bend steel (metal) conduit to 90 degrees full demonstration. Students training aid for bending 20 mm Steel (metal) Conduit to produce a 90 degree bend to the correct measurement.",
-        "safety": "Isolate and prove dead before any work. Only qualified staff may work near live parts.",
-        "ppe": [
-          "Insulated Gloves",
-          "Safety Glasses",
-          "Safety Shoes"
-        ],
-        "steps": [
-          "Choose the right conduit type and size for the job",
-          "Measure and mark the bend positions",
-          "Set the conduit correctly in the bender",
-          "Bend steadily to the required angle",
-          "Check the angle and measurement, then deburr the cut ends",
-          "Fix the conduit with saddles at the correct spacing"
-        ],
-        "stepsFrom": "topic",
-        "level": "Intermediate",
-        "subject": ""
-      }
-    },
-    {
-      "yt": "3pDRywt9yKs",
-      "title": "Questionable CO Alarms w/ Bill Spohn",
-      "channel": "HVAC School",
-      "channelUrl": "https://www.youtube.com/c/HVACSchool",
-      "published": "2026-10-08T11:14:23+00:00",
-      "duration": "",
-      "channelCategory": "HVAC",
-      "suggestedCategory": "HVAC",
-      "description": "In this episode of the HVAC School Podcast, Bryan welcomes back Bill Spohn to talk about carbon monoxide and a troubling trend in the alarms being sold online. They start with the basics: the difference between a standard UL 2034 alarm and a true low-level CO monitor. UL 2034 alarms were designed to avoid nuisance calls, so they can stay silent through long exposures at relatively low concentrations. Low-level monitors are far more sensitive and can warn you that something is brewing before it becomes a life-threatening emergency.\r\n\r\n Bill explains why that gap matters, walking through how carbon monoxide displaces oxygen on hemoglobin, why it lingers in the body, and why children, older adults, and people with heart or lung conditions are especially vulnerable. Bryan adds the troubleshooting angle: a UL 2034 alarm is the safety net that keeps people from dying, but low-level monitoring helps you find and fix a problem early, much like catching a refrigerant leak before the system is flat.\r\n\r\n The conversation then turns to the main story. Bill bought a pair of inexpensive alarms advertised as both low-level and UL 2034 compliant, which is a contradiction, since the two cannot be the same device. They arrived with no instructions, no model number, and no visible certification control number, and they closely resembled a product tied to a Consumer Product Safety Commission warning covering roughly 375,000 units and 91 reported failures to alarm. Bill traces the marketing back to what appears to be a single factory selling under many brand names, backed by a virtual office address, a fake firefighter endorsement, and a flood of promotional emails.\r\n\r\n Bryan and Bill close with lessons for technicians, consumers, and manufacturers alike. Be skeptical when price and performance seem too good to be true, verify who is behind a brand, and remember that claiming to meet a standard is not the same as being independently certified. They also urge established manufacturers to be humble, test claims thoroughly, and make sure published specifications reflect how their sensors actually perform. \r\n\r\n Topics Covered\r\n\r\n  Low-level CO monitors versus UL 2034 alarms, and why they are not interchangeable How the 1990s Chicago nuisance-alarm events led to the UL 2034 standard Why standards built around healthy adult males leave gaps for vulnerable people How carbon monoxide binds to hemoglobin and why it accumulates in the body  Why “CO leak” is the wrong phrase: carbon monoxide is created, not transported Online alarms claiming to be both low-level and UL 2034 compliant The Consumer Product Safety Commission alert and the 91 reported failures to alarm Red flags: no instructions, no model number, no certification mark, a virtual-office address, and a fake endorser What the alarm test button actually checks (the circuit and horn, not CO response) The challenge of validating alarms without accessible CO test kits How to vet unfamiliar brands, including using AI to re",
-      "found": "2026-10-25T14:27:13.460Z"
-    },
-    {
-      "yt": "kONwQeJ-sMg",
-      "title": "Mower-Proof Sprinkler Guard Donut | Sprinkler Warehouse",
-      "channel": "Sprinkler Warehouse (irrigation)",
-      "channelUrl": "https://www.youtube.com/channel/UCR1ksygazAOr59yLZ4Mp5tA",
-      "published": "2026-10-07T21:21:15+00:00",
-      "duration": "",
-      "channelCategory": "Landscaping",
-      "suggestedCategory": "Landscaping",
-      "description": "Watch this video to learn how sprinkler guard donuts protect sprinkler heads from foot traffic and lawn mower damage, helping prevent costly repairs and replacements.\n\nBuy them here: https://www.sprinklerwarehouse.com/brands/concrete-donuts\n\nLawn Legend, Dwane Smith, shows how sprinkler guard donuts create a durable, visible barrier around sprinkler heads to help prevent damage from foot traffic. We’ll also cover how they reduce accidental hits from lawn mowers and trimmers by keeping equipment at a safer distance, helping you avoid costly repairs.\n\n\nYouTube comments are not monitored. Please direct your questions to the customer service representatives on www.sprinklerwarehouse.com.",
-      "found": "2026-10-25T14:27:40.827Z"
-    },
-    {
-      "yt": "7iWAk17hCQk",
-      "title": "Earn 5-Star Reviews With Better HVAC Customer Service",
-      "channel": "HVAC School",
-      "channelUrl": "https://www.youtube.com/c/HVACSchool",
-      "published": "2026-10-07T11:00:20+00:00",
-      "duration": "",
-      "channelCategory": "HVAC",
-      "suggestedCategory": "HVAC",
-      "description": "Want to earn more 5-star reviews without the callbacks that follow a rushed visit? In this talk on Delivering the WOW Factor, we break down what customers actually notice on a service call, and why the best HVAC customer service keeps paying off long after you leave the driveway.\n\nA WOW experience starts with the basics: the equipment works, the work area is clean, and you know the system's history before you walk in. From there, it comes down to communication. That means asking questions so the customer feels heard, never saying \"this will be easy,\" and asking permission to bring extra findings to their attention.\n\nWe also cover the problem that shows up two weeks later. A customer can be happy with you today and frustrated later if a room still isn't cooling and nothing was documented. Learn how to use proposals the right way, get clear approvals and declines in writing, and protect yourself and the customer with better documentation.\n\nGreat reviews come from service built on the customer's needs, not your own assumptions about what they'll spend. Take the time, widen your view, and give every HVAC client a reason to tell their friends and neighbors about you.\n\n---\n\nNEXT VIDEO\n\nPreliminary Customer Conversations\nhttps://www.youtube.com/watch?v=UAk06LbJdBo\n\nKEEP LEARNING\n\nStart here:\nhttps://www.hvacrschool.com/start/\n\nFree HVAC/R training, tech tips, quizzes, calculators, courses, and more:\nhttps://www.hvacrschool.com/\n\nListen to the HVAC School podcast:\nhttps://www.hvacrschool.com/podcast/\n\nGet the HVAC School app:\nhttps://www.hvacrschool.com/apps-page/\n\nHVAC School provides free HVAC/R training—primarily for techs, by techs. The goal is not just to collect facts. It is to understand the system well enough to apply what you know in the field.\n\nQuestions or corrections? Leave a comment and include the equipment model, measurements, and source when you can. None of us gets everything right, and good measurements beat confident guesses.\n\nThis content is educational. Follow manufacturer instructions, use proper PPE and safe work practices, and comply with the codes and standards that apply to your equipment and jurisdiction.",
-      "found": "2026-10-25T14:27:14.740Z"
-    },
-    {
-      "yt": "tQE1nGz3Ydg",
-      "title": "Same Charge, Different Numbers - Short #306",
-      "channel": "HVAC School",
-      "channelUrl": "https://www.youtube.com/c/HVACSchool",
-      "published": "2026-10-06T18:41:14+00:00",
-      "duration": "",
-      "channelCategory": "HVAC",
-      "suggestedCategory": "HVAC",
-      "description": "In this short podcast episode, Bryan talks about what happens when you adjust the condenser airflow: you have the same charge, different numbers. This short covers HVAC condensers and flooded condensers in refrigeration applications.\r\n\r\n When you increase condenser airflow by repairing a condenser fan or washing the unit, the pressure and subcooling readings change even though the charge stays the same. Refrigerant enters the condenser as superheated vapor and goes through three stages: desuperheating, condensing, and subcooling. The key thing to remember is that these three stages can occur at different points of the condenser as the operating conditions change.\r\n\r\n Higher head pressure doesn't necessarily lead to higher subcooling, as subcooling depends on both saturation temperature and actual liquid temperature; if both change, head pressure can't tell us which way subcooling went. Exceptionally bad airflow across the condenser and high compression ratios can also interfere with liquid delivery. Uneven condenser airflow distribution also affects refrigerant distribution in the condenser. We shouldn't use low subcooling as an automatic indicator to add more charge.\r\n\r\n If there's one thing to remember, it's that you need to fix the airflow problem before deciding there is a charge problem. Operating readings can change without the total refrigerant charge changing.\r\n\r\n This episode contains embedded sponsor messages from Refrigeration Technologies, Carrier, NAVAC, Fieldpiece, and Filtrete\r\n\r\n Resources\r\n\r\n  NIST: Effect of Common Faults on the Performance of Different Types of Vapor Compression Systems NIST: Performance of a Residential Heat Pump Operating in the Cooling Mode with Single Faults Imposed   University of Padua: Condenser Airflow and Refrigerant-Inventory Modeling Condenser Fan Blade Shroud Depth (tech tip) Condenser Fan Blade Placement (tech tip) HVAC School calculators Submit a podcast question Learn about the GRIT Foundation  Purchase your tickets or learn more about the 8th Annual HVACR Training Symposium at https://hvacrschool.com/symposium.",
-      "found": "2026-10-25T14:27:16.002Z"
-    },
-    {
       "yt": "lD7x70PAsAE",
       "title": "do you need Blanke Permat?   Tile Floor uncoupling Underlayment",
       "channel": "Sal DiBlasi (tiling & waterproofing)",
@@ -709,7 +1168,29 @@
       "channelCategory": "",
       "suggestedCategory": "Civil Jobs",
       "description": "SUBSCRIBE Learn how to tile the right way.\nBlanke Permat  Explained, How to Install The Strongest Tile Floor uncoupling Underlayment Permat is the only tile underlayment that adds strength to your floor, structural rigidity. Uncoupling membranes are the best underlayment for a tile floor, in my opinion, that being said none of them other than Permat, have any structural value. The floor has to meet all deflection standards before the uncoupling membrane is installed. This is usually not a problem when installing a porcelain tile. Uncoupling membrane are great and will help your floor last for many years without problems, but there are cases when something more is needed, and when the typical membrane has limitations that exclude it from being used, Permat by Blanke will probably be the underlayment that will meet and exceed all the limitations that other underlayments can't meet. Permat has no limitation of tile size, install any mosaic or large format tile you like, other uncoupling membranes will usually limit the tile size to no less than 2'x2' , If you intend to install a natural stone tile on your floor, a second layer of plywood must be installed with any other tile underlayment, be it an uncoupling membrane or cement board. Permat is the only underlayment that allows the installation of  natural stone tiles on a single layer of plywood subfloor. All tile installed by Sal DiBlasi, Elite-tile Company, in the Boston North Shore area. This video contains affiliate links, which means I will receive a small commission if you click on the product link. #tile #transformthetrade  #howtotile #installingtile #howtoinstalltile #liticrete #mapei #Schlutersystems #diy #construction #ardex \n\n  👉👉👉👉👉    Blanke Permat https://amzn.to/4j2fcfd\n\n🙂 This is my Amazon Store 🙂 https://a.co/d/015wZyAM\n\nPayPal\nhttps://www.paypal.com/donate/?hosted_button_id=UMJSX3UHEHQGQ\n\nPatreon  https://www.patreon.com/c/saldiblasi\n\n🌲 Link Tree 🌲\nhttps://linktr.ee/saldiblasi\n\n☕ Buy me a coffee ☕\nhttps://www.buymeacoffee.com/saldibs2 \n\n📷Camera Equipment 👇\nDJI Action 2 Power Combo https://amzn.to/3xA5fMH\nDJI Action 2 Dual-Screen https://amzn.to/3Qvk8IX \nDJI Pocket 2 Creator Combo https://amzn.to/3mUr1pu \n\n👇 Some of my favorite Tools 👇\nFloat https://amzn.to/2tdEpN2    \nRubbing Stone https://amzn.to/2QrgRfh  \nNotched Trowel 1/4 x 1/4 x 1/4-inch https://amzn.to/36bq5mQ  \nNotched Trowel 1/2 x 1/2 x 1/2-Inch https://amzn.to/2Q5e90g  \nNotched Trowel 1/4 x 3/8 x 1/4-Inch https://amzn.to/39j1caB  \nSuper Dust Collector – WaleTale https://amzn.to/2MDuVkK  \nBlack Nitrile Gloves - 6 mil https://amzn.to/2SJQ6FZ  \nMargin Trowel https://amzn.to/352MYHx \nMortar Mixer https://amzn.to/2ZxYqtF \n4in Sandpaper for Stone Polishing https://amzn.to/2ZB2skT  \nPolishing Rubber Backing Pad https://amzn.to/2srikdy  \nMontolit 63P3 24 Inch Tile Cutter https://amzn.to/2MDoFt l  \nDEWALT Wet Tile Saw https://amzn.to/2QqpO8O \nRubi Thinset mixer https://amzn.to/39VmNWV\nGrabo Pro Lifter\nhttps://amzn.to/3",
-      "found": "2026-10-25T14:27:32.604Z"
+      "found": "2026-10-25T14:27:32.604Z",
+      "draft": {
+        "source": "rules",
+        "summary": "👇 Some of my favorite Tools 👇",
+        "safety": "Keep the area barricaded, use tools with guards and lift heavy materials with help.",
+        "ppe": [
+          "Hard Hat",
+          "Safety Shoes",
+          "Work Gloves",
+          "Safety Glasses"
+        ],
+        "steps": [
+          "Read the job card and get the right tools and PPE",
+          "Make the area safe and put up barriers or signs",
+          "Carry out the work as shown in the video",
+          "Check your work",
+          "Clean up the area",
+          "Report the job complete"
+        ],
+        "stepsFrom": "general",
+        "level": "Beginner",
+        "subject": ""
+      }
     },
     {
       "yt": "n1gWyBOn4OM",
