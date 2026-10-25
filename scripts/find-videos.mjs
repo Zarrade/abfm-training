@@ -57,7 +57,7 @@ async function readFeed(channelId) {
     title: tag(e, "title"),
     published: tag(e, "published"),
     link: (e.match(/<link[^>]+href="([^"]+)"/) || [])[1] || "",
-    description: tag(e, "media:description").slice(0, 600),
+    description: tag(e, "media:description").slice(0, 3000),
     author: tag(tag(e, "author"), "name") || (e.match(/<name>([\s\S]*?)<\/name>/) || [])[1] || ""
   })).filter(x => x.yt);
 }

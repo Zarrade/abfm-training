@@ -18,7 +18,7 @@
     saved: new Set(store.get("ab_saved", [])),
     tab: "library", cat: "ALL", level: "ALL", sort: "new", q: "", limit: PAGE,
     listScroll: 0, showEn: false,
-    paths: [], done: new Set(store.get("ab_done", []))
+    paths: [], done: new Set(store.get("ab_done", [])), talks: []
   };
 
   /* ---------- helpers ---------- */
@@ -90,17 +90,19 @@
   async function load() {
     renderSkeleton();
     try {
-      const [vd, st, health, pd] = await Promise.all([
+      const [vd, st, health, pd, tb] = await Promise.all([
         getJSON("data/videos.json"),
         getJSON("data/settings.json").catch(() => ({})),
         getJSON("data/health.json").catch(() => ({ problems: [] })),
-        getJSON("data/paths.json").catch(() => ({ paths: [] }))
+        getJSON("data/paths.json").catch(() => ({ paths: [] })),
+        getJSON("data/toolbox.json").catch(() => ({ talks: [] }))
       ]);
       Object.assign(state.settings, st);
       const dead = new Set((health.problems || []).filter(p => p.status === "notfound").map(p => p.yt));
       state.videos = (vd.videos || []).filter(v => v && v.yt && !v.hidden && !dead.has(v.yt))
         .map(v => Object.assign({ level: "Intermediate", ppe: [], steps: [], summary: "", safety: "" }, v));
       state.updated = vd.updated || "";
+      state.talks = (tb.talks || []).filter(k => k && k.id && k.title && !k.hidden);
       state.paths = (pd.paths || []).filter(p => p && p.id && !p.hidden && (p.videos || []).some(id => byId(id)));
       applySettings();
       route();
@@ -206,6 +208,16 @@
     const allNew = state.videos.filter(isNew);
     // Only show the "New this week" strip when it adds something (not when nearly everything is new).
     const fresh = showRail && allNew.length && allNew.length <= state.videos.length * 0.6 ? [...allNew].sort((a, b) => b.added.localeCompare(a.added)).slice(0, 12) : [];
+    const talk = showRail ? todayTalk() : null;
+    const tc = $("#talk-card");
+    tc.hidden = !talk;
+    if (talk) {
+      const x = kTr(talk);
+      tc.innerHTML = `<span class="tk-ico">${esc(talk.icon || "🦺")}</span>
+        <span class="tk-body"><span class="tk-label">${esc(t("toolboxToday"))}</span><strong>${esc(x.title || talk.title)}</strong><span class="tk-hint">${esc(t("toolboxHint"))}</span></span>
+        <span class="tk-go flip-r">${ICON.back}</span>`;
+    }
+    $("#req-row").hidden = !state.settings.requestUrl || !!state.q && !list.length;
     const ess = showRail ? state.videos.filter(v => v.essential) : [];
     $("#ess-wrap").hidden = !ess.length;
     $("#ess-rail").innerHTML = ess.sort((a, b) => state.done.has(a.id) - state.done.has(b.id)).map(card).join("");
@@ -224,13 +236,123 @@
       if (state.tab === "saved" && !state.q) {
         em.innerHTML = `<div class="big">🔖</div><h3>${esc(t("savedEmpty"))}</h3><p>${esc(t("savedEmptyHint"))}</p>`;
       } else {
-        em.innerHTML = `<div class="big">🔍</div><h3>${esc(t("noResults"))}</h3><p>${esc(t("noResultsHint"))}</p><p><button class="btn" id="clear-all">${esc(t("clearFilters"))}</button></p>`;
+        em.innerHTML = `<div class="big">🔍</div><h3>${esc(t("noResults"))}</h3><p>${esc(t("noResultsHint"))}</p><p><button class="btn" id="clear-all">${esc(t("clearFilters"))}</button></p>
+          ${state.settings.requestUrl ? `<p class="hint">${esc(t("requestHint"))}</p><p><button class="btn btn-primary" data-request>🙋 ${esc(t("requestVideo"))}</button></p>` : ""}`;
       }
     }
     const s = state.settings;
     $("#foot").innerHTML = [state.updated ? esc(t("updated", { date: fmtDate(state.updated) })) : "", s.helpdesk ? esc(t("helpdesk")) + ": " + esc(s.helpdesk) : ""].filter(Boolean).join(" · ");
     $$("[data-tab]").forEach(b => b.toggleAttribute("aria-current", false));
     $$(`[data-tab="${state.tab}"]`).forEach(b => b.setAttribute("aria-current", "page"));
+  }
+
+  /* ---------- toolbox talk of the day ---------- */
+  const kTr = k => (!state.showEn && k.tr && k.tr[state.lang]) || {};
+  const localDay = () => { const d = new Date(); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`; };
+  function todayTalk() {
+    const list = state.talks; if (!list.length) return null;
+    const today = localDay();
+    const pinned = list.find(k => k.date === today);
+    if (pinned) return pinned;
+    const pool = list.filter(k => !k.date);
+    if (!pool.length) return null;
+    const n = Math.floor(Date.parse(today + "T00:00:00Z") / 864e5);
+    return pool[n % pool.length];
+  }
+  function renderTalk(k) {
+    const x = kTr(k), today = todayTalk();
+    const pts = (x.points && x.points.length === (k.points || []).length) ? x.points : (k.points || []);
+    const has = !!(x.title);
+    const vid = k.video ? state.videos.find(v => v.id === k.video) : null;
+    const others = state.talks.filter(o => o.id !== k.id);
+    const el = $("#video-view");
+    const canSpeak = "speechSynthesis" in window;
+    const BCP = { en: "en-GB", hi: "hi-IN", ur: "ur-PK", ml: "ml-IN", bn: "bn-IN", ta: "ta-IN", ne: "ne-NP", tl: "fil-PH", ar: "ar-SA" };
+    const sl = has ? state.lang : "en";
+    el.innerHTML = `
+      <button class="btn btn-ghost btn-sm vp-back" id="back">${ICON.back}<span>${esc(t("back"))}</span></button>
+      <article class="talk">
+        <div class="talk-top"><span class="tk-label">${esc(k === today ? t("toolboxToday") : "🦺")}</span><span class="count">${esc(fmtDate(localDay()))}</span></div>
+        <div class="path-head"><div class="ph-ico">${esc(k.icon || "🦺")}</div><div><h1>${esc(x.title || k.title)}</h1>${has ? `<p class="en-title" lang="en" dir="ltr">${esc(k.title)}</p>` : ""}</div></div>
+        <ol class="talk-points" ${has || state.lang === "en" ? "" : 'lang="en" dir="ltr"'}>${pts.map(p => `<li>${esc(p)}</li>`).join("")}</ol>
+        ${k.ask ? `<div class="talk-ask"><strong>💬 ${esc(t("askTeam"))}</strong><p ${x.ask || state.lang === "en" ? "" : 'lang="en" dir="ltr"'}>${esc(x.ask || k.ask)}</p></div>` : ""}
+        <div class="actions">
+          ${canSpeak ? `<button class="btn btn-primary" id="tk-listen">🔊 <span>${esc(t("listen"))}</span></button>` : ""}
+          ${state.lang !== "en" && has ? `<button class="btn" id="tr-toggle">${state.showEn ? esc((LANGS.find(l => l.code === state.lang) || {}).name || "") : "English"}</button>` : ""}
+        </div>
+        ${vid ? `<div class="mini-list">${mini(vid)}</div>` : ""}
+      </article>
+      <div class="section-h" style="margin-top:22px"><h2>${esc(t("otherTalks"))}</h2></div>
+      <div class="talk-list">${others.map(o => `<a href="#/talk/${encodeURIComponent(o.id)}"><span>${esc(o.icon || "🦺")}</span>${esc(kTr(o).title || o.title)}</a>`).join("")}</div>`;
+    $("#back").onclick = () => { if (history.length > 1 && sessionStorage.getItem("ab_in_app")) history.back(); else location.hash = "#/"; };
+    const tt = $("#tr-toggle"); if (tt) tt.onclick = () => { state.showEn = !state.showEn; renderTalk(k); };
+    const lb = $("#tk-listen");
+    if (lb) {
+      let on = false;
+      const draw = () => { lb.innerHTML = `${on ? "⏹" : "🔊"} <span>${esc(on ? t("stop") : t("listen"))}</span>`; };
+      lb.onclick = () => {
+        speechSynthesis.cancel();
+        on = !on; draw();
+        if (!on) return;
+        const parts = [x.title && !state.showEn ? x.title : k.title, ...(state.showEn ? k.points : pts), (state.showEn ? k.ask : (x.ask || k.ask)) || ""].filter(Boolean);
+        const lang = state.showEn ? "en" : sl;
+        parts.forEach((txt, i) => {
+          const u = new SpeechSynthesisUtterance(txt);
+          u.lang = BCP[lang] || "en-GB"; u.rate = 0.95;
+          const voice = speechSynthesis.getVoices().find(vo => vo.lang && vo.lang.toLowerCase().startsWith(lang === "tl" ? "fil" : lang));
+          if (voice) u.voice = voice;
+          if (i === parts.length - 1) u.onend = () => { on = false; draw(); };
+          speechSynthesis.speak(u);
+        });
+      };
+    }
+  }
+
+  /* ---------- request a video ---------- */
+  function openRequest(topic) {
+    const f = $("#req-form");
+    f.reset();
+    $("#r-topic").value = topic || "";
+    $("#r-cat").innerHTML = state.settings.categories.map(c => `<option value="${esc(c.name)}">${c.icon || ""} ${esc(catLabel(c.name))}</option>`).join("") + `<option value="">${esc(t("other"))}</option>`;
+    const low = String(topic || "").toLowerCase();
+    const guess = state.cat !== "ALL" ? state.cat : (state.settings.categories.find(c => (c.keywords || []).some(w => w && low.includes(String(w).toLowerCase()))) || {}).name;
+    $("#r-cat").value = guess || "";
+    $("#r-topic").oninput = e => {
+      if ($("#r-cat").dataset.touched) return;
+      const l = e.target.value.toLowerCase();
+      const g = (state.settings.categories.find(c => (c.keywords || []).some(w => w && l.includes(String(w).toLowerCase()))) || {}).name;
+      if (g) $("#r-cat").value = g;
+    };
+    $("#r-cat").onchange = () => { $("#r-cat").dataset.touched = "1"; };
+    delete $("#r-cat").dataset.touched;
+    $("#r-name").value = store.get("ab_req_name", "");
+    $("#r-site").value = store.get("ab_req_site", "");
+    $("#r-msg").textContent = ""; $("#r-msg").className = "req-msg";
+    $("#r-send").disabled = false; $("#r-send").textContent = t("send");
+    $("#req-sheet").hidden = false;
+    setTimeout(() => $("#r-topic").focus(), 50);
+  }
+  async function sendRequest(e) {
+    e.preventDefault();
+    const topic = $("#r-topic").value.trim(), msg = $("#r-msg"), btn = $("#r-send");
+    if (!topic) { $("#r-topic").focus(); return; }
+    btn.disabled = true; btn.textContent = t("sending"); msg.textContent = "";
+    const body = {
+      topic, category: $("#r-cat").value, details: $("#r-details").value.trim(),
+      name: $("#r-name").value.trim(), site: $("#r-site").value.trim(), lang: state.lang, website: $("#r-web").value
+    };
+    store.set("ab_req_name", body.name); store.set("ab_req_site", body.site);
+    try {
+      const r = await fetch(state.settings.requestUrl, { method: "POST", headers: { "Content-Type": "text/plain;charset=utf-8" }, body: JSON.stringify(body) });
+      const j = await r.json();
+      if (!j.ok) throw new Error(j.error || "failed");
+      msg.textContent = "✓ " + t("reqThanks"); msg.className = "req-msg ok";
+      btn.textContent = "✓";
+      setTimeout(() => { closeSheets(); toast(t("reqThanks")); }, 1600);
+    } catch (err) {
+      msg.textContent = t("reqFail"); msg.className = "req-msg bad";
+      btn.disabled = false; btn.textContent = t("send");
+    }
   }
 
   /* ---------- learning paths ---------- */
@@ -454,6 +576,17 @@
     const h = location.hash.replace(/^#\/?/, "");
     const [kind, arg, k2, a2] = h.split("/");
     const lv = $("#list-view"), vv = $("#video-view");
+    if (kind === "talk") {
+      const k = arg ? state.talks.find(x => x.id === decodeURIComponent(arg)) : todayTalk();
+      if (k) {
+        if (!lv.hidden) state.listScroll = scrollY;
+        lv.hidden = true; vv.hidden = false; $("#search-wrap").hidden = true;
+        renderTalk(k);
+        scrollTo(0, 0);
+        document.title = (kTr(k).title || k.title) + " · ABFM Training";
+        return;
+      }
+    }
     if (kind === "p" && arg) {
       const p = state.paths.find(x => x.id === decodeURIComponent(arg));
       if (p) {
@@ -512,10 +645,12 @@
       if (e.target.closest("#clear-all")) { state.cat = "ALL"; state.level = "ALL"; state.q = ""; $("#q").value = ""; $("#q-clear").hidden = true; renderList(); return; }
       const lg = e.target.closest("[data-lang]");
       if (lg) { state.showEn = false; state.lang = lg.dataset.lang; store.set("ab_lang", state.lang); closeSheets(); applyLang(); route(); return; }
+      if (e.target.closest("[data-request]")) { openRequest(state.q); return; }
       if (e.target.closest("[data-close]") || e.target.classList.contains("sheet")) closeSheets();
     });
     document.addEventListener("keydown", e => { if (e.key === "Escape") closeSheets(); });
     $("#lang-btn").onclick = () => openSheet("#lang-sheet");
+    $("#req-form").addEventListener("submit", sendRequest);
 
     const off = () => { const o = $("#offline"); o.hidden = navigator.onLine; o.textContent = "📶  " + t("offline"); };
     addEventListener("online", off); addEventListener("offline", off); off();

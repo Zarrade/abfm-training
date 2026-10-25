@@ -81,3 +81,18 @@ If you edit files in `assets/`, change `VERSION` at the top of `sw.js` (e.g. `v1
 - **Safety essentials:** tick “🦺 Safety essential” when editing a video. These videos appear in a pinned yellow section at the top of the library. Videos from the Health & Safety category come pre-ticked when you approve them.
 - **Learning paths:** in the admin, open **Learning paths** to create short courses (title, icon, description, and an ordered list of videos). Staff see them on the home screen with a progress bar. Progress is stored only on each person's phone; nothing is tracked centrally.
 - Path titles and descriptions are translated automatically, the same way videos are.
+
+## Automatic drafts for new videos
+
+Every morning, after finding new videos, the daily job writes a first draft for each one in the review queue: summary, safety note, PPE, steps, level and subject. When you press **Review & approve**, the form is already filled in — check it, fix anything, publish.
+
+- **Without any setup:** the summary comes from the YouTube description, the steps from the video's chapters (when the channel adds them), and the safety note and PPE from built-in rules for each trade.
+- **Better, with a free Gemini key:** Gemini watches each video and drafts from what it actually shows. Get a key at aistudio.google.com/apikey, then add it on GitHub as a repository secret named `GEMINI_API_KEY` (Settings → Secrets and variables → Actions). Paste it in the admin's Settings too, so the **✨ Auto-draft** button works for videos you add by hand.
+
+## Toolbox talk of the day
+
+30 short safety talks (data/toolbox.json) rotate on the home screen, one per day — the same talk for everyone. Supervisors can read it out, or press 🔊 Listen, at the morning briefing. Edit, add or pin a talk to a date in the admin's **Toolbox talks** tab. Talks are translated automatically.
+
+## Request a video
+
+Technicians tap **🙋 Request a video** (at the bottom of the library, and when a search finds nothing). Requests go to a private Google Sheet and show up in the admin's **Requests** tab, where you can mark them done or add the video straight away. The one-time setup is shown in the Requests tab; the script is in setup/request-inbox.gs. Until it is set up, the button stays hidden.

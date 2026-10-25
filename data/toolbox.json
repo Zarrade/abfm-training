@@ -1,0 +1,397 @@
+{
+  "talks": [
+    {
+      "id": "heat-stress",
+      "icon": "🌡️",
+      "title": "Heat stress",
+      "points": [
+        "Drink water every 15–20 minutes, even if you don't feel thirsty.",
+        "Take breaks in the shade or a cool room, and slow down in the hottest hours.",
+        "Follow the summer midday break: no outdoor work in direct sun during the banned hours.",
+        "Warning signs: headache, dizziness, confusion, no sweating. Stop, cool down and tell your supervisor.",
+        "Watch your colleagues — people with heat stroke often don't notice it themselves."
+      ],
+      "ask": "Where is the nearest shaded rest area and drinking water on today's site?"
+    },
+    {
+      "id": "loto",
+      "icon": "🔒",
+      "title": "Lock out, tag out",
+      "points": [
+        "Tell everyone affected before you isolate equipment.",
+        "Switch off, isolate, then lock and tag the isolation point with your own lock.",
+        "Release stored energy: capacitors, springs, pressure, gravity.",
+        "Prove dead with a tested tester before touching anything.",
+        "Only the person who fitted the lock may remove it."
+      ],
+      "ask": "Which equipment on today's jobs needs locking off, and do you have your lock and tag?"
+    },
+    {
+      "id": "prove-dead",
+      "icon": "⚡",
+      "title": "Prove dead before you touch",
+      "points": [
+        "Never assume a circuit is dead because a switch is off.",
+        "Test your voltage tester on a known live source, test the circuit, then test the tester again.",
+        "Test between all conductors: line to neutral, line to earth, neutral to earth.",
+        "Non-contact testers are for a quick check only — not proof of dead.",
+        "If in doubt, stop and ask a qualified electrician."
+      ],
+      "ask": "When did you last check that your voltage tester works?",
+      "video": "elec-102"
+    },
+    {
+      "id": "ladders",
+      "icon": "🪜",
+      "title": "Ladder safety",
+      "points": [
+        "Inspect the ladder before use: feet, rungs, locks, no cracks or bends.",
+        "Set it on firm, level ground at a 1-in-4 angle, or fully open for step ladders.",
+        "Keep three points of contact, and face the ladder going up and down.",
+        "Don't stand on the top two steps, and don't over-reach — move the ladder.",
+        "Use a ladder only for short, light work. For longer jobs use a platform or scaffold."
+      ],
+      "ask": "Which jobs today need a ladder, and is a platform better for any of them?"
+    },
+    {
+      "id": "work-at-height",
+      "icon": "🧗",
+      "title": "Working at height",
+      "points": [
+        "Any work where you could fall and get hurt is work at height — even from 1–2 metres.",
+        "Use guardrails or a platform first; a harness is the last line of defence.",
+        "Inspect your harness and lanyard before each use, and clip to a rated anchor point.",
+        "Barricade the area below and secure tools against falling.",
+        "Never work at height alone, and know the rescue plan."
+      ],
+      "ask": "Where is the rescue plan for today's height work?"
+    },
+    {
+      "id": "ppe-basics",
+      "icon": "🦺",
+      "title": "Wear the right PPE",
+      "points": [
+        "PPE protects you only if you wear it, and wear it properly.",
+        "Check it before use: cracked hard hats, torn gloves and scratched glasses must be replaced.",
+        "Choose gloves for the job: cut-resistant, chemical or insulated — not one type for everything.",
+        "Safety shoes and a hi-vis vest are required on every site.",
+        "Ask your supervisor for new PPE when yours is worn out. It is free for you."
+      ],
+      "ask": "Is any of your PPE damaged or missing today?"
+    },
+    {
+      "id": "manual-handling",
+      "icon": "📦",
+      "title": "Lifting and carrying",
+      "points": [
+        "Check the load first: weight, sharp edges, where it is going.",
+        "Get help or use a trolley for heavy or awkward loads.",
+        "Bend your knees, keep your back straight and the load close to your body.",
+        "Don't twist while carrying — turn with your feet.",
+        "Clear the path before you lift."
+      ],
+      "ask": "What heavy items will you move today, and what equipment can help?"
+    },
+    {
+      "id": "slips-trips",
+      "icon": "🚧",
+      "title": "Slips, trips and falls",
+      "points": [
+        "Most site injuries are simple slips and trips.",
+        "Clean up spills and water straight away, and put out a wet-floor sign.",
+        "Keep cables, hoses and tools out of walkways.",
+        "Keep corridors, stairs and exits clear of materials.",
+        "Report broken tiles, missing covers and poor lighting."
+      ],
+      "ask": "What trip hazards have you seen on site this week?"
+    },
+    {
+      "id": "housekeeping",
+      "icon": "🧹",
+      "title": "Good housekeeping",
+      "points": [
+        "A tidy work area is a safer work area.",
+        "Put tools back after use and keep materials stacked safely.",
+        "Remove waste daily and use the right bins for chemicals and sharps.",
+        "Never block fire exits, extinguishers or electrical panels.",
+        "Leave the client's area cleaner than you found it."
+      ],
+      "ask": "How will you leave today's job area when you finish?"
+    },
+    {
+      "id": "hand-tools",
+      "icon": "🔧",
+      "title": "Hand tools",
+      "points": [
+        "Use the right tool for the job — no screwdrivers as chisels or pliers as hammers.",
+        "Check tools before use: loose heads, cracked handles and worn jaws are dangerous.",
+        "Use insulated tools for electrical work.",
+        "Carry sharp tools pointing down, and keep blades covered.",
+        "Report and remove damaged tools from use."
+      ],
+      "ask": "Is there a damaged tool in your bag that should be replaced?"
+    },
+    {
+      "id": "power-tools",
+      "icon": "🪚",
+      "title": "Power tools",
+      "points": [
+        "Inspect the cable, plug and guard before use.",
+        "Unplug or remove the battery before changing bits, blades or discs.",
+        "Never remove or tie back guards.",
+        "Wear eye and ear protection, and keep both hands on the tool.",
+        "Don't carry tools by the cable or pull the cable to unplug."
+      ],
+      "ask": "Which power tools will you use today, and have you checked them?"
+    },
+    {
+      "id": "chemicals",
+      "icon": "🧪",
+      "title": "Chemical safety",
+      "points": [
+        "Read the label and safety data sheet before using any chemical.",
+        "Wear the PPE listed: chemical gloves, goggles and a mask where needed.",
+        "Never mix chemicals — some mixes, like bleach and acid, make toxic gas.",
+        "Keep chemicals in labelled, closed containers, never in drink bottles.",
+        "Know where the eyewash is, and rinse eyes or skin for 15 minutes if splashed."
+      ],
+      "ask": "Which chemicals will you use today, and where is the safety data sheet?"
+    },
+    {
+      "id": "confined-space",
+      "icon": "🕳️",
+      "title": "Confined spaces",
+      "points": [
+        "Tanks, manholes, pits and ducts can have no oxygen or toxic gas.",
+        "Never enter without a permit to work.",
+        "Test the air before and during entry, and ventilate the space.",
+        "A trained standby person must stay outside at all times.",
+        "Never go in to rescue someone without breathing equipment — call for help."
+      ],
+      "ask": "What confined spaces are on our sites, and who is trained to enter them?"
+    },
+    {
+      "id": "hot-work",
+      "icon": "🔥",
+      "title": "Hot work",
+      "points": [
+        "Brazing, welding, grinding and cutting all need a hot work permit.",
+        "Clear or cover flammable materials within 10 metres.",
+        "Keep a fire extinguisher at hand and know how to use it.",
+        "Purge with nitrogen when brazing refrigeration pipes.",
+        "Stay for a fire watch at least 30 minutes after you finish."
+      ],
+      "ask": "Who needs a hot work permit today?",
+      "video": "hvac-110"
+    },
+    {
+      "id": "fire-extinguishers",
+      "icon": "🧯",
+      "title": "Fire extinguishers",
+      "points": [
+        "Know where the nearest extinguisher and fire alarm point are.",
+        "Use the right type: CO2 for electrical, foam or water for paper and wood, wet chemical for cooking oil.",
+        "Remember PASS: Pull the pin, Aim at the base, Squeeze, Sweep.",
+        "Only fight a small fire if you have a clear escape route behind you.",
+        "If in doubt, get out, raise the alarm and call 997."
+      ],
+      "ask": "Which extinguisher would you use on an electrical panel fire?"
+    },
+    {
+      "id": "emergency",
+      "icon": "🚨",
+      "title": "In an emergency",
+      "points": [
+        "UAE emergency numbers: 999 police, 998 ambulance, 997 fire.",
+        "Know your site's assembly point and the nearest exit.",
+        "When the alarm sounds, stop work, make equipment safe and leave by the stairs — not the lift.",
+        "Report to the assembly point and don't go back in until told.",
+        "Know who the first aiders are on your site."
+      ],
+      "ask": "Where is the assembly point for the site you are working at today?"
+    },
+    {
+      "id": "first-aid",
+      "icon": "⛑️",
+      "title": "First aid basics",
+      "points": [
+        "Make sure the area is safe before you help.",
+        "Call for help and a first aider, or 998 for an ambulance.",
+        "For bleeding, press firmly on the wound with a clean cloth.",
+        "For burns, cool with running water for 20 minutes. No ice, no creams.",
+        "Report every injury, even small cuts."
+      ],
+      "ask": "Who is the first aider on your site, and where is the first aid kit?"
+    },
+    {
+      "id": "near-miss",
+      "icon": "📝",
+      "title": "Report near misses",
+      "points": [
+        "A near miss is something that almost caused an injury or damage.",
+        "Every near miss is a warning — next time it may not be a miss.",
+        "Report it to your supervisor the same day.",
+        "Reporting is about fixing the cause, not blaming people.",
+        "Small hazards you fix today prevent accidents tomorrow."
+      ],
+      "ask": "Has anyone seen a near miss this week that we should talk about?"
+    },
+    {
+      "id": "permit-to-work",
+      "icon": "📋",
+      "title": "Permit to work",
+      "points": [
+        "High-risk jobs need a permit: hot work, confined spaces, height, electrical isolation.",
+        "Read the permit and follow every control listed on it.",
+        "Work only within the permit's time, area and scope.",
+        "If the job changes, stop and get the permit updated.",
+        "Hand back the permit and make the area safe when the work is done."
+      ],
+      "ask": "Which of today's jobs need a permit, and who signs them?"
+    },
+    {
+      "id": "refrigerant",
+      "icon": "❄️",
+      "title": "Handling refrigerant",
+      "points": [
+        "Liquid refrigerant can freeze skin and eyes in seconds — wear gloves and goggles.",
+        "Never vent refrigerant to the air; recover it with a recovery machine.",
+        "Work in a ventilated space: refrigerant gas pushes out oxygen.",
+        "Some refrigerants such as R32 and R290 are flammable — no flames or sparks nearby.",
+        "Store cylinders upright, secured and out of the sun."
+      ],
+      "ask": "Which refrigerant does today's equipment use, and is it flammable?",
+      "video": "hvac-111"
+    },
+    {
+      "id": "electrical-panels",
+      "icon": "🗄️",
+      "title": "Working near electrical panels",
+      "points": [
+        "Only authorised and qualified staff may open electrical panels.",
+        "Keep 1 metre clear in front of panels — never store materials there.",
+        "Keep panel doors closed and covers fitted.",
+        "Report burning smells, hot covers, buzzing or tripping breakers.",
+        "Never work on live parts. Isolate and prove dead first."
+      ],
+      "ask": "Is there any panel on site that is blocked or missing a cover?"
+    },
+    {
+      "id": "driving",
+      "icon": "🚐",
+      "title": "Safe driving",
+      "points": [
+        "Wear your seatbelt every trip, and make sure passengers do too.",
+        "No phone use while driving — pull over safely first.",
+        "Keep to speed limits and leave a safe gap, especially in heat haze and sand.",
+        "Secure tools and materials in the van so they can't fly forward.",
+        "Do a walk-around check of tyres, lights and fluids before you drive."
+      ],
+      "ask": "When did you last check your vehicle's tyres?"
+    },
+    {
+      "id": "noise",
+      "icon": "🎧",
+      "title": "Noise and hearing",
+      "points": [
+        "If you must shout to be heard at 1 metre, the noise can damage your hearing.",
+        "Hearing damage is permanent and builds up slowly.",
+        "Wear ear plugs or defenders near chillers, pumps, generators and power tools.",
+        "Fit ear plugs properly: roll, pull the ear back, insert and hold.",
+        "Take quiet breaks away from noisy plant rooms."
+      ],
+      "ask": "Which plant rooms on our sites need hearing protection?"
+    },
+    {
+      "id": "eye-protection",
+      "icon": "🥽",
+      "title": "Protect your eyes",
+      "points": [
+        "Wear safety glasses whenever you drill, cut, grind, chip or work overhead.",
+        "Use goggles, not glasses, for chemicals and refrigerant.",
+        "Use a shaded visor or goggles for brazing and welding.",
+        "If something gets in your eye, don't rub it — rinse with clean water.",
+        "Keep your safety glasses clean, and replace them when scratched."
+      ],
+      "ask": "What tasks today need eye protection?"
+    },
+    {
+      "id": "water-hygiene",
+      "icon": "💧",
+      "title": "Water tanks and Legionella",
+      "points": [
+        "Legionella bacteria grow in warm, still water and spread in fine spray.",
+        "Keep tanks covered, clean and free of rust and sludge.",
+        "Flush little-used outlets and showers regularly.",
+        "Wear a mask and gloves when cleaning tanks and showerheads.",
+        "Follow the disinfection procedure and record the results."
+      ],
+      "ask": "Which of our buildings have outlets that are rarely used?"
+    },
+    {
+      "id": "working-alone",
+      "icon": "📱",
+      "title": "Working alone",
+      "points": [
+        "Tell your supervisor where you are and when you expect to finish.",
+        "Keep your phone charged and check in at agreed times.",
+        "Don't do high-risk work alone: height, confined space or live electrical.",
+        "If you feel unsafe, stop and call for support.",
+        "Know the site's emergency contacts before you start."
+      ],
+      "ask": "Who do you call if something goes wrong when you are working alone?"
+    },
+    {
+      "id": "sharps-drains",
+      "icon": "🩸",
+      "title": "Sharps and dirty drains",
+      "points": [
+        "Drains, traps and bins can hide needles, glass and blades.",
+        "Wear cut-resistant gloves, and never put your hand where you can't see.",
+        "Use tools such as grabbers or drain rods instead of your hands.",
+        "Put sharps in a sharps box — never in normal bags.",
+        "If you get a needle-stick injury, wash the wound and report it straight away."
+      ],
+      "ask": "How do you clear a blocked trap without putting your hand in?"
+    },
+    {
+      "id": "dust",
+      "icon": "😷",
+      "title": "Dust and fumes",
+      "points": [
+        "Cutting, drilling, sanding and duct cleaning create harmful dust.",
+        "Use water suppression or dust extraction where you can.",
+        "Wear a properly fitted mask (FFP2/FFP3) for dusty work.",
+        "Ventilate when using paints, solvents and adhesives.",
+        "Clean up with a vacuum or by wetting the dust, not by dry sweeping."
+      ],
+      "ask": "Which jobs this week will create dust, and what masks do we have?"
+    },
+    {
+      "id": "scaffolds",
+      "icon": "🏗️",
+      "title": "Mobile towers and scaffolds",
+      "points": [
+        "Only use a scaffold or tower with a green tag that is in date.",
+        "Lock the wheels before climbing, and never move a tower with people on it.",
+        "Climb inside using the built-in ladder, never up the outside frame.",
+        "Make sure guardrails and toe boards are fitted on the platform.",
+        "Don't overload the platform or lean ladders on it."
+      ],
+      "ask": "Who checks and tags the towers we use?"
+    },
+    {
+      "id": "customer-areas",
+      "icon": "🏢",
+      "title": "Working in occupied buildings",
+      "points": [
+        "Barricade and sign your work area so residents and staff stay clear.",
+        "Keep cables and tools out of walkways and doorways.",
+        "Tell the client before you shut off water, power or AC.",
+        "Clean up after yourself, and protect floors and furniture.",
+        "Be polite. You represent ABFM on every job."
+      ],
+      "ask": "How will you keep the public away from today's work area?"
+    }
+  ]
+}

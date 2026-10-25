@@ -60,6 +60,7 @@
       <div class="toolbar">
         <div class="seg" id="levels" role="group" aria-label="Level"></div>
       </div>
+      <a id="talk-card" class="talk-card" href="#/talk" hidden></a>
       <div id="ess-wrap" class="ess-wrap" hidden>
         <div class="section-h"><h2>🦺 <span data-t="safetyEssentials">Safety essentials</span></h2></div>
         <p class="section-sub" data-t="essentialsHint">Must-know safety for every technician</p>
@@ -85,6 +86,10 @@
       <div class="grid" id="grid"></div>
       <div class="more"><button class="btn" id="more" hidden data-t="showMore">Show more</button></div>
       <div class="empty" id="empty" hidden></div>
+      <div class="req-row" id="req-row" hidden>
+        <p data-t="requestHint">Can't find what you need? Tell us and we'll look for a video.</p>
+        <button class="btn" data-request>🙋 <span data-t="requestVideo">Request a video</span></button>
+      </div>
       <p class="foot" id="foot"></p>
     </section>
 
@@ -119,6 +124,29 @@
       <h2 data-t="install">Install app</h2>
       <p class="sub" data-t="installIos">To install: tap Share, then Add to Home Screen.</p>
       <button class="btn btn-primary" style="width:100%" data-close>OK</button>
+    </div>
+  </div>
+
+  <div class="sheet" id="req-sheet" role="dialog" aria-modal="true" aria-labelledby="req-title" hidden>
+    <div class="sheet-in">
+      <h2 id="req-title">🙋 <span data-t="requestVideo">Request a video</span></h2>
+      <p class="sub" data-t="requestHint">Can't find what you need? Tell us and we'll look for a video.</p>
+      <form id="req-form" class="req-form" novalidate>
+        <label><span data-t="reqTopic">What do you need a video about?</span>
+          <input id="r-topic" required maxlength="200" autocomplete="off"></label>
+        <label><span data-t="reqTrade">Trade</span><select id="r-cat"></select></label>
+        <label><span data-t="reqDetails">More details (optional)</span><textarea id="r-details" rows="3" maxlength="1000"></textarea></label>
+        <div class="req-two">
+          <label><span data-t="reqName">Your name (optional)</span><input id="r-name" maxlength="80" autocomplete="name"></label>
+          <label><span data-t="reqSite">Site / building (optional)</span><input id="r-site" maxlength="80"></label>
+        </div>
+        <input id="r-web" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" class="hp">
+        <p class="req-msg" id="r-msg" role="status" aria-live="polite"></p>
+        <div class="req-actions">
+          <button type="button" class="btn" data-close data-t="cancel">Cancel</button>
+          <button class="btn btn-primary" id="r-send" data-t="send">Send request</button>
+        </div>
+      </form>
     </div>
   </div>
 

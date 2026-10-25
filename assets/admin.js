@@ -11,14 +11,15 @@
   const LEVELS = ["Beginner", "Intermediate", "Advanced"];
   const TR_LANGS = [["hi", "Hindi"], ["ur", "Urdu"], ["ml", "Malayalam"], ["bn", "Bengali"], ["ta", "Tamil"], ["ne", "Nepali"], ["tl", "Filipino"], ["ar", "Arabic"]];
   const CFG_KEY = "ab_admin_cfg";
-  const FILES = { videos: "data/videos.json", settings: "data/settings.json", channels: "data/channels.json", pending: "data/pending.json", health: "data/health.json", paths: "data/paths.json" };
+  const FILES = { videos: "data/videos.json", settings: "data/settings.json", channels: "data/channels.json", pending: "data/pending.json", health: "data/health.json", paths: "data/paths.json", toolbox: "data/toolbox.json" };
   const DEFAULTS = {
     videos: () => ({ updated: today(), videos: [] }),
     settings: () => ({ categories: [], newDays: 7 }),
     channels: () => ({ lookbackDays: 21, skipShorts: true, maxQueue: 150, channels: [] }),
     pending: () => ({ lastRun: null, channelStatus: {}, queue: [], rejected: [] }),
     health: () => ({ checked: null, problems: [] }),
-    paths: () => ({ paths: [] })
+    paths: () => ({ paths: [] }),
+    toolbox: () => ({ talks: [] })
   };
 
   let cfg = loadCfg();
@@ -195,6 +196,7 @@
     $("#tabs").hidden = false; $("#disconnect").hidden = false;
     $("#repo-label").textContent = `${cfg.owner}/${cfg.repo}`;
     render();
+    loadRequests().then(() => { if (view === "requests") render(); else badgeRequests(); });
   }
 
   const V = () => data.videos.json.videos;
@@ -214,7 +216,7 @@
     const q = (data.pending.json.queue || []).length;
     const nq = $("#n-queue"); nq.hidden = !q; nq.textContent = q;
     $$("#tabs [data-view]").forEach(b => { if (b.dataset.view === view) b.setAttribute("aria-current", "page"); else b.removeAttribute("aria-current"); });
-    ({ videos: renderVideos, queue: renderQueue, paths: renderPaths, channels: renderChannels, settings: renderSettings })[view]();
+    ({ videos: renderVideos, queue: renderQueue, requests: renderRequests, paths: renderPaths, toolbox: renderToolbox, channels: renderChannels, settings: renderSettings })[view]();
   }
 
   /* ---------- Videos ---------- */
@@ -312,6 +314,8 @@
         <div class="field"><label for="f-added">Date added</label><input class="input" id="f-added" type="date" value="${esc(v.added || today())}"></div>
         <div class="field"><label for="f-chan">Channel</label><input class="input" id="f-chan" value="${esc(v.channel || "")}"></div>
       </div>
+      ${v.draftSource ? `<div class="draft-note">✨ ${v.draftSource === "ai" ? "Gemini watched this video and wrote a first draft of the summary, safety note and steps." : "First draft filled in from the YouTube description and safety rules."} Check it before publishing.</div>` : ""}
+      <div class="draft-row"><button type="button" class="btn btn-sm" id="f-draft">✨ Auto-draft</button><span class="help" id="f-draft-help">${geminiKey() ? "Gemini will watch the video and fill in the summary, safety, PPE and steps." : "Fills in safety and PPE from the trade. Add a Gemini key in Settings to draft from the video itself."}</span></div>
       <div class="field"><label for="f-summary">What the video shows</label><textarea class="textarea" id="f-summary" placeholder="One or two plain sentences.">${esc(v.summary || "")}</textarea></div>
       <div class="field"><label for="f-safety">Safety warning</label><textarea class="textarea" id="f-safety" placeholder="e.g. Isolate power and prove dead before starting.">${esc(v.safety || "")}</textarea></div>
       <div class="field"><label for="f-ppe">Required PPE</label><input class="input" id="f-ppe" placeholder="Safety Glasses, Work Gloves" value="${esc((v.ppe || []).join(", "))}"><div class="help">Separate with commas.</div></div>
@@ -351,6 +355,7 @@
         if (cat && !ed.original && !prefill.category) $("#f-cat").value = cat;
       } else if (!dup) help.textContent = "Couldn't fetch the title automatically. Type it in.";
     };
+    $("#f-draft").onclick = () => runDraft();
     url.addEventListener("change", onUrl);
     url.addEventListener("paste", () => setTimeout(onUrl, 0));
     $("#f-cat").onchange = e => {
@@ -381,6 +386,37 @@
     if (!x.steps.length) delete next.steps;
     if (!same) { delete next.auto; delete next.src; }   // you edited it: keep your version, never overwrite
     ed.tr[ed.trLang] = next;
+  }
+  const geminiKey = () => { try { return localStorage.getItem("ab_gemini_key") || ""; } catch { return ""; } };
+  async function runDraft() {
+    const yt = parseYT($("#f-url").value) || ed.v.yt;
+    const title = $("#f-title").value.trim();
+    const category = $("#f-cat").value;
+    if (!yt || !title) return alert("Paste the YouTube link and check the title first.");
+    const filled = ["#f-summary", "#f-safety", "#f-ppe", "#f-steps"].some(id => $(id).value.trim());
+    if (filled && !confirm("Replace what is already in the summary, safety, PPE and steps?")) return;
+    const btn = $("#f-draft"), help = $("#f-draft-help");
+    let d;
+    if (geminiKey()) {
+      btn.disabled = true; help.textContent = "Gemini is watching the video… (up to a minute)";
+      try {
+        const subjects = [...new Set(V().filter(v => v.category === category && v.subject).map(v => v.subject))];
+        d = await ABDraft.aiDraft({ yt, title, category, subjects, key: geminiKey(), model: localStorage.getItem("ab_gemini_model") || undefined });
+        help.textContent = "Done. Gemini drafted this from the video — check it before publishing.";
+      } catch (e) {
+        help.textContent = "Gemini couldn't draft this one (" + e.message + "). Used the built-in rules instead.";
+      } finally { btn.disabled = false; }
+    }
+    if (!d) {
+      d = ABDraft.ruleDraft({ title, description: "", category, videos: V() });
+      if (!geminiKey()) help.textContent = "Filled in safety, PPE and level from the trade. Write the summary and steps from the video.";
+    }
+    if (d.summary) $("#f-summary").value = d.summary;
+    if (d.safety) $("#f-safety").value = d.safety;
+    if (d.ppe && d.ppe.length) $("#f-ppe").value = d.ppe.join(", ");
+    if (d.steps && d.steps.length) $("#f-steps").value = d.steps.join("\n");
+    if (d.level) $("#f-level").value = d.level;
+    if (d.subject && !$("#f-subject").value) $("#f-subject").value = d.subject;
   }
   function guessCategory(text) {
     const t = " " + (text || "").toLowerCase() + " ";
@@ -454,7 +490,7 @@
         <article class="qcard" data-yt="${esc(item.yt)}">
           <div class="thumb" data-preview="${esc(item.yt)}" style="cursor:pointer"><img loading="lazy" src="${thumb(item.yt)}" alt="" width="320" height="180">${item.duration ? `<span class="dur">${esc(item.duration)}</span>` : ""}</div>
           <div class="body">
-            <div class="meta"><span>${esc(item.suggestedCategory || "Unsorted")}</span>${item.published ? `<span class="dot">${esc(item.published.slice(0, 10))}</span>` : ""}</div>
+            <div class="meta"><span>${esc(item.suggestedCategory || "Unsorted")}</span>${item.published ? `<span class="dot">${esc(item.published.slice(0, 10))}</span>` : ""}${item.draft ? `<span class="badge-s b-draft">✨ ${item.draft.source === "ai" ? "AI draft ready" : (item.draft.steps || []).length ? "Draft + steps" : "Draft"}</span>` : ""}</div>
             <h3>${esc(item.title)}</h3>
             <div class="count" style="margin:0">${esc(item.channel || "")}</div>
             ${item.description ? `<div class="desc">${esc(item.description)}</div>` : ""}
@@ -482,7 +518,13 @@
   }
   function approve(yt) {
     const item = (data.pending.json.queue || []).find(i => i.yt === yt); if (!item) return;
+    const d = item.draft || {};
+    const fromDraft = {};
+    ["summary", "safety", "subject", "level"].forEach(k => { if (d[k]) fromDraft[k] = d[k]; });
+    ["ppe", "steps"].forEach(k => { if (d[k] && d[k].length) fromDraft[k] = d[k]; });
+    if (item.draft) fromDraft.draftSource = d.source;
     openEditor(null, {
+      ...fromDraft,
       yt: item.yt, title: item.title, channel: item.channel, duration: item.duration || "",
       category: item.suggestedCategory || cats()[0], description: item.description || "",
       ...(item.suggestedCategory === "Health & Safety" ? { essential: true } : {})
@@ -586,6 +628,182 @@
     };
   }
 
+  /* ---------- Video requests (Google Sheet inbox) ---------- */
+  const reqKey = () => { try { return localStorage.getItem("ab_req_key") || ""; } catch { return ""; } };
+  let reqs = null, reqErr = "", reqFilter = "new";
+  async function loadRequests() {
+    const url = data.settings.json.requestUrl;
+    if (!url || !reqKey()) { reqs = null; return; }
+    try {
+      const r = await fetch(url + (url.includes("?") ? "&" : "?") + "key=" + encodeURIComponent(reqKey()), { cache: "no-store" });
+      const j = await r.json();
+      if (!j.ok) throw new Error(j.error === "key" ? "The inbox password doesn't match the one in the Google script." : (j.error || "error"));
+      reqs = j.requests || []; reqErr = "";
+    } catch (e) { reqErr = e.message === "Failed to fetch" ? "Couldn't reach the request inbox. Check the link in Settings." : e.message; }
+  }
+  function badgeRequests() {
+    const n = (reqs || []).filter(r => r.status === "new").length;
+    const b = $("#n-req"); if (b) { b.hidden = !n; b.textContent = n; }
+  }
+  async function reqAction(body) {
+    busy(true);
+    try {
+      const r = await fetch(data.settings.json.requestUrl, { method: "POST", headers: { "Content-Type": "text/plain;charset=utf-8" }, body: JSON.stringify({ key: reqKey(), ...body }) });
+      const j = await r.json(); if (!j.ok) throw new Error(j.error || "failed");
+    } catch (e) { alert("Couldn't update the request: " + e.message); }
+    finally { busy(false); }
+    await loadRequests(); render();
+  }
+  function renderRequests() {
+    badgeRequests();
+    const url = data.settings.json.requestUrl;
+    if (!url || !reqKey()) {
+      $("#app").innerHTML = `<div class="card-plain"><h2>Video requests</h2>
+        <p>Technicians can tap <b>🙋 Request a video</b> in the app. Requests come here, privately — they are kept in a Google Sheet that only you can open, not in the public GitHub repo.</p>
+        <p><b>One-time setup (about 5 minutes):</b></p>
+        <ol class="setup-steps">
+          <li>Open <a href="https://sheets.new" target="_blank" rel="noopener">sheets.new</a> to create a new Google Sheet. Name it “ABFM video requests”.</li>
+          <li>In the sheet: <b>Extensions → Apps Script</b>. Delete what's there and paste the script from <a href="https://github.com/${esc(cfg.owner)}/${esc(cfg.repo)}/blob/${esc(cfg.branch)}/setup/request-inbox.gs" target="_blank" rel="noopener">setup/request-inbox.gs</a>.</li>
+          <li>On the line <code>const ADMIN_KEY = "CHANGE-THIS-TO-A-LONG-PASSWORD";</code> put your own long password. Click 💾 Save.</li>
+          <li><b>Deploy → New deployment</b> → gear icon → <b>Web app</b>. Execute as: <b>Me</b>. Who has access: <b>Anyone</b>. Click Deploy and allow access.</li>
+          <li>Copy the <b>Web app URL</b> and paste it, with your password, in <b>Settings → Request inbox</b> here.</li>
+        </ol>
+        <button class="btn btn-primary" id="go-settings">Open Settings</button></div>`;
+      $("#go-settings").onclick = () => { view = "settings"; render(); };
+      return;
+    }
+    const list = (reqs || []).filter(r => reqFilter === "all" || (reqFilter === "new" ? r.status === "new" : r.status !== "new"));
+    const ago = iso => { const d = (Date.now() - Date.parse(iso)) / 864e5; return d < 1 ? "today" : d < 2 ? "yesterday" : Math.floor(d) + " days ago"; };
+    $("#app").innerHTML = `
+      ${reqErr ? `<div class="err">⚠ ${esc(reqErr)}</div>` : ""}
+      <div class="bar">
+        <select id="rq-filter">${[["new", "New"], ["done", "Done"], ["all", "All"]].map(([k, l]) => `<option value="${k}" ${k === reqFilter ? "selected" : ""}>${l}</option>`).join("")}</select>
+        <p class="count grow" style="margin:0">${reqs ? `${(reqs || []).filter(r => r.status === "new").length} new · ${(reqs || []).length} total` : "Loading…"}</p>
+        <button class="btn btn-sm" id="rq-refresh">↻ Refresh</button>
+      </div>
+      <div class="rows">${list.map(r => `
+        <div class="row req ${r.status !== "new" ? "is-hidden" : ""}">
+          <div class="req-ico">🙋</div>
+          <div>
+            <h3>${esc(r.topic)}</h3>
+            ${r.details ? `<p class="req-d">${esc(r.details)}</p>` : ""}
+            <div class="meta">
+              ${r.category ? `<span>${esc(r.category)}</span>` : ""}
+              ${r.name ? `<span>👤 ${esc(r.name)}</span>` : ""}${r.site ? `<span>📍 ${esc(r.site)}</span>` : ""}
+              <span>${esc(ago(r.time))}</span>${r.lang && r.lang !== "en" ? `<span>${esc(String(r.lang).toUpperCase())}</span>` : ""}
+              ${r.status !== "new" ? `<span class="badge-s b-ok">✓ Done</span>` : ""}
+            </div>
+          </div>
+          <div class="row-actions">
+            <a class="btn btn-sm" href="https://www.youtube.com/results?search_query=${encodeURIComponent(r.topic)}" target="_blank" rel="noopener">Search YouTube</a>
+            ${r.status === "new" ? `<button class="btn btn-sm btn-primary" data-rq-add="${esc(r.id)}">Add video</button><button class="btn btn-sm" data-rq-done="${esc(r.id)}">Mark done</button>` : `<button class="btn btn-sm" data-rq-open="${esc(r.id)}">Reopen</button>`}
+            <button class="btn btn-sm btn-danger" data-rq-del="${esc(r.id)}">Delete</button>
+          </div>
+        </div>`).join("") || (reqs ? `<div class="empty"><div class="big">📭</div><h3>No ${reqFilter === "all" ? "" : reqFilter + " "}requests</h3></div>` : "")}</div>`;
+    $("#rq-filter").onchange = e => { reqFilter = e.target.value; renderRequests(); };
+    $("#rq-refresh").onclick = async () => { reqs = null; renderRequests(); await loadRequests(); render(); };
+    $$("[data-rq-done]").forEach(b => b.onclick = () => reqAction({ action: "status", id: b.dataset.rqDone, status: "done" }));
+    $$("[data-rq-open]").forEach(b => b.onclick = () => reqAction({ action: "status", id: b.dataset.rqOpen, status: "new" }));
+    $$("[data-rq-del]").forEach(b => b.onclick = () => { if (confirm("Delete this request?")) reqAction({ action: "delete", id: b.dataset.rqDel }); });
+    $$("[data-rq-add]").forEach(b => b.onclick = () => {
+      const r = reqs.find(x => String(x.id) === b.dataset.rqAdd);
+      openEditor(null, cats().includes(r.category) ? { category: r.category } : {}, async () => { await reqAction({ action: "status", id: r.id, status: "done" }); });
+    });
+    if (reqs === null && !reqErr) loadRequests().then(render);
+  }
+
+  /* ---------- Toolbox talks ---------- */
+  let te = null;
+  const TK = () => data.toolbox.json.talks || (data.toolbox.json.talks = []);
+  const dayStr = () => { const d = new Date(); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`; };
+  function todayTalkId() {
+    const list = TK().filter(k => !k.hidden), today = dayStr();
+    const pinned = list.find(k => k.date === today); if (pinned) return pinned.id;
+    const pool = list.filter(k => !k.date); if (!pool.length) return null;
+    return pool[Math.floor(Date.parse(today + "T00:00:00Z") / 864e5) % pool.length].id;
+  }
+  function renderToolbox() {
+    if (te) return renderTalkEditor();
+    const tid = todayTalkId();
+    $("#app").innerHTML = `
+      <div class="bar"><p class="help grow" style="margin:0">A different talk shows on the app's home screen each day, in rotation. Supervisors can read it out (or press 🔊) at the morning briefing. To choose the talk for a specific day, set its date.</p>
+        <button class="btn btn-primary" id="tk-add">＋ New talk</button></div>
+      <div class="rows">${TK().map((k, i) => `
+        <div class="row ${k.hidden ? "is-hidden" : ""}">
+          <div class="thumb path-ico">${esc(k.icon || "🦺")}</div>
+          <div><h3>${esc(k.title)}</h3>
+            <div class="meta"><span>${(k.points || []).length} points</span>
+              ${k.id === tid ? `<span class="badge-s b-feat">Today</span>` : ""}
+              ${k.date ? `<span class="badge-s b-ess">📅 ${esc(k.date)}</span>` : ""}
+              ${k.hidden ? `<span class="badge-s b-hidden">Hidden</span>` : ""}
+              ${k.tr && Object.keys(k.tr).length ? `<span class="badge-s b-ok">🌐 ${Object.keys(k.tr).length}/8</span>` : `<span class="badge-s b-hidden">Translating…</span>`}</div></div>
+          <div class="row-actions">
+            <button class="btn btn-sm" data-tk-up="${i}" ${i === 0 ? "disabled" : ""} aria-label="Move up">↑</button>
+            <button class="btn btn-sm" data-tk-edit="${i}">Edit</button>
+            <button class="btn btn-sm btn-danger" data-tk-del="${i}">Delete</button>
+          </div></div>`).join("") || `<div class="empty"><h3>No toolbox talks yet</h3></div>`}</div>`;
+    $("#tk-add").onclick = () => { te = { index: -1, k: { id: "", icon: "🦺", title: "", points: [], ask: "" } }; renderToolbox(); };
+    $$("[data-tk-edit]").forEach(b => b.onclick = () => { const i = +b.dataset.tkEdit; te = { index: i, k: JSON.parse(JSON.stringify(TK()[i])) }; renderToolbox(); });
+    $$("[data-tk-del]").forEach(b => b.onclick = async () => {
+      const k = TK()[+b.dataset.tkDel]; if (!confirm(`Delete the talk “${k.title}”?`)) return;
+      await update("toolbox", d => { d.talks = (d.talks || []).filter(x => x.id !== k.id); return d; }, `Delete toolbox talk: ${k.title}`);
+      toast("Deleted."); render();
+    });
+    $$("[data-tk-up]").forEach(b => b.onclick = async () => {
+      const id = TK()[+b.dataset.tkUp].id;
+      await update("toolbox", d => { const i = d.talks.findIndex(x => x.id === id); if (i > 0) d.talks.splice(i - 1, 0, d.talks.splice(i, 1)[0]); return d; }, "Reorder toolbox talks");
+      render();
+    });
+  }
+  function renderTalkEditor() {
+    const k = te.k;
+    $("#app").innerHTML = `
+      <button class="btn btn-sm btn-ghost" id="te-back">‹ All talks</button>
+      <h2 style="margin:10px 0 14px">${te.index < 0 ? "New toolbox talk" : "Edit toolbox talk"}</h2>
+      <div class="two" style="grid-template-columns:90px 1fr">
+        <div class="field"><label for="te-icon">Icon</label><input class="input" id="te-icon" maxlength="4" value="${esc(k.icon || "")}" style="text-align:center;font-size:22px"></div>
+        <div class="field"><label for="te-title">Title</label><input class="input" id="te-title" placeholder="e.g. Heat stress" value="${esc(k.title)}"></div>
+      </div>
+      <div class="field"><label for="te-points">Key points</label><textarea class="textarea" id="te-points" rows="6" placeholder="One point per line">${esc((k.points || []).join("\n"))}</textarea><div class="help">One point per line. 3–5 short points work best.</div></div>
+      <div class="field"><label for="te-ask">Question to ask the team</label><input class="input" id="te-ask" placeholder="e.g. Where is the nearest drinking water on today's site?" value="${esc(k.ask || "")}"></div>
+      <div class="two">
+        <div class="field"><label for="te-video">Linked video (optional)</label>
+          <select class="input" id="te-video"><option value="">None</option>${cats().map(c => `<optgroup label="${esc(c)}">${V().filter(v => v.category === c).map(v => `<option value="${esc(v.id)}" ${v.id === k.video ? "selected" : ""}>${esc(v.title)}</option>`).join("")}</optgroup>`).join("")}</select></div>
+        <div class="field"><label for="te-date">Show on a specific date (optional)</label><input class="input" id="te-date" type="date" value="${esc(k.date || "")}"><div class="help">Leave empty to include it in the daily rotation.</div></div>
+      </div>
+      <label class="check"><input type="checkbox" id="te-hidden" ${k.hidden ? "checked" : ""}> Hide from staff</label>
+      <div class="bar" style="margin-top:20px;justify-content:flex-end">
+        <button class="btn" id="te-cancel">Cancel</button>
+        <button class="btn btn-primary" id="te-save">${te.index < 0 ? "Publish talk" : "Save talk"}</button>
+      </div>`;
+    $("#te-back").onclick = $("#te-cancel").onclick = () => { te = null; renderToolbox(); };
+    $("#te-save").onclick = async () => {
+      k.icon = $("#te-icon").value.trim() || "🦺";
+      k.title = $("#te-title").value.trim();
+      k.points = $("#te-points").value.split("\n").map(x => x.trim().replace(/^[-•*\d.)\s]+/, "")).filter(Boolean);
+      k.ask = $("#te-ask").value.trim();
+      const vid = $("#te-video").value, date = $("#te-date").value;
+      if (vid) k.video = vid; else delete k.video;
+      if (date) k.date = date; else delete k.date;
+      if ($("#te-hidden").checked) k.hidden = true; else delete k.hidden;
+      if (!k.title) return alert("Add a title.");
+      if (!k.points.length) return alert("Add at least one point.");
+      if (!k.id) {
+        const base = k.title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 40) || "talk";
+        let id = base, n = 2; while (TK().some(x => x.id === id)) id = base + "-" + n++;
+        k.id = id;
+      }
+      const isNew = te.index < 0;
+      await update("toolbox", d => {
+        d.talks = d.talks || [];
+        const i = d.talks.findIndex(x => x.id === k.id);
+        if (i >= 0) d.talks[i] = k; else d.talks.push(k);
+        return d;
+      }, `${isNew ? "Add" : "Edit"} toolbox talk: ${k.title}`);
+      te = null; toast(isNew ? "Published. Live in about a minute." : "Saved. Live in about a minute."); render();
+    };
+  }
+
   /* ---------- Channels ---------- */
   function renderChannels() {
     const c = data.channels.json, st = data.pending.json.channelStatus || {};
@@ -684,6 +902,22 @@
           <textarea class="textarea" id="s-excl">${esc((s.excludeKeywords || []).join(", "))}</textarea>
           <div class="help">Comma separated. Videos whose title contains any of these are never queued.</div>
         </div>
+        <div class="card-plain">
+          <h2>Request inbox</h2>
+          <p class="count">Where “Request a video” sends requests. See the Requests tab for the 5-minute setup.</p>
+          <div class="field"><label for="s-req">Web app URL (from Google Apps Script)</label><input class="input" id="s-req" inputmode="url" spellcheck="false" placeholder="https://script.google.com/macros/s/…/exec" value="${esc(s.requestUrl || "")}"><div class="help">Saved with the site settings. Leave empty to hide the Request button.</div></div>
+          <div class="field"><label for="s-reqkey">Inbox password (ADMIN_KEY in the script)</label><input class="input" id="s-reqkey" type="password" autocomplete="off" value="${esc(reqKey())}"><div class="help">Kept only in this browser — never saved to GitHub.</div></div>
+        </div>
+        <div class="card-plain">
+          <h2>Auto-draft with Gemini (optional)</h2>
+          <p class="count">Without a key, drafts come from the YouTube description and built-in safety rules. With a free Gemini key, Gemini watches each video and drafts the summary, safety note and steps from what it shows.</p>
+          <ol class="setup-steps">
+            <li>Get a free key at <a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener">aistudio.google.com/apikey</a> (sign in with Google → Create API key).</li>
+            <li>For the <b>✨ Auto-draft</b> button here, paste it below.</li>
+            <li>For the daily review queue, also add it on GitHub: repo <b>Settings → Secrets and variables → Actions → New repository secret</b>, name <code>GEMINI_API_KEY</code>.</li>
+          </ol>
+          <div class="field"><label for="s-gem">Gemini API key</label><input class="input" id="s-gem" type="password" autocomplete="off" value="${esc(geminiKey())}"><div class="help">Kept only in this browser.</div></div>
+        </div>
         <button class="btn btn-primary" style="width:100%">Save settings</button>
       </form>`;
     $("#cat-add").onclick = () => { $("#cat-rows").insertAdjacentHTML("beforeend", catRow({ name: "", icon: "▶️", keywords: [] }, Date.now(), 0)); };
@@ -703,9 +937,15 @@
       const vals = {
         siteName: $("#s-name").value.trim(), tagline: $("#s-tag").value.trim(), announcement: $("#s-ann").value.trim(),
         helpdesk: $("#s-help").value.trim(), newDays: Math.max(1, +$("#s-new").value || 7), categories,
-        excludeKeywords: $("#s-excl").value.split(",").map(x => x.trim().toLowerCase()).filter(Boolean)
+        excludeKeywords: $("#s-excl").value.split(",").map(x => x.trim().toLowerCase()).filter(Boolean),
+        requestUrl: $("#s-req").value.trim()
       };
+      try {
+        localStorage.setItem("ab_req_key", $("#s-reqkey").value.trim());
+        localStorage.setItem("ab_gemini_key", $("#s-gem").value.trim());
+      } catch {}
       await update("settings", d => Object.assign(d, vals), "Update site settings");
+      reqs = null; loadRequests().then(badgeRequests);
       toast("Settings saved. Live in about a minute."); render();
     };
   }

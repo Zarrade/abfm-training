@@ -119,6 +119,26 @@ async function translatePaths(doc) {
   return changed;
 }
 
+async function translateTalks(doc) {
+  let changed = 0;
+  for (const k of doc.talks || []) {
+    const pts = k.points || [];
+    const src = createHash("sha1").update(JSON.stringify([k.title, pts, k.ask || ""])).digest("hex").slice(0, 12);
+    k.tr = k.tr || {};
+    for (const tl of LANGS) {
+      const cur = k.tr[tl];
+      if (cur && (!cur.auto || cur.src === src)) continue;
+      try {
+        const t = await translateLines([k.title, k.ask || "", ...pts], tl);
+        k.tr[tl] = { auto: true, src, title: t[0], ask: k.ask ? t[1] : "", points: pts.map((_, i) => t[i + 2]) };
+        changed++;
+      } catch (e) { failures++; if (e.message === "limit") return changed; }
+      await sleep(300);
+    }
+  }
+  return changed;
+}
+
 const vText = await readFile(new URL("videos.json", DATA), "utf8");
 const sText = await readFile(new URL("settings.json", DATA), "utf8");
 const videos = JSON.parse(vText), settings = JSON.parse(sText);
@@ -129,11 +149,15 @@ try { paths = JSON.parse(await readFile(new URL("paths.json", DATA), "utf8")); }
 const nv = await translateVideos(videos);
 const ns = await translateSettings(settings);
 const np = paths ? await translatePaths(paths) : 0;
+let talks = null;
+try { talks = JSON.parse(await readFile(new URL("toolbox.json", DATA), "utf8")); } catch {}
+const nt = talks ? await translateTalks(talks) : 0;
+if (nt) await writeFile(new URL("toolbox.json", DATA), JSON.stringify(talks, null, 2) + "\n");
 if (np) await writeFile(new URL("paths.json", DATA), JSON.stringify(paths, null, 2) + "\n");
 if (nv) await writeFile(new URL("videos.json", DATA), JSON.stringify(videos, null, 2) + "\n");
 if (ns) await writeFile(new URL("settings.json", DATA), JSON.stringify(settings, null, 2) + "\n");
-console.log(`Translated ${nv} video/language pairs ${ns} settings languages and ${np} path translations using ${requests} requests (${failures} failed).`);
-if (failures && !nv && !ns && !np) process.exitCode = 1;
+console.log(`Translated ${nv} video/language pairs ${ns} settings languages and ${np} path and ${nt} toolbox-talk translations using ${requests} requests (${failures} failed).`);
+if (failures && !nv && !ns && !np && !nt) process.exitCode = 1;
 // Tell the workflow there is more to do, so it can start another run straight away.
 if (hitLimit && process.env.GITHUB_OUTPUT) {
   const { appendFile } = await import("node:fs/promises");

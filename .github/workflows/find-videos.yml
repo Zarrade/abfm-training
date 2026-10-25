@@ -33,6 +33,11 @@ jobs:
         env:
           FORCE_HEALTH: ${{ inputs.health && '1' || '0' }}
 
+      - name: Draft summaries and steps for the review queue
+        run: node scripts/draft.mjs || true
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
       - name: Translate anything new
         run: node scripts/translate.mjs || true
 

@@ -7,6 +7,7 @@ on:
       - "data/videos.json"
       - "data/settings.json"
       - "data/paths.json"
+      - "data/toolbox.json"
       - "scripts/translate.mjs"
   workflow_dispatch:
 

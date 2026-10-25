@@ -73,3 +73,13 @@ details.box summary { font-weight: 700; cursor: pointer; }
 .saving div { background: var(--surface); padding: 14px 18px; border-radius: 12px; font-weight: 700; box-shadow: var(--shadow); }
 .b-ess { background: #fff1c2; color: #6b4d00; }
 .row .path-ico { display: grid; place-items: center; font-size: 34px; background: var(--surface-2); aspect-ratio: 16/9; }
+.draft-note { background: #f3ecff; color: #3d2a73; border: 1px solid #d9c9ff; border-radius: 10px; padding: 10px 12px; font-size: 14px; margin: 4px 0 12px; }
+.draft-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin: 0 0 12px; }
+.draft-row .help { margin: 0; flex: 1; min-width: 200px; }
+@media (prefers-color-scheme: dark) { .draft-note { background: #2a2140; color: #e4d9ff; border-color: #4b3b78; } }
+.b-draft { background: #f3ecff; color: #4a2fa0; }
+.setup-steps { padding-inline-start: 20px; display: grid; gap: 6px; font-size: 14.5px; }
+.setup-steps code { background: var(--surface-2); padding: 1px 5px; border-radius: 5px; font-size: 13px; }
+.row .req-ico { display: grid; place-items: center; font-size: 30px; aspect-ratio: 16/9; background: var(--surface-2); border-radius: 8px; }
+.req-d { margin: 0 0 4px; font-size: 14px; color: var(--muted); white-space: pre-wrap; }
+.row.req { align-items: start; }
