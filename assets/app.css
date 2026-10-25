@@ -320,3 +320,12 @@ main { max-width: 1200px; margin: 0 auto; padding: 14px 16px calc(96px + env(saf
 .req-msg.ok { color: #1f9d55; font-weight: 700; }
 .req-msg.bad { color: var(--danger, #c0392b); font-weight: 700; }
 .hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+.req-btn { flex: none; margin-inline-start: auto; border-radius: 12px; min-height: 44px; }
+@media (max-width: 440px) {
+  .toolbar { gap: 6px; flex-wrap: nowrap; }
+  .toolbar .seg { flex: 1 1 auto; min-width: 0; }
+  .seg button { padding: 0 7px; font-size: 13.5px; flex: 1 0 auto; }
+  .req-btn { flex-direction: column; gap: 0; padding: 2px 6px; min-height: 44px; min-width: 56px; font-size: 11px; line-height: 1.15; font-weight: 700; }
+  .req-btn span { font-size: 11px; }
+}
+@media (max-width: 374px) { .seg button { padding: 0 5px; font-size: 13px; } }

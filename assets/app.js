@@ -217,7 +217,8 @@
         <span class="tk-body"><span class="tk-label">${esc(t("toolboxToday"))}</span><strong>${esc(x.title || talk.title)}</strong><span class="tk-hint">${esc(t("toolboxHint"))}</span></span>
         <span class="tk-go flip-r">${ICON.back}</span>`;
     }
-    $("#req-row").hidden = !state.settings.requestUrl || !!state.q && !list.length;
+    $("#req-btn").hidden = !state.settings.requestUrl;
+    $("#req-btn").title = t("requestVideo");
     const ess = showRail ? state.videos.filter(v => v.essential) : [];
     $("#ess-wrap").hidden = !ess.length;
     $("#ess-rail").innerHTML = ess.sort((a, b) => state.done.has(a.id) - state.done.has(b.id)).map(card).join("");
