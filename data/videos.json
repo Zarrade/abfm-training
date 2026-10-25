@@ -247,6 +247,17 @@
             "قفازات العمل"
           ]
         }
+      },
+      "gemini": {
+        "date": "2026-10-25",
+        "model": "gemini-3.5-flash-lite",
+        "relevance": 9,
+        "quality": 9,
+        "recommend": "approve",
+        "reason": "Clear, practical guide for troubleshooting common drip irrigation problems.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
       }
     },
     {
