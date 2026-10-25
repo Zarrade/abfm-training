@@ -370,3 +370,21 @@ main { max-width: 1200px; margin: 0 auto; padding: 14px 16px calc(96px + env(saf
 .ai-dots i:nth-child(2) { animation-delay: .15s; } .ai-dots i:nth-child(3) { animation-delay: .3s; }
 @keyframes aidot { 0%, 80%, 100% { opacity: .3; transform: translateY(0); } 40% { opacity: 1; transform: translateY(-3px); } }
 .bnav button span:not(.badge) { max-width: 100%; padding: 0 4px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+/* Ask AI: full-screen chat layout */
+body.ai-mode { overflow: hidden; }
+body.ai-mode main { padding: 0; }
+body.ai-mode .ai-wrap { position: fixed; top: var(--ai-top, 64px); bottom: calc(61px + env(safe-area-inset-bottom)); left: 0; right: 0; max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; padding: 12px 16px 10px; }
+body.ai-mode.ai-typing .ai-wrap { bottom: 0; }
+body.ai-mode.ai-typing .bnav { display: none; }
+@media (min-width: 820px) { body.ai-mode .ai-wrap { bottom: 0; } }
+body.ai-mode .ai-head { flex: none; }
+body.ai-mode .ai-log { flex: 1 1 auto; min-height: 0; overflow-y: auto; overscroll-behavior: contain; align-content: start; padding: 2px 2px 8px; -webkit-overflow-scrolling: touch; }
+body.ai-mode .ai-note { flex: none; margin: 6px 0 8px; font-size: 12px; }
+body.ai-mode .ai-bar { flex: none; position: relative; bottom: auto; box-shadow: none; }
+.ai-menu { position: absolute; bottom: calc(100% + 8px); inset-inline-start: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; box-shadow: 0 10px 30px rgba(0,0,0,.25); padding: 6px; display: grid; min-width: 230px; z-index: 10; }
+.ai-menu[hidden] { display: none; }
+.ai-mi { display: flex; align-items: center; gap: 12px; min-height: 48px; padding: 0 14px; border-radius: 10px; font-weight: 600; font-size: 16px; cursor: pointer; }
+.ai-mi:hover, .ai-mi:active { background: var(--surface-2); }
+.ai-cam[aria-expanded="true"] { background: var(--surface-2); border-color: var(--brand); }
+body.ai-mode .ai-head { align-items: center; margin-bottom: 8px; } body.ai-mode .ai-head .sub { margin-bottom: 4px; }

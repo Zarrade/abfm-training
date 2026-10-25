@@ -349,11 +349,14 @@
   }
   function renderAI() {
     const el = $("#video-view");
+    document.body.classList.add("ai-mode");
+    const hdr = $("header.top");
+    document.documentElement.style.setProperty("--ai-top", (hdr ? Math.round(hdr.getBoundingClientRect().bottom) : 64) + "px");
     const empty = !ai.msgs.length;
     el.innerHTML = `
       <div class="ai-wrap">
         <div class="ai-head">
-          <div><h1>✨ ${esc(t("aiTitle"))}</h1><p class="sub">${esc(t("aiIntro"))}</p></div>
+          <div><h1>✨ ${esc(t("aiTitle"))}</h1>${empty ? `<p class="sub">${esc(t("aiIntro"))}</p>` : ""}</div>
           ${empty ? "" : `<button class="btn btn-sm" id="ai-new">${esc(t("aiNew"))}</button>`}
         </div>
         <div class="ai-log" id="ai-log">
@@ -363,23 +366,33 @@
         <p class="ai-note">⚠ ${esc(t("aiDisclaimer"))}</p>
         <form class="ai-bar" id="ai-form">
           <div class="ai-photos" id="ai-photos">${ai.photos.map((p, i) => `<span><img src="${p.url}" alt=""><button type="button" data-rm="${i}" aria-label="Remove">✕</button></span>`).join("")}</div>
+          <div class="ai-menu" id="ai-menu" hidden>
+            <label class="ai-mi">📸 <span>${esc(t("aiTake"))}</span><input type="file" accept="image/*" capture="environment" class="ai-file" hidden></label>
+            <label class="ai-mi">🖼️ <span>${esc(t("aiGallery"))}</span><input type="file" accept="image/*" multiple class="ai-file" hidden></label>
+          </div>
           <div class="ai-row">
-            <label class="btn btn-icon ai-cam" aria-label="${esc(t("aiPhoto"))}" title="${esc(t("aiPhoto"))}">📷<input type="file" accept="image/*" id="ai-file" multiple hidden></label>
+            <button type="button" class="btn btn-icon ai-cam" id="ai-cam" aria-label="${esc(t("aiPhoto"))}" title="${esc(t("aiPhoto"))}" aria-expanded="false" ${ai.photos.length >= 3 ? "disabled" : ""}>📷</button>
             <textarea id="ai-q" rows="1" maxlength="1000" placeholder="${esc(t("aiPlaceholder"))}"></textarea>
             <button class="btn btn-primary btn-icon" id="ai-send" aria-label="${esc(t("send"))}" ${ai.busy ? "disabled" : ""}><span class="flip-r">${ICON.back}</span></button>
           </div>
         </form>
       </div>`;
     const log = $("#ai-log");
-    requestAnimationFrame(() => { const last = log.lastElementChild; if (last && !empty) last.scrollIntoView({ block: "end" }); });
+    requestAnimationFrame(() => { if (!empty) log.scrollTop = log.scrollHeight; });
     const q = $("#ai-q");
     q.addEventListener("input", () => { q.style.height = "auto"; q.style.height = Math.min(q.scrollHeight, 140) + "px"; });
     q.addEventListener("keydown", e => { if (e.key === "Enter" && !e.shiftKey && matchMedia("(pointer:fine)").matches) { e.preventDefault(); $("#ai-form").requestSubmit(); } });
     $("#ai-form").onsubmit = e => { e.preventDefault(); askAI(q.value); };
-    $("#ai-file").onchange = async e => {
+    const menu = $("#ai-menu"), cam = $("#ai-cam");
+    cam.onclick = e => { e.stopPropagation(); menu.hidden = !menu.hidden; cam.setAttribute("aria-expanded", !menu.hidden); };
+    menu.addEventListener("click", e => e.stopPropagation());
+    $$(".ai-file", el).forEach(inp => inp.onchange = async e => {
+      menu.hidden = true;
       for (const f of [...e.target.files].slice(0, 3 - ai.photos.length)) { try { ai.photos.push(await shrink(f)); } catch {} }
       e.target.value = ""; const keep = q.value; renderAI(); $("#ai-q").value = keep;
-    };
+    });
+    q.addEventListener("focus", () => document.body.classList.add("ai-typing"));
+    q.addEventListener("blur", () => setTimeout(() => document.body.classList.remove("ai-typing"), 150));
     $$("[data-rm]", el).forEach(b => b.onclick = () => { ai.photos.splice(+b.dataset.rm, 1); const keep = q.value; renderAI(); $("#ai-q").value = keep; });
     $$("[data-ex]", el).forEach(b => b.onclick = () => askAI(b.dataset.ex));
     $$("[data-say]", el).forEach(b => b.onclick = () => {
@@ -694,6 +707,7 @@
   /* ---------- routing ---------- */
   function route() {
     if ("speechSynthesis" in window) speechSynthesis.cancel();
+    document.body.classList.remove("ai-mode", "ai-typing");
     const h = location.hash.replace(/^#\/?/, "");
     const [kind, arg, k2, a2] = h.split("/");
     const lv = $("#list-view"), vv = $("#video-view");
@@ -780,6 +794,7 @@
     document.addEventListener("keydown", e => { if (e.key === "Escape") closeSheets(); });
     $("#lang-btn").onclick = () => openSheet("#lang-sheet");
     $("#req-form").addEventListener("submit", sendRequest);
+    document.addEventListener("click", () => { const m = $("#ai-menu"); if (m && !m.hidden) { m.hidden = true; const c = $("#ai-cam"); if (c) c.setAttribute("aria-expanded", "false"); } });
 
     const off = () => { const o = $("#offline"); o.hidden = navigator.onLine; o.textContent = "📶  " + t("offline"); };
     addEventListener("online", off); addEventListener("offline", off); off();
