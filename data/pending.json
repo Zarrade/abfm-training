@@ -36,52 +36,1460 @@
       "lastFound": 0
     }
   },
-  "queue": [],
-  "rejected": [
-    "pOfXina3uUQ",
-    "nhcaeubedhs",
-    "je0BsLY5nZw",
-    "n1gWyBOn4OM",
-    "CdFPlD3vQ20",
-    "SPpL4bu7Bng",
-    "sWuOBu3GjHw",
-    "3TVRMfnUWhI",
-    "kuGqzVgPTso",
-    "rOPiqAf-DlI",
-    "_loONTyxmks",
-    "aCvcvjyL01E",
-    "seuWV6qTl4k",
-    "6bLZ-Fpk3Tg",
-    "GVBamXXVD30",
-    "0LtB1AAN32k",
-    "bym_AagItOc",
-    "sfHpB88lvs8",
-    "9urpPzmsxHo",
-    "nyBTkpNB0hU",
-    "iEIpEyDwotg",
-    "NIxWpqcj8t4",
-    "SQDWNdO6xE4",
-    "5N-1DIz4amg",
-    "zZkvbUARBwk",
-    "iVQVXkH_MAo",
-    "J0NFvScegbk",
-    "3ZwVOsB_vGs",
-    "M7qGBZX_GZo",
-    "6gH3xU5Mzbw",
-    "-eNBtz-_kJU",
-    "jmdOfrL4zz0",
-    "Fdy9uRvpI-E",
-    "SW6G7EostJc",
-    "EVN_tUlynHU",
-    "IKfxGbEE8lo",
-    "rwfmx5cCWdE",
-    "rLkt8_D6R-I",
-    "-opbeWvw6q0",
-    "OcIs7JePFaE",
-    "t_dSruoWQIw",
-    "xrGuelmdIQI",
-    "s8XagZQ9Suk",
-    "QvTpFOz1GTQ",
-    "jCowCVTR6VE"
-  ]
+  "queue": [
+    {
+      "yt": "pOfXina3uUQ",
+      "title": "Electrical Metal Conduit - Types and Sizes",
+      "channel": "GSH Electrical",
+      "channelUrl": "https://www.youtube.com/@GSHElectrical",
+      "published": "2026-10-18T09:00:24+00:00",
+      "duration": "",
+      "suggestedCategory": "Electrical",
+      "description": "In this video we look at the different type of steel conduit, finishes and the 4 common sizes they come in. This information is essential when training to become an electrician as part of your apprenticeship. \n\nSteel conduit comes in either a 3.75 metre or 3 metre length and sizes of 16 mm, 20 mm, 25 mm and 32 mm. \n\n== 🕐 Time Stamps - Cut to the action 🕕 == \n\n00:00 - Steel conduit types, finishes and sizes  \n00:24 - What metal conduit is used for\n01:05 - Different types of electrical metal conduit\n02:00 - Heavy-gauge and light-gauge steel conduit\n02:55 - Common metric conduit sizes\n03:45 - 1",
+      "found": "2026-10-25T09:29:04.488Z",
+      "draft": {
+        "source": "rules",
+        "summary": "Shows the different type of steel conduit, finishes and the 4 common sizes they come in. This information is essential when training to become an electrician as part of your apprenticeship.",
+        "safety": "Isolate and prove dead before any work. Only qualified staff may work near live parts.",
+        "ppe": [
+          "Insulated Gloves",
+          "Safety Glasses",
+          "Safety Shoes"
+        ],
+        "steps": [
+          "Steel conduit types, finishes and sizes",
+          "What metal conduit is used for",
+          "Different types of electrical metal conduit",
+          "Heavy-gauge and light-gauge steel conduit",
+          "Common metric conduit sizes",
+          "1"
+        ],
+        "stepsFrom": "chapters",
+        "level": "Intermediate",
+        "subject": ""
+      }
+    },
+    {
+      "yt": "nhcaeubedhs",
+      "title": "Bend Steel Conduit Like a Professional Electrician",
+      "channel": "GSH Electrical",
+      "channelUrl": "https://www.youtube.com/@GSHElectrical",
+      "published": "2026-10-11T09:00:34+00:00",
+      "duration": "",
+      "suggestedCategory": "Electrical",
+      "description": "Step by step guide on how to bend steel (metal) conduit to 90 degrees full demonstration. \n\nStudents training aid for bending 20 mm Steel (metal) Conduit to produce a 90 degree bend to the correct measurement. Includes a full demonstration on how to produce a bend using set square and a conduit bending machine so the end of the conduit to the back of the bend is at the correct measurement. \n\nHow to bend metal conduit to the correct length and to 90 degrees and how to check your bend it at 90 degrees.  \n\nElectrical UK Wiring \n\n🔵 Steel Conduit Life Hack How to Make Threading & Bending of Steel ",
+      "found": "2026-10-25T09:29:05.573Z",
+      "draft": {
+        "source": "rules",
+        "summary": "Step by step guide on how to bend steel (metal) conduit to 90 degrees full demonstration. Students training aid for bending 20 mm Steel (metal) Conduit to produce a 90 degree bend to the correct measurement.",
+        "safety": "Isolate and prove dead before any work. Only qualified staff may work near live parts.",
+        "ppe": [
+          "Insulated Gloves",
+          "Safety Glasses",
+          "Safety Shoes"
+        ],
+        "steps": [
+          "Choose the right conduit type and size for the job",
+          "Measure and mark the bend positions",
+          "Set the conduit correctly in the bender",
+          "Bend steadily to the required angle",
+          "Check the angle and measurement, then deburr the cut ends",
+          "Fix the conduit with saddles at the correct spacing"
+        ],
+        "stepsFrom": "topic",
+        "level": "Intermediate",
+        "subject": ""
+      }
+    },
+    {
+      "yt": "je0BsLY5nZw",
+      "title": "How a CPU Turns 1s and 0s Into Everything You See",
+      "channel": "The Engineering Mindset",
+      "channelUrl": "https://www.youtube.com/@EngineeringMindset",
+      "published": "2026-10-05T15:00:22+00:00",
+      "duration": "",
+      "suggestedCategory": "",
+      "description": "How do CPUs actually work? Design PCB's with Altium:  http://altium.com/yt/engineeringmindset\nHow does a CPU use billions of microscopic transistors to perform calculations and run software? In this video, we work from individual MOSFETs through logic gates, binary arithmetic and full adders to the ALU and CPU core.\nSee how processors fetch and execute instructions, how registers and L1, L2 and L3 cache work, how data moves between the CPU, RAM and storage, and why modern CPUs use multiple cores.\n\nWe also compare CPUs and GPUs, explain why GPUs contain billions of transistors, and show why the",
+      "found": "2026-10-25T09:28:58.969Z",
+      "draft": {
+        "source": "rules",
+        "summary": "How does a CPU use billions of microscopic transistors to perform calculations and run software? In this video, we work from individual MOSFETs through logic gates, binary arithmetic and full adders to the ALU and CPU core.",
+        "safety": "Check the area is safe, use the right tools and stop work if anything feels unsafe.",
+        "ppe": [
+          "Safety Glasses",
+          "Work Gloves",
+          "Safety Shoes"
+        ],
+        "steps": [
+          "Read the job card and get the right tools and PPE",
+          "Make the area safe and put up barriers or signs",
+          "Carry out the work as shown in the video",
+          "Check your work",
+          "Clean up the area",
+          "Report the job complete"
+        ],
+        "stepsFrom": "general",
+        "level": "Advanced",
+        "subject": ""
+      }
+    },
+    {
+      "yt": "n1gWyBOn4OM",
+      "title": "Lockout/Tagout (LOTO) Safety Training Video",
+      "channel": "",
+      "published": "",
+      "duration": "",
+      "suggestedCategory": "Health & Safety",
+      "description": "Suggested starter video (found by research). Preview it before approving.",
+      "found": "2026-10-25T10:06:40Z",
+      "starter": true,
+      "draft": {
+        "source": "rules",
+        "summary": "",
+        "safety": "Isolate the energy source, lock and tag it, and prove it is dead before you touch anything.",
+        "ppe": [
+          "Safety Glasses",
+          "Insulated Gloves",
+          "Safety Shoes"
+        ],
+        "steps": [
+          "Tell everyone affected that the equipment will be shut down",
+          "Switch the equipment off using its normal controls",
+          "Isolate every energy source: electrical, pressure, gravity, springs",
+          "Fit your own lock and tag to each isolation point",
+          "Release or block any stored energy",
+          "Try to start it and prove dead before starting work"
+        ],
+        "stepsFrom": "topic",
+        "level": "Intermediate",
+        "subject": ""
+      }
+    },
+    {
+      "yt": "CdFPlD3vQ20",
+      "title": "Lockout/Tagout Procedures: How to Lock Out a Machine",
+      "channel": "",
+      "published": "",
+      "duration": "",
+      "suggestedCategory": "Health & Safety",
+      "description": "Suggested starter video (found by research). Preview it before approving.",
+      "found": "2026-10-25T10:06:40Z",
+      "starter": true,
+      "draft": {
+        "source": "rules",
+        "summary": "",
+        "safety": "Isolate the energy source, lock and tag it, and prove it is dead before you touch anything.",
+        "ppe": [
+          "Safety Glasses",
+          "Insulated Gloves",
+          "Safety Shoes"
+        ],
+        "steps": [
+          "Tell everyone affected that the equipment will be shut down",
+          "Switch the equipment off using its normal controls",
+          "Isolate every energy source: electrical, pressure, gravity, springs",
+          "Fit your own lock and tag to each isolation point",
+          "Release or block any stored energy",
+          "Try to start it and prove dead before starting work"
+        ],
+        "stepsFrom": "topic",
+        "level": "Intermediate",
+        "subject": ""
+      }
+    },
+    {
+      "yt": "SPpL4bu7Bng",
+      "title": "Ladder Safety Training: Stepladder Safety",
+      "channel": "",
+      "published": "",
+      "duration": "",
+      "suggestedCategory": "Health & Safety",
+      "description": "Suggested starter video (found by research). Preview it before approving.",
+      "found": "2026-10-25T10:06:40Z",
+      "starter": true,
+      "draft": {
+        "source": "rules",
+        "summary": "",
+        "safety": "Inspect the ladder first, keep three points of contact and never stand on the top rungs.",
+        "ppe": [
+          "Hard Hat",
+          "Safety Shoes",
+          "Work Gloves"
+        ],
+        "steps": [
+          "Inspect feet, steps, spreaders and labels; tag out a damaged ladder",
+          "Open the ladder fully and lock the spreaders",
+          "Set it on firm, level ground close to the work",
+          "Face the ladder and keep three points of contact",
+          "Don't stand on the top two steps or over-reach — move the ladder",
+          "Carry tools in a belt, not in your hands"
+        ],
+        "stepsFrom": "topic",
+        "level": "Intermediate",
+        "subject": ""
+      }
+    },
+    {
+      "yt": "sWuOBu3GjHw",
+      "title": "Single and Extension Ladder Safety",
+      "channel": "",
+      "published": "",
+      "duration": "",
+      "suggestedCategory": "Health & Safety",
+      "description": "Suggested starter video (found by research). Preview it before approving.",
+      "found": "2026-10-25T10:06:40Z",
+      "starter": true,
+      "draft": {
+        "source": "rules",
+        "summary": "",
+        "safety": "Inspect the ladder first, keep three points of contact and never stand on the top rungs.",
+        "ppe": [
+          "Hard Hat",
+          "Safety Shoes",
+          "Work Gloves"
+        ],
+        "steps": [
+          "Inspect rails, rungs, feet and locks before use",
+          "Set it on firm ground at a 1-in-4 angle (1 m out for every 4 m up)",
+          "Extend it at least 1 metre above the landing point",
+          "Tie it off or have someone foot the ladder",
+          "Face the ladder and keep three points of contact",
+          "Keep your belt buckle between the rails — move the ladder rather than lean"
+        ],
+        "stepsFrom": "topic",
+        "level": "Intermediate",
+        "subject": ""
+      }
+    },
+    {
+      "yt": "3TVRMfnUWhI",
+      "title": "Werner Ladder - Climbing Pro Ladder Safety Training",
+      "channel": "",
+      "published": "",
+      "duration": "",
+      "suggestedCategory": "Health & Safety",
+      "description": "Suggested starter video (found by research). Preview it before approving.",
+      "found": "2026-10-25T10:06:40Z",
+      "starter": true,
+      "draft": {
+        "source": "rules",
+        "summary": "",
+        "safety": "Inspect the ladder first, keep three points of contact and never stand on the top rungs.",
+        "ppe": [
+          "Hard Hat",
+          "Safety Shoes",
+          "Work Gloves"
+        ],
+        "steps": [
+          "Inspect rails, rungs, feet and locks before use",
+          "Set it on firm ground at a 1-in-4 angle (1 m out for every 4 m up)",
+          "Extend it at least 1 metre above the landing point",
+          "Tie it off or have someone foot the ladder",
+          "Face the ladder and keep three points of contact",
+          "Keep your belt buckle between the rails — move the ladder rather than lean"
+        ],
+        "stepsFrom": "topic",
+        "level": "Intermediate",
+        "subject": ""
+      }
+    },
+    {
+      "yt": "kuGqzVgPTso",
+      "title": "Heat Illness Prevention: Heat Stress Safety for Workers",
+      "channel": "",
+      "published": "",
+      "duration": "",
+      "suggestedCategory": "Health & Safety",
+      "description": "Suggested starter video (found by research). Preview it before approving.",
+      "found": "2026-10-25T10:06:40Z",
+      "starter": true,
+      "draft": {
+        "source": "rules",
+        "summary": "",
+        "safety": "Drink water often, take breaks in the shade and report dizziness or headache at once.",
+        "ppe": [
+          "Cooling Vest",
+          "Hard Hat",
+          "Sun Protection"
+        ],
+        "steps": [
+          "Drink water every 15–20 minutes, even if you are not thirsty",
+          "Take regular breaks in shade or a cool area",
+          "Plan heavy work for cooler hours and follow the midday break",
+          "Know the signs: headache, dizziness, nausea, heavy or no sweating",
+          "If someone is unwell, move them to shade, cool them and call 998",
+          "Watch your colleagues — heat stroke can make people confused"
+        ],
+        "stepsFrom": "topic",
+        "level": "Intermediate",
+        "subject": ""
+      }
+    },
+    {
+      "yt": "rOPiqAf-DlI",
+      "title": "How to Recognize and Prevent Heat-Related Illnesses",
+      "channel": "",
+      "published": "",
+      "duration": "",
+      "suggestedCategory": "Health & Safety",
+      "description": "Suggested starter video (found by research). Preview it before approving.",
+      "found": "2026-10-25T10:06:40Z",
+      "starter": true,
+      "draft": {
+        "source": "rules",
+        "summary": "",
+        "safety": "Follow the site's permit and safety rules, and stop work if anything feels unsafe.",
+        "ppe": [
+          "Hard Hat",
+          "Safety Shoes",
+          "Hi-Vis Vest"
+        ],
+        "steps": [
+          "Drink water every 15–20 minutes, even if you are not thirsty",
+          "Take regular breaks in shade or a cool area",
+          "Plan heavy work for cooler hours and follow the midday break",
+          "Know the signs: headache, dizziness, nausea, heavy or no sweating",
+          "If someone is unwell, move them to shade, cool them and call 998",
+          "Watch your colleagues — heat stroke can make people confused"
+        ],
+        "stepsFrom": "topic",
+        "level": "Intermediate",
+        "subject": ""
+      }
+    },
+    {
+      "yt": "_loONTyxmks",
+      "title": "Confined Space Entry: Safe Work Practices",
+      "channel": "",
+      "published": "",
+      "duration": "",
+      "suggestedCategory": "Health & Safety",
+      "description": "Suggested starter video (found by research). Preview it before approving.",
+      "found": "2026-10-25T10:06:40Z",
+      "starter": true,
+      "draft": {
+        "source": "rules",
+        "summary": "",
+        "safety": "Never enter without a permit, gas test, standby person and rescue plan.",
+        "ppe": [
+          "Gas Detector",
+          "Full-Body Harness",
+          "Respirator",
+          "Hard Hat"
+        ],
+        "steps": [
+          "Get a confined space entry permit before anyone enters",
+          "Isolate pipes, power and moving parts connected to the space",
+          "Ventilate, then test the air for oxygen, flammable and toxic gas",
+          "Put a trained standby person at the entrance at all times",
+          "Keep testing the air while people are inside",
+          "Have the rescue plan and equipment ready — never enter to rescue without it"
+        ],
+        "stepsFrom": "topic",
+        "level": "Intermediate",
+        "subject": ""
+      }
+    },
+    {
+      "yt": "aCvcvjyL01E",
+      "title": "Permit-Required Confined Space Safety Training",
+      "channel": "",
+      "published": "",
+      "duration": "",
+      "suggestedCategory": "Health & Safety",
+      "description": "Suggested starter video (found by research). Preview it before approving.",
+      "found": "2026-10-25T10:06:40Z",
+      "starter": true,
+      "draft": {
+        "source": "rules",
+        "summary": "",
+        "safety": "Never enter without a permit, gas test, standby person and rescue plan.",
+        "ppe": [
+          "Gas Detector",
+          "Full-Body Harness",
+          "Respirator",
+          "Hard Hat"
+        ],
+        "steps": [
+          "Get a confined space entry permit before anyone enters",
+          "Isolate pipes, power and moving parts connected to the space",
+          "Ventilate, then test the air for oxygen, flammable and toxic gas",
+          "Put a trained standby person at the entrance at all times",
+          "Keep testing the air while people are inside",
+          "Have the rescue plan and equipment ready — never enter to rescue without it"
+        ],
+        "stepsFrom": "topic",
+        "level": "Intermediate",
+        "subject": ""
+      }
+    },
+    {
+      "yt": "seuWV6qTl4k",
+      "title": "How to Inspect and Don a Full Body Harness (FallTech)",
+      "channel": "",
+      "published": "",
+      "duration": "",
+      "suggestedCategory": "Health & Safety",
+      "description": "Suggested starter video (found by research). Preview it before approving.",
+      "found": "2026-10-25T10:06:40Z",
+      "starter": true,
+      "draft": {
+        "source": "rules",
+        "summary": "",
+        "safety": "Wear a full-body harness clipped to a rated anchor point, and inspect it before every use.",
+        "ppe": [
+          "Full-Body Harness",
+          "Hard Hat",
+          "Safety Shoes"
+        ],
+        "steps": [
+          "Inspect webbing, stitching, buckles, D-ring and label before use",
+          "Hold the harness by the back D-ring and shake it so straps fall into place",
+          "Put on the shoulder straps; the D-ring sits between your shoulder blades",
+          "Connect and tighten the leg straps — a flat hand should just fit under",
+          "Fasten the chest strap across the middle of your chest",
+          "Clip the lanyard to a rated anchor point above your work"
+        ],
+        "stepsFrom": "topic",
+        "level": "Intermediate",
+        "subject": ""
+      }
+    },
+    {
+      "yt": "6bLZ-Fpk3Tg",
+      "title": "How to Properly Inspect and Don a Full Body Harness",
+      "channel": "",
+      "published": "",
+      "duration": "",
+      "suggestedCategory": "Health & Safety",
+      "description": "Suggested starter video (found by research). Preview it before approving.",
+      "found": "2026-10-25T10:06:40Z",
+      "starter": true,
+      "draft": {
+        "source": "rules",
+        "summary": "",
+        "safety": "Wear a full-body harness clipped to a rated anchor point, and inspect it before every use.",
+        "ppe": [
+          "Full-Body Harness",
+          "Hard Hat",
+          "Safety Shoes"
+        ],
+        "steps": [
+          "Inspect webbing, stitching, buckles, D-ring and label before use",
+          "Hold the harness by the back D-ring and shake it so straps fall into place",
+          "Put on the shoulder straps; the D-ring sits between your shoulder blades",
+          "Connect and tighten the leg straps — a flat hand should just fit under",
+          "Fasten the chest strap across the middle of your chest",
+          "Clip the lanyard to a rated anchor point above your work"
+        ],
+        "stepsFrom": "topic",
+        "level": "Intermediate",
+        "subject": ""
+      }
+    },
+    {
+      "yt": "GVBamXXVD30",
+      "title": "How to Use a Fire Extinguisher",
+      "channel": "",
+      "published": "",
+      "duration": "",
+      "suggestedCategory": "Fire Systems",
+      "description": "Suggested starter video (found by research). Preview it before approving.",
+      "found": "2026-10-25T10:06:40Z",
+      "starter": true,
+      "draft": {
+        "source": "rules",
+        "summary": "",
+        "safety": "Inform the building and the alarm monitoring company before testing, and never leave a system disabled.",
+        "ppe": [
+          "Safety Glasses",
+          "Work Gloves",
+          "Safety Shoes"
+        ],
+        "steps": [
+          "Raise the alarm and make sure you have a clear way out",
+          "Choose the right extinguisher for the fire type",
+          "Pull the pin",
+          "Aim the nozzle at the base of the fire",
+          "Squeeze the handle",
+          "Sweep from side to side until the fire is out — then back away"
+        ],
+        "stepsFrom": "topic",
+        "level": "Beginner",
+        "subject": ""
+      }
+    },
+    {
+      "yt": "0LtB1AAN32k",
+      "title": "How to Use a Fire Extinguisher: The PASS Method",
+      "channel": "",
+      "published": "",
+      "duration": "",
+      "suggestedCategory": "Fire Systems",
+      "description": "Suggested starter video (found by research). Preview it before approving.",
+      "found": "2026-10-25T10:06:40Z",
+      "starter": true,
+      "draft": {
+        "source": "rules",
+        "summary": "",
+        "safety": "Inform the building and the alarm monitoring company before testing, and never leave a system disabled.",
+        "ppe": [
+          "Safety Glasses",
+          "Work Gloves",
+          "Safety Shoes"
+        ],
+        "steps": [
+          "Raise the alarm and make sure you have a clear way out",
+          "Choose the right extinguisher for the fire type",
+          "Pull the pin",
+          "Aim the nozzle at the base of the fire",
+          "Squeeze the handle",
+          "Sweep from side to side until the fire is out — then back away"
+        ],
+        "stepsFrom": "topic",
+        "level": "Beginner",
+        "subject": ""
+      }
+    },
+    {
+      "yt": "bym_AagItOc",
+      "title": "Fire Sprinkler Systems: Wet, Dry, Pre-Action, Deluge",
+      "channel": "",
+      "published": "",
+      "duration": "",
+      "suggestedCategory": "Fire Systems",
+      "description": "Suggested starter video (found by research). Preview it before approving.",
+      "found": "2026-10-25T10:06:40Z",
+      "starter": true,
+      "draft": {
+        "source": "rules",
+        "summary": "",
+        "safety": "Inform the building and the alarm monitoring company before testing, and never leave a system disabled.",
+        "ppe": [
+          "Safety Glasses",
+          "Work Gloves",
+          "Safety Shoes"
+        ],
+        "steps": [
+          "Wet pipe systems hold water in the pipes and discharge as soon as a head opens",
+          "Dry pipe systems hold air and are used where pipes could freeze",
+          "Pre-action systems need a detector signal before water enters the pipes",
+          "Deluge systems have open heads and discharge everywhere at once",
+          "Know the control valve for your area and keep it open and secured",
+          "Never paint, cover or hang things from sprinkler heads"
+        ],
+        "stepsFrom": "topic",
+        "level": "Intermediate",
+        "subject": ""
+      }
+    },
+    {
+      "yt": "sfHpB88lvs8",
+      "title": "Wet Pipe Fire Sprinkler Systems",
+      "channel": "",
+      "published": "",
+      "duration": "",
+      "suggestedCategory": "Fire Systems",
+      "description": "Suggested starter video (found by research). Preview it before approving.",
+      "found": "2026-10-25T10:06:40Z",
+      "starter": true,
+      "draft": {
+        "source": "rules",
+        "summary": "",
+        "safety": "Inform the building and the alarm monitoring company before testing, and never leave a system disabled.",
+        "ppe": [
+          "Safety Glasses",
+          "Work Gloves",
+          "Safety Shoes"
+        ],
+        "steps": [
+          "Wet pipe systems hold water in the pipes and discharge as soon as a head opens",
+          "Dry pipe systems hold air and are used where pipes could freeze",
+          "Pre-action systems need a detector signal before water enters the pipes",
+          "Deluge systems have open heads and discharge everywhere at once",
+          "Know the control valve for your area and keep it open and secured",
+          "Never paint, cover or hang things from sprinkler heads"
+        ],
+        "stepsFrom": "topic",
+        "level": "Intermediate",
+        "subject": ""
+      }
+    },
+    {
+      "yt": "9urpPzmsxHo",
+      "title": "Fire Sprinkler System: Wet Alarm Check Valve Explained",
+      "channel": "",
+      "published": "",
+      "duration": "",
+      "suggestedCategory": "Fire Systems",
+      "description": "Suggested starter video (found by research). Preview it before approving.",
+      "found": "2026-10-25T10:06:40Z",
+      "starter": true,
+      "draft": {
+        "source": "rules",
+        "summary": "",
+        "safety": "Inform the building and the alarm monitoring company before testing, and never leave a system disabled.",
+        "ppe": [
+          "Safety Glasses",
+          "Work Gloves",
+          "Safety Shoes"
+        ],
+        "steps": [
+          "Tell the building and the monitoring company before testing",
+          "Check the water pressure gauges above and below the valve",
+          "Open the inspector's test or alarm test valve",
+          "Confirm the water motor gong rings and the panel shows the flow alarm",
+          "Close the test valve and let the system settle back to normal pressure",
+          "Reset the panel and record the results"
+        ],
+        "stepsFrom": "topic",
+        "level": "Beginner",
+        "subject": ""
+      }
+    },
+    {
+      "yt": "nyBTkpNB0hU",
+      "title": "Fire Alarm Control Panel Basics",
+      "channel": "",
+      "published": "",
+      "duration": "",
+      "suggestedCategory": "Fire Systems",
+      "description": "Suggested starter video (found by research). Preview it before approving.",
+      "found": "2026-10-25T10:06:40Z",
+      "starter": true,
+      "draft": {
+        "source": "rules",
+        "summary": "",
+        "safety": "Inform the building and the alarm monitoring company before testing, and never leave a system disabled.",
+        "ppe": [
+          "Safety Glasses",
+          "Work Gloves",
+          "Safety Shoes"
+        ],
+        "steps": [
+          "Check the panel shows 'normal' with no faults or disablements",
+          "Learn the indicators: fire, fault, disabled, power and silence",
+          "Use the access key or code only if you are authorised",
+          "Inform the monitoring company before any test",
+          "Acknowledge, silence and reset only as the procedure says",
+          "Record every event and fault in the log book"
+        ],
+        "stepsFrom": "topic",
+        "level": "Beginner",
+        "subject": ""
+      }
+    },
+    {
+      "yt": "iEIpEyDwotg",
+      "title": "Conventional vs Addressable Fire Alarm",
+      "channel": "",
+      "published": "",
+      "duration": "",
+      "suggestedCategory": "Fire Systems",
+      "description": "Suggested starter video (found by research). Preview it before approving.",
+      "found": "2026-10-25T10:06:40Z",
+      "starter": true,
+      "draft": {
+        "source": "rules",
+        "summary": "",
+        "safety": "Inform the building and the alarm monitoring company before testing, and never leave a system disabled.",
+        "ppe": [
+          "Safety Glasses",
+          "Work Gloves",
+          "Safety Shoes"
+        ],
+        "steps": [
+          "Conventional systems group detectors into zones — the panel shows the zone",
+          "Addressable systems give every device its own address — the panel shows the exact device",
+          "Find the device location from the panel display before going to site",
+          "Inform the monitoring company before testing or isolating any device",
+          "Never leave devices or zones disabled after work",
+          "Record faults and tests in the fire alarm log book"
+        ],
+        "stepsFrom": "topic",
+        "level": "Intermediate",
+        "subject": ""
+      }
+    },
+    {
+      "yt": "NIxWpqcj8t4",
+      "title": "Addressable Fire Alarms",
+      "channel": "",
+      "published": "",
+      "duration": "",
+      "suggestedCategory": "Fire Systems",
+      "description": "Suggested starter video (found by research). Preview it before approving.",
+      "found": "2026-10-25T10:06:40Z",
+      "starter": true,
+      "draft": {
+        "source": "rules",
+        "summary": "",
+        "safety": "Inform the building and the alarm monitoring company before testing, and never leave a system disabled.",
+        "ppe": [
+          "Safety Glasses",
+          "Work Gloves",
+          "Safety Shoes"
+        ],
+        "steps": [
+          "Conventional systems group detectors into zones — the panel shows the zone",
+          "Addressable systems give every device its own address — the panel shows the exact device",
+          "Find the device location from the panel display before going to site",
+          "Inform the monitoring company before testing or isolating any device",
+          "Never leave devices or zones disabled after work",
+          "Record faults and tests in the fire alarm log book"
+        ],
+        "stepsFrom": "topic",
+        "level": "Intermediate",
+        "subject": ""
+      }
+    },
+    {
+      "yt": "SQDWNdO6xE4",
+      "title": "How Do Smoke Detectors Work?",
+      "channel": "",
+      "published": "",
+      "duration": "",
+      "suggestedCategory": "Fire Systems",
+      "description": "Suggested starter video (found by research). Preview it before approving.",
+      "found": "2026-10-25T10:06:40Z",
+      "starter": true,
+      "draft": {
+        "source": "rules",
+        "summary": "",
+        "safety": "Inform the building and monitoring company before testing, and never leave a system disabled.",
+        "ppe": [
+          "Safety Glasses",
+          "Work Gloves",
+          "Safety Shoes"
+        ],
+        "steps": [
+          "Optical detectors see smoke scattering a light beam",
+          "Ionisation detectors react to tiny particles that change a small current",
+          "Heat detectors are used where smoke detectors would false-alarm, like kitchens",
+          "Inform the monitoring company before testing detectors",
+          "Test with approved test smoke, not a flame",
+          "Keep detectors clean and never cover them during work without a permit"
+        ],
+        "stepsFrom": "topic",
+        "level": "Intermediate",
+        "subject": ""
+      }
+    },
+    {
+      "yt": "5N-1DIz4amg",
+      "title": "NADCA's Guide to Proper Duct Cleaning",
+      "channel": "",
+      "published": "",
+      "duration": "",
+      "suggestedCategory": "Duct Cleaning",
+      "description": "Suggested starter video (found by research). Preview it before approving.",
+      "found": "2026-10-25T10:06:40Z",
+      "starter": true,
+      "draft": {
+        "source": "rules",
+        "summary": "",
+        "safety": "Isolate the fans before opening ducts, and watch for sharp edges and grease fire risk.",
+        "ppe": [
+          "Cut-Resistant Gloves",
+          "Dust Mask",
+          "Safety Goggles"
+        ],
+        "steps": [
+          "Isolate the air handling unit and fans before opening ducts",
+          "Protect the area and set up negative air (HEPA vacuum) on the duct",
+          "Open access panels and inspect; take 'before' photos",
+          "Loosen dirt with brushes or air whips while the vacuum runs",
+          "Clean grilles, diffusers and coils; close and seal access panels",
+          "Take 'after' photos, restart the system and record the work"
+        ],
+        "stepsFrom": "topic",
+        "level": "Intermediate",
+        "subject": ""
+      }
+    },
+    {
+      "yt": "zZkvbUARBwk",
+      "title": "NADCA HVAC Duct Cleaning Guidelines Explained",
+      "channel": "",
+      "published": "",
+      "duration": "",
+      "suggestedCategory": "Duct Cleaning",
+      "description": "Suggested starter video (found by research). Preview it before approving.",
+      "found": "2026-10-25T10:06:40Z",
+      "starter": true,
+      "draft": {
+        "source": "rules",
+        "summary": "",
+        "safety": "Isolate the fans before opening ducts, and watch for sharp edges and grease fire risk.",
+        "ppe": [
+          "Cut-Resistant Gloves",
+          "Dust Mask",
+          "Safety Goggles"
+        ],
+        "steps": [
+          "Isolate the air handling unit and fans before opening ducts",
+          "Protect the area and set up negative air (HEPA vacuum) on the duct",
+          "Open access panels and inspect; take 'before' photos",
+          "Loosen dirt with brushes or air whips while the vacuum runs",
+          "Clean grilles, diffusers and coils; close and seal access panels",
+          "Take 'after' photos, restart the system and record the work"
+        ],
+        "stepsFrom": "topic",
+        "level": "Beginner",
+        "subject": ""
+      }
+    },
+    {
+      "yt": "iVQVXkH_MAo",
+      "title": "Air Duct Cleaning Process Explained",
+      "channel": "",
+      "published": "",
+      "duration": "",
+      "suggestedCategory": "Duct Cleaning",
+      "description": "Suggested starter video (found by research). Preview it before approving.",
+      "found": "2026-10-25T10:06:40Z",
+      "starter": true,
+      "draft": {
+        "source": "rules",
+        "summary": "",
+        "safety": "Isolate the fans before opening ducts, and watch for sharp edges and grease fire risk.",
+        "ppe": [
+          "Cut-Resistant Gloves",
+          "Dust Mask",
+          "Safety Goggles"
+        ],
+        "steps": [
+          "Isolate the air handling unit and fans before opening ducts",
+          "Protect the area and set up negative air (HEPA vacuum) on the duct",
+          "Open access panels and inspect; take 'before' photos",
+          "Loosen dirt with brushes or air whips while the vacuum runs",
+          "Clean grilles, diffusers and coils; close and seal access panels",
+          "Take 'after' photos, restart the system and record the work"
+        ],
+        "stepsFrom": "topic",
+        "level": "Beginner",
+        "subject": ""
+      }
+    },
+    {
+      "yt": "J0NFvScegbk",
+      "title": "Commercial Duct Cleaning in an Office Setting",
+      "channel": "",
+      "published": "",
+      "duration": "",
+      "suggestedCategory": "Duct Cleaning",
+      "description": "Suggested starter video (found by research). Preview it before approving.",
+      "found": "2026-10-25T10:06:40Z",
+      "starter": true,
+      "draft": {
+        "source": "rules",
+        "summary": "",
+        "safety": "Isolate the fans before opening ducts, and watch for sharp edges and grease fire risk.",
+        "ppe": [
+          "Cut-Resistant Gloves",
+          "Dust Mask",
+          "Safety Goggles"
+        ],
+        "steps": [
+          "Isolate the air handling unit and fans before opening ducts",
+          "Protect the area and set up negative air (HEPA vacuum) on the duct",
+          "Open access panels and inspect; take 'before' photos",
+          "Loosen dirt with brushes or air whips while the vacuum runs",
+          "Clean grilles, diffusers and coils; close and seal access panels",
+          "Take 'after' photos, restart the system and record the work"
+        ],
+        "stepsFrom": "topic",
+        "level": "Intermediate",
+        "subject": ""
+      }
+    },
+    {
+      "yt": "3ZwVOsB_vGs",
+      "title": "Water Storage Tank Cleaning for Water Treatment Plants",
+      "channel": "",
+      "published": "",
+      "duration": "",
+      "suggestedCategory": "Water Tank Cleaning",
+      "description": "Suggested starter video (found by research). Preview it before approving.",
+      "found": "2026-10-25T10:06:40Z",
+      "starter": true,
+      "draft": {
+        "source": "rules",
+        "summary": "",
+        "safety": "Tank entry is confined-space work: permit, gas test, ventilation and a standby person are required.",
+        "ppe": [
+          "Gas Detector",
+          "Respirator",
+          "Chemical Gloves",
+          "Rubber Boots"
+        ],
+        "steps": [
+          "Get the permit and inform the building; isolate and drain the tank",
+          "Ventilate and test the air before entry — it is a confined space",
+          "Remove sludge and scrub walls, floor and roof",
+          "Rinse and drain the dirty water away",
+          "Disinfect with chlorine at the specified strength and contact time",
+          "Flush, refill, and take a water sample for testing"
+        ],
+        "stepsFrom": "topic",
+        "level": "Intermediate",
+        "subject": ""
+      }
+    },
+    {
+      "yt": "M7qGBZX_GZo",
+      "title": "Water Storage Tank Disinfection & Safety",
+      "channel": "",
+      "published": "",
+      "duration": "",
+      "suggestedCategory": "Water Tank Cleaning",
+      "description": "Suggested starter video (found by research). Preview it before approving.",
+      "found": "2026-10-25T10:06:40Z",
+      "starter": true,
+      "draft": {
+        "source": "rules",
+        "summary": "",
+        "safety": "Read the chemical's safety data sheet, ventilate the area and never mix chemicals.",
+        "ppe": [
+          "Chemical Gloves",
+          "Safety Goggles",
+          "Respirator"
+        ],
+        "steps": [
+          "Get the permit and inform the building; isolate and drain the tank",
+          "Ventilate and test the air before entry — it is a confined space",
+          "Remove sludge and scrub walls, floor and roof",
+          "Rinse and drain the dirty water away",
+          "Disinfect with chlorine at the specified strength and contact time",
+          "Flush, refill, and take a water sample for testing"
+        ],
+        "stepsFrom": "topic",
+        "level": "Intermediate",
+        "subject": ""
+      }
+    },
+    {
+      "yt": "6gH3xU5Mzbw",
+      "title": "Professional Water Tank Cleaning",
+      "channel": "",
+      "published": "",
+      "duration": "",
+      "suggestedCategory": "Water Tank Cleaning",
+      "description": "Suggested starter video (found by research). Preview it before approving.",
+      "found": "2026-10-25T10:06:40Z",
+      "starter": true,
+      "draft": {
+        "source": "rules",
+        "summary": "",
+        "safety": "Tank entry is confined-space work: permit, gas test, ventilation and a standby person are required.",
+        "ppe": [
+          "Gas Detector",
+          "Respirator",
+          "Chemical Gloves",
+          "Rubber Boots"
+        ],
+        "steps": [
+          "Get the permit and inform the building; isolate and drain the tank",
+          "Ventilate and test the air before entry — it is a confined space",
+          "Remove sludge and scrub walls, floor and roof",
+          "Rinse and drain the dirty water away",
+          "Disinfect with chlorine at the specified strength and contact time",
+          "Flush, refill, and take a water sample for testing"
+        ],
+        "stepsFrom": "topic",
+        "level": "Intermediate",
+        "subject": ""
+      }
+    },
+    {
+      "yt": "-eNBtz-_kJU",
+      "title": "Potable Water Tank Cleaning",
+      "channel": "",
+      "published": "",
+      "duration": "",
+      "suggestedCategory": "Water Tank Cleaning",
+      "description": "Suggested starter video (found by research). Preview it before approving.",
+      "found": "2026-10-25T10:06:40Z",
+      "starter": true,
+      "draft": {
+        "source": "rules",
+        "summary": "",
+        "safety": "Tank entry is confined-space work: permit, gas test, ventilation and a standby person are required.",
+        "ppe": [
+          "Gas Detector",
+          "Respirator",
+          "Chemical Gloves",
+          "Rubber Boots"
+        ],
+        "steps": [
+          "Get the permit and inform the building; isolate and drain the tank",
+          "Ventilate and test the air before entry — it is a confined space",
+          "Remove sludge and scrub walls, floor and roof",
+          "Rinse and drain the dirty water away",
+          "Disinfect with chlorine at the specified strength and contact time",
+          "Flush, refill, and take a water sample for testing"
+        ],
+        "stepsFrom": "topic",
+        "level": "Intermediate",
+        "subject": ""
+      }
+    },
+    {
+      "yt": "jmdOfrL4zz0",
+      "title": "How to Clean and Maintain a Plastic Water Tank",
+      "channel": "",
+      "published": "",
+      "duration": "",
+      "suggestedCategory": "Water Tank Cleaning",
+      "description": "Suggested starter video (found by research). Preview it before approving.",
+      "found": "2026-10-25T10:06:40Z",
+      "starter": true,
+      "draft": {
+        "source": "rules",
+        "summary": "",
+        "safety": "Tank entry is confined-space work: permit, gas test, ventilation and a standby person are required.",
+        "ppe": [
+          "Gas Detector",
+          "Respirator",
+          "Chemical Gloves",
+          "Rubber Boots"
+        ],
+        "steps": [
+          "Get the permit and inform the building; isolate and drain the tank",
+          "Ventilate and test the air before entry — it is a confined space",
+          "Remove sludge and scrub walls, floor and roof",
+          "Rinse and drain the dirty water away",
+          "Disinfect with chlorine at the specified strength and contact time",
+          "Flush, refill, and take a water sample for testing"
+        ],
+        "stepsFrom": "topic",
+        "level": "Intermediate",
+        "subject": ""
+      }
+    },
+    {
+      "yt": "Fdy9uRvpI-E",
+      "title": "How to Repair Drywall",
+      "channel": "",
+      "published": "",
+      "duration": "",
+      "suggestedCategory": "Civil Jobs",
+      "description": "Suggested starter video (found by research). Preview it before approving.",
+      "found": "2026-10-25T10:06:40Z",
+      "starter": true,
+      "draft": {
+        "source": "rules",
+        "summary": "",
+        "safety": "Keep the area barricaded, use tools with guards and lift heavy materials with help.",
+        "ppe": [
+          "Hard Hat",
+          "Safety Shoes",
+          "Work Gloves",
+          "Safety Glasses"
+        ],
+        "steps": [
+          "Cut out the damaged area into a neat square or rectangle",
+          "Fit backing or a patch piece and fix it in place",
+          "Tape the joints with paper or mesh tape",
+          "Apply 2–3 thin coats of joint compound, feathering the edges",
+          "Sand smooth when dry and wipe off the dust",
+          "Prime and paint to match"
+        ],
+        "stepsFrom": "topic",
+        "level": "Intermediate",
+        "subject": ""
+      }
+    },
+    {
+      "yt": "SW6G7EostJc",
+      "title": "How to Fix / Repair Drywall Holes Like a Pro",
+      "channel": "",
+      "published": "",
+      "duration": "",
+      "suggestedCategory": "Civil Jobs",
+      "description": "Suggested starter video (found by research). Preview it before approving.",
+      "found": "2026-10-25T10:06:40Z",
+      "starter": true,
+      "draft": {
+        "source": "rules",
+        "summary": "",
+        "safety": "Keep the area barricaded, use tools with guards and lift heavy materials with help.",
+        "ppe": [
+          "Hard Hat",
+          "Safety Shoes",
+          "Work Gloves",
+          "Safety Glasses"
+        ],
+        "steps": [
+          "Cut out the damaged area into a neat square or rectangle",
+          "Fit backing or a patch piece and fix it in place",
+          "Tape the joints with paper or mesh tape",
+          "Apply 2–3 thin coats of joint compound, feathering the edges",
+          "Sand smooth when dry and wipe off the dust",
+          "Prime and paint to match"
+        ],
+        "stepsFrom": "topic",
+        "level": "Intermediate",
+        "subject": ""
+      }
+    },
+    {
+      "yt": "EVN_tUlynHU",
+      "title": "How to Patch Big Holes in Drywall (No Studs Needed)",
+      "channel": "",
+      "published": "",
+      "duration": "",
+      "suggestedCategory": "Civil Jobs",
+      "description": "Suggested starter video (found by research). Preview it before approving.",
+      "found": "2026-10-25T10:06:40Z",
+      "starter": true,
+      "draft": {
+        "source": "rules",
+        "summary": "",
+        "safety": "Keep the area barricaded, use tools with guards and lift heavy materials with help.",
+        "ppe": [
+          "Hard Hat",
+          "Safety Shoes",
+          "Work Gloves",
+          "Safety Glasses"
+        ],
+        "steps": [
+          "Cut out the damaged area into a neat square or rectangle",
+          "Fit backing or a patch piece and fix it in place",
+          "Tape the joints with paper or mesh tape",
+          "Apply 2–3 thin coats of joint compound, feathering the edges",
+          "Sand smooth when dry and wipe off the dust",
+          "Prime and paint to match"
+        ],
+        "stepsFrom": "topic",
+        "level": "Intermediate",
+        "subject": ""
+      }
+    },
+    {
+      "yt": "IKfxGbEE8lo",
+      "title": "Complete Drywall Taping Process for Remodels",
+      "channel": "",
+      "published": "",
+      "duration": "",
+      "suggestedCategory": "Civil Jobs",
+      "description": "Suggested starter video (found by research). Preview it before approving.",
+      "found": "2026-10-25T10:06:40Z",
+      "starter": true,
+      "draft": {
+        "source": "rules",
+        "summary": "",
+        "safety": "Keep the area barricaded, use tools with guards and lift heavy materials with help.",
+        "ppe": [
+          "Hard Hat",
+          "Safety Shoes",
+          "Work Gloves",
+          "Safety Glasses"
+        ],
+        "steps": [
+          "Cut out the damaged area into a neat square or rectangle",
+          "Fit backing or a patch piece and fix it in place",
+          "Tape the joints with paper or mesh tape",
+          "Apply 2–3 thin coats of joint compound, feathering the edges",
+          "Sand smooth when dry and wipe off the dust",
+          "Prime and paint to match"
+        ],
+        "stepsFrom": "topic",
+        "level": "Intermediate",
+        "subject": ""
+      }
+    },
+    {
+      "yt": "rwfmx5cCWdE",
+      "title": "How to Waterproof a Shower Before Tiling",
+      "channel": "",
+      "published": "",
+      "duration": "",
+      "suggestedCategory": "Painting & Waterproofing",
+      "description": "Suggested starter video (found by research). Preview it before approving.",
+      "found": "2026-10-25T10:06:40Z",
+      "starter": true,
+      "draft": {
+        "source": "rules",
+        "summary": "",
+        "safety": "Ventilate the area, keep ignition sources away and protect your eyes and lungs from fumes and spray.",
+        "ppe": [
+          "Respirator",
+          "Safety Goggles",
+          "Chemical Gloves"
+        ],
+        "steps": [
+          "Clean the surface and let it dry completely",
+          "Fill cracks and gaps; seal around pipes and drains",
+          "Apply primer if the product requires it",
+          "Reinforce corners and joints with waterproofing tape or fabric",
+          "Apply two full coats, running up the walls, and let each coat cure",
+          "Flood test for 24–48 hours before tiling"
+        ],
+        "stepsFrom": "topic",
+        "level": "Intermediate",
+        "subject": ""
+      }
+    },
+    {
+      "yt": "rLkt8_D6R-I",
+      "title": "Pro Tip: How to Waterproof a Shower Before Tile Install",
+      "channel": "",
+      "published": "",
+      "duration": "",
+      "suggestedCategory": "Painting & Waterproofing",
+      "description": "Suggested starter video (found by research). Preview it before approving.",
+      "found": "2026-10-25T10:06:40Z",
+      "starter": true,
+      "draft": {
+        "source": "rules",
+        "summary": "",
+        "safety": "Ventilate the area, keep ignition sources away and protect your eyes and lungs from fumes and spray.",
+        "ppe": [
+          "Respirator",
+          "Safety Goggles",
+          "Chemical Gloves"
+        ],
+        "steps": [
+          "Clean the surface and let it dry completely",
+          "Fill cracks and gaps; seal around pipes and drains",
+          "Apply primer if the product requires it",
+          "Reinforce corners and joints with waterproofing tape or fabric",
+          "Apply two full coats, running up the walls, and let each coat cure",
+          "Flood test for 24–48 hours before tiling"
+        ],
+        "stepsFrom": "topic",
+        "level": "Intermediate",
+        "subject": ""
+      }
+    },
+    {
+      "yt": "-opbeWvw6q0",
+      "title": "How to Waterproof a Bathroom",
+      "channel": "",
+      "published": "",
+      "duration": "",
+      "suggestedCategory": "Painting & Waterproofing",
+      "description": "Suggested starter video (found by research). Preview it before approving.",
+      "found": "2026-10-25T10:06:40Z",
+      "starter": true,
+      "draft": {
+        "source": "rules",
+        "summary": "",
+        "safety": "Ventilate the area, keep ignition sources away and protect your eyes and lungs from fumes and spray.",
+        "ppe": [
+          "Respirator",
+          "Safety Goggles",
+          "Chemical Gloves"
+        ],
+        "steps": [
+          "Clean the surface and let it dry completely",
+          "Fill cracks and gaps; seal around pipes and drains",
+          "Apply primer if the product requires it",
+          "Reinforce corners and joints with waterproofing tape or fabric",
+          "Apply two full coats, running up the walls, and let each coat cure",
+          "Flood test for 24–48 hours before tiling"
+        ],
+        "stepsFrom": "topic",
+        "level": "Intermediate",
+        "subject": ""
+      }
+    },
+    {
+      "yt": "OcIs7JePFaE",
+      "title": "Tips for Waterproofing a Bathroom Floor",
+      "channel": "",
+      "published": "",
+      "duration": "",
+      "suggestedCategory": "Painting & Waterproofing",
+      "description": "Suggested starter video (found by research). Preview it before approving.",
+      "found": "2026-10-25T10:06:40Z",
+      "starter": true,
+      "draft": {
+        "source": "rules",
+        "summary": "",
+        "safety": "Ventilate the area, keep ignition sources away and protect your eyes and lungs from fumes and spray.",
+        "ppe": [
+          "Respirator",
+          "Safety Goggles",
+          "Chemical Gloves"
+        ],
+        "steps": [
+          "Clean the surface and let it dry completely",
+          "Fill cracks and gaps; seal around pipes and drains",
+          "Apply primer if the product requires it",
+          "Reinforce corners and joints with waterproofing tape or fabric",
+          "Apply two full coats, running up the walls, and let each coat cure",
+          "Flood test for 24–48 hours before tiling"
+        ],
+        "stepsFrom": "topic",
+        "level": "Intermediate",
+        "subject": ""
+      }
+    },
+    {
+      "yt": "t_dSruoWQIw",
+      "title": "How to Repair a Broken Drip Irrigation Line",
+      "channel": "",
+      "published": "",
+      "duration": "",
+      "suggestedCategory": "Landscaping",
+      "description": "Suggested starter video (found by research). Preview it before approving.",
+      "found": "2026-10-25T10:06:40Z",
+      "starter": true,
+      "draft": {
+        "source": "rules",
+        "summary": "",
+        "safety": "Check guards before starting machines, keep people clear and drink water often in the heat.",
+        "ppe": [
+          "Ear Defenders",
+          "Safety Goggles",
+          "Safety Shoes",
+          "Work Gloves"
+        ],
+        "steps": [
+          "Turn off the water to the zone",
+          "Find the leak, break or blocked emitter",
+          "Cut out the damaged section of drip line",
+          "Join it with a coupling, or replace or clean the emitter",
+          "Flush the line, then turn the water back on",
+          "Check every emitter is dripping evenly"
+        ],
+        "stepsFrom": "topic",
+        "level": "Intermediate",
+        "subject": ""
+      }
+    },
+    {
+      "yt": "xrGuelmdIQI",
+      "title": "How to Troubleshoot an Irrigation Timer",
+      "channel": "",
+      "published": "",
+      "duration": "",
+      "suggestedCategory": "Landscaping",
+      "description": "Suggested starter video (found by research). Preview it before approving.",
+      "found": "2026-10-25T10:06:40Z",
+      "starter": true,
+      "draft": {
+        "source": "rules",
+        "summary": "",
+        "safety": "Check guards before starting machines, keep people clear and drink water often in the heat.",
+        "ppe": [
+          "Ear Defenders",
+          "Safety Goggles",
+          "Safety Shoes",
+          "Work Gloves"
+        ],
+        "steps": [
+          "Check the controller has power and the transformer is working",
+          "Check the date, time, program and rain sensor settings",
+          "Run each zone manually to find which ones fail",
+          "Measure the solenoid resistance on faulty zones with a multimeter",
+          "Check the wire connections and the common wire",
+          "Fix or replace the faulty part and test again"
+        ],
+        "stepsFrom": "topic",
+        "level": "Advanced",
+        "subject": ""
+      }
+    },
+    {
+      "yt": "s8XagZQ9Suk",
+      "title": "Sprinkler System Has Low Pressure: How to Troubleshoot",
+      "channel": "",
+      "published": "",
+      "duration": "",
+      "suggestedCategory": "Landscaping",
+      "description": "Suggested starter video (found by research). Preview it before approving.",
+      "found": "2026-10-25T10:06:40Z",
+      "starter": true,
+      "draft": {
+        "source": "rules",
+        "summary": "",
+        "safety": "Inform the building and the alarm monitoring company before testing, and never leave a system disabled.",
+        "ppe": [
+          "Safety Glasses",
+          "Work Gloves",
+          "Safety Shoes"
+        ],
+        "steps": [
+          "Check the main valve and backflow are fully open",
+          "Run one zone at a time to find where the pressure drops",
+          "Look for leaks, broken heads and partly closed valves",
+          "Clean or replace blocked filters and nozzles",
+          "Check the valve diaphragm and solenoid",
+          "Test the zone again and adjust the heads"
+        ],
+        "stepsFrom": "topic",
+        "level": "Advanced",
+        "subject": ""
+      }
+    },
+    {
+      "yt": "QvTpFOz1GTQ",
+      "title": "5 Common Drip Emitter Issues and How to Troubleshoot",
+      "channel": "",
+      "published": "",
+      "duration": "",
+      "suggestedCategory": "Landscaping",
+      "description": "Suggested starter video (found by research). Preview it before approving.",
+      "found": "2026-10-25T10:06:40Z",
+      "starter": true,
+      "draft": {
+        "source": "rules",
+        "summary": "",
+        "safety": "Check guards before starting machines, keep people clear and drink water often in the heat.",
+        "ppe": [
+          "Ear Defenders",
+          "Safety Goggles",
+          "Safety Shoes",
+          "Work Gloves"
+        ],
+        "steps": [
+          "Turn off the water to the zone",
+          "Find the leak, break or blocked emitter",
+          "Cut out the damaged section of drip line",
+          "Join it with a coupling, or replace or clean the emitter",
+          "Flush the line, then turn the water back on",
+          "Check every emitter is dripping evenly"
+        ],
+        "stepsFrom": "topic",
+        "level": "Advanced",
+        "subject": ""
+      }
+    },
+    {
+      "yt": "jCowCVTR6VE",
+      "title": "Troubleshooting Irrigation Sprinkler Valves",
+      "channel": "",
+      "published": "",
+      "duration": "",
+      "suggestedCategory": "Landscaping",
+      "description": "Suggested starter video (found by research). Preview it before approving.",
+      "found": "2026-10-25T10:06:40Z",
+      "starter": true,
+      "draft": {
+        "source": "rules",
+        "summary": "",
+        "safety": "Inform the building and the alarm monitoring company before testing, and never leave a system disabled.",
+        "ppe": [
+          "Safety Glasses",
+          "Work Gloves",
+          "Safety Shoes"
+        ],
+        "steps": [
+          "Check the main valve and backflow are fully open",
+          "Run one zone at a time to find where the pressure drops",
+          "Look for leaks, broken heads and partly closed valves",
+          "Clean or replace blocked filters and nozzles",
+          "Check the valve diaphragm and solenoid",
+          "Test the zone again and adjust the heads"
+        ],
+        "stepsFrom": "topic",
+        "level": "Intermediate",
+        "subject": ""
+      }
+    }
+  ],
+  "rejected": []
 }
