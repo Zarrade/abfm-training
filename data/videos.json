@@ -182,18 +182,17 @@
       "channel": "HVAC School",
       "duration": "9:47",
       "added": "2026-10-20",
-      "summary": "Animated 3D tour of each refrigeration component, showing how they connect and what each one does in the cycle.",
-      "safety": "Treat all refrigerant lines as pressurised. Do not loosen fittings or service valves while learning component locations.",
+      "summary": "This video explains the basics of refrigerant circuits, heat transfer principles, and how pressure changes affect temperature in refrigeration and air conditioning systems.",
+      "safety": "Always depressurize and handle refrigerants carefully to avoid frostbite or system damage.",
       "ppe": [
         "Safety Glasses",
         "Work Gloves"
       ],
       "steps": [
-        "Name each major component as it appears in the animation.",
-        "Locate the same components on a site split unit.",
-        "Note service valve and access port locations.",
-        "Identify filter drier and sight glass where fitted.",
-        "Record component nameplate data for the job card."
+        "Understand that heat moves from higher to lower temperatures.",
+        "Observe how higher pressure causes higher temperature in gases.",
+        "Identify the compressor as the pressure increaser and heart of the system.",
+        "See the condenser reject heat and the evaporator absorb heat."
       ],
       "tr": {
         "hi": {
