@@ -11,18 +11,19 @@
       "channel": "AC Service Tech LLC",
       "duration": "6:12",
       "added": "2026-10-20",
-      "summary": "How the compressor, condenser, metering device and evaporator move heat, and what high side / low side pressures mean on a working system.",
-      "safety": "Never open refrigerant circuits during training walk-downs; observe only on isolated, labelled demo units.",
+      "summary": "This video explains the basic refrigeration cycle, detailing the roles of the compressor, condenser, metering device, and evaporator.",
+      "safety": "Ensure proper electrical isolation before servicing refrigeration compressors to avoid electrical shock.",
       "ppe": [
         "Safety Glasses",
         "Work Gloves"
       ],
       "steps": [
-        "Identify compressor, condenser, metering device and evaporator on the unit.",
-        "Trace the hot gas, liquid line and suction line paths.",
-        "Explain where the refrigerant boils (evaporator) and condenses (condenser).",
-        "Relate high-side and low-side pressures to each component.",
-        "Confirm understanding with your supervisor before field gauge work."
+        "Explain high and low pressure sides of the system",
+        "Describe the compressor role in increasing pressure and temperature",
+        "Discuss condenser coil heat rejection and subcooling",
+        "Explain filter drier function in trapping moisture",
+        "Describe metering device pressure reduction",
+        "Explain evaporator coil heat absorption and superheating"
       ],
       "tr": {
         "hi": {
