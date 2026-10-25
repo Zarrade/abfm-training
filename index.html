@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>ABFM Training</title>
+  <meta name="description" content="ABFM Training: short training videos for Al Bonian FM ground technicians.">
+  <meta name="theme-color" content="#ff570c">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="ABFM Training">
+  <link rel="preconnect" href="https://i.ytimg.com">
+  <link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+  <header class="top">
+    <div class="top-in">
+      <a class="brand" href="#/" aria-label="Home">
+        <img class="brand-mark" src="assets/logo.png" alt="ABFM logo">
+        <span>
+          <span class="brand-name" id="site-name">ABFM <b>Training</b></span><br>
+          <span class="brand-sub" id="site-tag">Al Bonian Facilities Management</span>
+        </span>
+      </a>
+      <nav class="tabs-desktop" aria-label="Sections">
+        <button data-tab="library" data-t="library">Library</button>
+        <button data-tab="new" data-t="new">New</button>
+        <button data-tab="saved" data-t="saved">Saved</button>
+      </nav>
+      <div class="top-actions">
+        <button class="btn btn-sm btn-ghost" id="install-btn" hidden>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14"/></svg>
+          <span data-t="install">Install app</span>
+        </button>
+        <button class="btn btn-sm lang-btn" id="lang-btn" aria-haspopup="dialog">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg>
+          <span id="lang-label">EN</span>
+        </button>
+      </div>
+    </div>
+    <div class="search-wrap" id="search-wrap">
+      <div class="search" role="search">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="q" type="search" autocomplete="off" enterkeyhint="search" placeholder="Search videos…" aria-label="Search videos">
+        <button class="clear" id="q-clear" aria-label="Clear search" hidden>
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <div id="offline" class="notice offline" hidden></div>
+    <div id="announce" class="notice" hidden></div>
+
+    <section id="list-view">
+      <div class="chips" id="cats" role="group" aria-label="Categories"></div>
+      <div class="toolbar">
+        <div class="seg" id="levels" role="group" aria-label="Level"></div>
+      </div>
+      <div id="rail-wrap" hidden>
+        <div class="section-h"><h2 data-t="newThisWeek">New this week</h2></div>
+        <div class="rail" id="rail"></div>
+      </div>
+      <div class="count-row">
+        <p class="count" id="count"></p>
+        <select class="select select-sm" id="sort" aria-label="Sort">
+          <option value="new" data-t="sortNewest">Newest</option>
+          <option value="short" data-t="sortShortest">Shortest</option>
+          <option value="az" data-t="sortAZ">A–Z</option>
+        </select>
+      </div>
+      <div class="grid" id="grid"></div>
+      <div class="more"><button class="btn" id="more" hidden data-t="showMore">Show more</button></div>
+      <div class="empty" id="empty" hidden></div>
+      <p class="foot" id="foot"></p>
+    </section>
+
+    <section id="video-view" class="vp" hidden></section>
+  </main>
+
+  <nav class="bnav" aria-label="Sections">
+    <button data-tab="library">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="m10 8.5 4 2-4 2z" fill="currentColor"/><path d="M7 21h10"/></svg>
+      <span data-t="library">Library</span>
+    </button>
+    <button data-tab="new">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="m12 3 2.6 5.6 6.1.7-4.5 4.2 1.2 6L12 16.6 6.6 19.5l1.2-6L3.3 9.3l6.1-.7z"/></svg>
+      <span data-t="new">New</span><span class="badge" id="new-badge" hidden></span>
+    </button>
+    <button data-tab="saved">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M6 3h12v18l-6-4-6 4z"/></svg>
+      <span data-t="saved">Saved</span>
+    </button>
+  </nav>
+
+  <div class="sheet" id="lang-sheet" role="dialog" aria-modal="true" aria-labelledby="lang-title" hidden>
+    <div class="sheet-in">
+      <h2 id="lang-title">Language · भाषा · زبان</h2>
+      <p class="sub">English is the main language. Choose the language for buttons and menus.</p>
+      <div class="lang-list" id="lang-list"></div>
+    </div>
+  </div>
+
+  <div class="sheet" id="ios-sheet" role="dialog" aria-modal="true" hidden>
+    <div class="sheet-in">
+      <h2 data-t="install">Install app</h2>
+      <p class="sub" data-t="installIos">To install: tap Share, then Add to Home Screen.</p>
+      <button class="btn btn-primary" style="width:100%" data-close>OK</button>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="assets/i18n.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

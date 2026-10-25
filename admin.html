@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Admin · ABFM Training</title>
+  <meta name="theme-color" content="#1e202b">
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="stylesheet" href="assets/app.css">
+  <link rel="stylesheet" href="assets/admin.css">
+</head>
+<body class="adm">
+  <header class="top">
+    <div class="top-in">
+      <a class="brand" href="admin.html">
+        <img class="brand-mark" src="assets/logo.png" alt="ABFM logo">
+        <span><span class="brand-name">ABFM Training <b>Admin</b></span><br><span class="brand-sub" id="repo-label">Not connected</span></span>
+      </a>
+      <div class="top-actions">
+        <a class="btn btn-sm" href="./" target="_blank" rel="noopener">View site</a>
+        <button class="btn btn-sm btn-ghost" id="disconnect" hidden>Sign out</button>
+      </div>
+    </div>
+    <nav class="adm-tabs" id="tabs" hidden>
+      <button data-view="videos" aria-current="page">Videos <span class="pill grey" id="n-videos">0</span></button>
+      <button data-view="queue">Review queue <span class="pill" id="n-queue" hidden>0</span></button>
+      <button data-view="channels">Channels</button>
+      <button data-view="settings">Settings</button>
+    </nav>
+  </header>
+
+  <main id="app"></main>
+
+  <div class="drawer" id="drawer" hidden>
+    <div class="drawer-in" role="dialog" aria-modal="true" aria-labelledby="drawer-title">
+      <div class="drawer-h">
+        <button class="btn btn-sm btn-icon btn-ghost" data-close-drawer aria-label="Close">✕</button>
+        <h2 id="drawer-title">Video</h2>
+      </div>
+      <div class="drawer-b" id="drawer-body"></div>
+      <div class="drawer-f" id="drawer-foot"></div>
+    </div>
+  </div>
+
+  <div class="saving" id="saving" hidden><div>Saving to GitHub…</div></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="assets/admin.js"></script>
+</body>
+</html>
