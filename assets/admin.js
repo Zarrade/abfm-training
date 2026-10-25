@@ -317,7 +317,7 @@
         <div class="field"><label for="f-added">Date added</label><input class="input" id="f-added" type="date" value="${esc(v.added || today())}"></div>
         <div class="field"><label for="f-chan">Channel</label><input class="input" id="f-chan" value="${esc(v.channel || "")}"></div>
       </div>
-      ${v.draftSource ? `<div class="draft-note">✨ ${v.draftSource === "ai" ? "Gemini watched this video and wrote a first draft of the summary, safety note and steps." : "First draft filled in from the YouTube description and safety rules."} ${STEPS_NOTE[v.stepsFrom] || ""} Check it before publishing.</div>` : ""}
+      ${v.draftSource ? `<div class="draft-note">✨ ${v.draftSource === "ai" ? "Gemini watched this video and wrote a first draft of the summary, safety note and steps." : "First draft filled in from the YouTube description and safety rules."} ${v.draftSource === "ai" ? "" : STEPS_NOTE[v.stepsFrom] || ""} Check it before publishing.${reviewHtml(v.review)}</div>` : ""}
       <div class="draft-row"><button type="button" class="btn btn-sm" id="f-draft">✨ Auto-draft</button><span class="help" id="f-draft-help">${geminiKey() ? "Gemini will watch the video and fill in the summary, safety, PPE and steps." : "Fills in safety, PPE and steps for this kind of job. Add a Gemini key in Settings to draft from the video itself."}</span></div>
       <div class="field"><label for="f-summary">What the video shows</label><textarea class="textarea" id="f-summary" placeholder="One or two plain sentences.">${esc(v.summary || "")}</textarea></div>
       <div class="field"><label for="f-safety">Safety warning</label><textarea class="textarea" id="f-safety" placeholder="e.g. Isolate power and prove dead before starting.">${esc(v.safety || "")}</textarea></div>
@@ -398,11 +398,25 @@
     ed.tr[ed.trLang] = next;
   }
   const STEPS_NOTE = {
+    ai: "Steps were written by Gemini from the video.",
     chapters: "Steps come from the video's own chapters.",
     description: "Steps come from the list in the YouTube description.",
     topic: "Steps are the standard procedure for this kind of job — watch the video and adjust them to match.",
     general: "Steps are general safe-work steps — replace them with the steps shown in the video."
   };
+  const geminiModel = () => { try { return localStorage.getItem("ab_gemini_model") || ""; } catch { return ""; } };
+  const REC = { approve: ["b-ok", "👍 Gemini: approve"], maybe: ["b-ess", "🤔 Gemini: maybe"], reject: ["b-prob", "👎 Gemini: reject"] };
+  function reviewHtml(rv, compact) {
+    if (!rv) return "";
+    const [cls, label] = REC[rv.recommend] || REC.maybe;
+    return `<div class="ai-rv">
+      <span class="badge-s ${cls}">${label} · ${rv.relevance}/10</span>
+      ${rv.reason ? `<span class="ai-reason">${esc(rv.reason)}</span>` : ""}
+      ${(rv.unsafe || []).length ? `<div class="ai-unsafe">⚠ Unsafe practice shown: ${rv.unsafe.map(esc).join("; ")}</div>` : ""}
+      ${!compact && rv.language && !/^english$/i.test(rv.language) ? `<div class="ai-reason">Spoken language: ${esc(rv.language)}</div>` : ""}
+      ${!compact && rv.talking === false ? `<div class="ai-reason">No narration — mostly visual.</div>` : ""}
+    </div>`;
+  }
   const geminiKey = () => { try { return localStorage.getItem("ab_gemini_key") || ""; } catch { return ""; } };
   async function runDraft() {
     const yt = parseYT($("#f-url").value) || ed.v.yt;
@@ -417,8 +431,8 @@
       btn.disabled = true; help.textContent = "Gemini is watching the video… (up to a minute)";
       try {
         const subjects = [...new Set(V().filter(v => v.category === category && v.subject).map(v => v.subject))];
-        d = await ABDraft.aiDraft({ yt, title, category, subjects, key: geminiKey(), model: localStorage.getItem("ab_gemini_model") || undefined });
-        help.textContent = "Done. Gemini drafted this from the video — check it before publishing.";
+        d = await ABDraft.aiDraft({ yt, title, category, subjects, key: geminiKey(), categories: cats(), model: geminiModel() || undefined });
+        help.innerHTML = "Done. Gemini watched the video and drafted this — check it before publishing." + reviewHtml(d.review);
       } catch (e) {
         help.textContent = "Gemini couldn't draft this one (" + e.message + "). Used the built-in rules instead.";
       } finally { btn.disabled = false; }
@@ -491,10 +505,15 @@
   }
 
   /* ---------- Review queue ---------- */
+  let qSort = "new";
   function renderQueue() {
     const p = data.pending.json;
     const q = p.queue || [];
     const errs = Object.entries(p.channelStatus || {}).filter(([, s]) => s && s.error);
+    const rvOf = i => (i.draft && i.draft.review) || null;
+    const nAi = q.filter(rvOf).length, nRej = q.filter(i => rvOf(i) && rvOf(i).recommend === "reject").length;
+    const score = i => { const r = rvOf(i); return r ? ({ approve: 30, maybe: 15, reject: 0 }[r.recommend] || 0) + r.relevance + r.quality / 2 : 12; };
+    const sorted = qSort === "ai" ? [...q].sort((a, b) => score(b) - score(a)) : q;
     const dupNote = item => {
       const lib = ABDraft.findDuplicates(item, V())[0];
       if (lib) return `<div class="dup-note">⚠ ${lib.same ? "Already in the library" : "Looks like a video already in the library"}: <b>${esc(lib.item.title)}</b></div>`;
@@ -509,14 +528,19 @@
         <p class="count" style="margin:0">${p.lastRun ? "Last check: " + esc(new Date(p.lastRun).toLocaleString()) : "The finder hasn't run yet. It runs every morning, or use “Find new videos now” on the Channels tab."}</p>
       </div>
       ${errs.length ? `<div class="err">⚠ ${errs.length} channel${errs.length > 1 ? "s" : ""} couldn't be checked. See the Channels tab.</div>` : ""}
-      ${q.length ? `<div class="bar"><p class="count grow" style="margin:0">${q.length} waiting</p><button class="btn btn-sm" id="q-clear">Reject all</button></div>` : ""}
-      <div class="grid">${q.map(item => `
+      ${q.length ? `<div class="bar"><p class="count grow" style="margin:0">${q.length} waiting${nAi ? ` · ${nAi} reviewed by Gemini` : ""}</p>
+        <select id="q-sort"><option value="new" ${qSort === "new" ? "selected" : ""}>Newest first</option><option value="ai" ${qSort === "ai" ? "selected" : ""}>Gemini's best first</option></select>
+        ${nRej ? `<button class="btn btn-sm" id="q-rej-ai">Reject ${nRej} Gemini says no</button>` : ""}
+        <button class="btn btn-sm" id="q-clear">Reject all</button></div>` : ""}
+      ${!geminiKey() && !nAi ? `<div class="hint-box">✨ Turn on Gemini in <b>Settings</b> and it will watch every new video, draft the steps, score how useful it is, and warn you about unsafe practice.</div>` : ""}
+      <div class="grid">${sorted.map(item => `
         <article class="qcard" data-yt="${esc(item.yt)}">
           <div class="thumb" data-preview="${esc(item.yt)}" style="cursor:pointer"><img loading="lazy" src="${thumb(item.yt)}" alt="" width="320" height="180">${item.duration ? `<span class="dur">${esc(item.duration)}</span>` : ""}</div>
           <div class="body">
             <div class="meta"><span>${esc(item.suggestedCategory || "Unsorted")}</span>${item.published ? `<span class="dot">${esc(item.published.slice(0, 10))}</span>` : ""}${item.draft ? `<span class="badge-s b-draft">✨ ${item.draft.source === "ai" ? "AI draft from video" : { chapters: "Draft · steps from video", description: "Draft · steps from description", topic: "Draft · standard steps", general: "Draft · general steps" }[item.draft.stepsFrom] || "Draft"}</span>` : ""}</div>
             <h3>${esc(item.title)}</h3>
             <div class="count" style="margin:0">${esc(item.channel || "")}</div>
+            ${item.draft && item.draft.review ? reviewHtml(item.draft.review, true) : ""}
             ${dupNote(item)}
             ${item.description ? `<div class="desc">${esc(item.description)}</div>` : ""}
             <div class="acts">
@@ -526,6 +550,14 @@
           </div>
         </article>`).join("")}</div>
       ${q.length ? "" : `<div class="empty"><div class="big">✅</div><h3>Nothing waiting</h3><p>New videos from your channels will appear here.</p></div>`}`;
+    const qs = $("#q-sort"); if (qs) qs.onchange = e => { qSort = e.target.value; renderQueue(); };
+    const qr = $("#q-rej-ai");
+    if (qr) qr.onclick = async () => {
+      const yts = q.filter(i => rvOf(i) && rvOf(i).recommend === "reject").map(i => i.yt);
+      if (!confirm(`Reject the ${yts.length} videos Gemini marked as not suitable? They won't be suggested again.`)) return;
+      await update("pending", d => { d.rejected = [...new Set([...(d.rejected || []), ...yts])].slice(-3000); d.queue = (d.queue || []).filter(i => !yts.includes(i.yt)); return d; }, "Reject videos Gemini marked unsuitable");
+      render();
+    };
     const qc = $("#q-clear");
     if (qc) qc.onclick = async () => {
       if (!confirm(`Reject all ${q.length} videos in the queue?`)) return;
@@ -547,7 +579,7 @@
     const fromDraft = {};
     ["summary", "safety", "subject", "level"].forEach(k => { if (d[k]) fromDraft[k] = d[k]; });
     ["ppe", "steps"].forEach(k => { if (d[k] && d[k].length) fromDraft[k] = d[k]; });
-    if (item.draft) { fromDraft.draftSource = d.source; fromDraft.stepsFrom = d.stepsFrom; }
+    if (item.draft) { fromDraft.draftSource = d.source; fromDraft.stepsFrom = d.stepsFrom; fromDraft.review = d.review; }
     openEditor(null, {
       ...fromDraft,
       yt: item.yt, title: item.title, channel: item.channel, duration: item.duration || "",
@@ -656,6 +688,20 @@
   /* ---------- Video requests (Google Sheet inbox) ---------- */
   const reqKey = () => { try { return localStorage.getItem("ab_req_key") || ""; } catch { return ""; } };
   let reqs = null, reqErr = "", reqFilter = "new";
+  const found = {};
+  function foundHtml(r) {
+    const f = found[r.id];
+    if (!f) return "";
+    if (f.error) return `<p class="help" style="color:var(--danger)">Gemini couldn't find videos: ${esc(f.error)}</p>`;
+    return `<div class="fv-list">${f.map(v => {
+      const dup = V().find(x => x.yt === v.yt);
+      return `<div class="fv">
+        <a href="https://www.youtube.com/watch?v=${esc(v.yt)}" target="_blank" rel="noopener" class="thumb"><img loading="lazy" src="${thumb(v.yt)}" alt=""></a>
+        <div><b>${esc(v.title || v.yt)}</b><div class="small">${esc(v.channel)}${v.why ? " — " + esc(v.why) : ""}</div>
+          ${dup ? `<span class="badge-s b-ok">Already in library</span>` : `<button class="btn btn-sm btn-primary" data-fv-add="${esc(r.id)}|${esc(v.yt)}">Review & add</button> <button class="btn btn-sm" data-fv-q="${esc(r.id)}|${esc(v.yt)}">Send to review queue</button>`}</div>
+      </div>`;
+    }).join("")}<p class="help">Found with Google Search — open each link to check it before adding.</p></div>`;
+  }
   async function loadRequests() {
     const url = data.settings.json.requestUrl;
     if (!url || !reqKey()) { reqs = null; return; }
@@ -720,13 +766,40 @@
             </div>
           </div>
           <div class="row-actions">
+            ${geminiKey() && r.status === "new" ? `<button class="btn btn-sm" data-rq-find="${esc(r.id)}">✨ Find videos</button>` : ""}
             <a class="btn btn-sm" href="https://www.youtube.com/results?search_query=${encodeURIComponent(r.topic)}" target="_blank" rel="noopener">Search YouTube</a>
             ${r.status === "new" ? `<button class="btn btn-sm btn-primary" data-rq-add="${esc(r.id)}">Add video</button><button class="btn btn-sm" data-rq-done="${esc(r.id)}">Mark done</button>` : `<button class="btn btn-sm" data-rq-open="${esc(r.id)}">Reopen</button>`}
             <button class="btn btn-sm btn-danger" data-rq-del="${esc(r.id)}">Delete</button>
           </div>
+          <div class="rq-found" id="found-${esc(r.id)}">${foundHtml(r)}</div>
         </div>`).join("") || (reqs ? `<div class="empty"><div class="big">📭</div><h3>No ${reqFilter === "all" ? "" : reqFilter + " "}requests</h3></div>` : "")}</div>`;
     $("#rq-filter").onchange = e => { reqFilter = e.target.value; renderRequests(); };
     $("#rq-refresh").onclick = async () => { reqs = null; renderRequests(); await loadRequests(); render(); };
+    $$("[data-rq-find]").forEach(b => b.onclick = async () => {
+      const r = reqs.find(x => String(x.id) === b.dataset.rqFind);
+      const box = $("#found-" + r.id);
+      b.disabled = true; box.innerHTML = `<p class="help">Gemini is searching YouTube for “${esc(r.topic)}”…</p>`;
+      try {
+        found[r.id] = await ABDraft.aiFindVideos({ topic: r.topic, details: r.details, category: r.category, key: geminiKey(), model: geminiModel() || undefined });
+        if (!found[r.id].length) throw new Error("No videos found");
+      } catch (e) { found[r.id] = { error: e.message }; }
+      b.disabled = false; box.innerHTML = foundHtml(r); wireFound();
+    });
+    const wireFound = () => {
+      $$("[data-fv-add]").forEach(b => b.onclick = () => {
+        const [rid, yt] = b.dataset.fvAdd.split("|");
+        const r = reqs.find(x => String(x.id) === rid), v = (found[rid] || []).find(x => x.yt === yt);
+        openEditor(null, { yt, title: v.title, channel: v.channel, ...(cats().includes(r.category) ? { category: r.category } : {}) },
+          async () => { await reqAction({ action: "status", id: r.id, status: "done" }); });
+      });
+      $$("[data-fv-q]").forEach(b => b.onclick = async () => {
+        const [rid, yt] = b.dataset.fvQ.split("|");
+        const r = reqs.find(x => String(x.id) === rid), v = (found[rid] || []).find(x => x.yt === yt);
+        await update("pending", d => { d.queue = d.queue || []; if (!d.queue.some(i => i.yt === yt)) d.queue.unshift({ yt, title: v.title, channel: v.channel, suggestedCategory: r.category || "", description: "Found by Gemini for a staff request: " + r.topic, found: new Date().toISOString(), published: "", duration: "" }); return d; }, `Queue video for request: ${r.topic}`);
+        b.textContent = "✓ In queue"; b.disabled = true; render();
+      });
+    };
+    wireFound();
     $$("[data-rq-done]").forEach(b => b.onclick = () => reqAction({ action: "status", id: b.dataset.rqDone, status: "done" }));
     $$("[data-rq-open]").forEach(b => b.onclick = () => reqAction({ action: "status", id: b.dataset.rqOpen, status: "new" }));
     $$("[data-rq-del]").forEach(b => b.onclick = () => { if (confirm("Delete this request?")) reqAction({ action: "delete", id: b.dataset.rqDel }); });
@@ -789,6 +862,7 @@
         <div class="field"><label for="te-icon">Icon</label><input class="input" id="te-icon" maxlength="4" value="${esc(k.icon || "")}" style="text-align:center;font-size:22px"></div>
         <div class="field"><label for="te-title">Title</label><input class="input" id="te-title" placeholder="e.g. Heat stress" value="${esc(k.title)}"></div>
       </div>
+      ${geminiKey() ? `<div class="draft-row"><button type="button" class="btn btn-sm" id="te-ai">✨ Write with Gemini</button><span class="help" id="te-ai-help">Type a title, then let Gemini write the points and question.</span></div>` : ""}
       <div class="field"><label for="te-points">Key points</label><textarea class="textarea" id="te-points" rows="6" placeholder="One point per line">${esc((k.points || []).join("\n"))}</textarea><div class="help">One point per line. 3–5 short points work best.</div></div>
       <div class="field"><label for="te-ask">Question to ask the team</label><input class="input" id="te-ask" placeholder="e.g. Where is the nearest drinking water on today's site?" value="${esc(k.ask || "")}"></div>
       <div class="two">
@@ -802,6 +876,18 @@
         <button class="btn btn-primary" id="te-save">${te.index < 0 ? "Publish talk" : "Save talk"}</button>
       </div>`;
     $("#te-back").onclick = $("#te-cancel").onclick = () => { te = null; renderToolbox(); };
+    const ta = $("#te-ai");
+    if (ta) ta.onclick = async () => {
+      const title = $("#te-title").value.trim(); if (!title) return alert("Type a title first.");
+      if ($("#te-points").value.trim() && !confirm("Replace the current points and question?")) return;
+      ta.disabled = true; $("#te-ai-help").textContent = "Gemini is writing…";
+      try {
+        const d = await ABDraft.aiTalk({ title, key: geminiKey(), model: geminiModel() || undefined });
+        $("#te-points").value = d.points.join("\n"); if (d.ask) $("#te-ask").value = d.ask; if (d.icon && !$("#te-icon").value.trim()) $("#te-icon").value = d.icon;
+        $("#te-ai-help").textContent = "Done — read it through and adjust before publishing.";
+      } catch (e) { $("#te-ai-help").textContent = "Gemini couldn't write it: " + e.message; }
+      ta.disabled = false;
+    };
     $("#te-save").onclick = async () => {
       k.icon = $("#te-icon").value.trim() || "🦺";
       k.title = $("#te-title").value.trim();
@@ -977,10 +1063,22 @@
             <li>For the <b>✨ Auto-draft</b> button here, paste it below.</li>
             <li>For the daily review queue, also add it on GitHub: repo <b>Settings → Secrets and variables → Actions → New repository secret</b>, name <code>GEMINI_API_KEY</code>.</li>
           </ol>
-          <div class="field"><label for="s-gem">Gemini API key</label><input class="input" id="s-gem" type="password" autocomplete="off" value="${esc(geminiKey())}"><div class="help">Kept only in this browser.</div></div>
+          <div class="two">
+            <div class="field"><label for="s-gem">Gemini API key</label><input class="input" id="s-gem" type="password" autocomplete="off" value="${esc(geminiKey())}"><div class="help">Kept only in this browser.</div></div>
+            <div class="field"><label for="s-gmodel">Model</label><select class="input" id="s-gmodel"><option value="">Automatic (newest available)</option>${ABDraft.MODELS.map(m => `<option ${m === geminiModel() ? "selected" : ""}>${m}</option>`).join("")}</select></div>
+          </div>
+          <button type="button" class="btn btn-sm" id="s-gtest">Test Gemini</button> <span class="help" id="s-gtest-msg"></span>
+          <p class="help" style="margin-top:10px">With Gemini on: every new video in the review queue is watched, drafted (summary, safety, PPE, steps) and scored, with a warning if it shows unsafe practice. Requests get a <b>✨ Find videos</b> button, and toolbox talks a <b>✨ Write with Gemini</b> button. The free tier covers about 8 hours of video a day; the daily job stays under that.</p>
         </div>
         <button class="btn btn-primary" style="width:100%">Save settings</button>
       </form>`;
+    $("#s-gtest").onclick = async () => {
+      const key = $("#s-gem").value.trim(), m = $("#s-gtest-msg");
+      if (!key) { m.textContent = "Paste a key first."; return; }
+      m.textContent = "Testing…";
+      try { const model = await ABDraft.aiTest({ key, model: $("#s-gmodel").value || undefined }); m.innerHTML = `<span style="color:var(--ok,#1f9d55);font-weight:700">✓ Works (${esc(model)}).</span> Click Save settings.`; }
+      catch (e) { m.innerHTML = `<span style="color:var(--danger)">✗ ${esc(e.message)}</span>`; }
+    };
     $("#cat-add").onclick = () => { $("#cat-rows").insertAdjacentHTML("beforeend", catRow({ name: "", icon: "▶️", keywords: [] }, Date.now(), 0)); };
     $("#cat-rows").onclick = e => {
       const b = e.target.closest("[data-cat-del]"); if (!b) return;
@@ -1004,6 +1102,7 @@
       try {
         localStorage.setItem("ab_req_key", $("#s-reqkey").value.trim());
         localStorage.setItem("ab_gemini_key", $("#s-gem").value.trim());
+        localStorage.setItem("ab_gemini_model", $("#s-gmodel").value);
       } catch {}
       await update("settings", d => Object.assign(d, vals), "Update site settings");
       reqs = null; loadRequests().then(badgeRequests);

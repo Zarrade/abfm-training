@@ -166,58 +166,138 @@
   }
 
   /* Gemini draft: the model watches the public YouTube video. */
-  function aiPrompt({ title, category, subjects }) {
-    return `You are writing a short training card for facility-maintenance technicians in Dubai (many speak basic English).
-Watch this YouTube video ("${title}", trade: ${category}) and reply with JSON only, in this exact shape:
-{"summary": string, "safety": string, "ppe": string[], "steps": string[], "level": "Beginner"|"Intermediate"|"Advanced", "subject": string}
+  /* ---------- Gemini ---------- */
+  const MODELS = ["gemini-3.8-flash", "gemini-3.6-flash", "gemini-3.5-flash-lite", "gemini-2.5-flash"];
+  const API = "https://generativelanguage.googleapis.com/v1beta/models/";
+
+  /* One call to Gemini. Tries the chosen model first, then older ones if the model name is no longer available. */
+  async function gemini({ key, model, parts, json = true, tools, timeoutMs = 150000 }) {
+    const list = [...new Set([model, ...MODELS].filter(Boolean))];
+    let lastErr;
+    for (const m of list) {
+      const ctl = typeof AbortController !== "undefined" ? new AbortController() : null;
+      const timer = ctl ? setTimeout(() => ctl.abort(), timeoutMs) : null;
+      try {
+        const body = { contents: [{ parts }], generationConfig: { temperature: 0.2 } };
+        if (json && !tools) body.generationConfig.responseMimeType = "application/json";
+        if (tools) body.tools = tools;
+        const r = await fetch(API + encodeURIComponent(m) + ":generateContent", {
+          method: "POST",
+          headers: { "Content-Type": "application/json", "x-goog-api-key": key },
+          signal: ctl ? ctl.signal : undefined,
+          body: JSON.stringify(body)
+        });
+        const j = await r.json().catch(() => ({}));
+        if (!r.ok) {
+          const msg = (j.error && j.error.message) || ("HTTP " + r.status);
+          const err = new Error(msg); err.status = r.status;
+          if (r.status === 404 || /not found|not supported|is not available/i.test(msg)) { lastErr = err; continue; }  // try an older model
+          throw err;
+        }
+        const c = (j.candidates || [])[0] || {};
+        const text = ((c.content || {}).parts || []).map(p => p.text || "").join("");
+        if (!text) throw new Error(c.finishReason ? "No answer (" + c.finishReason + ")" : "Empty answer");
+        return { text, model: m, grounding: c.groundingMetadata || null };
+      } catch (e) {
+        if (e.name === "AbortError") e = new Error("Gemini took too long");
+        lastErr = e;
+        if (e.status && e.status !== 404) throw e;
+        if (!e.status && !/not found/i.test(e.message)) throw e;
+      } finally { if (timer) clearTimeout(timer); }
+    }
+    throw lastErr || new Error("No Gemini model available");
+  }
+  const jsonOf = text => {
+    const m = String(text || "").match(/[\[{][\s\S]*[\]}]/);
+    if (!m) throw new Error("Gemini didn't return the expected format");
+    return JSON.parse(m[0]);
+  };
+
+  function aiPrompt({ title, category, subjects, categories }) {
+    return `You review training videos for facility-maintenance technicians in Dubai (HVAC, electrical, plumbing, fire systems, cleaning, civil, painting, landscaping). Many speak basic English.
+Watch this YouTube video ("${title}"${category ? `, suggested trade: ${category}` : ""}) and reply with JSON only, in exactly this shape:
+{"summary": string, "safety": string, "ppe": string[], "steps": string[], "level": "Beginner"|"Intermediate"|"Advanced", "subject": string, "category": string,
+ "review": {"relevance": number, "quality": number, "recommend": "approve"|"maybe"|"reject", "reason": string, "unsafe": string[], "language": string, "talking": boolean}}
 Rules:
 - summary: 1–2 plain sentences saying what the video shows. No hype, no channel name.
 - safety: one sentence with the most important safety precaution for this task.
 - ppe: 2–4 items of protective equipment, Title Case (e.g. "Safety Glasses").
-- steps: 3–6 key steps actually shown in the video, each a short instruction under 14 words, starting with a verb. If the video is not a procedure, give the 3–6 key points instead.
+- steps: 3–6 key steps actually shown in the video, each a short instruction under 14 words, starting with a verb. If it is not a procedure, give the 3–6 key points instead.
 - level: who the video suits.
 - subject: a short topic label${subjects && subjects.length ? `; prefer one of: ${subjects.slice(0, 25).join("; ")}` : ""}.
+- category: the best trade for it${categories && categories.length ? `, one of: ${categories.join("; ")}` : ""}.
+- review.relevance: 0–10, how useful this is for training our technicians (0 = unrelated, e.g. computers, vlogs, sales pitches).
+- review.quality: 0–10, how clear and well filmed the teaching is.
+- review.recommend: approve / maybe / reject for our training library.
+- review.reason: one short sentence explaining the recommendation.
+- review.unsafe: unsafe practices shown in the video (e.g. working live, no PPE, no fall protection). Empty list if none.
+- review.language: main spoken language. review.talking: false if the video has no narration.
 Use simple words. Do not invent steps that are not in the video.`;
   }
   function parseAI(text) {
-    const m = String(text || "").match(/\{[\s\S]*\}/);
-    if (!m) throw new Error("No JSON in reply");
-    const j = JSON.parse(m[0]);
+    const j = jsonOf(text);
     const arr = a => (Array.isArray(a) ? a : []).map(clean).filter(Boolean);
+    const num = n => Math.max(0, Math.min(10, Math.round(Number(n) || 0)));
+    const rv = j.review || {};
     const d = {
       source: "ai",
       summary: clean(j.summary).slice(0, 400),
       safety: clean(j.safety).slice(0, 300),
       ppe: arr(j.ppe).slice(0, 5),
       steps: arr(j.steps).map(s => s.replace(/^\d+[.)]\s*/, "")).slice(0, 8),
+      stepsFrom: "ai",
       level: ["Beginner", "Intermediate", "Advanced"].includes(j.level) ? j.level : "Intermediate",
-      subject: clean(j.subject).slice(0, 60)
+      subject: clean(j.subject).slice(0, 60),
+      category: clean(j.category).slice(0, 60),
+      review: {
+        relevance: num(rv.relevance), quality: num(rv.quality),
+        recommend: ["approve", "maybe", "reject"].includes(rv.recommend) ? rv.recommend : "maybe",
+        reason: clean(rv.reason).slice(0, 240),
+        unsafe: arr(rv.unsafe).slice(0, 5),
+        language: clean(rv.language).slice(0, 30),
+        talking: rv.talking !== false
+      }
     };
-    if (!d.summary || d.steps.length < 2) throw new Error("Reply was incomplete");
+    if (!d.summary || d.steps.length < 2) throw new Error("Gemini's answer was incomplete");
     return d;
   }
-  async function aiDraft({ yt, title, category, subjects, key, model, timeoutMs }) {
-    const m = model || "gemini-2.5-flash";
-    const ctl = typeof AbortController !== "undefined" ? new AbortController() : null;
-    const timer = ctl ? setTimeout(() => ctl.abort(), timeoutMs || 120000) : null;
-    try {
-      const r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(m)}:generateContent?key=${encodeURIComponent(key)}`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        signal: ctl ? ctl.signal : undefined,
-        body: JSON.stringify({
-          contents: [{ parts: [
-            { file_data: { file_uri: "https://www.youtube.com/watch?v=" + yt } },
-            { text: aiPrompt({ title, category, subjects }) }
-          ] }],
-          generationConfig: { temperature: 0.2, responseMimeType: "application/json" }
-        })
-      });
-      const j = await r.json().catch(() => ({}));
-      if (!r.ok) throw new Error((j.error && j.error.message) || ("HTTP " + r.status));
-      const text = (((j.candidates || [])[0] || {}).content || {}).parts?.map(p => p.text || "").join("") || "";
-      return parseAI(text);
-    } finally { if (timer) clearTimeout(timer); }
+  /* Watch a video: draft the training card and review it. */
+  async function aiDraft({ yt, title, category, subjects, categories, key, model, timeoutMs }) {
+    const r = await gemini({ key, model, timeoutMs, parts: [
+      { file_data: { file_uri: "https://www.youtube.com/watch?v=" + yt } },
+      { text: aiPrompt({ title, category, subjects, categories }) }
+    ] });
+    const d = parseAI(r.text);
+    d.model = r.model;
+    return d;
+  }
+  /* Find YouTube videos for a topic using Google Search. */
+  async function aiFindVideos({ topic, details, category, key, model }) {
+    const r = await gemini({ key, model, json: false, tools: [{ google_search: {} }], parts: [{ text:
+      `Find 5 good, public YouTube training videos for facility-maintenance technicians on: "${topic}"${details ? ` (${details})` : ""}${category ? `, trade: ${category}` : ""}.
+Prefer clear, practical, safe demonstrations from professional trainers, manufacturers or trade channels, in English. Avoid Shorts, sales pitches and unsafe practice.
+Reply with JSON only: [{"url": "https://www.youtube.com/watch?v=...", "title": string, "channel": string, "why": string}] — only real videos you found.` }] });
+    const list = jsonOf(r.text);
+    const out = [];
+    for (const v of Array.isArray(list) ? list : []) {
+      const m = String(v.url || "").match(/(?:v=|youtu\.be\/|shorts\/|embed\/)([\w-]{11})/);
+      if (m && !out.some(o => o.yt === m[1])) out.push({ yt: m[1], title: clean(v.title).slice(0, 150), channel: clean(v.channel).slice(0, 80), why: clean(v.why).slice(0, 200) });
+    }
+    return out.slice(0, 6);
+  }
+  /* Write a toolbox talk from a title. */
+  async function aiTalk({ title, key, model }) {
+    const r = await gemini({ key, model, parts: [{ text:
+      `Write a 5-minute toolbox talk for facility-maintenance technicians in Dubai on: "${title}".
+Reply with JSON only: {"icon": one emoji, "points": [4–5 short points, each one plain sentence under 20 words], "ask": one question for the supervisor to ask the team}.
+Use simple English, practical advice, and local context where useful (UAE emergency numbers 999 police, 998 ambulance, 997 fire; summer heat).` }] });
+    const j = jsonOf(r.text);
+    return { icon: clean(j.icon).slice(0, 4), points: (j.points || []).map(clean).filter(Boolean).slice(0, 6), ask: clean(j.ask).slice(0, 200) };
+  }
+  /* Quick check that a key works. */
+  async function aiTest({ key, model }) {
+    const r = await gemini({ key, model, json: false, timeoutMs: 30000, parts: [{ text: "Reply with the single word: ready" }] });
+    return r.model;
   }
 
   /* Duplicate check: compares the meaningful words of two titles (0 = nothing in common, 1 = same). */
@@ -243,5 +323,5 @@ Use simple words. Do not invent steps that are not in the video.`;
     return out.sort((x, y) => y.score - x.score);
   }
 
-  root.ABDraft = { stepsFor, ruleDraft, aiDraft, chapters, summary, level, safetyFor, similarity, findDuplicates };
+  root.ABDraft = { stepsFor, ruleDraft, aiDraft, aiFindVideos, aiTalk, aiTest, MODELS, chapters, summary, level, safetyFor, similarity, findDuplicates };
 })(typeof globalThis !== "undefined" ? globalThis : this);

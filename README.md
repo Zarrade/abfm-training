@@ -96,3 +96,13 @@ Every morning, after finding new videos, the daily job writes a first draft for 
 ## Request a video
 
 Technicians tap **🙋 Request a video** (at the bottom of the library, and when a search finds nothing). Requests go to a private Google Sheet and show up in the admin's **Requests** tab, where you can mark them done or add the video straight away. The one-time setup is shown in the Requests tab; the script is in setup/request-inbox.gs. Until it is set up, the button stays hidden.
+
+## Gemini (optional, free)
+
+Turn it on in admin → Settings → "Auto-draft with Gemini" (paste a free key from aistudio.google.com/apikey and press Test), and add the same key on GitHub as the repository secret `GEMINI_API_KEY`. Then:
+
+- **Every new video in the review queue is watched by Gemini**, which writes the summary, safety note, PPE and steps, suggests the trade and level, scores how useful it is (0–10), recommends approve / maybe / reject with a reason, and warns you if the video shows unsafe practice. Sort the queue by "Gemini's best first", or reject everything Gemini says no to in one click.
+- **Requests → ✨ Find videos:** Gemini searches YouTube (via Google Search) for the requested topic and suggests videos you can add or send to the queue.
+- **Toolbox talks → ✨ Write with Gemini:** type a title and Gemini writes the points and the question for the team.
+- The model is chosen automatically (newest first, falling back to older ones). To pin one, pick it in Settings, and for the daily job add a repository *variable* `GEMINI_MODEL`.
+- The free tier allows about 8 hours of YouTube video a day; the daily job stops at 6 hours and continues the next day. Nothing is published without your approval.

@@ -112,6 +112,7 @@ async function findNew({ videosDoc, settings, channelsDoc, pending }) {
         found.push({
           yt: it.yt, title: it.title, channel: ch.name || it.author, channelUrl: ch.url,
           published: it.published, duration: info.seconds ? fmtDur(info.seconds) : "",
+          channelCategory: ch.category || "",
           suggestedCategory: ch.category || guessCategory(it.title + " " + it.description.slice(0, 300), settings.categories),
           description: it.description, found: new Date().toISOString()
         });
