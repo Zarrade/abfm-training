@@ -425,48 +425,6 @@
       }
     },
     {
-      "yt": "CdFPlD3vQ20",
-      "title": "Lockout/Tagout Procedures: How to Lock Out a Machine",
-      "channel": "",
-      "published": "",
-      "duration": "",
-      "suggestedCategory": "Health & Safety",
-      "description": "Suggested starter video (found by research). Preview it before approving.",
-      "found": "2026-10-25T10:06:40Z",
-      "starter": true,
-      "draft": {
-        "source": "ai",
-        "summary": "This video explains Lockout/Tagout procedures for industrial machinery and energy control equipment.",
-        "safety": "Always notify affected personnel and lock out energy sources before starting maintenance.",
-        "ppe": [
-          "Safety Glasses",
-          "High-Visibility Vest",
-          "Hard Hat"
-        ],
-        "steps": [
-          "Identify energy sources",
-          "Notify affected personnel",
-          "Turn off machinery",
-          "Apply lock and tag",
-          "Verify zero energy state"
-        ],
-        "stepsFrom": "ai",
-        "level": "Beginner",
-        "subject": "Lockout/Tagout Safety",
-        "category": "Health & Safety",
-        "review": {
-          "relevance": 9,
-          "quality": 9,
-          "recommend": "approve",
-          "reason": "Clear, concise demonstration of essential LOTO procedures suitable for facility technicians.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
-    },
-    {
       "yt": "_loONTyxmks",
       "title": "Confined Space Entry: Safe Work Practices",
       "channel": "",
