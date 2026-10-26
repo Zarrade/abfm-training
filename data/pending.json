@@ -979,48 +979,6 @@
       }
     },
     {
-      "yt": "-eNBtz-_kJU",
-      "title": "Potable Water Tank Cleaning",
-      "channel": "",
-      "published": "",
-      "duration": "",
-      "suggestedCategory": "Water Tank Cleaning",
-      "description": "Suggested starter video (found by research). Preview it before approving.",
-      "found": "2026-10-25T10:06:40Z",
-      "starter": true,
-      "draft": {
-        "source": "ai",
-        "summary": "This video shows a commercial diver cleaning sediment from the bottom of a potable water tank.",
-        "safety": "Ensure all diving and pumping equipment is dedicated solely to potable water use.",
-        "ppe": [
-          "Dry Suit",
-          "Diving Helmet",
-          "Hard Hat"
-        ],
-        "steps": [
-          "Inspect the sediment buildup inside the water tank.",
-          "Lower the diver with specialized gear into the tank.",
-          "Vacuum and remove sediment from the tank floor.",
-          "Pump the extracted sediment out to the exterior drainage.",
-          "Check the cleaned metal surface to ensure all sediment is removed."
-        ],
-        "stepsFrom": "ai",
-        "level": "Intermediate",
-        "subject": "Potable Water Tank Cleaning",
-        "category": "Water Tank Cleaning",
-        "review": {
-          "relevance": 9,
-          "quality": 8,
-          "recommend": "approve",
-          "reason": "Clear demonstration of specialized underwater water tank cleaning procedures.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
-    },
-    {
       "yt": "Fdy9uRvpI-E",
       "title": "How to Repair Drywall",
       "channel": "",
@@ -1329,6 +1287,7 @@
     "-opbeWvw6q0",
     "6bLZ-Fpk3Tg",
     "6gH3xU5Mzbw",
-    "3TVRMfnUWhI"
+    "3TVRMfnUWhI",
+    "-eNBtz-_kJU"
   ]
 }
