@@ -15535,7 +15535,17 @@
           ]
         }
       },
-      "ytTitle": "How Three-Phase Electricity Works"
+      "gemini": {
+        "date": "2026-10-26",
+        "model": "gemini-3.6-flash",
+        "relevance": 9,
+        "quality": 9,
+        "recommend": "approve",
+        "reason": "Excellent visual animation explaining alternating current and three-phase power distribution principles.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      }
     },
     {
       "id": "elec-105",
