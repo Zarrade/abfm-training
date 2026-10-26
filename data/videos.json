@@ -13992,6 +13992,17 @@
             "قفازات العمل"
           ]
         }
+      },
+      "gemini": {
+        "date": "2026-10-26",
+        "model": "gemini-3.5-flash-lite",
+        "relevance": 9,
+        "quality": 8,
+        "recommend": "approve",
+        "reason": "Clear and detailed step-by-step guidance on terminating twin socket outlets for electrical trainees.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
       }
     },
     {
