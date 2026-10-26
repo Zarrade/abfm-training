@@ -2,6 +2,39 @@
   "updated": "2026-10-26",
   "videos": [
     {
+      "id": "hvac-kKVHfHLgVW0",
+      "yt": "kKVHfHLgVW0",
+      "title": "The Fuse Only Blows When You Leave - Short #307",
+      "category": "HVAC",
+      "subject": "Electrical Diagnostics",
+      "level": "Intermediate",
+      "channel": "HVAC School",
+      "duration": "",
+      "added": "2026-10-26",
+      "summary": "The podcaster discusses how to diagnose and troubleshoot control fuses that blow intermittently when technicians leave a job.",
+      "safety": "Always disconnect power and verify circuits are de-energized before touching wires or testing components.",
+      "ppe": [
+        "Safety Glasses",
+        "Insulated Gloves"
+      ],
+      "steps": [
+        "Identify when the fuse blew in the operating timeline.",
+        "Inspect wiring, terminals, and connections for damage or moisture.",
+        "Isolate and test individual circuits to find high current draws.",
+        "Check for intermittent grounding or shorted solenoid coils."
+      ],
+      "gemini": {
+        "date": "2026-10-26",
+        "relevance": 9,
+        "quality": 8,
+        "recommend": "approve",
+        "reason": "Good practical guidance for troubleshooting intermittent electrical faults in HVAC control circuits.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      }
+    },
+    {
       "id": "hvac-WaICUTIW3og",
       "yt": "WaICUTIW3og",
       "title": "Commercial Condensate Drain Leaking? Trap, Vent, and Slope Fix",
