@@ -2,6 +2,44 @@
   "updated": "2026-10-26",
   "videos": [
     {
+      "id": "paint-OcIs7JePFaE",
+      "yt": "OcIs7JePFaE",
+      "title": "Tips for Waterproofing a Bathroom Floor",
+      "category": "Painting & Waterproofing",
+      "subject": "Bathroom Floor Waterproofing",
+      "level": "Intermediate",
+      "channel": "",
+      "duration": "",
+      "added": "2026-10-26",
+      "summary": "This video demonstrates how to apply a liquid waterproofing membrane and reinforcing fabric mesh to a bathroom floor and around key joints before tiling.",
+      "safety": "Ensure good ventilation and wear protective gloves to avoid skin irritation from liquid waterproofing compounds.",
+      "ppe": [
+        "Protective Gloves",
+        "Knee Pads",
+        "Safety Glasses"
+      ],
+      "steps": [
+        "Clean and vacuum all dust and debris from the subfloor surface.",
+        "Apply liquid waterproofing membrane along room perimeters and tub edges using a brush.",
+        "Embed fabric mesh into the wet membrane along corners and joint intersections.",
+        "Coat over the embedded mesh with an additional layer of liquid membrane.",
+        "Roll liquid waterproofing membrane evenly across the entire floor area.",
+        "Allow the first coat to dry completely before applying a second coat."
+      ],
+      "gemini": {
+        "date": "2026-10-26",
+        "relevance": 9,
+        "quality": 9,
+        "recommend": "approve",
+        "reason": "Clear step-by-step instruction on applying liquid waterproofing membranes suitable for technicians doing wet-area civil works.",
+        "unsafe": [
+          "Not wearing chemical-resistant gloves while handling liquid waterproofing membrane"
+        ],
+        "language": "English",
+        "talking": true
+      }
+    },
+    {
       "id": "lands-xrGuelmdIQI",
       "yt": "xrGuelmdIQI",
       "title": "How to Troubleshoot an Irrigation Timer",
