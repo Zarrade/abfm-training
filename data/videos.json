@@ -2,6 +2,42 @@
   "updated": "2026-10-26",
   "videos": [
     {
+      "id": "healt-n1gWyBOn4OM",
+      "yt": "n1gWyBOn4OM",
+      "title": "Lockout/Tagout (LOTO) Safety Training Video",
+      "category": "Health & Safety",
+      "subject": "Lockout/Tagout Procedures",
+      "level": "Beginner",
+      "channel": "",
+      "duration": "",
+      "added": "2026-10-26",
+      "summary": "This video explains lockout-tagout (LOTO) procedures, definitions, and safety steps to protect workers from machine hazards during maintenance.",
+      "safety": "Always de-energize and lock out equipment before starting any maintenance or repair work.",
+      "ppe": [
+        "Safety Helmet",
+        "Safety Glasses",
+        "High-Visibility Vest"
+      ],
+      "steps": [
+        "Notify all affected employees before starting lockout-tagout.",
+        "Shut down the equipment following manufacturer instructions.",
+        "Attach lockout-tagout devices to energy isolation points.",
+        "Verify zero energy state by testing equipment controls.",
+        "Perform required maintenance or repairs safely."
+      ],
+      "essential": true,
+      "gemini": {
+        "date": "2026-10-26",
+        "relevance": 10,
+        "quality": 9,
+        "recommend": "approve",
+        "reason": "Clear and comprehensive explanation of essential LOTO safety procedures for maintenance work.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      }
+    },
+    {
       "id": "fires-GVBamXXVD30",
       "yt": "GVBamXXVD30",
       "title": "How to Use a Fire Extinguisher",
