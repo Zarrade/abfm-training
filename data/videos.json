@@ -2,6 +2,42 @@
   "updated": "2026-10-26",
   "videos": [
     {
+      "id": "paint-rwfmx5cCWdE",
+      "yt": "rwfmx5cCWdE",
+      "title": "How to Waterproof a Shower Before Tiling",
+      "category": "Painting & Waterproofing",
+      "subject": "Shower Waterproofing",
+      "level": "Intermediate",
+      "channel": "",
+      "duration": "",
+      "added": "2026-10-26",
+      "summary": "This video demonstrates how to waterproof a shower using a flexible two-component waterproofing system before tiling.",
+      "safety": "Ensure the working area is well ventilated and wear appropriate personal protective equipment.",
+      "ppe": [
+        "Dust Mask",
+        "Safety Gloves",
+        "Safety Boots"
+      ],
+      "steps": [
+        "Clean and prime the shower surface.",
+        "Apply silicone bead to corners.",
+        "Mix the waterproofing system.",
+        "Apply the first coat of waterproofing.",
+        "Embed waterproofing membrane.",
+        "Apply the second coat of waterproofing."
+      ],
+      "gemini": {
+        "date": "2026-10-26",
+        "relevance": 10,
+        "quality": 9,
+        "recommend": "approve",
+        "reason": "Clear and detailed demonstration of shower waterproofing steps suitable for technicians.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      }
+    },
+    {
       "id": "lands-kONwQeJ-sMg",
       "yt": "kONwQeJ-sMg",
       "title": "Mower-Proof Sprinkler Guard Donut | Sprinkler Warehouse",
