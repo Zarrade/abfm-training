@@ -86,49 +86,7 @@
       "error": "Feed not available (404)."
     }
   },
-  "queue": [
-    {
-      "yt": "IlxIEBFE20w",
-      "title": "How to Replace a Broken Sprinkler Head | Mower Damage Repair | Sprinkler Warehouse",
-      "channel": "Sprinkler Warehouse (irrigation)",
-      "channelUrl": "https://www.youtube.com/channel/UCR1ksygazAOr59yLZ4Mp5tA",
-      "published": "2026-10-22T16:40:17+00:00",
-      "duration": "",
-      "channelCategory": "Landscaping",
-      "suggestedCategory": "Landscaping",
-      "description": "In this video:\n• Dig out the damaged sprinkler and expose its connection.\n• Choose the correct head, nozzle, and fitting.\n• Use a swing joint to make height adjustments easier.\n• Flush out dirt and debris before putting the sprinkler into service.\n• Set the head at soil level and firmly pack the dirt around it.\n• Check the spray direction, arc, and watering distance.\n\nWhether you’re replacing a rotor, spray head, or spray body with a rotary nozzle, matching the sprinklers on your zone helps maintain consistent watering.\n\nShop sprinkler heads, nozzles, and swing joints:\nhttps://www.sprinklerwarehouse.com/product/lawn-irrigation/sprinkler-heads\n\nFind sprinkler adjustment guides and more at Sprinkler School:\nhttps://school.sprinklerwarehouse.com/\n\nShop irrigation supplies:\nhttps://www.sprinklerwarehouse.com/\n\nSubscribe for more sprinkler repair tips, installation guides, and straightforward answers to your irrigation questions.\n\n#SprinklerRepair #SprinklerHeadReplacement #sprinklerwarehouse \n\n\nHow to adjust a PGP ADJ: https://www.youtube.com/watch?v=ozJPDHVmiUw&t=41s\n\nRainBird 5004 Rotor: https://www.youtube.com/watch?v=hO7kxBIwnms&list=PL6oFx1DjVPHoxZ7b90CUGzijqyPSREPIF&index=48\n\nToro T5PCK-RS Rotor: https://www.youtube.com/watch?v=jkaXHdmHDJs\n\nHunter Pro Spray: https://www.youtube.com/watch?v=G1QE1G6ilCQ\n\n\n\n\nYouTube comments are not monitored. Please direct your questions to the customer service representatives on www.sprinklerwarehouse.com.",
-      "found": "2026-10-25T14:27:38.675Z",
-      "draft": {
-        "source": "ai",
-        "summary": "This video demonstrates how to replace a broken lawn sprinkler head damaged by a mower and match the correct parts.",
-        "safety": "Ensure the water supply is off and check for underground utilities before digging.",
-        "ppe": [
-          "Work Gloves",
-          "Safety Boots"
-        ],
-        "steps": [
-          "Dig out the broken sprinkler head and expose the fitting.",
-          "Select the replacement sprinkler head and fitting matching your system.",
-          "Flush the irrigation line to remove dirt and debris.",
-          "Install the new sprinkler head and pack the soil firmly around it."
-        ],
-        "stepsFrom": "ai",
-        "level": "Beginner",
-        "subject": "Irrigation Valve Troubleshooting",
-        "category": "Landscaping",
-        "review": {
-          "relevance": 7,
-          "quality": 8,
-          "recommend": "approve",
-          "reason": "Clear, practical guide for replacing damaged sprinkler heads.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
-    }
-  ],
+  "queue": [],
   "rejected": [
     "je0BsLY5nZw",
     "NcgO12kdTVs",
