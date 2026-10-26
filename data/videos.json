@@ -14320,7 +14320,17 @@
           ]
         }
       },
-      "ytTitle": "RIDGID 300 Pipe Threading Machine Operation"
+      "gemini": {
+        "date": "2026-10-26",
+        "model": "gemini-3.5-flash-lite",
+        "relevance": 10,
+        "quality": 9,
+        "recommend": "approve",
+        "reason": "Clear and detailed step-by-step instruction for operating a standard plumbing threading machine.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      }
     },
     {
       "id": "plumb-115",
