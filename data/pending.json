@@ -1317,47 +1317,6 @@
       }
     },
     {
-      "yt": "zZkvbUARBwk",
-      "title": "NADCA HVAC Duct Cleaning Guidelines Explained",
-      "channel": "",
-      "published": "",
-      "duration": "",
-      "suggestedCategory": "Duct Cleaning",
-      "description": "Suggested starter video (found by research). Preview it before approving.",
-      "found": "2026-10-25T10:06:40Z",
-      "starter": true,
-      "draft": {
-        "source": "ai",
-        "summary": "This video explains the standard process for cleaning HVAC duct systems, including loosening and collecting contaminants.",
-        "safety": "Always wear respiratory protection and eye protection when cleaning dusty duct systems to avoid inhaling harmful contaminants.",
-        "ppe": [
-          "Safety Glasses",
-          "Dust Mask",
-          "Gloves"
-        ],
-        "steps": [
-          "Loosen contaminants using brushes, air whips, or compressed air.",
-          "Collect and remove contaminants using negative pressure equipment.",
-          "Clean the blower, motor, cooling coils, and heat exchanger surfaces.",
-          "Seal all service openings once cleaning is complete."
-        ],
-        "stepsFrom": "ai",
-        "level": "Beginner",
-        "subject": "HVAC Duct Cleaning Guidelines",
-        "category": "Duct Cleaning",
-        "review": {
-          "relevance": 10,
-          "quality": 8,
-          "recommend": "approve",
-          "reason": "Clear and professional explanation of industry-standard duct cleaning procedures suitable for technician training.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
-    },
-    {
       "yt": "J0NFvScegbk",
       "title": "Commercial Duct Cleaning in an Office Setting",
       "channel": "",
@@ -1910,6 +1869,7 @@
     "je0BsLY5nZw",
     "NcgO12kdTVs",
     "NYVWYR_3x38",
-    "ZnGGQmQTqlA"
+    "ZnGGQmQTqlA",
+    "zZkvbUARBwk"
   ]
 }
