@@ -2,6 +2,40 @@
   "updated": "2026-10-26",
   "videos": [
     {
+      "id": "water-jmdOfrL4zz0",
+      "yt": "jmdOfrL4zz0",
+      "title": "How to Clean and Maintain a Plastic Water Tank",
+      "category": "Water Tank Cleaning",
+      "subject": "Water Tank Cleaning",
+      "level": "Beginner",
+      "channel": "",
+      "duration": "",
+      "added": "2026-10-26",
+      "summary": "This video outlines step-by-step instructions for draining, cleaning, and disinfecting a plastic water tank.",
+      "safety": "Always wear safety goggles and rubber gloves while handling cleaning solutions and power tools.",
+      "ppe": [
+        "Rubber Gloves",
+        "Safety Goggles"
+      ],
+      "steps": [
+        "Drain the water tank completely",
+        "Scrub the inside of the tank",
+        "Flush hoses and pipes thoroughly",
+        "Disinfect the tank with a bleach solution",
+        "Drain and rinse the tank"
+      ],
+      "gemini": {
+        "date": "2026-10-26",
+        "relevance": 10,
+        "quality": 9,
+        "recommend": "approve",
+        "reason": "Clear and detailed guide relevant for water tank maintenance technicians.",
+        "unsafe": [],
+        "language": "English",
+        "talking": false
+      }
+    },
+    {
       "id": "healt-SPpL4bu7Bng",
       "yt": "SPpL4bu7Bng",
       "title": "Ladder Safety Training: Stepladder Safety",
