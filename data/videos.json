@@ -2,6 +2,41 @@
   "updated": "2026-10-26",
   "videos": [
     {
+      "id": "fires-bym_AagItOc",
+      "yt": "bym_AagItOc",
+      "title": "Fire Sprinkler Systems: Wet, Dry, Pre-Action, Deluge",
+      "category": "Fire Systems",
+      "subject": "Fire Sprinkler Systems",
+      "level": "Beginner",
+      "channel": "",
+      "duration": "",
+      "added": "2026-10-26",
+      "summary": "The video explains the four main fire sprinkler systems: wet pipe, dry pipe, pre-action, and deluge, helping architects and designers understand how they work and affect building design.",
+      "safety": "Ensure system pressure is relieved and water supplies are isolated before performing any maintenance or inspection work.",
+      "ppe": [
+        "Safety Glasses",
+        "Hard Hat",
+        "Safety Boots"
+      ],
+      "steps": [
+        "Start with wet pipe as the default system for heated, occupied buildings.",
+        "Use dry pipe systems for unheated spaces where pipes might freeze.",
+        "Select pre-action systems for sensitive contents requiring two-step activation.",
+        "Apply deluge systems for high-hazard areas requiring total simultaneous flood response.",
+        "Coordinate riser locations and pipe routing with structural and ceiling plans early in design."
+      ],
+      "gemini": {
+        "date": "2026-10-26",
+        "relevance": 9,
+        "quality": 9,
+        "recommend": "approve",
+        "reason": "Clear explanation of fire sprinkler system types and design considerations suitable for maintenance and technical training.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      }
+    },
+    {
       "id": "healt-aCvcvjyL01E",
       "yt": "aCvcvjyL01E",
       "title": "Permit-Required Confined Space Safety Training",
