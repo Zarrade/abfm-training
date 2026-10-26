@@ -2,6 +2,42 @@
   "updated": "2026-10-26",
   "videos": [
     {
+      "id": "healt-SPpL4bu7Bng",
+      "yt": "SPpL4bu7Bng",
+      "title": "Ladder Safety Training: Stepladder Safety",
+      "category": "Health & Safety",
+      "subject": "Stepladder Safety",
+      "level": "Beginner",
+      "channel": "",
+      "duration": "",
+      "added": "2026-10-26",
+      "summary": "This video provides comprehensive safety training for inspecting, setting up, using, and caring for stepladders.",
+      "safety": "Always inspect the ladder for damage and ensure all four legs are on a firm, level surface before use.",
+      "ppe": [
+        "Hard Hat",
+        "Safety Glasses",
+        "Non-Slip Footwear"
+      ],
+      "steps": [
+        "Select the correct stepladder for the job.",
+        "Inspect the ladder for damage or loose parts.",
+        "Set up the ladder on a flat, stable surface.",
+        "Climb while maintaining three points of contact.",
+        "Avoid overreaching while working."
+      ],
+      "essential": true,
+      "gemini": {
+        "date": "2026-10-26",
+        "relevance": 10,
+        "quality": 9,
+        "recommend": "approve",
+        "reason": "Essential ladder safety guidelines that apply to all maintenance trades.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      }
+    },
+    {
       "id": "healt-sWuOBu3GjHw",
       "yt": "sWuOBu3GjHw",
       "title": "Single and Extension Ladder Safety",
