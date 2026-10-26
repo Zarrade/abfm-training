@@ -1,92 +1,161 @@
 {
-  "lastRun": "2026-10-26T02:01:47.308Z",
+  "lastRun": "2026-10-26T11:20:56.944Z",
   "channelStatus": {
     "https://www.youtube.com/@EngineeringMindset": {
       "id": "UCk0fGHsCEzGig-rSzkfCjMw",
-      "checked": "2026-10-26T02:01:36.300Z",
-      "lastFound": 0,
-      "error": "Feed not available (404)."
+      "checked": "2026-10-26T11:20:42.344Z",
+      "lastFound": 0
     },
     "https://www.youtube.com/@ACServiceTech": {
       "id": "UCYohLjTaUZLF3-JjttxG_CA",
-      "checked": "2026-10-26T02:01:37.920Z",
-      "lastFound": 0,
-      "error": "Feed not available (404)."
+      "checked": "2026-10-26T11:20:44.115Z",
+      "lastFound": 0
     },
     "https://www.youtube.com/@TheElectricalGuy": {
       "id": "UCdKPm5KM99O75NtArFkMDDA",
-      "checked": "2026-10-26T02:01:38.698Z",
-      "lastFound": 0,
-      "error": "Feed not available (404)."
+      "checked": "2026-10-26T11:20:44.962Z",
+      "lastFound": 0
     },
     "https://www.youtube.com/@GSHElectrical": {
       "id": "UCgtbE9w_d-u2AvPp3WBlPfQ",
-      "checked": "2026-10-26T02:01:39.475Z",
-      "lastFound": 0,
-      "error": "Feed not available (404)."
+      "checked": "2026-10-26T11:20:45.818Z",
+      "lastFound": 0
     },
     "https://www.youtube.com/@jwflame": {
       "id": "UC2uFFhnMKyF82UY2TbXRaNg",
-      "checked": "2026-10-26T02:01:40.253Z",
-      "lastFound": 0,
-      "error": "Feed not available (404)."
+      "checked": "2026-10-26T11:20:46.881Z",
+      "lastFound": 0
     },
     "https://www.youtube.com/@RogerWakefield": {
       "id": "UCGIMKh92vaL0_Yc0u4GYhHA",
-      "checked": "2026-10-26T02:01:41.031Z",
-      "lastFound": 0,
-      "error": "Feed not available (404)."
+      "checked": "2026-10-26T11:20:47.753Z",
+      "lastFound": 0
     },
     "https://www.youtube.com/c/HVACSchool": {
       "id": "UCdLlUhD9LUGm0-NTYDASPFA",
-      "checked": "2026-10-26T02:01:37.142Z",
-      "lastFound": 0,
-      "error": "Feed not available (500)."
+      "checked": "2026-10-26T11:20:43.229Z",
+      "lastFound": 0
     },
     "https://www.youtube.com/channel/UCIoD-SEdUWMA74tWXRMyCZQ": {
       "id": "UCIoD-SEdUWMA74tWXRMyCZQ",
-      "checked": "2026-10-26T02:01:41.810Z",
-      "lastFound": 0,
-      "error": "Feed not available (404)."
+      "checked": "2026-10-26T11:20:48.634Z",
+      "lastFound": 0
     },
     "https://www.youtube.com/c/Ductdudes": {
       "id": "UCGGX5M9ISk9Zwi6pfa6gk3w",
-      "checked": "2026-10-26T02:01:42.583Z",
-      "lastFound": 0,
-      "error": "Feed not available (404)."
+      "checked": "2026-10-26T11:20:49.536Z",
+      "lastFound": 0
     },
     "https://www.youtube.com/channel/UCbZdXox6mKHdcT2QdVT-goQ": {
       "id": "UCbZdXox6mKHdcT2QdVT-goQ",
-      "checked": "2026-10-26T02:01:43.366Z",
-      "lastFound": 0,
-      "error": "Feed not available (404)."
+      "checked": "2026-10-26T11:20:50.371Z",
+      "lastFound": 0
     },
     "https://www.youtube.com/channel/UCWpu9UZ6aiRTaMuuV8-C0pQ": {
       "id": "UCWpu9UZ6aiRTaMuuV8-C0pQ",
-      "checked": "2026-10-26T02:01:44.145Z",
-      "lastFound": 0,
-      "error": "Feed not available (404)."
+      "checked": "2026-10-26T11:20:52.341Z",
+      "lastFound": 1
     },
     "https://www.youtube.com/channel/UCnrhmEmvA_bIRYkBVPqJ4zg": {
       "id": "UCnrhmEmvA_bIRYkBVPqJ4zg",
-      "checked": "2026-10-26T02:01:45.043Z",
-      "lastFound": 0,
-      "error": "Feed not available (500)."
+      "checked": "2026-10-26T11:20:54.395Z",
+      "lastFound": 1
     },
     "https://www.youtube.com/channel/UCR1ksygazAOr59yLZ4Mp5tA": {
       "id": "UCR1ksygazAOr59yLZ4Mp5tA",
-      "checked": "2026-10-26T02:01:45.817Z",
-      "lastFound": 0,
-      "error": "Feed not available (404)."
+      "checked": "2026-10-26T11:20:55.318Z",
+      "lastFound": 0
     },
     "https://www.youtube.com/channel/UCXOzd-KAiI6fGx5wfrnsHTA": {
       "id": "UCXOzd-KAiI6fGx5wfrnsHTA",
-      "checked": "2026-10-26T02:01:46.590Z",
-      "lastFound": 0,
-      "error": "Feed not available (404)."
+      "checked": "2026-10-26T11:20:56.230Z",
+      "lastFound": 0
     }
   },
-  "queue": [],
+  "queue": [
+    {
+      "yt": "jkTuymKsN4Y",
+      "title": "What It Actually Takes to Gut a  Bathroom #tiles #demo #howtotile",
+      "channel": "Sal DiBlasi (tiling & waterproofing)",
+      "channelUrl": "https://www.youtube.com/channel/UCWpu9UZ6aiRTaMuuV8-C0pQ",
+      "published": "2026-10-25T20:00:08+00:00",
+      "duration": "",
+      "channelCategory": "",
+      "suggestedCategory": "Civil Jobs",
+      "description": "SUBSCRIBE Learn how to tile the right way.\nDirty, Dusty Bathroom tear out, time lapse. Watch as I tear out this bathroom down to the studs, removing the sheetrock, wall tile, shower tile, ceiling tile, door frame and much more. This bathroom was completely gutted and made lightly bigger by reclaiming some waste space boxed in when the original install was done. All tile installed by Sal DiBlasi, Elite-tile Company, in the Boston North Shore area. This video contains affiliate links, which means I will receive a small commission if you click on the product link. #tile #transformthetrade  #howtotile #installingtile #howtoinstalltile #liticrete #mapei #Schlutersystems #diy #construction #ardex\n\n🙂 This is my Amazon Store 🙂 https://www.amazon.com/shop/saldiblasi\n\nPayPal\nhttps://www.paypal.com/donate/?hosted_button_id=UMJSX3UHEHQGQ\n\nPatreon  https://www.patreon.com/c/saldiblasi\n\n🌲 Link Tree 🌲\nhttps://linktr.ee/saldiblasi\n\n☕ Buy me a coffee ☕\nhttps://www.buymeacoffee.com/saldibs2 \n\n📷Camera Equipment 👇\nDJI Action 2 Power Combo https://amzn.to/3xA5fMH\nDJI Action 2 Dual-Screen https://amzn.to/3Qvk8IX \nDJI Pocket 2 Creator Combo https://amzn.to/3mUr1pu \n\n👇 Some of my favorite Tools 👇\nFloat https://amzn.to/2tdEpN2    \nRubbing Stone https://amzn.to/2QrgRfh  \nNotched Trowel 1/4 x 1/4 x 1/4-inch https://amzn.to/36bq5mQ  \nNotched Trowel 1/2 x 1/2 x 1/2-Inch https://amzn.to/2Q5e90g  \nNotched Trowel 1/4 x 3/8 x 1/4-Inch https://amzn.to/39j1caB  \nSuper Dust Collector – WaleTale https://amzn.to/2MDuVkK  \nBlack Nitrile Gloves - 6 mil https://amzn.to/2SJQ6FZ  \nMargin Trowel https://amzn.to/352MYHx \nMortar Mixer https://amzn.to/2ZxYqtF \n4in Sandpaper for Stone Polishing https://amzn.to/2ZB2skT  \nPolishing Rubber Backing Pad https://amzn.to/2srikdy  \nMontolit 63P3 24 Inch Tile Cutter https://amzn.to/2MDoFt l  \nDEWALT Wet Tile Saw https://amzn.to/2QqpO8O \nRubi Thinset mixer https://amzn.to/39VmNWV\nGrabo Pro Lifter\nhttps://amzn.to/3BBO5ys \nIQ 7\" Dustless/Dry Cut Tile Saw IQ228\nhttps://amzn.to/3wFE3w0",
+      "found": "2026-10-26T11:20:52.341Z",
+      "draft": {
+        "source": "ai",
+        "title": "Complete Bathroom Demolition to Studs",
+        "summary": "This video shows the complete demolition of an old tiled bathroom, including removing fixtures, wall tiles, ceiling, and floor layers down to the bare studs.",
+        "safety": "Ensure water and electrical supplies are disconnected before using heavy tools around hidden pipes and wires.",
+        "ppe": [
+          "Safety Glasses",
+          "Dust Mask",
+          "Work Gloves",
+          "Hearing Protection"
+        ],
+        "steps": [
+          "Disconnect plumbing connections and remove the sink and toilet fixtures.",
+          "Remove mirror cabinets and shower doors from walls.",
+          "Chisel away wall tiles and plaster using hand tools and pneumatic chisels.",
+          "Tear out shower enclosure walls, backing mortar, and ceiling materials.",
+          "Break up floor tile layers down to the subfloor boards.",
+          "Clean out all construction debris and inspect exposed framing studs."
+        ],
+        "stepsFrom": "ai",
+        "level": "Intermediate",
+        "subject": "Tile Installation",
+        "category": "Civil Jobs",
+        "review": {
+          "relevance": 7,
+          "quality": 8,
+          "recommend": "approve",
+          "reason": "Provides a comprehensive overview of complete bathroom gutting and preparation for renovation.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.6-flash"
+      }
+    },
+    {
+      "yt": "f_j7OIW2zB4",
+      "title": "¡Cómo rociar techos como un PRO! Consejos y técnicas para pistolas de pintura sin aire",
+      "channel": "Paint Life TV",
+      "channelUrl": "https://www.youtube.com/channel/UCnrhmEmvA_bIRYkBVPqJ4zg",
+      "published": "2026-10-23T22:25:51+00:00",
+      "duration": "",
+      "channelCategory": "Painting & Waterproofing",
+      "suggestedCategory": "Painting & Waterproofing",
+      "description": "¿Quieres aprender a pintar techos como un pintor profesional? En este video, Chris Berry, The Idaho Painter, te muestra cómo pintar techos usando un pulverizador de pintura sin aire para conseguir un acabado suave, uniforme y profesional. Ya seas un propietario que hace bricolaje o un pintor profesional que quiere mejorar sus habilidades con el pulverizador, estos consejos y técnicas para pintar techos te ayudarán a obtener mejores resultados.\n\n🛠️ Las herramientas en nuestros videos se pueden encontrar todas en nuestra tienda de LinkTree: https://linktr.ee/Idahopainter\n\nPintar techos con un pulverizador de pintura sin aire puede ahorrar tiempo, aumentar la productividad y ofrecer un acabado increíble si se hace correctamente. Pero usar la boquilla equivocada, presión incorrecta, técnica de pulverización deficiente o solapamiento inconsistente puede causar rayas, marcas de superposición, cobertura desigual y exceso de pulverización.\n\n👉 ¡Suscríbete para más reseñas honestas de herramientas y consejos de pintura! https://www.youtube.com/@Idahopainter\n\nVisit our website https://idahopainter.com for more tips & tricks painting\n\nShop Paint Life Supply Co. owned and operated by The Idaho Painter and my Family.  Game changing tools for painters and cool Paint Life apparel:  https://paintlifesupply.com \n\nVisit Us Here:\n\nFacebook: https://www.facebook.com/TheIdahoPainter/\nInstagram: https://www.instagram.com/idahopainter/\nTikTok: https://www.tiktok.com/@idahopainter",
+      "found": "2026-10-26T11:20:54.395Z",
+      "draft": {
+        "source": "rules",
+        "title": "¡Cómo Rociar Techos Como Un PRO! Consejos Y Técnicas Para Pistolas…",
+        "summary": "¿Quieres aprender a pintar techos como un pintor profesional? En este video, Chris Berry, The Idaho Painter, te muestra cómo pintar techos usando un pulverizador de pintura sin aire para conseguir un acabado suave, uniforme y profesional.",
+        "safety": "Ventilate the area, keep ignition sources away and protect your eyes and lungs from fumes and spray.",
+        "ppe": [
+          "Respirator",
+          "Safety Goggles",
+          "Chemical Gloves"
+        ],
+        "steps": [
+          "Protect floors and furniture, and ventilate the room",
+          "Clean, scrape, fill and sand the surface",
+          "Apply primer to bare or patched areas",
+          "Cut in edges and corners with a brush",
+          "Roll the main areas in sections, keeping a wet edge",
+          "Apply a second coat once the first is dry"
+        ],
+        "stepsFrom": "topic",
+        "level": "Intermediate",
+        "subject": ""
+      },
+      "aiTries": 1,
+      "aiError": "Gemini took too long"
+    }
+  ],
   "rejected": [
     "je0BsLY5nZw",
     "NcgO12kdTVs",
