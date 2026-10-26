@@ -14072,6 +14072,17 @@
             "قفازات العمل"
           ]
         }
+      },
+      "gemini": {
+        "date": "2026-10-26",
+        "model": "gemini-3.6-flash",
+        "relevance": 9,
+        "quality": 9,
+        "recommend": "approve",
+        "reason": "Clear step-by-step tutorial on setting precharge pressure and installing an expansion tank.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
       }
     },
     {
