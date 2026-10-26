@@ -16611,6 +16611,17 @@
           ]
         }
       },
+      "gemini": {
+        "date": "2026-10-26",
+        "model": "gemini-3.6-flash",
+        "relevance": 9,
+        "quality": 9,
+        "recommend": "approve",
+        "reason": "Provides a comprehensive, clear demonstration of RCD inspection and testing using standard electrical testing equipment.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      },
       "ytTitle": "How to Test RCDs"
     },
     {
