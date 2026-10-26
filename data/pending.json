@@ -891,49 +891,6 @@
       }
     },
     {
-      "yt": "rwfmx5cCWdE",
-      "title": "How to Waterproof a Shower Before Tiling",
-      "channel": "",
-      "published": "",
-      "duration": "",
-      "suggestedCategory": "Painting & Waterproofing",
-      "description": "Suggested starter video (found by research). Preview it before approving.",
-      "found": "2026-10-25T10:06:40Z",
-      "starter": true,
-      "draft": {
-        "source": "ai",
-        "summary": "This video demonstrates how to waterproof a shower using a flexible two-component waterproofing system before tiling.",
-        "safety": "Ensure the working area is well ventilated and wear appropriate personal protective equipment.",
-        "ppe": [
-          "Dust Mask",
-          "Safety Gloves",
-          "Safety Boots"
-        ],
-        "steps": [
-          "Clean and prime the shower surface.",
-          "Apply silicone bead to corners.",
-          "Mix the waterproofing system.",
-          "Apply the first coat of waterproofing.",
-          "Embed waterproofing membrane.",
-          "Apply the second coat of waterproofing."
-        ],
-        "stepsFrom": "ai",
-        "level": "Intermediate",
-        "subject": "Shower Waterproofing",
-        "category": "Painting & Waterproofing",
-        "review": {
-          "relevance": 10,
-          "quality": 9,
-          "recommend": "approve",
-          "reason": "Clear and detailed demonstration of shower waterproofing steps suitable for technicians.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
-    },
-    {
       "yt": "rLkt8_D6R-I",
       "title": "Pro Tip: How to Waterproof a Shower Before Tile Install",
       "channel": "",
