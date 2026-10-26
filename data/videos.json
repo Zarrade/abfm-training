@@ -16800,6 +16800,17 @@
           ]
         }
       },
+      "gemini": {
+        "date": "2026-10-26",
+        "model": "gemini-3.5-flash-lite",
+        "relevance": 9,
+        "quality": 8,
+        "recommend": "approve",
+        "reason": "Clear and practical demonstration of testing contactors for electrical maintenance.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      },
       "ytTitle": "Checking a Faulty Contactor with a Multimeter"
     },
     {
