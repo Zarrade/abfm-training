@@ -1764,47 +1764,6 @@
       }
     },
     {
-      "yt": "iVQVXkH_MAo",
-      "title": "Air Duct Cleaning Process Explained",
-      "channel": "",
-      "published": "",
-      "duration": "",
-      "suggestedCategory": "Duct Cleaning",
-      "description": "Suggested starter video (found by research). Preview it before approving.",
-      "found": "2026-10-25T10:06:40Z",
-      "starter": true,
-      "draft": {
-        "source": "ai",
-        "summary": "This video demonstrates the residential air duct and coil cleaning process using specialised vacuum equipment and chemical treatments.",
-        "safety": "Ensure the furnace and heating system are turned off before accessing coils or ductwork.",
-        "ppe": [
-          "Safety Glasses",
-          "Work Gloves"
-        ],
-        "steps": [
-          "Turn off the thermostat and access furnace coils.",
-          "Connect the large vacuum hose to the duct system.",
-          "Use a negative pressure snake to clean air ducts.",
-          "Apply cleaning chemical to coils and scrub vents.",
-          "Clean and clear the dryer vent exhaust line."
-        ],
-        "stepsFrom": "ai",
-        "level": "Beginner",
-        "subject": "Air Duct Cleaning",
-        "category": "Duct Cleaning",
-        "review": {
-          "relevance": 8,
-          "quality": 8,
-          "recommend": "approve",
-          "reason": "Provides a clear overview of residential air duct and coil cleaning procedures.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
-    },
-    {
       "yt": "J0NFvScegbk",
       "title": "Commercial Duct Cleaning in an Office Setting",
       "channel": "",
