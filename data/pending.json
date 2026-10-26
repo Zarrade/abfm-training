@@ -131,48 +131,6 @@
       }
     },
     {
-      "yt": "ztzTNf3smr4",
-      "title": "EEV Diagnostics & Expansion Devices with Ty Branaman, Roman Baugh, & Bryan Orr",
-      "channel": "HVAC School",
-      "channelUrl": "https://www.youtube.com/c/HVACSchool",
-      "published": "2026-10-23T00:23:56+00:00",
-      "duration": "",
-      "channelCategory": "HVAC",
-      "suggestedCategory": "HVAC",
-      "description": "EEV diagnostics can be confusing, especially when a perfectly good valve looks bad on paper. In this HVAC School livestream, host Bryan Orr sits down with Ty Branaman and Roman Baugh for a deep dive into the electronic expansion valve: how it works, what it needs to do its job, and how to prove whether it has actually failed before you replace anything.\n\nTy starts with the evolution of expansion devices, from the fixed orifice (piston) and automatic expansion valve (AXV) to the TXV and finally the EEV, and explains what each metering device was designed to control. Roman then breaks down the stepper motor inside the valve, the difference between unipolar EEV and bipolar EEV designs, and how PID control logic lets mini split, inverter heat pump, VRF, and refrigeration systems modulate refrigerant flow far more precisely than a spring-operated TXV.\n\nFrom there, the conversation moves into field troubleshooting: thermistor placement and sensor drift, pressure transducer readings, liquid line quality and subcooling, flash gas, and why there is no position feedback telling the board where the valve actually is. You’ll also hear practical tips on using a power cycle to overdrive valves closed, opening EEVs for nitrogen flow & evacuation, cleaning corrosion off the valve body, and using an EEV magnet or manual driver to test operation.\n\nWhat We Cover:\n\nExpansion Evolution: What problem is each expansion device family trying to solve?\n\nMechanical vs. Electronic: How an EEV’s stepper motor and control loop differ from a traditional TXV.\n\nThe “False Positive”: Which sensor or setup faults make a perfectly good valve look bad?\n\nMimicking Valve Failures: How low charge, liquid-line restrictions, flash gas, or lost pressure differentials disguise themselves as EEV issues.\n\nCommanded Position: What step count actually proves, and what it doesn’t.\n\nPre-Replacement Protocol: Repeatable tests to run before condemning a valve, sensor, or board.\n\nLive Q&A: Triaging real-world diagnostic scenarios from the audience.\n\nWhether you’re chasing high superheat with a wide-open command, a suspected liquid line restriction, or a step count that doesn’t match what the system is doing, this HVAC troubleshooting session gives you a process to work from outside the valve in before reaching for a replacement. It’s useful HVAC training for anyone servicing modern inverter equipment.",
-      "found": "2026-10-25T14:27:03.109Z",
-      "draft": {
-        "source": "ai",
-        "summary": "This video covers electronic expansion valve (EEV) operation and diagnostic procedures compared to standard TXVs. It demonstrates how to test motor windings, verify sensors, and test valve response before replacement.",
-        "safety": "Ensure electrical power to the equipment is disconnected before testing EEV winding resistance or handling wiring.",
-        "ppe": [
-          "Safety Glasses",
-          "Insulated Gloves"
-        ],
-        "steps": [
-          "Verify liquid refrigerant supply and subcooling before testing the valve.",
-          "Check temperature sensors and pressure transducers for accurate readings.",
-          "Disconnect power and measure EEV motor winding resistance using a multimeter.",
-          "Check for electrical shorts between separate winding phases.",
-          "Use a manual driver or service mode to test valve travel and response."
-        ],
-        "stepsFrom": "ai",
-        "level": "Intermediate",
-        "subject": "Refrigerant & Diagnostics",
-        "category": "HVAC",
-        "review": {
-          "relevance": 8,
-          "quality": 8,
-          "recommend": "approve",
-          "reason": "Provides valuable technical explanations and physical prop demonstrations for troubleshooting electronic expansion valves.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.6-flash"
-      }
-    },
-    {
       "yt": "IlxIEBFE20w",
       "title": "How to Replace a Broken Sprinkler Head | Mower Damage Repair | Sprinkler Warehouse",
       "channel": "Sprinkler Warehouse (irrigation)",
