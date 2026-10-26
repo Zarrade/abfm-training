@@ -15464,6 +15464,17 @@
           ]
         }
       },
+      "gemini": {
+        "date": "2026-10-26",
+        "model": "gemini-3.5-flash-lite",
+        "relevance": 10,
+        "quality": 9,
+        "recommend": "approve",
+        "reason": "This is a clear, step-by-step training video on using clamp meters.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      },
       "ytTitle": "How to Use a Clamp Meter"
     },
     {
