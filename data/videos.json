@@ -2,6 +2,40 @@
   "updated": "2026-10-26",
   "videos": [
     {
+      "id": "paint-jDZ3G79vpOM",
+      "yt": "jDZ3G79vpOM",
+      "title": "Pro Method: Masking Trim for Airless Spraying | Fast & Cost-Effective Setup",
+      "category": "Painting & Waterproofing",
+      "subject": "Masking Trim for Airless Spraying",
+      "level": "Intermediate",
+      "channel": "Paint Life TV",
+      "duration": "",
+      "added": "2026-10-26",
+      "summary": "Demonstrates a professional method for masking a door frame with tape and plastic film before airless paint spraying.",
+      "safety": "Ensure the ladder is stable and placed on an even surface before climbing.",
+      "ppe": [
+        "Safety Glasses",
+        "Dust Mask",
+        "Work Boots"
+      ],
+      "steps": [
+        "Apply blue painter tape around the door frame edges.",
+        "Cut and attach plastic film to the taped edges.",
+        "Smooth and press the plastic film down securely.",
+        "Seal any gaps or seams with additional tape."
+      ],
+      "gemini": {
+        "date": "2026-10-26",
+        "relevance": 9,
+        "quality": 8,
+        "recommend": "approve",
+        "reason": "Clear and practical demonstration of professional masking techniques for painting work.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      }
+    },
+    {
       "id": "civil-Fdy9uRvpI-E",
       "yt": "Fdy9uRvpI-E",
       "title": "How to Repair Drywall",
