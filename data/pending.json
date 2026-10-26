@@ -88,49 +88,6 @@
   },
   "queue": [
     {
-      "yt": "NYVWYR_3x38",
-      "title": "Why I Chose Construction Over YouTube",
-      "channel": "Vancouver Carpenter",
-      "channelUrl": "https://www.youtube.com/channel/UCbZdXox6mKHdcT2QdVT-goQ",
-      "published": "2026-10-24T01:00:57+00:00",
-      "duration": "",
-      "channelCategory": "Civil Jobs",
-      "suggestedCategory": "Civil Jobs",
-      "description": "I was earning good money on YouTube but I chose construction. Watch to find out why.\n\nSome tools used in the video:\nDisclaimer: As an Amazon Associate I will make a small commission on purchases through the Amazon link. Thanks for the support!!!\nStud Finder: https://amzn.to/3FttHaF\nBrad Nailer: https://amzn.to/43yeC0H\nMy Toolbelt: https://amzn.to/3VYFvXc\nA great hammer: https://amzn.to/4iQ7TVj (My second choice after Tibone)\nBest tool ever! https://amzn.to/3Pgz4uQ\nA good nail puller: https://amzn.to/3WlhlXp\nFat max tape: https://amzn.to/41T9DHp (best tape measure)\nSpeed square: https://amzn.to/3PfFkTE\nNail Punch: https://amzn.to/4fz7ow1\nThe best knife: https://amzn.to/4fz7ow1 (keep it simple)\nChalk line: https://amzn.to/49XC8FPe for another day in the life style video!",
-      "found": "2026-10-25T14:27:25.284Z",
-      "draft": {
-        "source": "ai",
-        "summary": "The creator explains why he shifted his focus back to full-time construction work over making YouTube videos. The footage features background clips of various wall framing and carpentry tasks on a job site.",
-        "safety": "Always wear eye and hearing protection when operating air nailers and power saws on construction sites.",
-        "ppe": [
-          "Safety Glasses",
-          "Hearing Protection",
-          "Safety Boots"
-        ],
-        "steps": [
-          "Prioritize core construction projects over video production schedules.",
-          "Focus on high-end carpentry skills to deliver quality results.",
-          "Build a stable, dependable trade business for long-term income.",
-          "Demonstrate a consistent, hard-working example for family and team members.",
-          "Balance project management demands with personal career fulfillment."
-        ],
-        "stepsFrom": "ai",
-        "level": "Beginner",
-        "subject": "Carpentry Career Insights",
-        "category": "Civil Jobs",
-        "review": {
-          "relevance": 2,
-          "quality": 7,
-          "recommend": "reject",
-          "reason": "This is a personal vlog about social media vs. trade work rather than a technical training video.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.6-flash"
-      }
-    },
-    {
       "yt": "IlxIEBFE20w",
       "title": "How to Replace a Broken Sprinkler Head | Mower Damage Repair | Sprinkler Warehouse",
       "channel": "Sprinkler Warehouse (irrigation)",
@@ -2611,6 +2568,7 @@
   ],
   "rejected": [
     "je0BsLY5nZw",
-    "NcgO12kdTVs"
+    "NcgO12kdTVs",
+    "NYVWYR_3x38"
   ]
 }
