@@ -769,47 +769,6 @@
       }
     },
     {
-      "yt": "rOPiqAf-DlI",
-      "title": "How to Recognize and Prevent Heat-Related Illnesses",
-      "channel": "",
-      "published": "",
-      "duration": "",
-      "suggestedCategory": "Health & Safety",
-      "description": "Suggested starter video (found by research). Preview it before approving.",
-      "found": "2026-10-25T10:06:40Z",
-      "starter": true,
-      "draft": {
-        "source": "ai",
-        "summary": "This video explains how to recognize and prevent heat-related illnesses while working in hot conditions.",
-        "safety": "Stay hydrated and watch for signs of heat stress in yourself and your co-workers.",
-        "ppe": [
-          "Hard Hat",
-          "High Visibility Vest",
-          "Safety Glasses"
-        ],
-        "steps": [
-          "Drink water frequently and avoid caffeine.",
-          "Dress in light-colored and breathable clothing.",
-          "Take regular breaks in the shade.",
-          "Know the symptoms of heat-related illnesses."
-        ],
-        "stepsFrom": "ai",
-        "level": "Beginner",
-        "subject": "Heat Stress Prevention",
-        "category": "Health & Safety",
-        "review": {
-          "relevance": 9,
-          "quality": 9,
-          "recommend": "approve",
-          "reason": "Clear and essential safety guidance for workers in hot environments.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
-    },
-    {
       "yt": "_loONTyxmks",
       "title": "Confined Space Entry: Safe Work Practices",
       "channel": "",
