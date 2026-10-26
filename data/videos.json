@@ -16411,6 +16411,17 @@
             "أحذية اصبع القدم الصلب"
           ]
         }
+      },
+      "gemini": {
+        "date": "2026-10-26",
+        "model": "gemini-3.6-flash",
+        "relevance": 8,
+        "quality": 9,
+        "recommend": "approve",
+        "reason": "Provides a clear and clear visual breakdown of foundational 3-wire motor control circuits using physical demos and schematics.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
       }
     },
     {
