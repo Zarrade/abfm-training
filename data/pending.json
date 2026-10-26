@@ -300,48 +300,6 @@
       }
     },
     {
-      "yt": "169eyQcdxoA",
-      "title": "How to Wire a Surge Protector to a Disconnect: Pigtails & Phasing Tape",
-      "channel": "HVAC School",
-      "channelUrl": "https://www.youtube.com/c/HVACSchool",
-      "published": "2026-10-21T11:00:06+00:00",
-      "duration": "",
-      "channelCategory": "HVAC",
-      "suggestedCategory": "HVAC",
-      "description": "Double lugging a surge protector onto the load-side terminals of a disconnect is common in the field, but it can get your install flagged on inspection. In this video, we show how to wire a surge protector to a disconnect the right way, with pigtails instead of a double lug, and why phasing tape on the white wire matters on 240V circuits.\n\nMost disconnects and breakers aren’t rated for two conductors under one terminal. The wiring diagram for many surge protectors shows a double lug option, but that only applies when the terminals are listed for it. To keep the install code compliant, join the condenser wire and the surge protector lead with a wire nut and run a single jumper to each load-side terminal. That way there’s only one wire on each terminal. The same pigtail method applies when you wire a surge protector into a breaker panel.\n\nWe also cover phase identification. On a 240V circuit, the white conductor in the cable is being used as a hot, so code requires it to be marked. Wrap it with black or red phasing tape (or use a marker if you don’t have tape) so anyone opening the box knows it’s energized. If the existing wiring was never marked, take it off the terminal, tape it, and put it back, since you were the last one to touch it. On 120V circuits, leave the white wire alone, because it’s the neutral.\n\nOther field tips in this video:\n\nPicking the right wire nut size for the pigtail splice\nMounting the surge protector on the bottom or right side of the disconnect\nKeeping the door hinge clear so the disconnect can still open and close\nTaking a photo of every connection so you have a record if an inspector asks\n\nThese practices apply to ductless and mini split installs, split systems, new high-voltage runs to a condenser, and any surge protector wired at a disconnect or breaker.\n\n---\n\nNEXT VIDEO\n\nHow to Install an AC Disconnect\nhttps://www.youtube.com/watch?v=k10L0Mtn3sI\n\nKEEP LEARNING\n\nStart here:\nhttps://www.hvacrschool.com/start/\n\nFree HVAC/R training, tech tips, quizzes, calculators, courses, and more:\nhttps://www.hvacrschool.com/\n\nListen to the HVAC School podcast:\nhttps://www.hvacrschool.com/podcast/\n\nGet the HVAC School app:\nhttps://www.hvacrschool.com/apps-page/\n\nHVAC School provides free HVAC/R training—primarily for techs, by techs. The goal is not just to collect facts. It is to understand the system well enough to apply what you know in the field.\n\nQuestions or corrections? Leave a comment and include the equipment model, measurements, and source when you can. None of us gets everything right, and good measurements beat confident guesses.\n\nThis content is educational. Follow manufacturer instructions, use proper PPE and safe work practices, and comply with the codes and standards that apply to your equipment and jurisdiction.",
-      "found": "2026-10-25T14:27:05.341Z",
-      "draft": {
-        "source": "ai",
-        "summary": "This video explains how to properly wire a surge protector to an HVAC disconnect box using pigtails rather than double-lugging, and emphasizes phase-taping white wires for code compliance.",
-        "safety": "Always ensure power is completely disconnected and verified off before touching electrical components.",
-        "ppe": [
-          "Safety Glasses",
-          "Insulated Gloves"
-        ],
-        "steps": [
-          "Avoid double-lugging surge protector wires into single-rated load terminals.",
-          "Pigtail the surge protector wire together with the condenser load wire.",
-          "Connect the single pigtail wire to the load side terminal.",
-          "Wrap white high-voltage conductors with black or red electrical tape.",
-          "Mount surge protector where it will not block the disconnect door."
-        ],
-        "stepsFrom": "ai",
-        "level": "Intermediate",
-        "subject": "Electrical Diagnostics",
-        "category": "HVAC",
-        "review": {
-          "relevance": 9,
-          "quality": 8,
-          "recommend": "approve",
-          "reason": "Clear explanation on code-compliant surge protector installation using pigtails and phase tape.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.6-flash"
-      }
-    },
-    {
       "yt": "-Ea6ceNu5Ug",
       "title": "Your Thermostat Is Reading the Wall - Short #308",
       "channel": "HVAC School",
