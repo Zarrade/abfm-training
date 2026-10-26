@@ -1192,49 +1192,6 @@
       }
     },
     {
-      "yt": "sfHpB88lvs8",
-      "title": "Wet Pipe Fire Sprinkler Systems",
-      "channel": "",
-      "published": "",
-      "duration": "",
-      "suggestedCategory": "Fire Systems",
-      "description": "Suggested starter video (found by research). Preview it before approving.",
-      "found": "2026-10-25T10:06:40Z",
-      "starter": true,
-      "draft": {
-        "source": "ai",
-        "summary": "This video explains wet pipe fire sprinkler systems, covering definitions, sprinkler heads, risers, and valves.",
-        "safety": "Ensure system supply is isolated and pressure is safely relieved before performing any inspection or maintenance.",
-        "ppe": [
-          "Safety Glasses",
-          "Safety Shoes",
-          "Work Gloves"
-        ],
-        "steps": [
-          "Identify wet pipe system definition in NFPA 13.",
-          "Examine automatic sprinkler head operation and thermal bulb mechanism.",
-          "Inspect supply water routing through control valve and backflow preventer.",
-          "Review open-stem yoke control valve supervisory switch setup.",
-          "Explain alarm check valve clapper and alarm port functioning.",
-          "Locate main drain valve and vane-type water flow switch."
-        ],
-        "stepsFrom": "ai",
-        "level": "Beginner",
-        "subject": "Wet Pipe Sprinkler Systems",
-        "category": "Fire Systems",
-        "review": {
-          "relevance": 10,
-          "quality": 9,
-          "recommend": "approve",
-          "reason": "Clear and detailed explanation of wet pipe sprinkler system components suitable for maintenance technicians.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
-    },
-    {
       "yt": "nyBTkpNB0hU",
       "title": "Fire Alarm Control Panel Basics",
       "channel": "",
@@ -1870,6 +1827,7 @@
     "NcgO12kdTVs",
     "NYVWYR_3x38",
     "ZnGGQmQTqlA",
-    "zZkvbUARBwk"
+    "zZkvbUARBwk",
+    "sfHpB88lvs8"
   ]
 }
