@@ -2,6 +2,41 @@
   "updated": "2026-10-26",
   "videos": [
     {
+      "id": "lands-t_dSruoWQIw",
+      "yt": "t_dSruoWQIw",
+      "title": "How to Repair a Broken Drip Irrigation Line",
+      "category": "Landscaping",
+      "subject": "Irrigation Valve Troubleshooting",
+      "level": "Beginner",
+      "channel": "",
+      "duration": "",
+      "added": "2026-10-26",
+      "summary": "This video demonstrates how to repair damaged drip irrigation lines using simple hand tools and couplers.",
+      "safety": "Ensure the water supply is turned off and system pressure is relieved before cutting or repairing any irrigation lines.",
+      "ppe": [
+        "Work Gloves",
+        "Safety Glasses",
+        "Sturdy Footwear"
+      ],
+      "steps": [
+        "Locate the damaged section of the irrigation line.",
+        "Cut out the damaged pipe using a cutting tool.",
+        "Attach a coupling or replacement tube section to seal the leak.",
+        "Flush the irrigation line to remove dirt and debris.",
+        "Test the repaired system for leaks."
+      ],
+      "gemini": {
+        "date": "2026-10-26",
+        "relevance": 9,
+        "quality": 8,
+        "recommend": "approve",
+        "reason": "Clear, practical guide on repairing damaged drip irrigation lines suitable for landscaping maintenance training.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      }
+    },
+    {
       "id": "civil-IKfxGbEE8lo",
       "yt": "IKfxGbEE8lo",
       "title": "Complete Drywall Taping Process for Remodels",
