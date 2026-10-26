@@ -2,6 +2,43 @@
   "updated": "2026-10-26",
   "videos": [
     {
+      "id": "healt-_loONTyxmks",
+      "yt": "_loONTyxmks",
+      "title": "Confined Space Entry: Safe Work Practices",
+      "category": "Health & Safety",
+      "subject": "Confined Space Entry",
+      "level": "Beginner",
+      "channel": "",
+      "duration": "",
+      "added": "2026-10-26",
+      "summary": "The video outlines safe work practices for entering confined spaces, including hazard checks, ventilation, permits, and lock-out tag-out procedures.",
+      "safety": "Always test the space for hazards and ensure proper ventilation before entering.",
+      "ppe": [
+        "Hard Hat",
+        "Safety Glasses",
+        "High Visibility Vest",
+        "Respirator"
+      ],
+      "steps": [
+        "Review the permit program and safety procedures.",
+        "Test the confined space for hazards.",
+        "Use forced air ventilation to clear the air.",
+        "Shut off energy sources and lock-out tag-out.",
+        "Keep rescue equipment nearby."
+      ],
+      "essential": true,
+      "gemini": {
+        "date": "2026-10-26",
+        "relevance": 9,
+        "quality": 8,
+        "recommend": "approve",
+        "reason": "Clear and essential safety training for confined space entry procedures.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      }
+    },
+    {
       "id": "hvac-tQE1nGz3Ydg",
       "yt": "tQE1nGz3Ydg",
       "title": "Same Charge, Different Numbers - Short #306",
