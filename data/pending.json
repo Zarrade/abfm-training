@@ -2480,47 +2480,6 @@
         },
         "model": "gemini-3.5-flash-lite"
       }
-    },
-    {
-      "yt": "s8XagZQ9Suk",
-      "title": "Sprinkler System Has Low Pressure: How to Troubleshoot",
-      "channel": "",
-      "published": "",
-      "duration": "",
-      "suggestedCategory": "Landscaping",
-      "description": "Suggested starter video (found by research). Preview it before approving.",
-      "found": "2026-10-25T10:06:40Z",
-      "starter": true,
-      "draft": {
-        "source": "ai",
-        "summary": "This video guides landscaping technicians on how to troubleshoot weak water pressure in a sprinkler system.",
-        "safety": "Turn off water supply and relieve system pressure before opening valves or fittings.",
-        "ppe": [
-          "Safety Glasses",
-          "Work Gloves"
-        ],
-        "steps": [
-          "Ask the client about recent property work.",
-          "Check timer settings and wire connections.",
-          "Inspect main water meter and backflow preventer valves.",
-          "Verify all shut-off and zone valve handles are fully open.",
-          "Check pressure at test cocks using a pressure gauge."
-        ],
-        "stepsFrom": "ai",
-        "level": "Beginner",
-        "subject": "Irrigation Valve Troubleshooting",
-        "category": "Landscaping",
-        "review": {
-          "relevance": 9,
-          "quality": 8,
-          "recommend": "approve",
-          "reason": "Clear, practical guidance on diagnosing low pressure in sprinkler systems.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
     }
   ],
   "rejected": [
