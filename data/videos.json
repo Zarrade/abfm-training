@@ -15990,6 +15990,17 @@
             "أحذية اصبع القدم الصلب"
           ]
         }
+      },
+      "gemini": {
+        "date": "2026-10-26",
+        "model": "gemini-3.6-flash",
+        "relevance": 9,
+        "quality": 8,
+        "recommend": "approve",
+        "reason": "Clear schematic breakdowns that help technicians understand motor starter internal components and control wiring logic.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
       }
     },
     {
