@@ -2,6 +2,40 @@
   "updated": "2026-10-26",
   "videos": [
     {
+      "id": "fires-GVBamXXVD30",
+      "yt": "GVBamXXVD30",
+      "title": "How to Use a Fire Extinguisher",
+      "category": "Fire Systems",
+      "subject": "Fire Extinguisher PASS Technique",
+      "level": "Beginner",
+      "channel": "",
+      "duration": "",
+      "added": "2026-10-26",
+      "summary": "This video demonstrates how to operate a portable fire extinguisher using the four-step PASS technique to put out a grill fire.",
+      "safety": "Always keep a clear exit path behind you and maintain a safe distance from the fire.",
+      "ppe": [
+        "Safety Glasses",
+        "Heat-Resistant Gloves",
+        "Protective Apron"
+      ],
+      "steps": [
+        "Pull the pin at the top of the extinguisher.",
+        "Aim the nozzle at the base of the fire.",
+        "Squeeze the handle to discharge the extinguishing agent.",
+        "Sweep the nozzle from side to side across the fire base."
+      ],
+      "gemini": {
+        "date": "2026-10-26",
+        "relevance": 10,
+        "quality": 10,
+        "recommend": "approve",
+        "reason": "Clear visual presentation and concise voiceover teaching essential fire safety protocol.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      }
+    },
+    {
       "id": "healt-seuWV6qTl4k",
       "yt": "seuWV6qTl4k",
       "title": "How to Inspect and Don a Full Body Harness (FallTech)",
