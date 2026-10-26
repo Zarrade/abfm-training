@@ -2,6 +2,44 @@
   "updated": "2026-10-26",
   "videos": [
     {
+      "id": "civil-IKfxGbEE8lo",
+      "yt": "IKfxGbEE8lo",
+      "title": "Complete Drywall Taping Process for Remodels",
+      "category": "Civil Jobs",
+      "subject": "Drywall Taping and Mudding",
+      "level": "Intermediate",
+      "channel": "",
+      "duration": "",
+      "added": "2026-10-26",
+      "summary": "This video shows the complete process of taping, mudding, corner beating, and sanding drywall during a home remodel.",
+      "safety": "Wear a respirator mask and eye protection during sanding and mixing to prevent inhaling dust and debris.",
+      "ppe": [
+        "Safety Glasses",
+        "Respirator Mask",
+        "Work Gloves"
+      ],
+      "steps": [
+        "Prep drywall joints and scrape loose paper.",
+        "Mix joint compound or con-fill with water.",
+        "Pre-fill gaps and apply mesh tape.",
+        "Install corner beads and apply con-fill.",
+        "Apply super taper mud and roll corners.",
+        "Sand walls and ceilings until smooth."
+      ],
+      "gemini": {
+        "date": "2026-10-26",
+        "relevance": 9,
+        "quality": 8,
+        "recommend": "approve",
+        "reason": "Provides clear, practical, step-by-step guidance on drywall repair and finishing suitable for civil technicians.",
+        "unsafe": [
+          "Not wearing a respirator mask during initial sanding and mixing"
+        ],
+        "language": "English",
+        "talking": true
+      }
+    },
+    {
       "id": "ductc-J0NFvScegbk",
       "yt": "J0NFvScegbk",
       "title": "Commercial Duct Cleaning in an Office Setting",
