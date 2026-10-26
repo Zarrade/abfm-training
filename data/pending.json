@@ -215,47 +215,6 @@
       }
     },
     {
-      "yt": "nyBTkpNB0hU",
-      "title": "Fire Alarm Control Panel Basics",
-      "channel": "",
-      "published": "",
-      "duration": "",
-      "suggestedCategory": "Fire Systems",
-      "description": "Suggested starter video (found by research). Preview it before approving.",
-      "found": "2026-10-25T10:06:40Z",
-      "starter": true,
-      "draft": {
-        "source": "ai",
-        "summary": "This webinar provides an introduction to fire alarm control unit basics, covering displays, remote annunciators, switches, and indicators.",
-        "safety": "Always verify system status and ensure all alarms are acknowledged before silencing or resetting the fire alarm panel.",
-        "ppe": [
-          "Safety Glasses",
-          "Work Gloves"
-        ],
-        "steps": [
-          "Inspect fire alarm control panel display lights",
-          "Identify alarm, supervisory, trouble, and power indicators",
-          "Use acknowledge button to investigate alarm sources",
-          "Silence audible and visible notification appliances if needed",
-          "Reset system after resolving the trouble condition"
-        ],
-        "stepsFrom": "ai",
-        "level": "Beginner",
-        "subject": "Fire Alarm Control Panel Basics",
-        "category": "Fire Systems",
-        "review": {
-          "relevance": 9,
-          "quality": 8,
-          "recommend": "approve",
-          "reason": "Clear and detailed explanation of fire alarm control panel components and operation for technicians.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
-    },
-    {
       "yt": "J0NFvScegbk",
       "title": "Commercial Duct Cleaning in an Office Setting",
       "channel": "",
