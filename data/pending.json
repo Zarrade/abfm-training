@@ -1806,48 +1806,6 @@
       }
     },
     {
-      "yt": "3ZwVOsB_vGs",
-      "title": "Water Storage Tank Cleaning for Water Treatment Plants",
-      "channel": "",
-      "published": "",
-      "duration": "",
-      "suggestedCategory": "Water Tank Cleaning",
-      "description": "Suggested starter video (found by research). Preview it before approving.",
-      "found": "2026-10-25T10:06:40Z",
-      "starter": true,
-      "draft": {
-        "source": "ai",
-        "summary": "A water treatment plant operator explains the procedure for safely cleaning and disinfecting water storage tanks.",
-        "safety": "Always disinfect and decontaminate any tools before putting them inside the water storage tank to prevent cross-contamination.",
-        "ppe": [
-          "Safety Glasses",
-          "Gloves",
-          "Apron"
-        ],
-        "steps": [
-          "Remove all water from the tank",
-          "Vacuum and pressure wash interior equipment and surfaces",
-          "Apply chemical cleaner and let sit",
-          "Rinse and vacuum out cleaning solution",
-          "Disinfect tank with chlorine solution"
-        ],
-        "stepsFrom": "ai",
-        "level": "Intermediate",
-        "subject": "Water Storage Tank Cleaning",
-        "category": "Water Tank Cleaning",
-        "review": {
-          "relevance": 10,
-          "quality": 8,
-          "recommend": "approve",
-          "reason": "Clear and practical guide on water storage tank cleaning suitable for technicians.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
-    },
-    {
       "yt": "M7qGBZX_GZo",
       "title": "Water Storage Tank Disinfection & Safety",
       "channel": "",
