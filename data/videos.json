@@ -2,6 +2,42 @@
   "updated": "2026-10-26",
   "videos": [
     {
+      "id": "healt-aCvcvjyL01E",
+      "yt": "aCvcvjyL01E",
+      "title": "Permit-Required Confined Space Safety Training",
+      "category": "Health & Safety",
+      "subject": "Permit-Required Confined Spaces",
+      "level": "Intermediate",
+      "channel": "",
+      "duration": "",
+      "added": "2026-10-26",
+      "summary": "This video explains the OSHA regulations, hazards, entry procedures, permits, and rescue requirements for working in permit-required confined spaces.",
+      "safety": "Always test the atmosphere for oxygen levels, combustible gases, and toxic vapors before entering a confined space.",
+      "ppe": [
+        "Hard Hat",
+        "Safety Vest",
+        "Safety Glasses"
+      ],
+      "steps": [
+        "Identify and evaluate confined space hazards.",
+        "Obtain and fill out an entry permit.",
+        "Test the atmosphere before entry.",
+        "Ventilate the confined space.",
+        "Monitor the space continuously during work."
+      ],
+      "essential": true,
+      "gemini": {
+        "date": "2026-10-26",
+        "relevance": 9,
+        "quality": 9,
+        "recommend": "approve",
+        "reason": "Comprehensive guide to permit-required confined space safety that is essential for maintenance training.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      }
+    },
+    {
       "id": "healt-CdFPlD3vQ20",
       "yt": "CdFPlD3vQ20",
       "title": "Lockout/Tagout Procedures: How to Lock Out a Machine",
