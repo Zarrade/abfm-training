@@ -2,6 +2,41 @@
   "updated": "2026-10-26",
   "videos": [
     {
+      "id": "ductc-5N-1DIz4amg",
+      "yt": "5N-1DIz4amg",
+      "title": "NADCA's Guide to Proper Duct Cleaning",
+      "category": "Duct Cleaning",
+      "subject": "Air Duct Cleaning",
+      "level": "Beginner",
+      "channel": "",
+      "duration": "",
+      "added": "2026-10-26",
+      "summary": "This video explains the proper procedure for cleaning heating and cooling air ducts and system components.",
+      "safety": "Ensure proper negative pressure equipment is used to prevent releasing contaminants into the living space.",
+      "ppe": [
+        "Safety Glasses",
+        "Dust Mask",
+        "Gloves"
+      ],
+      "steps": [
+        "Loosen contaminants using brushes, air whips, or compressed air.",
+        "Collect and remove loosened contaminants using negative pressure vacuum equipment.",
+        "Create service openings in ductwork when needed and seal them afterward.",
+        "Clean the blower, motor, cooling coils, and heat exchanger components.",
+        "Inspect ducts using a mirror or camera to verify cleanliness."
+      ],
+      "gemini": {
+        "date": "2026-10-26",
+        "relevance": 10,
+        "quality": 8,
+        "recommend": "approve",
+        "reason": "Provides a clear, step-by-step overview of industry standards for proper air duct cleaning.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      }
+    },
+    {
       "id": "water-3ZwVOsB_vGs",
       "yt": "3ZwVOsB_vGs",
       "title": "Water Storage Tank Cleaning for Water Treatment Plants",
