@@ -2,6 +2,40 @@
   "updated": "2026-10-26",
   "videos": [
     {
+      "id": "hvac-PdkasaHKP3c",
+      "yt": "PdkasaHKP3c",
+      "title": "Next-Gen Filtration - Pressure Drop, MERV 16, and Bypass Prevention w/ Chris Howells",
+      "category": "HVAC",
+      "subject": "Preventive Maintenance",
+      "level": "Intermediate",
+      "channel": "HVAC School",
+      "duration": "",
+      "added": "2026-10-26",
+      "summary": "An expert explains HVAC air filter pressure drop, MERV ratings, and how bypass and media thickness affect filtration performance.",
+      "safety": "Always turn off power to the HVAC system before servicing filters or indoor units.",
+      "ppe": [
+        "Dust Mask",
+        "Safety Glasses",
+        "Work Gloves"
+      ],
+      "steps": [
+        "Measure system static pressure drop before and after the filter.",
+        "Select MERV 16 filtration that minimizes pressure drop.",
+        "Inspect filter slots and frame seals to prevent bypass air.",
+        "Ensure full face opening of the filter media to maintain airflow."
+      ],
+      "gemini": {
+        "date": "2026-10-26",
+        "relevance": 9,
+        "quality": 8,
+        "recommend": "approve",
+        "reason": "Clear technical discussion on filter selection, static pressure, and efficiency for HVAC technicians.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      }
+    },
+    {
       "id": "paint-jDZ3G79vpOM",
       "yt": "jDZ3G79vpOM",
       "title": "Pro Method: Masking Trim for Airless Spraying | Fast & Cost-Effective Setup",
