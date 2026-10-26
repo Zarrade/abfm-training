@@ -13573,7 +13573,17 @@
           ]
         }
       },
-      "ytTitle": "Replacing an Electric Water Heater Element"
+      "gemini": {
+        "date": "2026-10-26",
+        "model": "gemini-3.6-flash",
+        "relevance": 10,
+        "quality": 9,
+        "recommend": "approve",
+        "reason": "Clear step-by-step video demonstration with strong safety warnings and proper tool usage.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      }
     },
     {
       "id": "plumb-111",
