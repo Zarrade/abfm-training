@@ -2,6 +2,40 @@
   "updated": "2026-10-26",
   "videos": [
     {
+      "id": "lands-qoBe4nTrVz0",
+      "yt": "qoBe4nTrVz0",
+      "title": "Toro RXC Sprinkler Controller | Setup & Programming Guide | Sprinkler Warehouse",
+      "category": "Landscaping",
+      "subject": "Irrigation Valve Troubleshooting",
+      "level": "Beginner",
+      "channel": "Sprinkler Warehouse (irrigation)",
+      "duration": "",
+      "added": "2026-10-26",
+      "summary": "This video provides a complete setup and programming guide for the Toro RXC irrigation controller, explaining wiring, scheduling, and features.",
+      "safety": "Ensure the power to the controller is disconnected before opening or performing any wiring work.",
+      "ppe": [
+        "Safety Glasses",
+        "Work Gloves"
+      ],
+      "steps": [
+        "Open the controller panel and check the wiring terminals.",
+        "Install any necessary station modules and flow or weather sensors.",
+        "Set the current date and time using the control dial.",
+        "Program watering start times, run times, and watering days.",
+        "Return the control dial to the auto position to resume normal operation."
+      ],
+      "gemini": {
+        "date": "2026-10-26",
+        "relevance": 9,
+        "quality": 8,
+        "recommend": "approve",
+        "reason": "Clear and detailed walkthrough of controller programming suitable for technicians handling landscaping maintenance.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      }
+    },
+    {
       "id": "hvac-PdkasaHKP3c",
       "yt": "PdkasaHKP3c",
       "title": "Next-Gen Filtration - Pressure Drop, MERV 16, and Bypass Prevention w/ Chris Howells",
