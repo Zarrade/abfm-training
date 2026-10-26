@@ -129,49 +129,6 @@
       }
     },
     {
-      "yt": "3Fljt8V1qQM",
-      "title": "Glycol Skids for Market Refrigeration w/ Max Johnson",
-      "channel": "HVAC School",
-      "channelUrl": "https://www.youtube.com/c/HVACSchool",
-      "published": "2026-10-22T11:09:55+00:00",
-      "duration": "",
-      "channelCategory": "HVAC",
-      "suggestedCategory": "HVAC",
-      "description": "Glycol secondary loop systems are showing up in more and more grocery stores, and in this episode of the HVAC School Podcast, Bryan Orr sits down with Max, one of the company’s lead startup techs and its in-house subject matter expert on glycol skids. Max explains what these systems are, why clients are choosing them for retrofits, and what it takes to commission one without taking a live store down. The big picture: a traditional DX rack chills a water and propylene glycol mix in a heat exchanger, and that glycol is pumped around the store to cool the medium-temperature cases.\r\n\r\n The conversation starts with the “why.” Reduced refrigerant charge inside the building, keeping flammable or higher-GWP refrigerants out of the sales floor, regulatory pressure, and zero-emissions initiatives all push clients this way. Max is upfront that efficiency isn’t one of the reasons at this scale, since the extra heat exchange step, lower suction temperatures, and pump energy all cost something. He also covers the trade-off in reliability: case-level controls are simple, but a fault in one of the skid’s main valves can take out every case at once, so techs have to move fast.\r\n\r\n From there, Max walks through the skid itself, from the brazed plate heat exchanger, VFD-controlled pumps, and air separator to the expansion tank, strainers, suction guide, controller, and EEV drivers. He then covers flow control with balance valves, defrost strategy, and the importance of proper vents and drains in the piping. The two get into the details of startup and commissioning, and some key takeaways include pressure testing instead of pulling a vacuum, filling and purging air, and verifying that the refrigerant-side valves are wired and driven correctly so a swapped valve doesn’t flood the rack.\r\n\r\n The back half of the episode is practical field advice. Max shares how to recognize air in the loop, why store humidity and dew point matter so much for case performance, which specialty tools and fittings he carries, and how to handle glycol mixing and top-offs.\r\n\r\n Topics Covered\r\n\r\n  What a glycol secondary loop system is, and how it differs from direct expansion Why retrofits are happening: refrigerant charge reduction, safety, EPA regulation, and zero-emissions goals Efficiency penalties at small scale, and why efficiency isn’t the driver How glycol behaves in the coil: no latent exchange, a temperature gradient, and frost patterns Reliability trade-offs: simple case controls versus centralized, mission-critical valves Staging a retrofit so the store stays open, including pre-piping, pre-testing, and pipe cleaning Brazing versus soft solder, and whether nitrogen flow matters with glycol Skid components: heat exchanger, VFD pumps, air separator, feeder tank, expansion tank, strainers, and suction guide Controller inputs, EEV drivers, and emergency mobile chiller connections Balance valves (automatic versus manual) and defrost methods, including off-time and electric Fluid distr",
-      "found": "2026-10-25T14:27:04.184Z",
-      "draft": {
-        "source": "ai",
-        "summary": "This podcast episode discusses secondary glycol loop systems and skids used in supermarket refrigeration. It covers system design, key components, glycol mixture ratios, commissioning, and common troubleshooting steps.",
-        "safety": "Wear proper personal protective equipment when handling glycol solutions to prevent skin and eye irritation.",
-        "ppe": [
-          "Safety Glasses",
-          "Chemical-Resistant Gloves",
-          "Protective Overalls"
-        ],
-        "steps": [
-          "Understand the secondary glycol loop system architecture.",
-          "Pre-stage piping and skid connections before retrofitting cases.",
-          "Purge air completely from the loop using air separators.",
-          "Mix food-safe propylene glycol with distilled water to thirty-five percent.",
-          "Verify pump differential pressure to confirm proper fluid flow."
-        ],
-        "stepsFrom": "ai",
-        "level": "Intermediate",
-        "subject": "Chilled Water Systems",
-        "category": "HVAC",
-        "review": {
-          "relevance": 7,
-          "quality": 6,
-          "recommend": "maybe",
-          "reason": "It offers valuable technical discussion on glycol systems, but it is an audio podcast without visual demonstrations.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.6-flash"
-      }
-    },
-    {
       "yt": "-Ea6ceNu5Ug",
       "title": "Your Thermostat Is Reading the Wall - Short #308",
       "channel": "HVAC School",
@@ -1205,6 +1162,7 @@
     "3TVRMfnUWhI",
     "-eNBtz-_kJU",
     "3pDRywt9yKs",
-    "7iWAk17hCQk"
+    "7iWAk17hCQk",
+    "3Fljt8V1qQM"
   ]
 }
