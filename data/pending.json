@@ -171,48 +171,6 @@
       }
     },
     {
-      "yt": "PdkasaHKP3c",
-      "title": "Next-Gen Filtration - Pressure Drop, MERV 16, and Bypass Prevention w/ Chris Howells",
-      "channel": "HVAC School",
-      "channelUrl": "https://www.youtube.com/c/HVACSchool",
-      "published": "2026-10-15T11:13:03+00:00",
-      "duration": "",
-      "channelCategory": "HVAC",
-      "suggestedCategory": "HVAC",
-      "description": "In this episode of the HVAC School Podcast, Bryan sits down with Chris Howells, senior training manager at AprilAire, to talk about what really makes a filtration system perform. Chris has nearly thirty years in the industry, including fifteen as a technician, and brings a field-first perspective on why filtration is more than just “a filter.” Bryan also admits up front that his own contracting company is looking to put more high-efficiency filters into the field, so this conversation doubles as a practical learning session.\r\n\r\n The discussion starts with a common misconception: that a “thicker” filter is simply a filter with thicker media. Chris explains that what matters is surface area, face velocity, and pressure drop, not the width of the cabinet. They cover why using the full face of the filter is one of the easiest wins, how a poorly designed return can load just one section of the media, and why a high MERV rating does not automatically mean high resistance. Cabinet design, media construction, and overall system design all play a role, and modern ECM blowers make low static pressure more important than ever.\r\n\r\n From there, the conversation turns to bypass air and measurement. Chris describes how AprilAire’s cabinets use top and bottom rails and a self-seal media overhang to force air through the filter, backed by a 10-year clean coil guarantee. He and Bryan stress using the right tools, including a dual-port manometer and a proper static pressure probe, and checking pre-filter and post-filter pressure drop against manufacturer performance data at around 500 feet per minute. Chris also debunks the idea that deeper media is always more restrictive, pointing out that a typical retail one-inch pleated filter can raise pressure drop dramatically compared with a basic fiberglass filter.\r\n\r\n The final stretch is about communication and growth. Chris and Bryan share simple, natural questions technicians can use to start air quality conversations without sounding like a sales pitch, and they encourage listeners to stay curious and keep asking “why.” Chris closes with resources for learning more, including AprilAirPartners.com and the AprilAire Academy, and mentions that the Santa Fe and UltraAire product lines are now part of the AprilAire family.\r\n\r\n Topics Covered\r\n\r\n  Why “thicker” filters are really about surface area, face velocity, and pressure drop Using the full face of the filter and avoiding uneven loading How filters affect blower performance, system capacity, and equipment protection Why filtration is a high-value upgrade compared with bulbs and modules AprilAire’s new high-efficiency product line and its three-layer media design Reducing bypass air with rail design, self-sealing media, and the 10-year clean coil guarantee Measuring static pressure correctly and using manufacturer pressure drop charts Sizing media cabinets by CFM and face velocity instead of what fits under the air handler Common myths about MERV ratings and restricti",
-      "found": "2026-10-25T14:27:08.761Z",
-      "draft": {
-        "source": "ai",
-        "summary": "An expert explains HVAC air filter pressure drop, MERV ratings, and how bypass and media thickness affect filtration performance.",
-        "safety": "Always turn off power to the HVAC system before servicing filters or indoor units.",
-        "ppe": [
-          "Dust Mask",
-          "Safety Glasses",
-          "Work Gloves"
-        ],
-        "steps": [
-          "Measure system static pressure drop before and after the filter.",
-          "Select MERV 16 filtration that minimizes pressure drop.",
-          "Inspect filter slots and frame seals to prevent bypass air.",
-          "Ensure full face opening of the filter media to maintain airflow."
-        ],
-        "stepsFrom": "ai",
-        "level": "Intermediate",
-        "subject": "Preventive Maintenance",
-        "category": "HVAC",
-        "review": {
-          "relevance": 9,
-          "quality": 8,
-          "recommend": "approve",
-          "reason": "Clear technical discussion on filter selection, static pressure, and efficiency for HVAC technicians.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
-    },
-    {
       "yt": "qoBe4nTrVz0",
       "title": "Toro RXC Sprinkler Controller | Setup & Programming Guide | Sprinkler Warehouse",
       "channel": "Sprinkler Warehouse (irrigation)",
