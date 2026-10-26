@@ -853,52 +853,6 @@
       }
     },
     {
-      "yt": "3TVRMfnUWhI",
-      "title": "Werner Ladder - Climbing Pro Ladder Safety Training",
-      "channel": "",
-      "published": "",
-      "duration": "",
-      "suggestedCategory": "Health & Safety",
-      "description": "Suggested starter video (found by research). Preview it before approving.",
-      "found": "2026-10-25T10:06:40Z",
-      "starter": true,
-      "draft": {
-        "source": "ai",
-        "summary": "A instructional video demonstrating how to select, inspect, handle, and safely use step and extension ladders.",
-        "safety": "Always inspect your ladder before use and never exceed its rated weight capacity.",
-        "ppe": [
-          "Hard Hat",
-          "Safety Glasses",
-          "Work Gloves"
-        ],
-        "steps": [
-          "Choose the correct ladder style and size for the job.",
-          "Inspect the ladder thoroughly for missing or damaged parts.",
-          "Transport and handle the ladder properly without dropping or dragging.",
-          "Set up extension ladders using the four-to-one safety ratio.",
-          "Face the ladder and maintain a firm grip while climbing."
-        ],
-        "stepsFrom": "ai",
-        "level": "Beginner",
-        "subject": "Ladder Safety Training",
-        "category": "Health & Safety",
-        "review": {
-          "relevance": 10,
-          "quality": 9,
-          "recommend": "approve",
-          "reason": "Essential ladder safety training applicable to all facility maintenance technicians.",
-          "unsafe": [
-            "Carrying extension ladder in extended position (shown as improper use)",
-            "Overreaching on ladder (shown as improper use)",
-            "Standing on top cap (shown as improper use)"
-          ],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
-    },
-    {
       "yt": "rOPiqAf-DlI",
       "title": "How to Recognize and Prevent Heat-Related Illnesses",
       "channel": "",
@@ -1583,6 +1537,7 @@
     "0LtB1AAN32k",
     "-opbeWvw6q0",
     "6bLZ-Fpk3Tg",
-    "6gH3xU5Mzbw"
+    "6gH3xU5Mzbw",
+    "3TVRMfnUWhI"
   ]
 }
