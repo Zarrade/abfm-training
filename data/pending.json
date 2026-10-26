@@ -769,48 +769,6 @@
       }
     },
     {
-      "yt": "SPpL4bu7Bng",
-      "title": "Ladder Safety Training: Stepladder Safety",
-      "channel": "",
-      "published": "",
-      "duration": "",
-      "suggestedCategory": "Health & Safety",
-      "description": "Suggested starter video (found by research). Preview it before approving.",
-      "found": "2026-10-25T10:06:40Z",
-      "starter": true,
-      "draft": {
-        "source": "ai",
-        "summary": "This video provides comprehensive safety training for inspecting, setting up, using, and caring for stepladders.",
-        "safety": "Always inspect the ladder for damage and ensure all four legs are on a firm, level surface before use.",
-        "ppe": [
-          "Hard Hat",
-          "Safety Glasses",
-          "Non-Slip Footwear"
-        ],
-        "steps": [
-          "Select the correct stepladder for the job.",
-          "Inspect the ladder for damage or loose parts.",
-          "Set up the ladder on a flat, stable surface.",
-          "Climb while maintaining three points of contact.",
-          "Avoid overreaching while working."
-        ],
-        "stepsFrom": "ai",
-        "level": "Beginner",
-        "subject": "Stepladder Safety",
-        "category": "Health & Safety",
-        "review": {
-          "relevance": 10,
-          "quality": 9,
-          "recommend": "approve",
-          "reason": "Essential ladder safety guidelines that apply to all maintenance trades.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
-    },
-    {
       "yt": "rOPiqAf-DlI",
       "title": "How to Recognize and Prevent Heat-Related Illnesses",
       "channel": "",
