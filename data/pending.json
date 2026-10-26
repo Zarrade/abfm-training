@@ -1109,47 +1109,6 @@
       }
     },
     {
-      "yt": "GVBamXXVD30",
-      "title": "How to Use a Fire Extinguisher",
-      "channel": "",
-      "published": "",
-      "duration": "",
-      "suggestedCategory": "Fire Systems",
-      "description": "Suggested starter video (found by research). Preview it before approving.",
-      "found": "2026-10-25T10:06:40Z",
-      "starter": true,
-      "draft": {
-        "source": "ai",
-        "summary": "This video demonstrates how to operate a portable fire extinguisher using the four-step PASS technique to put out a grill fire.",
-        "safety": "Always keep a clear exit path behind you and maintain a safe distance from the fire.",
-        "ppe": [
-          "Safety Glasses",
-          "Heat-Resistant Gloves",
-          "Protective Apron"
-        ],
-        "steps": [
-          "Pull the pin at the top of the extinguisher.",
-          "Aim the nozzle at the base of the fire.",
-          "Squeeze the handle to discharge the extinguishing agent.",
-          "Sweep the nozzle from side to side across the fire base."
-        ],
-        "stepsFrom": "ai",
-        "level": "Beginner",
-        "subject": "Fire Extinguisher PASS Technique",
-        "category": "Fire Systems",
-        "review": {
-          "relevance": 10,
-          "quality": 10,
-          "recommend": "approve",
-          "reason": "Clear visual presentation and concise voiceover teaching essential fire safety protocol.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.6-flash"
-      }
-    },
-    {
       "yt": "0LtB1AAN32k",
       "title": "How to Use a Fire Extinguisher: The PASS Method",
       "channel": "",
