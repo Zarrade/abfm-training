@@ -13946,7 +13946,20 @@
           ]
         }
       },
-      "ytTitle": "Troubleshooting Sump Pump Problems"
+      "gemini": {
+        "date": "2026-10-26",
+        "model": "gemini-3.6-flash",
+        "relevance": 9,
+        "quality": 8,
+        "recommend": "approve",
+        "reason": "Clear practical instructions for diagnosing and repairing common sump pump failures like airlock and debris obstruction.",
+        "unsafe": [
+          "Drilling without safety glasses",
+          "Handling dirty sump equipment without gloves"
+        ],
+        "language": "English",
+        "talking": true
+      }
     },
     {
       "id": "plumb-113",
