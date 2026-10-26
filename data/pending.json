@@ -215,49 +215,6 @@
       }
     },
     {
-      "yt": "_loONTyxmks",
-      "title": "Confined Space Entry: Safe Work Practices",
-      "channel": "",
-      "published": "",
-      "duration": "",
-      "suggestedCategory": "Health & Safety",
-      "description": "Suggested starter video (found by research). Preview it before approving.",
-      "found": "2026-10-25T10:06:40Z",
-      "starter": true,
-      "draft": {
-        "source": "ai",
-        "summary": "The video outlines safe work practices for entering confined spaces, including hazard checks, ventilation, permits, and lock-out tag-out procedures.",
-        "safety": "Always test the space for hazards and ensure proper ventilation before entering.",
-        "ppe": [
-          "Hard Hat",
-          "Safety Glasses",
-          "High Visibility Vest",
-          "Respirator"
-        ],
-        "steps": [
-          "Review the permit program and safety procedures.",
-          "Test the confined space for hazards.",
-          "Use forced air ventilation to clear the air.",
-          "Shut off energy sources and lock-out tag-out.",
-          "Keep rescue equipment nearby."
-        ],
-        "stepsFrom": "ai",
-        "level": "Beginner",
-        "subject": "Confined Space Entry",
-        "category": "Health & Safety",
-        "review": {
-          "relevance": 9,
-          "quality": 8,
-          "recommend": "approve",
-          "reason": "Clear and essential safety training for confined space entry procedures.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
-    },
-    {
       "yt": "nyBTkpNB0hU",
       "title": "Fire Alarm Control Panel Basics",
       "channel": "",
