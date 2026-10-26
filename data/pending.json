@@ -1235,49 +1235,6 @@
       }
     },
     {
-      "yt": "6gH3xU5Mzbw",
-      "title": "Professional Water Tank Cleaning",
-      "channel": "",
-      "published": "",
-      "duration": "",
-      "suggestedCategory": "Water Tank Cleaning",
-      "description": "Suggested starter video (found by research). Preview it before approving.",
-      "found": "2026-10-25T10:06:40Z",
-      "starter": true,
-      "draft": {
-        "source": "ai",
-        "summary": "This video demonstrates a multi-step water tank cleaning process including dewatering, scrubbing, vacuuming, and UV treatment.",
-        "safety": "Ensure proper fall protection and equipment inspection when working on rooftops and inside confined spaces.",
-        "ppe": [
-          "Hard Hat",
-          "Safety Boots",
-          "Rubber Gloves"
-        ],
-        "steps": [
-          "Dewater the tank before cleaning",
-          "Close the supply line valve",
-          "Scrub the interior manually",
-          "Clean with high pressure jet",
-          "Vacuum the sludge and debris",
-          "Apply antibacterial spray and UV treatment"
-        ],
-        "stepsFrom": "ai",
-        "level": "Beginner",
-        "subject": "Water Tank Cleaning Procedure",
-        "category": "Water Tank Cleaning",
-        "review": {
-          "relevance": 9,
-          "quality": 7,
-          "recommend": "approve",
-          "reason": "Clear demonstration of water tank cleaning steps suitable for training technicians.",
-          "unsafe": [],
-          "language": "English",
-          "talking": false
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
-    },
-    {
       "yt": "-eNBtz-_kJU",
       "title": "Potable Water Tank Cleaning",
       "channel": "",
@@ -1667,6 +1624,7 @@
     "iEIpEyDwotg",
     "0LtB1AAN32k",
     "-opbeWvw6q0",
-    "6bLZ-Fpk3Tg"
+    "6bLZ-Fpk3Tg",
+    "6gH3xU5Mzbw"
   ]
 }
