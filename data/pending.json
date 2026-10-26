@@ -429,47 +429,6 @@
       }
     },
     {
-      "yt": "kKVHfHLgVW0",
-      "title": "The Fuse Only Blows When You Leave - Short #307",
-      "channel": "HVAC School",
-      "channelUrl": "https://www.youtube.com/c/HVACSchool",
-      "published": "2026-10-13T11:08:59+00:00",
-      "duration": "",
-      "channelCategory": "HVAC",
-      "suggestedCategory": "HVAC",
-      "description": "In this short podcast episode, Bryan talks about the fuse that only blows when you leave. The service call usually goes like this: you replace a blown fuse, the system runs fine, you leave, and then the fuse blows again. There could be several causes of a blown fuse.\r\n\r\n First, ask what was happening right before the system stopped, such as if the unit was starting up, if it was raining outside, or if the operating mode changed. The customer may not know the specifics, but they may be able to offer a clue. If the control fuse blows during a specific call, we may be able to locate a short in one of the circuits involved. We may also be able to find out a bit by inspecting places where wire often gets damaged, such as common points where conductors pinch or rub.  \r\n\r\n Isolation diagnosis can help us isolate the specific circuit or component with a problem. First, look at the wiring diagram, label conductors, and take pictures of the original setup before disconnecting anything. Keep the correct fuse protection instead of using a larger fuse, leave all safety controls in the circuit, and use the manufacturer's test procedure if it's available. Then, isolate different loads and conductors so they can be energized individually; some modern thermostats make this easy. Also note that continuity testing alone isn't always reliable for locating problematic paths.\r\n\r\n Sometimes, motion (from motors), temperature, and moisture can also contribute to intermittent issues. Additionally, some inductive loads, like contactor coils, experience unique intermittent issues that cause the components to draw high current; inductive reactance matters. Measuring current on the different circuits as you energize them can also point you toward circuits that have higher current than expected.\r\n\r\n Once you've found and repaired something, go back to the condition that made it fail. Make sure you fix the underlying problem, such as exposure to excess heat, vibration, or moisture.\r\n\r\n This episode contains embedded sponsor messages from Refrigeration Technologies, Carrier, Fieldpiece, TruTech Tools, and Filtrete.\r\n\r\n Resources\r\n\r\n  Isolation Diagnosis (tech tip) HVAC - Isolate to Diagnose (video) HVAC School calculators Submit a podcast question Learn about the GRIT Foundation  Purchase your tickets or learn more about the 8th Annual HVACR Training Symposium at https://hvacrschool.com/symposium.",
-      "found": "2026-10-25T14:27:11.050Z",
-      "draft": {
-        "source": "ai",
-        "summary": "The podcaster discusses how to diagnose and troubleshoot control fuses that blow intermittently when technicians leave a job.",
-        "safety": "Always disconnect power and verify circuits are de-energized before touching wires or testing components.",
-        "ppe": [
-          "Safety Glasses",
-          "Insulated Gloves"
-        ],
-        "steps": [
-          "Identify when the fuse blew in the operating timeline.",
-          "Inspect wiring, terminals, and connections for damage or moisture.",
-          "Isolate and test individual circuits to find high current draws.",
-          "Check for intermittent grounding or shorted solenoid coils."
-        ],
-        "stepsFrom": "ai",
-        "level": "Intermediate",
-        "subject": "Electrical Diagnostics",
-        "category": "HVAC",
-        "review": {
-          "relevance": 9,
-          "quality": 8,
-          "recommend": "approve",
-          "reason": "Good practical guidance for troubleshooting intermittent electrical faults in HVAC control circuits.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
-    },
-    {
       "yt": "2HQ_2Jnw6X4",
       "title": "Installing Wood Look Tile Like a PRO #tiles #howtotile #planktile",
       "channel": "Sal DiBlasi (tiling & waterproofing)",
