@@ -2,6 +2,41 @@
   "updated": "2026-10-26",
   "videos": [
     {
+      "id": "elect-pOfXina3uUQ",
+      "yt": "pOfXina3uUQ",
+      "title": "Electrical Metal Conduit - Types and Sizes",
+      "category": "Electrical",
+      "subject": "Wiring Accessories",
+      "level": "Beginner",
+      "channel": "GSH Electrical",
+      "duration": "",
+      "added": "2026-10-26",
+      "summary": "This video explains the different types of metal electrical conduit, including black enamel, zinc galvanized, and stainless steel, as well as their common sizes and accessories.",
+      "safety": "Wear protective gloves and eye protection when cutting, threading, or handling metal conduit to prevent cuts and metal shaving injuries.",
+      "ppe": [
+        "Safety Glasses",
+        "Cut-Resistant Gloves",
+        "Work Boots"
+      ],
+      "steps": [
+        "Identify the appropriate conduit finish based on the installation environment.",
+        "Choose between seam welded and solid drawn conduit construction.",
+        "Select the required conduit diameter and standard length.",
+        "Calculate the minimum bending radius using the conduit diameter.",
+        "Connect conduit lengths using compatible threaded boxes, couplers, and bushes."
+      ],
+      "gemini": {
+        "date": "2026-10-26",
+        "relevance": 8,
+        "quality": 9,
+        "recommend": "approve",
+        "reason": "Provides a clear and concise overview of electrical metal conduit materials, sizing, and accessories.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      }
+    },
+    {
       "id": "lands-t_dSruoWQIw",
       "yt": "t_dSruoWQIw",
       "title": "How to Repair a Broken Drip Irrigation Line",
