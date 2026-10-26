@@ -2,6 +2,40 @@
   "updated": "2026-10-26",
   "videos": [
     {
+      "id": "hvac-WaICUTIW3og",
+      "yt": "WaICUTIW3og",
+      "title": "Commercial Condensate Drain Leaking? Trap, Vent, and Slope Fix",
+      "category": "HVAC",
+      "subject": "Installation",
+      "level": "Intermediate",
+      "channel": "HVAC School",
+      "duration": "",
+      "added": "2026-10-26",
+      "summary": "A technician explains how to fix a leaking commercial AC condensate drain by replacing a shallow trap and fixing the slope.",
+      "safety": "Always ensure the power is off before servicing HVAC units to prevent electrical shock.",
+      "ppe": [
+        "Safety Glasses",
+        "Work Gloves",
+        "Safety Boots"
+      ],
+      "steps": [
+        "Remove the old shallow drain trap and clear the area.",
+        "Measure and cut PVC pipes according to manufacturer manual specifications.",
+        "Glue the PVC pipes together to form the new trap, cleanout, and vent.",
+        "Check the drain slope to ensure correct downward flow."
+      ],
+      "gemini": {
+        "date": "2026-10-26",
+        "relevance": 9,
+        "quality": 9,
+        "recommend": "approve",
+        "reason": "Clear, practical demonstration of commercial AC condensate drain troubleshooting and installation.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      }
+    },
+    {
       "id": "elect-nhcaeubedhs",
       "yt": "nhcaeubedhs",
       "title": "Bend Steel Conduit Like a Professional Electrician",
