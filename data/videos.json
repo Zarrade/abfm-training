@@ -2,6 +2,40 @@
   "updated": "2026-10-26",
   "videos": [
     {
+      "id": "fires-9urpPzmsxHo",
+      "yt": "9urpPzmsxHo",
+      "title": "Fire Sprinkler System: Wet Alarm Check Valve Explained",
+      "category": "Fire Systems",
+      "subject": "Wet Alarm Check Valve System",
+      "level": "Intermediate",
+      "channel": "",
+      "duration": "",
+      "added": "2026-10-26",
+      "summary": "A technician explains the components, operation, and pressure settings of a wet alarm check valve system using a whiteboard diagram and real piping.",
+      "safety": "Ensure proper system pressure is maintained and valves are handled carefully to prevent accidental flooding or pressure loss.",
+      "ppe": [
+        "Safety Glasses",
+        "Work Gloves",
+        "Safety Boots"
+      ],
+      "steps": [
+        "Identify supply and system side check valves",
+        "Review pressure settings and excess pressure pump connections",
+        "Examine alarm test valve and line port functions",
+        "Check intermediate chamber and water flow alarm connections"
+      ],
+      "gemini": {
+        "date": "2026-10-26",
+        "relevance": 9,
+        "quality": 8,
+        "recommend": "approve",
+        "reason": "Clear and detailed walkthrough of a fire sprinkler wet alarm check valve suitable for fire systems training.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      }
+    },
+    {
       "id": "fires-NIxWpqcj8t4",
       "yt": "NIxWpqcj8t4",
       "title": "Addressable Fire Alarms",
