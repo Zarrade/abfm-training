@@ -345,49 +345,6 @@
       }
     },
     {
-      "yt": "ZnGGQmQTqlA",
-      "title": "Hiring Better Technicians and Tradespeople",
-      "channel": "HVAC School",
-      "channelUrl": "https://www.youtube.com/c/HVACSchool",
-      "published": "2026-10-16T12:14:02+00:00",
-      "duration": "",
-      "channelCategory": "HVAC",
-      "suggestedCategory": "HVAC",
-      "description": "What does it take when hiring better technicians and tradespeople who actually succeed in the trades? In this HVAC School livestream, Bryan Orr is joined by Jaimie Jarvis (Human Resources Director), Jonathan Schaefer (Director of Employee Development), and Bert Testerman of Kalos Services. They take an honest look at skilled trades hiring and trades recruiting, from writing a transparent HVAC job posting through the first 90 days on the job.\n\nThe panel shares what has worked for them:\n\nHands-on skills assessments\nThe Predictive Index behavioral assessment\nWhy “clarity is kindness” during 90-day onboarding\nHow Kalos turned its registered apprenticeship into college credit and a stronger HVAC career path\n\nThey also take viewer questions on nepotism in the trades and the company tool allowance.\n\nCore topics covered:\n\nRole Alignment: What is the actual job, and which parts require technician, mechanic, installer, or craftsman strengths?\nValidating Experience: How do we effectively test claimed experience without turning the interview into a trivia contest?\nHands-On Evaluation: What belongs in a fair, practical skills assessment?\nSoft Skills & Posture: How do we spot curiosity, humility, communication, and a genuine capacity to learn?\nEvaluating Work History: How should job changes and employment gaps be discussed constructively without lazy assumptions?\nBuild vs. Buy: When is an apprentice a better hire than an experienced candidate?\nOnboarding & Retention: What must happen in the first 30, 60, and 90 days so a promising hire actually succeeds?\n\nThis is practical HVAC hiring, technician training, and workforce development advice for HVAC business owners and managers. It’s for anyone hiring technicians, hiring tradespeople, or working to improve employee retention.",
-      "found": "2026-10-25T14:27:07.651Z",
-      "draft": {
-        "source": "ai",
-        "summary": "A panel of industry professionals discusses strategies for hiring, evaluating, and onboarding technicians in the HVAC and trades sectors. They share insights on role alignment, practical testing, behavioral assessments, and long-term career pathways.",
-        "safety": "Ensure candidates follow standard safety protocols during practical hands-on evaluation tests.",
-        "ppe": [
-          "Safety Glasses",
-          "Work Gloves",
-          "Safety Shoes"
-        ],
-        "steps": [
-          "Align job descriptions with actual weekly work expectations.",
-          "Evaluate candidate experience and practical hands-on skill samples.",
-          "Observe candidate posture, questions, and responses to feedback.",
-          "Establish clear expectations during the first 90 days of onboarding.",
-          "Provide long-term career paths through registered apprenticeship programs."
-        ],
-        "stepsFrom": "ai",
-        "level": "Intermediate",
-        "subject": "Fundamentals",
-        "category": "HVAC",
-        "review": {
-          "relevance": 3,
-          "quality": 7,
-          "recommend": "reject",
-          "reason": "This is a lengthy management panel discussion on recruitment rather than a practical technical training video.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.6-flash"
-      }
-    },
-    {
       "yt": "PdkasaHKP3c",
       "title": "Next-Gen Filtration - Pressure Drop, MERV 16, and Bypass Prevention w/ Chris Howells",
       "channel": "HVAC School",
@@ -2569,6 +2526,7 @@
   "rejected": [
     "je0BsLY5nZw",
     "NcgO12kdTVs",
-    "NYVWYR_3x38"
+    "NYVWYR_3x38",
+    "ZnGGQmQTqlA"
   ]
 }
