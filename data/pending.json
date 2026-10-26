@@ -72,54 +72,7 @@
       "lastFound": 0
     }
   },
-  "queue": [
-    {
-      "yt": "jkTuymKsN4Y",
-      "title": "What It Actually Takes to Gut a  Bathroom #tiles #demo #howtotile",
-      "channel": "Sal DiBlasi (tiling & waterproofing)",
-      "channelUrl": "https://www.youtube.com/channel/UCWpu9UZ6aiRTaMuuV8-C0pQ",
-      "published": "2026-10-25T20:00:08+00:00",
-      "duration": "",
-      "channelCategory": "",
-      "suggestedCategory": "Civil Jobs",
-      "description": "SUBSCRIBE Learn how to tile the right way.\nDirty, Dusty Bathroom tear out, time lapse. Watch as I tear out this bathroom down to the studs, removing the sheetrock, wall tile, shower tile, ceiling tile, door frame and much more. This bathroom was completely gutted and made lightly bigger by reclaiming some waste space boxed in when the original install was done. All tile installed by Sal DiBlasi, Elite-tile Company, in the Boston North Shore area. This video contains affiliate links, which means I will receive a small commission if you click on the product link. #tile #transformthetrade  #howtotile #installingtile #howtoinstalltile #liticrete #mapei #Schlutersystems #diy #construction #ardex\n\n🙂 This is my Amazon Store 🙂 https://www.amazon.com/shop/saldiblasi\n\nPayPal\nhttps://www.paypal.com/donate/?hosted_button_id=UMJSX3UHEHQGQ\n\nPatreon  https://www.patreon.com/c/saldiblasi\n\n🌲 Link Tree 🌲\nhttps://linktr.ee/saldiblasi\n\n☕ Buy me a coffee ☕\nhttps://www.buymeacoffee.com/saldibs2 \n\n📷Camera Equipment 👇\nDJI Action 2 Power Combo https://amzn.to/3xA5fMH\nDJI Action 2 Dual-Screen https://amzn.to/3Qvk8IX \nDJI Pocket 2 Creator Combo https://amzn.to/3mUr1pu \n\n👇 Some of my favorite Tools 👇\nFloat https://amzn.to/2tdEpN2    \nRubbing Stone https://amzn.to/2QrgRfh  \nNotched Trowel 1/4 x 1/4 x 1/4-inch https://amzn.to/36bq5mQ  \nNotched Trowel 1/2 x 1/2 x 1/2-Inch https://amzn.to/2Q5e90g  \nNotched Trowel 1/4 x 3/8 x 1/4-Inch https://amzn.to/39j1caB  \nSuper Dust Collector – WaleTale https://amzn.to/2MDuVkK  \nBlack Nitrile Gloves - 6 mil https://amzn.to/2SJQ6FZ  \nMargin Trowel https://amzn.to/352MYHx \nMortar Mixer https://amzn.to/2ZxYqtF \n4in Sandpaper for Stone Polishing https://amzn.to/2ZB2skT  \nPolishing Rubber Backing Pad https://amzn.to/2srikdy  \nMontolit 63P3 24 Inch Tile Cutter https://amzn.to/2MDoFt l  \nDEWALT Wet Tile Saw https://amzn.to/2QqpO8O \nRubi Thinset mixer https://amzn.to/39VmNWV\nGrabo Pro Lifter\nhttps://amzn.to/3BBO5ys \nIQ 7\" Dustless/Dry Cut Tile Saw IQ228\nhttps://amzn.to/3wFE3w0",
-      "found": "2026-10-26T11:20:52.341Z",
-      "draft": {
-        "source": "ai",
-        "title": "Complete Bathroom Demolition to Studs",
-        "summary": "This video shows the complete demolition of an old tiled bathroom, including removing fixtures, wall tiles, ceiling, and floor layers down to the bare studs.",
-        "safety": "Ensure water and electrical supplies are disconnected before using heavy tools around hidden pipes and wires.",
-        "ppe": [
-          "Safety Glasses",
-          "Dust Mask",
-          "Work Gloves",
-          "Hearing Protection"
-        ],
-        "steps": [
-          "Disconnect plumbing connections and remove the sink and toilet fixtures.",
-          "Remove mirror cabinets and shower doors from walls.",
-          "Chisel away wall tiles and plaster using hand tools and pneumatic chisels.",
-          "Tear out shower enclosure walls, backing mortar, and ceiling materials.",
-          "Break up floor tile layers down to the subfloor boards.",
-          "Clean out all construction debris and inspect exposed framing studs."
-        ],
-        "stepsFrom": "ai",
-        "level": "Intermediate",
-        "subject": "Tile Installation",
-        "category": "Civil Jobs",
-        "review": {
-          "relevance": 7,
-          "quality": 8,
-          "recommend": "approve",
-          "reason": "Provides a comprehensive overview of complete bathroom gutting and preparation for renovation.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.6-flash"
-      }
-    }
-  ],
+  "queue": [],
   "rejected": [
     "je0BsLY5nZw",
     "NcgO12kdTVs",
@@ -141,6 +94,7 @@
     "FMxm-4b98pY",
     "SW6G7EostJc",
     "rLkt8_D6R-I",
-    "f_j7OIW2zB4"
+    "f_j7OIW2zB4",
+    "jkTuymKsN4Y"
   ]
 }
