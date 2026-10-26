@@ -803,49 +803,6 @@
       }
     },
     {
-      "yt": "EVN_tUlynHU",
-      "title": "How to Patch Big Holes in Drywall (No Studs Needed)",
-      "channel": "",
-      "published": "",
-      "duration": "",
-      "suggestedCategory": "Civil Jobs",
-      "description": "Suggested starter video (found by research). Preview it before approving.",
-      "found": "2026-10-25T10:06:40Z",
-      "starter": true,
-      "draft": {
-        "source": "ai",
-        "summary": "This video provides a step-by-step guide to repairing large holes in drywall without needing a stud.",
-        "safety": "Turn off power at the breaker and inspect behind the wall for wires and pipes before cutting.",
-        "ppe": [
-          "Safety Glasses",
-          "N95 Dust Mask",
-          "Gloves"
-        ],
-        "steps": [
-          "Size up the hole and choose the patch method.",
-          "Cut a clean rectangular opening around the hole.",
-          "Add wooden backers behind the wall.",
-          "Screw in a new drywall patch piece.",
-          "Apply joint compound and tape the seams.",
-          "Sand smooth, prime, and paint the wall."
-        ],
-        "stepsFrom": "ai",
-        "level": "Intermediate",
-        "subject": "Drywall Patching",
-        "category": "Civil Jobs",
-        "review": {
-          "relevance": 9,
-          "quality": 10,
-          "recommend": "approve",
-          "reason": "Clear and detailed instructions make it a great training resource for civil and maintenance work.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
-    },
-    {
       "yt": "IKfxGbEE8lo",
       "title": "Complete Drywall Taping Process for Remodels",
       "channel": "",
