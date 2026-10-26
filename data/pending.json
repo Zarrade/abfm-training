@@ -215,51 +215,6 @@
       }
     },
     {
-      "yt": "IKfxGbEE8lo",
-      "title": "Complete Drywall Taping Process for Remodels",
-      "channel": "",
-      "published": "",
-      "duration": "",
-      "suggestedCategory": "Civil Jobs",
-      "description": "Suggested starter video (found by research). Preview it before approving.",
-      "found": "2026-10-25T10:06:40Z",
-      "starter": true,
-      "draft": {
-        "source": "ai",
-        "summary": "This video shows the complete process of taping, mudding, corner beating, and sanding drywall during a home remodel.",
-        "safety": "Wear a respirator mask and eye protection during sanding and mixing to prevent inhaling dust and debris.",
-        "ppe": [
-          "Safety Glasses",
-          "Respirator Mask",
-          "Work Gloves"
-        ],
-        "steps": [
-          "Prep drywall joints and scrape loose paper.",
-          "Mix joint compound or con-fill with water.",
-          "Pre-fill gaps and apply mesh tape.",
-          "Install corner beads and apply con-fill.",
-          "Apply super taper mud and roll corners.",
-          "Sand walls and ceilings until smooth."
-        ],
-        "stepsFrom": "ai",
-        "level": "Intermediate",
-        "subject": "Drywall Taping and Mudding",
-        "category": "Civil Jobs",
-        "review": {
-          "relevance": 9,
-          "quality": 8,
-          "recommend": "approve",
-          "reason": "Provides clear, practical, step-by-step guidance on drywall repair and finishing suitable for civil technicians.",
-          "unsafe": [
-            "Not wearing a respirator mask during initial sanding and mixing"
-          ],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
-    },
-    {
       "yt": "t_dSruoWQIw",
       "title": "How to Repair a Broken Drip Irrigation Line",
       "channel": "",
