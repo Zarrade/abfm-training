@@ -1109,47 +1109,6 @@
       }
     },
     {
-      "yt": "0LtB1AAN32k",
-      "title": "How to Use a Fire Extinguisher: The PASS Method",
-      "channel": "",
-      "published": "",
-      "duration": "",
-      "suggestedCategory": "Fire Systems",
-      "description": "Suggested starter video (found by research). Preview it before approving.",
-      "found": "2026-10-25T10:06:40Z",
-      "starter": true,
-      "draft": {
-        "source": "ai",
-        "summary": "This video explains how to safely use a fire extinguisher using the PASS acronym.",
-        "safety": "Always ensure you have a clear escape route before attempting to fight a fire.",
-        "ppe": [
-          "Safety Glasses",
-          "Safety Gloves",
-          "Work Boots"
-        ],
-        "steps": [
-          "Pull the extinguisher pin.",
-          "Aim the nozzle at the base of the fire.",
-          "Squeeze the lever.",
-          "Sweep from side to side."
-        ],
-        "stepsFrom": "ai",
-        "level": "Beginner",
-        "subject": "Fire Extinguisher PASS Method",
-        "category": "Fire Systems",
-        "review": {
-          "relevance": 9,
-          "quality": 9,
-          "recommend": "approve",
-          "reason": "Clear, concise training on fire extinguisher operation suitable for all facility staff.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
-    },
-    {
       "yt": "bym_AagItOc",
       "title": "Fire Sprinkler Systems: Wet, Dry, Pre-Action, Deluge",
       "channel": "",
@@ -1788,6 +1747,7 @@
     "ZnGGQmQTqlA",
     "zZkvbUARBwk",
     "sfHpB88lvs8",
-    "iEIpEyDwotg"
+    "iEIpEyDwotg",
+    "0LtB1AAN32k"
   ]
 }
