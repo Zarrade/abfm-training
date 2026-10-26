@@ -1642,45 +1642,6 @@
       }
     },
     {
-      "yt": "SQDWNdO6xE4",
-      "title": "How Do Smoke Detectors Work?",
-      "channel": "",
-      "published": "",
-      "duration": "",
-      "suggestedCategory": "Fire Systems",
-      "description": "Suggested starter video (found by research). Preview it before approving.",
-      "found": "2026-10-25T10:06:40Z",
-      "starter": true,
-      "draft": {
-        "source": "ai",
-        "summary": "This video explains how different types of smoke detectors work, including photoelectric, ionization, and dual-sensor models.",
-        "safety": "Always test your smoke detectors regularly to ensure they function properly in an emergency.",
-        "ppe": [
-          "Safety Glasses",
-          "Work Gloves"
-        ],
-        "steps": [
-          "Understand how photoelectric detectors use light sensing chambers to spot slow-burning fires.",
-          "Learn how ionization detectors use charged plates to detect fast-flaming fires.",
-          "Compare how dual-sensor detectors combine both technologies for complete protection."
-        ],
-        "stepsFrom": "ai",
-        "level": "Beginner",
-        "subject": "Smoke Detectors",
-        "category": "Fire Systems",
-        "review": {
-          "relevance": 9,
-          "quality": 9,
-          "recommend": "approve",
-          "reason": "Clear and concise explanation of smoke detector types suited for fire system training.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
-    },
-    {
       "yt": "zZkvbUARBwk",
       "title": "NADCA HVAC Duct Cleaning Guidelines Explained",
       "channel": "",
