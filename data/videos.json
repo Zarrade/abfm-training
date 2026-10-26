@@ -2,6 +2,42 @@
   "updated": "2026-10-26",
   "videos": [
     {
+      "id": "civil-2HQ_2Jnw6X4",
+      "yt": "2HQ_2Jnw6X4",
+      "title": "Installing Wood Look Tile Like a PRO #tiles #howtotile #planktile",
+      "category": "Civil Jobs",
+      "subject": "Tile Installation",
+      "level": "Intermediate",
+      "channel": "Sal DiBlasi (tiling & waterproofing)",
+      "duration": "",
+      "added": "2026-10-26",
+      "summary": "A professional tradesperson demonstrates how to plan, dry-fit, and install wood-look plank tiles over an uncoupling membrane on a hallway floor.",
+      "safety": "Wear appropriate PPE when using power tools like oscillating saws and tile cutters to prevent injury from dust and debris.",
+      "ppe": [
+        "Safety Glasses",
+        "Knee Pads",
+        "Gloves",
+        "Dust Mask"
+      ],
+      "steps": [
+        "Undercut door jambs for tile clearance",
+        "Plan tile layout and dry-fit planks",
+        "Mix thin-set mortar and apply to floor",
+        "Back-butter tiles and set in mortar",
+        "Apply grout and clean the floor"
+      ],
+      "gemini": {
+        "date": "2026-10-26",
+        "relevance": 9,
+        "quality": 9,
+        "recommend": "approve",
+        "reason": "Clear, practical demonstration of tile installation techniques relevant to civil maintenance work.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      }
+    },
+    {
       "id": "civil-EVN_tUlynHU",
       "yt": "EVN_tUlynHU",
       "title": "How to Patch Big Holes in Drywall (No Studs Needed)",
