@@ -2,6 +2,37 @@
   "updated": "2026-10-26",
   "videos": [
     {
+      "id": "fires-NIxWpqcj8t4",
+      "yt": "NIxWpqcj8t4",
+      "title": "Addressable Fire Alarms",
+      "category": "Fire Systems",
+      "subject": "Addressable Fire Alarms",
+      "level": "Beginner",
+      "channel": "",
+      "duration": "",
+      "added": "2026-10-26",
+      "summary": "This video explains the difference between addressable and conventional fire alarm systems, highlighting how addressable systems pinpoint exact locations.",
+      "safety": "Always ensure the fire alarm control panel is properly isolated before carrying out any diagnostic work.",
+      "ppe": [
+        "High Visibility Vest"
+      ],
+      "steps": [
+        "Identify what an addressable fire alarm system is.",
+        "Demonstrate manual call point activation and panel response.",
+        "Compare addressable systems with conventional control panels."
+      ],
+      "gemini": {
+        "date": "2026-10-26",
+        "relevance": 9,
+        "quality": 9,
+        "recommend": "approve",
+        "reason": "Clear explanation of addressable versus conventional fire alarm systems suited for technicians.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      }
+    },
+    {
       "id": "fires-SQDWNdO6xE4",
       "yt": "SQDWNdO6xE4",
       "title": "How Do Smoke Detectors Work?",
