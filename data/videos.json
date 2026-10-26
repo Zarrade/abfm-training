@@ -2,6 +2,40 @@
   "updated": "2026-10-26",
   "videos": [
     {
+      "id": "ductc-iVQVXkH_MAo",
+      "yt": "iVQVXkH_MAo",
+      "title": "Air Duct Cleaning Process Explained",
+      "category": "Duct Cleaning",
+      "subject": "Air Duct Cleaning",
+      "level": "Beginner",
+      "channel": "",
+      "duration": "",
+      "added": "2026-10-26",
+      "summary": "This video demonstrates the residential air duct and coil cleaning process using specialised vacuum equipment and chemical treatments.",
+      "safety": "Ensure the furnace and heating system are turned off before accessing coils or ductwork.",
+      "ppe": [
+        "Safety Glasses",
+        "Work Gloves"
+      ],
+      "steps": [
+        "Turn off the thermostat and access furnace coils.",
+        "Connect the large vacuum hose to the duct system.",
+        "Use a negative pressure snake to clean air ducts.",
+        "Apply cleaning chemical to coils and scrub vents.",
+        "Clean and clear the dryer vent exhaust line."
+      ],
+      "gemini": {
+        "date": "2026-10-26",
+        "relevance": 8,
+        "quality": 8,
+        "recommend": "approve",
+        "reason": "Provides a clear overview of residential air duct and coil cleaning procedures.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      }
+    },
+    {
       "id": "paint-OcIs7JePFaE",
       "yt": "OcIs7JePFaE",
       "title": "Tips for Waterproofing a Bathroom Floor",
