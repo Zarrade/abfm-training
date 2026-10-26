@@ -599,46 +599,6 @@
       }
     },
     {
-      "yt": "nhcaeubedhs",
-      "title": "Bend Steel Conduit Like a Professional Electrician",
-      "channel": "GSH Electrical",
-      "channelUrl": "https://www.youtube.com/@GSHElectrical",
-      "published": "2026-10-11T09:00:34+00:00",
-      "duration": "",
-      "suggestedCategory": "Electrical",
-      "description": "Step by step guide on how to bend steel (metal) conduit to 90 degrees full demonstration. \n\nStudents training aid for bending 20 mm Steel (metal) Conduit to produce a 90 degree bend to the correct measurement. Includes a full demonstration on how to produce a bend using set square and a conduit bending machine so the end of the conduit to the back of the bend is at the correct measurement. \n\nHow to bend metal conduit to the correct length and to 90 degrees and how to check your bend it at 90 degrees.  \n\nElectrical UK Wiring \n\n🔵 Steel Conduit Life Hack How to Make Threading & Bending of Steel ",
-      "found": "2026-10-25T09:29:05.573Z",
-      "draft": {
-        "source": "ai",
-        "summary": "A technician demonstrates how to measure, mark, and bend steel conduit to an exact length using a manual conduit bender.",
-        "safety": "Keep clear of moving parts and leverage handles to avoid pinch points.",
-        "ppe": [
-          "Safety Glasses",
-          "Work Gloves"
-        ],
-        "steps": [
-          "Measure the conduit from the threaded end to the desired back of bend mark.",
-          "Align the mark with the bender reference point at 90 degrees.",
-          "Pull the bender handle to form the 90-degree bend.",
-          "Check the bend angle and length using a square and a reference pipe."
-        ],
-        "stepsFrom": "ai",
-        "level": "Beginner",
-        "subject": "Power Distribution",
-        "category": "Electrical",
-        "review": {
-          "relevance": 9,
-          "quality": 9,
-          "recommend": "approve",
-          "reason": "Clear and practical demonstration of conduit bending techniques useful for electrical technicians.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
-    },
-    {
       "yt": "3pDRywt9yKs",
       "title": "Questionable CO Alarms w/ Bill Spohn",
       "channel": "HVAC School",
