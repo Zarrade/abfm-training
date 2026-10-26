@@ -9936,7 +9936,17 @@
           ]
         }
       },
-      "geminiTries": 1
+      "gemini": {
+        "date": "2026-10-26",
+        "model": "gemini-3.6-flash",
+        "relevance": 9,
+        "quality": 9,
+        "recommend": "approve",
+        "reason": "Provides a detailed, close-up demonstration of proper copper line set flaring for mini-split installations.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      }
     },
     {
       "id": "hvac-106",
