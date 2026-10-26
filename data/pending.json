@@ -979,49 +979,6 @@
       }
     },
     {
-      "yt": "M7qGBZX_GZo",
-      "title": "Water Storage Tank Disinfection & Safety",
-      "channel": "",
-      "published": "",
-      "duration": "",
-      "suggestedCategory": "Water Tank Cleaning",
-      "description": "Suggested starter video (found by research). Preview it before approving.",
-      "found": "2026-10-25T10:06:40Z",
-      "starter": true,
-      "draft": {
-        "source": "ai",
-        "summary": "This video explains the standard water storage tank disinfection and testing process to ensure safe drinking water quality.",
-        "safety": "Ensure proper handling of chlorine chemicals and prevent contamination during water sampling.",
-        "ppe": [
-          "Safety Gloves",
-          "Safety Glasses",
-          "Protective Apron"
-        ],
-        "steps": [
-          "Calculate the chlorine needed for a 2 mg/L residual.",
-          "Add chlorinated water for a strong bottom concentration.",
-          "Let the tank stand for 24 hours.",
-          "Fill the tank fully to dilute the chlorine mixture.",
-          "Collect samples using sterile bottles for testing.",
-          "Re-chlorinate and investigate if test results are unsatisfactory."
-        ],
-        "stepsFrom": "ai",
-        "level": "Beginner",
-        "subject": "Water Tank Disinfection & Testing",
-        "category": "Water Tank Cleaning",
-        "review": {
-          "relevance": 10,
-          "quality": 8,
-          "recommend": "approve",
-          "reason": "Provides a clear and structured procedure for water tank disinfection and water quality testing.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
-    },
-    {
       "yt": "-eNBtz-_kJU",
       "title": "Potable Water Tank Cleaning",
       "channel": "",
