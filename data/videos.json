@@ -2,6 +2,40 @@
   "updated": "2026-10-26",
   "videos": [
     {
+      "id": "civil-Fdy9uRvpI-E",
+      "yt": "Fdy9uRvpI-E",
+      "title": "How to Repair Drywall",
+      "category": "Civil Jobs",
+      "subject": "Drywall Repair",
+      "level": "Beginner",
+      "channel": "",
+      "duration": "",
+      "added": "2026-10-26",
+      "summary": "This video demonstrates how to repair various types of drywall damage, including dents, small and large holes, corners, and textured surfaces.",
+      "safety": "Always inspect the wall cavity for electrical wires or pipes with a flashlight before cutting into drywall.",
+      "ppe": [
+        "Safety Glasses",
+        "Work Gloves"
+      ],
+      "steps": [
+        "Scrape away loose debris from the damaged area.",
+        "Apply joint compound or spackle with a putty knife.",
+        "Sand the dried patch smooth and apply primer and paint.",
+        "Cut out damaged drywall and install new patches for larger holes.",
+        "Replace damaged corner beads and apply joint compound."
+      ],
+      "gemini": {
+        "date": "2026-10-26",
+        "relevance": 9,
+        "quality": 9,
+        "recommend": "approve",
+        "reason": "Clear and comprehensive guide for repairing drywall damage suitable for facility maintenance training.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      }
+    },
+    {
       "id": "fires-bym_AagItOc",
       "yt": "bym_AagItOc",
       "title": "Fire Sprinkler Systems: Wet, Dry, Pre-Action, Deluge",
