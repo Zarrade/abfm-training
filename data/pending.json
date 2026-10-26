@@ -554,47 +554,6 @@
       }
     },
     {
-      "yt": "rLkt8_D6R-I",
-      "title": "Pro Tip: How to Waterproof a Shower Before Tile Install",
-      "channel": "",
-      "published": "",
-      "duration": "",
-      "suggestedCategory": "Painting & Waterproofing",
-      "description": "Suggested starter video (found by research). Preview it before approving.",
-      "found": "2026-10-25T10:06:40Z",
-      "starter": true,
-      "draft": {
-        "source": "ai",
-        "summary": "This video demonstrates how to install a waterproofing fabric membrane on shower walls using thin-set mortar.",
-        "safety": "Ensure proper ventilation when mixing and applying mortar, and wear protective eyewear to avoid eye irritation.",
-        "ppe": [
-          "Safety Glasses",
-          "Work Gloves"
-        ],
-        "steps": [
-          "Establish level and plumb lines on the wall.",
-          "Apply thin-set mortar using a notch trowel.",
-          "Install and press the waterproofing membrane into place.",
-          "Smooth out air bubbles and ensure firm coverage.",
-          "Fold and seal corners carefully with overlap."
-        ],
-        "stepsFrom": "ai",
-        "level": "Intermediate",
-        "subject": "Shower Waterproofing",
-        "category": "Painting & Waterproofing",
-        "review": {
-          "relevance": 9,
-          "quality": 9,
-          "recommend": "approve",
-          "reason": "",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
-    },
-    {
       "yt": "t_dSruoWQIw",
       "title": "How to Repair a Broken Drip Irrigation Line",
       "channel": "",
@@ -656,6 +615,7 @@
     "3Fljt8V1qQM",
     "-Ea6ceNu5Ug",
     "FMxm-4b98pY",
-    "SW6G7EostJc"
+    "SW6G7EostJc",
+    "rLkt8_D6R-I"
   ]
 }
