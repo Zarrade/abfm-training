@@ -1,6 +1,39 @@
 {
-  "updated": "2026-10-25",
+  "updated": "2026-10-26",
   "videos": [
+    {
+      "id": "paint-8PuhQWvG47Q",
+      "yt": "8PuhQWvG47Q",
+      "title": "Why You MUST Box Your Torginol Flakes Before Installing a Garage Floor!",
+      "category": "Painting & Waterproofing",
+      "subject": "Torginol Flakes Mixing",
+      "level": "Beginner",
+      "channel": "Paint Life TV",
+      "duration": "",
+      "added": "2026-10-26",
+      "summary": "A worker demonstrates why and how to mix multiple buckets of Torginol limestone hybrid flakes together before scattering them onto a newly painted garage floor.",
+      "safety": "Ensure proper ventilation and wear recommended protective equipment when handling chemical flooring flakes and coatings.",
+      "ppe": [
+        "Safety Glasses",
+        "Work Gloves",
+        "Knee Pads"
+      ],
+      "steps": [
+        "Collect clean buckets for all boxes of decorative flakes.",
+        "Pour flakes back and forth between buckets to thoroughly mix them.",
+        "Scatter the well-mixed flakes evenly across the prepared garage floor coating."
+      ],
+      "gemini": {
+        "date": "2026-10-26",
+        "relevance": 8,
+        "quality": 8,
+        "recommend": "approve",
+        "reason": "Clear demonstration of mixing techniques for decorative flooring materials to ensure uniform color distribution.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      }
+    },
     {
       "id": "elect-IElUDCQfTgg",
       "yt": "IElUDCQfTgg",
