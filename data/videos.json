@@ -10708,7 +10708,17 @@
           ]
         }
       },
-      "geminiTries": 1
+      "gemini": {
+        "date": "2026-10-26",
+        "model": "gemini-3.6-flash",
+        "relevance": 9,
+        "quality": 9,
+        "recommend": "approve",
+        "reason": "Excellent 2D animations clearly explaining VRF systems and heat recovery concepts for HVAC technicians.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      }
     },
     {
       "id": "hvac-110",
