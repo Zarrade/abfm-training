@@ -2,6 +2,41 @@
   "updated": "2026-10-26",
   "videos": [
     {
+      "id": "paint-f_j7OIW2zB4",
+      "yt": "f_j7OIW2zB4",
+      "title": "¡Cómo rociar techos como un PRO! Consejos y técnicas para pistolas de pintura sin aire",
+      "category": "Painting & Waterproofing",
+      "subject": "Ceiling Spray Painting",
+      "level": "Intermediate",
+      "channel": "Paint Life TV",
+      "duration": "",
+      "added": "2026-10-26",
+      "summary": "This video provides tips and techniques for airless spray painting interior ceilings professionally.",
+      "safety": "Ensure proper ventilation and wear respiratory protection when spraying paint indoors.",
+      "ppe": [
+        "Respirator",
+        "Protective Coveralls",
+        "Safety Gloves"
+      ],
+      "steps": [
+        "Select a suitable airless spray tip size.",
+        "Set the correct operating pressure.",
+        "Attach an extension wand to the spray gun.",
+        "Maintain a 50 percent overlap while spraying ceilings.",
+        "Work at a consistent pace across the ceiling surface."
+      ],
+      "gemini": {
+        "date": "2026-10-26",
+        "relevance": 9,
+        "quality": 8,
+        "recommend": "approve",
+        "reason": "Clear and practical instructions for airless ceiling painting suitable for our technicians.",
+        "unsafe": [],
+        "language": "Spanish",
+        "talking": true
+      }
+    },
+    {
       "id": "hvac-169eyQcdxoA",
       "yt": "169eyQcdxoA",
       "title": "How to Wire a Surge Protector to a Disconnect: Pigtails & Phasing Tape",
