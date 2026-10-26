@@ -2,6 +2,40 @@
   "updated": "2026-10-26",
   "videos": [
     {
+      "id": "lands-s8XagZQ9Suk",
+      "yt": "s8XagZQ9Suk",
+      "title": "Sprinkler System Has Low Pressure: How to Troubleshoot",
+      "category": "Landscaping",
+      "subject": "Irrigation Valve Troubleshooting",
+      "level": "Beginner",
+      "channel": "",
+      "duration": "",
+      "added": "2026-10-26",
+      "summary": "This video guides landscaping technicians on how to troubleshoot weak water pressure in a sprinkler system.",
+      "safety": "Turn off water supply and relieve system pressure before opening valves or fittings.",
+      "ppe": [
+        "Safety Glasses",
+        "Work Gloves"
+      ],
+      "steps": [
+        "Ask the client about recent property work.",
+        "Check timer settings and wire connections.",
+        "Inspect main water meter and backflow preventer valves.",
+        "Verify all shut-off and zone valve handles are fully open.",
+        "Check pressure at test cocks using a pressure gauge."
+      ],
+      "gemini": {
+        "date": "2026-10-26",
+        "relevance": 9,
+        "quality": 8,
+        "recommend": "approve",
+        "reason": "Clear, practical guidance on diagnosing low pressure in sprinkler systems.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      }
+    },
+    {
       "id": "hvac-ztzTNf3smr4",
       "yt": "ztzTNf3smr4",
       "title": "EEV Diagnostics & Expansion Devices with Ty Branaman, Roman Baugh, & Bryan Orr",
