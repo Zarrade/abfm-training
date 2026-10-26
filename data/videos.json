@@ -17863,6 +17863,19 @@
             "أحذية السلامة"
           ]
         }
+      },
+      "gemini": {
+        "date": "2026-10-26",
+        "model": "gemini-3.6-flash",
+        "relevance": 9,
+        "quality": 8,
+        "recommend": "approve",
+        "reason": "Provides a clear and direct demonstration of testing loop impedance on single and three-phase industrial sockets.",
+        "unsafe": [
+          "Handling live test leads without wearing insulated gloves"
+        ],
+        "language": "English",
+        "talking": true
       }
     }
   ]
