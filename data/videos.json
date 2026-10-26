@@ -2,6 +2,39 @@
   "updated": "2026-10-26",
   "videos": [
     {
+      "id": "elect-nhcaeubedhs",
+      "yt": "nhcaeubedhs",
+      "title": "Bend Steel Conduit Like a Professional Electrician",
+      "category": "Electrical",
+      "subject": "Power Distribution",
+      "level": "Beginner",
+      "channel": "GSH Electrical",
+      "duration": "",
+      "added": "2026-10-26",
+      "summary": "A technician demonstrates how to measure, mark, and bend steel conduit to an exact length using a manual conduit bender.",
+      "safety": "Keep clear of moving parts and leverage handles to avoid pinch points.",
+      "ppe": [
+        "Safety Glasses",
+        "Work Gloves"
+      ],
+      "steps": [
+        "Measure the conduit from the threaded end to the desired back of bend mark.",
+        "Align the mark with the bender reference point at 90 degrees.",
+        "Pull the bender handle to form the 90-degree bend.",
+        "Check the bend angle and length using a square and a reference pipe."
+      ],
+      "gemini": {
+        "date": "2026-10-26",
+        "relevance": 9,
+        "quality": 9,
+        "recommend": "approve",
+        "reason": "Clear and practical demonstration of conduit bending techniques useful for electrical technicians.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      }
+    },
+    {
       "id": "fires-9urpPzmsxHo",
       "yt": "9urpPzmsxHo",
       "title": "Fire Sprinkler System: Wet Alarm Check Valve Explained",
