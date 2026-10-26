@@ -1067,48 +1067,6 @@
       }
     },
     {
-      "yt": "6bLZ-Fpk3Tg",
-      "title": "How to Properly Inspect and Don a Full Body Harness",
-      "channel": "",
-      "published": "",
-      "duration": "",
-      "suggestedCategory": "Health & Safety",
-      "description": "Suggested starter video (found by research). Preview it before approving.",
-      "found": "2026-10-25T10:06:40Z",
-      "starter": true,
-      "draft": {
-        "source": "ai",
-        "summary": "This video demonstrates how to inspect and properly don a full-body climbing and positioning safety harness.",
-        "safety": "Inspect the harness webbing and impact indicators for damage before every use.",
-        "ppe": [
-          "Safety Harness",
-          "Safety Helmet",
-          "Safety Boots"
-        ],
-        "steps": [
-          "Shake out and inspect the harness webbing for damage.",
-          "Check impact tabs on the back for tears or release.",
-          "Put the harness over your shoulders.",
-          "Fasten leg straps through tongue and loop, securing keepers.",
-          "Adjust chest and side straps for a snug fit."
-        ],
-        "stepsFrom": "ai",
-        "level": "Beginner",
-        "subject": "Full-Body Harness Inspection and Donning",
-        "category": "Health & Safety",
-        "review": {
-          "relevance": 9,
-          "quality": 8,
-          "recommend": "approve",
-          "reason": "Clear and detailed instructions on safety harness inspection and donning are essential for technicians working at heights.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
-    },
-    {
       "yt": "bym_AagItOc",
       "title": "Fire Sprinkler Systems: Wet, Dry, Pre-Action, Deluge",
       "channel": "",
@@ -1708,6 +1666,7 @@
     "sfHpB88lvs8",
     "iEIpEyDwotg",
     "0LtB1AAN32k",
-    "-opbeWvw6q0"
+    "-opbeWvw6q0",
+    "6bLZ-Fpk3Tg"
   ]
 }
