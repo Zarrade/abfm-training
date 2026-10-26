@@ -2,6 +2,39 @@
   "updated": "2026-10-26",
   "videos": [
     {
+      "id": "lands-IlxIEBFE20w",
+      "yt": "IlxIEBFE20w",
+      "title": "How to Replace a Broken Sprinkler Head | Mower Damage Repair | Sprinkler Warehouse",
+      "category": "Landscaping",
+      "subject": "Irrigation Valve Troubleshooting",
+      "level": "Beginner",
+      "channel": "Sprinkler Warehouse (irrigation)",
+      "duration": "",
+      "added": "2026-10-26",
+      "summary": "This video demonstrates how to replace a broken lawn sprinkler head damaged by a mower and match the correct parts.",
+      "safety": "Ensure the water supply is off and check for underground utilities before digging.",
+      "ppe": [
+        "Work Gloves",
+        "Safety Boots"
+      ],
+      "steps": [
+        "Dig out the broken sprinkler head and expose the fitting.",
+        "Select the replacement sprinkler head and fitting matching your system.",
+        "Flush the irrigation line to remove dirt and debris.",
+        "Install the new sprinkler head and pack the soil firmly around it."
+      ],
+      "gemini": {
+        "date": "2026-10-26",
+        "relevance": 7,
+        "quality": 8,
+        "recommend": "approve",
+        "reason": "Clear, practical guide for replacing damaged sprinkler heads.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      }
+    },
+    {
       "id": "civil-lD7x70PAsAE",
       "yt": "lD7x70PAsAE",
       "title": "do you need Blanke Permat?   Tile Floor uncoupling Underlayment",
