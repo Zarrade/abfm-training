@@ -14500,6 +14500,17 @@
             "قفازات النتريل"
           ]
         }
+      },
+      "gemini": {
+        "date": "2026-10-26",
+        "model": "gemini-3.5-flash-lite",
+        "relevance": 9,
+        "quality": 7,
+        "recommend": "approve",
+        "reason": "Provides a clear, step-by-step procedure for rebuilding a common Sloan flush valve used in commercial plumbing.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
       }
     },
     {
