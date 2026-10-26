@@ -1657,47 +1657,6 @@
       }
     },
     {
-      "yt": "-opbeWvw6q0",
-      "title": "How to Waterproof a Bathroom",
-      "channel": "",
-      "published": "",
-      "duration": "",
-      "suggestedCategory": "Painting & Waterproofing",
-      "description": "Suggested starter video (found by research). Preview it before approving.",
-      "found": "2026-10-25T10:06:40Z",
-      "starter": true,
-      "draft": {
-        "source": "ai",
-        "summary": "This video demonstrates how to waterproof bathroom walls and corners using a liquid membrane and reinforcing tape.",
-        "safety": "Always wear protective gloves and safety glasses to prevent chemical contact with skin and eyes.",
-        "ppe": [
-          "Safety Glasses",
-          "Gloves"
-        ],
-        "steps": [
-          "Smooth and clean wall surfaces.",
-          "Apply primer with a paintbrush.",
-          "Apply waterproof coating in corners and embed reinforcing tape.",
-          "Mask off the shower tray and apply waterproof tape.",
-          "Apply a final coat of waterproofing across all prepared areas."
-        ],
-        "stepsFrom": "ai",
-        "level": "Beginner",
-        "subject": "Bathroom Waterproofing",
-        "category": "Painting & Waterproofing",
-        "review": {
-          "relevance": 9,
-          "quality": 9,
-          "recommend": "approve",
-          "reason": "Clear and practical guide on applying waterproofing systems for bathrooms.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
-    },
-    {
       "yt": "t_dSruoWQIw",
       "title": "How to Repair a Broken Drip Irrigation Line",
       "channel": "",
@@ -1748,6 +1707,7 @@
     "zZkvbUARBwk",
     "sfHpB88lvs8",
     "iEIpEyDwotg",
-    "0LtB1AAN32k"
+    "0LtB1AAN32k",
+    "-opbeWvw6q0"
   ]
 }
