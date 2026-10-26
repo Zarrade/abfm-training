@@ -1233,47 +1233,6 @@
       }
     },
     {
-      "yt": "iEIpEyDwotg",
-      "title": "Conventional vs Addressable Fire Alarm",
-      "channel": "",
-      "published": "",
-      "duration": "",
-      "suggestedCategory": "Fire Systems",
-      "description": "Suggested starter video (found by research). Preview it before approving.",
-      "found": "2026-10-25T10:06:40Z",
-      "starter": true,
-      "draft": {
-        "source": "ai",
-        "summary": "This video explains the difference between conventional and addressable fire alarm systems, detailing how they work and their applications.",
-        "safety": "Always ensure power is isolated before inspecting or installing fire alarm wiring and panels.",
-        "ppe": [
-          "Safety Glasses",
-          "Insulated Gloves",
-          "Safety Shoes"
-        ],
-        "steps": [
-          "Identify conventional and addressable fire alarm types.",
-          "Understand conventional zone-based fire alarm wiring.",
-          "Understand addressable loop-based fire alarm wiring.",
-          "Compare fire indication, fault finding, and device capacity."
-        ],
-        "stepsFrom": "ai",
-        "level": "Beginner",
-        "subject": "Fire Alarm Systems Comparison",
-        "category": "Fire Systems",
-        "review": {
-          "relevance": 10,
-          "quality": 8,
-          "recommend": "approve",
-          "reason": "Clear and detailed comparison of conventional and addressable fire alarm systems suitable for technicians.",
-          "unsafe": [],
-          "language": "Hindi",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
-    },
-    {
       "yt": "J0NFvScegbk",
       "title": "Commercial Duct Cleaning in an Office Setting",
       "channel": "",
@@ -1828,6 +1787,7 @@
     "NYVWYR_3x38",
     "ZnGGQmQTqlA",
     "zZkvbUARBwk",
-    "sfHpB88lvs8"
+    "sfHpB88lvs8",
+    "iEIpEyDwotg"
   ]
 }
