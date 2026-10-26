@@ -1604,44 +1604,6 @@
       }
     },
     {
-      "yt": "NIxWpqcj8t4",
-      "title": "Addressable Fire Alarms",
-      "channel": "",
-      "published": "",
-      "duration": "",
-      "suggestedCategory": "Fire Systems",
-      "description": "Suggested starter video (found by research). Preview it before approving.",
-      "found": "2026-10-25T10:06:40Z",
-      "starter": true,
-      "draft": {
-        "source": "ai",
-        "summary": "This video explains the difference between addressable and conventional fire alarm systems, highlighting how addressable systems pinpoint exact locations.",
-        "safety": "Always ensure the fire alarm control panel is properly isolated before carrying out any diagnostic work.",
-        "ppe": [
-          "High Visibility Vest"
-        ],
-        "steps": [
-          "Identify what an addressable fire alarm system is.",
-          "Demonstrate manual call point activation and panel response.",
-          "Compare addressable systems with conventional control panels."
-        ],
-        "stepsFrom": "ai",
-        "level": "Beginner",
-        "subject": "Addressable Fire Alarms",
-        "category": "Fire Systems",
-        "review": {
-          "relevance": 9,
-          "quality": 9,
-          "recommend": "approve",
-          "reason": "Clear explanation of addressable versus conventional fire alarm systems suited for technicians.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
-    },
-    {
       "yt": "zZkvbUARBwk",
       "title": "NADCA HVAC Duct Cleaning Guidelines Explained",
       "channel": "",
