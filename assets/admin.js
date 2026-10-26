@@ -957,6 +957,7 @@
         <button class="btn" data-find ${finder.running ? "disabled" : ""}>${finder.running ? "⏳ Searching…" : "🔎 Search for new videos now"}</button>
         <div class="find-msg" ${finder.msg ? "" : "hidden"}>${finder.msg}</div>
       </div>
+      ${(() => { const act = (c.channels || []).filter(x => x.active !== false), bad = act.filter(x => (st[x.url] || {}).error); return act.length > 2 && bad.length >= act.length * 0.8 ? `<div class="err">⚠ Almost every channel failed at the last check — that usually means YouTube itself had a problem, not your channels. It happens a few times a year and clears within a day or two. The search now also tries each channel's page as a backup; press “Search for new videos now” to try again.</div>` : ""; })()}
       <div class="rows" style="margin-bottom:16px">${(c.channels || []).map((ch, i) => {
         const s = st[ch.url] || {};
         if (chEdit === ch.url) return `<form class="ch-row ch-edit" id="ch-edit-form">
@@ -977,6 +978,7 @@
             ${s.error ? `<span class="badge-s b-prob">Problem</span>` : s.id ? `<span class="badge-s b-ok">OK</span>` : `<span class="badge-s b-hidden">Not checked yet</span>`}
             <div class="small">${esc(ch.url)}${ch.category ? " · goes to " + esc(ch.category) : " · category picked from title"}</div>
             ${s.error ? `<div class="small" style="color:var(--danger)">${esc(s.error)}</div>` : ""}
+            ${!s.error && s.via === "page" ? `<div class="small">Last check used the channel page (YouTube's feed was down).</div>` : ""}
           </div>
           <div class="row-actions">
             <button class="btn btn-sm" data-ch-edit="${esc(ch.url)}">Edit</button>

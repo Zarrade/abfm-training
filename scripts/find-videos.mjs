@@ -62,11 +62,58 @@ async function readFeed(channelId) {
   })).filter(x => x.yt);
 }
 
+/* Backup when YouTube's feeds are down (it happens a few times a year): read the channel's Videos page instead. */
+function relDate(t) {
+  const m = String(t || "").match(/(\d+)\s*(second|minute|hour|day|week|month|year)s?\s+ago/i);
+  if (!m) return "";
+  const ms = { second: 1e3, minute: 6e4, hour: 36e5, day: 864e5, week: 6048e5, month: 2592e6, year: 31536e6 }[m[2].toLowerCase()];
+  return new Date(Date.now() - (+m[1]) * ms).toISOString();
+}
+function initialData(html) {
+  const m = html.match(/var ytInitialData\s*=\s*(\{[\s\S]*?\});\s*<\/script>/) || html.match(/window\["ytInitialData"\]\s*=\s*(\{[\s\S]*?\});/);
+  if (!m) return null;
+  try { return JSON.parse(m[1]); } catch { return null; }
+}
+const textOf = x => !x ? "" : typeof x === "string" ? x : x.simpleText || x.content || (x.runs || []).map(r => r.text).join("") || "";
+function collectVideos(node, out, seen) {
+  if (!node || typeof node !== "object") return;
+  if (Array.isArray(node)) { node.forEach(n => collectVideos(n, out, seen)); return; }
+  const vr = node.videoRenderer || node.gridVideoRenderer;
+  if (vr && vr.videoId && !seen.has(vr.videoId)) {
+    seen.add(vr.videoId);
+    out.push({ yt: vr.videoId, title: textOf(vr.title), published: relDate(textOf(vr.publishedTimeText)), length: textOf(vr.lengthText),
+      live: !!(vr.badges || []).some(b => /LIVE/.test(JSON.stringify(b))) || /watching/i.test(textOf(vr.viewCountText)),
+      description: textOf(vr.descriptionSnippet) });
+  }
+  const lv = node.lockupViewModel;
+  if (lv && lv.contentId && /VIDEO/.test(lv.contentType || "VIDEO") && !seen.has(lv.contentId)) {
+    const md = (((lv.metadata || {}).lockupMetadataViewModel) || {});
+    const rows = JSON.stringify(md.metadata || {});
+    seen.add(lv.contentId);
+    out.push({ yt: lv.contentId, title: textOf(md.title), published: relDate((rows.match(/\d+\s+\w+\s+ago/) || [])[0]), length: "", live: false, description: "" });
+  }
+  for (const k in node) if (k !== "videoRenderer" && k !== "lockupViewModel") collectVideos(node[k], out, seen);
+}
+async function readChannelPage(channelId) {
+  const { status, text } = await get(`https://www.youtube.com/channel/${channelId}/videos`);
+  if (!text) throw new Error(`Channel page not available (${status || "network error"}).`);
+  const data = initialData(text);
+  if (!data) throw new Error("Couldn't read the channel page.");
+  const out = []; collectVideos(data, out, new Set());
+  return out.filter(v => v.yt && v.title).slice(0, 20).map(v => ({
+    yt: v.yt, title: v.title, published: v.published || new Date().toISOString(), link: "https://www.youtube.com/watch?v=" + v.yt,
+    description: v.description, author: "", live: v.live, fromPage: true
+  }));
+}
+
 async function videoInfo(yt) {
   const { text } = await get(`https://www.youtube.com/watch?v=${yt}`);
   const len = (text.match(/"lengthSeconds":"(\d+)"/) || [])[1];
   const live = /"isLiveContent":true/.test(text) && /"isLive":true/.test(text);
-  return { seconds: len ? +len : null, live };
+  let description = "";
+  const d = text.match(/"shortDescription":"((?:[^"\\]|\\.)*)"/);
+  if (d) { try { description = JSON.parse('"' + d[1] + '"'); } catch {} }
+  return { seconds: len ? +len : null, live, description };
 }
 
 function guessCategory(text, categories) {
@@ -96,7 +143,12 @@ async function findNew({ videosDoc, settings, channelsDoc, pending }) {
     const st = pending.channelStatus[ch.url] || {};
     try {
       const id = st.id || await resolveChannelId(ch.url);
-      const items = await readFeed(id);
+      let items, via = "feed";
+      try { items = await readFeed(id); }
+      catch (feedErr) {
+        try { items = await readChannelPage(id); via = "page"; log(`  (feed down for ${ch.name} — read the channel page instead)`); }
+        catch (pageErr) { throw new Error(feedErr.message + " Backup also failed: " + pageErr.message); }
+      }
       let added = 0;
       for (const it of items) {
         if (known.has(it.yt)) continue;
@@ -106,7 +158,8 @@ async function findNew({ videosDoc, settings, channelsDoc, pending }) {
         if (skipShorts && it.link.includes("/shorts/")) continue;
         const info = await videoInfo(it.yt);
         await sleep(400);
-        if (info.live) continue;
+        if (info.live || it.live) continue;
+        if (!it.description && info.description) it.description = info.description.slice(0, 3000);
         if (skipShorts && info.seconds !== null && info.seconds <= 60) continue;
         known.add(it.yt);
         found.push({
@@ -118,7 +171,7 @@ async function findNew({ videosDoc, settings, channelsDoc, pending }) {
         });
         added++;
       }
-      pending.channelStatus[ch.url] = { id, checked: new Date().toISOString(), lastFound: added };
+      pending.channelStatus[ch.url] = { id, checked: new Date().toISOString(), lastFound: added, ...(via === "page" ? { via } : {}) };
       log(`✓ ${ch.name}: ${items.length} in feed, ${added} new`);
     } catch (e) {
       pending.channelStatus[ch.url] = { ...st, error: e.message, checked: new Date().toISOString() };
