@@ -557,49 +557,6 @@
       }
     },
     {
-      "yt": "7iWAk17hCQk",
-      "title": "Earn 5-Star Reviews With Better HVAC Customer Service",
-      "channel": "HVAC School",
-      "channelUrl": "https://www.youtube.com/c/HVACSchool",
-      "published": "2026-10-07T11:00:20+00:00",
-      "duration": "",
-      "channelCategory": "HVAC",
-      "suggestedCategory": "HVAC",
-      "description": "Want to earn more 5-star reviews without the callbacks that follow a rushed visit? In this talk on Delivering the WOW Factor, we break down what customers actually notice on a service call, and why the best HVAC customer service keeps paying off long after you leave the driveway.\n\nA WOW experience starts with the basics: the equipment works, the work area is clean, and you know the system's history before you walk in. From there, it comes down to communication. That means asking questions so the customer feels heard, never saying \"this will be easy,\" and asking permission to bring extra findings to their attention.\n\nWe also cover the problem that shows up two weeks later. A customer can be happy with you today and frustrated later if a room still isn't cooling and nothing was documented. Learn how to use proposals the right way, get clear approvals and declines in writing, and protect yourself and the customer with better documentation.\n\nGreat reviews come from service built on the customer's needs, not your own assumptions about what they'll spend. Take the time, widen your view, and give every HVAC client a reason to tell their friends and neighbors about you.\n\n---\n\nNEXT VIDEO\n\nPreliminary Customer Conversations\nhttps://www.youtube.com/watch?v=UAk06LbJdBo\n\nKEEP LEARNING\n\nStart here:\nhttps://www.hvacrschool.com/start/\n\nFree HVAC/R training, tech tips, quizzes, calculators, courses, and more:\nhttps://www.hvacrschool.com/\n\nListen to the HVAC School podcast:\nhttps://www.hvacrschool.com/podcast/\n\nGet the HVAC School app:\nhttps://www.hvacrschool.com/apps-page/\n\nHVAC School provides free HVAC/R training—primarily for techs, by techs. The goal is not just to collect facts. It is to understand the system well enough to apply what you know in the field.\n\nQuestions or corrections? Leave a comment and include the equipment model, measurements, and source when you can. None of us gets everything right, and good measurements beat confident guesses.\n\nThis content is educational. Follow manufacturer instructions, use proper PPE and safe work practices, and comply with the codes and standards that apply to your equipment and jurisdiction.",
-      "found": "2026-10-25T14:27:14.740Z",
-      "draft": {
-        "source": "ai",
-        "summary": "An instructor explains how HVAC technicians can improve customer service and earn five-star reviews.",
-        "safety": "Always verify that equipment is safe to work on before beginning any inspection.",
-        "ppe": [
-          "Safety Glasses",
-          "Work Gloves",
-          "Safety Boots"
-        ],
-        "steps": [
-          "Verify the air conditioning system is working properly.",
-          "Clean up after yourself and leave the work area tidy.",
-          "Review the service history of the system before starting.",
-          "Set correct expectations and communicate clearly with the customer.",
-          "Document all findings and present them thoroughly."
-        ],
-        "stepsFrom": "ai",
-        "level": "Beginner",
-        "subject": "Fundamentals",
-        "category": "HVAC",
-        "review": {
-          "relevance": 5,
-          "quality": 7,
-          "recommend": "maybe",
-          "reason": "It offers useful customer service tips for technicians, but lacks practical hands-on procedures.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
-    },
-    {
       "yt": "tQE1nGz3Ydg",
       "title": "Same Charge, Different Numbers - Short #306",
       "channel": "HVAC School",
@@ -1247,6 +1204,7 @@
     "6gH3xU5Mzbw",
     "3TVRMfnUWhI",
     "-eNBtz-_kJU",
-    "3pDRywt9yKs"
+    "3pDRywt9yKs",
+    "7iWAk17hCQk"
   ]
 }
