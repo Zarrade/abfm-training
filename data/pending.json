@@ -1067,46 +1067,6 @@
       }
     },
     {
-      "yt": "seuWV6qTl4k",
-      "title": "How to Inspect and Don a Full Body Harness (FallTech)",
-      "channel": "",
-      "published": "",
-      "duration": "",
-      "suggestedCategory": "Health & Safety",
-      "description": "Suggested starter video (found by research). Preview it before approving.",
-      "found": "2026-10-25T10:06:40Z",
-      "starter": true,
-      "draft": {
-        "source": "ai",
-        "summary": "This instructional video explains how to inspect and properly wear a full-body fall protection harness.",
-        "safety": "Always inspect the harness for damage and discard it immediately if any impact indicator has been exposed.",
-        "ppe": [
-          "Work Gloves"
-        ],
-        "steps": [
-          "Shake the harness to let leg straps fall into place.",
-          "Inspect impact indicators and warning labels for legibility and wear.",
-          "Check hardware like D-rings, buckles, and adjusters for damage.",
-          "Inspect webbing for tears, holes, heat damage, and worn stitching.",
-          "Don the harness like a shirt and adjust leg and chest straps."
-        ],
-        "stepsFrom": "ai",
-        "level": "Beginner",
-        "subject": "Fall Protection Harness Inspection and Donning",
-        "category": "Health & Safety",
-        "review": {
-          "relevance": 10,
-          "quality": 10,
-          "recommend": "approve",
-          "reason": "Clear and detailed step-by-step guidance on essential safety equipment inspection and usage.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
-    },
-    {
       "yt": "6bLZ-Fpk3Tg",
       "title": "How to Properly Inspect and Don a Full Body Harness",
       "channel": "",
