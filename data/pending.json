@@ -129,48 +129,6 @@
       }
     },
     {
-      "yt": "pOfXina3uUQ",
-      "title": "Electrical Metal Conduit - Types and Sizes",
-      "channel": "GSH Electrical",
-      "channelUrl": "https://www.youtube.com/@GSHElectrical",
-      "published": "2026-10-18T09:00:24+00:00",
-      "duration": "",
-      "suggestedCategory": "Electrical",
-      "description": "In this video we look at the different type of steel conduit, finishes and the 4 common sizes they come in. This information is essential when training to become an electrician as part of your apprenticeship. \n\nSteel conduit comes in either a 3.75 metre or 3 metre length and sizes of 16 mm, 20 mm, 25 mm and 32 mm. \n\n== 🕐 Time Stamps - Cut to the action 🕕 == \n\n00:00 - Steel conduit types, finishes and sizes  \n00:24 - What metal conduit is used for\n01:05 - Different types of electrical metal conduit\n02:00 - Heavy-gauge and light-gauge steel conduit\n02:55 - Common metric conduit sizes\n03:45 - 1",
-      "found": "2026-10-25T09:29:04.488Z",
-      "draft": {
-        "source": "ai",
-        "summary": "This video explains the different types of metal electrical conduit, including black enamel, zinc galvanized, and stainless steel, as well as their common sizes and accessories.",
-        "safety": "Wear protective gloves and eye protection when cutting, threading, or handling metal conduit to prevent cuts and metal shaving injuries.",
-        "ppe": [
-          "Safety Glasses",
-          "Cut-Resistant Gloves",
-          "Work Boots"
-        ],
-        "steps": [
-          "Identify the appropriate conduit finish based on the installation environment.",
-          "Choose between seam welded and solid drawn conduit construction.",
-          "Select the required conduit diameter and standard length.",
-          "Calculate the minimum bending radius using the conduit diameter.",
-          "Connect conduit lengths using compatible threaded boxes, couplers, and bushes."
-        ],
-        "stepsFrom": "ai",
-        "level": "Beginner",
-        "subject": "Wiring Accessories",
-        "category": "Electrical",
-        "review": {
-          "relevance": 8,
-          "quality": 9,
-          "recommend": "approve",
-          "reason": "Provides a clear and concise overview of electrical metal conduit materials, sizing, and accessories.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.6-flash"
-      }
-    },
-    {
       "yt": "lD7x70PAsAE",
       "title": "do you need Blanke Permat?   Tile Floor uncoupling Underlayment",
       "channel": "Sal DiBlasi (tiling & waterproofing)",
