@@ -2,6 +2,41 @@
   "updated": "2026-10-26",
   "videos": [
     {
+      "id": "ductc-J0NFvScegbk",
+      "yt": "J0NFvScegbk",
+      "title": "Commercial Duct Cleaning in an Office Setting",
+      "category": "Duct Cleaning",
+      "subject": "Commercial Duct Cleaning",
+      "level": "Beginner",
+      "channel": "",
+      "duration": "",
+      "added": "2026-10-26",
+      "summary": "A technician explains the process of commercial duct cleaning in an office setting, showing supply diffusers, return grates, and cleaning tools.",
+      "safety": "Ensure proper lockout-tagout procedures on HVAC units before beginning duct cleaning work.",
+      "ppe": [
+        "Safety Glasses",
+        "Dust Mask",
+        "Gloves"
+      ],
+      "steps": [
+        "Lock out the HVAC unit using lockout-tagout procedures.",
+        "Cut access points into ductwork near supply drops.",
+        "Hook up industrial vacuum and clean supply and return ductwork.",
+        "Wash supply diffusers and return grates outside with a degreaser.",
+        "Close access holes with access panels or skimmer plugs and replace ceiling tiles."
+      ],
+      "gemini": {
+        "date": "2026-10-26",
+        "relevance": 9,
+        "quality": 8,
+        "recommend": "approve",
+        "reason": "Clear and informative explanation of commercial duct cleaning procedures suitable for beginner technicians.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      }
+    },
+    {
       "id": "fires-nyBTkpNB0hU",
       "yt": "nyBTkpNB0hU",
       "title": "Fire Alarm Control Panel Basics",
