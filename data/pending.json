@@ -468,48 +468,6 @@
       }
     },
     {
-      "yt": "aCvcvjyL01E",
-      "title": "Permit-Required Confined Space Safety Training",
-      "channel": "",
-      "published": "",
-      "duration": "",
-      "suggestedCategory": "Health & Safety",
-      "description": "Suggested starter video (found by research). Preview it before approving.",
-      "found": "2026-10-25T10:06:40Z",
-      "starter": true,
-      "draft": {
-        "source": "ai",
-        "summary": "This video explains the OSHA regulations, hazards, entry procedures, permits, and rescue requirements for working in permit-required confined spaces.",
-        "safety": "Always test the atmosphere for oxygen levels, combustible gases, and toxic vapors before entering a confined space.",
-        "ppe": [
-          "Hard Hat",
-          "Safety Vest",
-          "Safety Glasses"
-        ],
-        "steps": [
-          "Identify and evaluate confined space hazards.",
-          "Obtain and fill out an entry permit.",
-          "Test the atmosphere before entry.",
-          "Ventilate the confined space.",
-          "Monitor the space continuously during work."
-        ],
-        "stepsFrom": "ai",
-        "level": "Intermediate",
-        "subject": "Permit-Required Confined Spaces",
-        "category": "Health & Safety",
-        "review": {
-          "relevance": 9,
-          "quality": 9,
-          "recommend": "approve",
-          "reason": "Comprehensive guide to permit-required confined space safety that is essential for maintenance training.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
-    },
-    {
       "yt": "bym_AagItOc",
       "title": "Fire Sprinkler Systems: Wet, Dry, Pre-Action, Deluge",
       "channel": "",
