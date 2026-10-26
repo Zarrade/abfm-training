@@ -16742,6 +16742,17 @@
             "أحذية اصبع القدم الصلب"
           ]
         }
+      },
+      "gemini": {
+        "date": "2026-10-26",
+        "model": "gemini-3.6-flash",
+        "relevance": 8,
+        "quality": 8,
+        "recommend": "approve",
+        "reason": "Clear animated explanation of the operational logic and wiring connections for automatic transfer switch panels.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
       }
     },
     {
