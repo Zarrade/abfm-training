@@ -129,49 +129,6 @@
       }
     },
     {
-      "yt": "-Ea6ceNu5Ug",
-      "title": "Your Thermostat Is Reading the Wall - Short #308",
-      "channel": "HVAC School",
-      "channelUrl": "https://www.youtube.com/c/HVACSchool",
-      "published": "2026-10-20T11:08:54+00:00",
-      "duration": "",
-      "channelCategory": "HVAC",
-      "suggestedCategory": "HVAC",
-      "description": "In this short podcast episode, Bryan talks about why your thermostat is reading the wall, not the actual air temperature.\r\n\r\n A thermostat is an instrument designed to read temperature (and sometimes humidity); it displays those readings based on sensors and makes decisions. Most of these sensors are thermistors, which are resistors that change resistance with changes in temperature. Thermistors have low mass and respond to radiant, convective, and conductive heat.\r\n\r\n Air coming through the wall (convective heat), the temperature of the things around the thermostat (radiant heat), AND the wall temperature (conductive heat) can influence your thermostat's reading. We may see a service call where the thermostat reads above the air temperature and runs the air conditioning unit even when the air temperature is already below the set point. Our first move as technicians should be to ask customers when they noticed the problem; the timing can give us some clues about what is going on. Looking behind the thermostat is one of the first things we should do, as air can move through the hole where wires come through, especially if there is air leakage elsewhere. If there is a temperature difference and an airflow path, that could be the source of the issue.  \r\n\r\n Use a reliable temperature probe near the thermostat, off the wall and away from the thermostat casing and electronics, to get a reliable temperature measurement to compare to the thermostat. If the probe and thermostat disagree after several minutes, we should investigate deeper for a warm wall. Infrared thermometers and thermal imagers can help you identify warm surfaces. Keep in mind that thermostats may have sensors in different locations, offsets, and programmed corrections as well. \r\n\r\n If you find an open wire penetration, use non-flammable insulation and/or an appropriate putty to close it. Be careful not to block the sensing vents, too. Let everything settle and repeat the comparison. Some other solutions include changing the location of the thermostat or remote sensor.\r\n\r\n This episode contains embedded sponsor messages from Refrigeration Technologies, Carrier, Copeland, and Santa Fe Dehumidifiers.\r\n\r\n Resources\r\n\r\n  HVAC School calculators Submit a podcast question Learn about the GRIT Foundation  Purchase your tickets or learn more about the 8th Annual HVACR Training Symposium at https://hvacrschool.com/symposium.",
-      "found": "2026-10-25T14:27:06.511Z",
-      "draft": {
-        "source": "ai",
-        "summary": "This audio podcast explains why thermostats may give inaccurate readings due to airflow, radiation, or thermal conduction from the wall behind them. It covers how to diagnose temperature discrepancies and seal wall penetrations to fix reading errors.",
-        "safety": "Turn off power to the HVAC system before removing or working behind the thermostat casing.",
-        "ppe": [
-          "Safety Glasses",
-          "Work Gloves"
-        ],
-        "steps": [
-          "Understand that thermistors are affected by conduction, convection, and radiation.",
-          "Inspect the wall behind the thermostat for unsealed wire holes allowing drafts.",
-          "Measure ambient room temperature using a calibrated probe held away from the wall.",
-          "Seal wall openings with non-flammable insulation or putty to block wall air movement.",
-          "Check for external heat sources like direct sunlight, lamps, or warm wall cavities.",
-          "Relocate the thermostat or install a remote sensor if wall temperature distorts readings."
-        ],
-        "stepsFrom": "ai",
-        "level": "Intermediate",
-        "subject": "Fundamentals",
-        "category": "HVAC",
-        "review": {
-          "relevance": 8,
-          "quality": 6,
-          "recommend": "maybe",
-          "reason": "The audio lesson provides valuable HVAC troubleshooting concepts, but the video is a static graphic image.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.6-flash"
-      }
-    },
-    {
       "yt": "FMxm-4b98pY",
       "title": "Tile will CRACK! Plywood subfloor repair.  #tile #cracks #howtotile",
       "channel": "Sal DiBlasi (tiling & waterproofing)",
@@ -1163,6 +1120,7 @@
     "-eNBtz-_kJU",
     "3pDRywt9yKs",
     "7iWAk17hCQk",
-    "3Fljt8V1qQM"
+    "3Fljt8V1qQM",
+    "-Ea6ceNu5Ug"
   ]
 }
