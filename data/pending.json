@@ -171,48 +171,6 @@
       }
     },
     {
-      "yt": "qoBe4nTrVz0",
-      "title": "Toro RXC Sprinkler Controller | Setup & Programming Guide | Sprinkler Warehouse",
-      "channel": "Sprinkler Warehouse (irrigation)",
-      "channelUrl": "https://www.youtube.com/channel/UCR1ksygazAOr59yLZ4Mp5tA",
-      "published": "2026-10-14T16:47:30+00:00",
-      "duration": "",
-      "channelCategory": "Landscaping",
-      "suggestedCategory": "Landscaping",
-      "description": "Learn how to program your Toro RXC sprinkler controller, set watering days and zone run times, and build a watering schedule that fits your landscape.\n\nShop Toro RXC controllers and accessories:\nhttps://www.sprinklerwarehouse.com/brands/toro/toro-controllers\n\nConfused about start times versus run times? Need your lawn, flower beds, and trees on different watering schedules? Dwayne Smith, your Sprinkler Warehouse Product Specialist, walks you through the Toro RXC with practical examples you can follow at your own controller.\n\nThis programming guide covers:\n• Setting the date and time\n• Creating programs with separate watering schedules\n• Setting start times, station run times, and watering days\n• Using multiple start times to break watering into shorter sessions\n• Running stations and programs manually\n• Pausing watering with Rain Delay\n• Changing run times with Seasonal Adjustment\n• Expansion modules, Wi-Fi connectivity, and the Toro Oasis app\n• Flow sensor settings and Learn Flow\n• Using the Grow-In Program for new sod and plants\n\nWhether you’re setting up your RXC for the first time or adjusting an existing schedule, get comfortable with the settings you’ll use most—and explore features that give you more control over your irrigation system.\n\nShop sprinkler controllers, irrigation parts, and accessories:\nhttps://www.sprinklerwarehouse.com\n\n\nYouTube comments are not monitored. Please direct your questions to the customer service representatives on www.sprinklerwarehouse.com.",
-      "found": "2026-10-25T14:27:39.732Z",
-      "draft": {
-        "source": "ai",
-        "summary": "This video provides a complete setup and programming guide for the Toro RXC irrigation controller, explaining wiring, scheduling, and features.",
-        "safety": "Ensure the power to the controller is disconnected before opening or performing any wiring work.",
-        "ppe": [
-          "Safety Glasses",
-          "Work Gloves"
-        ],
-        "steps": [
-          "Open the controller panel and check the wiring terminals.",
-          "Install any necessary station modules and flow or weather sensors.",
-          "Set the current date and time using the control dial.",
-          "Program watering start times, run times, and watering days.",
-          "Return the control dial to the auto position to resume normal operation."
-        ],
-        "stepsFrom": "ai",
-        "level": "Beginner",
-        "subject": "Irrigation Valve Troubleshooting",
-        "category": "Landscaping",
-        "review": {
-          "relevance": 9,
-          "quality": 8,
-          "recommend": "approve",
-          "reason": "Clear and detailed walkthrough of controller programming suitable for technicians handling landscaping maintenance.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
-    },
-    {
       "yt": "MYi4EHtfCEE",
       "title": "Why We Clean Every Drain Line: A 5-Step Callback Prevention Checklist",
       "channel": "HVAC School",
