@@ -2,6 +2,39 @@
   "updated": "2026-10-26",
   "videos": [
     {
+      "id": "hvac-tQE1nGz3Ydg",
+      "yt": "tQE1nGz3Ydg",
+      "title": "Same Charge, Different Numbers - Short #306",
+      "category": "HVAC",
+      "subject": "Refrigerant & Diagnostics",
+      "level": "Intermediate",
+      "channel": "HVAC School",
+      "duration": "",
+      "added": "2026-10-26",
+      "summary": "This podcast explains how changing condenser airflow alters refrigerant pressure and subcooling without adding charge.",
+      "safety": "Ensure the system is safely isolated and wear appropriate PPE before inspecting or repairing condenser components.",
+      "ppe": [
+        "Safety Glasses",
+        "Work Gloves"
+      ],
+      "steps": [
+        "Record operating stage, pressures, and temperatures before servicing.",
+        "Repair or clean condenser fan and coil to restore proper airflow.",
+        "Wait for system conditions to settle after adjusting airflow.",
+        "Retake measurements to account for changes in load and airflow."
+      ],
+      "gemini": {
+        "date": "2026-10-26",
+        "relevance": 9,
+        "quality": 8,
+        "recommend": "approve",
+        "reason": "Provides clear theoretical and practical knowledge on condenser airflow impact for HVAC technicians.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      }
+    },
+    {
       "id": "hvac-MYi4EHtfCEE",
       "yt": "MYi4EHtfCEE",
       "title": "Why We Clean Every Drain Line: A 5-Step Callback Prevention Checklist",
