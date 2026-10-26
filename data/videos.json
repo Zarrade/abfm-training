@@ -15812,6 +15812,17 @@
           ]
         }
       },
+      "gemini": {
+        "date": "2026-10-26",
+        "model": "gemini-3.5-flash-lite",
+        "relevance": 9,
+        "quality": 8,
+        "recommend": "approve",
+        "reason": "Clear and detailed guide on socket termination suitable for technician training.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      },
       "ytTitle": "Terminating a BS 1363 Twin Socket Outlet"
     },
     {
