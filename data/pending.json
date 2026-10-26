@@ -516,48 +516,6 @@
       }
     },
     {
-      "yt": "3pDRywt9yKs",
-      "title": "Questionable CO Alarms w/ Bill Spohn",
-      "channel": "HVAC School",
-      "channelUrl": "https://www.youtube.com/c/HVACSchool",
-      "published": "2026-10-08T11:14:23+00:00",
-      "duration": "",
-      "channelCategory": "HVAC",
-      "suggestedCategory": "HVAC",
-      "description": "In this episode of the HVAC School Podcast, Bryan welcomes back Bill Spohn to talk about carbon monoxide and a troubling trend in the alarms being sold online. They start with the basics: the difference between a standard UL 2034 alarm and a true low-level CO monitor. UL 2034 alarms were designed to avoid nuisance calls, so they can stay silent through long exposures at relatively low concentrations. Low-level monitors are far more sensitive and can warn you that something is brewing before it becomes a life-threatening emergency.\r\n\r\n Bill explains why that gap matters, walking through how carbon monoxide displaces oxygen on hemoglobin, why it lingers in the body, and why children, older adults, and people with heart or lung conditions are especially vulnerable. Bryan adds the troubleshooting angle: a UL 2034 alarm is the safety net that keeps people from dying, but low-level monitoring helps you find and fix a problem early, much like catching a refrigerant leak before the system is flat.\r\n\r\n The conversation then turns to the main story. Bill bought a pair of inexpensive alarms advertised as both low-level and UL 2034 compliant, which is a contradiction, since the two cannot be the same device. They arrived with no instructions, no model number, and no visible certification control number, and they closely resembled a product tied to a Consumer Product Safety Commission warning covering roughly 375,000 units and 91 reported failures to alarm. Bill traces the marketing back to what appears to be a single factory selling under many brand names, backed by a virtual office address, a fake firefighter endorsement, and a flood of promotional emails.\r\n\r\n Bryan and Bill close with lessons for technicians, consumers, and manufacturers alike. Be skeptical when price and performance seem too good to be true, verify who is behind a brand, and remember that claiming to meet a standard is not the same as being independently certified. They also urge established manufacturers to be humble, test claims thoroughly, and make sure published specifications reflect how their sensors actually perform. \r\n\r\n Topics Covered\r\n\r\n  Low-level CO monitors versus UL 2034 alarms, and why they are not interchangeable How the 1990s Chicago nuisance-alarm events led to the UL 2034 standard Why standards built around healthy adult males leave gaps for vulnerable people How carbon monoxide binds to hemoglobin and why it accumulates in the body  Why “CO leak” is the wrong phrase: carbon monoxide is created, not transported Online alarms claiming to be both low-level and UL 2034 compliant The Consumer Product Safety Commission alert and the 91 reported failures to alarm Red flags: no instructions, no model number, no certification mark, a virtual-office address, and a fake endorser What the alarm test button actually checks (the circuit and horn, not CO response) The challenge of validating alarms without accessible CO test kits How to vet unfamiliar brands, including using AI to re",
-      "found": "2026-10-25T14:27:13.460Z",
-      "draft": {
-        "source": "ai",
-        "summary": "This podcast episode discusses carbon monoxide (CO) alarms, comparing standard UL 2034 life-safety alarms with low-level CO monitors. It also warns against purchasing uncertified, misleadingly advertised CO detectors online.",
-        "safety": "Always verify that carbon monoxide alarms are certified by accredited testing bodies like UL before relying on them for safety.",
-        "ppe": [
-          "Safety Glasses",
-          "Work Gloves"
-        ],
-        "steps": [
-          "Differentiate between standard UL 2034 alarms and low-level CO monitors.",
-          "Understand that low-level monitors detect lower CO concentrations before reaching dangerous thresholds.",
-          "Verify manufacturer safety certifications and UL listings on product documentation.",
-          "Recognize that testing buttons check alarm audio circuits, not gas sensor response.",
-          "Avoid buying unbranded, unverified safety devices from questionable online sellers."
-        ],
-        "stepsFrom": "ai",
-        "level": "Intermediate",
-        "subject": "Fundamentals",
-        "category": "HVAC",
-        "review": {
-          "relevance": 6,
-          "quality": 6,
-          "recommend": "maybe",
-          "reason": "It is an audio-only podcast discussion with a static visual logo, providing useful safety awareness on CO alarms but lacking hands-on visual training.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.6-flash"
-      }
-    },
-    {
       "yt": "kONwQeJ-sMg",
       "title": "Mower-Proof Sprinkler Guard Donut | Sprinkler Warehouse",
       "channel": "Sprinkler Warehouse (irrigation)",
@@ -1288,6 +1246,7 @@
     "6bLZ-Fpk3Tg",
     "6gH3xU5Mzbw",
     "3TVRMfnUWhI",
-    "-eNBtz-_kJU"
+    "-eNBtz-_kJU",
+    "3pDRywt9yKs"
   ]
 }
