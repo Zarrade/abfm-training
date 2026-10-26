@@ -429,48 +429,6 @@
       }
     },
     {
-      "yt": "WaICUTIW3og",
-      "title": "Commercial Condensate Drain Leaking? Trap, Vent, and Slope Fix",
-      "channel": "HVAC School",
-      "channelUrl": "https://www.youtube.com/c/HVACSchool",
-      "published": "2026-10-14T11:00:26+00:00",
-      "duration": "",
-      "channelCategory": "HVAC",
-      "suggestedCategory": "HVAC",
-      "description": "Commercial condensate drain leaking and you can't figure out why? In this video, Jesus walks through a 10-ton commercial unit with a poorly built condensate drain. It has a shallow trap, a vent with no slope after it, and a drain pan that isn't seated correctly.\n\nCommercial systems aren't like a quick residential install under the case. Drop ceilings, larger equipment, and higher static pressure mean you can't just throw in a couple of inches of drop and call it good. Jesus explains why you need to check static pressure first and find out whether the drain is under positive or negative pressure. On this positive-pressure system, a clean-out left wide open in place of a real trap pulls in air and the unit never drains properly. That leads to overflow and water leaking into the ceiling.\n\nThen Jesus rebuilds the drain the right way:\n\nReseating the drain pan so it sits correctly\nSizing the trap from the manufacturer's manual instead of relying on rules of thumb\nInstalling a clean-out tee without letting it replace the trap\nMaking sure the vent sits higher than the drain pan\nRunning the drain line downhill at a quarter inch per foot of slope\n\nIf you're chasing callbacks on overflowing commercial units, this trap, vent, and slope fix is where to start.\n\n---\n\nNEXT VIDEO\n\nCommercial HVAC Drain Cleaning: Pro Tips That Prevent Callbacks\nhttps://www.youtube.com/watch?v=DMo1FtdNWeg&t=106s\n\nKEEP LEARNING\n\n\nStart here:\nhttps://www.hvacrschool.com/start/\n\nFree HVAC/R training, tech tips, quizzes, calculators, courses, and more:\nhttps://www.hvacrschool.com/\n\nListen to the HVAC School podcast:\nhttps://www.hvacrschool.com/podcast/\n\nGet the HVAC School app:\nhttps://www.hvacrschool.com/apps-page/\n\nHVAC School provides free HVAC/R training—primarily for techs, by techs. The goal is not just to collect facts. It is to understand the system well enough to apply what you know in the field.\n\nQuestions or corrections? Leave a comment and include the equipment model, measurements, and source when you can. None of us gets everything right, and good measurements beat confident guesses.\n\nThis content is educational. Follow manufacturer instructions, use proper PPE and safe work practices, and comply with the codes and standards that apply to your equipment and jurisdiction.",
-      "found": "2026-10-25T14:27:09.847Z",
-      "draft": {
-        "source": "ai",
-        "summary": "A technician explains how to fix a leaking commercial AC condensate drain by replacing a shallow trap and fixing the slope.",
-        "safety": "Always ensure the power is off before servicing HVAC units to prevent electrical shock.",
-        "ppe": [
-          "Safety Glasses",
-          "Work Gloves",
-          "Safety Boots"
-        ],
-        "steps": [
-          "Remove the old shallow drain trap and clear the area.",
-          "Measure and cut PVC pipes according to manufacturer manual specifications.",
-          "Glue the PVC pipes together to form the new trap, cleanout, and vent.",
-          "Check the drain slope to ensure correct downward flow."
-        ],
-        "stepsFrom": "ai",
-        "level": "Intermediate",
-        "subject": "Installation",
-        "category": "HVAC",
-        "review": {
-          "relevance": 9,
-          "quality": 9,
-          "recommend": "approve",
-          "reason": "Clear, practical demonstration of commercial AC condensate drain troubleshooting and installation.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
-    },
-    {
       "yt": "kKVHfHLgVW0",
       "title": "The Fuse Only Blows When You Leave - Short #307",
       "channel": "HVAC School",
