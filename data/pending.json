@@ -2438,48 +2438,6 @@
         },
         "model": "gemini-3.5-flash-lite"
       }
-    },
-    {
-      "yt": "xrGuelmdIQI",
-      "title": "How to Troubleshoot an Irrigation Timer",
-      "channel": "",
-      "published": "",
-      "duration": "",
-      "suggestedCategory": "Landscaping",
-      "description": "Suggested starter video (found by research). Preview it before approving.",
-      "found": "2026-10-25T10:06:40Z",
-      "starter": true,
-      "draft": {
-        "source": "ai",
-        "summary": "This video demonstrates how to troubleshoot an irrigation timer by checking settings, terminal wiring, and testing electrical resistance and voltage.",
-        "safety": "Ensure power is safely disconnected or tested before touching internal electrical components or wiring.",
-        "ppe": [
-          "Safety Glasses",
-          "Insulated Gloves",
-          "Safety Shoes"
-        ],
-        "steps": [
-          "Check current time and date settings on the timer.",
-          "Verify start times and run times for each zone.",
-          "Inspect terminal block connections for loose wires.",
-          "Test circuit resistance using a multimeter set to ohms.",
-          "Test circuit voltage during manual station operation."
-        ],
-        "stepsFrom": "ai",
-        "level": "Beginner",
-        "subject": "Irrigation Valve Troubleshooting",
-        "category": "Landscaping",
-        "review": {
-          "relevance": 9,
-          "quality": 8,
-          "recommend": "approve",
-          "reason": "Clear and practical guide for testing irrigation timers and wiring.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
     }
   ],
   "rejected": [
