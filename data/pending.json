@@ -171,49 +171,6 @@
       }
     },
     {
-      "yt": "MYi4EHtfCEE",
-      "title": "Why We Clean Every Drain Line: A 5-Step Callback Prevention Checklist",
-      "channel": "HVAC School",
-      "channelUrl": "https://www.youtube.com/c/HVACSchool",
-      "published": "2026-10-11T11:00:05+00:00",
-      "duration": "",
-      "channelCategory": "HVAC",
-      "suggestedCategory": "HVAC",
-      "description": "On a service call, techs know why clogged drain lines cause the most repeat visits — condensate backup is the fastest way to earn a callback, so it's the first thing we address, every time.\n\nIn this video, we walk through the reasoning behind our approach to service calls: flushing and cleaning the drain line thoroughly, then moving through the rest of the diagnostic process before ever calling the job done.\n\nThis isn't just a single fix — it's part of a larger habit built into every service call we run. We cover the full 5-Step Callback Prevention Checklist our techs follow to catch issues before they turn into a return trip:\n\nAsk questions — get the history before touching the unit\nClean the drain line — our #1 source of repeat calls\nRemove all panels — full visual diagnostic, every time\nEnter readings — document baseline data for future reference\nTouch everything — final walkthrough before you leave the property\n\nFollow this checklist and you'll spend less time chasing callbacks and more time solving problems the first visit. Prevention starts with the small habits — cleaning the drain, documenting readings, checking every panel — that add up to fewer comebacks and more trust with your customers.\n\nWhether you're new to the trade or refining your own checklist, this breakdown gives you a repeatable system you can bring to every call.\n\n---\n\nNEXT VIDEO\n\nCommercial HVAC Drain Cleaning: Pro Tips That Prevent Callbacks\nhttps://www.youtube.com/watch?v=DMo1FtdNWeg&t=106s\n\nKEEP LEARNING\n\nStart here:\nhttps://www.hvacrschool.com/start/\n\nFree HVAC/R training, tech tips, quizzes, calculators, courses, and more:\nhttps://www.hvacrschool.com/\n\nListen to the HVAC School podcast:\nhttps://www.hvacrschool.com/podcast/\n\nGet the HVAC School app:\nhttps://www.hvacrschool.com/apps-page/\n\nHVAC School provides free HVAC/R training—primarily for techs, by techs. The goal is not just to collect facts. It is to understand the system well enough to apply what you know in the field.\n\nQuestions or corrections? Leave a comment and include the equipment model, measurements, and source when you can. None of us gets everything right, and good measurements beat confident guesses.\n\nThis content is educational. Follow manufacturer instructions, use proper PPE and safe work practices, and comply with the codes and standards that apply to your equipment and jurisdiction.",
-      "found": "2026-10-25T14:27:12.113Z",
-      "draft": {
-        "source": "ai",
-        "summary": "An instructor reviews a five-step callback prevention checklist for HVAC service calls, emphasizing thorough checks during maintenance.",
-        "safety": "Ensure proper electrical disconnects and lockouts before inspecting or servicing HVAC units.",
-        "ppe": [
-          "Safety Glasses",
-          "Work Gloves",
-          "Sturdy Shoes"
-        ],
-        "steps": [
-          "Ask questions upon arrival about unit history and symptoms.",
-          "Quote or clean drain lines to prevent clogs.",
-          "Remove all panels for complete system visibility.",
-          "Enter readings and summary for future reference.",
-          "Touch everything during final walkthrough inspection."
-        ],
-        "stepsFrom": "ai",
-        "level": "Beginner",
-        "subject": "Preventive Maintenance",
-        "category": "HVAC",
-        "review": {
-          "relevance": 9,
-          "quality": 8,
-          "recommend": "approve",
-          "reason": "Provides a practical checklist to prevent HVAC callbacks and ensure thorough maintenance.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
-    },
-    {
       "yt": "tQE1nGz3Ydg",
       "title": "Same Charge, Different Numbers - Short #306",
       "channel": "HVAC School",
