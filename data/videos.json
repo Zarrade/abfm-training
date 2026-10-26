@@ -2,6 +2,42 @@
   "updated": "2026-10-26",
   "videos": [
     {
+      "id": "healt-sWuOBu3GjHw",
+      "yt": "sWuOBu3GjHw",
+      "title": "Single and Extension Ladder Safety",
+      "category": "Health & Safety",
+      "subject": "Ladder Safety",
+      "level": "Beginner",
+      "channel": "",
+      "duration": "",
+      "added": "2026-10-26",
+      "summary": "This video provides safety training for selecting, inspecting, setting up, using, and caring for single and extension ladders.",
+      "safety": "Always inspect the ladder before use and never stand on the top three rungs.",
+      "ppe": [
+        "Safety Glasses",
+        "Work Boots",
+        "Gloves"
+      ],
+      "steps": [
+        "Select the right ladder for the job and environment.",
+        "Inspect the ladder for damage, loose parts, or contamination.",
+        "Set up the ladder on a level surface at a 75-degree angle.",
+        "Extend the ladder properly and secure the rung locks.",
+        "Maintain three points of contact when climbing and working."
+      ],
+      "essential": true,
+      "gemini": {
+        "date": "2026-10-26",
+        "relevance": 10,
+        "quality": 9,
+        "recommend": "approve",
+        "reason": "It covers essential ladder safety guidelines that are critical for all maintenance technicians.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      }
+    },
+    {
       "id": "healt-n1gWyBOn4OM",
       "yt": "n1gWyBOn4OM",
       "title": "Lockout/Tagout (LOTO) Safety Training Video",
