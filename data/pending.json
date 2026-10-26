@@ -1105,47 +1105,6 @@
       }
     },
     {
-      "yt": "jmdOfrL4zz0",
-      "title": "How to Clean and Maintain a Plastic Water Tank",
-      "channel": "",
-      "published": "",
-      "duration": "",
-      "suggestedCategory": "Water Tank Cleaning",
-      "description": "Suggested starter video (found by research). Preview it before approving.",
-      "found": "2026-10-25T10:06:40Z",
-      "starter": true,
-      "draft": {
-        "source": "ai",
-        "summary": "This video outlines step-by-step instructions for draining, cleaning, and disinfecting a plastic water tank.",
-        "safety": "Always wear safety goggles and rubber gloves while handling cleaning solutions and power tools.",
-        "ppe": [
-          "Rubber Gloves",
-          "Safety Goggles"
-        ],
-        "steps": [
-          "Drain the water tank completely",
-          "Scrub the inside of the tank",
-          "Flush hoses and pipes thoroughly",
-          "Disinfect the tank with a bleach solution",
-          "Drain and rinse the tank"
-        ],
-        "stepsFrom": "ai",
-        "level": "Beginner",
-        "subject": "Water Tank Cleaning",
-        "category": "Water Tank Cleaning",
-        "review": {
-          "relevance": 10,
-          "quality": 9,
-          "recommend": "approve",
-          "reason": "Clear and detailed guide relevant for water tank maintenance technicians.",
-          "unsafe": [],
-          "language": "English",
-          "talking": false
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
-    },
-    {
       "yt": "Fdy9uRvpI-E",
       "title": "How to Repair Drywall",
       "channel": "",
