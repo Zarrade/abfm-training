@@ -14616,7 +14616,19 @@
           ]
         }
       },
-      "ytTitle": "Finding Hidden Leaks with a Thermal Camera"
+      "gemini": {
+        "date": "2026-10-26",
+        "model": "gemini-3.6-flash",
+        "relevance": 9,
+        "quality": 8,
+        "recommend": "approve",
+        "reason": "Clear demonstration of using thermal imaging to pinpoint underground leaks and executing the repair under concrete.",
+        "unsafe": [
+          "Operating a jackhammer without wearing eye or ear protection"
+        ],
+        "language": "English",
+        "talking": true
+      }
     },
     {
       "id": "plumb-117",
