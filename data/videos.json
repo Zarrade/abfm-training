@@ -2,6 +2,42 @@
   "updated": "2026-10-26",
   "videos": [
     {
+      "id": "healt-CdFPlD3vQ20",
+      "yt": "CdFPlD3vQ20",
+      "title": "Lockout/Tagout Procedures: How to Lock Out a Machine",
+      "category": "Health & Safety",
+      "subject": "Lockout/Tagout Safety",
+      "level": "Beginner",
+      "channel": "",
+      "duration": "",
+      "added": "2026-10-26",
+      "summary": "This video explains Lockout/Tagout procedures for industrial machinery and energy control equipment.",
+      "safety": "Always notify affected personnel and lock out energy sources before starting maintenance.",
+      "ppe": [
+        "Safety Glasses",
+        "High-Visibility Vest",
+        "Hard Hat"
+      ],
+      "steps": [
+        "Identify energy sources",
+        "Notify affected personnel",
+        "Turn off machinery",
+        "Apply lock and tag",
+        "Verify zero energy state"
+      ],
+      "essential": true,
+      "gemini": {
+        "date": "2026-10-26",
+        "relevance": 9,
+        "quality": 9,
+        "recommend": "approve",
+        "reason": "Clear, concise demonstration of essential LOTO procedures suitable for facility technicians.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      }
+    },
+    {
       "id": "civil-2HQ_2Jnw6X4",
       "yt": "2HQ_2Jnw6X4",
       "title": "Installing Wood Look Tile Like a PRO #tiles #howtotile #planktile",
