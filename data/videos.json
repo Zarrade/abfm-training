@@ -2,6 +2,40 @@
   "updated": "2026-10-26",
   "videos": [
     {
+      "id": "hvac-ztzTNf3smr4",
+      "yt": "ztzTNf3smr4",
+      "title": "EEV Diagnostics & Expansion Devices with Ty Branaman, Roman Baugh, & Bryan Orr",
+      "category": "HVAC",
+      "subject": "Refrigerant & Diagnostics",
+      "level": "Intermediate",
+      "channel": "HVAC School",
+      "duration": "",
+      "added": "2026-10-26",
+      "summary": "This video covers electronic expansion valve (EEV) operation and diagnostic procedures compared to standard TXVs. It demonstrates how to test motor windings, verify sensors, and test valve response before replacement.",
+      "safety": "Ensure electrical power to the equipment is disconnected before testing EEV winding resistance or handling wiring.",
+      "ppe": [
+        "Safety Glasses",
+        "Insulated Gloves"
+      ],
+      "steps": [
+        "Verify liquid refrigerant supply and subcooling before testing the valve.",
+        "Check temperature sensors and pressure transducers for accurate readings.",
+        "Disconnect power and measure EEV motor winding resistance using a multimeter.",
+        "Check for electrical shorts between separate winding phases.",
+        "Use a manual driver or service mode to test valve travel and response."
+      ],
+      "gemini": {
+        "date": "2026-10-26",
+        "relevance": 8,
+        "quality": 8,
+        "recommend": "approve",
+        "reason": "Provides valuable technical explanations and physical prop demonstrations for troubleshooting electronic expansion valves.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      }
+    },
+    {
       "id": "paint-f_j7OIW2zB4",
       "yt": "f_j7OIW2zB4",
       "title": "¡Cómo rociar techos como un PRO! Consejos y técnicas para pistolas de pintura sin aire",
