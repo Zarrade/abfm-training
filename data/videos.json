@@ -1660,7 +1660,8 @@
             "أحذية اصبع القدم الصلب"
           ]
         }
-      }
+      },
+      "geminiTries": 1
     },
     {
       "id": "hvac-106",
@@ -1857,6 +1858,20 @@
             "أحذية اصبع القدم الصلب"
           ]
         }
+      },
+      "gemini": {
+        "date": "2026-10-26",
+        "model": "gemini-3.6-flash",
+        "relevance": 9,
+        "quality": 8,
+        "recommend": "approve",
+        "reason": "Clear step-by-step demonstration of a split AC installation, including core drilling and line connections.",
+        "unsafe": [
+          "Technicians working barefoot on the roof and ladders",
+          "Lack of eye protection and dust masks during core drilling"
+        ],
+        "language": "English",
+        "talking": true
       }
     },
     {
@@ -2036,6 +2051,17 @@
             "أحذية اصبع القدم الصلب"
           ]
         }
+      },
+      "gemini": {
+        "date": "2026-10-26",
+        "model": "gemini-3.5-flash-lite",
+        "relevance": 9,
+        "quality": 8,
+        "recommend": "approve",
+        "reason": "Clear, practical demonstration of pulling a vacuum on a mini-split AC system.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
       }
     },
     {
@@ -2215,6 +2241,17 @@
             "أحذية اصبع القدم الصلب"
           ]
         }
+      },
+      "gemini": {
+        "date": "2026-10-26",
+        "model": "gemini-3.5-flash-lite",
+        "relevance": 10,
+        "quality": 9,
+        "recommend": "approve",
+        "reason": "This is a clear, step-by-step training guide for proper nitrogen pressure testing.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
       }
     },
     {
@@ -2385,7 +2422,8 @@
             "قفازات العمل"
           ]
         }
-      }
+      },
+      "geminiTries": 1
     },
     {
       "id": "hvac-110",
@@ -2573,6 +2611,17 @@
             "أحذية اصبع القدم الصلب"
           ]
         }
+      },
+      "gemini": {
+        "date": "2026-10-26",
+        "model": "gemini-3.5-flash-lite",
+        "relevance": 10,
+        "quality": 8,
+        "recommend": "approve",
+        "reason": "Clear, practical instruction on nitrogen purging for HVAC brazing work.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
       }
     },
     {
@@ -2752,6 +2801,17 @@
             "أحذية اصبع القدم الصلب"
           ]
         }
+      },
+      "gemini": {
+        "date": "2026-10-26",
+        "model": "gemini-3.5-flash-lite",
+        "relevance": 10,
+        "quality": 9,
+        "recommend": "approve",
+        "reason": "Clear step-by-step instruction on refrigerant recovery suitable for HVAC technicians.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
       }
     },
     {
@@ -2940,6 +3000,17 @@
             "أحذية اصبع القدم الصلب"
           ]
         }
+      },
+      "gemini": {
+        "date": "2026-10-26",
+        "model": "gemini-3.6-flash",
+        "relevance": 9,
+        "quality": 9,
+        "recommend": "approve",
+        "reason": "Provides clear, detailed instructions for technicians on diagnosing common AC compressor faults safely and systematically.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
       }
     },
     {
@@ -3119,6 +3190,17 @@
             "أحذية اصبع القدم الصلب"
           ]
         }
+      },
+      "gemini": {
+        "date": "2026-10-26",
+        "model": "gemini-3.5-flash-lite",
+        "relevance": 9,
+        "quality": 9,
+        "recommend": "approve",
+        "reason": "Excellent 3D visual explanation of EEV operation and testing procedures.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
       }
     },
     {
@@ -3307,6 +3389,19 @@
             "أحذية اصبع القدم الصلب"
           ]
         }
+      },
+      "gemini": {
+        "date": "2026-10-26",
+        "model": "gemini-3.5-flash-lite",
+        "relevance": 9,
+        "quality": 8,
+        "recommend": "approve",
+        "reason": "Provides a practical, clear method for diagnosing inverter AC PCB and compressor faults using simple tools.",
+        "unsafe": [
+          "Working near live electrical components without insulated gloves"
+        ],
+        "language": "English",
+        "talking": true
       }
     },
     {
@@ -3477,6 +3572,17 @@
             "قفازات النتريل"
           ]
         }
+      },
+      "gemini": {
+        "date": "2026-10-26",
+        "model": "gemini-3.5-flash-lite",
+        "relevance": 10,
+        "quality": 9,
+        "recommend": "approve",
+        "reason": "Clear step-by-step guidance on fixing a common two-handle faucet leak.",
+        "unsafe": [],
+        "language": "English",
+        "talking": false
       }
     },
     {
@@ -3647,6 +3753,17 @@
             "قفازات النتريل"
           ]
         }
+      },
+      "gemini": {
+        "date": "2026-10-26",
+        "model": "gemini-3.5-flash-lite",
+        "relevance": 10,
+        "quality": 8,
+        "recommend": "approve",
+        "reason": "Clear and practical demonstration of cartridge replacement suitable for entry-level training.",
+        "unsafe": [],
+        "language": "English",
+        "talking": false
       }
     },
     {
@@ -3817,6 +3934,17 @@
             "نظارات السلامة"
           ]
         }
+      },
+      "gemini": {
+        "date": "2026-10-26",
+        "model": "gemini-3.5-flash-lite",
+        "relevance": 10,
+        "quality": 9,
+        "recommend": "approve",
+        "reason": "Clear step-by-step guidance on toilet fill valve replacement suitable for basic plumbing training.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
       }
     },
     {
@@ -3978,6 +4106,17 @@
             "قفازات النتريل"
           ]
         }
+      },
+      "gemini": {
+        "date": "2026-10-26",
+        "model": "gemini-3.5-flash-lite",
+        "relevance": 9,
+        "quality": 9,
+        "recommend": "approve",
+        "reason": "Clear and simple guide on replacing a toilet flapper for plumbing maintenance training.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
       }
     },
     {
@@ -4148,6 +4287,17 @@
             "نظارات السلامة"
           ]
         }
+      },
+      "gemini": {
+        "date": "2026-10-26",
+        "model": "gemini-3.5-flash-lite",
+        "relevance": 9,
+        "quality": 8,
+        "recommend": "approve",
+        "reason": "Clear and simple demonstration of a routine plumbing maintenance task.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
       }
     },
     {
@@ -4318,6 +4468,17 @@
             "قفازات العمل"
           ]
         }
+      },
+      "gemini": {
+        "date": "2026-10-26",
+        "model": "gemini-3.5-flash-lite",
+        "relevance": 9,
+        "quality": 9,
+        "recommend": "approve",
+        "reason": "Clear, step-by-step instructions on replacing shut-off valves using compression fittings.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
       }
     },
     {
@@ -4488,6 +4649,17 @@
             "قفازات النتريل"
           ]
         }
+      },
+      "gemini": {
+        "date": "2026-10-26",
+        "model": "gemini-3.5-flash-lite",
+        "relevance": 9,
+        "quality": 9,
+        "recommend": "approve",
+        "reason": "Clear and informative troubleshooting guide for common flushometer issues.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
       }
     },
     {

@@ -1,75 +1,89 @@
 {
-  "lastRun": "2026-10-25T19:26:39.851Z",
+  "lastRun": "2026-10-26T02:01:47.308Z",
   "channelStatus": {
     "https://www.youtube.com/@EngineeringMindset": {
       "id": "UCk0fGHsCEzGig-rSzkfCjMw",
-      "checked": "2026-10-25T19:26:27.209Z",
-      "lastFound": 0
+      "checked": "2026-10-26T02:01:36.300Z",
+      "lastFound": 0,
+      "error": "Feed not available (404)."
     },
     "https://www.youtube.com/@ACServiceTech": {
       "id": "UCYohLjTaUZLF3-JjttxG_CA",
-      "checked": "2026-10-25T19:26:28.864Z",
-      "lastFound": 0
+      "checked": "2026-10-26T02:01:37.920Z",
+      "lastFound": 0,
+      "error": "Feed not available (404)."
     },
     "https://www.youtube.com/@TheElectricalGuy": {
       "id": "UCdKPm5KM99O75NtArFkMDDA",
-      "checked": "2026-10-25T19:26:29.697Z",
-      "lastFound": 0
+      "checked": "2026-10-26T02:01:38.698Z",
+      "lastFound": 0,
+      "error": "Feed not available (404)."
     },
     "https://www.youtube.com/@GSHElectrical": {
       "id": "UCgtbE9w_d-u2AvPp3WBlPfQ",
-      "checked": "2026-10-25T19:26:30.513Z",
-      "lastFound": 0
+      "checked": "2026-10-26T02:01:39.475Z",
+      "lastFound": 0,
+      "error": "Feed not available (404)."
     },
     "https://www.youtube.com/@jwflame": {
       "id": "UC2uFFhnMKyF82UY2TbXRaNg",
-      "checked": "2026-10-25T19:26:31.306Z",
-      "lastFound": 0
+      "checked": "2026-10-26T02:01:40.253Z",
+      "lastFound": 0,
+      "error": "Feed not available (404)."
     },
     "https://www.youtube.com/@RogerWakefield": {
       "id": "UCGIMKh92vaL0_Yc0u4GYhHA",
-      "checked": "2026-10-25T19:26:32.120Z",
-      "lastFound": 0
+      "checked": "2026-10-26T02:01:41.031Z",
+      "lastFound": 0,
+      "error": "Feed not available (404)."
     },
     "https://www.youtube.com/c/HVACSchool": {
       "id": "UCdLlUhD9LUGm0-NTYDASPFA",
-      "checked": "2026-10-25T19:26:28.027Z",
-      "lastFound": 0
+      "checked": "2026-10-26T02:01:37.142Z",
+      "lastFound": 0,
+      "error": "Feed not available (500)."
     },
     "https://www.youtube.com/channel/UCIoD-SEdUWMA74tWXRMyCZQ": {
       "id": "UCIoD-SEdUWMA74tWXRMyCZQ",
-      "checked": "2026-10-25T19:26:32.929Z",
-      "lastFound": 0
+      "checked": "2026-10-26T02:01:41.810Z",
+      "lastFound": 0,
+      "error": "Feed not available (404)."
     },
     "https://www.youtube.com/c/Ductdudes": {
       "id": "UCGGX5M9ISk9Zwi6pfa6gk3w",
-      "checked": "2026-10-25T19:26:33.804Z",
-      "lastFound": 0
+      "checked": "2026-10-26T02:01:42.583Z",
+      "lastFound": 0,
+      "error": "Feed not available (404)."
     },
     "https://www.youtube.com/channel/UCbZdXox6mKHdcT2QdVT-goQ": {
       "id": "UCbZdXox6mKHdcT2QdVT-goQ",
-      "checked": "2026-10-25T19:26:34.619Z",
-      "lastFound": 0
+      "checked": "2026-10-26T02:01:43.366Z",
+      "lastFound": 0,
+      "error": "Feed not available (404)."
     },
     "https://www.youtube.com/channel/UCWpu9UZ6aiRTaMuuV8-C0pQ": {
       "id": "UCWpu9UZ6aiRTaMuuV8-C0pQ",
-      "checked": "2026-10-25T19:26:36.649Z",
-      "lastFound": 0
+      "checked": "2026-10-26T02:01:44.145Z",
+      "lastFound": 0,
+      "error": "Feed not available (404)."
     },
     "https://www.youtube.com/channel/UCnrhmEmvA_bIRYkBVPqJ4zg": {
       "id": "UCnrhmEmvA_bIRYkBVPqJ4zg",
-      "checked": "2026-10-25T19:26:37.459Z",
-      "lastFound": 0
+      "checked": "2026-10-26T02:01:45.043Z",
+      "lastFound": 0,
+      "error": "Feed not available (500)."
     },
     "https://www.youtube.com/channel/UCR1ksygazAOr59yLZ4Mp5tA": {
       "id": "UCR1ksygazAOr59yLZ4Mp5tA",
-      "checked": "2026-10-25T19:26:38.289Z",
-      "lastFound": 0
+      "checked": "2026-10-26T02:01:45.817Z",
+      "lastFound": 0,
+      "error": "Feed not available (404)."
     },
     "https://www.youtube.com/channel/UCXOzd-KAiI6fGx5wfrnsHTA": {
       "id": "UCXOzd-KAiI6fGx5wfrnsHTA",
-      "checked": "2026-10-25T19:26:39.140Z",
-      "lastFound": 0
+      "checked": "2026-10-26T02:01:46.590Z",
+      "lastFound": 0,
+      "error": "Feed not available (404)."
     }
   },
   "queue": [
