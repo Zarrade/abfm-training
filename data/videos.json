@@ -13744,7 +13744,19 @@
           ]
         }
       },
-      "ytTitle": "PPR Pipe Fusion Welding Procedure"
+      "gemini": {
+        "date": "2026-10-26",
+        "model": "gemini-3.6-flash",
+        "relevance": 9,
+        "quality": 9,
+        "recommend": "approve",
+        "reason": "Clear step-by-step visual demonstration with helpful diagrams showing proper heating depth and alignment.",
+        "unsafe": [
+          "Operating hot welding equipment with bare hands and no safety gloves"
+        ],
+        "language": "English",
+        "talking": true
+      }
     },
     {
       "id": "plumb-112",
