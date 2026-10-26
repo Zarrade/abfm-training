@@ -171,47 +171,6 @@
       }
     },
     {
-      "yt": "tQE1nGz3Ydg",
-      "title": "Same Charge, Different Numbers - Short #306",
-      "channel": "HVAC School",
-      "channelUrl": "https://www.youtube.com/c/HVACSchool",
-      "published": "2026-10-06T18:41:14+00:00",
-      "duration": "",
-      "channelCategory": "HVAC",
-      "suggestedCategory": "HVAC",
-      "description": "In this short podcast episode, Bryan talks about what happens when you adjust the condenser airflow: you have the same charge, different numbers. This short covers HVAC condensers and flooded condensers in refrigeration applications.\r\n\r\n When you increase condenser airflow by repairing a condenser fan or washing the unit, the pressure and subcooling readings change even though the charge stays the same. Refrigerant enters the condenser as superheated vapor and goes through three stages: desuperheating, condensing, and subcooling. The key thing to remember is that these three stages can occur at different points of the condenser as the operating conditions change.\r\n\r\n Higher head pressure doesn't necessarily lead to higher subcooling, as subcooling depends on both saturation temperature and actual liquid temperature; if both change, head pressure can't tell us which way subcooling went. Exceptionally bad airflow across the condenser and high compression ratios can also interfere with liquid delivery. Uneven condenser airflow distribution also affects refrigerant distribution in the condenser. We shouldn't use low subcooling as an automatic indicator to add more charge.\r\n\r\n If there's one thing to remember, it's that you need to fix the airflow problem before deciding there is a charge problem. Operating readings can change without the total refrigerant charge changing.\r\n\r\n This episode contains embedded sponsor messages from Refrigeration Technologies, Carrier, NAVAC, Fieldpiece, and Filtrete\r\n\r\n Resources\r\n\r\n  NIST: Effect of Common Faults on the Performance of Different Types of Vapor Compression Systems NIST: Performance of a Residential Heat Pump Operating in the Cooling Mode with Single Faults Imposed   University of Padua: Condenser Airflow and Refrigerant-Inventory Modeling Condenser Fan Blade Shroud Depth (tech tip) Condenser Fan Blade Placement (tech tip) HVAC School calculators Submit a podcast question Learn about the GRIT Foundation  Purchase your tickets or learn more about the 8th Annual HVACR Training Symposium at https://hvacrschool.com/symposium.",
-      "found": "2026-10-25T14:27:16.002Z",
-      "draft": {
-        "source": "ai",
-        "summary": "This podcast explains how changing condenser airflow alters refrigerant pressure and subcooling without adding charge.",
-        "safety": "Ensure the system is safely isolated and wear appropriate PPE before inspecting or repairing condenser components.",
-        "ppe": [
-          "Safety Glasses",
-          "Work Gloves"
-        ],
-        "steps": [
-          "Record operating stage, pressures, and temperatures before servicing.",
-          "Repair or clean condenser fan and coil to restore proper airflow.",
-          "Wait for system conditions to settle after adjusting airflow.",
-          "Retake measurements to account for changes in load and airflow."
-        ],
-        "stepsFrom": "ai",
-        "level": "Intermediate",
-        "subject": "Refrigerant & Diagnostics",
-        "category": "HVAC",
-        "review": {
-          "relevance": 9,
-          "quality": 8,
-          "recommend": "approve",
-          "reason": "Provides clear theoretical and practical knowledge on condenser airflow impact for HVAC technicians.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
-    },
-    {
       "yt": "lD7x70PAsAE",
       "title": "do you need Blanke Permat?   Tile Floor uncoupling Underlayment",
       "channel": "Sal DiBlasi (tiling & waterproofing)",
