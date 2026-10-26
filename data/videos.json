@@ -2,6 +2,40 @@
   "updated": "2026-10-26",
   "videos": [
     {
+      "id": "hvac-169eyQcdxoA",
+      "yt": "169eyQcdxoA",
+      "title": "How to Wire a Surge Protector to a Disconnect: Pigtails & Phasing Tape",
+      "category": "HVAC",
+      "subject": "Electrical Diagnostics",
+      "level": "Intermediate",
+      "channel": "HVAC School",
+      "duration": "",
+      "added": "2026-10-26",
+      "summary": "This video explains how to properly wire a surge protector to an HVAC disconnect box using pigtails rather than double-lugging, and emphasizes phase-taping white wires for code compliance.",
+      "safety": "Always ensure power is completely disconnected and verified off before touching electrical components.",
+      "ppe": [
+        "Safety Glasses",
+        "Insulated Gloves"
+      ],
+      "steps": [
+        "Avoid double-lugging surge protector wires into single-rated load terminals.",
+        "Pigtail the surge protector wire together with the condenser load wire.",
+        "Connect the single pigtail wire to the load side terminal.",
+        "Wrap white high-voltage conductors with black or red electrical tape.",
+        "Mount surge protector where it will not block the disconnect door."
+      ],
+      "gemini": {
+        "date": "2026-10-26",
+        "relevance": 9,
+        "quality": 8,
+        "recommend": "approve",
+        "reason": "Clear explanation on code-compliant surge protector installation using pigtails and phase tape.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      }
+    },
+    {
       "id": "paint-8PuhQWvG47Q",
       "yt": "8PuhQWvG47Q",
       "title": "Why You MUST Box Your Torginol Flakes Before Installing a Garage Floor!",
