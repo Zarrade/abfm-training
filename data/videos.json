@@ -2,6 +2,41 @@
   "updated": "2026-10-26",
   "videos": [
     {
+      "id": "hvac-MYi4EHtfCEE",
+      "yt": "MYi4EHtfCEE",
+      "title": "Why We Clean Every Drain Line: A 5-Step Callback Prevention Checklist",
+      "category": "HVAC",
+      "subject": "Preventive Maintenance",
+      "level": "Beginner",
+      "channel": "HVAC School",
+      "duration": "",
+      "added": "2026-10-26",
+      "summary": "An instructor reviews a five-step callback prevention checklist for HVAC service calls, emphasizing thorough checks during maintenance.",
+      "safety": "Ensure proper electrical disconnects and lockouts before inspecting or servicing HVAC units.",
+      "ppe": [
+        "Safety Glasses",
+        "Work Gloves",
+        "Sturdy Shoes"
+      ],
+      "steps": [
+        "Ask questions upon arrival about unit history and symptoms.",
+        "Quote or clean drain lines to prevent clogs.",
+        "Remove all panels for complete system visibility.",
+        "Enter readings and summary for future reference.",
+        "Touch everything during final walkthrough inspection."
+      ],
+      "gemini": {
+        "date": "2026-10-26",
+        "relevance": 9,
+        "quality": 8,
+        "recommend": "approve",
+        "reason": "Provides a practical checklist to prevent HVAC callbacks and ensure thorough maintenance.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      }
+    },
+    {
       "id": "lands-qoBe4nTrVz0",
       "yt": "qoBe4nTrVz0",
       "title": "Toro RXC Sprinkler Controller | Setup & Programming Guide | Sprinkler Warehouse",
