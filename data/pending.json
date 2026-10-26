@@ -941,48 +941,6 @@
       }
     },
     {
-      "yt": "kuGqzVgPTso",
-      "title": "Heat Illness Prevention: Heat Stress Safety for Workers",
-      "channel": "",
-      "published": "",
-      "duration": "",
-      "suggestedCategory": "Health & Safety",
-      "description": "Suggested starter video (found by research). Preview it before approving.",
-      "found": "2026-10-25T10:06:40Z",
-      "starter": true,
-      "draft": {
-        "source": "ai",
-        "summary": "This video explains common types of heat-related illnesses, their signs, first aid measures, and prevention strategies for outdoor and indoor workers.",
-        "safety": "Stay hydrated, recognize early symptoms of heat stress, and take regular breaks in shaded or air-conditioned areas.",
-        "ppe": [
-          "Hard Hat",
-          "Safety Glasses",
-          "High-Visibility Vest"
-        ],
-        "steps": [
-          "Move affected workers to a cool or shaded location.",
-          "Hydrate frequently with cool water and electrolyte drinks.",
-          "Loosen or remove heavy or tight clothing.",
-          "Apply ice packs or cool water and fan the individual.",
-          "Call 911 immediately if symptoms worsen or do not improve."
-        ],
-        "stepsFrom": "ai",
-        "level": "Beginner",
-        "subject": "Heat Illness Prevention and Heat Stress Safety",
-        "category": "Health & Safety",
-        "review": {
-          "relevance": 10,
-          "quality": 10,
-          "recommend": "approve",
-          "reason": "Essential heat safety training for all maintenance technicians working in hot environments.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
-    },
-    {
       "yt": "rOPiqAf-DlI",
       "title": "How to Recognize and Prevent Heat-Related Illnesses",
       "channel": "",
