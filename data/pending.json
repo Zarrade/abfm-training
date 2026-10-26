@@ -727,48 +727,6 @@
       }
     },
     {
-      "yt": "n1gWyBOn4OM",
-      "title": "Lockout/Tagout (LOTO) Safety Training Video",
-      "channel": "",
-      "published": "",
-      "duration": "",
-      "suggestedCategory": "Health & Safety",
-      "description": "Suggested starter video (found by research). Preview it before approving.",
-      "found": "2026-10-25T10:06:40Z",
-      "starter": true,
-      "draft": {
-        "source": "ai",
-        "summary": "This video explains lockout-tagout (LOTO) procedures, definitions, and safety steps to protect workers from machine hazards during maintenance.",
-        "safety": "Always de-energize and lock out equipment before starting any maintenance or repair work.",
-        "ppe": [
-          "Safety Helmet",
-          "Safety Glasses",
-          "High-Visibility Vest"
-        ],
-        "steps": [
-          "Notify all affected employees before starting lockout-tagout.",
-          "Shut down the equipment following manufacturer instructions.",
-          "Attach lockout-tagout devices to energy isolation points.",
-          "Verify zero energy state by testing equipment controls.",
-          "Perform required maintenance or repairs safely."
-        ],
-        "stepsFrom": "ai",
-        "level": "Beginner",
-        "subject": "Lockout/Tagout Procedures",
-        "category": "Health & Safety",
-        "review": {
-          "relevance": 10,
-          "quality": 9,
-          "recommend": "approve",
-          "reason": "Clear and comprehensive explanation of essential LOTO safety procedures for maintenance work.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
-    },
-    {
       "yt": "CdFPlD3vQ20",
       "title": "Lockout/Tagout Procedures: How to Lock Out a Machine",
       "channel": "",
