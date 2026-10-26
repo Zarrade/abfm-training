@@ -16930,6 +16930,17 @@
             "أحذية اصبع القدم الصلب"
           ]
         }
+      },
+      "gemini": {
+        "date": "2026-10-26",
+        "model": "gemini-3.6-flash",
+        "relevance": 9,
+        "quality": 9,
+        "recommend": "approve",
+        "reason": "Clear animated explanation of VFD operation and underlying electrical principles ideal for technician training.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
       }
     },
     {
