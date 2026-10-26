@@ -2,6 +2,42 @@
   "updated": "2026-10-26",
   "videos": [
     {
+      "id": "civil-lD7x70PAsAE",
+      "yt": "lD7x70PAsAE",
+      "title": "do you need Blanke Permat?   Tile Floor uncoupling Underlayment",
+      "category": "Civil Jobs",
+      "subject": "Uncoupling Mat Installation",
+      "level": "Intermediate",
+      "channel": "Sal DiBlasi (tiling & waterproofing)",
+      "duration": "",
+      "added": "2026-10-26",
+      "summary": "This video explains the advantages of Blanke Permat uncoupling mat and demonstrates how to cut, lay thinset mortar, and install the mat over a subfloor before tiling.",
+      "safety": "Wear protective knee pads and eye protection when cutting materials and working kneeling on subfloors.",
+      "ppe": [
+        "Knee Pads",
+        "Safety Glasses",
+        "Work Gloves"
+      ],
+      "steps": [
+        "Measure and dry fit the uncoupling mat panels across the subfloor.",
+        "Trim mesh edges and offset sheet corners to ensure proper overlapping joints.",
+        "Vacuum and damp-wipe the plywood subfloor to clear dust and maintain mortar moisture.",
+        "Spread thin-set mortar using the flat side of the trowel then notch it.",
+        "Press mat sections into the mortar and roll firmly using a floor roller.",
+        "Install tiles over the underlayment using modified thin-set mortar."
+      ],
+      "gemini": {
+        "date": "2026-10-26",
+        "relevance": 8,
+        "quality": 8,
+        "recommend": "approve",
+        "reason": "Provides clear, step-by-step guidance on properly installing uncoupling underlayment for tile flooring.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      }
+    },
+    {
       "id": "elect-pOfXina3uUQ",
       "yt": "pOfXina3uUQ",
       "title": "Electrical Metal Conduit - Types and Sizes",
