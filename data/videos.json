@@ -2,6 +2,40 @@
   "updated": "2026-10-26",
   "videos": [
     {
+      "id": "fires-nyBTkpNB0hU",
+      "yt": "nyBTkpNB0hU",
+      "title": "Fire Alarm Control Panel Basics",
+      "category": "Fire Systems",
+      "subject": "Fire Alarm Control Panel Basics",
+      "level": "Beginner",
+      "channel": "",
+      "duration": "",
+      "added": "2026-10-26",
+      "summary": "This webinar provides an introduction to fire alarm control unit basics, covering displays, remote annunciators, switches, and indicators.",
+      "safety": "Always verify system status and ensure all alarms are acknowledged before silencing or resetting the fire alarm panel.",
+      "ppe": [
+        "Safety Glasses",
+        "Work Gloves"
+      ],
+      "steps": [
+        "Inspect fire alarm control panel display lights",
+        "Identify alarm, supervisory, trouble, and power indicators",
+        "Use acknowledge button to investigate alarm sources",
+        "Silence audible and visible notification appliances if needed",
+        "Reset system after resolving the trouble condition"
+      ],
+      "gemini": {
+        "date": "2026-10-26",
+        "relevance": 9,
+        "quality": 8,
+        "recommend": "approve",
+        "reason": "Clear and detailed explanation of fire alarm control panel components and operation for technicians.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      }
+    },
+    {
       "id": "healt-_loONTyxmks",
       "yt": "_loONTyxmks",
       "title": "Confined Space Entry: Safe Work Practices",
