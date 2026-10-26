@@ -509,47 +509,6 @@
       }
     },
     {
-      "yt": "SW6G7EostJc",
-      "title": "How to Fix / Repair Drywall Holes Like a Pro",
-      "channel": "",
-      "published": "",
-      "duration": "",
-      "suggestedCategory": "Civil Jobs",
-      "description": "Suggested starter video (found by research). Preview it before approving.",
-      "found": "2026-10-25T10:06:40Z",
-      "starter": true,
-      "draft": {
-        "source": "ai",
-        "summary": "This video shows how to repair small, medium, and large holes in drywall using patches, joint compound, and wall texture.",
-        "safety": "Always wear a dust mask and safety glasses when sanding drywall compound.",
-        "ppe": [
-          "Safety Glasses",
-          "Dust Mask",
-          "Cap"
-        ],
-        "steps": [
-          "Clean and wipe the damaged drywall area.",
-          "Apply a mesh patch over the hole.",
-          "Apply spackling compound and smooth it flat.",
-          "Sand the dried patch until smooth."
-        ],
-        "stepsFrom": "ai",
-        "level": "Beginner",
-        "subject": "Drywall Repair",
-        "category": "Civil Jobs",
-        "review": {
-          "relevance": 9,
-          "quality": 9,
-          "recommend": "approve",
-          "reason": "Clear, step-by-step instructions make this ideal for civil maintenance training.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
-    },
-    {
       "yt": "IKfxGbEE8lo",
       "title": "Complete Drywall Taping Process for Remodels",
       "channel": "",
@@ -696,6 +655,7 @@
     "7iWAk17hCQk",
     "3Fljt8V1qQM",
     "-Ea6ceNu5Ug",
-    "FMxm-4b98pY"
+    "FMxm-4b98pY",
+    "SW6G7EostJc"
   ]
 }
