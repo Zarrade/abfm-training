@@ -147,14 +147,39 @@
     return { steps: (TRADE_STEPS[category] || GENERAL_STEPS).slice(), from: "general" };
   }
 
+  /* Turn a YouTube title into a plain training title (used when Gemini isn't available). */
+  const ACRO = new Set("AC HVAC RCD RCBO MCB MCCB ELCB PPE VFD LOTO FCU AHU FAHU VRF VRV EEV TXV ATS PCB DB UPS LED PVC PPR GI MEP R410A R32 R22 R134A OSHA NFPA UAE PTFE IGBT PLC CO2 GFCI BS KW BMS CCTV DIY HDPE UV".split(" "));
+  const SMALL = new Set("a an and as at but by for in of on or the to vs via with".split(" "));
+  function trainingTitle(yt, channel) {
+    let t = String(yt || "").replace(/[\u{1F000}-\u{1FAFF}\u{2600}-\u{27BF}\u{FE0F}]/gu, " ");
+    t = t.replace(/\b(short|shorts|ep|episode|part)\s*#?\d+\b/gi, " ").replace(/#\w+/g, " ").replace(/\(\s*\d{4}\s*\)|\[\s*\d{4}\s*\]/g, " ");
+    let parts = t.split(/\s+[|•–—]\s+|\s+-\s+/).map(clean).filter(Boolean);
+    const ch = String(channel || "").toLowerCase();
+    parts = parts.filter((p, i) => i === 0 || !(ch && (p.toLowerCase() === ch || ch.includes(p.toLowerCase()))) && !/^(official|full video|new|tutorial|diy|guide)$/i.test(p));
+    t = parts.slice(0, 2).join(": ");
+    t = t.replace(/\s+(w\/|with|ft\.?|feat\.?)\s+([A-Z][\w.'’-]*[\s,&]*(and\s+)?)+$/, "");
+    const letters = t.replace(/[^A-Za-z]/g, ""), upper = t.replace(/[^A-Z]/g, "");
+    if (letters.length > 8 && upper.length / letters.length > 0.6) t = t.split(" ").map(w => ACRO.has(w.toUpperCase().replace(/[^A-Z0-9]/g, "")) ? w.toUpperCase() : w.toLowerCase()).join(" ");
+    t = t.replace(/\blike an? (pro|professional( \w+)?|boss|expert)\b/gi, "").replace(/\s+(easy|quick|simple|fast)\s*$/i, "").replace(/\b(you must|must see|must watch|you won'?t believe|insane|amazing|easy trick|the right way)\b/gi, "");
+    t = t.replace(/[!?]{2,}/g, "").replace(/\s*!+\s*$/, "").replace(/\(\s*\)/g, "").replace(/\s{2,}/g, " ").replace(/\s+([:,.])/g, "$1").replace(/[:\-–—,]\s*$/, "").replace(/\s+(easy|quick|simple|fast)\s*$/i, "").trim();
+    t = t.split(" ").map((w, i) => {
+      if (/^[A-Z0-9\/&-]{2,5}$/.test(w)) return w;                       // keep acronyms: AC, RCD, PPE, R410A
+      if (/^[A-Z]{6,}$/.test(w) || /^[a-z]/.test(w)) { const lw = w.toLowerCase(); return i && SMALL.has(lw) ? lw : lw.charAt(0).toUpperCase() + lw.slice(1); }
+      return w;
+    }).join(" ");
+    if (t.length > 70) t = t.slice(0, 67).replace(/\s+\S*$/, "") + "…";
+    return cap(t) || clean(yt);
+  }
+
   /* Built-in draft (no internet needed). */
-  function ruleDraft({ title, description, category, videos }) {
+  function ruleDraft({ title, description, category, videos, channel }) {
     const desc = /^Suggested starter video/i.test(description || "") ? "" : description;
     const text = title + " " + (desc || "").slice(0, 400);
     const s = safetyFor(text, category);
     const st = stepsFor(title, desc, category);
     return {
       source: "rules",
+      title: trainingTitle(title, channel),
       summary: summary(desc, title),
       safety: s.safety,
       ppe: s.ppe.slice(),
@@ -218,9 +243,10 @@
   function aiPrompt({ title, category, subjects, categories }) {
     return `You review training videos for facility-maintenance technicians in Dubai (HVAC, electrical, plumbing, fire systems, cleaning, civil, painting, landscaping). Many speak basic English.
 Watch this YouTube video ("${title}"${category ? `, suggested trade: ${category}` : ""}) and reply with JSON only, in exactly this shape:
-{"summary": string, "safety": string, "ppe": string[], "steps": string[], "level": "Beginner"|"Intermediate"|"Advanced", "subject": string, "category": string,
+{"title": string, "summary": string, "safety": string, "ppe": string[], "steps": string[], "level": "Beginner"|"Intermediate"|"Advanced", "subject": string, "category": string,
  "review": {"relevance": number, "quality": number, "recommend": "approve"|"maybe"|"reject", "reason": string, "unsafe": string[], "language": string, "talking": boolean}}
 Rules:
+- title: a clear training-library title for what the video teaches, 3–9 words, Title Case, under 60 characters (e.g. "Clearing a Blocked AC Condensate Drain", "Testing RCDs", "How VRF Systems Work"). No clickbait, no channel or presenter names, no episode numbers, no emojis or hashtags. Keep useful equipment names (e.g. "Sloan Flushometer").
 - summary: 1–2 plain sentences saying what the video shows. No hype, no channel name.
 - safety: one sentence with the most important safety precaution for this task.
 - ppe: 2–4 items of protective equipment, Title Case (e.g. "Safety Glasses").
@@ -243,6 +269,7 @@ Use simple words. Do not invent steps that are not in the video.`;
     const rv = j.review || {};
     const d = {
       source: "ai",
+      title: clean(j.title).replace(/^["']|["']$/g, "").slice(0, 80),
       summary: clean(j.summary).slice(0, 400),
       safety: clean(j.safety).slice(0, 300),
       ppe: arr(j.ppe).slice(0, 5),
@@ -330,11 +357,11 @@ ${JSON.stringify(lines)}` }] });
     for (const it of items || []) {
       if (!it || it === target) continue;
       if (target.yt && it.yt === target.yt) { out.push({ item: it, score: 1, same: true }); continue; }
-      const sc = similarity(target.title, it.title);
+      const sc = Math.max(similarity(target.title, it.title), it.ytTitle ? similarity(target.title, it.ytTitle) : 0, target.ytTitle ? similarity(target.ytTitle, it.title) : 0);
       if (sc >= DUP) out.push({ item: it, score: sc, same: false });
     }
     return out.sort((x, y) => y.score - x.score);
   }
 
-  root.ABDraft = { stepsFor, ruleDraft, aiTranslate, aiDraft, aiFindVideos, aiTalk, aiTest, MODELS, chapters, summary, level, safetyFor, similarity, findDuplicates };
+  root.ABDraft = { trainingTitle, stepsFor, ruleDraft, aiTranslate, aiDraft, aiFindVideos, aiTalk, aiTest, MODELS, chapters, summary, level, safetyFor, similarity, findDuplicates };
 })(typeof globalThis !== "undefined" ? globalThis : this);

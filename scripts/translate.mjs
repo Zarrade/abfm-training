@@ -80,6 +80,21 @@ const hashOf = v => createHash("sha1").update(JSON.stringify([v.title, v.summary
 
 async function translateVideos(doc) {
   let changed = 0;
+  // Batch pass: videos whose only change is a new English title get just the title translated, many per request.
+  for (const tl of LANGS) {
+    const todo = doc.videos.filter(v => {
+      const cur = v.tr && v.tr[tl];
+      return cur && cur.auto && v.ytTitle && cur.src !== hashOf(v) && cur.src === hashOf({ ...v, title: v.ytTitle });
+    });
+    for (let i = 0; i < todo.length; i += 40) {
+      const chunk = todo.slice(i, i + 40);
+      try {
+        const t = await translateLines(chunk.map(v => v.title), tl);
+        chunk.forEach((v, k) => { if (t[k]) { v.tr[tl].title = t[k]; v.tr[tl].src = hashOf(v); changed++; } });
+      } catch (e) { failures++; if (e.message === "limit") return changed; console.log(`  ! titles [${tl}]: ${e.message}`); }
+      await sleep(300);
+    }
+  }
   for (const v of doc.videos) {
     const src = hashOf(v);
     v.tr = v.tr || {};
@@ -88,6 +103,8 @@ async function translateVideos(doc) {
       const manual = cur && !cur.auto;
       if (manual) continue;                       // typed by the admin: keep
       if (cur && cur.src === src) continue;       // already up to date
+      // Only the English title changed (renamed to a training title) — handled in one batch per language before this loop.
+      if (cur && v.ytTitle && cur.src === hashOf({ ...v, title: v.ytTitle })) continue;
       const steps = v.steps || [], ppe = v.ppe || [];
       const lines = [v.title, v.summary || "", v.safety || "", ...steps, ...ppe];
       try {

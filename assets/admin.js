@@ -232,7 +232,7 @@
     if (ui.show === "gem-unsafe") list = list.filter(v => v.gemini && (v.gemini.unsafe || []).length);
     const dupOf = new Map(V().map(v => [v.id, ABDraft.findDuplicates(v, V())]));
     if (ui.show === "dups") list = list.filter(v => dupOf.get(v.id).length);
-    if (words.length) list = list.filter(v => { const h = [v.title, v.channel, v.subject, v.category, v.id].join(" ").toLowerCase(); return words.every(w => h.includes(w)); });
+    if (words.length) list = list.filter(v => { const h = [v.title, v.ytTitle, v.channel, v.subject, v.category, v.id].join(" ").toLowerCase(); return words.every(w => h.includes(w)); });
     list = [...list].sort((a, b) => (b.added || "").localeCompare(a.added || ""));
     const nProb = V().filter(v => probs.has(v.yt)).length;
     $("#app").innerHTML = `
@@ -297,7 +297,7 @@
   let ed = null;
   function openEditor(video, prefill = {}, onSaved) {
     const v = Object.assign({ level: "Intermediate", added: today(), ppe: [], steps: [], tr: {} }, video ? JSON.parse(JSON.stringify(video)) : {}, prefill);
-    ed = { original: video, v, tr: v.tr || {}, trLang: "hi", onSaved,
+    ed = { original: video, v, tr: v.tr || {}, trLang: "hi", onSaved, ytTitle: prefill.ytTitle || (video && video.ytTitle) || "",
       gemini: prefill.review ? { date: today(), ...prefill.review } : (video && video.gemini) || null };
     const subjects = [...new Set(V().map(x => x.subject).filter(Boolean))].sort();
     $("#drawer-title").textContent = video ? "Edit video" : (prefill.yt ? "Approve video" : "Add video");
@@ -308,7 +308,8 @@
       </div>
       <div class="preview" id="f-preview" ${v.yt ? "" : "hidden"}>${v.yt ? `<iframe src="https://www.youtube-nocookie.com/embed/${esc(v.yt)}?rel=0" allowfullscreen allow="encrypted-media; picture-in-picture; fullscreen"></iframe>` : ""}</div>
       ${prefill.description ? `<details class="box"><summary>YouTube description</summary><p style="white-space:pre-wrap;font-size:14px;margin:8px 0 0">${esc(prefill.description)}</p></details>` : ""}
-      <div class="field"><label for="f-title">Title</label><input class="input" id="f-title" required value="${esc(v.title || "")}"><div id="f-dup"></div></div>
+      <div class="field"><label for="f-title">Training title</label><input class="input" id="f-title" required value="${esc(v.title || "")}">
+        <div class="help" id="f-yt-title">${ed.ytTitle && ed.ytTitle !== v.title ? `YouTube title: ${esc(ed.ytTitle)}` : "A short, clear name for what the video teaches (not the YouTube title)."}</div><div id="f-dup"></div></div>
       <div class="two">
         <div class="field"><label for="f-cat">Category</label>
           <select class="input" id="f-cat">${cats().map(c => `<option ${c === v.category ? "selected" : ""}>${esc(c)}</option>`).join("")}<option value="__new">＋ New category…</option></select></div>
@@ -356,7 +357,9 @@
       help.innerHTML = dup ? `<span style="color:var(--danger);font-weight:700">Already in the library: “${esc(dup.title)}”.</span>` : "Fetching title…";
       const meta = await fetchMeta(yt);
       if (meta) {
-        if (!$("#f-title").value) { $("#f-title").value = meta.title; $("#f-title").dispatchEvent(new Event("input")); }
+        ed.ytTitle = meta.title;
+        $("#f-yt-title").textContent = "YouTube title: " + meta.title;
+        if (!$("#f-title").value) { $("#f-title").value = ABDraft.trainingTitle(meta.title, meta.channel); $("#f-title").dispatchEvent(new Event("input")); }
         if (!$("#f-chan").value) $("#f-chan").value = meta.channel;
         if (!dup) help.textContent = "Details filled in. Check the title and add the steps.";
         const cat = guessCategory(meta.title);
@@ -441,7 +444,7 @@
     const category = $("#f-cat").value;
     if (!yt || !title) return alert("Paste the YouTube link and check the title first.");
     const filled = ["#f-summary", "#f-safety", "#f-ppe", "#f-steps"].some(id => $(id).value.trim());
-    if (filled && !confirm("Replace what is already in the summary, safety, PPE and steps?")) return;
+    if (filled && !confirm(geminiKey() ? "Replace the title, summary, safety, PPE and steps with Gemini's draft?" : "Replace what is already in the summary, safety, PPE and steps?")) return;
     const btn = $("#f-draft"), help = $("#f-draft-help");
     let d;
     if (geminiKey()) {
@@ -459,6 +462,7 @@
       d = ABDraft.ruleDraft({ title, description: ed.v.description || "", category, videos: V() });
       if (!geminiKey()) help.textContent = "Filled in safety, PPE, level and steps." + (d.summary ? "" : " Write the summary from the video.");
     }
+    if (d.title && d.source === "ai") { if (!ed.ytTitle) ed.ytTitle = title; $("#f-title").value = d.title; $("#f-title").dispatchEvent(new Event("input")); }
     if (d.summary) $("#f-summary").value = d.summary;
     if (d.safety) $("#f-safety").value = d.safety;
     if (d.ppe && d.ppe.length) $("#f-ppe").value = d.ppe.join(", ");
@@ -507,6 +511,7 @@
     if ($("#f-hidden").checked) v.hidden = true;
     if (Object.keys(ed.tr).length) v.tr = ed.tr;
     if (ed.gemini) v.gemini = ed.gemini;
+    if (ed.ytTitle && ed.ytTitle !== v.title) v.ytTitle = ed.ytTitle;
     const isEdit = !!ed.original, onSaved = ed.onSaved, newCat = ed.newCategory;
     await update("videos", d => {
       const i = d.videos.findIndex(x => x.id === v.id);
@@ -561,7 +566,8 @@
           <div class="thumb" data-preview="${esc(item.yt)}" style="cursor:pointer"><img loading="lazy" src="${thumb(item.yt)}" alt="" width="320" height="180">${item.duration ? `<span class="dur">${esc(item.duration)}</span>` : ""}</div>
           <div class="body">
             <div class="meta"><span>${esc(item.suggestedCategory || "Unsorted")}</span>${item.published ? `<span class="dot">${esc(item.published.slice(0, 10))}</span>` : ""}${item.draft && item.draft.source === "ai" ? `<span class="badge-s b-gem">✓ Checked by Gemini</span>` : `<span class="badge-s b-wait">⏳ Not checked by Gemini yet</span>`}</div>
-            <h3>${esc(item.title)}</h3>
+            <h3>${esc((item.draft && item.draft.title) || item.title)}</h3>
+            ${item.draft && item.draft.title && item.draft.title !== item.title ? `<div class="yt-t">YouTube: ${esc(item.title)}</div>` : ""}
             <div class="count" style="margin:0">${esc(item.channel || "")}</div>
             ${item.aiError && !(item.draft && item.draft.review) ? `<div class="ai-unsafe" style="background:var(--surface-2);color:var(--muted)">Gemini couldn't check it yet (${item.aiTries || 0}/3 tries): ${esc(item.aiError)}</div>` : ""}
             ${item.draft && item.draft.review ? reviewHtml(item.draft.review, true) : item.draft ? `<div class="ai-reason">✨ Basic draft ready · ${{ chapters: "steps from the YouTube chapters", description: "steps from the YouTube description", topic: "standard steps for this job", general: "general safe-work steps" }[item.draft.stepsFrom] || "no steps yet"}</div>` : ""}
@@ -606,7 +612,7 @@
     if (item.draft) { fromDraft.draftSource = d.source; fromDraft.stepsFrom = d.stepsFrom; fromDraft.review = d.review; }
     openEditor(null, {
       ...fromDraft,
-      yt: item.yt, title: item.title, channel: item.channel, duration: item.duration || "",
+      yt: item.yt, title: d.title || ABDraft.trainingTitle(item.title, item.channel), ytTitle: item.title, channel: item.channel, duration: item.duration || "",
       category: item.suggestedCategory || cats()[0], description: item.description || "",
       ...(item.suggestedCategory === "Health & Safety" ? { essential: true } : {})
     }, async () => { await removeFromQueue(yt, false); });

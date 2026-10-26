@@ -29,9 +29,10 @@ let rules = 0, ai = 0, aiFail = 0;
 for (const item of pending.queue || []) {
   const category = item.suggestedCategory || "";
   if (!item.draft) {
-    item.draft = ruleDraft({ title: item.title, description: item.description, category, videos });
+    item.draft = ruleDraft({ title: item.title, description: item.description, category, videos, channel: item.channel });
     rules++;
   }
+  if (!item.draft.title) item.draft.title = globalThis.ABDraft.trainingTitle(item.title, item.channel);
   if (KEY && item.draft.source !== "ai" && (item.aiTries || 0) < 3 && ai + aiFail < MAX_AI && usedMin + minutes(item.duration) <= MAX_MINUTES) {
     usedMin += minutes(item.duration);
     try {

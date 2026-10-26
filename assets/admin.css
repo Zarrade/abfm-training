@@ -154,3 +154,4 @@ details.box summary { font-weight: 700; cursor: pointer; }
 .st-job { flex-basis: 100%; font-size: 13px; }
 .st-job:empty { display: none; }
 .st-job a { color: inherit; font-weight: 700; }
+.yt-t { font-size: 12.5px; color: var(--muted); margin: -2px 0 4px; }

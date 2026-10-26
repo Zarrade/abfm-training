@@ -136,7 +136,7 @@
   /* ---------- filtering ---------- */
   function haystack(v) {
     const x = tr(v);
-    return [v.title, v.summary, v.subject, v.channel, v.category, catLabel(v.category), (v.steps || []).join(" "), (v.ppe || []).join(" "), x.title, x.summary, (x.steps || []).join(" "), (x.ppe || []).join(" ")].join(" ").toLowerCase();
+    return [v.title, v.ytTitle, v.summary, v.subject, v.channel, v.category, catLabel(v.category), (v.steps || []).join(" "), (v.ppe || []).join(" "), x.title, x.summary, (x.steps || []).join(" "), (x.ppe || []).join(" ")].join(" ").toLowerCase();
   }
   function baseSet() {
     let list = state.videos;
