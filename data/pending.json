@@ -74,51 +74,6 @@
   },
   "queue": [
     {
-      "yt": "Yus2-qISQZg",
-      "title": "There Are a Few Issues With This Heat Pump…",
-      "channel": "GSH Electrical",
-      "channelUrl": "https://www.youtube.com/@GSHElectrical",
-      "published": "2026-09-27T09:00:24+00:00",
-      "duration": "",
-      "channelCategory": "Electrical",
-      "suggestedCategory": "Electrical",
-      "description": "In this video, we take a closer look at an air source heat pump (ASHP) installation and explore some of the important electrical considerations electricians need to understand.\n\nWe start with the basic principle of how an air source heat pump works. Much like a refrigerator operating in reverse, a heat pump moves heat rather than simply converting electrical energy directly into heat. This gives us a significant mechanical advantage, with the potential to deliver several units of heat energy for every unit of electrical energy consumed.\n\nWe take a look at the unit's energy efficiency rating, noise level and refrigerant before moving on to the part we're particularly interested in the electrical installation.\n\nFollowing the cabling into the property, we look at how the supply feeds the heat pump controls and consumer unit. We also spot a potential issue with maintaining the required IP4X protection on the top surface of an electrical enclosure.\n\nThen we get to one of the most important points in the video: RCD selection for an air source heat pump.\n\nThis particular circuit is protected by a 20 A Type B circuit breaker, but the RCD protection is provided by a Type AC RCCB. Modern heat pumps contain power electronic equipment such as inverter drives, meaning the correct RCD type must be selected in accordance with the equipment manufacturer's instructions.\n\nDepending on the particular heat pump and manufacturer's requirements, this could require Type A, Type F or Type B RCD protection rather than Type AC.\n\nThis becomes particularly important when carrying out an Electrical Installation Condition Report (EICR). Identifying the equipment being supplied and checking the manufacturer's requirements can be essential when determining whether the existing RCD protection is suitable.\n\nIn this video:\n\n⚡ How an air source heat pump works\n⚡ Heat pump efficiency explained\n⚡ Electrical input vs heat output\n⚡ Energy efficiency ratings\n⚡ Heat pump noise levels\n⚡ Refrigerants and electrical isolator positioning\n⚡ Heat pump electrical supplies\n⚡ IP4X requirements for electrical enclosures\n⚡ 20 A Type B circuit breaker protection\n⚡ Type AC RCD concerns\n⚡ Type A, Type F and Type B RCD protection\n⚡ Manufacturer's instructions and RCD selection\n⚡ What electricians should check during an EICR\n\nAs air source heat pumps become increasingly common in UK properties, understanding their electrical requirements — particularly RCD selection and protection — is becoming an important skill for electricians, apprentices and electrical learners.\n\n⚠️ Always consult the equipment manufacturer's current installation instructions and BS 7671 when designing, installing, inspecting or altering electrical installations.\n\n🔔 Subscribe for more free electrical training videos https://youtube.com/c/GSHElectrical?sub_confirmation=1 \n\n== 🕐 Time Stamps - Cut to the action 🕕 ==\n\n00:00 – How Does an Air Source Heat Pump Work?\n00:22 – Why Are Heat Pumps So Efficient?\n00:40 – Energy Rating, Noise",
-      "found": "2026-10-27T12:50:00.702Z",
-      "draft": {
-        "source": "ai",
-        "title": "Inspecting Heat Pump Electrical Connections",
-        "summary": "This video covers the key electrical inspection points for an air source heat pump installation. It details energy ratings, refrigerant safety, cable entry, and proper RCD selection for inverter-driven units.",
-        "safety": "Ensure the power supply is isolated before inspecting or working inside consumer units and junction boxes.",
-        "ppe": [
-          "Safety Glasses",
-          "Insulated Gloves",
-          "Protective Footwear"
-        ],
-        "steps": [
-          "Check the heat pump energy rating label and sound levels",
-          "Verify the refrigerant type and take safety precautions for flammable gases",
-          "Inspect outdoor cable routing and physical protection",
-          "Examine consumer unit enclosures for damage to the IP rating",
-          "Ensure the circuit breaker amperage matches the heat pump rating",
-          "Select the correct RCD type recommended by the manufacturer"
-        ],
-        "stepsFrom": "ai",
-        "level": "Intermediate",
-        "subject": "Power Distribution",
-        "category": "Electrical",
-        "review": {
-          "relevance": 8,
-          "quality": 8,
-          "recommend": "approve",
-          "reason": "Provides a practical, detailed breakdown of electrical compliance and RCD selection for heat pump installations.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.6-flash"
-      }
-    },
-    {
       "yt": "XmQR2emG9D4",
       "title": "Sprinkler Warehouse: Lawnmower vs. Sprinkler Head (Easy DIY Repair)",
       "channel": "Sprinkler Warehouse (irrigation)",
