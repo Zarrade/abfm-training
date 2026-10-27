@@ -2,6 +2,45 @@
   "updated": "2026-10-27",
   "videos": [
     {
+      "id": "elect-EElZjxhQxHs",
+      "yt": "EElZjxhQxHs",
+      "title": "Why 3 Phase Power Is So Much Better",
+      "category": "Electrical",
+      "subject": "Fundamentals",
+      "level": "Beginner",
+      "channel": "The Engineering Mindset",
+      "duration": "",
+      "added": "2026-10-27",
+      "summary": "What is 3 phase electricity and how does three phase power work, learn Wye Delta loads and neutral currents, how and where three phase electricity is used, why 3 phases, how the generator works to produce 3 phase sine waves (use code EM15 at checkout)",
+      "safety": "Isolate and prove dead before any work. Only qualified staff may work near live parts.",
+      "ppe": [
+        "Insulated Gloves",
+        "Safety Glasses",
+        "Safety Shoes"
+      ],
+      "steps": [
+        "120V AC Power Explained",
+        "How Electrical Generators Produce AC Power",
+        "What Is Three-Phase Electricity?",
+        "How a Basic AC Generator Works",
+        "How Rotating Magnets Create a Sine Wave",
+        "Why AC Current Flows Back and Forth",
+        "Single-Phase AC Explained",
+        "Why AC Power Is 50Hz or 60Hz"
+      ],
+      "gemini": {
+        "date": "2026-10-27",
+        "model": "gemini-3.6-flash",
+        "relevance": 9,
+        "quality": 10,
+        "recommend": "approve",
+        "reason": "Provides exceptional visual animations explaining the core fundamentals of single-phase and three-phase electrical systems.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      }
+    },
+    {
       "id": "elect-bj-qXukUy_8",
       "yt": "bj-qXukUy_8",
       "title": "Bending Cable Tray Without a Machine",
