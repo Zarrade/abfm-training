@@ -260,5 +260,5 @@
     }
   },
   "requestUrl": "https://script.google.com/macros/s/AKfycbxEYS2gnMp-319yiEW4yUNTSN1ljXG3HKEXz6vsjuM2lm9fvXR9uhOtq8t0sAeWpAVJ/exec",
-  "aiEnabled": true
+  "aiEnabled": false
 }
