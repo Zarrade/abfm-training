@@ -2,6 +2,42 @@
   "updated": "2026-10-27",
   "videos": [
     {
+      "id": "elect-bj-qXukUy_8",
+      "yt": "bj-qXukUy_8",
+      "title": "Bending Cable Tray Without a Machine",
+      "category": "Electrical",
+      "subject": "Power Distribution",
+      "level": "Intermediate",
+      "channel": "GSH Electrical",
+      "duration": "",
+      "added": "2026-10-27",
+      "summary": "This video demonstrates how to create an internal 90-degree bend in a cable tray manually using a custom slotted metal bar and crimping technique.",
+      "safety": "Wear proper protective gloves and glasses when working with sharp metal edges and applying force.",
+      "ppe": [
+        "Safety Glasses",
+        "Work Gloves",
+        "Safety Shoes"
+      ],
+      "steps": [
+        "Prepare a metal bar with a slot to use as a lever.",
+        "Place the slotted bar on the flange of the cable tray.",
+        "Pull and push the bar to create a kink in the flange.",
+        "Repeat the in-and-out crimping process at measured intervals.",
+        "Bend the tray gradually until it reaches the desired 90-degree angle."
+      ],
+      "gemini": {
+        "date": "2026-10-27",
+        "relevance": 9,
+        "quality": 8,
+        "recommend": "approve",
+        "reason": "It offers a practical, improvised method for bending cable trays on site when specialized machinery is unavailable.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      },
+      "ytTitle": "How to Bend Cable Tray Without a Bending Machine"
+    },
+    {
       "id": "hvac-kkLvyE_YJE8",
       "yt": "kkLvyE_YJE8",
       "title": "Electrical Terminal Tightening and Torque",
