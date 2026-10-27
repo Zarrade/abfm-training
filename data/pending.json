@@ -239,48 +239,6 @@
       },
       "aiTries": 1,
       "aiError": "Gemini took too long"
-    },
-    {
-      "yt": "Fg7lFCOJPm4",
-      "title": "Can You Put a Socket in a Bathroom?",
-      "channel": "GSH Electrical",
-      "channelUrl": "https://www.youtube.com/@GSHElectrical",
-      "published": "2026-09-20T09:00:25+00:00",
-      "duration": "",
-      "channelCategory": "Electrical",
-      "suggestedCategory": "Electrical",
-      "description": "Have we finally found a bathroom big enough to install a BS 1363 13 A socket outlet? At first glance, this enormous bathroom looks like it could be the perfect example but there’s a catch!\n\nIn this video, I take a practical look at BS 7671 bathroom zones and the requirements for installing socket outlets in locations containing a bath or shower.\n\nWe start by looking at two light fittings positioned alongside the bath. They might initially appear to be within Zone 1, but measuring from the edge of the bath shows that they're actually positioned right at the beginning of Zone 2 – 600 mm from the boundary of Zone 1.\n\nThen we move on to the big question: can we install a standard 13 A socket outlet in this bathroom?\n\nWith such a large floor area, it initially appears possible to find a position that's at least 2.5 metres horizontally from the boundary of Zone 1. That could potentially provide a convenient socket near the mirrors for equipment such as a hair dryer.\n\nWe also discuss a common misconception surrounding bathroom sinks and basins. The restrictions we're looking at relate to the defined bathroom zones around the bath and shower, rather than simply measuring a distance from a wash basin.\n\nEverything seems promising… until we discover the bathroom also contains a separate shower!\n\nThe shower creates another Zone 1 boundary and therefore another 2.5 metre restriction for a socket outlet. Once both the bath and shower are considered, the available distances overlap and every potential position we identified for the socket is ruled out.\n\nSo despite the enormous size of this bathroom, the answer is still NO – we can't install the BS 1363 socket outlet in the positions considered.\n\nIn this video:\n\n⚡ Bathroom zones explained\n⚡ Zone 1 and Zone 2 requirements\n⚡ The 600 mm Zone 2 measurement\n⚡ BS 1363 socket outlets in bathrooms\n⚡ The 2.5 metre requirement explained\n⚡ Measuring from the boundary of Zone 1\n⚡ Do bathroom sinks create electrical zones?\n⚡ Socket outlets near wash basins\n⚡ How a separate shower changes the calculation\n⚡ Understanding multiple Zone 1 boundaries\n⚡ Practical application of BS 7671\n\nA great practical example for electricians, electrical apprentices and learners studying BS 7671 and electrical installations in locations containing a bath or shower.\n\n⚠️ Always refer to the current edition of BS 7671 and applicable manufacturer's instructions when designing or carrying out electrical installations.\n\n🔔 Subscribe for more free electrical training videos https://youtube.com/c/GSHElectrical?sub_confirmation=1 \n\n== 🕐 Time Stamps - Cut to the action 🕕 ==\n\n00:00 – Can You Have a 13 A Socket in a Bathroom?\n00:18 – Are These Lights in Zone 1?\n00:39 – Understanding Zone 2 and the 600 mm Rule\n00:58 – The 2.5 Metre Socket Rule\n01:25 – What About Sockets Near a Sink?\n01:51 – Have We Found the Perfect Socket Position?\n02:10 – The Separate Shower Changes Everything\n02:31 – A Second Zone 1 Boundary\n02:51 – Why the Socket Is Ruled Out\n03:13 – ",
-      "found": "2026-10-27T12:50:01.895Z",
-      "draft": {
-        "source": "ai",
-        "title": "Bathroom Socket Installation Regulations",
-        "summary": "A technician explains bathroom electrical zoning rules and why a socket outlet cannot be installed near a bath or shower in an open-plan space.",
-        "safety": "Ensure all circuits are isolated and tested dead before attempting any electrical installation.",
-        "ppe": [
-          "Safety Glasses",
-          "Insulated Gloves"
-        ],
-        "steps": [
-          "Identify zone one boundaries around the bath and shower.",
-          "Measure distances from the edge of the bath or shower.",
-          "Check for overlapping zones that prevent socket installation.",
-          "Verify shaver socket placement rules separately from mains sockets."
-        ],
-        "stepsFrom": "ai",
-        "level": "Intermediate",
-        "subject": "Wiring Accessories",
-        "category": "Electrical",
-        "review": {
-          "relevance": 9,
-          "quality": 8,
-          "recommend": "approve",
-          "reason": "Clear explanation of bathroom electrical zoning rules and socket placement restrictions.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
     }
   ],
   "rejected": [
