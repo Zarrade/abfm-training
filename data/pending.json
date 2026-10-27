@@ -1,91 +1,115 @@
 {
-  "lastRun": "2026-10-27T02:00:08.276Z",
+  "lastRun": "2026-10-27T11:46:59.200Z",
   "channelStatus": {
     "https://www.youtube.com/@EngineeringMindset": {
       "id": "UCk0fGHsCEzGig-rSzkfCjMw",
-      "checked": "2026-10-27T01:59:48.281Z",
-      "lastFound": 0,
-      "via": "page"
+      "checked": "2026-10-27T11:46:46.764Z",
+      "lastFound": 0
     },
     "https://www.youtube.com/@ACServiceTech": {
       "id": "UCYohLjTaUZLF3-JjttxG_CA",
-      "checked": "2026-10-27T01:59:50.237Z",
+      "checked": "2026-10-27T11:46:49.515Z",
       "lastFound": 0
     },
     "https://www.youtube.com/@TheElectricalGuy": {
       "id": "UCdKPm5KM99O75NtArFkMDDA",
-      "checked": "2026-10-27T01:59:51.275Z",
-      "lastFound": 0,
-      "via": "page"
+      "checked": "2026-10-27T11:46:50.369Z",
+      "lastFound": 0
     },
     "https://www.youtube.com/@GSHElectrical": {
       "id": "UCgtbE9w_d-u2AvPp3WBlPfQ",
-      "checked": "2026-10-27T01:59:52.267Z",
-      "lastFound": 0,
-      "via": "page"
+      "checked": "2026-10-27T11:46:51.197Z",
+      "lastFound": 0
     },
     "https://www.youtube.com/@jwflame": {
       "id": "UC2uFFhnMKyF82UY2TbXRaNg",
-      "checked": "2026-10-27T01:59:53.259Z",
-      "lastFound": 0,
-      "via": "page"
+      "checked": "2026-10-27T11:46:52.039Z",
+      "lastFound": 0
     },
     "https://www.youtube.com/@RogerWakefield": {
       "id": "UCGIMKh92vaL0_Yc0u4GYhHA",
-      "checked": "2026-10-27T01:59:55.845Z",
-      "lastFound": 1,
-      "via": "page"
+      "checked": "2026-10-27T11:46:52.841Z",
+      "lastFound": 0
     },
     "https://www.youtube.com/c/HVACSchool": {
       "id": "UCdLlUhD9LUGm0-NTYDASPFA",
-      "checked": "2026-10-27T01:59:49.301Z",
-      "lastFound": 0,
-      "via": "page"
+      "checked": "2026-10-27T11:46:48.708Z",
+      "lastFound": 1
     },
     "https://www.youtube.com/channel/UCIoD-SEdUWMA74tWXRMyCZQ": {
       "id": "UCIoD-SEdUWMA74tWXRMyCZQ",
-      "checked": "2026-10-27T01:59:56.891Z",
-      "lastFound": 0,
-      "via": "page"
+      "checked": "2026-10-27T11:46:53.622Z",
+      "lastFound": 0
     },
     "https://www.youtube.com/c/Ductdudes": {
       "id": "UCGGX5M9ISk9Zwi6pfa6gk3w",
-      "checked": "2026-10-27T01:59:57.938Z",
-      "lastFound": 0,
-      "via": "page"
+      "checked": "2026-10-27T11:46:54.492Z",
+      "lastFound": 0
     },
     "https://www.youtube.com/channel/UCbZdXox6mKHdcT2QdVT-goQ": {
       "id": "UCbZdXox6mKHdcT2QdVT-goQ",
-      "checked": "2026-10-27T02:00:00.022Z",
-      "lastFound": 1,
-      "via": "page"
+      "checked": "2026-10-27T11:46:55.277Z",
+      "lastFound": 0
     },
     "https://www.youtube.com/channel/UCWpu9UZ6aiRTaMuuV8-C0pQ": {
       "id": "UCWpu9UZ6aiRTaMuuV8-C0pQ",
-      "checked": "2026-10-27T02:00:01.038Z",
-      "lastFound": 0,
-      "via": "page"
+      "checked": "2026-10-27T11:46:56.076Z",
+      "lastFound": 0
     },
     "https://www.youtube.com/channel/UCnrhmEmvA_bIRYkBVPqJ4zg": {
       "id": "UCnrhmEmvA_bIRYkBVPqJ4zg",
-      "checked": "2026-10-27T02:00:04.347Z",
-      "lastFound": 2,
-      "via": "page"
+      "checked": "2026-10-27T11:46:56.873Z",
+      "lastFound": 0
     },
     "https://www.youtube.com/channel/UCR1ksygazAOr59yLZ4Mp5tA": {
       "id": "UCR1ksygazAOr59yLZ4Mp5tA",
-      "checked": "2026-10-27T02:00:06.506Z",
-      "lastFound": 1,
-      "via": "page"
+      "checked": "2026-10-27T11:46:57.687Z",
+      "lastFound": 0
     },
     "https://www.youtube.com/channel/UCXOzd-KAiI6fGx5wfrnsHTA": {
       "id": "UCXOzd-KAiI6fGx5wfrnsHTA",
-      "checked": "2026-10-27T02:00:07.562Z",
-      "lastFound": 0,
-      "via": "page"
+      "checked": "2026-10-27T11:46:58.499Z",
+      "lastFound": 0
     }
   },
-  "queue": [],
+  "queue": [
+    {
+      "yt": "kkLvyE_YJE8",
+      "title": "Tight Enough to Fail - Short #309",
+      "channel": "HVAC School",
+      "channelUrl": "https://www.youtube.com/c/HVACSchool",
+      "published": "2026-10-27T11:07:37+00:00",
+      "duration": "",
+      "channelCategory": "HVAC",
+      "suggestedCategory": "HVAC",
+      "description": "In this short podcast episode, Bryan discusses electrical connections and whether tighter is better (or if a connection is tight enough to fail). \r\n\r\n Torque is a turning effect; force is applied at a distance from the screw's center, and that force creates pressure at the connection. A quarter-turn doesn't tell us how much force we have applied. You may notice a tight screw with other signs of a poor connection, like discoloration; tightening the connection may not help.\r\n\r\n At a connection, we want very little resistance to current flow, and we get increased resistance and heat where we don't want it when connections are poor; according to Watt's law, when the resistance stays the same, doubling the current creates four times the heating power. However, temperature alone doesn't tell you the cause; thermal imaging is useful evidence, but we need operating conditions and current measurements, too. \r\n\r\n The key takeaway is that tightening the connection as much as possible may do more harm than good; having a torque screwdriver and using it can help. When making new connections, use the torque screwdriver to torque to the proper specs right out of the gate. We must also consider wire sizing, wire placement, exposed conductors, and unacceptable double lugging. We must also be mindful of ferrules, including proper selection and crimping. Make all adjustments safely (without voltage), and if you do not have the manufacturer's data immediately available, look it up. Eventually, you will get an idea of what \"good\" looks like.\r\n\r\n Remember: tighter doesn't necessarily mean better.\r\n\r\n This episode contains embedded sponsor messages from Refrigeration Technologies, Carrier, NAVAC, Filtrete, and the 2027 AHR Expo.\r\n\r\n Resources\r\n\r\n   Tightening Electrical Threaded Terminal Connections (tech tip) HVAC School calculators Submit a podcast question Learn about the GRIT Foundation  Purchase your tickets or learn more about the 8th Annual HVACR Training Symposium at https://hvacrschool.com/symposium.",
+      "found": "2026-10-27T11:46:48.708Z",
+      "draft": {
+        "source": "rules",
+        "title": "Tight Enough to Fail",
+        "summary": "In this short podcast episode, Bryan discusses electrical connections and whether tighter is better (or if a connection is tight enough to fail).",
+        "safety": "Isolate power at the unit before opening panels, and watch for hot, cold and moving parts.",
+        "ppe": [
+          "Safety Glasses",
+          "Work Gloves",
+          "Safety Shoes"
+        ],
+        "steps": [
+          "Isolate power to the unit",
+          "Inspect the equipment and note any faults",
+          "Carry out the work as shown in the video",
+          "Check connections, fixings and drains",
+          "Restore power and check the unit runs correctly",
+          "Record readings and the work done"
+        ],
+        "stepsFrom": "general",
+        "level": "Intermediate",
+        "subject": ""
+      },
+      "aiTries": 1,
+      "aiError": "Expected double-quoted property name in JSON at position 1012 (line 18 column 3)"
+    }
+  ],
   "rejected": [
     "je0BsLY5nZw",
     "NcgO12kdTVs",
