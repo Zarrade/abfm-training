@@ -2,6 +2,40 @@
   "updated": "2026-10-27",
   "videos": [
     {
+      "id": "civil-clq35bYQU4c",
+      "yt": "clq35bYQU4c",
+      "title": "Installing Glass Mosaic Tile",
+      "category": "Civil Jobs",
+      "subject": "Tile Installation",
+      "level": "Intermediate",
+      "channel": "Sal DiBlasi (tiling & waterproofing)",
+      "duration": "",
+      "added": "2026-10-27",
+      "summary": "A technician demonstrates how to install ceramic wall tiles and colourful glass mosaic feature stripes around a bathtub and shower niches.",
+      "safety": "Wear safety glasses when cutting and applying tile materials.",
+      "ppe": [
+        "Safety Glasses",
+        "Work Gloves"
+      ],
+      "steps": [
+        "Prepare and level the wall boards.",
+        "Apply thin-set mortar and trowel ridges.",
+        "Set and press the glass mosaic sheets.",
+        "Grout and seal the tile joints."
+      ],
+      "gemini": {
+        "date": "2026-10-27",
+        "relevance": 9,
+        "quality": 7,
+        "recommend": "approve",
+        "reason": "Good practical demonstration of mosaic tile installation and leveling techniques.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      },
+      "ytTitle": "Tub with multi color glass feature plus tiling tips. #tiles #howtotile"
+    },
+    {
       "id": "elect-Fg7lFCOJPm4",
       "yt": "Fg7lFCOJPm4",
       "title": "Bathroom Socket Installation Regulations",
