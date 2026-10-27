@@ -2,6 +2,43 @@
   "updated": "2026-10-27",
   "videos": [
     {
+      "id": "elect-Yus2-qISQZg",
+      "yt": "Yus2-qISQZg",
+      "title": "Inspecting Heat Pump Electrical Connections",
+      "category": "Electrical",
+      "subject": "Power Distribution",
+      "level": "Intermediate",
+      "channel": "GSH Electrical",
+      "duration": "",
+      "added": "2026-10-27",
+      "summary": "This video covers the key electrical inspection points for an air source heat pump installation. It details energy ratings, refrigerant safety, cable entry, and proper RCD selection for inverter-driven units.",
+      "safety": "Ensure the power supply is isolated before inspecting or working inside consumer units and junction boxes.",
+      "ppe": [
+        "Safety Glasses",
+        "Insulated Gloves",
+        "Protective Footwear"
+      ],
+      "steps": [
+        "Check the heat pump energy rating label and sound levels",
+        "Verify the refrigerant type and take safety precautions for flammable gases",
+        "Inspect outdoor cable routing and physical protection",
+        "Examine consumer unit enclosures for damage to the IP rating",
+        "Ensure the circuit breaker amperage matches the heat pump rating",
+        "Select the correct RCD type recommended by the manufacturer"
+      ],
+      "gemini": {
+        "date": "2026-10-27",
+        "relevance": 8,
+        "quality": 8,
+        "recommend": "approve",
+        "reason": "Provides a practical, detailed breakdown of electrical compliance and RCD selection for heat pump installations.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      },
+      "ytTitle": "There Are a Few Issues With This Heat Pump…"
+    },
+    {
       "id": "civil-clq35bYQU4c",
       "yt": "clq35bYQU4c",
       "title": "Installing Glass Mosaic Tile",
