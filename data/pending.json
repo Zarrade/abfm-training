@@ -1,78 +1,417 @@
 {
-  "lastRun": "2026-10-27T11:52:07.521Z",
+  "lastRun": "2026-10-27T12:50:15.233Z",
   "channelStatus": {
     "https://www.youtube.com/@EngineeringMindset": {
       "id": "UCk0fGHsCEzGig-rSzkfCjMw",
-      "checked": "2026-10-27T11:51:56.530Z",
-      "lastFound": 0
+      "checked": "2026-10-27T12:49:55.224Z",
+      "lastFound": 1
     },
     "https://www.youtube.com/@ACServiceTech": {
       "id": "UCYohLjTaUZLF3-JjttxG_CA",
-      "checked": "2026-10-27T11:51:58.123Z",
+      "checked": "2026-10-27T12:49:56.737Z",
       "lastFound": 0
     },
     "https://www.youtube.com/@TheElectricalGuy": {
       "id": "UCdKPm5KM99O75NtArFkMDDA",
-      "checked": "2026-10-27T11:51:58.829Z",
+      "checked": "2026-10-27T12:49:57.558Z",
       "lastFound": 0
     },
     "https://www.youtube.com/@GSHElectrical": {
       "id": "UCgtbE9w_d-u2AvPp3WBlPfQ",
-      "checked": "2026-10-27T11:51:59.623Z",
-      "lastFound": 0
+      "checked": "2026-10-27T12:50:01.895Z",
+      "lastFound": 3
     },
     "https://www.youtube.com/@jwflame": {
       "id": "UC2uFFhnMKyF82UY2TbXRaNg",
-      "checked": "2026-10-27T11:52:00.418Z",
+      "checked": "2026-10-27T12:50:02.690Z",
       "lastFound": 0
     },
     "https://www.youtube.com/@RogerWakefield": {
       "id": "UCGIMKh92vaL0_Yc0u4GYhHA",
-      "checked": "2026-10-27T11:52:01.212Z",
+      "checked": "2026-10-27T12:50:03.411Z",
       "lastFound": 0
     },
     "https://www.youtube.com/c/HVACSchool": {
       "id": "UCdLlUhD9LUGm0-NTYDASPFA",
-      "checked": "2026-10-27T11:51:57.349Z",
+      "checked": "2026-10-27T12:49:55.946Z",
       "lastFound": 0
     },
     "https://www.youtube.com/channel/UCIoD-SEdUWMA74tWXRMyCZQ": {
       "id": "UCIoD-SEdUWMA74tWXRMyCZQ",
-      "checked": "2026-10-27T11:52:02.018Z",
+      "checked": "2026-10-27T12:50:04.222Z",
       "lastFound": 0
     },
     "https://www.youtube.com/c/Ductdudes": {
       "id": "UCGGX5M9ISk9Zwi6pfa6gk3w",
-      "checked": "2026-10-27T11:52:02.810Z",
+      "checked": "2026-10-27T12:50:05.051Z",
       "lastFound": 0
     },
     "https://www.youtube.com/channel/UCbZdXox6mKHdcT2QdVT-goQ": {
       "id": "UCbZdXox6mKHdcT2QdVT-goQ",
-      "checked": "2026-10-27T11:52:03.657Z",
+      "checked": "2026-10-27T12:50:05.901Z",
       "lastFound": 0
     },
     "https://www.youtube.com/channel/UCWpu9UZ6aiRTaMuuV8-C0pQ": {
       "id": "UCWpu9UZ6aiRTaMuuV8-C0pQ",
-      "checked": "2026-10-27T11:52:04.459Z",
-      "lastFound": 0
+      "checked": "2026-10-27T12:50:11.053Z",
+      "lastFound": 3
     },
     "https://www.youtube.com/channel/UCnrhmEmvA_bIRYkBVPqJ4zg": {
       "id": "UCnrhmEmvA_bIRYkBVPqJ4zg",
-      "checked": "2026-10-27T11:52:05.247Z",
+      "checked": "2026-10-27T12:50:11.769Z",
       "lastFound": 0
     },
     "https://www.youtube.com/channel/UCR1ksygazAOr59yLZ4Mp5tA": {
       "id": "UCR1ksygazAOr59yLZ4Mp5tA",
-      "checked": "2026-10-27T11:52:06.032Z",
-      "lastFound": 0
+      "checked": "2026-10-27T12:50:13.698Z",
+      "lastFound": 1
     },
     "https://www.youtube.com/channel/UCXOzd-KAiI6fGx5wfrnsHTA": {
       "id": "UCXOzd-KAiI6fGx5wfrnsHTA",
-      "checked": "2026-10-27T11:52:06.821Z",
+      "checked": "2026-10-27T12:50:14.517Z",
       "lastFound": 0
     }
   },
-  "queue": [],
+  "queue": [
+    {
+      "yt": "bj-qXukUy_8",
+      "title": "How to Bend Cable Tray Without a Bending Machine",
+      "channel": "GSH Electrical",
+      "channelUrl": "https://www.youtube.com/@GSHElectrical",
+      "published": "2026-10-04T09:00:29+00:00",
+      "duration": "",
+      "channelCategory": "Electrical",
+      "suggestedCategory": "Electrical",
+      "description": "No cable tray bending machine? No problem! ⚡\n\nIn this video, I demonstrate a simple method for producing a 90° internal bend in cable tray without using a dedicated cable tray bending machine or a factory-made bend.\n\nUsing nothing more than a simple bar with a groove cut into it with a hacksaw, I show how a controlled in-and-out crimping technique can gradually form the tray into a professional-looking 90° internal bend.\n\nThis could be particularly useful when you're on a construction site and need to fabricate an internal bend but don't have access to a bending machine or time to wait for a wholesaler to deliver one.\n\nThe great thing about this method is the control it gives you over the bending radius. Smaller, gentler crimps can create a more gradual bend, while increasing the amount of movement in each crimp can produce a tighter radius.\n\nA simple bit of site ingenuity that could get you out of trouble on a Friday afternoon! 🛠️⚡\n\n⚡ In this video:\n• Making a 90° internal cable tray bend\n• Bending tray without a bending machine\n• Simple cable tray crimping technique\n• Controlling the internal bending radius\n• Comparing hand-formed and machine-formed bends\n• Practical electrical installation tips\n\n🔔 Subscribe for more free electrical training videos https://youtube.com/c/GSHElectrical?sub_confirmation=1 \n\n== 🕐 Time Stamps - Cut to the action 🕕 ==\n\n00:00 – Making a 90° internal cable tray bend\n00:24 – No cable tray bending machine needed\n00:52 – The simple grooved bar technique\n01:21 – Starting the in-and-out crimps\n01:58 – Forming the internal 90° bend\n02:35 – Controlling the bending radius\n03:12 – Comparing it with a bending machine\n03:42 – The finished 90° internal bend\n\nVideos are training aids for City and Guilds (C and G) and EAL courses Level 1, 2, 3 plus AM2, AM2S and AM2E. \n\nYou can follow me day by day on Facebook, Instagram, Twitter and TikTok lookout for \"GSH Electrical”.  \n\n▶️ FACEBOOK https://www.facebook.com/gshelectrical/\n\n▶️ INSTAGRAM https://instagram.com/p/BrIhZmrAYGDTmjMdb9lUNQodMevqsbDDki3qpQ0/\n\n▶️ TWITTER https://mobile.twitter.com/gsh_electrical\n\n▶️ TikTok https://vm.tiktok.com/ZMRBLFdhe/\n\n#gshelectrical  #electricaltraining \n#Electrical #Electrician #CableTray #ElectricalInstallation #ElectricalTraining #Electricians #Construction #ElectricalTips",
+      "found": "2026-10-27T12:49:59.707Z",
+      "draft": {
+        "source": "ai",
+        "title": "Bending Cable Tray Without a Machine",
+        "summary": "This video demonstrates how to create an internal 90-degree bend in a cable tray manually using a custom slotted metal bar and crimping technique.",
+        "safety": "Wear proper protective gloves and glasses when working with sharp metal edges and applying force.",
+        "ppe": [
+          "Safety Glasses",
+          "Work Gloves",
+          "Safety Shoes"
+        ],
+        "steps": [
+          "Prepare a metal bar with a slot to use as a lever.",
+          "Place the slotted bar on the flange of the cable tray.",
+          "Pull and push the bar to create a kink in the flange.",
+          "Repeat the in-and-out crimping process at measured intervals.",
+          "Bend the tray gradually until it reaches the desired 90-degree angle."
+        ],
+        "stepsFrom": "ai",
+        "level": "Intermediate",
+        "subject": "Power Distribution",
+        "category": "Electrical",
+        "review": {
+          "relevance": 9,
+          "quality": 8,
+          "recommend": "approve",
+          "reason": "It offers a practical, improvised method for bending cable trays on site when specialized machinery is unavailable.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.5-flash-lite"
+      }
+    },
+    {
+      "yt": "clq35bYQU4c",
+      "title": "Tub with multi color glass feature plus tiling tips. #tiles #howtotile",
+      "channel": "Sal DiBlasi (tiling & waterproofing)",
+      "channelUrl": "https://www.youtube.com/channel/UCWpu9UZ6aiRTaMuuV8-C0pQ",
+      "published": "2026-09-27T20:00:08+00:00",
+      "duration": "",
+      "channelCategory": "",
+      "suggestedCategory": "Civil Jobs",
+      "description": "SUBSCRIBE Learn how to tile the right way.\nTub with multi color glass feature plus tiling tips. #tiles #howtotile  When installing tile in a tub area, there are many important things to do before starting with the actual tile installation. Not least among them is protecting the tub from damage. There will be extra preparation needed if a gals tile feature strip is going to be included. Often when installing a feature strip or tiles of different sizes on the same surface, it is difficult to flush out the tile if  you don't do some prep ahead of time tp make it easy to get the results you are looking for without making a mess or having ugly uneven surfaces or tiles that are not even to each other. In this video I show you how to match tiles of different thicknesses to be at the same height. Layout for the tile is also very important, especially when there are many elements that will affect the size of the cuts at the tub, ceiling, walls and niche, in this case this is compounded by the presence of two niches. All tile installed by Sal DiBlasi, Elite-tile Company, in the Boston North Shore area. This video contains affiliate links, which means I will receive a small commission if you click on the product link. #tile #transformthetrade  #howtotile #installingtile #howtoinstalltile #liticrete #mapei #Schlutersystems #diy #construction #ardex\n\n🙂 This is my Amazon Store 🙂 https://a.co/d/015wZyAM\n\nPayPal\nhttps://www.paypal.com/donate/?hosted_button_id=UMJSX3UHEHQGQ\n\nPatreon  https://www.patreon.com/c/saldiblasi\n\n🌲 Link Tree 🌲\nhttps://linktr.ee/saldiblasi\n\n☕ Buy me a coffee ☕\nhttps://www.buymeacoffee.com/saldibs2 \n\n📷Camera Equipment 👇\nDJI Action 2 Power Combo https://amzn.to/3xA5fMH\nDJI Action 2 Dual-Screen https://amzn.to/3Qvk8IX \nDJI Pocket 2 Creator Combo https://amzn.to/3mUr1pu \n\n👇 Some of my favorite Tools 👇\nFloat https://amzn.to/2tdEpN2    \nRubbing Stone https://amzn.to/2QrgRfh  \nNotched Trowel 1/4 x 1/4 x 1/4-inch https://amzn.to/36bq5mQ  \nNotched Trowel 1/2 x 1/2 x 1/2-Inch https://amzn.to/2Q5e90g  \nNotched Trowel 1/4 x 3/8 x 1/4-Inch https://amzn.to/39j1caB  \nSuper Dust Collector – WaleTale https://amzn.to/2MDuVkK  \nBlack Nitrile Gloves - 6 mil https://amzn.to/2SJQ6FZ  \nMargin Trowel https://amzn.to/352MYHx \nMortar Mixer https://amzn.to/2ZxYqtF \n4in Sandpaper for Stone Polishing https://amzn.to/2ZB2skT  \nPolishing Rubber Backing Pad https://amzn.to/2srikdy  \nMontolit 63P3 24 Inch Tile Cutter https://amzn.to/2MDoFt l  \nDEWALT Wet Tile Saw https://amzn.to/2QqpO8O \nRubi Thinset mixer https://amzn.to/39VmNWV\nGrabo Pro Lifter\nhttps://amzn.to/3BBO5ys \nIQ 7\" Dustless/Dry Cut Tile Saw IQ228\nhttps://amzn.to/3wFE3w0\n\n0:00 Project planning and layout\n1:21 Preparing board and tile\n3:02 Tile setting process\n6:38 Finalizing design layout\n8:53 Installing tiles and niches\n12:55 Grouting and siliconing",
+      "found": "2026-10-27T12:50:08.001Z",
+      "draft": {
+        "source": "ai",
+        "title": "Installing Glass Mosaic Tile",
+        "summary": "A technician demonstrates how to install ceramic wall tiles and colourful glass mosaic feature stripes around a bathtub and shower niches.",
+        "safety": "Wear safety glasses when cutting and applying tile materials.",
+        "ppe": [
+          "Safety Glasses",
+          "Work Gloves"
+        ],
+        "steps": [
+          "Prepare and level the wall boards.",
+          "Apply thin-set mortar and trowel ridges.",
+          "Set and press the glass mosaic sheets.",
+          "Grout and seal the tile joints."
+        ],
+        "stepsFrom": "ai",
+        "level": "Intermediate",
+        "subject": "Tile Installation",
+        "category": "Civil Jobs",
+        "review": {
+          "relevance": 9,
+          "quality": 7,
+          "recommend": "approve",
+          "reason": "Good practical demonstration of mosaic tile installation and leveling techniques.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.5-flash-lite"
+      }
+    },
+    {
+      "yt": "Yus2-qISQZg",
+      "title": "There Are a Few Issues With This Heat Pump…",
+      "channel": "GSH Electrical",
+      "channelUrl": "https://www.youtube.com/@GSHElectrical",
+      "published": "2026-09-27T09:00:24+00:00",
+      "duration": "",
+      "channelCategory": "Electrical",
+      "suggestedCategory": "Electrical",
+      "description": "In this video, we take a closer look at an air source heat pump (ASHP) installation and explore some of the important electrical considerations electricians need to understand.\n\nWe start with the basic principle of how an air source heat pump works. Much like a refrigerator operating in reverse, a heat pump moves heat rather than simply converting electrical energy directly into heat. This gives us a significant mechanical advantage, with the potential to deliver several units of heat energy for every unit of electrical energy consumed.\n\nWe take a look at the unit's energy efficiency rating, noise level and refrigerant before moving on to the part we're particularly interested in the electrical installation.\n\nFollowing the cabling into the property, we look at how the supply feeds the heat pump controls and consumer unit. We also spot a potential issue with maintaining the required IP4X protection on the top surface of an electrical enclosure.\n\nThen we get to one of the most important points in the video: RCD selection for an air source heat pump.\n\nThis particular circuit is protected by a 20 A Type B circuit breaker, but the RCD protection is provided by a Type AC RCCB. Modern heat pumps contain power electronic equipment such as inverter drives, meaning the correct RCD type must be selected in accordance with the equipment manufacturer's instructions.\n\nDepending on the particular heat pump and manufacturer's requirements, this could require Type A, Type F or Type B RCD protection rather than Type AC.\n\nThis becomes particularly important when carrying out an Electrical Installation Condition Report (EICR). Identifying the equipment being supplied and checking the manufacturer's requirements can be essential when determining whether the existing RCD protection is suitable.\n\nIn this video:\n\n⚡ How an air source heat pump works\n⚡ Heat pump efficiency explained\n⚡ Electrical input vs heat output\n⚡ Energy efficiency ratings\n⚡ Heat pump noise levels\n⚡ Refrigerants and electrical isolator positioning\n⚡ Heat pump electrical supplies\n⚡ IP4X requirements for electrical enclosures\n⚡ 20 A Type B circuit breaker protection\n⚡ Type AC RCD concerns\n⚡ Type A, Type F and Type B RCD protection\n⚡ Manufacturer's instructions and RCD selection\n⚡ What electricians should check during an EICR\n\nAs air source heat pumps become increasingly common in UK properties, understanding their electrical requirements — particularly RCD selection and protection — is becoming an important skill for electricians, apprentices and electrical learners.\n\n⚠️ Always consult the equipment manufacturer's current installation instructions and BS 7671 when designing, installing, inspecting or altering electrical installations.\n\n🔔 Subscribe for more free electrical training videos https://youtube.com/c/GSHElectrical?sub_confirmation=1 \n\n== 🕐 Time Stamps - Cut to the action 🕕 ==\n\n00:00 – How Does an Air Source Heat Pump Work?\n00:22 – Why Are Heat Pumps So Efficient?\n00:40 – Energy Rating, Noise",
+      "found": "2026-10-27T12:50:00.702Z",
+      "draft": {
+        "source": "ai",
+        "title": "Inspecting Heat Pump Electrical Connections",
+        "summary": "This video covers the key electrical inspection points for an air source heat pump installation. It details energy ratings, refrigerant safety, cable entry, and proper RCD selection for inverter-driven units.",
+        "safety": "Ensure the power supply is isolated before inspecting or working inside consumer units and junction boxes.",
+        "ppe": [
+          "Safety Glasses",
+          "Insulated Gloves",
+          "Protective Footwear"
+        ],
+        "steps": [
+          "Check the heat pump energy rating label and sound levels",
+          "Verify the refrigerant type and take safety precautions for flammable gases",
+          "Inspect outdoor cable routing and physical protection",
+          "Examine consumer unit enclosures for damage to the IP rating",
+          "Ensure the circuit breaker amperage matches the heat pump rating",
+          "Select the correct RCD type recommended by the manufacturer"
+        ],
+        "stepsFrom": "ai",
+        "level": "Intermediate",
+        "subject": "Power Distribution",
+        "category": "Electrical",
+        "review": {
+          "relevance": 8,
+          "quality": 8,
+          "recommend": "approve",
+          "reason": "Provides a practical, detailed breakdown of electrical compliance and RCD selection for heat pump installations.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.6-flash"
+      }
+    },
+    {
+      "yt": "XmQR2emG9D4",
+      "title": "Sprinkler Warehouse: Lawnmower vs. Sprinkler Head (Easy DIY Repair)",
+      "channel": "Sprinkler Warehouse (irrigation)",
+      "channelUrl": "https://www.youtube.com/channel/UCR1ksygazAOr59yLZ4Mp5tA",
+      "published": "2026-09-23T18:18:43+00:00",
+      "duration": "",
+      "channelCategory": "Landscaping",
+      "suggestedCategory": "Landscaping",
+      "description": "Ran over another sprinkler head with the lawnmower? Don’t panic! Replacing a broken sprinkler head is a simple 5-minute DIY fix when you have the right parts! At Sprinkler Warehouse, we make irrigation repairs fast, affordable, and stress-free. Whether you need replacement pop-up spray bodies, rotors, nozzles, swing joints, or fittings, we stock the exact replacement parts you need from the top brands you trust—including Hunter, Rain Bird, Toro, and Orbit. \n\nShop Replacement Sprinkler Heads & Parts: https://www.sprinklerwarehouse.com \n\n\nWhy shop Sprinkler Warehouse? \n\n* Huge selection of commercial & residential irrigation parts \n* Competitive prices \n* Fast same-day shipping on eligible orders \n* Expert support & DIY tutorials to get your system running like new Fix it in minutes and get right back to enjoying a lush, green lawn! \n\nSubscribe to Sprinkler Warehouse for quick DIY tips, lawn care guides, and professional irrigation solutions! #sprinklerrepair \n\n\n #SprinklerWarehouse #LawnCare #DIYSprinkler #IrrigationRepair #LawnMaintenance #HomeImprovement\n\n\nYouTube comments are not monitored. Please direct your questions to the customer service representatives on www.sprinklerwarehouse.com.",
+      "found": "2026-10-27T12:50:13.698Z",
+      "draft": {
+        "source": "ai",
+        "title": "Replacing a Broken Sprinkler Head",
+        "summary": "This video demonstrates how a homeowner quickly orders and replaces a broken sprinkler head after accidentally damaging it with a lawnmower.",
+        "safety": "Ensure the water supply is turned off before servicing or replacing any sprinkler components.",
+        "ppe": [
+          "Safety Glasses",
+          "Work Gloves",
+          "Sturdy Footwear"
+        ],
+        "steps": [
+          "Identify the damaged sprinkler head in the lawn.",
+          "Order the correct replacement part online.",
+          "Unscrew and remove the damaged sprinkler head.",
+          "Install and secure the new sprinkler head in the ground.",
+          "Test the irrigation system to ensure proper operation."
+        ],
+        "stepsFrom": "ai",
+        "level": "Beginner",
+        "subject": "Irrigation Valve Troubleshooting",
+        "category": "Landscaping",
+        "review": {
+          "relevance": 9,
+          "quality": 8,
+          "recommend": "approve",
+          "reason": "It provides a clear, step-by-step demonstration of sprinkler head replacement for landscaping maintenance.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.5-flash-lite"
+      }
+    },
+    {
+      "yt": "EsKARwICOtY",
+      "title": "Basket weave 12x24 Tile, here's how, and what can go wrong. #tile #basketweave",
+      "channel": "Sal DiBlasi (tiling & waterproofing)",
+      "channelUrl": "https://www.youtube.com/channel/UCWpu9UZ6aiRTaMuuV8-C0pQ",
+      "published": "2026-09-20T20:00:08+00:00",
+      "duration": "",
+      "channelCategory": "",
+      "suggestedCategory": "HVAC",
+      "description": "SUBSCRIBE Learn how to tile the right way.\nBasket weave 12x24 Tile, here's how, and what can go wrong. Basket Weave, Double stacked or basket Pattern, not exactly sure what the pattern is called. This is a time lapse of a 12\"x 24\" Rectified Modular large format porcelain tile installed on Schluter Ditra XL uncoupling membrane\nThe Tile Pattern consists of two tiles stacked and turned in alternate directions to form large squares of two tiles each. The tiles used to create this pattern must either be modular or have the long side exactly equal to twice the short side including the appropriate grout line width. The tiles in this video were Modular, and also rectified to allow for a very narrow grout line. Generally, cheaper tiles with poor calibration will be difficult to install in a pattern as it will be difficult to keep them  aligned, causing the corners of the tile to run off and result in an unappealing outcome with mismatched corners. It is of critical importance to keep the tiles straight and square to not run into problems with fitting the tiles into the pattern. All tile installed by Sal DiBlasi, Elite-tile Company, in the Boston North Shore area. This video contains affiliate links, which means I will receive a small commission if you click on the product link. #tile #transformthetrade  #howtotile #installingtile #howtoinstalltile #liticrete #mapei #Schlutersystems #diy #construction #ardex\n\n🙂 This is my Amazon Store 🙂 https://a.co/d/015wZyAM\n\nPayPal\nhttps://www.paypal.com/donate/?hosted_button_id=UMJSX3UHEHQGQ\n\nPatreon  https://www.patreon.com/c/saldiblasi\n\n🌲 Link Tree 🌲\nhttps://linktr.ee/saldiblasi\n\n☕ Buy me a coffee ☕\nhttps://www.buymeacoffee.com/saldibs2 \n\n📷Camera Equipment 👇\nDJI Action 2 Power Combo https://amzn.to/3xA5fMH\nDJI Action 2 Dual-Screen https://amzn.to/3Qvk8IX \nDJI Pocket 2 Creator Combo https://amzn.to/3mUr1pu \n\n👇 Some of my favorite Tools 👇\nFloat https://amzn.to/2tdEpN2    \nRubbing Stone https://amzn.to/2QrgRfh  \nNotched Trowel 1/4 x 1/4 x 1/4-inch https://amzn.to/36bq5mQ  \nNotched Trowel 1/2 x 1/2 x 1/2-Inch https://amzn.to/2Q5e90g  \nNotched Trowel 1/4 x 3/8 x 1/4-Inch https://amzn.to/39j1caB  \nSuper Dust Collector – WaleTale https://amzn.to/2MDuVkK  \nBlack Nitrile Gloves - 6 mil https://amzn.to/2SJQ6FZ  \nMargin Trowel https://amzn.to/352MYHx \nMortar Mixer https://amzn.to/2ZxYqtF \n4in Sandpaper for Stone Polishing https://amzn.to/2ZB2skT  \nPolishing Rubber Backing Pad https://amzn.to/2srikdy  \nMontolit 63P3 24 Inch Tile Cutter https://amzn.to/2MDoFt l  \nDEWALT Wet Tile Saw https://amzn.to/2QqpO8O \nRubi Thinset mixer https://amzn.to/39VmNWV\nGrabo Pro Lifter\nhttps://amzn.to/3BBO5ys \nIQ 7\" Dustless/Dry Cut Tile Saw IQ228\nhttps://amzn.to/3wFE3w0\n\n0:00 Understanding basket weave\n1:35 Preparation and layout\n3:28 Expansion and movement\n5:17 Mortar and installation\n8:30 Tile leveling system\n10:05 Grouting and finishing",
+      "found": "2026-10-27T12:50:09.924Z",
+      "draft": {
+        "source": "rules",
+        "title": "Basket Weave 12x24 Tile, Here's How, and What Can Go Wrong.",
+        "summary": "Basket weave 12x24 Tile, here's how, and what can go wrong. Basket Weave, Double stacked or basket Pattern, not exactly sure what the pattern is called.",
+        "safety": "Isolate power at the unit before opening panels, and watch for hot, cold and moving parts.",
+        "ppe": [
+          "Safety Glasses",
+          "Work Gloves",
+          "Safety Shoes"
+        ],
+        "steps": [
+          "Understanding basket weave",
+          "Preparation and layout",
+          "Expansion and movement",
+          "Mortar and installation",
+          "Tile leveling system",
+          "Grouting and finishing"
+        ],
+        "stepsFrom": "chapters",
+        "level": "Intermediate",
+        "subject": ""
+      },
+      "aiTries": 1,
+      "aiError": "Gemini took too long"
+    },
+    {
+      "yt": "Fg7lFCOJPm4",
+      "title": "Can You Put a Socket in a Bathroom?",
+      "channel": "GSH Electrical",
+      "channelUrl": "https://www.youtube.com/@GSHElectrical",
+      "published": "2026-09-20T09:00:25+00:00",
+      "duration": "",
+      "channelCategory": "Electrical",
+      "suggestedCategory": "Electrical",
+      "description": "Have we finally found a bathroom big enough to install a BS 1363 13 A socket outlet? At first glance, this enormous bathroom looks like it could be the perfect example but there’s a catch!\n\nIn this video, I take a practical look at BS 7671 bathroom zones and the requirements for installing socket outlets in locations containing a bath or shower.\n\nWe start by looking at two light fittings positioned alongside the bath. They might initially appear to be within Zone 1, but measuring from the edge of the bath shows that they're actually positioned right at the beginning of Zone 2 – 600 mm from the boundary of Zone 1.\n\nThen we move on to the big question: can we install a standard 13 A socket outlet in this bathroom?\n\nWith such a large floor area, it initially appears possible to find a position that's at least 2.5 metres horizontally from the boundary of Zone 1. That could potentially provide a convenient socket near the mirrors for equipment such as a hair dryer.\n\nWe also discuss a common misconception surrounding bathroom sinks and basins. The restrictions we're looking at relate to the defined bathroom zones around the bath and shower, rather than simply measuring a distance from a wash basin.\n\nEverything seems promising… until we discover the bathroom also contains a separate shower!\n\nThe shower creates another Zone 1 boundary and therefore another 2.5 metre restriction for a socket outlet. Once both the bath and shower are considered, the available distances overlap and every potential position we identified for the socket is ruled out.\n\nSo despite the enormous size of this bathroom, the answer is still NO – we can't install the BS 1363 socket outlet in the positions considered.\n\nIn this video:\n\n⚡ Bathroom zones explained\n⚡ Zone 1 and Zone 2 requirements\n⚡ The 600 mm Zone 2 measurement\n⚡ BS 1363 socket outlets in bathrooms\n⚡ The 2.5 metre requirement explained\n⚡ Measuring from the boundary of Zone 1\n⚡ Do bathroom sinks create electrical zones?\n⚡ Socket outlets near wash basins\n⚡ How a separate shower changes the calculation\n⚡ Understanding multiple Zone 1 boundaries\n⚡ Practical application of BS 7671\n\nA great practical example for electricians, electrical apprentices and learners studying BS 7671 and electrical installations in locations containing a bath or shower.\n\n⚠️ Always refer to the current edition of BS 7671 and applicable manufacturer's instructions when designing or carrying out electrical installations.\n\n🔔 Subscribe for more free electrical training videos https://youtube.com/c/GSHElectrical?sub_confirmation=1 \n\n== 🕐 Time Stamps - Cut to the action 🕕 ==\n\n00:00 – Can You Have a 13 A Socket in a Bathroom?\n00:18 – Are These Lights in Zone 1?\n00:39 – Understanding Zone 2 and the 600 mm Rule\n00:58 – The 2.5 Metre Socket Rule\n01:25 – What About Sockets Near a Sink?\n01:51 – Have We Found the Perfect Socket Position?\n02:10 – The Separate Shower Changes Everything\n02:31 – A Second Zone 1 Boundary\n02:51 – Why the Socket Is Ruled Out\n03:13 – ",
+      "found": "2026-10-27T12:50:01.895Z",
+      "draft": {
+        "source": "ai",
+        "title": "Bathroom Socket Installation Regulations",
+        "summary": "A technician explains bathroom electrical zoning rules and why a socket outlet cannot be installed near a bath or shower in an open-plan space.",
+        "safety": "Ensure all circuits are isolated and tested dead before attempting any electrical installation.",
+        "ppe": [
+          "Safety Glasses",
+          "Insulated Gloves"
+        ],
+        "steps": [
+          "Identify zone one boundaries around the bath and shower.",
+          "Measure distances from the edge of the bath or shower.",
+          "Check for overlapping zones that prevent socket installation.",
+          "Verify shaver socket placement rules separately from mains sockets."
+        ],
+        "stepsFrom": "ai",
+        "level": "Intermediate",
+        "subject": "Wiring Accessories",
+        "category": "Electrical",
+        "review": {
+          "relevance": 9,
+          "quality": 8,
+          "recommend": "approve",
+          "reason": "Clear explanation of bathroom electrical zoning rules and socket placement restrictions.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.5-flash-lite"
+      }
+    },
+    {
+      "yt": "EElZjxhQxHs",
+      "title": "Why 3 Phase Power Is So Much Better",
+      "channel": "The Engineering Mindset",
+      "channelUrl": "https://www.youtube.com/@EngineeringMindset",
+      "published": "2026-09-15T15:00:01+00:00",
+      "duration": "",
+      "channelCategory": "",
+      "suggestedCategory": "Electrical",
+      "description": "Why 3 phases? Get a 30 day free trial and 20% off an annual subscription.🎁 Click here: https://brilliant.org/TheEngineeringMindset \n\nWhat is 3 phase electricity and how does three phase power work, learn Wye Delta loads and neutral currents, how and where three phase electricity is used, why 3 phases, how the generator works to produce 3 phase sine waves\n\nGet your FREE PDF 🎁 here https://engmind.info/Free-3Phase-PDF\nWhy not two phase?➡️ Watch why here https://youtu.be/NDnjMjFDCe8\nGet your mug here:➡️ https://engmind.info/3-Phase-Mug\nDownload excel sheets here:➡️ https://engmind.info/3-phase-calcs\n\nWatch AD free:➡️ https://www.patreon.com/theengineeringmindset/ \nBecome channel member:➡️ https://www.youtube.com/channel/UCk0fGHsCEzGig-rSzkfCjMw/join \n\n🎁15% discount on multimeters.➡️ https://bit.ly/15-off-multimeters \n(use code EM15 at checkout) \n\n30 Day free trial🎁 Click here: https://brilliant.org/EngineeringMindset\n\n⚡🛠️ TOOLS YOU NEED 🛠️⚡\n*******************************\nGet this electronics book ➡️ https://amzn.to/41cCJPk\nProfessional Multimeter -➡️ https://amzn.to/3xu2Vaw\nGood multimeter -➡️ https://amzn.to/3xrbuTd\nProfessional clamp meter ➡️ https://amzn.to/4140FnK\nGood Clamp meter ➡️ https://amzn.to/3xqt2is\nOutlet tester ➡️- https://amzn.to/3kavg2l\nEnergy monitoring plug ➡️ https://amzn.to/3SkfPl7\nBattery tester -➡️ https://amzn.to/3S3fHWI\nBasic electronics ➡️ kit https://amzn.to/3xuLiqS\n\nMY FAVOURITE GEAR \n🎥 My camera - https://amzn.to/3YCZ7Q9\n🎤 My Microphone - https://amzn.to/3YYXsUC\n⌨️ My Keyboard - https://amzn.to/3lBsl33\n🖥️ My monitor - https://amzn.to/415BGjW\n🎧 My headphones - https://amzn.to/3lN7R7u\n\n👋 SOCIALISE WITH US 👋\n*******************************\n👉FACEBOOK: https://facebook.com/theengineeringmindset/\n👉TWITTER: https://twitter.com/TheEngMindset\n👉INSTAGRAM: https://instagram.com/engineeringmindset/\n👉WEBSITE: http://TheEngineeringMindset.com\n\n[0:00] 120V AC Power Explained\n[0:17] How Electrical Generators Produce AC Power\n[0:27] What Is Three-Phase Electricity?\n[0:40] How a Basic AC Generator Works\n[1:09] How Rotating Magnets Create a Sine Wave\n[1:29] Why AC Current Flows Back and Forth\n[2:03] Single-Phase AC Explained\n[2:14] Why AC Power Is 50Hz or 60Hz\n[2:47] Understanding the AC Sine Wave\n[3:14] How Single-Phase Power Lights a Lamp\n[3:41] Why Single-Phase Output Power Pulsates\n[3:46] Adding a Second Coil: Two-Phase Power\n[4:15] Why Three-Phase Power Is Better\n[4:33] How Current Alternates in Three-Phase Systems\n[4:58] Why Generator Coils Are 120 Degrees Apart\n[5:23] Why Power Systems Use Three Phases Instead of More\n[6:08] Why Three Coils Can Share Just Three Wires\n[6:54] Why Line-to-Line Voltage Is Too High for Homes\n[7:10] Wye Connection Explained\n[7:25] What the Neutral Wire Does\n[7:44] How Single-Phase Power Is Taken from Three-Phase\n[8:00] How Three-Phase Power Feeds Motors and Large Equipment\n[8:13] Wye vs Delta Connection Explained\n[8:38] Delta vs Wye: Power and Neutral Differences\n[8:58] How Electricity Is ",
+      "found": "2026-10-27T12:49:55.224Z",
+      "draft": {
+        "source": "rules",
+        "title": "Why 3 Phase Power Is So Much Better",
+        "summary": "What is 3 phase electricity and how does three phase power work, learn Wye Delta loads and neutral currents, how and where three phase electricity is used, why 3 phases, how the generator works to produce 3 phase sine waves (use code EM15 at checkout)",
+        "safety": "Isolate and prove dead before any work. Only qualified staff may work near live parts.",
+        "ppe": [
+          "Insulated Gloves",
+          "Safety Glasses",
+          "Safety Shoes"
+        ],
+        "steps": [
+          "120V AC Power Explained",
+          "How Electrical Generators Produce AC Power",
+          "What Is Three-Phase Electricity?",
+          "How a Basic AC Generator Works",
+          "How Rotating Magnets Create a Sine Wave",
+          "Why AC Current Flows Back and Forth",
+          "Single-Phase AC Explained",
+          "Why AC Power Is 50Hz or 60Hz"
+        ],
+        "stepsFrom": "chapters",
+        "level": "Beginner",
+        "subject": "Fundamentals"
+      },
+      "aiTries": 1,
+      "aiError": "Gemini took too long"
+    },
+    {
+      "yt": "f9ssVq2G7KU",
+      "title": "Installing Wood look Porcelain Plank Tile floor #tiles #howtotile #planktile",
+      "channel": "Sal DiBlasi (tiling & waterproofing)",
+      "channelUrl": "https://www.youtube.com/channel/UCWpu9UZ6aiRTaMuuV8-C0pQ",
+      "published": "2026-09-13T20:00:06+00:00",
+      "duration": "",
+      "channelCategory": "",
+      "suggestedCategory": "Civil Jobs",
+      "description": "SUBSCRIBE Learn how to tile the right way.\nLarge format wood look plank tile Installed on Ditra uncoupling membrane. In this video I go through the process of installing a large 8\"x48\" plank tile. When installing these large long tiles, it is best to use a leveling system to reduce, or even eliminate lippage, the leveling, or lippage system, as some like to call it, makes it much easier to install a lippiage free tile floor. I also show some of the tools I use and how to mark and cut the tile. Large format tiles are not an easy install, so it best to take it slow and get everything right, checking as you go to be sure the tile has sufficient mortar coverage  when it is set, back buttering the tile will help achieve the proper coverage and transfer of the mortar. All tile installed by Sal DiBlasi, Elite-tile Company, in the Boston North Shore area. This video contains affiliate links, which means I will receive a small commission if you click on the product link. #tile #transformthetrade  #howtotile #installingtile #howtoinstalltile #liticrete #mapei #Schlutersystems #diy #construction #ardex\n\n🙂 This is my Amazon Store 🙂 https://a.co/d/015wZyAM\n\nPayPal\nhttps://www.paypal.com/donate/?hosted_button_id=UMJSX3UHEHQGQ\n\nPatreon  https://www.patreon.com/c/saldiblasi\n\n🌲 Link Tree 🌲\nhttps://linktr.ee/saldiblasi\n\n☕ Buy me a coffee ☕\nhttps://www.buymeacoffee.com/saldibs2 \n\n📷Camera Equipment 👇\nDJI Action 2 Power Combo https://amzn.to/3xA5fMH\nDJI Action 2 Dual-Screen https://amzn.to/3Qvk8IX \nDJI Pocket 2 Creator Combo https://amzn.to/3mUr1pu \n\n👇 Some of my favorite Tools 👇\nFloat https://amzn.to/2tdEpN2    \nRubbing Stone https://amzn.to/2QrgRfh  \nNotched Trowel 1/4 x 1/4 x 1/4-inch https://amzn.to/36bq5mQ  \nNotched Trowel 1/2 x 1/2 x 1/2-Inch https://amzn.to/2Q5e90g  \nNotched Trowel 1/4 x 3/8 x 1/4-Inch https://amzn.to/39j1caB  \nSuper Dust Collector – WaleTale https://amzn.to/2MDuVkK  \nBlack Nitrile Gloves - 6 mil https://amzn.to/2SJQ6FZ  \nMargin Trowel https://amzn.to/352MYHx \nMortar Mixer https://amzn.to/2ZxYqtF \n4in Sandpaper for Stone Polishing https://amzn.to/2ZB2skT  \nPolishing Rubber Backing Pad https://amzn.to/2srikdy  \nMontolit 63P3 24 Inch Tile Cutter https://amzn.to/2MDoFt l  \nDEWALT Wet Tile Saw https://amzn.to/2QqpO8O \nRubi Thinset mixer https://amzn.to/39VmNWV\nGrabo Pro Lifter\nhttps://amzn.to/3BBO5ys \nIQ 7\" Dustless/Dry Cut Tile Saw IQ228\nhttps://amzn.to/3wFE3w0",
+      "found": "2026-10-27T12:50:11.053Z",
+      "draft": {
+        "source": "ai",
+        "title": "Installing Wood-Look Porcelain Plank Tile Flooring",
+        "summary": "This video demonstrates how to lay out, cut, and install wood-look porcelain plank tiles over an uncoupling membrane in a bathroom.",
+        "safety": "Wear eye protection and dust protection when cutting porcelain tile with a saw or angle grinder.",
+        "ppe": [
+          "Safety Glasses",
+          "Knee Pads",
+          "Dust Mask"
+        ],
+        "steps": [
+          "Dry lay initial tile rows to plan layout and staggering.",
+          "Measure and mark tiles near doorways, walls, and fixtures.",
+          "Cut tile planks using a tile cutter, wet saw, or grinder.",
+          "Apply thin-set mortar to the membrane with a notched trowel.",
+          "Set tiles into mortar and install leveling clips and wedges.",
+          "Grout the floor tile joints once thin-set mortar cures."
+        ],
+        "stepsFrom": "ai",
+        "level": "Intermediate",
+        "subject": "Tile Installation",
+        "category": "Civil Jobs",
+        "review": {
+          "relevance": 9,
+          "quality": 8,
+          "recommend": "approve",
+          "reason": "Clear, practical demonstration of laying and cutting long porcelain plank tiles in a bathroom.",
+          "unsafe": [
+            "Cutting tile with angle grinder without eye protection or dust mask"
+          ],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.6-flash"
+      }
+    }
+  ],
   "rejected": [
     "je0BsLY5nZw",
     "NcgO12kdTVs",
