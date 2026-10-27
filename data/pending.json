@@ -281,44 +281,6 @@
         },
         "model": "gemini-3.5-flash-lite"
       }
-    },
-    {
-      "yt": "EElZjxhQxHs",
-      "title": "Why 3 Phase Power Is So Much Better",
-      "channel": "The Engineering Mindset",
-      "channelUrl": "https://www.youtube.com/@EngineeringMindset",
-      "published": "2026-09-15T15:00:01+00:00",
-      "duration": "",
-      "channelCategory": "",
-      "suggestedCategory": "Electrical",
-      "description": "Why 3 phases? Get a 30 day free trial and 20% off an annual subscription.🎁 Click here: https://brilliant.org/TheEngineeringMindset \n\nWhat is 3 phase electricity and how does three phase power work, learn Wye Delta loads and neutral currents, how and where three phase electricity is used, why 3 phases, how the generator works to produce 3 phase sine waves\n\nGet your FREE PDF 🎁 here https://engmind.info/Free-3Phase-PDF\nWhy not two phase?➡️ Watch why here https://youtu.be/NDnjMjFDCe8\nGet your mug here:➡️ https://engmind.info/3-Phase-Mug\nDownload excel sheets here:➡️ https://engmind.info/3-phase-calcs\n\nWatch AD free:➡️ https://www.patreon.com/theengineeringmindset/ \nBecome channel member:➡️ https://www.youtube.com/channel/UCk0fGHsCEzGig-rSzkfCjMw/join \n\n🎁15% discount on multimeters.➡️ https://bit.ly/15-off-multimeters \n(use code EM15 at checkout) \n\n30 Day free trial🎁 Click here: https://brilliant.org/EngineeringMindset\n\n⚡🛠️ TOOLS YOU NEED 🛠️⚡\n*******************************\nGet this electronics book ➡️ https://amzn.to/41cCJPk\nProfessional Multimeter -➡️ https://amzn.to/3xu2Vaw\nGood multimeter -➡️ https://amzn.to/3xrbuTd\nProfessional clamp meter ➡️ https://amzn.to/4140FnK\nGood Clamp meter ➡️ https://amzn.to/3xqt2is\nOutlet tester ➡️- https://amzn.to/3kavg2l\nEnergy monitoring plug ➡️ https://amzn.to/3SkfPl7\nBattery tester -➡️ https://amzn.to/3S3fHWI\nBasic electronics ➡️ kit https://amzn.to/3xuLiqS\n\nMY FAVOURITE GEAR \n🎥 My camera - https://amzn.to/3YCZ7Q9\n🎤 My Microphone - https://amzn.to/3YYXsUC\n⌨️ My Keyboard - https://amzn.to/3lBsl33\n🖥️ My monitor - https://amzn.to/415BGjW\n🎧 My headphones - https://amzn.to/3lN7R7u\n\n👋 SOCIALISE WITH US 👋\n*******************************\n👉FACEBOOK: https://facebook.com/theengineeringmindset/\n👉TWITTER: https://twitter.com/TheEngMindset\n👉INSTAGRAM: https://instagram.com/engineeringmindset/\n👉WEBSITE: http://TheEngineeringMindset.com\n\n[0:00] 120V AC Power Explained\n[0:17] How Electrical Generators Produce AC Power\n[0:27] What Is Three-Phase Electricity?\n[0:40] How a Basic AC Generator Works\n[1:09] How Rotating Magnets Create a Sine Wave\n[1:29] Why AC Current Flows Back and Forth\n[2:03] Single-Phase AC Explained\n[2:14] Why AC Power Is 50Hz or 60Hz\n[2:47] Understanding the AC Sine Wave\n[3:14] How Single-Phase Power Lights a Lamp\n[3:41] Why Single-Phase Output Power Pulsates\n[3:46] Adding a Second Coil: Two-Phase Power\n[4:15] Why Three-Phase Power Is Better\n[4:33] How Current Alternates in Three-Phase Systems\n[4:58] Why Generator Coils Are 120 Degrees Apart\n[5:23] Why Power Systems Use Three Phases Instead of More\n[6:08] Why Three Coils Can Share Just Three Wires\n[6:54] Why Line-to-Line Voltage Is Too High for Homes\n[7:10] Wye Connection Explained\n[7:25] What the Neutral Wire Does\n[7:44] How Single-Phase Power Is Taken from Three-Phase\n[8:00] How Three-Phase Power Feeds Motors and Large Equipment\n[8:13] Wye vs Delta Connection Explained\n[8:38] Delta vs Wye: Power and Neutral Differences\n[8:58] How Electricity Is ",
-      "found": "2026-10-27T12:49:55.224Z",
-      "draft": {
-        "source": "rules",
-        "title": "Why 3 Phase Power Is So Much Better",
-        "summary": "What is 3 phase electricity and how does three phase power work, learn Wye Delta loads and neutral currents, how and where three phase electricity is used, why 3 phases, how the generator works to produce 3 phase sine waves (use code EM15 at checkout)",
-        "safety": "Isolate and prove dead before any work. Only qualified staff may work near live parts.",
-        "ppe": [
-          "Insulated Gloves",
-          "Safety Glasses",
-          "Safety Shoes"
-        ],
-        "steps": [
-          "120V AC Power Explained",
-          "How Electrical Generators Produce AC Power",
-          "What Is Three-Phase Electricity?",
-          "How a Basic AC Generator Works",
-          "How Rotating Magnets Create a Sine Wave",
-          "Why AC Current Flows Back and Forth",
-          "Single-Phase AC Explained",
-          "Why AC Power Is 50Hz or 60Hz"
-        ],
-        "stepsFrom": "chapters",
-        "level": "Beginner",
-        "subject": "Fundamentals"
-      },
-      "aiTries": 1,
-      "aiError": "Gemini took too long"
     }
   ],
   "rejected": [
