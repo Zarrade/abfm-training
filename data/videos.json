@@ -2,6 +2,42 @@
   "updated": "2026-10-27",
   "videos": [
     {
+      "id": "lands-XmQR2emG9D4",
+      "yt": "XmQR2emG9D4",
+      "title": "Replacing a Broken Sprinkler Head",
+      "category": "Landscaping",
+      "subject": "Irrigation Valve Troubleshooting",
+      "level": "Beginner",
+      "channel": "Sprinkler Warehouse (irrigation)",
+      "duration": "",
+      "added": "2026-10-27",
+      "summary": "This video demonstrates how a homeowner quickly orders and replaces a broken sprinkler head after accidentally damaging it with a lawnmower.",
+      "safety": "Ensure the water supply is turned off before servicing or replacing any sprinkler components.",
+      "ppe": [
+        "Safety Glasses",
+        "Work Gloves",
+        "Sturdy Footwear"
+      ],
+      "steps": [
+        "Identify the damaged sprinkler head in the lawn.",
+        "Order the correct replacement part online.",
+        "Unscrew and remove the damaged sprinkler head.",
+        "Install and secure the new sprinkler head in the ground.",
+        "Test the irrigation system to ensure proper operation."
+      ],
+      "gemini": {
+        "date": "2026-10-27",
+        "relevance": 9,
+        "quality": 8,
+        "recommend": "approve",
+        "reason": "It provides a clear, step-by-step demonstration of sprinkler head replacement for landscaping maintenance.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      },
+      "ytTitle": "Sprinkler Warehouse: Lawnmower vs. Sprinkler Head (Easy DIY Repair)"
+    },
+    {
       "id": "elect-Yus2-qISQZg",
       "yt": "Yus2-qISQZg",
       "title": "Inspecting Heat Pump Electrical Connections",
