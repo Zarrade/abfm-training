@@ -171,48 +171,6 @@
       }
     },
     {
-      "yt": "VxkL-T0U-r0",
-      "title": "How Much Do Plumbers Make Here? $104,000 at the Bottom",
-      "channel": "Roger Wakefield Plumbing Education",
-      "channelUrl": "https://www.youtube.com/@RogerWakefield",
-      "published": "2026-10-13T01:59:54.274Z",
-      "duration": "",
-      "channelCategory": "Plumbing",
-      "suggestedCategory": "Plumbing",
-      "description": "",
-      "found": "2026-10-27T01:59:55.845Z",
-      "draft": {
-        "source": "ai",
-        "title": "Plumbing Business Models and Compensation",
-        "summary": "A podcast interview discussing employee incentives, profit sharing, work-life balance, and career growth within a residential plumbing business.",
-        "safety": "Always follow standard safety precautions and wear appropriate PPE when working on job sites.",
-        "ppe": [
-          "Safety Glasses",
-          "Work Boots"
-        ],
-        "steps": [
-          "Offer profit-sharing incentives to retain skilled trade professionals.",
-          "Provide structured paths for career advancement and master plumber certification.",
-          "Structure work schedules to avoid mandatory on-call shifts where possible.",
-          "Implement team-building activities and performance-based reward trips."
-        ],
-        "stepsFrom": "ai",
-        "level": "Beginner",
-        "subject": "Fixtures & Faucets",
-        "category": "Plumbing",
-        "review": {
-          "relevance": 1,
-          "quality": 6,
-          "recommend": "reject",
-          "reason": "This video is a promotional podcast interview about company management and salaries, not a technical maintenance tutorial.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.6-flash"
-      }
-    },
-    {
       "yt": "_D2rI75V8Wc",
       "title": "A Week in the Life of a Carpenter!",
       "channel": "Vancouver Carpenter",
@@ -281,6 +239,7 @@
     "SW6G7EostJc",
     "rLkt8_D6R-I",
     "f_j7OIW2zB4",
-    "jkTuymKsN4Y"
+    "jkTuymKsN4Y",
+    "VxkL-T0U-r0"
   ]
 }
