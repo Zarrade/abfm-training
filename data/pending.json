@@ -72,50 +72,7 @@
       "lastFound": 0
     }
   },
-  "queue": [
-    {
-      "yt": "kkLvyE_YJE8",
-      "title": "Tight Enough to Fail - Short #309",
-      "channel": "HVAC School",
-      "channelUrl": "https://www.youtube.com/c/HVACSchool",
-      "published": "2026-10-27T11:07:37+00:00",
-      "duration": "",
-      "channelCategory": "HVAC",
-      "suggestedCategory": "HVAC",
-      "description": "In this short podcast episode, Bryan discusses electrical connections and whether tighter is better (or if a connection is tight enough to fail). \r\n\r\n Torque is a turning effect; force is applied at a distance from the screw's center, and that force creates pressure at the connection. A quarter-turn doesn't tell us how much force we have applied. You may notice a tight screw with other signs of a poor connection, like discoloration; tightening the connection may not help.\r\n\r\n At a connection, we want very little resistance to current flow, and we get increased resistance and heat where we don't want it when connections are poor; according to Watt's law, when the resistance stays the same, doubling the current creates four times the heating power. However, temperature alone doesn't tell you the cause; thermal imaging is useful evidence, but we need operating conditions and current measurements, too. \r\n\r\n The key takeaway is that tightening the connection as much as possible may do more harm than good; having a torque screwdriver and using it can help. When making new connections, use the torque screwdriver to torque to the proper specs right out of the gate. We must also consider wire sizing, wire placement, exposed conductors, and unacceptable double lugging. We must also be mindful of ferrules, including proper selection and crimping. Make all adjustments safely (without voltage), and if you do not have the manufacturer's data immediately available, look it up. Eventually, you will get an idea of what \"good\" looks like.\r\n\r\n Remember: tighter doesn't necessarily mean better.\r\n\r\n This episode contains embedded sponsor messages from Refrigeration Technologies, Carrier, NAVAC, Filtrete, and the 2027 AHR Expo.\r\n\r\n Resources\r\n\r\n   Tightening Electrical Threaded Terminal Connections (tech tip) HVAC School calculators Submit a podcast question Learn about the GRIT Foundation  Purchase your tickets or learn more about the 8th Annual HVACR Training Symposium at https://hvacrschool.com/symposium.",
-      "found": "2026-10-27T11:46:48.708Z",
-      "draft": {
-        "source": "ai",
-        "title": "Electrical Terminal Tightening and Torque",
-        "summary": "This video explains why over-tightening electrical terminal screws does not ensure a good connection and discusses torque.",
-        "safety": "Always verify power is off and circuits are isolated before working on electrical terminals.",
-        "ppe": [
-          "Safety Glasses",
-          "Insulated Gloves"
-        ],
-        "steps": [
-          "Check wire and screw for discoloration and proper seating.",
-          "Verify the correct torque specification for each terminal.",
-          "Use a calibrated torque tool or screwdriver.",
-          "Follow manufacturer guidelines and inspection procedures."
-        ],
-        "stepsFrom": "ai",
-        "level": "Intermediate",
-        "subject": "Electrical Diagnostics",
-        "category": "Electrical",
-        "review": {
-          "relevance": 8,
-          "quality": 6,
-          "recommend": "approve",
-          "reason": "Provides a useful explanation of electrical terminal torque and proper tightening practices.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
-    }
-  ],
+  "queue": [],
   "rejected": [
     "je0BsLY5nZw",
     "NcgO12kdTVs",
