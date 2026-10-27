@@ -74,50 +74,6 @@
   },
   "queue": [
     {
-      "yt": "XmQR2emG9D4",
-      "title": "Sprinkler Warehouse: Lawnmower vs. Sprinkler Head (Easy DIY Repair)",
-      "channel": "Sprinkler Warehouse (irrigation)",
-      "channelUrl": "https://www.youtube.com/channel/UCR1ksygazAOr59yLZ4Mp5tA",
-      "published": "2026-09-23T18:18:43+00:00",
-      "duration": "",
-      "channelCategory": "Landscaping",
-      "suggestedCategory": "Landscaping",
-      "description": "Ran over another sprinkler head with the lawnmower? Don’t panic! Replacing a broken sprinkler head is a simple 5-minute DIY fix when you have the right parts! At Sprinkler Warehouse, we make irrigation repairs fast, affordable, and stress-free. Whether you need replacement pop-up spray bodies, rotors, nozzles, swing joints, or fittings, we stock the exact replacement parts you need from the top brands you trust—including Hunter, Rain Bird, Toro, and Orbit. \n\nShop Replacement Sprinkler Heads & Parts: https://www.sprinklerwarehouse.com \n\n\nWhy shop Sprinkler Warehouse? \n\n* Huge selection of commercial & residential irrigation parts \n* Competitive prices \n* Fast same-day shipping on eligible orders \n* Expert support & DIY tutorials to get your system running like new Fix it in minutes and get right back to enjoying a lush, green lawn! \n\nSubscribe to Sprinkler Warehouse for quick DIY tips, lawn care guides, and professional irrigation solutions! #sprinklerrepair \n\n\n #SprinklerWarehouse #LawnCare #DIYSprinkler #IrrigationRepair #LawnMaintenance #HomeImprovement\n\n\nYouTube comments are not monitored. Please direct your questions to the customer service representatives on www.sprinklerwarehouse.com.",
-      "found": "2026-10-27T12:50:13.698Z",
-      "draft": {
-        "source": "ai",
-        "title": "Replacing a Broken Sprinkler Head",
-        "summary": "This video demonstrates how a homeowner quickly orders and replaces a broken sprinkler head after accidentally damaging it with a lawnmower.",
-        "safety": "Ensure the water supply is turned off before servicing or replacing any sprinkler components.",
-        "ppe": [
-          "Safety Glasses",
-          "Work Gloves",
-          "Sturdy Footwear"
-        ],
-        "steps": [
-          "Identify the damaged sprinkler head in the lawn.",
-          "Order the correct replacement part online.",
-          "Unscrew and remove the damaged sprinkler head.",
-          "Install and secure the new sprinkler head in the ground.",
-          "Test the irrigation system to ensure proper operation."
-        ],
-        "stepsFrom": "ai",
-        "level": "Beginner",
-        "subject": "Irrigation Valve Troubleshooting",
-        "category": "Landscaping",
-        "review": {
-          "relevance": 9,
-          "quality": 8,
-          "recommend": "approve",
-          "reason": "It provides a clear, step-by-step demonstration of sprinkler head replacement for landscaping maintenance.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
-    },
-    {
       "yt": "EsKARwICOtY",
       "title": "Basket weave 12x24 Tile, here's how, and what can go wrong. #tile #basketweave",
       "channel": "Sal DiBlasi (tiling & waterproofing)",
