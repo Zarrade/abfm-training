@@ -1,5 +1,5 @@
 {
-  "lookbackDays": 21,
+  "lookbackDays": 60,
   "skipShorts": true,
   "maxQueue": 150,
   "channels": [
