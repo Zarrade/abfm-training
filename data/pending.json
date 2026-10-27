@@ -127,48 +127,6 @@
         },
         "model": "gemini-3.6-flash"
       }
-    },
-    {
-      "yt": "NhxLumCrHxI",
-      "title": "Expert Stain Machine: The FASTEST Way to Pre-Stain Lumber!",
-      "channel": "Paint Life TV",
-      "channelUrl": "https://www.youtube.com/channel/UCnrhmEmvA_bIRYkBVPqJ4zg",
-      "published": "2026-10-13T02:00:02.082Z",
-      "duration": "",
-      "channelCategory": "Painting & Waterproofing",
-      "suggestedCategory": "Painting & Waterproofing",
-      "description": "",
-      "found": "2026-10-27T02:00:03.216Z",
-      "draft": {
-        "source": "ai",
-        "title": "Using the Expert Stain Machine for Lumber",
-        "summary": "This video demonstrates how to use the Expert Stain Machine to pre-stain wood lumber quickly and efficiently.",
-        "safety": "Wear appropriate personal protective equipment and ensure safe lifting practices when handling lumber and heavy machinery.",
-        "ppe": [
-          "Safety Glasses",
-          "Gloves"
-        ],
-        "steps": [
-          "Set up the staining machine legs and secure them.",
-          "Feed lumber pieces through the rollers and brushes.",
-          "Ensure complete saturation on all sides of the wood.",
-          "Pack up and dismantle the machine after use."
-        ],
-        "stepsFrom": "ai",
-        "level": "Beginner",
-        "subject": "Masking Trim for Airless Spraying",
-        "category": "Painting & Waterproofing",
-        "review": {
-          "relevance": 5,
-          "quality": 7,
-          "recommend": "maybe",
-          "reason": "Useful introduction to lumber pre-staining machinery, but commercial application tool specific to certain painting jobs.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
     }
   ],
   "rejected": [
@@ -195,6 +153,7 @@
     "f_j7OIW2zB4",
     "jkTuymKsN4Y",
     "VxkL-T0U-r0",
-    "_D2rI75V8Wc"
+    "_D2rI75V8Wc",
+    "NhxLumCrHxI"
   ]
 }
