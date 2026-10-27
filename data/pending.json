@@ -85,50 +85,7 @@
       "via": "page"
     }
   },
-  "queue": [
-    {
-      "yt": "jeOfmI4osm4",
-      "title": "Backflow Armor BFA1HBBG Hose Bib Cover | Outdoor Faucet Freeze Protection | Sprinkler Warehouse",
-      "channel": "Sprinkler Warehouse (irrigation)",
-      "channelUrl": "https://www.youtube.com/channel/UCR1ksygazAOr59yLZ4Mp5tA",
-      "published": "2026-10-26T20:00:05.346Z",
-      "duration": "",
-      "channelCategory": "Landscaping",
-      "suggestedCategory": "Landscaping",
-      "description": "",
-      "found": "2026-10-27T02:00:06.506Z",
-      "draft": {
-        "source": "ai",
-        "title": "Installing a Hose Bib Freeze Cover",
-        "summary": "This video demonstrates how to install an insulated cover over an outdoor faucet to protect it from freezing temperatures.",
-        "safety": "Ensure the outdoor faucet is turned off completely before installing freeze protection.",
-        "ppe": [
-          "Work Gloves",
-          "Safety Glasses"
-        ],
-        "steps": [
-          "Unfasten the velcro strap on the insulated pouch.",
-          "Open the mouth of the pouch wide.",
-          "Slide the pouch completely over the outdoor spigot against the wall.",
-          "Pull the strap tight around the pouch to seal it securely."
-        ],
-        "stepsFrom": "ai",
-        "level": "Beginner",
-        "subject": "Outdoor Spigot Maintenance",
-        "category": "Plumbing",
-        "review": {
-          "relevance": 5,
-          "quality": 7,
-          "recommend": "maybe",
-          "reason": "Brief product demonstration showing how to attach an insulated cover to an outdoor hose bib.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.6-flash"
-      }
-    }
-  ],
+  "queue": [],
   "rejected": [
     "je0BsLY5nZw",
     "NcgO12kdTVs",
@@ -154,6 +111,7 @@
     "jkTuymKsN4Y",
     "VxkL-T0U-r0",
     "_D2rI75V8Wc",
-    "NhxLumCrHxI"
+    "NhxLumCrHxI",
+    "jeOfmI4osm4"
   ]
 }
