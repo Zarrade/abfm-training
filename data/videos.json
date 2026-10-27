@@ -2,6 +2,40 @@
   "updated": "2026-10-27",
   "videos": [
     {
+      "id": "elect-Fg7lFCOJPm4",
+      "yt": "Fg7lFCOJPm4",
+      "title": "Bathroom Socket Installation Regulations",
+      "category": "Electrical",
+      "subject": "Wiring Accessories",
+      "level": "Intermediate",
+      "channel": "GSH Electrical",
+      "duration": "",
+      "added": "2026-10-27",
+      "summary": "A technician explains bathroom electrical zoning rules and why a socket outlet cannot be installed near a bath or shower in an open-plan space.",
+      "safety": "Ensure all circuits are isolated and tested dead before attempting any electrical installation.",
+      "ppe": [
+        "Safety Glasses",
+        "Insulated Gloves"
+      ],
+      "steps": [
+        "Identify zone one boundaries around the bath and shower.",
+        "Measure distances from the edge of the bath or shower.",
+        "Check for overlapping zones that prevent socket installation.",
+        "Verify shaver socket placement rules separately from mains sockets."
+      ],
+      "gemini": {
+        "date": "2026-10-27",
+        "relevance": 9,
+        "quality": 8,
+        "recommend": "approve",
+        "reason": "Clear explanation of bathroom electrical zoning rules and socket placement restrictions.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      },
+      "ytTitle": "Can You Put a Socket in a Bathroom?"
+    },
+    {
       "id": "elect-EElZjxhQxHs",
       "yt": "EElZjxhQxHs",
       "title": "Why 3 Phase Power Is So Much Better",
