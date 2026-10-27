@@ -1,6 +1,45 @@
 {
-  "updated": "2026-10-26",
+  "updated": "2026-10-27",
   "videos": [
+    {
+      "id": "paint-U_sB9hiDTkU",
+      "yt": "U_sB9hiDTkU",
+      "title": "Spraying a Front Door Flat",
+      "category": "Painting & Waterproofing",
+      "subject": "Masking Trim for Airless Spraying",
+      "level": "Intermediate",
+      "channel": "Paint Life TV",
+      "duration": "",
+      "added": "2026-10-27",
+      "summary": "Demonstrates how to prep, mask, and spray finish a flat-laid front door.",
+      "safety": "Wear a respirator mask and gloves when spraying paint indoors.",
+      "ppe": [
+        "Safety Glasses",
+        "Respirator Mask",
+        "Gloves"
+      ],
+      "steps": [
+        "Prep and clean the door surface.",
+        "Mask glass inserts and door edges.",
+        "Sand and wipe down the door.",
+        "Wrap and secure paper around door edges.",
+        "Spray the interior paint layer.",
+        "Spray the exterior paint layer."
+      ],
+      "gemini": {
+        "date": "2026-10-27",
+        "relevance": 9,
+        "quality": 8,
+        "recommend": "approve",
+        "reason": "Clear and detailed guide on prepping and spraying a door flat.",
+        "unsafe": [
+          "Spraying without eye protection initially"
+        ],
+        "language": "Spanish",
+        "talking": true
+      },
+      "ytTitle": "cómo rociar una puerta principal acostado"
+    },
     {
       "id": "lands-IlxIEBFE20w",
       "yt": "IlxIEBFE20w",
