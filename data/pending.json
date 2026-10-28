@@ -1,78 +1,989 @@
 {
-  "lastRun": "2026-10-27T12:50:15.233Z",
+  "lastRun": "2026-10-28T02:10:02.574Z",
   "channelStatus": {
     "https://www.youtube.com/@EngineeringMindset": {
       "id": "UCk0fGHsCEzGig-rSzkfCjMw",
-      "checked": "2026-10-27T12:49:55.224Z",
-      "lastFound": 1
+      "checked": "2026-10-28T02:09:21.452Z",
+      "lastFound": 0,
+      "via": "page"
     },
     "https://www.youtube.com/@ACServiceTech": {
       "id": "UCYohLjTaUZLF3-JjttxG_CA",
-      "checked": "2026-10-27T12:49:56.737Z",
-      "lastFound": 0
+      "checked": "2026-10-28T02:09:32.352Z",
+      "lastFound": 0,
+      "via": "page"
     },
     "https://www.youtube.com/@TheElectricalGuy": {
       "id": "UCdKPm5KM99O75NtArFkMDDA",
-      "checked": "2026-10-27T12:49:57.558Z",
-      "lastFound": 0
+      "checked": "2026-10-28T02:09:34.975Z",
+      "lastFound": 1,
+      "via": "page"
     },
     "https://www.youtube.com/@GSHElectrical": {
       "id": "UCgtbE9w_d-u2AvPp3WBlPfQ",
-      "checked": "2026-10-27T12:50:01.895Z",
-      "lastFound": 3
+      "checked": "2026-10-28T02:09:39.782Z",
+      "lastFound": 3,
+      "via": "page"
     },
     "https://www.youtube.com/@jwflame": {
       "id": "UC2uFFhnMKyF82UY2TbXRaNg",
-      "checked": "2026-10-27T12:50:02.690Z",
-      "lastFound": 0
+      "checked": "2026-10-28T02:09:40.840Z",
+      "lastFound": 0,
+      "via": "page"
     },
     "https://www.youtube.com/@RogerWakefield": {
       "id": "UCGIMKh92vaL0_Yc0u4GYhHA",
-      "checked": "2026-10-27T12:50:03.411Z",
-      "lastFound": 0
+      "checked": "2026-10-28T02:09:41.879Z",
+      "lastFound": 0,
+      "via": "page"
     },
     "https://www.youtube.com/c/HVACSchool": {
       "id": "UCdLlUhD9LUGm0-NTYDASPFA",
-      "checked": "2026-10-27T12:49:55.946Z",
-      "lastFound": 0
+      "checked": "2026-10-28T02:09:31.354Z",
+      "lastFound": 8,
+      "via": "page"
     },
     "https://www.youtube.com/channel/UCIoD-SEdUWMA74tWXRMyCZQ": {
       "id": "UCIoD-SEdUWMA74tWXRMyCZQ",
-      "checked": "2026-10-27T12:50:04.222Z",
-      "lastFound": 0
+      "checked": "2026-10-28T02:09:42.836Z",
+      "lastFound": 0,
+      "via": "page"
     },
     "https://www.youtube.com/c/Ductdudes": {
       "id": "UCGGX5M9ISk9Zwi6pfa6gk3w",
-      "checked": "2026-10-27T12:50:05.051Z",
-      "lastFound": 0
+      "checked": "2026-10-28T02:09:43.819Z",
+      "lastFound": 0,
+      "via": "page"
     },
     "https://www.youtube.com/channel/UCbZdXox6mKHdcT2QdVT-goQ": {
       "id": "UCbZdXox6mKHdcT2QdVT-goQ",
-      "checked": "2026-10-27T12:50:05.901Z",
-      "lastFound": 0
+      "checked": "2026-10-28T02:09:44.810Z",
+      "lastFound": 0,
+      "via": "page"
     },
     "https://www.youtube.com/channel/UCWpu9UZ6aiRTaMuuV8-C0pQ": {
       "id": "UCWpu9UZ6aiRTaMuuV8-C0pQ",
-      "checked": "2026-10-27T12:50:11.053Z",
-      "lastFound": 3
+      "checked": "2026-10-28T02:09:49.170Z",
+      "lastFound": 2,
+      "via": "page"
     },
     "https://www.youtube.com/channel/UCnrhmEmvA_bIRYkBVPqJ4zg": {
       "id": "UCnrhmEmvA_bIRYkBVPqJ4zg",
-      "checked": "2026-10-27T12:50:11.769Z",
-      "lastFound": 0
+      "checked": "2026-10-28T02:09:59.649Z",
+      "lastFound": 7,
+      "via": "page"
     },
     "https://www.youtube.com/channel/UCR1ksygazAOr59yLZ4Mp5tA": {
       "id": "UCR1ksygazAOr59yLZ4Mp5tA",
-      "checked": "2026-10-27T12:50:13.698Z",
-      "lastFound": 1
+      "checked": "2026-10-28T02:10:00.778Z",
+      "lastFound": 0,
+      "via": "page"
     },
     "https://www.youtube.com/channel/UCXOzd-KAiI6fGx5wfrnsHTA": {
       "id": "UCXOzd-KAiI6fGx5wfrnsHTA",
-      "checked": "2026-10-27T12:50:14.517Z",
-      "lastFound": 0
+      "checked": "2026-10-28T02:10:01.860Z",
+      "lastFound": 0,
+      "via": "page"
     }
   },
-  "queue": [],
+  "queue": [
+    {
+      "yt": "e51Cw-Cqqu4",
+      "title": "How to Install a Torginol Pearl Essence Metallic Garage Floor Like a Pro",
+      "channel": "Paint Life TV",
+      "channelUrl": "https://www.youtube.com/channel/UCnrhmEmvA_bIRYkBVPqJ4zg",
+      "published": "2026-10-07T02:09:50.224Z",
+      "duration": "",
+      "channelCategory": "Painting & Waterproofing",
+      "suggestedCategory": "Painting & Waterproofing",
+      "description": "",
+      "found": "2026-10-28T02:09:51.450Z",
+      "draft": {
+        "source": "ai",
+        "title": "Installing a Metallic Garage Epoxy Floor",
+        "summary": "This video demonstrates how to prepare an old concrete floor and apply a multi-color metallic epoxy coating.",
+        "safety": "Wear appropriate respiratory protection and gloves when handling chemicals, solvents, and epoxy products.",
+        "ppe": [
+          "Safety Glasses",
+          "Gloves",
+          "Respirator"
+        ],
+        "steps": [
+          "Sand and clean the existing epoxy floor.",
+          "Apply EP-55 waterborne primer coat.",
+          "Fill saw cuts and surface imperfections.",
+          "Pour and spread the black epoxy base coat.",
+          "Pour and trowel metallic color layers for a marbled effect.",
+          "Sand craters and apply final topcoat."
+        ],
+        "stepsFrom": "ai",
+        "level": "Advanced",
+        "subject": "Torginol Flakes Mixing",
+        "category": "Painting & Waterproofing",
+        "review": {
+          "relevance": 9,
+          "quality": 8,
+          "recommend": "approve",
+          "reason": "Provides a comprehensive and clear tutorial on professional epoxy floor installation techniques.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.5-flash-lite"
+      }
+    },
+    {
+      "yt": "7o7st1IPAkM",
+      "title": "Sherwin Williams Rain Fresh Review: Is It REALLY Worth It?",
+      "channel": "Paint Life TV",
+      "channelUrl": "https://www.youtube.com/channel/UCnrhmEmvA_bIRYkBVPqJ4zg",
+      "published": "2026-10-07T02:09:50.224Z",
+      "duration": "",
+      "channelCategory": "Painting & Waterproofing",
+      "suggestedCategory": "Painting & Waterproofing",
+      "description": "",
+      "found": "2026-10-28T02:09:52.990Z",
+      "draft": {
+        "source": "ai",
+        "title": "Sherwin Williams Rain Refresh Paint Review",
+        "summary": "An experienced painter evaluates Sherwin Williams Emerald Rain Refresh exterior paint, detailing its coverage, application viscosity, overspray control, and masking tape adhesion.",
+        "safety": "Wear appropriate respiratory protection and eye safety gear when airless spraying exterior paint.",
+        "ppe": [
+          "Safety Glasses",
+          "Respirator Mask",
+          "Work Gloves"
+        ],
+        "steps": [
+          "Mix the paint thoroughly using a drill mixer before application.",
+          "Apply paint using an airless sprayer with a 515 tip at 2200 PSI.",
+          "Overlap spray passes by 50 percent to achieve full one-coat coverage.",
+          "Use a mini roller to cut in trim and window frames.",
+          "Allow paint to cure fully before applying masking tape on top."
+        ],
+        "stepsFrom": "ai",
+        "level": "Intermediate",
+        "subject": "Masking Trim for Airless Spraying",
+        "category": "Painting & Waterproofing",
+        "review": {
+          "relevance": 6,
+          "quality": 8,
+          "recommend": "maybe",
+          "reason": "Offers helpful practical insights on exterior paint application and masking behavior, though presented as a brand review.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.6-flash"
+      }
+    },
+    {
+      "yt": "HdIB67dfv1A",
+      "title": "Tech, Mechanic, or Craftsman? Finding Your Fit in HVAC",
+      "channel": "HVAC School",
+      "channelUrl": "https://www.youtube.com/c/HVACSchool",
+      "published": "2026-10-07T02:09:22.455Z",
+      "duration": "",
+      "channelCategory": "HVAC",
+      "suggestedCategory": "HVAC",
+      "description": "",
+      "found": "2026-10-28T02:09:23.486Z",
+      "draft": {
+        "source": "ai",
+        "title": "Finding Your Fit in HVAC",
+        "summary": "This discussion explores the distinct mindsets of technicians, mechanics, and craftsmen in the HVAC trade, helping workers understand their strengths.",
+        "safety": "Ensure proper situational awareness and maintain professional communication during all technical work.",
+        "ppe": [
+          "Safety Glasses",
+          "Work Boots"
+        ],
+        "steps": [
+          "Identify your natural inclination toward diagnostic work.",
+          "Evaluate your problem-solving style and trade preferences.",
+          "Recognize the differences between technician and craftsman mindsets.",
+          "Build effective team roles based on individual strengths."
+        ],
+        "stepsFrom": "ai",
+        "level": "Intermediate",
+        "subject": "Fundamentals",
+        "category": "HVAC",
+        "review": {
+          "relevance": 4,
+          "quality": 7,
+          "recommend": "maybe",
+          "reason": "Offers good mindset training for technicians, though it lacks direct hands-on technical procedures.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.5-flash-lite"
+      }
+    },
+    {
+      "yt": "QxYAdJGyqCg",
+      "title": "Technical Solutions for Infinity Controllers",
+      "channel": "HVAC School",
+      "channelUrl": "https://www.youtube.com/c/HVACSchool",
+      "published": "2026-10-07T02:09:22.455Z",
+      "duration": "",
+      "channelCategory": "HVAC",
+      "suggestedCategory": "HVAC",
+      "description": "",
+      "found": "2026-10-28T02:09:24.628Z",
+      "draft": {
+        "source": "ai",
+        "title": "Fixing Power Interruption Issues on Infinity Controllers",
+        "summary": "The presenter explains how power blips cause Infinity controllers to stay off and run the fan continuously, and demonstrates using a delay timer to fix it.",
+        "safety": "Always turn off power at the breaker before working on electrical components.",
+        "ppe": [
+          "Safety Glasses",
+          "Work Gloves"
+        ],
+        "steps": [
+          "Identify power blip symptoms causing the controller to stay off.",
+          "Recognize that the fan runs continuously due to defaulted 24-volt controls.",
+          "Power cycle the controller by turning off the breaker for sixty seconds.",
+          "Install a delay timer to prevent the issue during future power blips."
+        ],
+        "stepsFrom": "ai",
+        "level": "Intermediate",
+        "subject": "Electrical Diagnostics",
+        "category": "HVAC",
+        "review": {
+          "relevance": 9,
+          "quality": 8,
+          "recommend": "approve",
+          "reason": "Clear diagnostic explanation and solution for a common thermostat controller issue.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.5-flash-lite"
+      }
+    },
+    {
+      "yt": "gFUrDX_ze-M",
+      "title": "Normal Subcooling, Hidden Restriction - Short #305",
+      "channel": "HVAC School",
+      "channelUrl": "https://www.youtube.com/c/HVACSchool",
+      "published": "2026-09-30T02:09:22.455Z",
+      "duration": "",
+      "channelCategory": "HVAC",
+      "suggestedCategory": "HVAC",
+      "description": "",
+      "found": "2026-10-28T02:09:25.692Z",
+      "draft": {
+        "source": "ai",
+        "title": "Diagnosing Subcooling and Restrictions in HVAC Systems",
+        "summary": "This video explains why restrictions do not always cause high subcooling and discusses how liquid line issues affect HVAC systems.",
+        "safety": "Ensure the system is powered off and depressurized before inspecting refrigerant lines or components.",
+        "ppe": [
+          "Safety Glasses",
+          "Work Gloves"
+        ],
+        "steps": [
+          "Identify evaporator freeze patterns and low suction pressure.",
+          "Evaluate expansion valve and liquid line restrictions.",
+          "Check for pressure drops across the liquid line dryer.",
+          "Inspect system components and tubing for damage."
+        ],
+        "stepsFrom": "ai",
+        "level": "Advanced",
+        "subject": "Refrigerant & Diagnostics",
+        "category": "HVAC",
+        "review": {
+          "relevance": 9,
+          "quality": 7,
+          "recommend": "approve",
+          "reason": "It offers valuable diagnostic insights for HVAC technicians handling refrigerant issues.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.5-flash-lite"
+      }
+    },
+    {
+      "yt": "-8gLPN1W_o0",
+      "title": "Sponge Caulking Tips & Tricks | Get a Perfect Caulk Bead Every Time",
+      "channel": "Paint Life TV",
+      "channelUrl": "https://www.youtube.com/channel/UCnrhmEmvA_bIRYkBVPqJ4zg",
+      "published": "2026-09-28T02:09:50.224Z",
+      "duration": "",
+      "channelCategory": "Painting & Waterproofing",
+      "suggestedCategory": "Painting & Waterproofing",
+      "description": "",
+      "found": "2026-10-28T02:09:54.333Z",
+      "draft": {
+        "source": "ai",
+        "title": "Sponge Caulking Tips And Tricks",
+        "summary": "This video demonstrates professional techniques and tips for applying and smoothing caulk using a sponge for a clean finish.",
+        "safety": "Ensure proper ventilation when working with caulking products and keep cleaning buckets stable to prevent slips.",
+        "ppe": [
+          "Work Gloves",
+          "Safety Glasses"
+        ],
+        "steps": [
+          "Scrape away protruding nails and uneven surfaces.",
+          "Set loose nails with a nail set tool.",
+          "Cut the caulk tube nozzle at a 45-degree angle.",
+          "Apply caulk evenly along gaps while maintaining a steady speed.",
+          "Smooth the caulk bead using a wet finger or sponge."
+        ],
+        "stepsFrom": "ai",
+        "level": "Beginner",
+        "subject": "Masking Trim for Airless Spraying",
+        "category": "Painting & Waterproofing",
+        "review": {
+          "relevance": 9,
+          "quality": 8,
+          "recommend": "approve",
+          "reason": "Clear and practical demonstration of sponge caulking techniques suitable for painter training.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.5-flash-lite"
+      }
+    },
+    {
+      "yt": "Lt4puzTb1vg",
+      "title": "How to Throw Torginol Flakes Like a Pro | Perfect Garage Floor",
+      "channel": "Paint Life TV",
+      "channelUrl": "https://www.youtube.com/channel/UCnrhmEmvA_bIRYkBVPqJ4zg",
+      "published": "2026-09-28T02:09:50.224Z",
+      "duration": "",
+      "channelCategory": "Painting & Waterproofing",
+      "suggestedCategory": "Painting & Waterproofing",
+      "description": "",
+      "found": "2026-10-28T02:09:55.757Z",
+      "draft": {
+        "source": "ai",
+        "title": "Throwing Torginol Flakes on Floor Coatings",
+        "summary": "This video demonstrates the correct technique for throwing hybrid flakes onto wet resin floor coatings to ensure even and complete coverage.",
+        "safety": "Wear appropriate foot protection and maintain clear footing when walking on wet floor coatings.",
+        "ppe": [
+          "Safety Glasses",
+          "Work Gloves",
+          "Spiked Shoes",
+          "Dust Mask"
+        ],
+        "steps": [
+          "Hold the flake bucket at hip height.",
+          "Throw hybrid flakes outward in a flat, horizontal trajectory.",
+          "Flick flakes out continuously with steady hand movements.",
+          "Cover the entire resin floor to 100 percent coverage.",
+          "Inspect the floor for thin spots and throw additional flakes on sparse areas."
+        ],
+        "stepsFrom": "ai",
+        "level": "Intermediate",
+        "subject": "Torginol Flakes Mixing",
+        "category": "Painting & Waterproofing",
+        "review": {
+          "relevance": 7,
+          "quality": 8,
+          "recommend": "approve",
+          "reason": "Clear demonstration of proper flake throwing techniques for decorative resin floor coatings.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.6-flash"
+      }
+    },
+    {
+      "yt": "mXkHAARhVtM",
+      "title": "How to Mask Stucco for Spraying (FrogTape Pro Secrets!)",
+      "channel": "Paint Life TV",
+      "channelUrl": "https://www.youtube.com/channel/UCnrhmEmvA_bIRYkBVPqJ4zg",
+      "published": "2026-09-28T02:09:50.224Z",
+      "duration": "",
+      "channelCategory": "Painting & Waterproofing",
+      "suggestedCategory": "Painting & Waterproofing",
+      "description": "",
+      "found": "2026-10-28T02:09:56.985Z",
+      "draft": {
+        "source": "ai",
+        "title": "How to Mask Stucco for Spraying",
+        "summary": "Demonstrates masking a stucco exterior around windows and doors using FrogTape and plastic film before airless spray painting.",
+        "safety": "Ensure stable footing on ladders and use proper fall protection when working at heights.",
+        "ppe": [
+          "Safety Glasses",
+          "Gloves",
+          "Respirator"
+        ],
+        "steps": [
+          "Clean and inspect the stucco surface.",
+          "Apply FrogTape high adhesion tape around trim and windows.",
+          "Cover glass and doors with masking film.",
+          "Press down tape firmly to prevent paint bleed.",
+          "Spray paint the trim and stucco areas."
+        ],
+        "stepsFrom": "ai",
+        "level": "Intermediate",
+        "subject": "Masking Trim for Airless Spraying",
+        "category": "Painting & Waterproofing",
+        "review": {
+          "relevance": 9,
+          "quality": 8,
+          "recommend": "approve",
+          "reason": "Provides clear, practical instructions on masking stucco for spray painting.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.5-flash-lite"
+      }
+    },
+    {
+      "yt": "p8kTnzWvGX4",
+      "title": "This Machine Makes Fence Staining Faster, Cleaner & Profitable",
+      "channel": "Paint Life TV",
+      "channelUrl": "https://www.youtube.com/channel/UCnrhmEmvA_bIRYkBVPqJ4zg",
+      "published": "2026-09-28T02:09:50.224Z",
+      "duration": "",
+      "channelCategory": "Painting & Waterproofing",
+      "suggestedCategory": "Painting & Waterproofing",
+      "description": "",
+      "found": "2026-10-28T02:09:58.280Z",
+      "draft": {
+        "source": "ai",
+        "title": "Using an Expert Stain Machine for Fence Lumber",
+        "summary": "Demonstrates how to use the Expert Stain Machine to pre-stain wooden fence pickets quickly and efficiently before assembly.",
+        "safety": "Ensure proper ventilation and wear gloves to avoid skin contact with wood stain.",
+        "ppe": [
+          "Safety Glasses",
+          "Gloves"
+        ],
+        "steps": [
+          "Set up the Expert Stain Machine outdoors on level ground.",
+          "Fill the reservoir with penetrating wood stain.",
+          "Feed wooden pickets through the rollers to apply stain.",
+          "Adjust roller pressure and top brushes for even coverage.",
+          "Stack stained lumber to dry before installation."
+        ],
+        "stepsFrom": "ai",
+        "level": "Beginner",
+        "subject": "Masking Trim for Airless Spraying",
+        "category": "Painting & Waterproofing",
+        "review": {
+          "relevance": 8,
+          "quality": 8,
+          "recommend": "approve",
+          "reason": "Clear demonstration of specialized wood staining equipment for civil and landscaping projects.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.5-flash-lite"
+      }
+    },
+    {
+      "yt": "D4qpDbnhan4",
+      "title": "From Peeling Paint to Perfect Finish: Exterior Door Jamb Prep Guide",
+      "channel": "Paint Life TV",
+      "channelUrl": "https://www.youtube.com/channel/UCnrhmEmvA_bIRYkBVPqJ4zg",
+      "published": "2026-09-28T02:09:50.224Z",
+      "duration": "",
+      "channelCategory": "Painting & Waterproofing",
+      "suggestedCategory": "Painting & Waterproofing",
+      "description": "",
+      "found": "2026-10-28T02:09:59.649Z",
+      "draft": {
+        "source": "ai",
+        "title": "Repairing Peeling Exterior Door Jambs",
+        "summary": "This video demonstrates how to prep, prime, and paint a peeling exterior door jamb on a newly constructed house.",
+        "safety": "Ensure proper ventilation and wear appropriate protective gear while using chemical primers and sanding tools.",
+        "ppe": [
+          "Safety Glasses",
+          "Work Gloves",
+          "Dust Mask"
+        ],
+        "steps": [
+          "Sand the damaged door jamb using a sander and abrasive sponges.",
+          "Remove weather strips and mask off the surrounding area using tape.",
+          "Apply high-build binding primer to the bare wood and peeling areas.",
+          "Paint the door jamb with two coats of exterior acrylic latex paint."
+        ],
+        "stepsFrom": "ai",
+        "level": "Intermediate",
+        "subject": "Painting & Waterproofing",
+        "category": "Painting & Waterproofing",
+        "review": {
+          "relevance": 9,
+          "quality": 8,
+          "recommend": "approve",
+          "reason": "Provides clear, step-by-step instructions on repairing peeling paint on door jambs.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.5-flash-lite"
+      }
+    },
+    {
+      "yt": "skGkZW5XVkk",
+      "title": "What it takes Tile shower install #tiles #shower #howtotile",
+      "channel": "Sal DiBlasi (tiling & waterproofing)",
+      "channelUrl": "https://www.youtube.com/channel/UCWpu9UZ6aiRTaMuuV8-C0pQ",
+      "published": "2026-09-28T02:09:45.863Z",
+      "duration": "",
+      "channelCategory": "",
+      "suggestedCategory": "Civil Jobs",
+      "description": "",
+      "found": "2026-10-28T02:09:47.608Z",
+      "draft": {
+        "source": "ai",
+        "title": "Installing a Tiled Shower with Waterproofing",
+        "summary": "This video demonstrates the step-by-step process of framing, waterproofing, and tiling a custom shower enclosure.",
+        "safety": "Always wear proper protective equipment when handling power tools and heavy construction materials.",
+        "ppe": [
+          "Safety Glasses",
+          "Work Gloves",
+          "Dust Mask"
+        ],
+        "steps": [
+          "Check and flatten shower walls and floors.",
+          "Install mud pan and waterproofing membrane.",
+          "Perform a flood test to check for leaks.",
+          "Install foam support board for the shower bench.",
+          "Apply mortar and lay floor tiles and wall tiles."
+        ],
+        "stepsFrom": "ai",
+        "level": "Advanced",
+        "subject": "Tile Installation",
+        "category": "Civil Jobs",
+        "review": {
+          "relevance": 8,
+          "quality": 8,
+          "recommend": "approve",
+          "reason": "Provides a comprehensive and clear overview of shower installation and waterproofing methods.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.5-flash-lite"
+      }
+    },
+    {
+      "yt": "3M8oj9zh3Uo",
+      "title": "Installing a DARK Tile",
+      "channel": "Sal DiBlasi (tiling & waterproofing)",
+      "channelUrl": "https://www.youtube.com/channel/UCWpu9UZ6aiRTaMuuV8-C0pQ",
+      "published": "2026-09-28T02:09:45.863Z",
+      "duration": "",
+      "channelCategory": "",
+      "suggestedCategory": "Civil Jobs",
+      "description": "",
+      "found": "2026-10-28T02:09:49.170Z",
+      "draft": {
+        "source": "ai",
+        "title": "Installing Floor Tile on Uncoupling Membrane",
+        "summary": "A technician demonstrates how to apply mortar and install dark floor tiles using leveling spacers and wedges over an uncoupling membrane.",
+        "safety": "Ensure proper ventilation and wear knee protection when kneeling on hard surfaces for extended periods.",
+        "ppe": [
+          "Knee Pads",
+          "Safety Glasses",
+          "Work Gloves"
+        ],
+        "steps": [
+          "Mix and spread mortar onto the uncoupling membrane using a notched trowel.",
+          "Butter the back of the tile with thin-set mortar.",
+          "Press the tile firmly into position on the floor.",
+          "Insert tile leveling clips and wedges into the joints.",
+          "Clean excess mortar from tile joints and surface with a damp sponge."
+        ],
+        "stepsFrom": "ai",
+        "level": "Intermediate",
+        "subject": "Tile Installation",
+        "category": "Civil Jobs",
+        "review": {
+          "relevance": 9,
+          "quality": 8,
+          "recommend": "approve",
+          "reason": "Provides a clear demonstration of professional floor tile installation techniques suitable for civil and maintenance staff.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.5-flash-lite"
+      }
+    },
+    {
+      "yt": "3m0bOJL5Bjs",
+      "title": "Wiring up a 2 Gang Dimmer ",
+      "channel": "GSH Electrical",
+      "channelUrl": "https://www.youtube.com/@GSHElectrical",
+      "published": "2026-09-28T02:09:35.976Z",
+      "duration": "",
+      "channelCategory": "Electrical",
+      "suggestedCategory": "Electrical",
+      "description": "",
+      "found": "2026-10-28T02:09:37.226Z",
+      "draft": {
+        "source": "ai",
+        "title": "Replacing a Two Gang Dimmer Switch",
+        "summary": "Demonstrates safe isolation and replacement of an old light switch with a new two-gang LED dimmer.",
+        "safety": "Always isolate the circuit and lock off the supply before removing any electrical fittings.",
+        "ppe": [
+          "Safety Glasses",
+          "Insulated Gloves"
+        ],
+        "steps": [
+          "Lock off and isolate the electrical circuit at the consumer unit.",
+          "Unscrew the existing switch plate and examine the wiring.",
+          "Disconnect the permanent live, switching line, and bridge link.",
+          "Prepare stripped wire ends to prevent weak copper connections.",
+          "Connect the wiring to the new two-gang dimmer terminals.",
+          "Screw the new dimmer switch back into the wall box."
+        ],
+        "stepsFrom": "ai",
+        "level": "Intermediate",
+        "subject": "Wiring Accessories",
+        "category": "Electrical",
+        "review": {
+          "relevance": 9,
+          "quality": 8,
+          "recommend": "approve",
+          "reason": "Provides a clear, step-by-step procedure for replacing a two-gang dimmer switch safely.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.5-flash-lite"
+      }
+    },
+    {
+      "yt": "Q-j9IsxKZog",
+      "title": "Safety First - 3 Phase Distribution Boards ",
+      "channel": "GSH Electrical",
+      "channelUrl": "https://www.youtube.com/@GSHElectrical",
+      "published": "2026-09-28T02:09:35.976Z",
+      "duration": "",
+      "channelCategory": "Electrical",
+      "suggestedCategory": "Electrical",
+      "description": "",
+      "found": "2026-10-28T02:09:38.518Z",
+      "draft": {
+        "source": "ai",
+        "title": "Isolating Three-Phase Distribution Boards",
+        "summary": "Demonstrates safe isolation and lockout of a three-phase distribution board before maintenance.",
+        "safety": "Always verify dead circuits using a calibrated voltage tester and proving unit.",
+        "ppe": [
+          "Safety Glasses",
+          "Insulated Gloves",
+          "High Visibility Vest"
+        ],
+        "steps": [
+          "Switch off individual circuit breakers.",
+          "Turn off the main distribution switch.",
+          "Lock out the remote isolation switch with a padlock and warning tag.",
+          "Remove the board cover and test for dead voltage."
+        ],
+        "stepsFrom": "ai",
+        "level": "Intermediate",
+        "subject": "Power Distribution",
+        "category": "Electrical",
+        "review": {
+          "relevance": 10,
+          "quality": 9,
+          "recommend": "approve",
+          "reason": "Provides clear, step-by-step guidance on safe three-phase electrical isolation.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.5-flash-lite"
+      }
+    },
+    {
+      "yt": "jAT6WWdV8N4",
+      "title": "Is This Allowed? My Kitchen is Wired in Flex",
+      "channel": "GSH Electrical",
+      "channelUrl": "https://www.youtube.com/@GSHElectrical",
+      "published": "2026-09-28T02:09:35.976Z",
+      "duration": "",
+      "channelCategory": "Electrical",
+      "suggestedCategory": "Electrical",
+      "description": "",
+      "found": "2026-10-28T02:09:39.782Z",
+      "draft": {
+        "source": "ai",
+        "title": "Kitchen Flex Wiring Inspection and Safety",
+        "summary": "An electrician inspects and discusses improper flexible cable wiring used across kitchen electrical circuits and appliances.",
+        "safety": "Always isolate circuits and verify dead before working on electrical wiring.",
+        "ppe": [
+          "Safety Glasses",
+          "Insulated Gloves"
+        ],
+        "steps": [
+          "Inspect external cable routing into the kitchen",
+          "Examine socket outlets and internal flex wiring",
+          "Test electrical circuits with a multifunction tester",
+          "Ferrul cable ends for secure terminal connections",
+          "Review electrical installation safety compliance"
+        ],
+        "stepsFrom": "ai",
+        "level": "Intermediate",
+        "subject": "Wiring Accessories",
+        "category": "Electrical",
+        "review": {
+          "relevance": 9,
+          "quality": 8,
+          "recommend": "approve",
+          "reason": "Provides a practical review of domestic wiring faults and inspection methods for electricians.",
+          "unsafe": [
+            "Working on exposed live wiring during investigation"
+          ],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.5-flash-lite"
+      }
+    },
+    {
+      "yt": "CqM2TkvT2-U",
+      "title": "Airflow Serenity w/ Alex Meaney",
+      "channel": "HVAC School",
+      "channelUrl": "https://www.youtube.com/c/HVACSchool",
+      "published": "2026-09-28T02:09:22.455Z",
+      "duration": "",
+      "channelCategory": "HVAC",
+      "suggestedCategory": "HVAC",
+      "description": "",
+      "found": "2026-10-28T02:09:27.041Z",
+      "draft": {
+        "source": "ai",
+        "title": "Airflow Serenity and System Balance Fundamentals",
+        "summary": "Alex Meaney discusses HVAC airflow theory, balancing, friction losses, and measuring methods for better system performance.",
+        "safety": "Ensure power is disconnected and lockout procedures are followed before servicing air handler units.",
+        "ppe": [
+          "Safety Glasses",
+          "Work Gloves",
+          "Hard Hat"
+        ],
+        "steps": [
+          "Identify airflow issues using customer feedback and room comfort.",
+          "Perform a load calculation to determine required CFM.",
+          "Measure airflow using anemometers, manometers, or flow grids.",
+          "Reduce friction loss along the duct path to improve system flow.",
+          "Balance airflow by adjusting dampers for proper room distribution."
+        ],
+        "stepsFrom": "ai",
+        "level": "Intermediate",
+        "subject": "Fundamentals",
+        "category": "HVAC",
+        "review": {
+          "relevance": 9,
+          "quality": 8,
+          "recommend": "approve",
+          "reason": "Clear explanation of airflow theory and practical diagnostic methods for technicians.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.5-flash-lite"
+      }
+    },
+    {
+      "yt": "rSnOG-oMC5w",
+      "title": "Basic Refrigeration: Why We Use Temperature Instead of Pressure",
+      "channel": "HVAC School",
+      "channelUrl": "https://www.youtube.com/c/HVACSchool",
+      "published": "2026-09-28T02:09:22.455Z",
+      "duration": "",
+      "channelCategory": "HVAC",
+      "suggestedCategory": "HVAC",
+      "description": "",
+      "found": "2026-10-28T02:09:28.103Z",
+      "draft": {
+        "source": "ai",
+        "title": "Understanding Refrigeration Temperature and Pressure",
+        "summary": "An instructor teaches technicians why refrigeration systems use temperature instead of pressure to evaluate performance.",
+        "safety": "Ensure proper electrical and system safety before servicing refrigerant lines.",
+        "ppe": [
+          "Safety Glasses",
+          "Gloves"
+        ],
+        "steps": [
+          "Convert pressure readings to saturation temperatures",
+          "Compare air temperature to evaporator and condenser temperatures",
+          "Evaluate subcooling to check high-side refrigerant charge",
+          "Evaluate superheat to check low-side refrigerant charge"
+        ],
+        "stepsFrom": "ai",
+        "level": "Beginner",
+        "subject": "Refrigerant & Diagnostics",
+        "category": "HVAC",
+        "review": {
+          "relevance": 10,
+          "quality": 8,
+          "recommend": "approve",
+          "reason": "Clear and detailed explanation of refrigeration theory using temperature and pressure.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.5-flash-lite"
+      }
+    },
+    {
+      "yt": "vSZmi3yhNsc",
+      "title": "Less Compressor, More Suction Pressure - Short #304",
+      "channel": "HVAC School",
+      "channelUrl": "https://www.youtube.com/c/HVACSchool",
+      "published": "2026-09-28T02:09:22.455Z",
+      "duration": "",
+      "channelCategory": "HVAC",
+      "suggestedCategory": "HVAC",
+      "description": "",
+      "found": "2026-10-28T02:09:29.047Z",
+      "draft": {
+        "source": "rules",
+        "title": "Less Compressor, More Suction Pressure",
+        "summary": "",
+        "safety": "Isolate power at the unit before opening panels, and watch for hot, cold and moving parts.",
+        "ppe": [
+          "Safety Glasses",
+          "Work Gloves",
+          "Safety Shoes"
+        ],
+        "steps": [
+          "Isolate power to the unit",
+          "Inspect the equipment and note any faults",
+          "Carry out the work as shown in the video",
+          "Check connections, fixings and drains",
+          "Restore power and check the unit runs correctly",
+          "Record readings and the work done"
+        ],
+        "stepsFrom": "general",
+        "level": "Intermediate",
+        "subject": "Preventive Maintenance"
+      },
+      "aiTries": 1,
+      "aiError": "This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Int"
+    },
+    {
+      "yt": "RlW4P-zL81Q",
+      "title": "Mastering Your Meter Advanced Functionality with Louise Kellar (UEi Test Instruments)",
+      "channel": "HVAC School",
+      "channelUrl": "https://www.youtube.com/c/HVACSchool",
+      "published": "2026-09-28T02:09:22.455Z",
+      "duration": "",
+      "channelCategory": "HVAC",
+      "suggestedCategory": "HVAC",
+      "description": "",
+      "found": "2026-10-28T02:09:30.372Z",
+      "draft": {
+        "source": "ai",
+        "title": "Advanced Multimeter Functions for HVAC Diagnostics",
+        "summary": "An experienced trainer explains advanced multimeter features and measurements for HVAC technicians.",
+        "safety": "Always verify meter settings and test leads before measuring electrical circuits.",
+        "ppe": [
+          "Safety Glasses",
+          "Insulated Gloves"
+        ],
+        "steps": [
+          "Understand clamp meter amperage ranges",
+          "Use Low Z mode to filter ghost voltage",
+          "Select correct meter functions for testing",
+          "Check continuity and resistance safely"
+        ],
+        "stepsFrom": "ai",
+        "level": "Advanced",
+        "subject": "Electrical Diagnostics",
+        "category": "Electrical",
+        "review": {
+          "relevance": 8,
+          "quality": 7,
+          "recommend": "approve",
+          "reason": "Provides valuable technical depth on advanced multimeter features for HVAC technicians.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.5-flash-lite"
+      }
+    },
+    {
+      "yt": "laaq1VRvPo8",
+      "title": "How to Set Up and Run a Blower Door Test 3D",
+      "channel": "HVAC School",
+      "channelUrl": "https://www.youtube.com/c/HVACSchool",
+      "published": "2026-09-28T02:09:22.455Z",
+      "duration": "",
+      "channelCategory": "HVAC",
+      "suggestedCategory": "HVAC",
+      "description": "",
+      "found": "2026-10-28T02:09:31.354Z",
+      "draft": {
+        "source": "ai",
+        "title": "Blower Door Test Procedure",
+        "summary": "This video demonstrates how to set up and conduct a blower door test using the Model 5 Digital Minneapolis system and the AutoTest app.",
+        "safety": "Turn off all fans and combustion appliances before testing to prevent backdrafting hazards.",
+        "ppe": [
+          "Safety Glasses",
+          "Gloves"
+        ],
+        "steps": [
+          "Prepare the house by closing all windows and exterior doors.",
+          "Open all interior doors to create a single pressure zone.",
+          "Install the adjustable aluminum frame and nylon panel in an exterior doorway.",
+          "Set up the blower door fan and connect the pressure gauge and reference tubing.",
+          "Run the baseline test and execute the blower door test using the AutoTest app."
+        ],
+        "stepsFrom": "ai",
+        "level": "Intermediate",
+        "subject": "Preventive Maintenance",
+        "category": "HVAC",
+        "review": {
+          "relevance": 9,
+          "quality": 10,
+          "recommend": "approve",
+          "reason": "Clear 3D animation and step-by-step instructions make blower door testing easy to understand.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.5-flash-lite"
+      }
+    },
+    {
+      "yt": "2-b2vlq67Do",
+      "title": "Aluminium Winding Fan is Good or Bad for Home ? Know the Truth @TheElectricalGuy",
+      "channel": "The Electrical Guy",
+      "channelUrl": "https://www.youtube.com/@TheElectricalGuy",
+      "published": "2026-08-29T02:09:33.453Z",
+      "duration": "",
+      "channelCategory": "Electrical",
+      "suggestedCategory": "Electrical",
+      "description": "",
+      "found": "2026-10-28T02:09:34.975Z",
+      "draft": {
+        "source": "rules",
+        "title": "Aluminium Winding Fan Is Good or Bad for Home ? Know the Truth…",
+        "summary": "",
+        "safety": "Isolate and prove dead before any work. Only qualified staff may work near live parts.",
+        "ppe": [
+          "Insulated Gloves",
+          "Safety Glasses",
+          "Safety Shoes"
+        ],
+        "steps": [
+          "Get permission and the right permit for the job",
+          "Isolate the circuit and lock it off",
+          "Prove dead with a tested voltage tester",
+          "Carry out the work as shown in the video",
+          "Check all connections are tight and covers fitted",
+          "Restore power and test the installation"
+        ],
+        "stepsFrom": "general",
+        "level": "Intermediate",
+        "subject": ""
+      },
+      "aiTries": 1,
+      "aiError": "This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Int"
+    }
+  ],
   "rejected": [
     "je0BsLY5nZw",
     "NcgO12kdTVs",
