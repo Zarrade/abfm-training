@@ -87,48 +87,6 @@
   },
   "queue": [
     {
-      "yt": "RlW4P-zL81Q",
-      "title": "Mastering Your Meter Advanced Functionality with Louise Kellar (UEi Test Instruments)",
-      "channel": "HVAC School",
-      "channelUrl": "https://www.youtube.com/c/HVACSchool",
-      "published": "2026-09-28T02:09:22.455Z",
-      "duration": "",
-      "channelCategory": "HVAC",
-      "suggestedCategory": "HVAC",
-      "description": "",
-      "found": "2026-10-28T02:09:30.372Z",
-      "draft": {
-        "source": "ai",
-        "title": "Advanced Multimeter Functions for HVAC Diagnostics",
-        "summary": "An experienced trainer explains advanced multimeter features and measurements for HVAC technicians.",
-        "safety": "Always verify meter settings and test leads before measuring electrical circuits.",
-        "ppe": [
-          "Safety Glasses",
-          "Insulated Gloves"
-        ],
-        "steps": [
-          "Understand clamp meter amperage ranges",
-          "Use Low Z mode to filter ghost voltage",
-          "Select correct meter functions for testing",
-          "Check continuity and resistance safely"
-        ],
-        "stepsFrom": "ai",
-        "level": "Advanced",
-        "subject": "Electrical Diagnostics",
-        "category": "Electrical",
-        "review": {
-          "relevance": 8,
-          "quality": 7,
-          "recommend": "approve",
-          "reason": "Provides valuable technical depth on advanced multimeter features for HVAC technicians.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
-    },
-    {
       "yt": "tbXKvnKZrYs",
       "title": "Visualize Superheat and Subcooling ",
       "channel": "Love2HVAC with Ty Branaman",
