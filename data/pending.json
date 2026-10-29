@@ -123,50 +123,6 @@
       "aiError": "Gemini took too long"
     },
     {
-      "yt": "7o7st1IPAkM",
-      "title": "Sherwin Williams Rain Fresh Review: Is It REALLY Worth It?",
-      "channel": "Paint Life TV",
-      "channelUrl": "https://www.youtube.com/channel/UCnrhmEmvA_bIRYkBVPqJ4zg",
-      "published": "2026-10-07T02:09:50.224Z",
-      "duration": "",
-      "channelCategory": "Painting & Waterproofing",
-      "suggestedCategory": "Painting & Waterproofing",
-      "description": "",
-      "found": "2026-10-28T02:09:52.990Z",
-      "draft": {
-        "source": "ai",
-        "title": "Sherwin Williams Rain Refresh Paint Review",
-        "summary": "An experienced painter evaluates Sherwin Williams Emerald Rain Refresh exterior paint, detailing its coverage, application viscosity, overspray control, and masking tape adhesion.",
-        "safety": "Wear appropriate respiratory protection and eye safety gear when airless spraying exterior paint.",
-        "ppe": [
-          "Safety Glasses",
-          "Respirator Mask",
-          "Work Gloves"
-        ],
-        "steps": [
-          "Mix the paint thoroughly using a drill mixer before application.",
-          "Apply paint using an airless sprayer with a 515 tip at 2200 PSI.",
-          "Overlap spray passes by 50 percent to achieve full one-coat coverage.",
-          "Use a mini roller to cut in trim and window frames.",
-          "Allow paint to cure fully before applying masking tape on top."
-        ],
-        "stepsFrom": "ai",
-        "level": "Intermediate",
-        "subject": "Masking Trim for Airless Spraying",
-        "category": "Painting & Waterproofing",
-        "review": {
-          "relevance": 6,
-          "quality": 8,
-          "recommend": "maybe",
-          "reason": "Offers helpful practical insights on exterior paint application and masking behavior, though presented as a brand review.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.6-flash"
-      }
-    },
-    {
       "yt": "HdIB67dfv1A",
       "title": "Tech, Mechanic, or Craftsman? Finding Your Fit in HVAC",
       "channel": "HVAC School",
@@ -798,6 +754,7 @@
     "jeOfmI4osm4",
     "f9ssVq2G7KU",
     "EsKARwICOtY",
-    "vSZmi3yhNsc"
+    "vSZmi3yhNsc",
+    "7o7st1IPAkM"
   ]
 }
