@@ -1,92 +1,170 @@
 {
-  "lastRun": "2026-10-28T02:10:02.574Z",
+  "lastRun": "2026-10-29T02:11:58.845Z",
   "channelStatus": {
     "https://www.youtube.com/@EngineeringMindset": {
       "id": "UCk0fGHsCEzGig-rSzkfCjMw",
-      "checked": "2026-10-28T02:09:21.452Z",
+      "checked": "2026-10-29T02:11:40.104Z",
       "lastFound": 0,
       "via": "page"
     },
     "https://www.youtube.com/@ACServiceTech": {
       "id": "UCYohLjTaUZLF3-JjttxG_CA",
-      "checked": "2026-10-28T02:09:32.352Z",
+      "checked": "2026-10-29T02:11:43.395Z",
       "lastFound": 0,
       "via": "page"
     },
     "https://www.youtube.com/@TheElectricalGuy": {
       "id": "UCdKPm5KM99O75NtArFkMDDA",
-      "checked": "2026-10-28T02:09:34.975Z",
-      "lastFound": 1,
+      "checked": "2026-10-29T02:11:44.469Z",
+      "lastFound": 0,
       "via": "page"
     },
     "https://www.youtube.com/@GSHElectrical": {
       "id": "UCgtbE9w_d-u2AvPp3WBlPfQ",
-      "checked": "2026-10-28T02:09:39.782Z",
-      "lastFound": 3,
+      "checked": "2026-10-29T02:11:45.532Z",
+      "lastFound": 0,
       "via": "page"
     },
     "https://www.youtube.com/@jwflame": {
       "id": "UC2uFFhnMKyF82UY2TbXRaNg",
-      "checked": "2026-10-28T02:09:40.840Z",
+      "checked": "2026-10-29T02:11:46.821Z",
       "lastFound": 0,
       "via": "page"
     },
     "https://www.youtube.com/@RogerWakefield": {
       "id": "UCGIMKh92vaL0_Yc0u4GYhHA",
-      "checked": "2026-10-28T02:09:41.879Z",
+      "checked": "2026-10-29T02:11:47.864Z",
       "lastFound": 0,
       "via": "page"
     },
     "https://www.youtube.com/c/HVACSchool": {
       "id": "UCdLlUhD9LUGm0-NTYDASPFA",
-      "checked": "2026-10-28T02:09:31.354Z",
-      "lastFound": 8,
+      "checked": "2026-10-29T02:11:42.437Z",
+      "lastFound": 1,
       "via": "page"
     },
     "https://www.youtube.com/channel/UCIoD-SEdUWMA74tWXRMyCZQ": {
       "id": "UCIoD-SEdUWMA74tWXRMyCZQ",
-      "checked": "2026-10-28T02:09:42.836Z",
-      "lastFound": 0,
+      "checked": "2026-10-29T02:11:50.231Z",
+      "lastFound": 1,
       "via": "page"
     },
     "https://www.youtube.com/c/Ductdudes": {
       "id": "UCGGX5M9ISk9Zwi6pfa6gk3w",
-      "checked": "2026-10-28T02:09:43.819Z",
+      "checked": "2026-10-29T02:11:51.679Z",
       "lastFound": 0,
       "via": "page"
     },
     "https://www.youtube.com/channel/UCbZdXox6mKHdcT2QdVT-goQ": {
       "id": "UCbZdXox6mKHdcT2QdVT-goQ",
-      "checked": "2026-10-28T02:09:44.810Z",
+      "checked": "2026-10-29T02:11:52.817Z",
       "lastFound": 0,
       "via": "page"
     },
     "https://www.youtube.com/channel/UCWpu9UZ6aiRTaMuuV8-C0pQ": {
       "id": "UCWpu9UZ6aiRTaMuuV8-C0pQ",
-      "checked": "2026-10-28T02:09:49.170Z",
-      "lastFound": 2,
+      "checked": "2026-10-29T02:11:53.933Z",
+      "lastFound": 0,
       "via": "page"
     },
     "https://www.youtube.com/channel/UCnrhmEmvA_bIRYkBVPqJ4zg": {
       "id": "UCnrhmEmvA_bIRYkBVPqJ4zg",
-      "checked": "2026-10-28T02:09:59.649Z",
-      "lastFound": 7,
-      "via": "page"
+      "checked": "2026-10-29T02:11:54.840Z",
+      "lastFound": 0
     },
     "https://www.youtube.com/channel/UCR1ksygazAOr59yLZ4Mp5tA": {
       "id": "UCR1ksygazAOr59yLZ4Mp5tA",
-      "checked": "2026-10-28T02:10:00.778Z",
-      "lastFound": 0,
+      "checked": "2026-10-29T02:11:56.988Z",
+      "lastFound": 1,
       "via": "page"
     },
     "https://www.youtube.com/channel/UCXOzd-KAiI6fGx5wfrnsHTA": {
       "id": "UCXOzd-KAiI6fGx5wfrnsHTA",
-      "checked": "2026-10-28T02:10:01.860Z",
+      "checked": "2026-10-29T02:11:58.018Z",
       "lastFound": 0,
       "via": "page"
     }
   },
   "queue": [
+    {
+      "yt": "KrrbmWSa1ug",
+      "title": "Carbon Monoxide and Gas Leaks: Monitor, Detector and Flame Checks",
+      "channel": "HVAC School",
+      "channelUrl": "https://www.youtube.com/c/HVACSchool",
+      "published": "2026-10-28T11:11:41.077Z",
+      "duration": "",
+      "channelCategory": "HVAC",
+      "suggestedCategory": "HVAC",
+      "description": "",
+      "found": "2026-10-29T02:11:42.437Z",
+      "draft": {
+        "source": "ai",
+        "title": "Carbon Monoxide and Gas Leak Safety Basics",
+        "summary": "An instructor explains the crucial safety differences between carbon monoxide and gas leaks, highlighting low-level CO monitoring, combustible gas detection, and flame inspections.",
+        "safety": "Always use low-level carbon monoxide monitors and gas leak detectors when servicing combustion heating equipment to prevent severe injury or fatal exposure.",
+        "ppe": [
+          "Safety Glasses",
+          "Work Gloves"
+        ],
+        "steps": [
+          "Carry a low-level carbon monoxide monitor with a digital display.",
+          "Use a combustible gas leak detector around all gas appliances.",
+          "Perform visual inspections on flue pipes and appliance ventilation.",
+          "Ensure adequate oxygen supply to enclosed equipment closets.",
+          "Inspect burner flames to confirm they burn steady and blue."
+        ],
+        "stepsFrom": "ai",
+        "level": "Beginner",
+        "subject": "Fundamentals",
+        "category": "HVAC",
+        "review": {
+          "relevance": 8,
+          "quality": 8,
+          "recommend": "approve",
+          "reason": "Clear, practical lecture explaining safety checks for gas heating appliances and carbon monoxide risks.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.6-flash"
+      }
+    },
+    {
+      "yt": "IlxIEBFE20w",
+      "title": "How to Replace a Broken Sprinkler Head | Mower Damage Repair | Sprinkler Warehouse",
+      "channel": "Sprinkler Warehouse (irrigation)",
+      "channelUrl": "https://www.youtube.com/channel/UCR1ksygazAOr59yLZ4Mp5tA",
+      "published": "2026-10-23T02:11:55.798Z",
+      "duration": "",
+      "channelCategory": "Landscaping",
+      "suggestedCategory": "Landscaping",
+      "description": "",
+      "found": "2026-10-29T02:11:56.988Z",
+      "draft": {
+        "source": "rules",
+        "title": "How to Replace a Broken Sprinkler Head: Mower Damage Repair",
+        "summary": "",
+        "safety": "Inform the building and the alarm monitoring company before testing, and never leave a system disabled.",
+        "ppe": [
+          "Safety Glasses",
+          "Work Gloves",
+          "Safety Shoes"
+        ],
+        "steps": [
+          "Check the main valve and backflow are fully open",
+          "Run one zone at a time to find where the pressure drops",
+          "Look for leaks, broken heads and partly closed valves",
+          "Clean or replace blocked filters and nozzles",
+          "Check the valve diaphragm and solenoid",
+          "Test the zone again and adjust the heads"
+        ],
+        "stepsFrom": "topic",
+        "level": "Intermediate",
+        "subject": "Irrigation Valve Troubleshooting"
+      },
+      "aiTries": 1,
+      "aiError": "Gemini took too long"
+    },
     {
       "yt": "e51Cw-Cqqu4",
       "title": "How to Install a Torginol Pearl Essence Metallic Garage Floor Like a Pro",
@@ -838,29 +916,37 @@
       "description": "",
       "found": "2026-10-28T02:09:29.047Z",
       "draft": {
-        "source": "rules",
-        "title": "Less Compressor, More Suction Pressure",
-        "summary": "",
-        "safety": "Isolate power at the unit before opening panels, and watch for hot, cold and moving parts.",
+        "source": "ai",
+        "title": "Compressor Staging and Suction Pressure Changes",
+        "summary": "This audio lesson explains why suction pressure rises when a compressor unloads or shifts to a lower stage. It describes how changing pumping capacity, evaporator load, and blower airflow interact to reach a new operating balance.",
+        "safety": "Ensure proper electrical lockout and tagout procedures before accessing compressor compartments or electrical terminals.",
         "ppe": [
           "Safety Glasses",
-          "Work Gloves",
-          "Safety Shoes"
+          "Safety Boots"
         ],
         "steps": [
-          "Isolate power to the unit",
-          "Inspect the equipment and note any faults",
-          "Carry out the work as shown in the video",
-          "Check connections, fixings and drains",
-          "Restore power and check the unit runs correctly",
-          "Record readings and the work done"
+          "Recognize that staging down reduces compressor pumping capacity.",
+          "Understand that unchanged evaporator heat load causes suction pressure to rise.",
+          "Check if the indoor blower speed drops alongside compressor staging.",
+          "Allow the system to reach thermal equilibrium before recording pressures.",
+          "Perform refrigerant charging only when the system runs at full capacity.",
+          "Verify manufacturer staging sequence before suspecting compressor failure."
         ],
-        "stepsFrom": "general",
+        "stepsFrom": "ai",
         "level": "Intermediate",
-        "subject": "Preventive Maintenance"
-      },
-      "aiTries": 1,
-      "aiError": "This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Int"
+        "subject": "Refrigerant & Diagnostics",
+        "category": "HVAC",
+        "review": {
+          "relevance": 4,
+          "quality": 2,
+          "recommend": "reject",
+          "reason": "This is an audio podcast with a static graphic and provides no practical visuals or physical demonstrations.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.8-flash"
+      }
     },
     {
       "yt": "RlW4P-zL81Q",
@@ -948,6 +1034,50 @@
       }
     },
     {
+      "yt": "tbXKvnKZrYs",
+      "title": "Visualize Superheat and Subcooling ",
+      "channel": "Love2HVAC with Ty Branaman",
+      "channelUrl": "https://www.youtube.com/channel/UCIoD-SEdUWMA74tWXRMyCZQ",
+      "published": "2026-08-30T02:11:48.946Z",
+      "duration": "",
+      "channelCategory": "HVAC",
+      "suggestedCategory": "HVAC",
+      "description": "",
+      "found": "2026-10-29T02:11:50.231Z",
+      "draft": {
+        "source": "ai",
+        "title": "Understanding Superheat and Subcooling Diagnostics",
+        "summary": "This video explains how superheat and subcooling measurements help diagnose refrigeration system issues. It demonstrates how different metering devices react to overcharging, undercharging, and restrictions.",
+        "safety": "Wear appropriate personal protective equipment when handling high-pressure refrigerant equipment and servicing HVAC systems.",
+        "ppe": [
+          "Safety Glasses",
+          "Protective Gloves"
+        ],
+        "steps": [
+          "Verify proper airflow across system coils before taking diagnostic readings.",
+          "Determine target superheat and subcooling values for the specific metering device.",
+          "Measure superheat to evaluate refrigerant state and saturation in evaporator coil.",
+          "Measure subcooling to assess liquid refrigerant levels stacked inside condenser coil.",
+          "Diagnose system restriction when subcooling is high and superheat is high.",
+          "Identify refrigerant overcharge when subcooling is high and superheat is low."
+        ],
+        "stepsFrom": "ai",
+        "level": "Intermediate",
+        "subject": "Refrigerant & Diagnostics",
+        "category": "HVAC",
+        "review": {
+          "relevance": 9,
+          "quality": 8,
+          "recommend": "approve",
+          "reason": "Clear visual diagram and bottle models explain core HVAC diagnostic concepts effectively.",
+          "unsafe": [],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.6-flash"
+      }
+    },
+    {
       "yt": "2-b2vlq67Do",
       "title": "Aluminium Winding Fan is Good or Bad for Home ? Know the Truth @TheElectricalGuy",
       "channel": "The Electrical Guy",
@@ -980,8 +1110,8 @@
         "level": "Intermediate",
         "subject": ""
       },
-      "aiTries": 1,
-      "aiError": "This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Int"
+      "aiTries": 2,
+      "aiError": "Gemini took too long"
     }
   ],
   "rejected": [
