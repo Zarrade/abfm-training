@@ -87,51 +87,6 @@
   },
   "queue": [
     {
-      "yt": "Lt4puzTb1vg",
-      "title": "How to Throw Torginol Flakes Like a Pro | Perfect Garage Floor",
-      "channel": "Paint Life TV",
-      "channelUrl": "https://www.youtube.com/channel/UCnrhmEmvA_bIRYkBVPqJ4zg",
-      "published": "2026-09-28T02:09:50.224Z",
-      "duration": "",
-      "channelCategory": "Painting & Waterproofing",
-      "suggestedCategory": "Painting & Waterproofing",
-      "description": "",
-      "found": "2026-10-28T02:09:55.757Z",
-      "draft": {
-        "source": "ai",
-        "title": "Throwing Torginol Flakes on Floor Coatings",
-        "summary": "This video demonstrates the correct technique for throwing hybrid flakes onto wet resin floor coatings to ensure even and complete coverage.",
-        "safety": "Wear appropriate foot protection and maintain clear footing when walking on wet floor coatings.",
-        "ppe": [
-          "Safety Glasses",
-          "Work Gloves",
-          "Spiked Shoes",
-          "Dust Mask"
-        ],
-        "steps": [
-          "Hold the flake bucket at hip height.",
-          "Throw hybrid flakes outward in a flat, horizontal trajectory.",
-          "Flick flakes out continuously with steady hand movements.",
-          "Cover the entire resin floor to 100 percent coverage.",
-          "Inspect the floor for thin spots and throw additional flakes on sparse areas."
-        ],
-        "stepsFrom": "ai",
-        "level": "Intermediate",
-        "subject": "Torginol Flakes Mixing",
-        "category": "Painting & Waterproofing",
-        "review": {
-          "relevance": 7,
-          "quality": 8,
-          "recommend": "approve",
-          "reason": "Clear demonstration of proper flake throwing techniques for decorative resin floor coatings.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.6-flash"
-      }
-    },
-    {
       "yt": "p8kTnzWvGX4",
       "title": "This Machine Makes Fence Staining Faster, Cleaner & Profitable",
       "channel": "Paint Life TV",
