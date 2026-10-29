@@ -87,50 +87,6 @@
   },
   "queue": [
     {
-      "yt": "tbXKvnKZrYs",
-      "title": "Visualize Superheat and Subcooling ",
-      "channel": "Love2HVAC with Ty Branaman",
-      "channelUrl": "https://www.youtube.com/channel/UCIoD-SEdUWMA74tWXRMyCZQ",
-      "published": "2026-08-30T02:11:48.946Z",
-      "duration": "",
-      "channelCategory": "HVAC",
-      "suggestedCategory": "HVAC",
-      "description": "",
-      "found": "2026-10-29T02:11:50.231Z",
-      "draft": {
-        "source": "ai",
-        "title": "Understanding Superheat and Subcooling Diagnostics",
-        "summary": "This video explains how superheat and subcooling measurements help diagnose refrigeration system issues. It demonstrates how different metering devices react to overcharging, undercharging, and restrictions.",
-        "safety": "Wear appropriate personal protective equipment when handling high-pressure refrigerant equipment and servicing HVAC systems.",
-        "ppe": [
-          "Safety Glasses",
-          "Protective Gloves"
-        ],
-        "steps": [
-          "Verify proper airflow across system coils before taking diagnostic readings.",
-          "Determine target superheat and subcooling values for the specific metering device.",
-          "Measure superheat to evaluate refrigerant state and saturation in evaporator coil.",
-          "Measure subcooling to assess liquid refrigerant levels stacked inside condenser coil.",
-          "Diagnose system restriction when subcooling is high and superheat is high.",
-          "Identify refrigerant overcharge when subcooling is high and superheat is low."
-        ],
-        "stepsFrom": "ai",
-        "level": "Intermediate",
-        "subject": "Refrigerant & Diagnostics",
-        "category": "HVAC",
-        "review": {
-          "relevance": 9,
-          "quality": 8,
-          "recommend": "approve",
-          "reason": "Clear visual diagram and bottle models explain core HVAC diagnostic concepts effectively.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.6-flash"
-      }
-    },
-    {
       "yt": "2-b2vlq67Do",
       "title": "Aluminium Winding Fan is Good or Bad for Home ? Know the Truth @TheElectricalGuy",
       "channel": "The Electrical Guy",
