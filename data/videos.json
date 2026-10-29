@@ -2,6 +2,40 @@
   "updated": "2026-10-29",
   "videos": [
     {
+      "id": "hvac-QxYAdJGyqCg",
+      "yt": "QxYAdJGyqCg",
+      "title": "Fixing Power Interruption Issues on Infinity Controllers",
+      "category": "HVAC",
+      "subject": "Electrical Diagnostics",
+      "level": "Intermediate",
+      "channel": "HVAC School",
+      "duration": "",
+      "added": "2026-10-29",
+      "summary": "The presenter explains how power blips cause Infinity controllers to stay off and run the fan continuously, and demonstrates using a delay timer to fix it.",
+      "safety": "Always turn off power at the breaker before working on electrical components.",
+      "ppe": [
+        "Safety Glasses",
+        "Work Gloves"
+      ],
+      "steps": [
+        "Identify power blip symptoms causing the controller to stay off.",
+        "Recognize that the fan runs continuously due to defaulted 24-volt controls.",
+        "Power cycle the controller by turning off the breaker for sixty seconds.",
+        "Install a delay timer to prevent the issue during future power blips."
+      ],
+      "gemini": {
+        "date": "2026-10-29",
+        "relevance": 9,
+        "quality": 8,
+        "recommend": "approve",
+        "reason": "Clear diagnostic explanation and solution for a common thermostat controller issue.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      },
+      "ytTitle": "Technical Solutions for Infinity Controllers"
+    },
+    {
       "id": "paint-e51Cw-Cqqu4",
       "yt": "e51Cw-Cqqu4",
       "title": "Installing a Metallic Garage Epoxy Floor",
