@@ -688,49 +688,6 @@
       }
     },
     {
-      "yt": "Q-j9IsxKZog",
-      "title": "Safety First - 3 Phase Distribution Boards ",
-      "channel": "GSH Electrical",
-      "channelUrl": "https://www.youtube.com/@GSHElectrical",
-      "published": "2026-09-28T02:09:35.976Z",
-      "duration": "",
-      "channelCategory": "Electrical",
-      "suggestedCategory": "Electrical",
-      "description": "",
-      "found": "2026-10-28T02:09:38.518Z",
-      "draft": {
-        "source": "ai",
-        "title": "Isolating Three-Phase Distribution Boards",
-        "summary": "Demonstrates safe isolation and lockout of a three-phase distribution board before maintenance.",
-        "safety": "Always verify dead circuits using a calibrated voltage tester and proving unit.",
-        "ppe": [
-          "Safety Glasses",
-          "Insulated Gloves",
-          "High Visibility Vest"
-        ],
-        "steps": [
-          "Switch off individual circuit breakers.",
-          "Turn off the main distribution switch.",
-          "Lock out the remote isolation switch with a padlock and warning tag.",
-          "Remove the board cover and test for dead voltage."
-        ],
-        "stepsFrom": "ai",
-        "level": "Intermediate",
-        "subject": "Power Distribution",
-        "category": "Electrical",
-        "review": {
-          "relevance": 10,
-          "quality": 9,
-          "recommend": "approve",
-          "reason": "Provides clear, step-by-step guidance on safe three-phase electrical isolation.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
-    },
-    {
       "yt": "jAT6WWdV8N4",
       "title": "Is This Allowed? My Kitchen is Wired in Flex",
       "channel": "GSH Electrical",
