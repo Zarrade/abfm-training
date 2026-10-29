@@ -297,50 +297,6 @@
       }
     },
     {
-      "yt": "3M8oj9zh3Uo",
-      "title": "Installing a DARK Tile",
-      "channel": "Sal DiBlasi (tiling & waterproofing)",
-      "channelUrl": "https://www.youtube.com/channel/UCWpu9UZ6aiRTaMuuV8-C0pQ",
-      "published": "2026-09-28T02:09:45.863Z",
-      "duration": "",
-      "channelCategory": "",
-      "suggestedCategory": "Civil Jobs",
-      "description": "",
-      "found": "2026-10-28T02:09:49.170Z",
-      "draft": {
-        "source": "ai",
-        "title": "Installing Floor Tile on Uncoupling Membrane",
-        "summary": "A technician demonstrates how to apply mortar and install dark floor tiles using leveling spacers and wedges over an uncoupling membrane.",
-        "safety": "Ensure proper ventilation and wear knee protection when kneeling on hard surfaces for extended periods.",
-        "ppe": [
-          "Knee Pads",
-          "Safety Glasses",
-          "Work Gloves"
-        ],
-        "steps": [
-          "Mix and spread mortar onto the uncoupling membrane using a notched trowel.",
-          "Butter the back of the tile with thin-set mortar.",
-          "Press the tile firmly into position on the floor.",
-          "Insert tile leveling clips and wedges into the joints.",
-          "Clean excess mortar from tile joints and surface with a damp sponge."
-        ],
-        "stepsFrom": "ai",
-        "level": "Intermediate",
-        "subject": "Tile Installation",
-        "category": "Civil Jobs",
-        "review": {
-          "relevance": 9,
-          "quality": 8,
-          "recommend": "approve",
-          "reason": "Provides a clear demonstration of professional floor tile installation techniques suitable for civil and maintenance staff.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
-    },
-    {
       "yt": "3m0bOJL5Bjs",
       "title": "Wiring up a 2 Gang Dimmer ",
       "channel": "GSH Electrical",
