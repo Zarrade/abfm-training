@@ -2,6 +2,41 @@
   "updated": "2026-10-29",
   "videos": [
     {
+      "id": "paint--8gLPN1W_o0",
+      "yt": "-8gLPN1W_o0",
+      "title": "Sponge Caulking Tips And Tricks",
+      "category": "Painting & Waterproofing",
+      "subject": "Masking Trim for Airless Spraying",
+      "level": "Beginner",
+      "channel": "Paint Life TV",
+      "duration": "",
+      "added": "2026-10-29",
+      "summary": "This video demonstrates professional techniques and tips for applying and smoothing caulk using a sponge for a clean finish.",
+      "safety": "Ensure proper ventilation when working with caulking products and keep cleaning buckets stable to prevent slips.",
+      "ppe": [
+        "Work Gloves",
+        "Safety Glasses"
+      ],
+      "steps": [
+        "Scrape away protruding nails and uneven surfaces.",
+        "Set loose nails with a nail set tool.",
+        "Cut the caulk tube nozzle at a 45-degree angle.",
+        "Apply caulk evenly along gaps while maintaining a steady speed.",
+        "Smooth the caulk bead using a wet finger or sponge."
+      ],
+      "gemini": {
+        "date": "2026-10-29",
+        "relevance": 9,
+        "quality": 8,
+        "recommend": "approve",
+        "reason": "Clear and practical demonstration of sponge caulking techniques suitable for painter training.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      },
+      "ytTitle": "Sponge Caulking Tips & Tricks | Get a Perfect Caulk Bead Every Time"
+    },
+    {
       "id": "hvac-QxYAdJGyqCg",
       "yt": "QxYAdJGyqCg",
       "title": "Fixing Power Interruption Issues on Infinity Controllers",
