@@ -2,6 +2,41 @@
   "updated": "2026-10-29",
   "videos": [
     {
+      "id": "paint-p8kTnzWvGX4",
+      "yt": "p8kTnzWvGX4",
+      "title": "Using an Expert Stain Machine for Fence Lumber",
+      "category": "Painting & Waterproofing",
+      "subject": "Masking Trim for Airless Spraying",
+      "level": "Beginner",
+      "channel": "Paint Life TV",
+      "duration": "",
+      "added": "2026-10-29",
+      "summary": "Demonstrates how to use the Expert Stain Machine to pre-stain wooden fence pickets quickly and efficiently before assembly.",
+      "safety": "Ensure proper ventilation and wear gloves to avoid skin contact with wood stain.",
+      "ppe": [
+        "Safety Glasses",
+        "Gloves"
+      ],
+      "steps": [
+        "Set up the Expert Stain Machine outdoors on level ground.",
+        "Fill the reservoir with penetrating wood stain.",
+        "Feed wooden pickets through the rollers to apply stain.",
+        "Adjust roller pressure and top brushes for even coverage.",
+        "Stack stained lumber to dry before installation."
+      ],
+      "gemini": {
+        "date": "2026-10-29",
+        "relevance": 8,
+        "quality": 8,
+        "recommend": "approve",
+        "reason": "Clear demonstration of specialized wood staining equipment for civil and landscaping projects.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      },
+      "ytTitle": "This Machine Makes Fence Staining Faster, Cleaner & Profitable"
+    },
+    {
       "id": "paint-Lt4puzTb1vg",
       "yt": "Lt4puzTb1vg",
       "title": "Throwing Torginol Flakes on Floor Coatings",
