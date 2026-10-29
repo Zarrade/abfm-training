@@ -253,49 +253,6 @@
       }
     },
     {
-      "yt": "D4qpDbnhan4",
-      "title": "From Peeling Paint to Perfect Finish: Exterior Door Jamb Prep Guide",
-      "channel": "Paint Life TV",
-      "channelUrl": "https://www.youtube.com/channel/UCnrhmEmvA_bIRYkBVPqJ4zg",
-      "published": "2026-09-28T02:09:50.224Z",
-      "duration": "",
-      "channelCategory": "Painting & Waterproofing",
-      "suggestedCategory": "Painting & Waterproofing",
-      "description": "",
-      "found": "2026-10-28T02:09:59.649Z",
-      "draft": {
-        "source": "ai",
-        "title": "Repairing Peeling Exterior Door Jambs",
-        "summary": "This video demonstrates how to prep, prime, and paint a peeling exterior door jamb on a newly constructed house.",
-        "safety": "Ensure proper ventilation and wear appropriate protective gear while using chemical primers and sanding tools.",
-        "ppe": [
-          "Safety Glasses",
-          "Work Gloves",
-          "Dust Mask"
-        ],
-        "steps": [
-          "Sand the damaged door jamb using a sander and abrasive sponges.",
-          "Remove weather strips and mask off the surrounding area using tape.",
-          "Apply high-build binding primer to the bare wood and peeling areas.",
-          "Paint the door jamb with two coats of exterior acrylic latex paint."
-        ],
-        "stepsFrom": "ai",
-        "level": "Intermediate",
-        "subject": "Painting & Waterproofing",
-        "category": "Painting & Waterproofing",
-        "review": {
-          "relevance": 9,
-          "quality": 8,
-          "recommend": "approve",
-          "reason": "Provides clear, step-by-step instructions on repairing peeling paint on door jambs.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
-    },
-    {
       "yt": "skGkZW5XVkk",
       "title": "What it takes Tile shower install #tiles #shower #howtotile",
       "channel": "Sal DiBlasi (tiling & waterproofing)",
