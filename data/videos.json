@@ -2,6 +2,41 @@
   "updated": "2026-10-29",
   "videos": [
     {
+      "id": "paint-D4qpDbnhan4",
+      "yt": "D4qpDbnhan4",
+      "title": "Repairing Peeling Exterior Door Jambs",
+      "category": "Painting & Waterproofing",
+      "subject": "Painting & Waterproofing",
+      "level": "Intermediate",
+      "channel": "Paint Life TV",
+      "duration": "",
+      "added": "2026-10-29",
+      "summary": "This video demonstrates how to prep, prime, and paint a peeling exterior door jamb on a newly constructed house.",
+      "safety": "Ensure proper ventilation and wear appropriate protective gear while using chemical primers and sanding tools.",
+      "ppe": [
+        "Safety Glasses",
+        "Work Gloves",
+        "Dust Mask"
+      ],
+      "steps": [
+        "Sand the damaged door jamb using a sander and abrasive sponges.",
+        "Remove weather strips and mask off the surrounding area using tape.",
+        "Apply high-build binding primer to the bare wood and peeling areas.",
+        "Paint the door jamb with two coats of exterior acrylic latex paint."
+      ],
+      "gemini": {
+        "date": "2026-10-29",
+        "relevance": 9,
+        "quality": 8,
+        "recommend": "approve",
+        "reason": "Provides clear, step-by-step instructions on repairing peeling paint on door jambs.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      },
+      "ytTitle": "From Peeling Paint to Perfect Finish: Exterior Door Jamb Prep Guide"
+    },
+    {
       "id": "paint-mXkHAARhVtM",
       "yt": "mXkHAARhVtM",
       "title": "How to Mask Stucco for Spraying",
