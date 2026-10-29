@@ -297,51 +297,6 @@
       }
     },
     {
-      "yt": "jAT6WWdV8N4",
-      "title": "Is This Allowed? My Kitchen is Wired in Flex",
-      "channel": "GSH Electrical",
-      "channelUrl": "https://www.youtube.com/@GSHElectrical",
-      "published": "2026-09-28T02:09:35.976Z",
-      "duration": "",
-      "channelCategory": "Electrical",
-      "suggestedCategory": "Electrical",
-      "description": "",
-      "found": "2026-10-28T02:09:39.782Z",
-      "draft": {
-        "source": "ai",
-        "title": "Kitchen Flex Wiring Inspection and Safety",
-        "summary": "An electrician inspects and discusses improper flexible cable wiring used across kitchen electrical circuits and appliances.",
-        "safety": "Always isolate circuits and verify dead before working on electrical wiring.",
-        "ppe": [
-          "Safety Glasses",
-          "Insulated Gloves"
-        ],
-        "steps": [
-          "Inspect external cable routing into the kitchen",
-          "Examine socket outlets and internal flex wiring",
-          "Test electrical circuits with a multifunction tester",
-          "Ferrul cable ends for secure terminal connections",
-          "Review electrical installation safety compliance"
-        ],
-        "stepsFrom": "ai",
-        "level": "Intermediate",
-        "subject": "Wiring Accessories",
-        "category": "Electrical",
-        "review": {
-          "relevance": 9,
-          "quality": 8,
-          "recommend": "approve",
-          "reason": "Provides a practical review of domestic wiring faults and inspection methods for electricians.",
-          "unsafe": [
-            "Working on exposed live wiring during investigation"
-          ],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
-    },
-    {
       "yt": "CqM2TkvT2-U",
       "title": "Airflow Serenity w/ Alex Meaney",
       "channel": "HVAC School",
