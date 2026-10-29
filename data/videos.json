@@ -2,6 +2,40 @@
   "updated": "2026-10-29",
   "videos": [
     {
+      "id": "hvac-RlW4P-zL81Q",
+      "yt": "RlW4P-zL81Q",
+      "title": "Advanced Multimeter Functions for HVAC Diagnostics",
+      "category": "HVAC",
+      "subject": "Electrical Diagnostics",
+      "level": "Advanced",
+      "channel": "HVAC School",
+      "duration": "",
+      "added": "2026-10-29",
+      "summary": "An experienced trainer explains advanced multimeter features and measurements for HVAC technicians.",
+      "safety": "Always verify meter settings and test leads before measuring electrical circuits.",
+      "ppe": [
+        "Safety Glasses",
+        "Insulated Gloves"
+      ],
+      "steps": [
+        "Understand clamp meter amperage ranges",
+        "Use Low Z mode to filter ghost voltage",
+        "Select correct meter functions for testing",
+        "Check continuity and resistance safely"
+      ],
+      "gemini": {
+        "date": "2026-10-29",
+        "relevance": 8,
+        "quality": 7,
+        "recommend": "approve",
+        "reason": "Provides valuable technical depth on advanced multimeter features for HVAC technicians.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      },
+      "ytTitle": "Mastering Your Meter Advanced Functionality with Louise Kellar (UEi Test Instruments)"
+    },
+    {
       "id": "hvac-CqM2TkvT2-U",
       "yt": "CqM2TkvT2-U",
       "title": "Airflow Serenity and System Balance Fundamentals",
