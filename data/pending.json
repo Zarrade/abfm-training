@@ -210,50 +210,6 @@
       }
     },
     {
-      "yt": "mXkHAARhVtM",
-      "title": "How to Mask Stucco for Spraying (FrogTape Pro Secrets!)",
-      "channel": "Paint Life TV",
-      "channelUrl": "https://www.youtube.com/channel/UCnrhmEmvA_bIRYkBVPqJ4zg",
-      "published": "2026-09-28T02:09:50.224Z",
-      "duration": "",
-      "channelCategory": "Painting & Waterproofing",
-      "suggestedCategory": "Painting & Waterproofing",
-      "description": "",
-      "found": "2026-10-28T02:09:56.985Z",
-      "draft": {
-        "source": "ai",
-        "title": "How to Mask Stucco for Spraying",
-        "summary": "Demonstrates masking a stucco exterior around windows and doors using FrogTape and plastic film before airless spray painting.",
-        "safety": "Ensure stable footing on ladders and use proper fall protection when working at heights.",
-        "ppe": [
-          "Safety Glasses",
-          "Gloves",
-          "Respirator"
-        ],
-        "steps": [
-          "Clean and inspect the stucco surface.",
-          "Apply FrogTape high adhesion tape around trim and windows.",
-          "Cover glass and doors with masking film.",
-          "Press down tape firmly to prevent paint bleed.",
-          "Spray paint the trim and stucco areas."
-        ],
-        "stepsFrom": "ai",
-        "level": "Intermediate",
-        "subject": "Masking Trim for Airless Spraying",
-        "category": "Painting & Waterproofing",
-        "review": {
-          "relevance": 9,
-          "quality": 8,
-          "recommend": "approve",
-          "reason": "Provides clear, practical instructions on masking stucco for spray painting.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
-    },
-    {
       "yt": "p8kTnzWvGX4",
       "title": "This Machine Makes Fence Staining Faster, Cleaner & Profitable",
       "channel": "Paint Life TV",
