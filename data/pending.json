@@ -297,50 +297,6 @@
       }
     },
     {
-      "yt": "3m0bOJL5Bjs",
-      "title": "Wiring up a 2 Gang Dimmer ",
-      "channel": "GSH Electrical",
-      "channelUrl": "https://www.youtube.com/@GSHElectrical",
-      "published": "2026-09-28T02:09:35.976Z",
-      "duration": "",
-      "channelCategory": "Electrical",
-      "suggestedCategory": "Electrical",
-      "description": "",
-      "found": "2026-10-28T02:09:37.226Z",
-      "draft": {
-        "source": "ai",
-        "title": "Replacing a Two Gang Dimmer Switch",
-        "summary": "Demonstrates safe isolation and replacement of an old light switch with a new two-gang LED dimmer.",
-        "safety": "Always isolate the circuit and lock off the supply before removing any electrical fittings.",
-        "ppe": [
-          "Safety Glasses",
-          "Insulated Gloves"
-        ],
-        "steps": [
-          "Lock off and isolate the electrical circuit at the consumer unit.",
-          "Unscrew the existing switch plate and examine the wiring.",
-          "Disconnect the permanent live, switching line, and bridge link.",
-          "Prepare stripped wire ends to prevent weak copper connections.",
-          "Connect the wiring to the new two-gang dimmer terminals.",
-          "Screw the new dimmer switch back into the wall box."
-        ],
-        "stepsFrom": "ai",
-        "level": "Intermediate",
-        "subject": "Wiring Accessories",
-        "category": "Electrical",
-        "review": {
-          "relevance": 9,
-          "quality": 8,
-          "recommend": "approve",
-          "reason": "Provides a clear, step-by-step procedure for replacing a two-gang dimmer switch safely.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
-    },
-    {
       "yt": "jAT6WWdV8N4",
       "title": "Is This Allowed? My Kitchen is Wired in Flex",
       "channel": "GSH Electrical",
