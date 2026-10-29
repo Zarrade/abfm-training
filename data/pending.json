@@ -87,50 +87,6 @@
   },
   "queue": [
     {
-      "yt": "skGkZW5XVkk",
-      "title": "What it takes Tile shower install #tiles #shower #howtotile",
-      "channel": "Sal DiBlasi (tiling & waterproofing)",
-      "channelUrl": "https://www.youtube.com/channel/UCWpu9UZ6aiRTaMuuV8-C0pQ",
-      "published": "2026-09-28T02:09:45.863Z",
-      "duration": "",
-      "channelCategory": "",
-      "suggestedCategory": "Civil Jobs",
-      "description": "",
-      "found": "2026-10-28T02:09:47.608Z",
-      "draft": {
-        "source": "ai",
-        "title": "Installing a Tiled Shower with Waterproofing",
-        "summary": "This video demonstrates the step-by-step process of framing, waterproofing, and tiling a custom shower enclosure.",
-        "safety": "Always wear proper protective equipment when handling power tools and heavy construction materials.",
-        "ppe": [
-          "Safety Glasses",
-          "Work Gloves",
-          "Dust Mask"
-        ],
-        "steps": [
-          "Check and flatten shower walls and floors.",
-          "Install mud pan and waterproofing membrane.",
-          "Perform a flood test to check for leaks.",
-          "Install foam support board for the shower bench.",
-          "Apply mortar and lay floor tiles and wall tiles."
-        ],
-        "stepsFrom": "ai",
-        "level": "Advanced",
-        "subject": "Tile Installation",
-        "category": "Civil Jobs",
-        "review": {
-          "relevance": 8,
-          "quality": 8,
-          "recommend": "approve",
-          "reason": "Provides a comprehensive and clear overview of shower installation and waterproofing methods.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
-    },
-    {
       "yt": "CqM2TkvT2-U",
       "title": "Airflow Serenity w/ Alex Meaney",
       "channel": "HVAC School",
@@ -328,6 +284,7 @@
     "EsKARwICOtY",
     "vSZmi3yhNsc",
     "7o7st1IPAkM",
-    "HdIB67dfv1A"
+    "HdIB67dfv1A",
+    "skGkZW5XVkk"
   ]
 }
