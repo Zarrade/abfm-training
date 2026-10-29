@@ -4,17 +4,38 @@
     {
       "id": "uaere-A_zktV7o-Zg",
       "yt": "A_zktV7o-Zg",
-      "title": "Electricity Outage Safety Dubai: DEWA Emergency Steps",
+      "title": "Smart Response Electricity Outage Guide",
       "category": "UAE Regulations",
-      "subject": "",
-      "level": "Intermediate",
+      "subject": "Electrical Outage Safety",
+      "level": "Beginner",
       "channel": "Countdown Media Production Services",
       "duration": "",
       "added": "2026-10-29",
-      "summary": "",
-      "safety": "",
-      "ppe": [],
-      "steps": [],
+      "summary": "This video guides residents through diagnosing and reporting domestic power outages caused by heavy rain using DEWA's smart response service.",
+      "safety": "Always inspect internal distribution panels carefully and call professionals if a circuit breaker is tripped.",
+      "ppe": [
+        "Hard Hat",
+        "Insulated Gloves",
+        "Safety Glasses",
+        "Safety Shoes"
+      ],
+      "steps": [
+        "Identify the affected areas in your home",
+        "Inspect the internal distribution panel",
+        "Contact an external maintenance company if a breaker tripped",
+        "Log in to DEWA smart app or website",
+        "Upload a clear photo of your distribution panel"
+      ],
+      "gemini": {
+        "date": "2026-10-29",
+        "relevance": 9,
+        "quality": 10,
+        "recommend": "approve",
+        "reason": "Provides clear step-by-step instructions for handling electrical outages in Dubai using official DEWA services.",
+        "unsafe": [],
+        "language": "Arabic",
+        "talking": true
+      },
       "ytTitle": "Electricity Outage Safety Dubai | DEWA Emergency Steps"
     },
     {
