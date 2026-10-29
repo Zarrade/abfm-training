@@ -123,51 +123,6 @@
       "aiError": "Gemini took too long"
     },
     {
-      "yt": "e51Cw-Cqqu4",
-      "title": "How to Install a Torginol Pearl Essence Metallic Garage Floor Like a Pro",
-      "channel": "Paint Life TV",
-      "channelUrl": "https://www.youtube.com/channel/UCnrhmEmvA_bIRYkBVPqJ4zg",
-      "published": "2026-10-07T02:09:50.224Z",
-      "duration": "",
-      "channelCategory": "Painting & Waterproofing",
-      "suggestedCategory": "Painting & Waterproofing",
-      "description": "",
-      "found": "2026-10-28T02:09:51.450Z",
-      "draft": {
-        "source": "ai",
-        "title": "Installing a Metallic Garage Epoxy Floor",
-        "summary": "This video demonstrates how to prepare an old concrete floor and apply a multi-color metallic epoxy coating.",
-        "safety": "Wear appropriate respiratory protection and gloves when handling chemicals, solvents, and epoxy products.",
-        "ppe": [
-          "Safety Glasses",
-          "Gloves",
-          "Respirator"
-        ],
-        "steps": [
-          "Sand and clean the existing epoxy floor.",
-          "Apply EP-55 waterborne primer coat.",
-          "Fill saw cuts and surface imperfections.",
-          "Pour and spread the black epoxy base coat.",
-          "Pour and trowel metallic color layers for a marbled effect.",
-          "Sand craters and apply final topcoat."
-        ],
-        "stepsFrom": "ai",
-        "level": "Advanced",
-        "subject": "Torginol Flakes Mixing",
-        "category": "Painting & Waterproofing",
-        "review": {
-          "relevance": 9,
-          "quality": 8,
-          "recommend": "approve",
-          "reason": "Provides a comprehensive and clear tutorial on professional epoxy floor installation techniques.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
-    },
-    {
       "yt": "7o7st1IPAkM",
       "title": "Sherwin Williams Rain Fresh Review: Is It REALLY Worth It?",
       "channel": "Paint Life TV",
