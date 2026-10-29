@@ -2,8 +2,8 @@
 
 ABFM Training is a free, public training-video app for Al Bonian FM ground staff. It opens in any phone or laptop browser and installs like an app. No login is needed for technicians.
 
-- **Staff app:** `https://<your-username>.github.io/<repo-name>/`
-- **Your admin app:** `https://<your-username>.github.io/<repo-name>/admin.html`
+- **Staff app:** `https://abfmapps.github.io/abfm-training/`
+- **Your admin app:** `https://abfmapps.github.io/abfm-training/admin.html`
 
 ---
 
