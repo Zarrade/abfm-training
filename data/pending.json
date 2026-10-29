@@ -87,49 +87,6 @@
   },
   "queue": [
     {
-      "yt": "KrrbmWSa1ug",
-      "title": "Carbon Monoxide and Gas Leaks: Monitor, Detector and Flame Checks",
-      "channel": "HVAC School",
-      "channelUrl": "https://www.youtube.com/c/HVACSchool",
-      "published": "2026-10-28T11:11:41.077Z",
-      "duration": "",
-      "channelCategory": "HVAC",
-      "suggestedCategory": "HVAC",
-      "description": "",
-      "found": "2026-10-29T02:11:42.437Z",
-      "draft": {
-        "source": "ai",
-        "title": "Carbon Monoxide and Gas Leak Safety Basics",
-        "summary": "An instructor explains the crucial safety differences between carbon monoxide and gas leaks, highlighting low-level CO monitoring, combustible gas detection, and flame inspections.",
-        "safety": "Always use low-level carbon monoxide monitors and gas leak detectors when servicing combustion heating equipment to prevent severe injury or fatal exposure.",
-        "ppe": [
-          "Safety Glasses",
-          "Work Gloves"
-        ],
-        "steps": [
-          "Carry a low-level carbon monoxide monitor with a digital display.",
-          "Use a combustible gas leak detector around all gas appliances.",
-          "Perform visual inspections on flue pipes and appliance ventilation.",
-          "Ensure adequate oxygen supply to enclosed equipment closets.",
-          "Inspect burner flames to confirm they burn steady and blue."
-        ],
-        "stepsFrom": "ai",
-        "level": "Beginner",
-        "subject": "Fundamentals",
-        "category": "HVAC",
-        "review": {
-          "relevance": 8,
-          "quality": 8,
-          "recommend": "approve",
-          "reason": "Clear, practical lecture explaining safety checks for gas heating appliances and carbon monoxide risks.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.6-flash"
-      }
-    },
-    {
       "yt": "IlxIEBFE20w",
       "title": "How to Replace a Broken Sprinkler Head | Mower Damage Repair | Sprinkler Warehouse",
       "channel": "Sprinkler Warehouse (irrigation)",
