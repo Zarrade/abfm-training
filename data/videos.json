@@ -2,6 +2,41 @@
   "updated": "2026-10-29",
   "videos": [
     {
+      "id": "hvac-laaq1VRvPo8",
+      "yt": "laaq1VRvPo8",
+      "title": "Blower Door Test Procedure",
+      "category": "HVAC",
+      "subject": "Preventive Maintenance",
+      "level": "Intermediate",
+      "channel": "HVAC School",
+      "duration": "",
+      "added": "2026-10-29",
+      "summary": "This video demonstrates how to set up and conduct a blower door test using the Model 5 Digital Minneapolis system and the AutoTest app.",
+      "safety": "Turn off all fans and combustion appliances before testing to prevent backdrafting hazards.",
+      "ppe": [
+        "Safety Glasses",
+        "Gloves"
+      ],
+      "steps": [
+        "Prepare the house by closing all windows and exterior doors.",
+        "Open all interior doors to create a single pressure zone.",
+        "Install the adjustable aluminum frame and nylon panel in an exterior doorway.",
+        "Set up the blower door fan and connect the pressure gauge and reference tubing.",
+        "Run the baseline test and execute the blower door test using the AutoTest app."
+      ],
+      "gemini": {
+        "date": "2026-10-29",
+        "relevance": 9,
+        "quality": 10,
+        "recommend": "approve",
+        "reason": "Clear 3D animation and step-by-step instructions make blower door testing easy to understand.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      },
+      "ytTitle": "How to Set Up and Run a Blower Door Test 3D"
+    },
+    {
       "id": "hvac-rSnOG-oMC5w",
       "yt": "rSnOG-oMC5w",
       "title": "Understanding Refrigeration Temperature and Pressure",
