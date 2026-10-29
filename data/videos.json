@@ -2,6 +2,43 @@
   "updated": "2026-10-29",
   "videos": [
     {
+      "id": "elect-jAT6WWdV8N4",
+      "yt": "jAT6WWdV8N4",
+      "title": "Kitchen Flex Wiring Inspection and Safety",
+      "category": "Electrical",
+      "subject": "Wiring Accessories",
+      "level": "Intermediate",
+      "channel": "GSH Electrical",
+      "duration": "",
+      "added": "2026-10-29",
+      "summary": "An electrician inspects and discusses improper flexible cable wiring used across kitchen electrical circuits and appliances.",
+      "safety": "Always isolate circuits and verify dead before working on electrical wiring.",
+      "ppe": [
+        "Safety Glasses",
+        "Insulated Gloves"
+      ],
+      "steps": [
+        "Inspect external cable routing into the kitchen",
+        "Examine socket outlets and internal flex wiring",
+        "Test electrical circuits with a multifunction tester",
+        "Ferrul cable ends for secure terminal connections",
+        "Review electrical installation safety compliance"
+      ],
+      "gemini": {
+        "date": "2026-10-29",
+        "relevance": 9,
+        "quality": 8,
+        "recommend": "approve",
+        "reason": "Provides a practical review of domestic wiring faults and inspection methods for electricians.",
+        "unsafe": [
+          "Working on exposed live wiring during investigation"
+        ],
+        "language": "English",
+        "talking": true
+      },
+      "ytTitle": "Is This Allowed? My Kitchen is Wired in Flex"
+    },
+    {
       "id": "elect-3m0bOJL5Bjs",
       "yt": "3m0bOJL5Bjs",
       "title": "Replacing a Two Gang Dimmer Switch",
