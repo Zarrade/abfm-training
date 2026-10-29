@@ -2,6 +2,42 @@
   "updated": "2026-10-29",
   "videos": [
     {
+      "id": "hvac-CqM2TkvT2-U",
+      "yt": "CqM2TkvT2-U",
+      "title": "Airflow Serenity and System Balance Fundamentals",
+      "category": "HVAC",
+      "subject": "Fundamentals",
+      "level": "Intermediate",
+      "channel": "HVAC School",
+      "duration": "",
+      "added": "2026-10-29",
+      "summary": "Alex Meaney discusses HVAC airflow theory, balancing, friction losses, and measuring methods for better system performance.",
+      "safety": "Ensure power is disconnected and lockout procedures are followed before servicing air handler units.",
+      "ppe": [
+        "Safety Glasses",
+        "Work Gloves",
+        "Hard Hat"
+      ],
+      "steps": [
+        "Identify airflow issues using customer feedback and room comfort.",
+        "Perform a load calculation to determine required CFM.",
+        "Measure airflow using anemometers, manometers, or flow grids.",
+        "Reduce friction loss along the duct path to improve system flow.",
+        "Balance airflow by adjusting dampers for proper room distribution."
+      ],
+      "gemini": {
+        "date": "2026-10-29",
+        "relevance": 9,
+        "quality": 8,
+        "recommend": "approve",
+        "reason": "Clear explanation of airflow theory and practical diagnostic methods for technicians.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      },
+      "ytTitle": "Airflow Serenity w/ Alex Meaney"
+    },
+    {
       "id": "paint-p8kTnzWvGX4",
       "yt": "p8kTnzWvGX4",
       "title": "Using an Expert Stain Machine for Fence Lumber",
