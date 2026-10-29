@@ -85,44 +85,7 @@
       "via": "page"
     }
   },
-  "queue": [
-    {
-      "yt": "2-b2vlq67Do",
-      "title": "Aluminium Winding Fan is Good or Bad for Home ? Know the Truth @TheElectricalGuy",
-      "channel": "The Electrical Guy",
-      "channelUrl": "https://www.youtube.com/@TheElectricalGuy",
-      "published": "2026-08-29T02:09:33.453Z",
-      "duration": "",
-      "channelCategory": "Electrical",
-      "suggestedCategory": "Electrical",
-      "description": "",
-      "found": "2026-10-28T02:09:34.975Z",
-      "draft": {
-        "source": "rules",
-        "title": "Aluminium Winding Fan Is Good or Bad for Home ? Know the Truth…",
-        "summary": "",
-        "safety": "Isolate and prove dead before any work. Only qualified staff may work near live parts.",
-        "ppe": [
-          "Insulated Gloves",
-          "Safety Glasses",
-          "Safety Shoes"
-        ],
-        "steps": [
-          "Get permission and the right permit for the job",
-          "Isolate the circuit and lock it off",
-          "Prove dead with a tested voltage tester",
-          "Carry out the work as shown in the video",
-          "Check all connections are tight and covers fitted",
-          "Restore power and test the installation"
-        ],
-        "stepsFrom": "general",
-        "level": "Intermediate",
-        "subject": ""
-      },
-      "aiTries": 2,
-      "aiError": "Gemini took too long"
-    }
-  ],
+  "queue": [],
   "rejected": [
     "je0BsLY5nZw",
     "NcgO12kdTVs",
@@ -155,6 +118,7 @@
     "vSZmi3yhNsc",
     "7o7st1IPAkM",
     "HdIB67dfv1A",
-    "skGkZW5XVkk"
+    "skGkZW5XVkk",
+    "2-b2vlq67Do"
   ]
 }
