@@ -87,42 +87,6 @@
   },
   "queue": [
     {
-      "yt": "IlxIEBFE20w",
-      "title": "How to Replace a Broken Sprinkler Head | Mower Damage Repair | Sprinkler Warehouse",
-      "channel": "Sprinkler Warehouse (irrigation)",
-      "channelUrl": "https://www.youtube.com/channel/UCR1ksygazAOr59yLZ4Mp5tA",
-      "published": "2026-10-23T02:11:55.798Z",
-      "duration": "",
-      "channelCategory": "Landscaping",
-      "suggestedCategory": "Landscaping",
-      "description": "",
-      "found": "2026-10-29T02:11:56.988Z",
-      "draft": {
-        "source": "rules",
-        "title": "How to Replace a Broken Sprinkler Head: Mower Damage Repair",
-        "summary": "",
-        "safety": "Inform the building and the alarm monitoring company before testing, and never leave a system disabled.",
-        "ppe": [
-          "Safety Glasses",
-          "Work Gloves",
-          "Safety Shoes"
-        ],
-        "steps": [
-          "Check the main valve and backflow are fully open",
-          "Run one zone at a time to find where the pressure drops",
-          "Look for leaks, broken heads and partly closed valves",
-          "Clean or replace blocked filters and nozzles",
-          "Check the valve diaphragm and solenoid",
-          "Test the zone again and adjust the heads"
-        ],
-        "stepsFrom": "topic",
-        "level": "Intermediate",
-        "subject": "Irrigation Valve Troubleshooting"
-      },
-      "aiTries": 1,
-      "aiError": "Gemini took too long"
-    },
-    {
       "yt": "gFUrDX_ze-M",
       "title": "Normal Subcooling, Hidden Restriction - Short #305",
       "channel": "HVAC School",
