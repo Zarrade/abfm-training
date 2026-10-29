@@ -87,49 +87,6 @@
   },
   "queue": [
     {
-      "yt": "p8kTnzWvGX4",
-      "title": "This Machine Makes Fence Staining Faster, Cleaner & Profitable",
-      "channel": "Paint Life TV",
-      "channelUrl": "https://www.youtube.com/channel/UCnrhmEmvA_bIRYkBVPqJ4zg",
-      "published": "2026-09-28T02:09:50.224Z",
-      "duration": "",
-      "channelCategory": "Painting & Waterproofing",
-      "suggestedCategory": "Painting & Waterproofing",
-      "description": "",
-      "found": "2026-10-28T02:09:58.280Z",
-      "draft": {
-        "source": "ai",
-        "title": "Using an Expert Stain Machine for Fence Lumber",
-        "summary": "Demonstrates how to use the Expert Stain Machine to pre-stain wooden fence pickets quickly and efficiently before assembly.",
-        "safety": "Ensure proper ventilation and wear gloves to avoid skin contact with wood stain.",
-        "ppe": [
-          "Safety Glasses",
-          "Gloves"
-        ],
-        "steps": [
-          "Set up the Expert Stain Machine outdoors on level ground.",
-          "Fill the reservoir with penetrating wood stain.",
-          "Feed wooden pickets through the rollers to apply stain.",
-          "Adjust roller pressure and top brushes for even coverage.",
-          "Stack stained lumber to dry before installation."
-        ],
-        "stepsFrom": "ai",
-        "level": "Beginner",
-        "subject": "Masking Trim for Airless Spraying",
-        "category": "Painting & Waterproofing",
-        "review": {
-          "relevance": 8,
-          "quality": 8,
-          "recommend": "approve",
-          "reason": "Clear demonstration of specialized wood staining equipment for civil and landscaping projects.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
-    },
-    {
       "yt": "skGkZW5XVkk",
       "title": "What it takes Tile shower install #tiles #shower #howtotile",
       "channel": "Sal DiBlasi (tiling & waterproofing)",
