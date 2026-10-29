@@ -2,6 +2,46 @@
   "updated": "2026-10-29",
   "videos": [
     {
+      "id": "lands-IlxIEBFE20w",
+      "yt": "IlxIEBFE20w",
+      "title": "How to Replace a Broken Sprinkler Head: Mower Damage Repair",
+      "category": "Landscaping",
+      "subject": "Irrigation Valve Troubleshooting",
+      "level": "Intermediate",
+      "channel": "Sprinkler Warehouse (irrigation)",
+      "duration": "",
+      "added": "2026-10-29",
+      "summary": "",
+      "safety": "Inform the building and the alarm monitoring company before testing, and never leave a system disabled.",
+      "ppe": [
+        "Safety Glasses",
+        "Work Gloves",
+        "Safety Shoes"
+      ],
+      "steps": [
+        "Check the main valve and backflow are fully open",
+        "Run one zone at a time to find where the pressure drops",
+        "Look for leaks, broken heads and partly closed valves",
+        "Clean or replace blocked filters and nozzles",
+        "Check the valve diaphragm and solenoid",
+        "Test the zone again and adjust the heads"
+      ],
+      "gemini": {
+        "date": "2026-10-29",
+        "model": "gemini-3.8-flash",
+        "relevance": 9,
+        "quality": 9,
+        "recommend": "approve",
+        "reason": "Clear step-by-step guidance on repairing irrigation heads commonly broken during grounds maintenance.",
+        "unsafe": [
+          "Digging and clearing soil with bare hands"
+        ],
+        "language": "English",
+        "talking": true
+      },
+      "ytTitle": "How to Replace a Broken Sprinkler Head | Mower Damage Repair | Sprinkler Warehouse"
+    },
+    {
       "id": "elect-jAT6WWdV8N4",
       "yt": "jAT6WWdV8N4",
       "title": "Kitchen Flex Wiring Inspection and Safety",
