@@ -2,6 +2,40 @@
   "updated": "2026-10-29",
   "videos": [
     {
+      "id": "hvac-gFUrDX_ze-M",
+      "yt": "gFUrDX_ze-M",
+      "title": "Diagnosing Subcooling and Restrictions in HVAC Systems",
+      "category": "HVAC",
+      "subject": "Refrigerant & Diagnostics",
+      "level": "Advanced",
+      "channel": "HVAC School",
+      "duration": "",
+      "added": "2026-10-29",
+      "summary": "This video explains why restrictions do not always cause high subcooling and discusses how liquid line issues affect HVAC systems.",
+      "safety": "Ensure the system is powered off and depressurized before inspecting refrigerant lines or components.",
+      "ppe": [
+        "Safety Glasses",
+        "Work Gloves"
+      ],
+      "steps": [
+        "Identify evaporator freeze patterns and low suction pressure.",
+        "Evaluate expansion valve and liquid line restrictions.",
+        "Check for pressure drops across the liquid line dryer.",
+        "Inspect system components and tubing for damage."
+      ],
+      "gemini": {
+        "date": "2026-10-29",
+        "relevance": 9,
+        "quality": 7,
+        "recommend": "approve",
+        "reason": "It offers valuable diagnostic insights for HVAC technicians handling refrigerant issues.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      },
+      "ytTitle": "Normal Subcooling, Hidden Restriction - Short #305"
+    },
+    {
       "id": "lands-IlxIEBFE20w",
       "yt": "IlxIEBFE20w",
       "title": "How to Replace a Broken Sprinkler Head: Mower Damage Repair",
