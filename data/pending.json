@@ -819,49 +819,6 @@
       }
     },
     {
-      "yt": "laaq1VRvPo8",
-      "title": "How to Set Up and Run a Blower Door Test 3D",
-      "channel": "HVAC School",
-      "channelUrl": "https://www.youtube.com/c/HVACSchool",
-      "published": "2026-09-28T02:09:22.455Z",
-      "duration": "",
-      "channelCategory": "HVAC",
-      "suggestedCategory": "HVAC",
-      "description": "",
-      "found": "2026-10-28T02:09:31.354Z",
-      "draft": {
-        "source": "ai",
-        "title": "Blower Door Test Procedure",
-        "summary": "This video demonstrates how to set up and conduct a blower door test using the Model 5 Digital Minneapolis system and the AutoTest app.",
-        "safety": "Turn off all fans and combustion appliances before testing to prevent backdrafting hazards.",
-        "ppe": [
-          "Safety Glasses",
-          "Gloves"
-        ],
-        "steps": [
-          "Prepare the house by closing all windows and exterior doors.",
-          "Open all interior doors to create a single pressure zone.",
-          "Install the adjustable aluminum frame and nylon panel in an exterior doorway.",
-          "Set up the blower door fan and connect the pressure gauge and reference tubing.",
-          "Run the baseline test and execute the blower door test using the AutoTest app."
-        ],
-        "stepsFrom": "ai",
-        "level": "Intermediate",
-        "subject": "Preventive Maintenance",
-        "category": "HVAC",
-        "review": {
-          "relevance": 9,
-          "quality": 10,
-          "recommend": "approve",
-          "reason": "Clear 3D animation and step-by-step instructions make blower door testing easy to understand.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
-    },
-    {
       "yt": "tbXKvnKZrYs",
       "title": "Visualize Superheat and Subcooling ",
       "channel": "Love2HVAC with Ty Branaman",
