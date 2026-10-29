@@ -777,48 +777,6 @@
       }
     },
     {
-      "yt": "rSnOG-oMC5w",
-      "title": "Basic Refrigeration: Why We Use Temperature Instead of Pressure",
-      "channel": "HVAC School",
-      "channelUrl": "https://www.youtube.com/c/HVACSchool",
-      "published": "2026-09-28T02:09:22.455Z",
-      "duration": "",
-      "channelCategory": "HVAC",
-      "suggestedCategory": "HVAC",
-      "description": "",
-      "found": "2026-10-28T02:09:28.103Z",
-      "draft": {
-        "source": "ai",
-        "title": "Understanding Refrigeration Temperature and Pressure",
-        "summary": "An instructor teaches technicians why refrigeration systems use temperature instead of pressure to evaluate performance.",
-        "safety": "Ensure proper electrical and system safety before servicing refrigerant lines.",
-        "ppe": [
-          "Safety Glasses",
-          "Gloves"
-        ],
-        "steps": [
-          "Convert pressure readings to saturation temperatures",
-          "Compare air temperature to evaporator and condenser temperatures",
-          "Evaluate subcooling to check high-side refrigerant charge",
-          "Evaluate superheat to check low-side refrigerant charge"
-        ],
-        "stepsFrom": "ai",
-        "level": "Beginner",
-        "subject": "Refrigerant & Diagnostics",
-        "category": "HVAC",
-        "review": {
-          "relevance": 10,
-          "quality": 8,
-          "recommend": "approve",
-          "reason": "Clear and detailed explanation of refrigeration theory using temperature and pressure.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
-    },
-    {
       "yt": "RlW4P-zL81Q",
       "title": "Mastering Your Meter Advanced Functionality with Louise Kellar (UEi Test Instruments)",
       "channel": "HVAC School",
