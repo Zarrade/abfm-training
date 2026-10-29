@@ -87,48 +87,6 @@
   },
   "queue": [
     {
-      "yt": "gFUrDX_ze-M",
-      "title": "Normal Subcooling, Hidden Restriction - Short #305",
-      "channel": "HVAC School",
-      "channelUrl": "https://www.youtube.com/c/HVACSchool",
-      "published": "2026-09-30T02:09:22.455Z",
-      "duration": "",
-      "channelCategory": "HVAC",
-      "suggestedCategory": "HVAC",
-      "description": "",
-      "found": "2026-10-28T02:09:25.692Z",
-      "draft": {
-        "source": "ai",
-        "title": "Diagnosing Subcooling and Restrictions in HVAC Systems",
-        "summary": "This video explains why restrictions do not always cause high subcooling and discusses how liquid line issues affect HVAC systems.",
-        "safety": "Ensure the system is powered off and depressurized before inspecting refrigerant lines or components.",
-        "ppe": [
-          "Safety Glasses",
-          "Work Gloves"
-        ],
-        "steps": [
-          "Identify evaporator freeze patterns and low suction pressure.",
-          "Evaluate expansion valve and liquid line restrictions.",
-          "Check for pressure drops across the liquid line dryer.",
-          "Inspect system components and tubing for damage."
-        ],
-        "stepsFrom": "ai",
-        "level": "Advanced",
-        "subject": "Refrigerant & Diagnostics",
-        "category": "HVAC",
-        "review": {
-          "relevance": 9,
-          "quality": 7,
-          "recommend": "approve",
-          "reason": "It offers valuable diagnostic insights for HVAC technicians handling refrigerant issues.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.5-flash-lite"
-      }
-    },
-    {
       "yt": "Lt4puzTb1vg",
       "title": "How to Throw Torginol Flakes Like a Pro | Perfect Garage Floor",
       "channel": "Paint Life TV",
