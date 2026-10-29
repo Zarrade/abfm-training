@@ -862,50 +862,6 @@
       }
     },
     {
-      "yt": "vSZmi3yhNsc",
-      "title": "Less Compressor, More Suction Pressure - Short #304",
-      "channel": "HVAC School",
-      "channelUrl": "https://www.youtube.com/c/HVACSchool",
-      "published": "2026-09-28T02:09:22.455Z",
-      "duration": "",
-      "channelCategory": "HVAC",
-      "suggestedCategory": "HVAC",
-      "description": "",
-      "found": "2026-10-28T02:09:29.047Z",
-      "draft": {
-        "source": "ai",
-        "title": "Compressor Staging and Suction Pressure Changes",
-        "summary": "This audio lesson explains why suction pressure rises when a compressor unloads or shifts to a lower stage. It describes how changing pumping capacity, evaporator load, and blower airflow interact to reach a new operating balance.",
-        "safety": "Ensure proper electrical lockout and tagout procedures before accessing compressor compartments or electrical terminals.",
-        "ppe": [
-          "Safety Glasses",
-          "Safety Boots"
-        ],
-        "steps": [
-          "Recognize that staging down reduces compressor pumping capacity.",
-          "Understand that unchanged evaporator heat load causes suction pressure to rise.",
-          "Check if the indoor blower speed drops alongside compressor staging.",
-          "Allow the system to reach thermal equilibrium before recording pressures.",
-          "Perform refrigerant charging only when the system runs at full capacity.",
-          "Verify manufacturer staging sequence before suspecting compressor failure."
-        ],
-        "stepsFrom": "ai",
-        "level": "Intermediate",
-        "subject": "Refrigerant & Diagnostics",
-        "category": "HVAC",
-        "review": {
-          "relevance": 4,
-          "quality": 2,
-          "recommend": "reject",
-          "reason": "This is an audio podcast with a static graphic and provides no practical visuals or physical demonstrations.",
-          "unsafe": [],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.8-flash"
-      }
-    },
-    {
       "yt": "RlW4P-zL81Q",
       "title": "Mastering Your Meter Advanced Functionality with Louise Kellar (UEi Test Instruments)",
       "channel": "HVAC School",
@@ -1099,6 +1055,7 @@
     "NhxLumCrHxI",
     "jeOfmI4osm4",
     "f9ssVq2G7KU",
-    "EsKARwICOtY"
+    "EsKARwICOtY",
+    "vSZmi3yhNsc"
   ]
 }
