@@ -2,6 +2,43 @@
   "updated": "2026-10-29",
   "videos": [
     {
+      "id": "paint-e51Cw-Cqqu4",
+      "yt": "e51Cw-Cqqu4",
+      "title": "Installing a Metallic Garage Epoxy Floor",
+      "category": "Painting & Waterproofing",
+      "subject": "Torginol Flakes Mixing",
+      "level": "Advanced",
+      "channel": "Paint Life TV",
+      "duration": "",
+      "added": "2026-10-29",
+      "summary": "This video demonstrates how to prepare an old concrete floor and apply a multi-color metallic epoxy coating.",
+      "safety": "Wear appropriate respiratory protection and gloves when handling chemicals, solvents, and epoxy products.",
+      "ppe": [
+        "Safety Glasses",
+        "Gloves",
+        "Respirator"
+      ],
+      "steps": [
+        "Sand and clean the existing epoxy floor.",
+        "Apply EP-55 waterborne primer coat.",
+        "Fill saw cuts and surface imperfections.",
+        "Pour and spread the black epoxy base coat.",
+        "Pour and trowel metallic color layers for a marbled effect.",
+        "Sand craters and apply final topcoat."
+      ],
+      "gemini": {
+        "date": "2026-10-29",
+        "relevance": 9,
+        "quality": 8,
+        "recommend": "approve",
+        "reason": "Provides a comprehensive and clear tutorial on professional epoxy floor installation techniques.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      },
+      "ytTitle": "How to Install a Torginol Pearl Essence Metallic Garage Floor Like a Pro"
+    },
+    {
       "id": "hvac-laaq1VRvPo8",
       "yt": "laaq1VRvPo8",
       "title": "Blower Door Test Procedure",
