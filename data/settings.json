@@ -205,6 +205,11 @@
         "hose reel",
         "emergency light"
       ]
+    },
+    {
+      "name": "UAE Regulations",
+      "icon": "▶️",
+      "keywords": []
     }
   ],
   "excludeKeywords": [
