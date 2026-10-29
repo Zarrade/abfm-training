@@ -2,6 +2,42 @@
   "updated": "2026-10-29",
   "videos": [
     {
+      "id": "civil-3M8oj9zh3Uo",
+      "yt": "3M8oj9zh3Uo",
+      "title": "Installing Floor Tile on Uncoupling Membrane",
+      "category": "Civil Jobs",
+      "subject": "Tile Installation",
+      "level": "Intermediate",
+      "channel": "Sal DiBlasi (tiling & waterproofing)",
+      "duration": "",
+      "added": "2026-10-29",
+      "summary": "A technician demonstrates how to apply mortar and install dark floor tiles using leveling spacers and wedges over an uncoupling membrane.",
+      "safety": "Ensure proper ventilation and wear knee protection when kneeling on hard surfaces for extended periods.",
+      "ppe": [
+        "Knee Pads",
+        "Safety Glasses",
+        "Work Gloves"
+      ],
+      "steps": [
+        "Mix and spread mortar onto the uncoupling membrane using a notched trowel.",
+        "Butter the back of the tile with thin-set mortar.",
+        "Press the tile firmly into position on the floor.",
+        "Insert tile leveling clips and wedges into the joints.",
+        "Clean excess mortar from tile joints and surface with a damp sponge."
+      ],
+      "gemini": {
+        "date": "2026-10-29",
+        "relevance": 9,
+        "quality": 8,
+        "recommend": "approve",
+        "reason": "Provides a clear demonstration of professional floor tile installation techniques suitable for civil and maintenance staff.",
+        "unsafe": [],
+        "language": "English",
+        "talking": true
+      },
+      "ytTitle": "Installing a DARK Tile"
+    },
+    {
       "id": "paint-D4qpDbnhan4",
       "yt": "D4qpDbnhan4",
       "title": "Repairing Peeling Exterior Door Jambs",
