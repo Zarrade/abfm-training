@@ -123,52 +123,6 @@
       },
       "aiTries": 1,
       "aiError": "Gemini took too long"
-    },
-    {
-      "yt": "Gz7tLlWzkN4",
-      "title": "Diagnosing with Superheat and Subcooling TXV and Refrigerant Charge ",
-      "channel": "Love2HVAC with Ty Branaman",
-      "channelUrl": "https://www.youtube.com/channel/UCIoD-SEdUWMA74tWXRMyCZQ",
-      "published": "2026-08-31T02:12:30.821Z",
-      "duration": "",
-      "channelCategory": "HVAC",
-      "suggestedCategory": "HVAC",
-      "description": "",
-      "found": "2026-10-30T02:12:32.124Z",
-      "draft": {
-        "source": "ai",
-        "title": "Adjusting TXV and Balancing Refrigerant Charge",
-        "summary": "This video demonstrates how to diagnose an overcharged HVAC system with low superheat and subcooling. It covers adjusting the thermal expansion valve, recovering excess refrigerant, and interpreting system performance.",
-        "safety": "Wear protective gloves and eye protection when connecting or venting refrigerant lines to avoid freeze burns.",
-        "ppe": [
-          "Safety Glasses",
-          "Insulated Work Gloves",
-          "Safety Boots"
-        ],
-        "steps": [
-          "Measure baseline superheat and subcooling using digital manifold gauges.",
-          "Adjust the TXV stem clockwise to restrict flow and increase superheat.",
-          "Wait and recheck superheat, subcooling, and head pressure readings.",
-          "Recover excess refrigerant to lower high subcooling and discharge pressure.",
-          "Confirm superheat and subcooling stabilize near manufacturer target values."
-        ],
-        "stepsFrom": "ai",
-        "level": "Intermediate",
-        "subject": "Refrigerant & Diagnostics",
-        "category": "HVAC",
-        "review": {
-          "relevance": 9,
-          "quality": 8,
-          "recommend": "approve",
-          "reason": "Provides an excellent real-world diagnostic process combining gauge readings, TXV adjustment, and whiteboard theory.",
-          "unsafe": [
-            "No gloves worn while handling refrigerant recovery hoses"
-          ],
-          "language": "English",
-          "talking": true
-        },
-        "model": "gemini-3.8-flash"
-      }
     }
   ],
   "rejected": [
@@ -205,6 +159,7 @@
     "HdIB67dfv1A",
     "skGkZW5XVkk",
     "2-b2vlq67Do",
-    "jAT6WWdV8N4"
+    "jAT6WWdV8N4",
+    "Gz7tLlWzkN4"
   ]
 }
