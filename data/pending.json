@@ -87,44 +87,7 @@
       "via": "page"
     }
   },
-  "queue": [
-    {
-      "yt": "U_sB9hiDTkU",
-      "title": "cómo rociar una puerta principal acostado",
-      "channel": "Paint Life TV",
-      "channelUrl": "https://www.youtube.com/channel/UCnrhmEmvA_bIRYkBVPqJ4zg",
-      "published": "2026-10-16T02:12:36.399Z",
-      "duration": "",
-      "channelCategory": "Painting & Waterproofing",
-      "suggestedCategory": "Painting & Waterproofing",
-      "description": "",
-      "found": "2026-10-30T02:12:38.018Z",
-      "draft": {
-        "source": "rules",
-        "title": "Cómo Rociar Una Puerta Principal Acostado",
-        "summary": "",
-        "safety": "Ventilate the area, keep ignition sources away and protect your eyes and lungs.",
-        "ppe": [
-          "Respirator",
-          "Safety Goggles",
-          "Chemical Gloves"
-        ],
-        "steps": [
-          "Read the job card and get the right tools and PPE",
-          "Make the area safe and put up barriers or signs",
-          "Carry out the work as shown in the video",
-          "Check your work",
-          "Clean up the area",
-          "Report the job complete"
-        ],
-        "stepsFrom": "general",
-        "level": "Intermediate",
-        "subject": ""
-      },
-      "aiTries": 1,
-      "aiError": "Gemini took too long"
-    }
-  ],
+  "queue": [],
   "rejected": [
     "je0BsLY5nZw",
     "NcgO12kdTVs",
@@ -160,6 +123,7 @@
     "skGkZW5XVkk",
     "2-b2vlq67Do",
     "jAT6WWdV8N4",
-    "Gz7tLlWzkN4"
+    "Gz7tLlWzkN4",
+    "U_sB9hiDTkU"
   ]
 }
