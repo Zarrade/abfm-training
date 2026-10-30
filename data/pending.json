@@ -1,93 +1,126 @@
 {
-  "lastRun": "2026-10-30T02:12:40.827Z",
+  "lastRun": "2026-10-30T07:02:13.226Z",
   "channelStatus": {
     "https://www.youtube.com/@EngineeringMindset": {
       "id": "UCk0fGHsCEzGig-rSzkfCjMw",
-      "checked": "2026-10-30T02:12:22.366Z",
-      "lastFound": 0,
-      "via": "page"
+      "checked": "2026-10-30T07:02:00.659Z",
+      "lastFound": 0
     },
     "https://www.youtube.com/@ACServiceTech": {
       "id": "UCYohLjTaUZLF3-JjttxG_CA",
-      "checked": "2026-10-30T02:12:24.368Z",
-      "lastFound": 0,
-      "via": "page"
+      "checked": "2026-10-30T07:02:02.354Z",
+      "lastFound": 0
     },
     "https://www.youtube.com/@TheElectricalGuy": {
       "id": "UCdKPm5KM99O75NtArFkMDDA",
-      "checked": "2026-10-30T02:12:25.393Z",
-      "lastFound": 0,
-      "via": "page"
+      "checked": "2026-10-30T07:02:03.189Z",
+      "lastFound": 0
     },
     "https://www.youtube.com/@GSHElectrical": {
       "id": "UCgtbE9w_d-u2AvPp3WBlPfQ",
-      "checked": "2026-10-30T02:12:27.772Z",
-      "lastFound": 1,
-      "via": "page"
+      "checked": "2026-10-30T07:02:04.008Z",
+      "lastFound": 0
     },
     "https://www.youtube.com/@jwflame": {
       "id": "UC2uFFhnMKyF82UY2TbXRaNg",
-      "checked": "2026-10-30T02:12:28.833Z",
-      "lastFound": 0,
-      "via": "page"
+      "checked": "2026-10-30T07:02:04.833Z",
+      "lastFound": 0
     },
     "https://www.youtube.com/@RogerWakefield": {
       "id": "UCGIMKh92vaL0_Yc0u4GYhHA",
-      "checked": "2026-10-30T02:12:29.835Z",
-      "lastFound": 0,
-      "via": "page"
+      "checked": "2026-10-30T07:02:05.668Z",
+      "lastFound": 0
     },
     "https://www.youtube.com/c/HVACSchool": {
       "id": "UCdLlUhD9LUGm0-NTYDASPFA",
-      "checked": "2026-10-30T02:12:23.395Z",
-      "lastFound": 0,
-      "via": "page"
+      "checked": "2026-10-30T07:02:01.503Z",
+      "lastFound": 0
     },
     "https://www.youtube.com/channel/UCIoD-SEdUWMA74tWXRMyCZQ": {
       "id": "UCIoD-SEdUWMA74tWXRMyCZQ",
-      "checked": "2026-10-30T02:12:32.124Z",
-      "lastFound": 1,
-      "via": "page"
+      "checked": "2026-10-30T07:02:06.547Z",
+      "lastFound": 0
     },
     "https://www.youtube.com/c/Ductdudes": {
       "id": "UCGGX5M9ISk9Zwi6pfa6gk3w",
-      "checked": "2026-10-30T02:12:33.120Z",
-      "lastFound": 0,
-      "via": "page"
+      "checked": "2026-10-30T07:02:07.398Z",
+      "lastFound": 0
     },
     "https://www.youtube.com/channel/UCbZdXox6mKHdcT2QdVT-goQ": {
       "id": "UCbZdXox6mKHdcT2QdVT-goQ",
-      "checked": "2026-10-30T02:12:34.164Z",
-      "lastFound": 0,
-      "via": "page"
+      "checked": "2026-10-30T07:02:08.113Z",
+      "lastFound": 0
     },
     "https://www.youtube.com/channel/UCWpu9UZ6aiRTaMuuV8-C0pQ": {
       "id": "UCWpu9UZ6aiRTaMuuV8-C0pQ",
-      "checked": "2026-10-30T02:12:35.279Z",
-      "lastFound": 0,
-      "via": "page"
+      "checked": "2026-10-30T07:02:08.992Z",
+      "lastFound": 0
     },
     "https://www.youtube.com/channel/UCnrhmEmvA_bIRYkBVPqJ4zg": {
       "id": "UCnrhmEmvA_bIRYkBVPqJ4zg",
-      "checked": "2026-10-30T02:12:38.018Z",
-      "lastFound": 1,
-      "via": "page"
+      "checked": "2026-10-30T07:02:09.817Z",
+      "lastFound": 0
     },
     "https://www.youtube.com/channel/UCR1ksygazAOr59yLZ4Mp5tA": {
       "id": "UCR1ksygazAOr59yLZ4Mp5tA",
-      "checked": "2026-10-30T02:12:39.065Z",
-      "lastFound": 1,
-      "via": "page",
-      "error": "Feed not available (404). Backup also failed: Couldn't read the channel page."
+      "checked": "2026-10-30T07:02:11.687Z",
+      "lastFound": 1
     },
     "https://www.youtube.com/channel/UCXOzd-KAiI6fGx5wfrnsHTA": {
       "id": "UCXOzd-KAiI6fGx5wfrnsHTA",
-      "checked": "2026-10-30T02:12:40.112Z",
-      "lastFound": 0,
-      "via": "page"
+      "checked": "2026-10-30T07:02:12.525Z",
+      "lastFound": 0
     }
   },
-  "queue": [],
+  "queue": [
+    {
+      "yt": "IlxIEBFE20w",
+      "title": "How to Replace a Broken Sprinkler Head | Mower Damage Repair | Sprinkler Warehouse",
+      "channel": "Sprinkler Warehouse (irrigation)",
+      "channelUrl": "https://www.youtube.com/channel/UCR1ksygazAOr59yLZ4Mp5tA",
+      "published": "2026-10-22T16:40:17+00:00",
+      "duration": "",
+      "channelCategory": "Landscaping",
+      "suggestedCategory": "Landscaping",
+      "description": "In this video:\n• Dig out the damaged sprinkler and expose its connection.\n• Choose the correct head, nozzle, and fitting.\n• Use a swing joint to make height adjustments easier.\n• Flush out dirt and debris before putting the sprinkler into service.\n• Set the head at soil level and firmly pack the dirt around it.\n• Check the spray direction, arc, and watering distance.\n\nWhether you’re replacing a rotor, spray head, or spray body with a rotary nozzle, matching the sprinklers on your zone helps maintain consistent watering.\n\nShop sprinkler heads, nozzles, and swing joints:\nhttps://www.sprinklerwarehouse.com/product/lawn-irrigation/sprinkler-heads\n\nFind sprinkler adjustment guides and more at Sprinkler School:\nhttps://school.sprinklerwarehouse.com/\n\nShop irrigation supplies:\nhttps://www.sprinklerwarehouse.com/\n\nSubscribe for more sprinkler repair tips, installation guides, and straightforward answers to your irrigation questions.\n\n#SprinklerRepair #SprinklerHeadReplacement #sprinklerwarehouse \n\n\nHow to adjust a PGP ADJ: https://www.youtube.com/watch?v=ozJPDHVmiUw&t=41s\n\nRainBird 5004 Rotor: https://www.youtube.com/watch?v=hO7kxBIwnms&list=PL6oFx1DjVPHoxZ7b90CUGzijqyPSREPIF&index=48\n\nToro T5PCK-RS Rotor: https://www.youtube.com/watch?v=jkaXHdmHDJs\n\nHunter Pro Spray: https://www.youtube.com/watch?v=G1QE1G6ilCQ\n\n\n\n\nYouTube comments are not monitored. Please direct your questions to the customer service representatives on www.sprinklerwarehouse.com.",
+      "found": "2026-10-30T07:02:11.687Z",
+      "draft": {
+        "source": "ai",
+        "title": "Replacing a Damaged Lawn Sprinkler Head",
+        "summary": "This video demonstrates how to excavate, select, and replace a damaged pop-up sprinkler head. It also covers using swing joints to set the head flush with the soil grade and flushing lines before final installation.",
+        "safety": "Ensure the irrigation system is depressurized before digging and be mindful of buried cables or pipes.",
+        "ppe": [
+          "Work Gloves",
+          "Safety Boots",
+          "Safety Glasses"
+        ],
+        "steps": [
+          "Dig out the soil around the damaged sprinkler to expose the fitting.",
+          "Select a matching replacement head, nozzle, and adjustable swing joint.",
+          "Flush the water line briefly to clear dirt and debris.",
+          "Thread the new sprinkler head onto the fitting at soil grade level.",
+          "Backfill the excavation and pack soil firmly around the body.",
+          "Adjust the nozzle arc and spray direction to match the zone coverage."
+        ],
+        "stepsFrom": "ai",
+        "level": "Beginner",
+        "subject": "Sprinkler Head Replacement",
+        "category": "Landscaping",
+        "review": {
+          "relevance": 9,
+          "quality": 9,
+          "recommend": "approve",
+          "reason": "Provides clear, practical instructions on replacing broken sprinkler heads and adjusting height to prevent future damage.",
+          "unsafe": [
+            "Working in soil and handling tools without work gloves"
+          ],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.8-flash"
+      }
+    }
+  ],
   "rejected": [
     "je0BsLY5nZw",
     "NcgO12kdTVs",
