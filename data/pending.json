@@ -1,78 +1,135 @@
 {
-  "lastRun": "2026-10-30T07:02:13.226Z",
+  "lastRun": "2026-10-31T02:11:12.471Z",
   "channelStatus": {
     "https://www.youtube.com/@EngineeringMindset": {
       "id": "UCk0fGHsCEzGig-rSzkfCjMw",
-      "checked": "2026-10-30T07:02:00.659Z",
-      "lastFound": 0
+      "checked": "2026-10-31T02:10:56.522Z",
+      "lastFound": 0,
+      "via": "page"
     },
     "https://www.youtube.com/@ACServiceTech": {
       "id": "UCYohLjTaUZLF3-JjttxG_CA",
-      "checked": "2026-10-30T07:02:02.354Z",
-      "lastFound": 0
+      "checked": "2026-10-31T02:10:58.527Z",
+      "lastFound": 0,
+      "via": "page"
     },
     "https://www.youtube.com/@TheElectricalGuy": {
       "id": "UCdKPm5KM99O75NtArFkMDDA",
-      "checked": "2026-10-30T07:02:03.189Z",
-      "lastFound": 0
+      "checked": "2026-10-31T02:10:59.528Z",
+      "lastFound": 0,
+      "via": "page"
     },
     "https://www.youtube.com/@GSHElectrical": {
       "id": "UCgtbE9w_d-u2AvPp3WBlPfQ",
-      "checked": "2026-10-30T07:02:04.008Z",
-      "lastFound": 0
+      "checked": "2026-10-31T02:11:01.372Z",
+      "lastFound": 1,
+      "via": "page"
     },
     "https://www.youtube.com/@jwflame": {
       "id": "UC2uFFhnMKyF82UY2TbXRaNg",
-      "checked": "2026-10-30T07:02:04.833Z",
-      "lastFound": 0
+      "checked": "2026-10-31T02:11:02.489Z",
+      "lastFound": 0,
+      "via": "page"
     },
     "https://www.youtube.com/@RogerWakefield": {
       "id": "UCGIMKh92vaL0_Yc0u4GYhHA",
-      "checked": "2026-10-30T07:02:05.668Z",
-      "lastFound": 0
+      "checked": "2026-10-31T02:11:03.512Z",
+      "lastFound": 0,
+      "via": "page"
     },
     "https://www.youtube.com/c/HVACSchool": {
       "id": "UCdLlUhD9LUGm0-NTYDASPFA",
-      "checked": "2026-10-30T07:02:01.503Z",
-      "lastFound": 0
+      "checked": "2026-10-31T02:10:57.565Z",
+      "lastFound": 0,
+      "via": "page"
     },
     "https://www.youtube.com/channel/UCIoD-SEdUWMA74tWXRMyCZQ": {
       "id": "UCIoD-SEdUWMA74tWXRMyCZQ",
-      "checked": "2026-10-30T07:02:06.547Z",
-      "lastFound": 0
+      "checked": "2026-10-31T02:11:04.658Z",
+      "lastFound": 0,
+      "via": "page"
     },
     "https://www.youtube.com/c/Ductdudes": {
       "id": "UCGGX5M9ISk9Zwi6pfa6gk3w",
-      "checked": "2026-10-30T07:02:07.398Z",
-      "lastFound": 0
+      "checked": "2026-10-31T02:11:05.656Z",
+      "lastFound": 0,
+      "via": "page"
     },
     "https://www.youtube.com/channel/UCbZdXox6mKHdcT2QdVT-goQ": {
       "id": "UCbZdXox6mKHdcT2QdVT-goQ",
-      "checked": "2026-10-30T07:02:08.113Z",
+      "checked": "2026-10-31T02:11:06.483Z",
       "lastFound": 0
     },
     "https://www.youtube.com/channel/UCWpu9UZ6aiRTaMuuV8-C0pQ": {
       "id": "UCWpu9UZ6aiRTaMuuV8-C0pQ",
-      "checked": "2026-10-30T07:02:08.992Z",
-      "lastFound": 0
+      "checked": "2026-10-31T02:11:07.624Z",
+      "lastFound": 0,
+      "via": "page"
     },
     "https://www.youtube.com/channel/UCnrhmEmvA_bIRYkBVPqJ4zg": {
       "id": "UCnrhmEmvA_bIRYkBVPqJ4zg",
-      "checked": "2026-10-30T07:02:09.817Z",
-      "lastFound": 0
+      "checked": "2026-10-31T02:11:09.659Z",
+      "lastFound": 1,
+      "via": "page"
     },
     "https://www.youtube.com/channel/UCR1ksygazAOr59yLZ4Mp5tA": {
       "id": "UCR1ksygazAOr59yLZ4Mp5tA",
-      "checked": "2026-10-30T07:02:11.687Z",
-      "lastFound": 1
+      "checked": "2026-10-31T02:11:10.681Z",
+      "lastFound": 0,
+      "via": "page"
     },
     "https://www.youtube.com/channel/UCXOzd-KAiI6fGx5wfrnsHTA": {
       "id": "UCXOzd-KAiI6fGx5wfrnsHTA",
-      "checked": "2026-10-30T07:02:12.525Z",
-      "lastFound": 0
+      "checked": "2026-10-31T02:11:11.758Z",
+      "lastFound": 0,
+      "via": "page"
     }
   },
   "queue": [
+    {
+      "yt": "oWyQjMBQIik",
+      "title": "Cómo Pintar Paredes con Rodillo SIN Dejar Marcas | Trucos de Pintor Profesional",
+      "channel": "Paint Life TV",
+      "channelUrl": "https://www.youtube.com/channel/UCnrhmEmvA_bIRYkBVPqJ4zg",
+      "published": "2026-10-30T22:11:08.779Z",
+      "duration": "",
+      "channelCategory": "Painting & Waterproofing",
+      "suggestedCategory": "Painting & Waterproofing",
+      "description": "",
+      "found": "2026-10-31T02:11:09.659Z",
+      "draft": {
+        "source": "ai",
+        "title": "Rolling Walls Without Leaving Lap Marks",
+        "summary": "This video demonstrates how to roll interior walls smoothly without leaving lap lines, flashing, or hatbanding. It explains the importance of maintaining a wet edge, loading the roller properly, and laying off the paint.",
+        "safety": "Ensure adequate ventilation in indoor work areas to prevent buildup of paint fumes.",
+        "ppe": [
+          "Safety Glasses",
+          "Protective Gloves",
+          "Safety Shoes"
+        ],
+        "steps": [
+          "Cut in edges and roll before the perimeter paint dries.",
+          "Fully load the roller sleeve with paint to prevent dry rolling.",
+          "Overlap each roller stroke by fifty percent over the wet paint.",
+          "Maintain a consistent wet edge across the entire wall section.",
+          "Lay off the finish evenly with light top-to-bottom roller passes."
+        ],
+        "stepsFrom": "ai",
+        "level": "Beginner",
+        "subject": "Painting & Waterproofing",
+        "category": "Painting & Waterproofing",
+        "review": {
+          "relevance": 8,
+          "quality": 8,
+          "recommend": "approve",
+          "reason": "Clear demonstration of fundamental roller painting techniques to avoid lap marks.",
+          "unsafe": [],
+          "language": "Spanish",
+          "talking": true
+        },
+        "model": "gemini-3.8-flash"
+      }
+    },
     {
       "yt": "IlxIEBFE20w",
       "title": "How to Replace a Broken Sprinkler Head | Mower Damage Repair | Sprinkler Warehouse",
@@ -114,6 +171,49 @@
           "unsafe": [
             "Working in soil and handling tools without work gloves"
           ],
+          "language": "English",
+          "talking": true
+        },
+        "model": "gemini-3.8-flash"
+      }
+    },
+    {
+      "yt": "GeLWlyNRWuk",
+      "title": "This Is How I Was Taught to Use Side Cutters",
+      "channel": "GSH Electrical",
+      "channelUrl": "https://www.youtube.com/@GSHElectrical",
+      "published": "2026-09-01T02:11:00.628Z",
+      "duration": "",
+      "channelCategory": "Electrical",
+      "suggestedCategory": "Electrical",
+      "description": "",
+      "found": "2026-10-31T02:11:01.372Z",
+      "draft": {
+        "source": "ai",
+        "title": "Stripping Cables Using Side Cutters",
+        "summary": "This video shows how to score and remove the outer PVC sheath of a flexible cable using diagonal side cutters. It also demonstrates how to apply correct pressure to strip conductor insulation without damaging fine copper strands.",
+        "safety": "Ensure cables are completely de-energized and verified safe before cutting or stripping.",
+        "ppe": [
+          "Safety Glasses",
+          "Cut-Resistant Gloves"
+        ],
+        "steps": [
+          "Position the side cutters around the outer PVC cable sheath.",
+          "Nibble gently around the outer sheath without cutting the inner conductor insulation.",
+          "Bend the cable to snap the scored sheath and slide it off.",
+          "Apply controlled cutting pressure onto the individual core insulation.",
+          "Pull the cutters outward to remove insulation without severing copper strands."
+        ],
+        "stepsFrom": "ai",
+        "level": "Beginner",
+        "subject": "Fundamentals",
+        "category": "Electrical",
+        "review": {
+          "relevance": 8,
+          "quality": 8,
+          "recommend": "approve",
+          "reason": "Clear demonstration of fundamental hand-tool technique for stripping flexible cables without damaging conductors.",
+          "unsafe": [],
           "language": "English",
           "talking": true
         },
